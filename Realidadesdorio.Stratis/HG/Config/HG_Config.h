@@ -85,7 +85,7 @@ enableVehicleInventorySave = true;
 enableXP = true;
 enableKillCount = true;
 enableTags = true;
-enableMarkers = true;
+enableMarkers = false;
 enableATM = true;
 enableWhitelist = false;
 
@@ -100,7 +100,7 @@ atmKey = 0x14;
 lockUnlockKey = 0x15;
 giveMoneyKey = 0x23;
 giveKeyKey = 0x21;
-adminKey = 0xDB;
+adminKey = 0x19;
 
 /* SAVING */
 savingMethod = "extDB";
