@@ -103,7 +103,7 @@ giveKeyKey = 0x21;
 adminKey = 0xDB;
 
 /* SAVING */
-savingMethod = "Profile";
+savingMethod = "extDB";
 extDBDatabase = "HG";
 extDBProtocol = "SQL_CUSTOM";
 extDBCustomFile = "custom.ini";
