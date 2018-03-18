@@ -6,7 +6,7 @@
 
 	//Init Scripts De 3º Parte...
 	[] execVM "admin\admins.sqf";    //Painel ADM
-        [] execVM "admin\loop.sqf";    //Loop Painel ADM
+    [] execVM "admin\loop.sqf";    //Loop Painel ADM
 	[] execVM "scripts\Cor.sqf";    //Correção De Cor
 	[] execVM "scripts\dlc.sqf";    //Desbloqueia Veiculos Com DLC
 	[] execVM "scripts\gaslacrimo.sqf";    //Gás Lacrimogênio
