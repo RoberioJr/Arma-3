@@ -27,9 +27,9 @@ outlw_MR_ctrl = outlw_MR_keyList select 1;
 outlw_MR_alt = outlw_MR_keyList select 2;
 outlw_MR_keybinding = outlw_MR_keyList select 3;
 
-[] execVM "scripts\recargaCarreg\MagRepack_Main.sqf";
-[] execVM "scripts\recargaCarreg\MagRepack_Keybindings.sqf";
-[] execVM "scripts\recargaCarreg\MagRepack_Misc.sqf";
+[] execVM "scripts\recargaCarreg\Scripts\MagRepack_Main.sqf";
+[] execVM "scripts\recargaCarreg\Scripts\MagRepack_Keybindings.sqf";
+[] execVM "scripts\recargaCarreg\Scripts\MagRepack_Misc.sqf";
 
 waitUntil {!(isNil "outlw_MR_getIDCs")};
 
