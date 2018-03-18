@@ -17,13 +17,13 @@
  if(!hasInterface) exitWith {};
 [] execVM "HG\Setup\fn_clientInitialization.sqf";
  
+ 
+ //////////////////////////////
 
  
 
- ////////////////////////////////////////////////////////
- //Script Abaixo Foi Movida Para "config\WhiteList.sqf"//
- ///////////////////////////////////////////////////////
- /*
+ //Script Abaixo Foi Movida Para "config\WhiteList.sqf"
+/*
 // WhiteList Para BOPE
 // By: RobérioJr
 //Last Update by RobérioJr on 12-03-2018
