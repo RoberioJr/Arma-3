@@ -13,6 +13,7 @@
 	[] execVM "scripts\PuloDoMacaco.sqf";    //Pulo Do Macaco SHIFT + V
 	[] execVM "scripts\recargaCarreg\Carreg.sqf";    //Recarga De Carregadores CTRL + R
 	[] execVM "scripts\IntroCAM.sqf";    //IntroCAM
+	[] execVM "scripts\PF\init.sqf";    //Ambientação Das Casas
 	[] execVM "zonas\safebope.sqf";    //SAFEZONE BOPE
 	call compile preprocessFile "scripts\Punir\Punir_Init.sqf";    //Punição Por TeamKill
 	
