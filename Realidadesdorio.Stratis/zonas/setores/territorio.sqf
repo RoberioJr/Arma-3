@@ -2,9 +2,11 @@
    MadeBY: Marvinn
 */
 
+_RocinhaAlta = side PontoDeDrogas1;
+
 //Favela da Rocinha (PARTE ALTA)
 
-if (side PontoDeDrogas1 == east) then{
+if (_RocinhaAlta == east) then{
      [5000,0] call HG_fnc_addOrSubCash;
 	 sleep 600.0;
 };
