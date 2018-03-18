@@ -29,7 +29,7 @@ _showMarker= false;// Show COS markers on map
 
 showTownLabel = false;// Show town information when entering COS zones
 
-debugCOS= false;// Show spawned units on the map
+debugCOS= true;// Show spawned units on the map
 
 COSpedestrians=true; //Spawn pedestrians
 COScars=true;// Spawn Cars
@@ -78,7 +78,7 @@ if (({_name==_x} count blackListTowns)>0 OR (_name == "")) then {}else{
 
 		
 // Customise population by number of houses
-_randomisation=4;
+_randomisation=3;
 	if (_houses <= 10) 
 		then {
 	_civilians=7+ round(random _randomisation);// Civilians spawned
@@ -88,27 +88,27 @@ _randomisation=4;
  	if (_houses <= 30 and _houses > _randomisation) 
 		then {
 	_civilians=8+ round(random _randomisation);// Civilians spawned
-	_vehicles=2;// Moving Vehicles Spawned
+	_vehicles=1;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 70 and _houses > 30) 
 		then {
-	_civilians=9+ round(random _randomisation);// Civilians spawned
-	_vehicles=3;// Moving Vehicles Spawned
+	_civilians=8+ round(random _randomisation);// Civilians spawned
+	_vehicles=2;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 140 and _houses > 70) 
 		then {
-	_civilians=13+ round(random _randomisation);// Civilians spawned
-	_vehicles=3;// Moving Vehicles Spawned
+	_civilians=11+ round(random _randomisation);// Civilians spawned
+	_vehicles=2;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
  	if (_houses > 140) 
 		then {
-	_civilians=17+ round(random _randomisation);// Civilians spawned
-	_vehicles=3;// Moving Vehicles Spawned
+	_civilians=14+ round(random _randomisation);// Civilians spawned
+	_vehicles=2;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
 			
