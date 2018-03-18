@@ -1,5 +1,7 @@
 // MadeBY: Marvinn
 
+private _playerSide = playerSide
+
 [ParqueUniao, //Nome do Objeto
 "Conquistar o Parque União", //Titulo da Ação
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa", //Ícone usado
@@ -8,7 +10,7 @@
 "player distance ParqueUniao < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{ParqueUniao setFlagSide playerSide;},
+{ParqueUniao setFlagSide _playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 12,//Duração

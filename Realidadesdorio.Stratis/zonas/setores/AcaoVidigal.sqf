@@ -1,6 +1,6 @@
-//////////////////////
-// MadeBY: Marvinn  //
-//////////////////////
+// MadeBY: Marvinn
+
+private _playerSide = playerSide
 
 [MorroVidigal, //Nome do Objeto
 "Conquistar o Morro do Vidigal", //Titulo da Ação
@@ -10,7 +10,7 @@
 "player distance MorroVidigal < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{MorroVidigal setFlagSide playerSide;},
+{MorroVidigal setFlagSide _playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 12,//Duração
