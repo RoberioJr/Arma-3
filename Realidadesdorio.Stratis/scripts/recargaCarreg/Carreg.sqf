@@ -1,19 +1,3 @@
-
-/*
-	|----
-		-Author: Outlawled
-		-Created: 7 March 2013
-		-Updated: 5 December 2014
-		-Version: 3.1.1 (Addon)
-		-Description:	- Allows the player to repack the ammo in his magazines.
-						- Default keybinding to open the Mag Repack dialog is "Ctrl+R", this can be customized via the options menu in the Mag Repack dialog.
-						- Pressing "Shift+Ctrl+Alt+Backspace" will reset the keybinding to the default setting (in case the player forgets what he changed his keybinding to).
-						- The player may choose a magazine from a list of all of his magazines to be the "Source" magazine and then he may choose a magazine
-						from a list of all of his magazines of the same ammo type as the Source magazine to be the "Target" magazine (or vice versa). As soon
-						as the Source and Target are both defined, bullets from the Source magazine will automatically start repacking into the	Target magazine.
-	|----
-*/
-
 outlw_MR_bulletTime = 0.5; // Seconds per individual bullet.
 outlw_MR_beltTime = 5; // Seconds per belt magazine.
 
