@@ -1,7 +1,7 @@
 while {true} do
 {
   waitUntil {alive vehicle player};
-[] execVM "zonas\setores\territorio.sqf";
+[] execVM "territorio.sqf";
 
 
   waitUntil {!alive player};
