@@ -8,7 +8,7 @@ class EditorData
 	toggles=609;
 	class ItemIDProvider
 	{
-		nextID=4373;
+		nextID=4395;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=68;
+		nextID=70;
 	};
 	class Camera
 	{
-		pos[]={2707.6958,138.19077,2899.8428};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={4475.4312,306.61722,6681.8198};
+		dir[]={-0.78457099,-0.61931747,0.030081585};
+		up[]={-0.6188643,0.7851392,0.023727538};
+		aside[]={0.038313702,-3.9970473e-008,0.99927109};
 	};
 };
 binarizationWanted=0;
@@ -132,7 +132,8 @@ addons[]=
 	"USP_Markers",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Structures_F_Civ_InfoBoards",
-	"A3_Missions_F_Curator"
+	"A3_Missions_F_Curator",
+	"A3_Structures_F_Mil_Flags"
 };
 class AddonsMetaData
 {
@@ -499,7 +500,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2966;
+		items=2988;
 		class Item0
 		{
 			dataType="Marker";
@@ -45545,13 +45546,13 @@ class Mission
 		class Item2652
 		{
 			dataType="Marker";
-			position[]={6575.1768,67.470001,5149.1631};
+			position[]={6593.4858,76.800049,5194.4419};
 			name="marker_189";
 			text="MORRO DO TIMBAL";
 			type="o_hq";
 			a=2;
 			id=3803;
-			atlOffset=0.00011444092;
+			atlOffset=-4.3180008;
 		};
 		class Item2653
 		{
@@ -55569,7 +55570,7 @@ class Mission
 			colorName="ColorOrange";
 			a=20;
 			b=2000;
-			angle=111.99997;
+			angle=111.99996;
 			id=4301;
 			atlOffset=-56.449074;
 		};
@@ -59731,7 +59732,7 @@ class Mission
 			colorName="ColorRed";
 			a=5;
 			b=2000;
-			angle=111.99996;
+			angle=111.99995;
 			id=4368;
 			atlOffset=-58.93383;
 		};
@@ -59770,6 +59771,358 @@ class Mission
 			};
 			id=4372;
 			type="EmptyDetector";
+		};
+		class Item2966
+		{
+			dataType="Trigger";
+			position[]={2895.377,32.859001,5792.0781};
+			class Attributes
+			{
+				condition="call{player distance RocinhaAlta < 5;}";
+				onActivation="call{this = [] execVM ""ZonaRAlta.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4373;
+			type="EmptyDetector";
+		};
+		class Item2967
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2893.9309,36.718201,5793.2842};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="RocinhaAlta";
+			};
+			id=4374;
+			type="Flag_White_F";
+		};
+		class Item2968
+		{
+			dataType="Trigger";
+			position[]={2964.6699,25.667866,6173.022};
+			class Attributes
+			{
+				condition="call{player distance MorroVidigal < 5;}";
+				onActivation="call{this = [] execVM ""AcaoVidigal.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4375;
+			type="EmptyDetector";
+			atlOffset=0.052000046;
+		};
+		class Item2969
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2963.2241,29.734682,6174.228};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="MorroVidigal";
+			};
+			id=4376;
+			type="Flag_White_F";
+			atlOffset=-0.0090007782;
+		};
+		class Item2970
+		{
+			dataType="Trigger";
+			position[]={6193.7031,4.6643753,5581};
+			class Attributes
+			{
+				condition="call{player distance ParqueUniao < 5;}";
+				onActivation="call{this = [] execVM ""AcaoUniao.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4377;
+			type="EmptyDetector";
+		};
+		class Item2971
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6192.6089,8.6827335,5580.1138};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="ParqueUniao";
+			};
+			id=4378;
+			type="Flag_White_F";
+		};
+		class Item2972
+		{
+			dataType="Trigger";
+			position[]={6280.7891,6.6521263,5454.0088};
+			class Attributes
+			{
+				condition="call{player distance NovaHolanda < 5;}";
+				onActivation="call{this = [] execVM ""AcaoHolanda.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4379;
+			type="EmptyDetector";
+			atlOffset=-0.11499977;
+		};
+		class Item2973
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6279.6948,10.883438,5453.123};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="NovaHolanda";
+			};
+			id=4380;
+			type="Flag_White_F";
+			atlOffset=-0.020000458;
+		};
+		class Item2974
+		{
+			dataType="Trigger";
+			position[]={6592.936,80.961205,5194.1182};
+			angle=4.7822022;
+			class Attributes
+			{
+				condition="call{player distance Timbal < 5;}";
+				onActivation="call{this = [] execVM ""AcaoTimbal.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4381;
+			type="EmptyDetector";
+			atlOffset=-0.10500336;
+		};
+		class Item2975
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6593.7432,85.027283,5192.9639};
+				angles[]={0,4.7822022,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="Timbal";
+			};
+			id=4382;
+			type="Flag_White_F";
+			atlOffset=0.010002136;
+		};
+		class Item2976
+		{
+			dataType="Trigger";
+			position[]={4401.668,192.46822,4425.6191};
+			angle=4.7822022;
+			class Attributes
+			{
+				condition="call{player distance AreaCap1 < 5;}";
+				onActivation="call{this = [] execVM ""AcaoCap1.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4383;
+			type="EmptyDetector";
+		};
+		class Item2977
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4402.4751,196.44415,4424.4639};
+				angles[]={0,4.7822022,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="AreaCap1";
+			};
+			id=4384;
+			type="Flag_White_F";
+		};
+		class Item2978
+		{
+			dataType="Trigger";
+			position[]={2584.74,110.09105,4913.6792};
+			angle=4.7822022;
+			class Attributes
+			{
+				condition="call{player distance AreaInd2 < 5;}";
+				onActivation="call{this = [] execVM ""AcaoInd2.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4385;
+			type="EmptyDetector";
+		};
+		class Item2979
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2585.5471,113.99952,4912.5229};
+				angles[]={0,4.7822022,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="AreaInd2";
+			};
+			id=4386;
+			type="Flag_White_F";
+		};
+		class Item2980
+		{
+			dataType="Trigger";
+			position[]={5531.0151,77.864769,4719.4258};
+			angle=4.7822022;
+			class Attributes
+			{
+				condition="call{player distance AreaInd3 < 5;}";
+				onActivation="call{this = [] execVM ""AcaoInd3.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4387;
+			type="EmptyDetector";
+		};
+		class Item2981
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5531.8218,81.825676,4718.271};
+				angles[]={0,4.7822022,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="AreaInd3";
+			};
+			id=4388;
+			type="Flag_White_F";
+		};
+		class Item2982
+		{
+			dataType="Trigger";
+			position[]={5360.752,218.86504,5248.6831};
+			angle=4.7822022;
+			class Attributes
+			{
+				condition="call{player distance AreaInd4 < 5;}";
+				onActivation="call{this = [] execVM ""AcaoInd4.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4389;
+			type="EmptyDetector";
+		};
+		class Item2983
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5361.5591,222.86041,5247.5278};
+				angles[]={0,4.7822022,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="AreaInd4";
+			};
+			id=4390;
+			type="Flag_White_F";
+			atlOffset=0.004989624;
+		};
+		class Item2984
+		{
+			dataType="Trigger";
+			position[]={4087.4971,43.646141,5344.1831};
+			angle=4.7822022;
+			class Attributes
+			{
+				condition="call{player distance AreaInd5 < 5;}";
+				onActivation="call{this = [] execVM ""AcaoInd5.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4391;
+			type="EmptyDetector";
+			atlOffset=0.0079994202;
+		};
+		class Item2985
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4088.304,47.628296,5343.0278};
+				angles[]={0,4.7822022,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="AreaInd5";
+			};
+			id=4392;
+			type="Flag_White_F";
+		};
+		class Item2986
+		{
+			dataType="Trigger";
+			position[]={4300.978,134.60651,6796.4561};
+			angle=4.7822022;
+			class Attributes
+			{
+				condition="call{player distance AreaInd6 < 5;}";
+				onActivation="call{this = [] execVM ""AcaoInd6.sqf""}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=4393;
+			type="EmptyDetector";
+		};
+		class Item2987
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4303.959,138.6297,6796.7192};
+				angles[]={0,4.7822022,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="AreaInd6";
+			};
+			id=4394;
+			type="Flag_White_F";
 		};
 	};
 	class Connections
