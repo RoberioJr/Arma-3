@@ -50,7 +50,7 @@ cd C:\a3server\
   echo                                                   Data:%data%
   echo                                                   Hora:%hr%:%mm%:%ss%
   echo.
-  start "arma3" /wait /HIGH /affinity 30 "arma3server.exe" -pid=pid -server -port=2302 -malloc=tbbmalloc -loadmissiontomemory -autoInit -noPause -high "-config=C:\a3server\SERVER\server.cfg" "-cfg=C:\a3server\SERVER\network.cfg" "-profiles=C:\a3server\SERVER" -name=SERVER -filePatching "-servermod=@extDB3" "-mod=BOPE - A3WMOD;"
+  start "arma3" /wait /HIGH /affinity 30 "arma3server.exe" -pid=pid -server -port=2302 -malloc=tbbmalloc -loadmissiontomemory -autoInit -noPause -high "-config=C:\a3server\SERVER\server.cfg" "-cfg=C:\a3server\SERVER\network.cfg" "-profiles=C:\a3server\SERVER" -name=SERVER -filePatching "-servermod=@extDB3" "-mod=BOPE - A3WMOD"
   goto crashbope
   
   
