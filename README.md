@@ -1,8 +1,6 @@
 # Arma-3
 
-MPmissions:
+ MPmissions:
 
- BOPE - Comando Vermelho
- 
  Realidades Do Rio
  
