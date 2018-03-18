@@ -82,7 +82,7 @@ deleteBodyOnDisconnect = false;
 resetGaragesOnServerStart = false;
 enablePlayerInventorySave = true;
 enableVehicleInventorySave = true;
-enableXP = true;
+enableXP = false;
 enableKillCount = true;
 enableTags = true;
 enableMarkers = true;
@@ -103,7 +103,7 @@ giveKeyKey = 0x21;
 adminKey = 0xDB;
 
 /* SAVING */
-savingMethod = "Profile";
+savingMethod = "extDB";
 extDBDatabase = "HG";
 extDBProtocol = "SQL_CUSTOM";
 extDBCustomFile = "custom.ini";
