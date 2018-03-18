@@ -54,3 +54,16 @@ class CfgDebriefing
 {
     #include "HG\Config\HG_Debriefing.h"
 };
+
+// Música para o jogo
+
+class CfgMusic
+{
+	tracks[]={};
+
+	class musica1
+	{
+		name = "musica1";
+		sound[] = {"audio\musica\intro.ogg", db+10, 1.0};
+	};
+};

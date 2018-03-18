@@ -12,9 +12,8 @@
 	[] execVM "scripts\gaslacrimo.sqf";    //Gás Lacrimogênio
 	[] execVM "scripts\PuloDoMacaco.sqf";    //Pulo Do Macaco SHIFT + V
 	[] execVM "scripts\recargaCarreg\Carreg.sqf";    //Recarga De Carregadores CTRL + R
-	[] execVM "scripts\Restri.sqf";    //Restrição De Altura/Àrea
+	[] execVM "scripts\IntroCAM.sqf";    //IntroCAM
 	[] execVM "zonas\safebope.sqf";    //SAFEZONE BOPE
-	[] execVM "zonas\setores\loop.sqf";    //Setores
 	call compile preprocessFile "scripts\Punir\Punir_Init.sqf";    //Punição Por TeamKill
 	
 	//Init AntiHack...

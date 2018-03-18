@@ -10,7 +10,7 @@ _randCamX = 75 - floor(random 150);
 
 _randCamY = 75 - floor(random 150);
 
-_camTime = 16;
+_camTime = 18;
 
 
 showCinemaBorder true;
@@ -21,7 +21,7 @@ _camera cameraEffect ["internal","back"];
 _camera camSetFOV 2.000;
 _camera camCommit 0;
 waitUntil {camCommitted _camera};
-playMusic "FirstyIntro";
+playMusic "musica1";
 _camera camSetTarget vehicle player;
 _camera camSetRelPos [0,0,2];
 _camera camCommit _camTime;
