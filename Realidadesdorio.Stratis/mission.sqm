@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=70;
+		nextID=72;
 	};
 	class Camera
 	{
-		pos[]={4475.4312,306.61722,6681.8198};
+		pos[]={4564.1167,450.04996,6661.8643};
 		dir[]={-0.78457099,-0.61931747,0.030081585};
 		up[]={-0.6188643,0.7851392,0.023727538};
 		aside[]={0.038313702,-3.9970473e-008,0.99927109};
@@ -55570,7 +55570,7 @@ class Mission
 			colorName="ColorOrange";
 			a=20;
 			b=2000;
-			angle=111.99996;
+			angle=111.99995;
 			id=4301;
 			atlOffset=-56.449074;
 		};
@@ -59732,7 +59732,7 @@ class Mission
 			colorName="ColorRed";
 			a=5;
 			b=2000;
-			angle=111.99995;
+			angle=111.99994;
 			id=4368;
 			atlOffset=-58.93383;
 		};
@@ -59779,7 +59779,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance RocinhaAlta < 5;}";
-				onActivation="call{this = [] execVM ""ZonaRAlta.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\ZonaRAlta.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -59809,7 +59809,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance MorroVidigal < 5;}";
-				onActivation="call{this = [] execVM ""AcaoVidigal.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\AcaoVidigal.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -59841,7 +59841,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance ParqueUniao < 5;}";
-				onActivation="call{this = [] execVM ""AcaoUniao.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\AcaoUniao.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -59871,7 +59871,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance NovaHolanda < 5;}";
-				onActivation="call{this = [] execVM ""AcaoHolanda.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\AcaoHolanda.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -59894,7 +59894,7 @@ class Mission
 			};
 			id=4380;
 			type="Flag_White_F";
-			atlOffset=-0.020000458;
+			atlOffset=-0.020000935;
 		};
 		class Item2974
 		{
@@ -59904,7 +59904,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance Timbal < 5;}";
-				onActivation="call{this = [] execVM ""AcaoTimbal.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\AcaoTimbal.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -59938,7 +59938,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance AreaCap1 < 5;}";
-				onActivation="call{this = [] execVM ""AcaoCap1.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\AcaoCap1.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -59970,7 +59970,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance AreaInd2 < 5;}";
-				onActivation="call{this = [] execVM ""AcaoInd2.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\AcaoInd2.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -60002,7 +60002,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance AreaInd3 < 5;}";
-				onActivation="call{this = [] execVM ""AcaoInd3.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\AcaoInd3.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -60034,7 +60034,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance AreaInd4 < 5;}";
-				onActivation="call{this = [] execVM ""AcaoInd4.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\AcaoInd4.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -60067,7 +60067,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance AreaInd5 < 5;}";
-				onActivation="call{this = [] execVM ""AcaoInd5.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\AcaoInd5.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -60100,7 +60100,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player distance AreaInd6 < 5;}";
-				onActivation="call{this = [] execVM ""AcaoInd6.sqf""}";
+				onActivation="call{this = [] execVM ""zonas\setores\AcaoInd6.sqf""}";
 				sizeA=0;
 				sizeB=0;
 			};
