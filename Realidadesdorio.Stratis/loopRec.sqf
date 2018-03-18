@@ -1,6 +1,6 @@
 []spawn {
     while {true} do {
-        [] execVM zonassetoresRecompensa.sqf;
+        [] execVM zonas\setores\Recompensa.sqf;
         sleep 5;
     };
 };

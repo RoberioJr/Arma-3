@@ -29,7 +29,7 @@ _showMarker= false;// Show COS markers on map
 
 showTownLabel = false;// Show town information when entering COS zones
 
-debugCOS= true;// Show spawned units on the map
+debugCOS= false;// Show spawned units on the map
 
 COSpedestrians=true; //Spawn pedestrians
 COScars=true;// Spawn Cars
