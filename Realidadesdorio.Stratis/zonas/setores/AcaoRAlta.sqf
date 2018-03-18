@@ -8,7 +8,7 @@
 "player distance RocinhaAlta < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{RocinhaAlta setDamage 1; []execVM "RecompensaAcaoRAlta.sqf";},
+{RocinhaAlta setFlagSide playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 12,//Duração

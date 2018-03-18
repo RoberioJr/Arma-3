@@ -8,7 +8,7 @@
 "player distance ZonaInd2 < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{ZonaInd2 setDamage 1;},
+{ZonaInd2 setFlagSide playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 5,//Duração

@@ -8,7 +8,7 @@
 "player distance Timbal < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{Timbal setDamage 1;},
+{Timbal setFlagSide playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 12,//Duração

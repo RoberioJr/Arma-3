@@ -8,7 +8,7 @@
 "player distance ParqueUniao < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{ParqueUniao setDamage 1;},
+{ParqueUniao setFlagSide playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 12,//Duração

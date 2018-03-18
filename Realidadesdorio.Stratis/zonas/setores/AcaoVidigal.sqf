@@ -9,7 +9,7 @@
 "player distance MorroVidigal < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{MorroVidigal setDamage 1;},
+{MorroVidigal setFlagSide playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 12,//Duração

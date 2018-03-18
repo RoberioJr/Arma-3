@@ -8,7 +8,7 @@
 "player distance NovaHolanda < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{NovaHolanda setDamage 1;},
+{NovaHolanda setFlagSide playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 12,//Duração

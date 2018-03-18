@@ -8,7 +8,7 @@
 "player distance AreaCap1 < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{AreaCap1 setDamage 1;},
+{AreaCap1 setFlagSide playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 5,//Duração
