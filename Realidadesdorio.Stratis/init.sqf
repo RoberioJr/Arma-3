@@ -15,6 +15,7 @@
 	[] execVM "scripts\IntroCAM.sqf";    //IntroCAM
 	[] execVM "scripts\PF\init.sqf";    //Ambientação Das Casas
 	[] execVM "zonas\safebope.sqf";    //SAFEZONE BOPE
+	[] execVM "loopRec.sqf"; //Loop de Recompensas das Áreas
 	call compile preprocessFile "scripts\Punir\Punir_Init.sqf";    //Punição Por TeamKill
 	
 	//Init AntiHack...
