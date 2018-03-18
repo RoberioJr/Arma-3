@@ -12,7 +12,7 @@
 	[] execVM "scripts\gaslacrimo.sqf";    //Gás Lacrimogênio
 	[] execVM "scripts\PuloDoMacaco.sqf";    //Pulo Do Macaco SHIFT + V
 	[] execVM "scripts\recargaCarreg\Carreg.sqf";    //Recarga De Carregadores CTRL + R
-	[] execVM "scripts\IntroCAM.sqf";    //IntroCAM
+	[] execVM "scripts\Intro.sqf";    //Intro Do Servidor
 	[] execVM "scripts\Limpeza.sqf";    //Melhora Peformance
 	[] execVM "scripts\PF\init.sqf";    //Ambientação Das Casas
 	[] execVM "zonas\safebope.sqf";    //SAFEZONE BOPE
