@@ -3,7 +3,7 @@ REM BY: ROBERIOJR
 Title Servidor BOPE                         Crashs: 0
 set /a crashs+=0
 color 9
-cd C:\a3server\
+cd C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Server
 
   REM ## INICIO DO SCRIPT ##
 
