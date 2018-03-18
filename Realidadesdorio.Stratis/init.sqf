@@ -11,7 +11,7 @@
 	[] execVM "scripts\dlc.sqf";    //Desbloqueia Veiculos Com DLC
 	[] execVM "scripts\gaslacrimo.sqf";    //Gás Lacrimogênio
 	[] execVM "scripts\PuloDoMacaco.sqf";    //Pulo Do Macaco SHIFT + V
-	//[] execVM "scripts\recargaCarreg\Carreg.sqf";    //Recarga De Carregadores CTRL + R //INUTILIZADO
+	[] execVM "scripts\recargaCarreg\Carreg.sqf";    //Recarga De Carregadores CTRL + R
 	[] execVM "scripts\IntroCAM.sqf";    //IntroCAM
 	[] execVM "scripts\Limpeza.sqf";    //Melhora Peformance
 	[] execVM "scripts\PF\init.sqf";    //Ambientação Das Casas

@@ -1,4 +1,4 @@
-#include "scripts\recargaCarreg\Configs\defines.hpp"
-#include "scripts\recargaCarreg\Configs\MagRepack_Dialog_Main.hpp"
-#include "scripts\recargaCarreg\Configs\MagRepack_Dialog_Keybindings.hpp"
-#include "scripts\recargaCarreg\Configs\MagRepack_Dialog_About.hpp"
+#include "Configs\defines.hpp"
+#include "Configs\MagRepack_Dialog_Main.hpp"
+#include "Configs\MagRepack_Dialog_Keybindings.hpp"
+#include "Configs\MagRepack_Dialog_About.hpp"
