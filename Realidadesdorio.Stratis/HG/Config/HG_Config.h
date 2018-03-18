@@ -73,7 +73,7 @@ enableHUD = true;
 enablePaycheck = true;
 enableKillReward = true;
 enableTeamKillPenalty = true;
-enableCrate = true;
+enableCrate = false;
 enableGiveMoney = true;
 enableBuyToGarage = true;
 clearInventory = true;
@@ -82,7 +82,7 @@ deleteBodyOnDisconnect = false;
 resetGaragesOnServerStart = false;
 enablePlayerInventorySave = true;
 enableVehicleInventorySave = true;
-enableXP = false;
+enableXP = true;
 enableKillCount = true;
 enableTags = true;
 enableMarkers = true;
@@ -93,7 +93,7 @@ enableWhitelist = false;
 whitelistSides[] = {"west"};
 
 /* ADMINS */
-admins[] = {"_SP_PLAYER_"};
+admins[] = {"_SP_PLAYER_", "76561198134612622", "76561198090180406", "76561198134612621"};
 
 /* KEYS */
 atmKey = 0x14;
@@ -114,13 +114,13 @@ class HG_MasterCfg
 	class PRIVATE
 	{
 		paycheck = 2000;
-		paycheckPeriod = 30;
-		startCash = 5000;
-		startBank = 50000;
-		killedReward = 500;
+		paycheckPeriod = 15;
+		startCash = 500;
+		startBank = 10000;
+		killedReward = 250;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
-		xpPenaltyPlayer = 10;
+		xpPenaltyPlayer = 20;
 		xpPenaltyAI = 5;
 		xpReward = 10;
 		xpToLvlUp = 1000;
@@ -131,12 +131,12 @@ class HG_MasterCfg
 	class CORPORAL
 	{
 		paycheck = 4000;
-		paycheckPeriod = 30;
-		startCash = 5000;
-		startBank = 50000;
-		killedReward = 1000;
-		tkPenaltyPlayer = 1000;
-		tkPenaltyAI = 500;
+		paycheckPeriod = 15;
+		startCash = 500;
+		startBank = 10000;
+		killedReward = 250;
+		tkPenaltyPlayer = 500;
+		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 20;
 		xpPenaltyAI = 10;
 		xpReward = 20;
@@ -148,12 +148,12 @@ class HG_MasterCfg
 	class SERGEANT
 	{
 		paycheck = 6000;
-		paycheckPeriod = 30;
-		startCash = 5000;
-		startBank = 50000;
-		killedReward = 1500;
-		tkPenaltyPlayer = 1500;
-		tkPenaltyAI = 750;
+		paycheckPeriod = 15;
+		startCash = 500;
+		startBank = 10000;
+		killedReward = 250;
+		tkPenaltyPlayer = 500;
+		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 30;
 		xpPenaltyAI = 15;
 		xpReward = 30;
@@ -165,12 +165,12 @@ class HG_MasterCfg
 	class LIEUTENANT
 	{
 		paycheck = 8000;
-		paycheckPeriod = 30;
-		startCash = 5000;
-		startBank = 50000;
-		killedReward = 2000;
-		tkPenaltyPlayer = 2000;
-		tkPenaltyAI = 1000;
+		paycheckPeriod = 15;
+		startCash = 500;
+		startBank = 10000;
+		killedReward = 250;
+		tkPenaltyPlayer = 500;
+		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 40;
 		xpPenaltyAI = 20;
 		xpReward = 40;
@@ -182,12 +182,12 @@ class HG_MasterCfg
 	class CAPTAIN
 	{
 		paycheck = 10000;
-		paycheckPeriod = 30;
-		startCash = 5000;
-		startBank = 50000;
-		killedReward = 2500;
-		tkPenaltyPlayer = 2500;
-		tkPenaltyAI = 1250;
+		paycheckPeriod = 15;
+		startCash = 500;
+		startBank = 10000;
+		killedReward = 250;
+		tkPenaltyPlayer = 500;
+		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 50;
 		xpPenaltyAI = 25;
 		xpReward = 50;
@@ -199,12 +199,12 @@ class HG_MasterCfg
 	class MAJOR
 	{
 		paycheck = 12000;
-		paycheckPeriod = 30;
-		startCash = 5000;
-		startBank = 50000;
-		killedReward = 3000;
-		tkPenaltyPlayer = 3000;
-		tkPenaltyAI = 1500;
+		paycheckPeriod = 15;
+		startCash = 500;
+		startBank = 10000;
+		killedReward = 250;
+		tkPenaltyPlayer = 500;
+		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 60;
 		xpPenaltyAI = 30;
 		xpReward = 60;
@@ -216,12 +216,12 @@ class HG_MasterCfg
 	class COLONEL
 	{
 		paycheck = 14000;
-		paycheckPeriod = 30;
-		startCash = 5000;
-		startBank = 50000;
-		killedReward = 3500;
-		tkPenaltyPlayer = 3500;
-		tkPenaltyAI = 1750;
+		paycheckPeriod = 15;
+		startCash = 500;
+		startBank = 10000;
+		killedReward = 250;
+		tkPenaltyPlayer = 500;
+		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 70;
 		xpPenaltyAI = 35;
 		xpReward = 70;
