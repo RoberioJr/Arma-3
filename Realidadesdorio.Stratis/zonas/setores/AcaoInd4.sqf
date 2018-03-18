@@ -11,7 +11,7 @@
 {ZonaInd4 setDamage 1;},
 {hint "Você interrompeu a conquista"},
 [],
-12,//Duração
+5,//Duração
 0,
 false, // Remover a ação quando estiver completada (True or False)
 true //Mostrar enquanto estiver inconsciente
