@@ -12,6 +12,7 @@
  //Simple Shops
  if(!hasInterface) exitWith {};
 [] execVM "HG\Setup\fn_clientInitialization.sqf";
+[] execVM "loopRec.sqf";   //Loop de Recompensas das Áreas
  
 
  
