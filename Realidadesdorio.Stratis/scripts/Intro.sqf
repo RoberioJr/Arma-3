@@ -11,37 +11,37 @@
 	  ***************************************
 */
 
-// Triggers the audio intro.ogg via "class CfgMusic" from description.ext
+
 [] spawn {
-	playMusic "FirstyIntro";
+	playMusic "musica1";
 };
-// Loading text on black background change YOURTEXT with what you want. They appear in order, centered on the screen.
+
 	titleCut ["", "BLACK FADED", 999];
 [] Spawn {
-	titleText ["By: RoberioJr","PLAIN"]; 
+	titleText ["Desenvolvido Por: RoberioJr, Marvinn e R.Marques","PLAIN"]; 
 	titleFadeOut 3;
 	sleep 3;
-	titleText ["Teste1","PLAIN"];
+	titleText ["BOPE: Realidades Do Rio","PLAIN"];
 	titleFadeOut 3;
 	sleep 3;
-	titleText ["Teste2","PLAIN"];
+	titleText ["Em Desenvolvimento","PLAIN"];
 	titleFadeOut 3;
 	sleep 3;
-	titleText ["Teste3","PLAIN"];
+	titleText ["Siga O Roleplay","PLAIN"];
 	titleFadeOut 3;
 	sleep 3;
 	titleCut ["", "BLACK IN", 5];
 	};
 	
-// Messages shown ingame on the right "storytelling"
+
 private ["_messages", "_timeout"];
 
 _messages = [
-	["Bem Vindo Ao Bope x Cv", (name player)], // change YOURMAPNAME with the Map you want the script to greet you with.
-	["", "Leia As Regras Antes De Começar"], //First story text
-	["", "Siga O Roleplay"], //Second story text
-	["", "Frase3"], //Third story text
-	["", "Frase4"] //Fourth story text
+	["Bem Vindo Ao Bope: Realidades Do Rio", (name player)],
+	["", "Leia As Regras Antes De Começar"],
+	["", "Siga O Roleplay"],
+	["", "Missão Em Desenvolvimento"],
+	["", "Frase4"]
 ];
 
 _timeout = 8;
