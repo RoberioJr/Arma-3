@@ -20,6 +20,10 @@
 	//Init AntiHack...
 	[] execVM "AntiHack\ACTermal\Init.sqf";    //Anti Termal Hack
 
+	if (hasInterface) then {
+    [] execVM "briefing.sqf"; //Carregar Informações No Mapa
+    };
+	
  // Remover Linhas Do Mapa...
  (createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
  [

@@ -17,13 +17,13 @@ _unit forceAddUniform "legalize";
 _unit addItemToUniform "ACE_EarPlugs";
 _unit addItemToUniform "";
 _unit addVest "V_TacVest_brn";
-for "_i" from 1 to 4 do {_unit addItemToVest "hlc_30Rnd_545x39_t_ak";};
+for "_i" from 1 to 4 do {_unit addItemToVest "hlc_30Rnd_545x39_t_ak";};    //Carregadores 5.45mm Para AKS75u
 for "_i" from 1 to 2 do {_unit addItemToVest "ACE_fieldDressing";};
 _unit addHeadgear "";
 //_unit addGoggles "G_Shades_Green";
 
 
-_unit addWeapon "hlc_rifle_aks74u";
+_unit addWeapon "hlc_rifle_aks74u";    //AKS74u 5.45mm
 _unit addPrimaryWeaponItem "";
 _unit addWeapon "";
 _unit addweapon "";

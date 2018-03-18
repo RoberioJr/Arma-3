@@ -4,14 +4,13 @@
 // Last Update by RobérioJr on 16-03-2018 //
 ////////////////////////////////////////////
 
-// Colocar Abaixo Os SteamUID Dos Jogadores 
-// Autorizados a Jogar De BOPE.
+// Colocar Abaixo Os SteamUID Dos Jogadores Autorizados a Jogar De BOPE
+
 _whitelist = [
 "76561198134612622", //RobérioJr
 "76561198023388875", //NICK2
 "76561198090180406" //Marvinn
 ];
-
 
 // Não Editar Abaixo.
 
