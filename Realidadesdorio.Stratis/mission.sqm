@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=74;
+		nextID=76;
 	};
 	class Camera
 	{
-		pos[]={3037.0193,40.441429,6013.3979};
+		pos[]={3079.1208,129.73161,5955.3193};
 		dir[]={-0.44793195,-0.72946179,0.51696628};
 		up[]={-0.47768274,0.68402123,0.55130249};
 		aside[]={0.75576788,-3.4458935e-008,0.65484464};
@@ -55570,7 +55570,7 @@ class Mission
 			colorName="ColorOrange";
 			a=20;
 			b=2000;
-			angle=111.99993;
+			angle=111.99992;
 			id=4301;
 			atlOffset=-56.449074;
 		};
@@ -59989,7 +59989,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				name="AreaInd2";
+				name="ZonaInd2";
 			};
 			id=4386;
 			type="Flag_White_F";
