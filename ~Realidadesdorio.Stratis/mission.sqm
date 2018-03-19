@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5359.1074,244.00658,5232.3145};
+		pos[]={5362.8174,236.95894,5234.9805};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,-0};
@@ -55570,7 +55570,7 @@ class Mission
 			colorName="ColorOrange";
 			a=20;
 			b=2000;
-			angle=111.99992;
+			angle=111.99991;
 			id=4301;
 			atlOffset=-56.449074;
 		};
@@ -59732,7 +59732,7 @@ class Mission
 			colorName="ColorRed";
 			a=5;
 			b=2000;
-			angle=111.99992;
+			angle=111.99991;
 			id=4368;
 			atlOffset=-58.93383;
 		};
