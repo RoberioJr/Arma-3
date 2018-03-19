@@ -9,7 +9,6 @@
  
  [] execVM "config\WhiteList.sqf";    //Sistema De Whitelist
  [] execVM "scripts\marcadores.sqf";    //Marcadores Do Mapa
- [] execVM "loopRec.sqf";   //Loop de Recompensas das Áreas
  
  //Simple Shops
  if(!hasInterface) exitWith {};
