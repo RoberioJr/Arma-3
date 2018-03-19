@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=76;
+		nextID=78;
 	};
 	class Camera
 	{
-		pos[]={3079.1208,129.73161,5955.3193};
-		dir[]={-0.44793195,-0.72946179,0.51696628};
-		up[]={-0.47768274,0.68402123,0.55130249};
-		aside[]={0.75576788,-3.4458935e-008,0.65484464};
+		pos[]={4430.5225,238.33279,4332.3711};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -500,7 +500,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2991;
+		items=2990;
 		class Item0
 		{
 			dataType="Marker";
@@ -60126,35 +60126,6 @@ class Mission
 		};
 		class Item2988
 		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4425.312,192.19453,4388.8398};
-					};
-					side="East";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=4396;
-					type="O_Soldier_A_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=4395;
-		};
-		class Item2989
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -60169,7 +60140,7 @@ class Mission
 			id=4397;
 			type="Flag_White_F";
 		};
-		class Item2990
+		class Item2989
 		{
 			dataType="Trigger";
 			position[]={3011.623,3.3499999,6035.1699};

@@ -1,7 +1,5 @@
 // MadeBY: Marvinn
 
-private _playerSide = playerSide;
-
 [MorroVidigal, //Nome do Objeto
 "Conquistar o Morro do Vidigal", //Titulo da Ação
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa", //Ícone usado
@@ -10,7 +8,7 @@ private _playerSide = playerSide;
 "player distance MorroVidigal < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{MorroVidigal setFlagSide _playerSide;},
+{MorroVidigal setFlagSide playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 12,//Duração

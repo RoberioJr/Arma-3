@@ -1,7 +1,5 @@
 // MadeBY: Marvinn
 
-private _playerSide = playerSide;
-
 [ZonaInd4, //Nome do Objeto
 "Conquistar a Zona Independente", //Titulo da Ação
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa", //Ícone usado
@@ -10,7 +8,7 @@ private _playerSide = playerSide;
 "player distance ZonaInd4 < 5", //Condição usada para ser aparecido no progresso
 {},
 {},
-{ZonaInd4 setFlagSide _playerSide;},
+{ZonaInd4 setFlagSide playerSide;},
 {hint "Você interrompeu a conquista"},
 [],
 5,//Duração
