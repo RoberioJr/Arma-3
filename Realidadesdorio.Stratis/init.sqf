@@ -39,3 +39,42 @@
  0 fadeRadio 0;
  enableRadio false;
  enableSentences false;
+ 
+
+//            //////////////////////////////////// Configurações De Visão ///////////////////////////////////////              //
+ 
+ CHVD_allowNoGrass = true;
+ CHVD_maxView = 5000;
+ CHVD_maxObj = 5000;
+/*
+CHVD_fnc_drawDebug = {
+	hintSilent format ["
+		VD: %1
+		OVD: %2
+		TG: %3
+	", viewDistance, getObjectViewDistance select 0, getTerrainGrid];
+};
+
+[] spawn {
+	for "_i" from 0 to 1 step 0 do {
+		_currentVD = viewDistance;			
+		waitUntil {_currentVD != viewDistance};
+		call CHVD_fnc_drawDebug;
+	};
+};
+
+[] spawn {
+	for "_i" from 0 to 1 step 0 do {
+		_currentVD = getObjectViewDistance select 0;			
+		waitUntil {_currentVD != getObjectViewDistance select 0};
+		call CHVD_fnc_drawDebug;
+	};
+};
+
+[] spawn {
+	for "_i" from 0 to 1 step 0 do {
+		_currentVD = getTerrainGrid;			
+		waitUntil {_currentVD != getTerrainGrid};
+		call CHVD_fnc_drawDebug;
+	};
+};
