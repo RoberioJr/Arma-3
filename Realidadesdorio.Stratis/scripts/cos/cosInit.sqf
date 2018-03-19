@@ -21,7 +21,7 @@ _aerielActivation=true;// Set if flying units can activate civilian Zones
 
 blackListTowns = ["sagonisi"];// Remove towns from COS
 
-whiteListMkrs=["civil1", "civil2", "civil3"];// Add Custom Markers for COS to populate 
+whiteListMkrs=["civil1"];// Add Custom Markers for COS to populate 
 
 DefaultSide = Civilian;// Set side of units spawned
 
@@ -78,7 +78,7 @@ if (({_name==_x} count blackListTowns)>0 OR (_name == "")) then {}else{
 
 		
 // Customise population by number of houses
-_randomisation=3;
+_randomisation=4;
 	if (_houses <= 10) 
 		then {
 	_civilians=6+ round(random _randomisation);// Civilians spawned
