@@ -7,7 +7,7 @@ waituntil {!alive player ; !isnull (finddisplay 46)};
 if ((getPlayerUID player) in [
 
     "76561198134612622", 
-	"76561198134612621", 
+	"76561198343381444", 
 	"76561198090180406"
 	
  ]) 
