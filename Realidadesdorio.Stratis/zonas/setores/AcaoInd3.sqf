@@ -1,6 +1,6 @@
 // MadeBY: Marvinn
 
-private _playerSide = playerSide
+private _playerSide = playerSide;
 
 [ZonaInd3, //Nome do Objeto
 "Conquistar a Zona Independente", //Titulo da Ação

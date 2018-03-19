@@ -1,6 +1,6 @@
 // MadeBY: Marvinn
 
-private _playerSide = playerSide
+private _playerSide = playerSide;
 
 [NovaHolanda, //Nome do Objeto
 "Conquistar a Nova Holanda", //Titulo da Ação

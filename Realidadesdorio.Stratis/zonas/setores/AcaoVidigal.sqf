@@ -1,6 +1,6 @@
 // MadeBY: Marvinn
 
-private _playerSide = playerSide
+private _playerSide = playerSide;
 
 [MorroVidigal, //Nome do Objeto
 "Conquistar o Morro do Vidigal", //Titulo da Ação

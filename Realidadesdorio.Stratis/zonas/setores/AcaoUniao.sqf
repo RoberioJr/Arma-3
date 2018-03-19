@@ -1,6 +1,6 @@
 // MadeBY: Marvinn
 
-private _playerSide = playerSide
+private _playerSide = playerSide;
 
 [ParqueUniao, //Nome do Objeto
 "Conquistar o Parque União", //Titulo da Ação

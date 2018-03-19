@@ -1,6 +1,6 @@
 // MadeBY: Marvinn
 
-private _playerSide = playerSide
+private _playerSide = playerSide;
 
 [Timbal, //Nome do Objeto
 "Conquistar a O Morro Do Timbal", //Titulo da Ação

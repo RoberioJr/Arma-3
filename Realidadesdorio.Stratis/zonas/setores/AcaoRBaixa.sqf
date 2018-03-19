@@ -1,6 +1,6 @@
 // MadeBY: Marvinn
 
-private _playerSide = playerSide
+private _playerSide = playerSide;
 
 [RocinhaBaixa, //Nome do Objeto
 "Conquistar Rocinha Alta", //Titulo da Ação

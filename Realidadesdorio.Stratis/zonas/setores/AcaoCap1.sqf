@@ -1,6 +1,6 @@
 // MadeBY: Marvinn
 
-private _playerSide = playerSide
+private _playerSide = playerSide;
 
 [AreaCap1, //Nome do Objeto
 "Conquistar a Área Independente", //Titulo da Ação

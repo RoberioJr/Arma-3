@@ -1,5 +1,7 @@
 // MadeBY: Marvinn
 
+private _playerSide = playerSide;
+
 [ZonaInd2, //Nome do Objeto
 "Conquistar a Zona Independente", //Titulo da Ação
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa", //Ícone usado
