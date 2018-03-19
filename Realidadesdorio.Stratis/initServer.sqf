@@ -6,3 +6,4 @@
 
 // Simple Shops
 [] execVM "HG\Setup\fn_serverInitialization.sqf";
+[] execVM "zonas\setores\Recompensa.sqf";
