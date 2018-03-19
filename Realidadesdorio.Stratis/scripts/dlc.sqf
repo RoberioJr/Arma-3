@@ -1,10 +1,9 @@
-/*-----------------------------------------------------------------
-	Author: chasEE
-	Version: 0.7
-	Desc.: DLC Vehicle Unlocker I made for testing out jets, but modified
-	to work all around.
-	Notes: UAV's and turrents are not included (but MAY already work).
------------------------------------------------------------------*/
+/*
+
+    Edit: RobérioJr
+    Desbloqueia Veiculos De DLCs
+
+*/
 
 DLC_Vehicles_Karts = [
 "C_Kart_01_F",
