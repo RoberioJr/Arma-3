@@ -5,7 +5,6 @@
 */
 
 
-
 [] spawn {
    while {true} do {
         player setVariable ["DNI_PlayerFPS", floor diag_fps, true];
