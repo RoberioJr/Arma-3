@@ -3,7 +3,7 @@
 private _playerSide = playerSide;
 
 [RocinhaBaixa, //Nome do Objeto
-"Conquistar Rocinha Alta", //Titulo da Ação
+"Conquistar Rocinha Baixa", //Titulo da Ação
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa", //Ícone usado
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa", //Ícone usado no progresso
 "player distance RocinhaBaixa < 5", //Condição usada para ser aparecido
