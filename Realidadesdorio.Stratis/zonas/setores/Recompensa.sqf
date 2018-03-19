@@ -29,50 +29,50 @@ _flagSide12 = flagSide MorroVidigal;
 
 hintSilent parseText format ["<t size='3.4' color='#ff0000' shadow='0'>AVISO!</t> <t size='1.2'> Você está Saindo Da Favela! Você Será Morto Por Um Sniper! </t>"];
 
-if (_flagSide1 == east && playerSide == east) then{
+if (_flagSide1 == east) then{
      [5000,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide2 == east && playerSide == east) then{
+if (_flagSide2 == east) then{
      [3000,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide3 == east && playerSide == east) then{
+if (_flagSide3 == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide4 == east && playerSide == east) then{
+if (_flagSide4 == east) then{
      [5000,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide5 == east && playerSide == east) then{
+if (_flagSide5 == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide6 == east && playerSide == east) then{
+if (_flagSide6 == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide7 == east && playerSide == east) then{
+if (_flagSide7 == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide8 == east && playerSide == east) then{
+if (_flagSide8 == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide9 == east && playerSide == east) then{
+if (_flagSide9 == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide10 == east && playerSide == east) then{
+if (_flagSide10 == east) then{
      [4100,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide11 == east && playerSide == east) then{
+if (_flagSide11 == east) then{
      [4800,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide12 == east && playerSide == east) then{
+if (_flagSide12 == east) then{
      [4000,0] call HG_fnc_addOrSubCash;
 };

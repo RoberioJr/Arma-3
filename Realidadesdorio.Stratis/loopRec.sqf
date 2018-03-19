@@ -1,4 +1,4 @@
-while {true} do
+while {playerSide == east} do
 {
   waitUntil {alive vehicle player};
  [] execVM "zonas\setores\Recompensa.sqf";
