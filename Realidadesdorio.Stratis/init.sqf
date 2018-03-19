@@ -33,3 +33,9 @@
  	"thisTrigger setTriggerTimeout [30,30,30,false]",
  	"{if (markerShape _x == 'POLYLINE') then {deleteMarker _x}} forEach allMapMarkers"
  ];
+
+ 
+ //Remover Voz De Bots Falando No Radio
+ 0 fadeRadio 0;
+ enableRadio false;
+ enableSentences false;

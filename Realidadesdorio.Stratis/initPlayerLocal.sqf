@@ -15,7 +15,6 @@
  if(!hasInterface) exitWith {};
 [] execVM "HG\Setup\fn_clientInitialization.sqf";
  
-
  
  ////////////////////////////////////////////////////////
  //Script Abaixo Foi Movida Para "config\WhiteList.sqf"//
