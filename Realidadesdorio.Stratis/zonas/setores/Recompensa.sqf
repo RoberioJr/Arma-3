@@ -15,50 +15,50 @@ _flagSide10 = flagSide Timbal;
 _flagSide11 = flagSide ParqueUniao;
 _flagSide12 = flagSide MorroVidigal;
 
-if (_flagSide1 == west && playerSide == west) then{
+if (_flagSide1 == east && playerSide == east) then{
      [5000,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide2 == west && playerSide == west) then{
+if (_flagSide2 == east && playerSide == east) then{
      [3000,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide3 == west && playerSide == west) then{
+if (_flagSide3 == east && playerSide == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide4 == west && playerSide == west) then{
+if (_flagSide4 == east && playerSide == east) then{
      [5000,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide5 == west && playerSide == west) then{
+if (_flagSide5 == east && playerSide == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide6 == west && playerSide == west) then{
+if (_flagSide6 == east && playerSide == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide7 == west && playerSide == west) then{
+if (_flagSide7 == east && playerSide == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide8 == west && playerSide == west) then{
+if (_flagSide8 == east && playerSide == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide9 == west && playerSide == west) then{
+if (_flagSide9 == east && playerSide == east) then{
      [700,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide10 == west && playerSide == west) then{
+if (_flagSide10 == east && playerSide == east) then{
      [4100,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide11 == west && playerSide == west) then{
+if (_flagSide11 == east && playerSide == east) then{
      [4800,0] call HG_fnc_addOrSubCash;
 };
 
-if (_flagSide12 == west && playerSide == west) then{
+if (_flagSide12 == east && playerSide == east) then{
      [4000,0] call HG_fnc_addOrSubCash;
 };
