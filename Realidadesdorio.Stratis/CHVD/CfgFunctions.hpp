@@ -20,6 +20,7 @@ class CHVD
 		class localize {};
 		class trueZoom {};
 		class keyBindings {};
+		class keyDown {};
 		class keyDownTerrain {};
 		class init {postInit = 1;};
 	};
