@@ -9,7 +9,13 @@
  
  [] execVM "config\WhiteList.sqf";    //Sistema De Whitelist
  [] execVM "scripts\marcadores.sqf";    //Marcadores Do Mapa
+<<<<<<< HEAD
  [_player] execVM "loopRec.sqf";
+=======
+ [] execVM "scripts\ZeusFPS.sqf";    //FPS Do Jogador No Modo ZEUS
+ [] execVM "loopRec.sqf";   //Loop de Recompensas das Áreas
+
+>>>>>>> 3daf6288ccce6c6231e814dc7a82fe5fcad975ea
  
  //Simple Shops
  if(!hasInterface) exitWith {};
