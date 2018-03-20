@@ -22,6 +22,7 @@
 	
 	//Init AntiHack...
 	[] execVM "AntiHack\ACTermal\Init.sqf";    //Anti Termal Hack
+	[] execVM "AntiHack\ACScripts\Anticheat.sqf";    //AntiHack Recoil/Injeção De Script/AdminMenu
 
 	if (hasInterface) then {
     [] execVM "briefing.sqf"; //Carregar Informações No Mapa
