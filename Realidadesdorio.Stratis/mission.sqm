@@ -8,7 +8,7 @@ class EditorData
 	toggles=609;
 	class ItemIDProvider
 	{
-		nextID=4497;
+		nextID=4501;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=92;
+		nextID=98;
 	};
 	class Camera
 	{
@@ -506,7 +506,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2992;
+		items=2970;
 		class Item0
 		{
 			dataType="Marker";
@@ -55861,7 +55861,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="private _OwnerOfTheSector = ownerSide; if (playerSide == _OwnerOfTheSector) then { [5000,00] call HG_fnc_addOrSubCash; };";
+							value="_this execVM ""zonas\setores\Recompensa2.sqf""";
 						};
 					};
 				};
@@ -55956,7 +55956,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Conquistar a Favela da Rocinha (5000 a cada 10 Min)";
+							value="Conquistar a Favela da Rocinha ";
 						};
 					};
 				};
@@ -56221,7 +56221,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="_this execVM ""zonas\setores\Recompensa2.sqf""";
 						};
 					};
 				};
@@ -56316,7 +56316,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Conquistar a Favela da Rocinha (3000 a cada 10 min)";
+							value="Conquistar a Favela da Rocinha ";
 						};
 					};
 				};
@@ -56571,7 +56571,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="_this execVM ""zonas\setores\Recompensa2.sqf""";
 						};
 					};
 				};
@@ -56666,7 +56666,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Conquistar o Morro do Vidigal (4000 a cada 10 min)";
+							value="Conquistar o Morro do Vidigal";
 						};
 					};
 				};
@@ -56834,306 +56834,6 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4015.8181,110.26418,7208.7021};
-			};
-			flags=1;
-			id=4341;
-			type="ModuleSector_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleSector_F_DefaultOwner";
-					expression="_this setVariable ['DefaultOwner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="-1";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleSector_F_CostInfantry";
-					expression="_this setVariable ['CostInfantry',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="1";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleSector_F_OnOwnerChange";
-					expression="_this setVariable ['OnOwnerChange',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleSector_F_ScoreReward";
-					expression="_this setVariable ['ScoreReward',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleSector_F_CostWheeled";
-					expression="_this setVariable ['CostWheeled',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="1";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ModuleSector_F_OwnerLimit";
-					expression="_this setVariable ['OwnerLimit',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="ModuleSector_F_TaskTitle";
-					expression="_this setVariable ['TaskTitle',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="ModuleSector_F_Designation";
-					expression="_this setVariable ['Designation',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Conquistar a Zona Independente (700 a cada 10 min)";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="ModuleSector_F_TaskOwner";
-					expression="_this setVariable ['TaskOwner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="ModuleSector_F_CostAir";
-					expression="_this setVariable ['CostAir',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="ModuleSector_F_CostPlayers";
-					expression="_this setVariable ['CostPlayers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="1";
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="ModuleSector_F_CostTracked";
-					expression="_this setVariable ['CostTracked',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="1";
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="ModuleSector_F_TaskDescription";
-					expression="_this setVariable ['TaskDescription',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute13
-				{
-					property="ModuleSector_F_CostWater";
-					expression="_this setVariable ['CostWater',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute14
-				{
-					property="ModuleSector_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Zona Independente";
-						};
-					};
-				};
-				nAttributes=15;
-			};
-		};
-		class Item2939
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={5928.5259,12.17239,5719.4331};
 				angles[]={0.2845585,0,0.012496558};
 			};
@@ -57195,7 +56895,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="_this execVM ""zonas\setores\Recompensa2.sqf""";
 						};
 					};
 				};
@@ -57290,7 +56990,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Conquistar Parque União (4800 a cada 10 min)";
+							value="Conquistar Parque União ";
 						};
 					};
 				};
@@ -57430,7 +57130,7 @@ class Mission
 				nAttributes=15;
 			};
 		};
-		class Item2940
+		class Item2939
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -57442,7 +57142,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=-1.9073486e-006;
 		};
-		class Item2941
+		class Item2940
 		{
 			dataType="Trigger";
 			position[]={6141.1392,2.7444837,5589.8379};
@@ -57454,7 +57154,7 @@ class Mission
 			id=4344;
 			type="EmptyDetector";
 		};
-		class Item2942
+		class Item2941
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -57615,7 +57315,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Conquistar Nova Holanda (5000 a cada 10 min)";
+							value="Conquistar Nova Holanda";
 						};
 					};
 				};
@@ -57755,7 +57455,7 @@ class Mission
 				nAttributes=15;
 			};
 		};
-		class Item2943
+		class Item2942
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -57768,7 +57468,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.9073486e-006;
 		};
-		class Item2944
+		class Item2943
 		{
 			dataType="Trigger";
 			position[]={6296.4136,4.6220083,5424.5176};
@@ -57780,7 +57480,7 @@ class Mission
 			id=4347;
 			type="EmptyDetector";
 		};
-		class Item2945
+		class Item2944
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -57846,7 +57546,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="_this execVM ""zonas\setores\Recompensa2.sqf""";
 						};
 					};
 				};
@@ -57941,7 +57641,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Conquistar o Morro do Timbal (4100 a cada 10 min)";
+							value="Conquistar o Morro do Timbal";
 						};
 					};
 				};
@@ -58081,7 +57781,7 @@ class Mission
 				nAttributes=15;
 			};
 		};
-		class Item2946
+		class Item2945
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -58093,7 +57793,7 @@ class Mission
 			id=4349;
 			type="LocationArea_F";
 		};
-		class Item2947
+		class Item2946
 		{
 			dataType="Trigger";
 			position[]={6561.5747,65.793427,5137.0898};
@@ -58105,7 +57805,7 @@ class Mission
 			id=4350;
 			type="EmptyDetector";
 		};
-		class Item2948
+		class Item2947
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -58172,7 +57872,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="_this execVM ""zonas\setores\Recompensa.sqf""";
 						};
 					};
 				};
@@ -58407,7 +58107,7 @@ class Mission
 				nAttributes=15;
 			};
 		};
-		class Item2949
+		class Item2948
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -58419,7 +58119,7 @@ class Mission
 			id=4354;
 			type="LocationArea_F";
 		};
-		class Item2950
+		class Item2949
 		{
 			dataType="Trigger";
 			position[]={4081.1411,42.020927,5355.4868};
@@ -58432,7 +58132,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=3.8146973e-006;
 		};
-		class Item2951
+		class Item2950
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -58497,7 +58197,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="_this execVM ""zonas\setores\Recompensa.sqf""";
 						};
 					};
 				};
@@ -58732,7 +58432,7 @@ class Mission
 				nAttributes=15;
 			};
 		};
-		class Item2952
+		class Item2951
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -58744,7 +58444,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=-1.5258789e-005;
 		};
-		class Item2953
+		class Item2952
 		{
 			dataType="Trigger";
 			position[]={5345.1289,220.22832,5228.6899};
@@ -58754,7 +58454,7 @@ class Mission
 			id=4358;
 			type="EmptyDetector";
 		};
-		class Item2954
+		class Item2953
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -58820,7 +58520,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="_this execVM ""zonas\setores\Recompensa.sqf""";
 						};
 					};
 				};
@@ -59055,7 +58755,7 @@ class Mission
 				nAttributes=15;
 			};
 		};
-		class Item2955
+		class Item2954
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -59067,7 +58767,7 @@ class Mission
 			id=4360;
 			type="LocationArea_F";
 		};
-		class Item2956
+		class Item2955
 		{
 			dataType="Trigger";
 			position[]={5537.457,78.422997,4729.9448};
@@ -59079,7 +58779,7 @@ class Mission
 			id=4361;
 			type="EmptyDetector";
 		};
-		class Item2957
+		class Item2956
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -59145,7 +58845,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="_this execVM ""zonas\setores\Recompensa.sqf""";
 						};
 					};
 				};
@@ -59380,7 +59080,7 @@ class Mission
 				nAttributes=15;
 			};
 		};
-		class Item2958
+		class Item2957
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -59392,7 +59092,7 @@ class Mission
 			id=4363;
 			type="LocationArea_F";
 		};
-		class Item2959
+		class Item2958
 		{
 			dataType="Trigger";
 			position[]={4362.6265,183.58908,4392.7344};
@@ -59404,7 +59104,7 @@ class Mission
 			id=4364;
 			type="EmptyDetector";
 		};
-		class Item2960
+		class Item2959
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -59470,7 +59170,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="_this execVM ""zonas\setores\Recompensa.sqf""";
 						};
 					};
 				};
@@ -59705,7 +59405,7 @@ class Mission
 				nAttributes=15;
 			};
 		};
-		class Item2961
+		class Item2960
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -59717,7 +59417,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=7.6293945e-006;
 		};
-		class Item2962
+		class Item2961
 		{
 			dataType="Trigger";
 			position[]={2582.7041,110.27619,4919.397};
@@ -59727,7 +59427,7 @@ class Mission
 			id=4367;
 			type="EmptyDetector";
 		};
-		class Item2963
+		class Item2962
 		{
 			dataType="Marker";
 			position[]={2999.3979,52.929688,2448.1777};
@@ -59741,7 +59441,7 @@ class Mission
 			id=4368;
 			atlOffset=-58.93383;
 		};
-		class Item2964
+		class Item2963
 		{
 			dataType="Trigger";
 			position[]={2999.51,111.82355,2448.1741};
@@ -59758,7 +59458,7 @@ class Mission
 			id=4371;
 			type="EmptyDetector";
 		};
-		class Item2965
+		class Item2964
 		{
 			dataType="Trigger";
 			position[]={3008.1509,118.68815,2471.5864};
@@ -59777,359 +59477,7 @@ class Mission
 			id=4372;
 			type="EmptyDetector";
 		};
-		class Item2966
-		{
-			dataType="Trigger";
-			position[]={2895.377,32.859001,5792.0781};
-			class Attributes
-			{
-				condition="call{player distance RocinhaAlta < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoRAlta.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4373;
-			type="EmptyDetector";
-		};
-		class Item2967
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={2893.9309,36.718201,5793.2842};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="RocinhaAlta";
-			};
-			id=4374;
-			type="Flag_White_F";
-		};
-		class Item2968
-		{
-			dataType="Trigger";
-			position[]={2964.6699,25.667866,6173.022};
-			class Attributes
-			{
-				condition="call{player distance MorroVidigal < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoVidigal.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4375;
-			type="EmptyDetector";
-			atlOffset=0.052000046;
-		};
-		class Item2969
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={2963.2241,29.734682,6174.228};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="MorroVidigal";
-			};
-			id=4376;
-			type="Flag_White_F";
-			atlOffset=-0.0090007782;
-		};
-		class Item2970
-		{
-			dataType="Trigger";
-			position[]={6193.7031,4.6643753,5581};
-			class Attributes
-			{
-				condition="call{player distance ParqueUniao < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoUniao.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4377;
-			type="EmptyDetector";
-		};
-		class Item2971
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6192.6089,8.6827335,5580.1138};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="ParqueUniao";
-			};
-			id=4378;
-			type="Flag_White_F";
-		};
-		class Item2972
-		{
-			dataType="Trigger";
-			position[]={6280.7891,6.6521263,5454.0088};
-			class Attributes
-			{
-				condition="call{player distance NovaHolanda < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoHolanda.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4379;
-			type="EmptyDetector";
-			atlOffset=-0.11499977;
-		};
-		class Item2973
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6279.6948,10.883438,5453.123};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="NovaHolanda";
-			};
-			id=4380;
-			type="Flag_White_F";
-			atlOffset=-0.020000935;
-		};
-		class Item2974
-		{
-			dataType="Trigger";
-			position[]={6592.936,80.961205,5194.1182};
-			angle=4.7822022;
-			class Attributes
-			{
-				condition="call{player distance Timbal < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoTimbal.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4381;
-			type="EmptyDetector";
-			atlOffset=-0.10500336;
-		};
-		class Item2975
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6593.7432,85.027283,5192.9639};
-				angles[]={0,4.7822022,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="Timbal";
-			};
-			id=4382;
-			type="Flag_White_F";
-			atlOffset=0.010002136;
-		};
-		class Item2976
-		{
-			dataType="Trigger";
-			position[]={4401.668,192.46822,4425.6191};
-			angle=4.7822022;
-			class Attributes
-			{
-				condition="call{player distance AreaCap1 < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoCap1.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4383;
-			type="EmptyDetector";
-		};
-		class Item2977
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4402.4751,196.44415,4424.4639};
-				angles[]={0,4.7822022,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="AreaCap1";
-			};
-			id=4384;
-			type="Flag_White_F";
-		};
-		class Item2978
-		{
-			dataType="Trigger";
-			position[]={2584.74,110.09105,4913.6792};
-			angle=4.7822022;
-			class Attributes
-			{
-				condition="call{player distance AreaInd2 < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoInd2.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4385;
-			type="EmptyDetector";
-		};
-		class Item2979
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={2585.5471,113.99952,4912.5229};
-				angles[]={0,4.7822022,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="ZonaInd2";
-			};
-			id=4386;
-			type="Flag_White_F";
-		};
-		class Item2980
-		{
-			dataType="Trigger";
-			position[]={5531.0151,77.864769,4719.4258};
-			angle=4.7822022;
-			class Attributes
-			{
-				condition="call{player distance ZonaInd3 < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoInd3.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4387;
-			type="EmptyDetector";
-		};
-		class Item2981
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5531.8218,81.825676,4718.271};
-				angles[]={0,4.7822022,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="ZonaInd3";
-			};
-			id=4388;
-			type="Flag_White_F";
-		};
-		class Item2982
-		{
-			dataType="Trigger";
-			position[]={5360.752,218.86504,5248.6831};
-			angle=4.7822022;
-			class Attributes
-			{
-				condition="call{player distance ZonaInd4 < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoInd4.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4389;
-			type="EmptyDetector";
-		};
-		class Item2983
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5361.5591,222.86041,5247.5278};
-				angles[]={0,4.7822022,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="ZonaInd4";
-			};
-			id=4390;
-			type="Flag_White_F";
-			atlOffset=0.004989624;
-		};
-		class Item2984
-		{
-			dataType="Trigger";
-			position[]={4087.4971,43.646141,5344.1831};
-			angle=4.7822022;
-			class Attributes
-			{
-				condition="call{player distance ZonaInd5 < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoInd5.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4391;
-			type="EmptyDetector";
-			atlOffset=0.0079994202;
-		};
-		class Item2985
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4088.304,47.628296,5343.0278};
-				angles[]={0,4.7822022,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="ZonaInd5";
-			};
-			id=4392;
-			type="Flag_White_F";
-		};
-		class Item2986
-		{
-			dataType="Trigger";
-			position[]={4300.978,134.60651,6796.4561};
-			angle=4.7822022;
-			class Attributes
-			{
-				condition="call{player distance ZonaInd6 < 5;}";
-				onActivation="call{this = [] execVM ""zonas\setores\AcaoInd6.sqf""}";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=4393;
-			type="EmptyDetector";
-		};
-		class Item2987
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4303.959,138.6297,6796.7192};
-				angles[]={0,4.7822022,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				name="ZonaInd6";
-			};
-			id=4394;
-			type="Flag_White_F";
-		};
-		class Item2988
+		class Item2965
 		{
 			dataType="Object";
 			class PositionInfo
@@ -60145,7 +59493,7 @@ class Mission
 			id=4397;
 			type="Flag_White_F";
 		};
-		class Item2989
+		class Item2966
 		{
 			dataType="Trigger";
 			position[]={3011.623,3.3499999,6035.1699};
@@ -60159,7 +59507,7 @@ class Mission
 			id=4399;
 			type="EmptyDetector";
 		};
-		class Item2990
+		class Item2967
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -60170,7 +59518,7 @@ class Mission
 			id=4402;
 			type="Logic";
 		};
-		class Item2991
+		class Item2968
 		{
 			dataType="Group";
 			side="West";
@@ -61453,6 +60801,306 @@ class Mission
 					};
 				};
 				nAttributes=2;
+			};
+		};
+		class Item2969
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4015.8181,110.26418,7208.7021};
+			};
+			flags=1;
+			id=4341;
+			type="ModuleSector_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleSector_F_DefaultOwner";
+					expression="_this setVariable ['DefaultOwner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleSector_F_CostInfantry";
+					expression="_this setVariable ['CostInfantry',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleSector_F_OnOwnerChange";
+					expression="_this setVariable ['OnOwnerChange',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="_this execVM ""zonas\setores\Recompensa.sqf""";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleSector_F_ScoreReward";
+					expression="_this setVariable ['ScoreReward',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleSector_F_CostWheeled";
+					expression="_this setVariable ['CostWheeled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleSector_F_OwnerLimit";
+					expression="_this setVariable ['OwnerLimit',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleSector_F_TaskTitle";
+					expression="_this setVariable ['TaskTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleSector_F_Designation";
+					expression="_this setVariable ['Designation',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Conquistar a Zona Independente (700 a cada 10 min)";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleSector_F_TaskOwner";
+					expression="_this setVariable ['TaskOwner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleSector_F_CostAir";
+					expression="_this setVariable ['CostAir',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleSector_F_CostPlayers";
+					expression="_this setVariable ['CostPlayers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="ModuleSector_F_CostTracked";
+					expression="_this setVariable ['CostTracked',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="ModuleSector_F_TaskDescription";
+					expression="_this setVariable ['TaskDescription',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="ModuleSector_F_CostWater";
+					expression="_this setVariable ['CostWater',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="ModuleSector_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Zona Independente";
+						};
+					};
+				};
+				nAttributes=15;
 			};
 		};
 	};
