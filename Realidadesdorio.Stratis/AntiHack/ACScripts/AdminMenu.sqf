@@ -1,5 +1,6 @@
 /*	
 	AUTHOR: Lystic
+	EDIT: RoberioJR
 	DATE: 06/19/14
 	VERSION: 1.5
 	FILE: AdminMenu.sqf
@@ -9,7 +10,7 @@
 
   /* Configuration */
 
-Admin_List = compileFinal "['76561198003238599','_SP_PLAYER_']";		//replace these with your admin player UIDS (steamID64)
+Admin_List = compileFinal "['76561198134612622','76561198090180406','76561198343381444','_SP_PLAYER_']";		//replace these with your admin player UIDS (steamID64)
 
 /* End Configuration */
 
@@ -60,7 +61,7 @@ if(isServer) then {
 			_v = _vehicle createVehicle _pos;
 			_v setDir _dir;
 			_v setPos _pos;
-			format["%1 has created the vehicle '%2' at the position %3",name _object,_vehicle,_pos] call SERVER_LOG;
+			format["%1 Criou Um Veiculo (%2) Na Posição %3",name _object,_vehicle,_pos] call SERVER_LOG;
 		};
 	};
 	AH_Menu_DoTP = {
@@ -69,7 +70,7 @@ if(isServer) then {
 
 		if(_object call AH_AdminCheck) then {
 			_object setpos _pos;
-			format["%1 has teleported to %2",name _object,_pos] call SERVER_LOG;
+			format["%1 Foi Teleportado Para %2",name _object,_pos] call SERVER_LOG;
 		};
 	};
 	AH_TP_Here = {
@@ -78,8 +79,8 @@ if(isServer) then {
 
 		if(_admin call AH_AdminCheck) then {
 			_target setpos (getpos _admin);
-			format["%1 has teleported to %2",name _target,name _admin] call SERVER_LOG;
-			[{hint "The target has been teleported!";},"BIS_fnc_Spawn",_admin,false] call AH_fnc_MP;
+			format["%1 Foi Teleportado Para %2",name _target,name _admin] call SERVER_LOG;
+			[{hint "O Alvo Foi Teleportado!";},"BIS_fnc_Spawn",_admin,false] call AH_fnc_MP;
 		};
 	};
 	AH_Menu_CleanUp = {
@@ -327,13 +328,13 @@ if(!isDedicated) then {
 					_ctrl = (findDisplay 163) displayctrl 101;
 					_ctrl ctrlSetFont "PuristaSemiBold";
 					_ctrl ctrlAddEventHandler ["LBDblClick",{(_this select 1) call AH_DBLClick}];
-					_ctrl lbAdd "Kick A Player";
-					_ctrl lbAdd "Spectate A Player";
+					_ctrl lbAdd "Expulsar Jogador";
+					_ctrl lbAdd "Espectar Jogador";
 					_ctrl lbAdd "Disable Input";
 					_ctrl lbAdd "Enable Input";
-					_ctrl lbAdd "Cleanup Vehicles";
-					_ctrl lbAdd "Teleport Here";
-					_ctrl lbAdd "God Mode";
+					_ctrl lbAdd "LIMPAR VEICULOS DO MAPA";
+					_ctrl lbAdd "Teleportar Aqui";
+					_ctrl lbAdd "Modo DEUS";
 					if(AH_GM) then {
 						_ctrl lbSetColor [6,[0,1,0,1]];
 					} else {
@@ -375,8 +376,8 @@ if(!isDedicated) then {
 			if !(player call AH_AdminCheck) exitWith {};
 			_target = _this;
 			_target switchCamera "INTERNAL";
-			[format["The admin '%1' has started spectating '%2'!",name player,name _target],"SERVER_LOG",false,false] call AH_fnc_MP;
-			hint "PRESS F10 TO EXIT SPECTATOR MODE";
+			[format["O ADMIN '%1' COMEÇOU A OBSERVAR '%2'!",name player,name _target],"SERVER_LOG",false,false] call AH_fnc_MP;
+			hint "F10 PARA SAIR DO MODO ESPECTADOR";
 			AH_TEMPBIND = (findDisplay 46) displayAddEventHandler ["KeyDown","if((_this select 1) == 68) then {(findDisplay 46) displayRemoveEventHandler ['KeyDown',AH_TEMPBIND];player switchCamera 'INTERNAL';hint 'YOU HAVE EXITED SPECTOR MODE!';};false"];
 		};
 		AH_Target = {
@@ -384,10 +385,10 @@ if(!isDedicated) then {
 			_script = _this;
 			disableserialization;
 			createDialog "RscDisplayChooseEditorLayout";
-			ctrlSetText[1000,"Team-Atomic's Admin Menu - Select a target"];
+			ctrlSetText[1000,"BOPE: Realidades Do Rio Admin Menu - Selecione O Alvo"];
 			if(_script == 0) then {
 				_ctrl = (findDisplay 164) displayctrl 1100;
-				_ctrl ctrlSetStructuredText parseText "<t size='1.1'>Kick A Player</t><br/><t size='0.9'>Select a target to kick from the server!</t>";
+				_ctrl ctrlSetStructuredText parseText "<t size='1.1'>Expulsar Um Jogador</t><br/><t size='0.9'>Selecione O Jogador Para Expulsar!</t>";
 				_ctrl ctrlCommit 0;
 
 				_ctrl = (findDisplay 164) displayctrl 1;
@@ -397,11 +398,11 @@ if(!isDedicated) then {
 			};
 			if(_script == 1) then {
 				_ctrl = (findDisplay 164) displayctrl 1100;
-				_ctrl ctrlSetStructuredText parseText "<t size='1.1'>Spectate A Player</t><br/><t size='0.9'>Select a target to spectate them!</t>";
+				_ctrl ctrlSetStructuredText parseText "<t size='1.1'>Observar Jogador</t><br/><t size='0.9'>Selecione O Jogador Para Observar!</t>";
 				_ctrl ctrlCommit 0;
 
 				_ctrl = (findDisplay 164) displayctrl 1;
-				_ctrl ctrlSetText "Spectate";
+				_ctrl ctrlSetText "Observar";
 				_ctrl buttonSetAction "(lbText[101,lbCurSel 101] call AH_GetObject) spawn AH_Spectate;";
 				_ctrl ctrlCommit 0;
 			};
@@ -427,11 +428,11 @@ if(!isDedicated) then {
 			};
 			if(_script == 4) then {
 				_ctrl = (findDisplay 164) displayctrl 1100;
-				_ctrl ctrlSetStructuredText parseText "<t size='1.1'>Teleport Here</t><br/><t size='0.9'>Teleport the selected player to you!</t>";
+				_ctrl ctrlSetStructuredText parseText "<t size='1.1'>Teleportar Aqui</t><br/><t size='0.9'>Teleportar O Jogador Ate Você!</t>";
 				_ctrl ctrlCommit 0;
 
 				_ctrl = (findDisplay 164) displayctrl 1;
-				_ctrl ctrlSetText "Teleport Here";
+				_ctrl ctrlSetText "Teleportar Aqui";
 				_ctrl buttonSetAction "[[player,(lbText[101,lbCurSel 101] call AH_GetObject)],'AH_TP_Here',false,false] call AH_fnc_MP";
 				_ctrl ctrlCommit 0;
 			};
@@ -451,7 +452,7 @@ if(!isDedicated) then {
 				case 1: {1 spawn AH_Target;};
 				case 2: {2 spawn AH_Target;};
 				case 3: {3 spawn AH_Target;};
-				case 4: {[] spawn {if(player call AH_AdminCheck) then {_sure = ["Are you sure you would like to delete all vehicles?"] call AH_AreYouSure;if(_sure) then {[player,"AH_Menu_CleanUp",false,false] call AH_fnc_MP;};};};};
+				case 4: {[] spawn {if(player call AH_AdminCheck) then {_sure = ["Você Deseja Deletar Todos Os Veiculos Do Mapa?"] call AH_AreYouSure;if(_sure) then {[player,"AH_Menu_CleanUp",false,false] call AH_fnc_MP;};};};};
 				case 5: {4 spawn AH_Target;};
 				case 6: {if(player call AH_AdminCheck) then {AH_GM = !AH_GM; if(AH_GM) then {lbSetColor[101,6,[0,1,0,1]];player allowDamage false;[] spawn AH_CarGod;hint "God Mode ON";} else {lbSetColor[101,6,[1,0,0,1]];player allowDamage true;[] spawn AH_CarGod;hint "God Mode OFF";};};};
 				case 7: {[] spawn AH_MapMarkers;};
@@ -487,7 +488,7 @@ if(!isDedicated) then {
 				AH_PrevMarkers = [];
 				AH_DoneWhileLoop = false;
 				hint "Player Markers ON";
-				[format["The admin '%1' has enabled map markers",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
+				[format["O Admin '%1' Ativou Os Marcadores Do Mapa",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
 				while{AH_PM} do {
 					{
 						if !(_x in allUnits) then {
@@ -511,7 +512,7 @@ if(!isDedicated) then {
 				};
 				AH_DoneWhileLoop = true;
 			} else {
-				[format["The admin '%1' has disabled map markers",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
+				[format["O Admin '%1' Desativou Os Marcadores Do Mapa",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
 				if(isNil "AH_DoneWhileLoop") exitWith {};
 				lbSetColor[101,7,[1,0,0,1]];
 				hint "Player Markers OFF";
@@ -527,7 +528,7 @@ if(!isDedicated) then {
 			if(AH_VM) then {
 				lbSetColor[101,8,[0,1,0,1]];
 				hint "Vehicle Markers ON";
-				[format["The admin '%1' has enabled vehicle markers",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
+				[format["O Admin '%1' Ativou Os Marcadores De Veiculos",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
 				while{AH_VM} do {
 					{
 						if( (_x iskindof "Air" ) || (_x iskindof "Tank") || (_x isKindOf "Land") || (_x isKindOf "Ship"))  then {
@@ -551,7 +552,7 @@ if(!isDedicated) then {
 				};
 			} else {
 				hint "Vehicle Markers OFF";
-				[format["The admin '%1' has disabled vehicle markers",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
+				[format["O Admin '%1' Desativou Os Marcadores De Veiculos",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
 				lbSetColor[101,8,[1,0,0,1]];
 				{
 					if( (_x iskindof "Air" ) || (_x iskindof "Tank") || (_x isKindOf "Land") || (_x isKindOf "Ship"))  then {
@@ -564,7 +565,7 @@ if(!isDedicated) then {
 			if !(player call AH_AdminCheck) exitWith {};
 			AH_NT = !AH_NT;
 			if(AH_NT) then {
-				[format["The admin '%1' has enabled ESP",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
+				[format["O Admin '%1' Ativou O ESP",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
 				lbSetColor[101,9,[0,1,0,1]];
 				addMissionEventHandler["Draw3D", {
 					{
@@ -616,7 +617,7 @@ if(!isDedicated) then {
 				}];
 				hint "Name Tags ON";
 			} else {
-				[format["The admin '%1' has disabled ESP",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
+				[format["O Admin '%1' Desativou O ESP",name player],"SERVER_LOG",false,false] call AH_fnc_MP;
 				hint "Name Tags OFF";
 				removeAllMissionEventHandlers "Draw3D";
 				lbSetColor[101,9,[1,0,0,1]];
@@ -644,7 +645,7 @@ if(!isDedicated) then {
 		AH_AreYouSure = compileFinal ([AH_AreYouSure] call _toCompilableString);
 		AH_SpawnMenu = compileFinal ([AH_SpawnMenu] call _toCompilableString);
 		AH_ViewLogs = compileFinal ([AH_ViewLogs] call _toCompilableString);
-		hint parseText format["Press '%1' to open the admin menu!<br/>Press '%2' to open the spawn menu!<br/>Press F1 F2 and F3 to delete and repair vehicles or open the log menu respectively",(actionKeysNames ["moveRight",1]),(actionKeysNames ["moveLeft",1])];
+		hint parseText format["Aperte '%1' Para Abrir O Painel De ADM!<br/>Aperte '%2' Para Abrir O Menu De Spawn!<br/>F1 F2 e F3 para DELETAR e Reparar veiculos ou abrir o Menu De LOG respectivamente",(actionKeysNames ["moveRight",1]),(actionKeysNames ["moveLeft",1])];
 	};
 };
 

@@ -2,7 +2,7 @@
  Civilian Occupation System
  By BangaBob Edit: RoberioJr
  
- null=[] execVM "cos/cosInit.sqf";
+ null=[] execVM "scripts/cos/cosInit.sqf";
  
  IMPORTANT: BEFORE PROCEEDING ADD AN OBJECT NAMED SERVER INTO THE EDITOR.
  

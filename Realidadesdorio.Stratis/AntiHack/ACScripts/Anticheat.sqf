@@ -1,5 +1,6 @@
 /*	
 	AUTHOR: Lystic
+	EDIT: RoberioJR
 	DATE: 06/19/14
 	VERSION: 1.5
 	FILE: Anticheat.sqf
@@ -10,7 +11,7 @@
   /* Configuration */
 
 _Enabled = true;							//Enable or disable the anticheat
-_Admins = ["76561198003238599"]; 			//Add your admin UID here
+_Admins = ["76561198134612622", "76561198090180406", "76561198343381444"]; 			//Add your admin UID here
 _Use_Life_fnc_MP = true;					//If you are using altis life change this to true
 
 //Add new cheat files & variables & menus to these lists
@@ -47,7 +48,7 @@ if(_Use_Life_fnc_MP) then {
 };
 
 if(isDedicated) then {
-	diag_log "<ANTICHEAT>: Initialized!";
+	diag_log "<ANTICHEAT>: Inicializado!";
 	Notify_Kick = compileFinal '
 		diag_log "<ANTICHEAT> Kicked User";
 		diag_log str(_this);
@@ -72,12 +73,12 @@ if(isDedicated) then {
 	waitUntil{!isnull player};
 	waitUntil{alive player};
 	Receive_Notify = compileFinal "
-		hint format['%1 was kicked for %2. Notify an admin!',_this select 0,_this select 2];
+		hint format['%1 Foi Expulso Por %2. Notifique Um Admin!',_this select 0,_this select 2];
 	";
 
 	if(getplayeruid player in _Admins) exitWith {
-		hint "WELCOME ADMIN";
-		[[format["The Admin %1 has Joined",name player]],"Notify_Load",false,false] call AH_fnc_MP; 
+		hint "Bem Vindo Admin";
+		[[format["O Administrador %1 Conectou No Servidor",name player]],"Notify_Load",false,false] call AH_fnc_MP; 
 	};		
 
 	Kick = compileFinal "
@@ -149,19 +150,19 @@ if(isDedicated) then {
 		while{true} do {
 			waitUntil{!isNull (findDisplay 49)};
 			((findDisplay 49) displayCtrl 2) ctrlEnable false;
-			((findDisplay 49) displayCtrl 2) ctrlSetText "Server Protection By:";
+			((findDisplay 49) displayCtrl 2) ctrlSetText "Proteção Do Servidor by:";
 			((findDisplay 49) displayCtrl 103) ctrlEnable false;
-			((findDisplay 49) displayCtrl 103) ctrlSetText "Team-Atomic";
+			((findDisplay 49) displayCtrl 103) ctrlSetText "RobérioJr";
 			((findDisplay 49) displayCtrl 122) ctrlEnable false;
 			((findDisplay 49) displayCtrl 122) ctrlShow false;
 			((findDisplay 49) displayCtrl 523) ctrlSetText "Public v1.5";
 			waitUntil{isNull (findDisplay 49)}
 		};
 	};
-	[[format["The Player %1 Has Initialized",name player]],"Notify_Load",false,false] call AH_fnc_MP; 
+	[[format["O Jogador %1 Foi Inicializado",name player]],"Notify_Load",false,false] call AH_fnc_MP; 
 };
 
-_exists = loadFile "AdminMenu.sqf";
+_exists = loadFile "AntiHack\ACScripts\AdminMenu.sqf";
 if(_exists != "") then {
-	call compile preprocessfilelinenumbers "AdminMenu.sqf";
+	call compile preprocessfilelinenumbers "AntiHack\ACScripts\AdminMenu.sqf";
 };
