@@ -70,7 +70,7 @@ if(isServer) then {
 
 		if(_object call AH_AdminCheck) then {
 			_object setpos _pos;
-			format["%1 Foi Teleportar do Para %2",name _object,_pos] call SERVER_LOG;
+			format["%1 Foi Teleportado Para %2",name _object,_pos] call SERVER_LOG;
 		};
 	};
 	AH_TP_Here = {
