@@ -12,13 +12,13 @@ sounds[] =
 class hg_lock
 {
 	name = "Lock";
-	sound[] = {"HG\Sounds\lock.ogg",1,1};
+	sound[] = {"audio\trancarveh.ogg",1,1};
 	titles[] = {};
 };
 
 class hg_unlock
 {
 	name = "Unlock";
-	sound[] = {"HG\Sounds\unlock.ogg",1,1};
+	sound[] = {"audio\abrirveh.ogg",1,1};
 	titles[] = {};
 };
