@@ -1,5 +1,5 @@
-_private DonoDoSector = ownerSide this;
+params[ "_sector", "_owner" ];
 
-if (playerSide == DonoDoSector) then {
-     [5000,00] call HG_fnc_addOrSubCash;
+if !( _owner isEqualTo sideUnknown ) then {
+	[5000,0] remoteExec [ "HG_fnc_addOrSubCash", _owner ];
 };
