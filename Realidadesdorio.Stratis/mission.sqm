@@ -55655,7 +55655,7 @@ class Mission
 				angles[]={0.029984757,0,6.2532005};
 			};
 			name="SERVER";
-			init="call{null=[] execVM ""scripts\cos\cosInit.sqf"";}";
+			init="call{}";
 			id=4309;
 			type="Logic";
 		};
