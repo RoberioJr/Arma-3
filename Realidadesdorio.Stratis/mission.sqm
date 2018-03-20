@@ -8,7 +8,7 @@ class EditorData
 	toggles=609;
 	class ItemIDProvider
 	{
-		nextID=4431;
+		nextID=4497;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=88;
+		nextID=92;
 	};
 	class Camera
 	{
-		pos[]={3322.1736,252.96826,2979.8904};
-		dir[]={-0.76313919,-0.62135458,-0.17808937};
-		up[]={-0.60515106,0.78346688,-0.14122017};
-		aside[]={-0.22727889,1.2651908e-006,0.97393417};
+		pos[]={3497.0945,354.11218,6580.2886};
+		dir[]={-0.51597333,-0.69284111,0.50395435};
+		up[]={-0.49566117,0.72103655,0.48411897};
+		aside[]={0.69879878,-1.6766862e-006,0.7154687};
 	};
 };
 binarizationWanted=0;
@@ -55899,7 +55899,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -55994,7 +55994,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -56013,7 +56013,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -56032,7 +56032,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
@@ -56259,7 +56259,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -56354,7 +56354,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -56373,7 +56373,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -56392,7 +56392,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
@@ -56609,7 +56609,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -56704,7 +56704,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -56723,7 +56723,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -56742,7 +56742,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
@@ -56839,7 +56839,6 @@ class Mission
 			flags=1;
 			id=4341;
 			type="ModuleSector_F";
-			atlOffset=7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56933,7 +56932,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57028,7 +57027,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57047,7 +57046,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57066,7 +57065,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
@@ -57234,7 +57233,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57329,7 +57328,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57348,7 +57347,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57367,7 +57366,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
@@ -57559,7 +57558,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57654,7 +57653,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57673,7 +57672,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57885,7 +57884,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57980,7 +57979,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -57999,7 +57998,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -58018,7 +58017,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
@@ -58211,7 +58210,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -58306,7 +58305,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -58325,7 +58324,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -58344,7 +58343,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
@@ -58536,7 +58535,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -58631,7 +58630,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -58650,7 +58649,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -58669,7 +58668,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
@@ -58859,7 +58858,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -58954,7 +58953,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -58973,7 +58972,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -58992,7 +58991,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
@@ -59085,8 +59084,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4312.9902,135.13528,4925.8994};
-				angles[]={0.17324875,0,6.0148177};
+				position[]={4312.9902,135.13538,4925.8989};
+				angles[]={0.17324138,0,6.0148234};
 			};
 			flags=1;
 			id=4362;
@@ -59184,7 +59183,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -59279,7 +59278,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -59298,7 +59297,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -59317,7 +59316,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
@@ -59509,7 +59508,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -59604,7 +59603,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -59623,7 +59622,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2";
+							value="1";
 						};
 					};
 				};
@@ -59642,7 +59641,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4";
+							value="1";
 						};
 					};
 				};
