@@ -17,7 +17,6 @@
 	[] execVM "scripts\PF\init.sqf";    //Ambientação Das Casas
 	[] execVM "zonas\safebope.sqf";    //SAFEZONE BOPE
 	[] execVM "R3F_LOG\init.sqf";    //Sistema De Logica\Interação Com Veiculos e Objetos
-	[] execVM "loopRec.sqf"; //Sistema de loop para recompensas
 	call compile preprocessFile "scripts\Punir\Punir_Init.sqf";    //Punição Por TeamKill
 	
 	//Init AntiHack...
