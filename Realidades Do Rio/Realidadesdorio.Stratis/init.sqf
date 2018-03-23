@@ -79,3 +79,4 @@ CHVD_fnc_drawDebug = {
 		call CHVD_fnc_drawDebug;
 	};
 };
+
