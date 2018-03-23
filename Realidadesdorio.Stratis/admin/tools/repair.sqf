@@ -1,1 +1,0 @@
-cursorTarget setdammage 0;
