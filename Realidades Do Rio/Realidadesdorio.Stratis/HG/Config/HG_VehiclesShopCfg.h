@@ -32,14 +32,25 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 	    displayName = "$STR_HG_SHOP_CIVILIAN";
 		vehicles[] =
 		{
-		    {"C_SUV_01_F",1,"true"}
+		    {"C_SUV_01_F",2000,"true"},
+			{"walker_a3_gtigolf",2000,"true"},
+			{"C_Offroad_01_F",2400,"true"},
+			{"C_Hatchback_01_sport_F",2000,"true"},
+			{"C_Quadbike_01_F",1000,"true"},
+			{"C_Offroad_02_unarmed_F_black",2450,"true"},
+			{"C_Van_01_transport_F",3000,"true"},
+			{"C_Van_01_box_F",3500,"true"},
+			{"C_Van_02_vehicle_F",3250,"true"},
+			{"C_Truck_02_transport_F",4250,"true"},
+			{"C_Truck_02_covered_F",5000,"true"}
 		};
 	    spawnPoints[] =
 		{
-			{"$STR_HG_MARKER_1",{"civilian_vehicles_spawn_1"}}
+			{"$STR_HG_MARKER_1",{"civilian_vehicles_spawn_1",}}
 		};
 	};
-	
+	//Desativado Veiculos Militares...
+	/*
 	class Military
 	{
 	    displayName = "$STR_HG_SHOP_MILITARY";
@@ -52,4 +63,5 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 			{"$STR_HG_MARKER_2",{"military_vehicles_spawn_1"}}
 		};
 	};
+	*/
 };

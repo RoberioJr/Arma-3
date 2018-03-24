@@ -147,7 +147,7 @@
 	</Package>
 	<Package name="Dialogs">
 	    <Key ID="STR_HG_DLG_TOOLTIP">
-		    <Original>Loja De Veiculos BOPE</Original>
+		    <Original>BOPE: Realidades Do Rio</Original>
 			<French></French>
 			<Russian></Russian>
 			<Spanish></Spanish>
@@ -447,7 +447,7 @@
 			<French>Vous avez reçu %1 de la part de %2</French>
 		</Key>
 		<Key ID="STR_HG_PAYCHECK_NOTF">
-		    <Original>Você receberar seu pagamento em %1 minutos</Original>
+		    <Original>Proximo Pagamento Em pagamento em %1 minutos</Original>
 			<Spanish>Recibiras tu siguiente pago en %1 minuto(s)</Spanish>
 			<French>Vous recevrez votre prochain salaire dans %1 minute(s)</French>
 		</Key>

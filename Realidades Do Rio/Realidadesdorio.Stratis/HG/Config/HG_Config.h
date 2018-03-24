@@ -96,11 +96,11 @@ whitelistSides[] = {"west"};
 admins[] = {"_SP_PLAYER_", "76561198134612622", "76561198090180406", "76561198134612621"};
 
 /* KEYS */
-atmKey = 0x14;
-lockUnlockKey = 0x15;
-giveMoneyKey = 0x23;
-giveKeyKey = 0x21;
-adminKey = 0x19;
+atmKey = 0x15;    //Tecla 'Y'
+lockUnlockKey = 0x16;    //Tecla 'U'
+giveMoneyKey = 0x15;    //Tecla 'Y'
+giveKeyKey = 0x14;    //Tecla 'T'
+adminKey = 0x19;    //Tecla 'P'
 
 /* SAVING */
 savingMethod = "extDB";

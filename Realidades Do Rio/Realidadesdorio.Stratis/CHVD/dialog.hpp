@@ -423,7 +423,7 @@ class CHVD_dialog
 		{
 			idc = 1016;
 
-			text = "VIEW:"; //--- ToDo: Localize;
+			text = "Visão:"; //--- ToDo: Localize;
 			x = 7.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 17.4 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;

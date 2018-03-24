@@ -44,7 +44,7 @@
 
 //            //////////////////////////////////// Configurações De Visão ///////////////////////////////////////              //
  
- CHVD_allowNoGrass = true;
+ CHVD_allowNoGrass = true;    //Opção De Desativar Grama 'True = Ativado e False = Desativado'
  CHVD_maxView = 5000;
  CHVD_maxObj = 5000;
 /*
