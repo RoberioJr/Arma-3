@@ -41,7 +41,7 @@ if(isNil "AH_fnc_MP") then {
 				((findDisplay 49) displayCtrl 2) ctrlEnable false;
 				((findDisplay 49) displayCtrl 2) ctrlSetText "Server Protection By:";
 				((findDisplay 49) displayCtrl 103) ctrlEnable false;
-				((findDisplay 49) displayCtrl 103) ctrlSetText "Team-Atomic";
+				((findDisplay 49) displayCtrl 103) ctrlSetText "BOPE: Realidades Do Rio";
 				((findDisplay 49) displayCtrl 122) ctrlEnable false;
 				((findDisplay 49) displayCtrl 122) ctrlShow false;
 				((findDisplay 49) displayCtrl 523) ctrlSetText "Public v1.5";
@@ -207,7 +207,7 @@ if(!isDedicated) then {
 			ADMIN_LOGS = nil;
 			createDialog "RscDisplayChooseEditorLayout";
 			disableSerialization;
-			ctrlSetText[1000,"Team-Atomic's Admin Menu - View Server Logs"];
+			ctrlSetText[1000,"BOPE: Realidades Do Rio Admin Menu - Ver Server Logs"];
 			_ctrl = (findDisplay 164) displayctrl 1;
 			_ctrl ctrlSetText "Close";
 			_ctrl ctrlCommit 0;
@@ -265,10 +265,10 @@ if(!isDedicated) then {
 
 			createDialog "RscDisplayChooseEditorLayout";
 			disableSerialization;
-			ctrlSetText[1000,"Team-Atomic's Admin Menu - Spawn A Vehicle"];
+			ctrlSetText[1000,"BOPE: Realidades Do Rio - Spawnar Veiculo"];
 			_ctrl = (findDisplay 164) displayctrl 1;
 			_ctrl ctrlSetText "Spawn";
-			_ctrl buttonSetAction 'hint "spawning vehicle!";_veh = LAST_SEL_VEH;_dir = getdir vehicle player;_pos = getPos vehicle player;_pos = [(_pos select 0)+8*sin(_dir),(_pos select 1)+8*cos(_dir),0];[[player,_veh,_pos,_dir],"AH_Menu_DoSpawn",false,false] call AH_fnc_MP;';
+			_ctrl buttonSetAction 'hint "Spawnando Veiculo!";_veh = LAST_SEL_VEH;_dir = getdir vehicle player;_pos = getPos vehicle player;_pos = [(_pos select 0)+8*sin(_dir),(_pos select 1)+8*cos(_dir),0];[[player,_veh,_pos,_dir],"AH_Menu_DoSpawn",false,false] call AH_fnc_MP;';
 			_ctrl ctrlCommit 0;
 			_ctrl = (findDisplay 164) displayctrl 101;
 			{
@@ -299,7 +299,7 @@ if(!isDedicated) then {
 		};
 		AH_AreYouSure = {
 			_question = _this select 0;
-			_responce = [_question, "Team-Atomic Admin Menu", "Yes", "No"] call BIS_fnc_guiMessage;
+			_responce = [_question, "BOPE: Realidades Do Rio AdminMenu", "Yes", "No"] call BIS_fnc_guiMessage;
 			_responce
 		};
 		AH_Init = {
@@ -309,7 +309,7 @@ if(!isDedicated) then {
 					createDialog "RscDisplayControlSchemes";
 
 					_ctrl = (findDisplay 163) displayctrl 1000;
-					_ctrl ctrlSetText "Team-Atomic's Admin Menu";
+					_ctrl ctrlSetText "BOPE: Realidades Do Rio Admin Menu";
 					_ctrl ctrlSetFont "PuristaSemiBold";
 					_ctrl ctrlCommit 0;
 
@@ -645,7 +645,7 @@ if(!isDedicated) then {
 		AH_AreYouSure = compileFinal ([AH_AreYouSure] call _toCompilableString);
 		AH_SpawnMenu = compileFinal ([AH_SpawnMenu] call _toCompilableString);
 		AH_ViewLogs = compileFinal ([AH_ViewLogs] call _toCompilableString);
-		hint parseText format["Aperte '%1' Para Abrir O Painel De ADM!<br/>Aperte '%2' Para Abrir O Menu De Spawn!<br/>F1 F2 e F3 para DELETAR e Reparar veiculos ou abrir o Menu De LOG respectivamente",(actionKeysNames ["moveRight",1]),(actionKeysNames ["moveLeft",1])];
+		hint parseText format["Aperte %1 Para Abrir O Painel De ADM!<br/>Aperte %2 Para Abrir O Menu De Spawn!<br/>F1 F2 e F3 para DELETAR e Reparar veiculos ou abrir o Menu De LOG respectivamente",(actionKeysNames ["moveRight",1]),(actionKeysNames ["moveLeft",1])];
 	};
 };
 

@@ -8,9 +8,8 @@
 
 if (isserver) then {
  //Marcador Para Spawn Da Caixa.
-  _spawn = caixa1;
  //Caixa A Ser Spawnada.
-  _caixa = "Box_NATO_WpsSpecial_F" createVehicle getMarkerPos "_spawn";
+  _caixa = "Box_NATO_WpsSpecial_F" createVehicle getMarkerPos "caixa1";
   if((getNumber(missionConfigFile >> "CfgClient" >> "clearInventory")) isEqualTo 1) then
   {
 	clearItemCargoGlobal _caixa;
