@@ -8,7 +8,7 @@ disableSerialization;
 outlw_MR_version = "3.1.1";
 outlw_MR_date = "5 December 2014";
 
-outlw_MR_defaultKeybinding = [false, true, false, 19];
+outlw_MR_defaultKeybinding = [false, true, false, 19];    // Letra R (Ctrl + R) 
 
 outlw_MR_canCreateDialog = true;
 outlw_MR_keybindingMenuActive = false;
