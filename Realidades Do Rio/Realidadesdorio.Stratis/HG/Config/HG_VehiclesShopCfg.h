@@ -46,7 +46,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		};
 	    spawnPoints[] =
 		{
-			{"$STR_HG_MARKER_1",{"civilian_vehicles_spawn_1",}}
+			{"$STR_HG_MARKER_1",{"civilian_vehicles_spawn_1"}}
 		};
 	};
 	//Desativado Veiculos Militares...
