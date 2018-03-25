@@ -65,3 +65,46 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 	};
 	*/
 };
+
+ /*                      //
+/                         /
+/  Loja De Veiculos BOPE  /
+/                         /
+ */                      //
+ 
+class HG_BOPEveiculos // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+    conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+	class BOPE
+	{
+	    displayName = "Viaturas";
+		vehicles[] =
+		{
+		    {"BOPE_Hunter_NATO",1,"true"},
+			{"BOPE_OffRoad_NATO",1,"true"},
+			{"MAverick_BOPE",1,"true"},
+			{"SUV_BOPE",1,"true"},
+			{"GMC_PM",1,"true"}
+	    };
+		spawnPoints[] =
+		{
+			{"bop",{"military_vehicles_spawn_1"}}
+		};
+	};
+	
+	class BOPEaereo
+	{
+		displayName = "Helicopteros";
+		vehicles[] =
+		{
+			{"BOPE_MH9hummingbird",1,"true"},
+			{"BOPE_HellCat",1,"true"}
+		};
+		spawnPoints[] =
+		{
+		    {"hel",{"spawn_heli_bope_1"}}
+		};
+	};
+};
+
