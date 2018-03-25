@@ -75,9 +75,9 @@ enableKillReward = true;
 enableTeamKillPenalty = true;
 enableCrate = false;
 enableGiveMoney = true;
-enableBuyToGarage = true;
+enableBuyToGarage = false;
 clearInventory = true;
-storeVehiclesOnDisconnect = true;
+storeVehiclesOnDisconnect = false;
 deleteBodyOnDisconnect = false;
 resetGaragesOnServerStart = false;
 enablePlayerInventorySave = true;
@@ -113,10 +113,10 @@ class HG_MasterCfg
 {
 	class PRIVATE
 	{
-		paycheck = 2000;
+		paycheck = 400;
 		paycheckPeriod = 15;
-		startCash = 500;
-		startBank = 10000;
+		startCash = 100;
+		startBank = 1000;
 		killedReward = 250;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
@@ -130,9 +130,9 @@ class HG_MasterCfg
 	};
 	class CORPORAL
 	{
-		paycheck = 4000;
+		paycheck = 500;
 		paycheckPeriod = 15;
-		startCash = 500;
+		startCash = 100;
 		startBank = 10000;
 		killedReward = 250;
 		tkPenaltyPlayer = 500;
@@ -141,15 +141,15 @@ class HG_MasterCfg
 		xpPenaltyAI = 10;
 		xpReward = 20;
 		xpToLvlUp = 1500;
-		iShopDiscount = 2;
-		gShopDiscount = 2;
-		vShopDiscount = 2;
+		iShopDiscount = 0;
+		gShopDiscount = 0;
+		vShopDiscount = 0;
 	};
 	class SERGEANT
 	{
-		paycheck = 6000;
+		paycheck = 600;
 		paycheckPeriod = 15;
-		startCash = 500;
+		startCash = 100;
 		startBank = 10000;
 		killedReward = 250;
 		tkPenaltyPlayer = 500;
@@ -158,15 +158,15 @@ class HG_MasterCfg
 		xpPenaltyAI = 15;
 		xpReward = 30;
 		xpToLvlUp = 2000;
-		iShopDiscount = 4;
-		gShopDiscount = 4;
-		vShopDiscount = 4;
+		iShopDiscount = 0;
+		gShopDiscount = 0;
+		vShopDiscount = 0;
 	};
 	class LIEUTENANT
 	{
-		paycheck = 8000;
+		paycheck = 700;
 		paycheckPeriod = 15;
-		startCash = 500;
+		startCash = 100;
 		startBank = 10000;
 		killedReward = 250;
 		tkPenaltyPlayer = 500;
@@ -175,15 +175,15 @@ class HG_MasterCfg
 		xpPenaltyAI = 20;
 		xpReward = 40;
 		xpToLvlUp = 2500;
-		iShopDiscount = 6;
-		gShopDiscount = 6;
-		vShopDiscount = 6;
+		iShopDiscount = 0;
+		gShopDiscount = 0;
+		vShopDiscount = 0;
 	};
 	class CAPTAIN
 	{
-		paycheck = 10000;
+		paycheck = 800;
 		paycheckPeriod = 15;
-		startCash = 500;
+		startCash = 100;
 		startBank = 10000;
 		killedReward = 250;
 		tkPenaltyPlayer = 500;
@@ -192,15 +192,15 @@ class HG_MasterCfg
 		xpPenaltyAI = 25;
 		xpReward = 50;
 		xpToLvlUp = 3000;
-		iShopDiscount = 8;
-		gShopDiscount = 8;
-		vShopDiscount = 8;
+		iShopDiscount = 2;
+		gShopDiscount = 2;
+		vShopDiscount = 2;
 	};
 	class MAJOR
 	{
-		paycheck = 12000;
+		paycheck = 900;
 		paycheckPeriod = 15;
-		startCash = 500;
+		startCash = 100;
 		startBank = 10000;
 		killedReward = 250;
 		tkPenaltyPlayer = 500;
@@ -209,15 +209,15 @@ class HG_MasterCfg
 		xpPenaltyAI = 30;
 		xpReward = 60;
 		xpToLvlUp = 3500;
-		iShopDiscount = 10;
-		gShopDiscount = 10;
-		vShopDiscount = 10;
+		iShopDiscount = 4;
+		gShopDiscount = 4;
+		vShopDiscount = 4;
 	};
 	class COLONEL
 	{
-		paycheck = 14000;
+		paycheck = 1000;
 		paycheckPeriod = 15;
-		startCash = 500;
+		startCash = 100;
 		startBank = 10000;
 		killedReward = 250;
 		tkPenaltyPlayer = 500;
@@ -226,9 +226,9 @@ class HG_MasterCfg
 		xpPenaltyAI = 35;
 		xpReward = 70;
 		xpToLvlUp = 0;
-		iShopDiscount = 12;
-		gShopDiscount = 12;
-		vShopDiscount = 12;
+		iShopDiscount = 5;
+		gShopDiscount = 5;
+		vShopDiscount = 5;
 	};
 };
 

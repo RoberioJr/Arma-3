@@ -27,7 +27,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 {
     conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
 	
-    class Civilian
+    class Civil
 	{
 	    displayName = "$STR_HG_SHOP_CIVILIAN";
 		vehicles[] =
@@ -93,7 +93,7 @@ class HG_BOPEveiculos // HG_DefaultShop is just a placeholder for testing purpos
 		};
 	};
 	
-	class BOPEaereo
+	class BOPEheli
 	{
 		displayName = "Helicopteros";
 		vehicles[] =
