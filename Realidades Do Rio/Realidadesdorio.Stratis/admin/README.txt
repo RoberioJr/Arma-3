@@ -1,9 +1,6 @@
 Para Adicionar Admins:
 Arquivo: admins.sqf
- Linha:
-    waituntil {!alive player ; !isnull (finddisplay 46)};
-  if ((getPlayerUID player) in ["SEU SteamID64"]) then {
-   
+ 
    EX:
  
  waituntil {!alive player ; !isnull (finddisplay 46)};
