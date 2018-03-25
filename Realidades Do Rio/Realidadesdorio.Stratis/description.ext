@@ -45,7 +45,7 @@ class CfgClient
 
 class CfgSounds
 {
-    #include "HG\Sounds\HG_Sounds.h"
+    #include "config\Sons.h"
 };
 
 class CfgFunctions 
