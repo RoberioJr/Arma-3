@@ -30,7 +30,7 @@ __EXEC(HG_Profile = allVariables profileNamespace)
 #include "HG\UI\HG_DialogsMaster.h"
 #include "R3F_LOG\desc_include.h"
 #include "scripts\recargaCarreg\config.hpp"
-#include "CHVD\dialog.hpp"
+#include "scripts\CHVD\dialog.hpp"
 
 class RscTitles
 {
@@ -51,7 +51,7 @@ class CfgSounds
 class CfgFunctions 
 {
 	#include "HG\Functions\HG_Functions.h"
-	#include "CHVD\CfgFunctions.hpp"
+	#include "scripts\CHVD\CfgFunctions.hpp"
 };
 
 class CfgDebriefing
