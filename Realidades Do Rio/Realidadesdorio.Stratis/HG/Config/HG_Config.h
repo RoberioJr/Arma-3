@@ -93,7 +93,7 @@ enableWhitelist = false;
 whitelistSides[] = {"west"};
 
 /* ADMINS */
-admins[] = {"_SP_PLAYER_", "76561198134612622", "76561198090180406", "76561198134612621"};
+admins[] = {"_SP_PLAYER_", "76561198134612622", "76561198090180406", "76561198343381444"};
 
 /* KEYS */
 atmKey = 0x15;    //Tecla 'Y'
