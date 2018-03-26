@@ -8,7 +8,6 @@
 	[] execVM "admin\admins.sqf";    //Painel ADM
     [] execVM "admin\loop.sqf";    //Loop Painel ADM
 	[] execVM "scripts\Cor.sqf";    //Correção De Cor
-	[] execVM "scripts\dlc.sqf";    //Desbloqueia Veiculos Com DLC
 	[] execVM "scripts\gaslacrimo.sqf";    //Gás Lacrimogênio
 	[] execVM "scripts\PuloDoMacaco.sqf";    //Pulo Do Macaco SHIFT + V
 	[] execVM "scripts\recargaCarreg\Carreg.sqf";    //Recarga De Carregadores CTRL + R
@@ -17,7 +16,6 @@
 	[] execVM "scripts\PF\init.sqf";    //Ambientação Das Casas
 	[] execVM "zonas\safebope.sqf";    //SAFEZONE BOPE
 	[] execVM "R3F_LOG\init.sqf";    //Sistema De Logica\Interação Com Veiculos e Objetos
-	call compile preprocessFile "scripts\Punir\Punir_Init.sqf";    //Punição Por TeamKill
 	
 	//Init AntiHack...
 	[] execVM "AntiHack\ACTermal\Init.sqf";    //Anti Termal Hack
