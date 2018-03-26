@@ -54,7 +54,9 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 	["c_van_01_box_f", 40],
 	["c_van_01_transport_f", 25],
 	["i_g_van_01_transport_f", 25],
-	["wheeled_apc_f", 10]
+	["wheeled_apc_f", 10],
+	["MAverick_BOPE", 25],
+	["BOPE_OffRoad_NATO", 20]
 ];
 
 R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
