@@ -95,7 +95,9 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 	["baf_fv510_d", 8],
 	["m113_base", 10],
 	["m2a2_ep1", 8],
-	["aav", 8]
+	["aav", 8],
+	["MAverick_BOPE", 25],
+	["BOPE_OffRoad_NATO", 20]
 ];
 
 R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +

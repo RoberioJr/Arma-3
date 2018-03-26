@@ -29,7 +29,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 	
     class Civil
 	{
-	    displayName = "$STR_HG_SHOP_CIVILIAN";
+	    displayName = "Veiculos Civis";
 		vehicles[] =
 		{
 		    {"C_SUV_01_F",2000,"true"},
@@ -46,24 +46,9 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		};
 	    spawnPoints[] =
 		{
-			{"$STR_HG_MARKER_1",{"civilian_vehicles_spawn_1"}}
+			{"Spawn 1",{"civilian_vehicles_spawn_1"}}
 		};
 	};
-	//Desativado Veiculos Militares...
-	/*
-	class Military
-	{
-	    displayName = "$STR_HG_SHOP_MILITARY";
-		vehicles[] =
-		{
-		    {"B_MRAP_01_F",1,"true"}
-	    };
-		spawnPoints[] =
-		{
-			{"$STR_HG_MARKER_2",{"military_vehicles_spawn_1"}}
-		};
-	};
-	*/
 };
 
  /*                      //
@@ -89,7 +74,7 @@ class HG_BOPEveiculos // HG_DefaultShop is just a placeholder for testing purpos
 	    };
 		spawnPoints[] =
 		{
-			{"bop",{"military_vehicles_spawn_1"}}
+			{"Spawn BOPE",{"military_vehicles_spawn_1"}}
 		};
 	};
 	
@@ -103,7 +88,7 @@ class HG_BOPEveiculos // HG_DefaultShop is just a placeholder for testing purpos
 		};
 		spawnPoints[] =
 		{
-		    {"hel",{"spawn_heli_bope_1"}}
+		    {"Spawn Heli",{"spawn_heli_bope_1"}}
 		};
 	};
 };

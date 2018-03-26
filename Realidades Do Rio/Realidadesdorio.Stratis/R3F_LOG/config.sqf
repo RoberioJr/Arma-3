@@ -102,7 +102,7 @@ R3F_LOG_CFG_unlock_objects_timer = 30;
  * Défini si les objets déplaçable sans simulation de gravité peuvent être position en hauteur sans être contact avec le sol.
  * Les objets sans gravité correspondent à la plupart des objets de décors et de construction.
  */
-R3F_LOG_CFG_no_gravity_objects_can_be_set_in_height_over_ground = true;
+R3F_LOG_CFG_no_gravity_objects_can_be_set_in_height_over_ground = false;
 
 /**
  * LANGUAGE

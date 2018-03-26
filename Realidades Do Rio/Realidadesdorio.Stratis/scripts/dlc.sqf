@@ -191,7 +191,7 @@ DLC_Functions_AddAction = {
 	_config  = (configFile >>  "CfgVehicles" >>  _type);
 	_displayVehicle = if (isText(_config >> "displayName")) then {getText(_config >> "displayName")};
 	_displayVehicle = "<t color='#FFFF00'>" + _displayVehicle + "<t/>";
-	DLC_AddAction_1 = _vehicle addAction ["<t color='#FF0000'>Get in<t/> " + _displayVehicle + " <t color='#FF0000'>without DLC</t>",{player moveInDriver (_this select 0)},[],1,false,true,"","_this distance _target < 8"];
+	DLC_AddAction_1 = _vehicle addAction ["<t color='#FF0000'>Get in<t/> " + _displayVehicle + " <t color='#FF0000'>Sem DLC</t>",{player moveInDriver (_this select 0)},[],1,false,true,"","_this distance _target < 8"];
 	_vehicle setVariable ["DLC_Var_AddAction_Active",true];
 	_vehicle setVariable ["DLC_Var_AddAction_Number",DLC_AddAction_1];
 };
