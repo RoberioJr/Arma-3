@@ -24,3 +24,6 @@ atm_1
 atm_2
 atm_3
 ...
+
+Bloquear Objeto:
+this setVariable ["R3F_LOG_disabled", true];
