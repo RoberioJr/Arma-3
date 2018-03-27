@@ -6,7 +6,6 @@
 
 */
 
-if (isserver) then {
  //Marcador Para Spawn Da Caixa.
  //Caixa A Ser Spawnada.
   _caixa2 = "Box_NATO_WpsSpecial_F" createVehicle getMarkerPos "caixa2";
@@ -18,4 +17,3 @@ if (isserver) then {
     clearBackpackCargoGlobal _caixa2;
   };
   hint "Você Spawnou Uma Caixa. Não Abuse Desse Poder!!";
-};
