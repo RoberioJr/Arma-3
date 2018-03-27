@@ -1,3 +1,9 @@
+/*
+/  Realidades    /     
+/      Do        /     
+/ Rio De Janeiro /
+*/
+
 if (!hasInterface) exitWith {};
 
 SL_jumpBaseHeight = 1.80;

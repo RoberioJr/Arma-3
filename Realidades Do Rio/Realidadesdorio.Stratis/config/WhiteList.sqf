@@ -29,3 +29,14 @@ if(playerSide == west) then
 		}
 	};
 };
+
+
+
+
+
+
+/*
+/  Realidades    /     
+/      Do        /     
+/ Rio De Janeiro /
+*/

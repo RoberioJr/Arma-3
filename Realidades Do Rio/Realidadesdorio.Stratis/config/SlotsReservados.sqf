@@ -1,3 +1,8 @@
+/*
+/  Realidades    /     
+/      Do        /     
+/ Rio De Janeiro /
+*/
 
 SLOTS_RJ = {
 	/*["Arma3 UID", slot variable name] call SLOT_RESERVADO;*/
@@ -39,3 +44,4 @@ RJ_SYSTEMCHAT = {
 	_syschat = _this select 0;
 	systemChat _syschat;
 };
+

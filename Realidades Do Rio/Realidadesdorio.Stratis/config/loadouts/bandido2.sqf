@@ -1,4 +1,10 @@
-﻿waitUntil {!isNull player};
+﻿/*
+/  Realidades    /     
+/      Do        /     
+/ Rio De Janeiro /
+*/
+
+waitUntil {!isNull player};
 
 _unit = _this select 0;
 

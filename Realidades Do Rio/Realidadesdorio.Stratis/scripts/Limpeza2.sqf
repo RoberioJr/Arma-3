@@ -1,3 +1,9 @@
+/*
+/  Realidades    /     
+/      Do        /     
+/ Rio De Janeiro /
+*/
+
 /*private ["_delcode", "_currentworld", "_oldworld", "_newworld", "_notalive"];
 _delcode = {
 	private ["_crew"];

@@ -1,3 +1,9 @@
+/*
+/  Realidades    /     
+/      Do        /     
+/ Rio De Janeiro /
+*/
+
 if (isDedicated) exitWith {}; // is server  
 if (!isNil{aero_player_markers_pos}) exitWith {}; // already running
 
