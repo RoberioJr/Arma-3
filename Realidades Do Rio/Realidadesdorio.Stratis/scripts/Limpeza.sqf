@@ -26,14 +26,14 @@ _ttdVehiclesImmobile = 10*60; // seconds to delete immobile vehicles (0 means do
 
 GVAR(deleteClassesConfig) = [
 	[5*60, ["WeaponHolder","GroundWeaponHolder","WeaponHolderSimulated"]],
-	[60*60, ["TimeBombCore"]],
-	[10*60, ["SmokeShell"]],
+	[50*60, ["TimeBombCore"]],
+	[7*60, ["SmokeShell"]],
 	[5*60, ["CraterLong_small","CraterLong"]],
-	[20*60, ["AGM_SpareWheel","AGM_JerryCan","AGM_SpareTrack","AGM_FastRoping_Helper"]],
-	[20*60, ["#dynamicsound","#destructioneffects","#track","#particlesource"]]
+	[14*60, ["AGM_SpareWheel","AGM_JerryCan","AGM_SpareTrack","AGM_FastRoping_Helper"]],
+	[14*60, ["#dynamicsound","#destructioneffects","#track","#particlesource"]]
 ];
 
-GVAR(resetTimeIfPlayerIsWithin) = 75; // how far away from object player needs to be so it can delete
+GVAR(resetTimeIfPlayerIsWithin) = 60; // how far away from object player needs to be so it can delete
 
 //==================================================================================//
 //=============================== CNFIGURATION end =================================//

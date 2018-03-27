@@ -13,6 +13,7 @@
 	[] execVM "scripts\recargaCarreg\Carreg.sqf";    //Recarga De Carregadores CTRL + R
 	[] execVM "scripts\Intro.sqf";    //Intro Do Servidor
 	[] execVM "scripts\Limpeza.sqf";    //Melhora Peformance
+	[] execVM "scripts\Limpeza2.sqf";    //Melhora Peformance
 	[] execVM "scripts\PF\init.sqf";    //Ambientação Das Casas
 	[] execVM "zonas\safebope.sqf";    //SAFEZONE BOPE
 	[] execVM "R3F_LOG\init.sqf";    //Sistema De Logica\Interação Com Veiculos e Objetos
