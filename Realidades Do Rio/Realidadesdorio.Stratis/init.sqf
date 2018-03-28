@@ -27,6 +27,9 @@
     [] execVM "briefing.sqf";                       //Carregar Informações No Mapa
     };
 	
+	//NameTags...
+	122014 cutrsc ["NameTag","PLAIN"];              //Script NameTags
+	
  // Remover Linhas Do Mapa...
  (createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
  [
