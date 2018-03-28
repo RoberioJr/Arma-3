@@ -66,9 +66,9 @@ class CfgMusic
 {
 	tracks[]={};
 
-	class musica1
+	class musica
 	{
-		name = "musica1";
+		name = "musica";
 		sound[] = {"audio\musica\intro.ogg", db+5, 1.0};
 	};
 };

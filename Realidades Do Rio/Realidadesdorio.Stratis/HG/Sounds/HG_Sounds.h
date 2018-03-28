@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-
+/* //DESATIVAÇÃO, Movido Para Config/Sons.h
 sounds[] = 
 {
 	hg_lock,hg_unlock
