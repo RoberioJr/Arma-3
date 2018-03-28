@@ -7,7 +7,7 @@
 
  //Scripts Aqui:
  
- [] execVM "config\WhiteList.sqf";    //Sistema De Whitelist
+ [] execVM "config\WhiteList.sqf";      //Sistema De Whitelist
  [] execVM "scripts\marcadores.sqf";    //Marcadores Do Mapa
  
  //Simple Shops
