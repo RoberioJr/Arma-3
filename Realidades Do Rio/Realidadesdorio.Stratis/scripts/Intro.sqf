@@ -13,7 +13,7 @@
 
 
 [] spawn {
-	playMusic "musica1";
+	playMusic "musica";
 };
 
 	titleCut ["", "BLACK FADED", 999];
