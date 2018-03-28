@@ -16,7 +16,7 @@
 	[] execVM "scripts\Limpeza2.sqf";    //Melhora Peformance
 	[] execVM "scripts\PF\init.sqf";    //Ambientação Das Casas
 	[] execVM "zonas\safebope.sqf";    //SAFEZONE BOPE
-	[] execVM "R3F_LOG\init.sqf";    //Sistema De Logica\Interação Com Veiculos e Objetos
+	[] execVM "scripts\R3F_LOG\init.sqf";    //Sistema De Logica\Interação Com Veiculos e Objetos
 	
 	//Init AntiHack...
 	[] execVM "AntiHack\ACTermal\Init.sqf";    //Anti Termal Hack
