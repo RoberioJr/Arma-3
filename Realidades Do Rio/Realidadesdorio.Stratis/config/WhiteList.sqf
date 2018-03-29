@@ -31,6 +31,13 @@ if(playerSide == west) then
 	};
 };
 
+/* PERMISSÃO PARA ABRIR PORTAS DO BOPE */
+sleep 20;
+if (playerSide == west) then
+{
+    setVariable ["copLevel",1,true];
+};
+
 
 
 
