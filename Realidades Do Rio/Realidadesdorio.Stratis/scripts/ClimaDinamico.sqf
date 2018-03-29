@@ -30,7 +30,7 @@ _maxWeatherChangeTimeMin = 30;
 
 // Minimum time in minutes that weather (fog and overcast) stays constant between weather changes. Must be less than or equal to 0 and
 // greater than or equal to _minWeatherChangeTimeMin. (Suggested value: 5).
-_minTimeBetweenWeatherChangesMin = 5;
+_minTimeBetweenWeatherChangesMin = 6;
 
 // Maximum time in minutes that weather (fog and overcast) stays unchanged between weather changes. Must be greater than or equal to
 // _minWeatherChangeTimeMin. (Suggested value: 10).

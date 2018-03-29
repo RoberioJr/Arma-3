@@ -58,22 +58,21 @@
 	----------------------------------------------------------------------------------------------
 */
 
-_globalChatPrefix = "[KOBK]";
+_globalChatPrefix = "[BOPE:RDR]";
 
 _globalChatMessagesSleep = 30*60; // 30 minutes sleep per full loop.
 
 _globalChatMessages = [
-    ["You are playing on the [KOBK] A3Wasteland Stratis server.",1],
+    ["Você Está Jogando No BOPE: Realidades Do Rio.",1],
     ["TeamSpeak -> 127.0.0.1:12701",1],
-    ["WWW/Forums -> github.com/soulkobk",30],
-    ["Server restarts are at 6am, 12pm, 6pm and 12am daily (AEST).",1],
-    ["Day/Night cycle is 5 hours day, 1 hour night per 6 hour session.",30],
-    ["Voice and text chat have been disabled, please use TeamSpeak for communication.",30],
-    ["Any queries? Direct them to the administrators via TeamSpeak or the Forum.",30],
-    ["Enjoy the server? Tell your friends!",30],
-    ["Want to become a part of the [KOBK] clan? You can apply via our WWW site.",30],
-    ["Want to help cover server costs? You can donate via our WWW site.",30],
-    ["Enjoy your time on the battle field!",30]
+    ["WWW/Forums -> github.com/RoberioJr",30],
+    ["O Servidor Reinicia Nos Horarios: 12:00|18:00|00:00|06:00.",1],
+    ["Nossa Missão Será Constantemente Atualizada.",30],
+    ["Para Melhor Comunicação, Use Nosso TeamSpeak.",30],
+    ["Alguma Sugestão? Chame Um Administrador No TeamSpeak.",30],
+    ["Doações no Site: boperealidadesdorio.maxhostbr.com",30],
+    ["Quer Ajudar O Servidor a Crescer? Você Pode Divulgar o Servidor Com Seus Amigos.",30],
+    ["Tenha Um bom Jogo, Siga As Regras!",30]
 ];
 
 /*	------------------------------------------------------------------------------------------

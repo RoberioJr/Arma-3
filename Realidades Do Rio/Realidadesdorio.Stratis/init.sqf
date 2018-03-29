@@ -16,8 +16,9 @@
 	[] execVM "scripts\Limpeza.sqf";                //Melhora Peformance
 	[] execVM "scripts\Limpeza2.sqf";               //Melhora Peformance
 	[] execVM "scripts\PF\init.sqf";                //Ambientação Das Casas
-	[] execVM "scripts\R3F_LOG\init.sqf";           //Sistema De Logica\Interação Com Veiculos e Objetos
+	[] execVM "scripts\R3F_LOG\init.sqf";           //Sistema De Logica/Interação Com Veiculos e Objetos
 	[] execVM "scripts\Trafego\init.sqf";           //Sistema De Tráfego/NPCs
+	[] execVM "scripts\ClimaDinamico.sqf";          //Mudança Do Clima (Dinâmico)	
 	
 	//Init AntiHack...
 	[] execVM "AntiHack\ACTermal\Init.sqf";         //Anti Termal Hack
