@@ -84,7 +84,8 @@ class HG_BOPEveiculos // HG_DefaultShop is just a placeholder for testing purpos
 		vehicles[] =
 		{
 			{"BOPE_MH9hummingbird",1,"true"},
-			{"BOPE_HellCat",1,"true"}
+			{"BOPE_HellCat",1,"true"},
+			{"B_Heli_Transport_01_F",1,"true"}
 		};
 		spawnPoints[] =
 		{

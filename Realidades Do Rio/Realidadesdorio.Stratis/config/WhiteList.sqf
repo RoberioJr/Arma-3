@@ -12,6 +12,7 @@ _whitelist = [
 "76561198090180406" //Marvinn
 ];
 
+
 // Não Editar Abaixo.
 
 client_firstSpawn = true;

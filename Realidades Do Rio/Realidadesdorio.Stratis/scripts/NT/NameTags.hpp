@@ -1,7 +1,3 @@
-class RscTitles 
-{ 
-	titles[] = {};
-
 class NameTag
 {
 	idd = -1;
@@ -236,5 +232,4 @@ class NameTag
 			    idc = 140;
 		};
 	};
-};
 };
