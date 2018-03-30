@@ -21,9 +21,8 @@ class HG_DefaultTrader // HG_DefaultTrader is just a placeholder for testing pur
 	
 	interestedIn[] = 
 	{
-		{"UMI_Item_Weed_Bale",750},
-		{"UMI_Item_Cocaine_Brick",900},
-		{"UMI_Item_Coke_Pile_01",800},
-		{"UMI_Item_Money",1000}
+		{"UMI_Item_Weed_Bale",2500},
+		{"UMI_Item_Cocaine_Brick",3000},
+		{"UMI_Item_Coke_Pile_01",1500},
 	};
 };
