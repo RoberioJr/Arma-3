@@ -23,6 +23,7 @@
 	};
 */
 
+/* LOJA DE CARRO */
 class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
 {
     conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
@@ -38,11 +39,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 			{"C_Hatchback_01_sport_F",2000,"true"},
 			{"C_Quadbike_01_F",1000,"true"},
 			{"C_Offroad_02_unarmed_F_black",2450,"true"},
-			{"C_Van_01_transport_F",3000,"true"},
-			{"C_Van_01_box_F",3500,"true"},
 			{"C_Van_02_vehicle_F",3250,"true"},
-			{"C_Truck_02_transport_F",4250,"true"},
-			{"C_Truck_02_covered_F",5000,"true"}
 		};
 	    spawnPoints[] =
 		{
@@ -50,6 +47,29 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		};
 	};
 };
+
+/* LOJA DE CAMINHÃO */
+class HG_Caminhao // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+    conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+    class Caminhao
+	{
+	    displayName = "Loja De Caminhões";
+		vehicles[] =
+		{
+			{"C_Van_01_transport_F",3000,"true"},
+			{"C_Van_01_box_F",3500,"true"},
+			{"C_Truck_02_transport_F",4250,"true"},
+			{"C_Truck_02_covered_F",5000,"true"}
+		};
+	    spawnPoints[] =
+		{
+			{"Spawn 2",{"spawn_caminhao_1"}}
+		};
+	};
+};
+
 
  /*                      //
 /                         /
@@ -59,7 +79,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
  
 class HG_BOPEveiculos // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
 {
-    conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+    conditionToAccess = "(playerSide in [west])"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
 	
 	class BOPE
 	{

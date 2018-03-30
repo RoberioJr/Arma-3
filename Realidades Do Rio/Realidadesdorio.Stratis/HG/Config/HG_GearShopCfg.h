@@ -132,3 +132,108 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		};
 	};
 };
+
+
+ /* LOJA DE ARMAS BOPE */
+ 
+class HG_ArmasBOPE // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+	class Handgun
+	{
+		displayName = "Pistolas";
+		content[] =
+		{
+			{"hgun_P07_F",1500,"true"}
+		};
+	};
+	
+	class AssaultRifle
+	{
+		displayName = "Rifles De Assalto";
+		content[] =
+		{
+			{"arifle_AKM_F",12000,"true"}
+		};
+	};
+	
+	class MachineGun
+	{
+		displayName = "Metralhadoras";
+		content[] =
+		{
+			{"arifle_MX_SW_F",35000,"true"}
+		};
+	};
+	
+	class SubmachineGun
+	{
+		displayName = "SUB Metralhadoras";
+		content[] =
+		{
+			{"SMG_02_f",5000,"true"}
+		};
+	};
+	
+	class SniperRifle
+	{
+		displayName = "Rifle De Precisão";
+		content[] =
+		{
+			{"srifle_dmr_04_f",25000,"true"}
+		};
+	};
+};
+
+/* LOJA DE ARMAS DOS BANDIDOS */
+
+class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+	class Handgun
+	{
+		displayName = "Pistolas";
+		content[] =
+		{
+			{"hgun_P07_F",1500,"true"}
+		};
+	};
+	
+	class AssaultRifle
+	{
+		displayName = "Rifles De Assalto";
+		content[] =
+		{
+			{"arifle_AKM_F",12000,"true"}
+		};
+	};
+	
+	class MachineGun
+	{
+		displayName = "Metralhadoras";
+		content[] =
+		{
+			{"arifle_MX_SW_F",35000,"true"}
+		};
+	};
+	
+	class SubmachineGun
+	{
+		displayName = "SUB Metralhadoras";
+		content[] =
+		{
+			{"SMG_02_f",5000,"true"}
+		};
+	};
+	
+	class SniperRifle
+	{
+		displayName = "Rifle De Precisão";
+		content[] =
+		{
+			{"srifle_dmr_04_f",25000,"true"}
+		};
+	};
+};
