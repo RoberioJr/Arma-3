@@ -13,9 +13,8 @@
     clearMagazineCargoGlobal _caixaM;
     clearWeaponCargoGlobal _caixaM;
     clearBackpackCargoGlobal _caixaM;
+	_caixaM addItemCargo ["UMI_Item_Weed_Bale",1];
+	_caixaM addItemCargo ["UMI_Item_Cocaine_Brick",1];
+	_caixaM addItemCargo ["UMI_Item_Coke_Pile_01",1];
   };
-  _caixaM addItemCargoGlobal ["UMI_Item_Weed_Bale", 4];
-  _caixaM addItemCargoGlobal ["UMI_Item_Cocaine_Brick", 2];
-  _caixaM addItemCargoGlobal ["UMI_Item_Coke_Pile_01", 4];
-  
-  
+ 
