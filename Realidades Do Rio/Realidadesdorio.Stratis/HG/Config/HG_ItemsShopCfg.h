@@ -184,3 +184,21 @@ class HG_ItemBAND // HG_DefaultShop is just a placeholder for testing purposes, 
 		};
 	};
 };
+
+   /* Venda de Drogas */
+
+class HG_ItemDROGAS // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+	class Items
+	{
+	    displayName = "Drogas";
+		items[] =
+		{
+		    {"UMI_Item_Weed_Bale",1250,"true"},
+			{"UMI_Item_Cocaine_Brick",1500,"true"},
+			{"UMI_Item_Coke_Pile_01",750,"true"}
+		};
+	};
+};
