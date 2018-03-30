@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=156;
+		nextID=158;
 	};
 	class Camera
 	{
-		pos[]={5336.6719,102.76333,3669.4834};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={4033.4766,435.48038,3572.9094};
+		dir[]={-0.51830077,-0.31877825,-0.79359573};
+		up[]={-0.17432767,0.94781542,-0.26692262};
+		aside[]={-0.83726811,-1.1897646e-007,0.54682523};
 	};
 };
 binarizationWanted=0;
@@ -68166,7 +68166,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4350.3521,226.69023,3824.2981};
+						position[]={4349.5981,226.67139,3824.415};
 						angles[]={0,1.5184364,0};
 					};
 					side="Civilian";
@@ -68174,6 +68174,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_VEHICLES_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadVehicles},""HG_Caminhao"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
+						disableSimulation=1;
 					};
 					id=5340;
 					type="C_man_p_beggar_F";
@@ -68200,6 +68201,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -68217,7 +68237,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -68236,7 +68256,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};
@@ -68490,6 +68529,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GEAR_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadGear},""HG_ArmasBAND"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
+						disableSimulation=1;
 					};
 					id=5350;
 					type="C_man_hunter_1_F";
@@ -68517,6 +68557,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -68534,7 +68593,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -68553,7 +68612,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};
