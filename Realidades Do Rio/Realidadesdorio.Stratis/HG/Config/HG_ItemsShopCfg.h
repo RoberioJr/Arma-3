@@ -58,3 +58,85 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		};
 	};
 };
+
+ /* SCOPES E CARREGADORES BOPE */
+ 
+class HG_ItemBOPE // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+	class Items
+	{
+	    displayName = "Items";
+		items[] =
+		{
+		    {"ItemWatch",50,"true"},
+			{"ItemCompass",50,"true"},
+			{"ItemGPS",50,"true"},
+			{"ItemRadio",50,"true"},
+			{"ItemMap",50,"true"}
+		};
+	};
+	
+	class Magazines
+	{
+	    displayName = "Carregadores";
+		items[] =
+		{
+		    {"30Rnd_65x39_caseless_mag",250,"true"},
+            {"16Rnd_9x21_Mag",75,"true"},
+	        {"30Rnd_9x21_Mag",150,"true"}
+		};
+	};
+	
+	class Scopes
+	{
+	    displayName = "Lunetas e Miras";
+		items[] =
+		{
+		    {"optic_Arco",1000,"true"},
+			{"optic_Hamr",1000,"true"}
+		};
+	};
+};
+
+ /* SCOPES E CARREGADORES BANDIDOS */
+
+class HG_ItemBAND // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+	class Items
+	{
+	    displayName = "Items";
+		items[] =
+		{
+		    {"ItemWatch",50,"true"},
+			{"ItemCompass",50,"true"},
+			{"ItemGPS",50,"true"},
+			{"ItemRadio",50,"true"},
+			{"ItemMap",50,"true"}
+		};
+	};
+	
+	class Magazines
+	{
+	    displayName = "Carregadores";
+		items[] =
+		{
+		    {"30Rnd_65x39_caseless_mag",250,"true"},
+            {"16Rnd_9x21_Mag",75,"true"},
+	        {"30Rnd_9x21_Mag",150,"true"}
+		};
+	};
+	
+	class Scopes
+	{
+	    displayName = "Lunetas e Miras";
+		items[] =
+		{
+		    {"optic_Arco",1000,"true"},
+			{"optic_Hamr",1000,"true"}
+		};
+	};
+};

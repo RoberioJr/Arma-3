@@ -145,7 +145,10 @@ class HG_ArmasBOPE // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Pistolas";
 		content[] =
 		{
-			{"hgun_P07_F",1500,"true"}
+			{"hgun_Pistol_01_F",1,"true"},
+			{"hgun_Rook40_F",1,"true"},
+			{"hgun_Pistol_heavy_01_F",1,"true"},
+			{"hgun_ACPC2_F",1,"true"}
 		};
 	};
 	
@@ -154,7 +157,26 @@ class HG_ArmasBOPE // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Rifles De Assalto";
 		content[] =
 		{
-			{"arifle_AKM_F",12000,"true"}
+			{"hlc_rifle_FAL5000",1,"true"},
+			{"hlc_rifle_FAL5000Rail",1,"true"},
+			{"hlc_rifle_FAL5061",1,"true"},
+			{"hlc_rifle_FAL5061Rail",1,"true"},
+			{"hlc_rifle_auga3_b",1,"true"},
+			{"hlc_rifle_augsr_b",1,"true"},
+			{"hlc_rifle_aek971",1,"true"},
+			{"hlc_rifle_falosw",1,"true"},
+			{"hlc_rifle_STG58F",1,"true"},
+			{"arifle_Katiba_F",1,"true"},
+			{"hlc_rifle_ak12",1,"true"},
+			{"arifle_MX_Black_F",1,"true"},
+			{"hlc_rifle_RK62",1,"true"},
+			{"arifle_MXM_Black_F",1,"true"},
+			{"arifle_SPAR_01_blk_F",1,"true"},
+			{"hlc_rifle_SLR",1,"true"},
+			{"hlc_rifle_L1A1SLR",1,"true"},
+			{"hlc_rifle_augsr",1,"true"},
+			{"hlc_rifle_augsrhbar_b",1,"true"}
+			
 		};
 	};
 	
@@ -163,7 +185,8 @@ class HG_ArmasBOPE // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Metralhadoras";
 		content[] =
 		{
-			{"arifle_MX_SW_F",35000,"true"}
+			{"LMG_03_F",1,"true"},
+			{"arifle_SPAR_02_blk_F",1,"true"}
 		};
 	};
 	
@@ -172,7 +195,8 @@ class HG_ArmasBOPE // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "SUB Metralhadoras";
 		content[] =
 		{
-			{"SMG_02_f",5000,"true"}
+			{"hlc_smg_mp510",1,"true"},
+			{"hlc_rifle_aku12",1,"true"}
 		};
 	};
 	
@@ -181,7 +205,8 @@ class HG_ArmasBOPE // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Rifle De Precisão";
 		content[] =
 		{
-			{"srifle_dmr_04_f",25000,"true"}
+			{"arifle_SPAR_03_blk_F",1,"true"},
+			{"srifle_DMR_03_F",1,"true"}
 		};
 	};
 };
@@ -206,7 +231,10 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Rifles De Assalto";
 		content[] =
 		{
-			{"arifle_AKM_F",12000,"true"}
+			{"arifle_AKM_F",12000,"true"},
+			{"hlc_rifle_ak74m",11000,"true"},
+			{"hlc_rifle_aku12",11500,"true"},
+			{"hlc_rifle_aek971",9000,"true"}
 		};
 	};
 	
@@ -215,7 +243,10 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Metralhadoras";
 		content[] =
 		{
-			{"arifle_MX_SW_F",35000,"true"}
+			{"arifle_MX_SW_F",35000,"true"},
+			{"hlc_rifle_rpk74n",30000,"true"},
+			{"hlc_rifle_rpk",27000,"true"},
+			{"hlc_rifle_FAL5000_RH",30000,"true"}
 		};
 	};
 	
@@ -224,7 +255,8 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "SUB Metralhadoras";
 		content[] =
 		{
-			{"SMG_02_f",5000,"true"}
+			{"SMG_02_f",5000,"true"},
+			{"hgun_PDW2000_F",3000,"true"}
 		};
 	};
 	
@@ -233,7 +265,7 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Rifle De Precisão";
 		content[] =
 		{
-			{"srifle_dmr_04_f",25000,"true"}
+			{"srifle_dmr_04_f",90000,"true"}
 		};
 	};
 };
