@@ -8,7 +8,6 @@
 /* PERMISSÃO PARA ABRIR PORTAS DO BOPE */
 
 waituntil {alive player};    //Esperar O Jogador Spawnar
-sleep 10;    //Esperar 10 Segundos
 
 /*
 if (playerSide == west) then
