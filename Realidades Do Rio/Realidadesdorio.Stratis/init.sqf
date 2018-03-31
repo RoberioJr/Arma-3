@@ -19,6 +19,7 @@
 	[] execVM "scripts\R3F_LOG\init.sqf";           //Sistema De Logica/Interação Com Veiculos e Objetos
 	[] execVM "scripts\Trafego\init.sqf";           //Sistema De Tráfego/NPCs
 	[] execVM "scripts\ClimaDinamico.sqf";          //Mudança Do Clima (Dinâmico)	
+	[] execVM "scripts\RepararVeiculo.sqf";         //Sistema De Reparo De Veiculos
 	
 	//Init AntiHack...
 	[] execVM "AntiHack\ACTermal\Init.sqf";         //Anti Termal Hack

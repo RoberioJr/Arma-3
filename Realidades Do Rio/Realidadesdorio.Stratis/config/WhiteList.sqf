@@ -1,20 +1,40 @@
 ////////////////////////////////////////////
 // WhiteList Para BOPE                    //
 // By: RobérioJr                          //
-// Last Update by RobérioJr on 16-03-2018 //
+// Last Update by RobérioJr on 31-03-2018 //
 ////////////////////////////////////////////
 
-// Colocar Abaixo Os SteamUID Dos Jogadores Autorizados a Jogar De BOPE
+
+
+//////////////////////////////////////////////////////////////////////////////
+//// Colocar Abaixo Os SteamUID Dos Jogadores Autorizados a Jogar De BOPE ////
+//////////////////////////////////////////////////////////////////////////////
+
 
 _whitelist = [
-"76561198134612622", //RobérioJr
-"76561198343381444", //Marques
-"76561198090180406" //Marvinn
+"76561198134612622",   //RobérioJr
+"76561198343381444",   //Marques
+"76561198090180406"    //Marvinn
 ];
 
 
-// Não Editar Abaixo.
 
+
+
+
+
+
+
+
+
+
+
+
+
+    ///////////////////////////
+    //// Não Editar Abaixo ////
+    ///////////////////////////
+	
 client_firstSpawn = true;
 
 if(playerSide == west) then
@@ -30,9 +50,6 @@ if(playerSide == west) then
 		}
 	};
 };
-
-
-
 
 /*
 /  Realidades    /     

@@ -8,7 +8,7 @@
  //Scripts Aqui:
  
  [] execVM "config\WhiteList.sqf";      //Sistema De Whitelist
- [] execVM "config\copLevel.sqf";       //Variavel Aos Jogadores BOPE
+ [] execVM "config\initSide.sqf";       //Inicialização Jogadores
  [] execVM "scripts\marcadores.sqf";    //Marcadores Do Mapa
  
  //Simple Shops

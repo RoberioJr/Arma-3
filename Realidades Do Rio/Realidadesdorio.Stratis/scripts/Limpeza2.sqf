@@ -38,7 +38,7 @@ while {true} do {
 
 while {true} do
 	{
-	sleep 10;
+	sleep 300;
 	
 		{
 		_sandGlass = _x getVariable "RYD_DeathTime";
