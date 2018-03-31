@@ -22,6 +22,7 @@ _unit forceAddUniform "BOPE_CombatUniform_BLK_shortsleeve";
 _unit addItemToUniform "ACE_EarPlugs";
 _unit addItemToUniform "ACE_salineIV_250";
 _unit addVest "BOPE_carrier_1";
+_unit addItemToVest "TFAR_anprc152";
 _unit addItemToVest "SmokeShell";
 for "_i" from 1 to 5 do {_unit addItemToVest "hlc_20Rnd_762x51_T_fal";};    //Carregadores 20rnd 7.62 mm Para FAL
 for "_i" from 1 to 2 do {_unit addItemToVest "ACE_fieldDressing";};
