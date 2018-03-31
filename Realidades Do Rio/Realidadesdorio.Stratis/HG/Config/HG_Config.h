@@ -100,7 +100,7 @@ atmKey = 0x15;    //Tecla 'Y'
 lockUnlockKey = 0x16;    //Tecla 'U'
 giveMoneyKey = 0x15;    //Tecla 'Y'
 giveKeyKey = 0x14;    //Tecla 'T'
-adminKey = 0x19;    //Tecla 'P'
+adminKey = 0x3F;    //Tecla 'F5'
 
 /* SAVING */
 savingMethod = "extDB";
