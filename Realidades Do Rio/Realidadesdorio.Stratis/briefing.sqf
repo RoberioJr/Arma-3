@@ -25,7 +25,7 @@ Equipe: RoberioJr(Scripts), Marvinn(Scripts) and R.Marques(Cenario/Mapa).<br/><b
         [
             "Atualizações Da Missão",
                 "
-Para Ficar Por Dentro Das Atualizações Acesse: https://github.com/RoberioJr/Arma-3/tree/master/Realidadesdorio.Stratis<br/><br/>
+Para Ficar Por Dentro Das Atualizações Acesse: https://discordapp.com/invite/9zU4khR<br/><br/>
                 "
         ]
     ];
