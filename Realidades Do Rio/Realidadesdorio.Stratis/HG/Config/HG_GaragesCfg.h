@@ -18,12 +18,11 @@
 
 class HG_DefaultGarage // HG_DefaultGarage is just a placeholder for testing purposes, you can delete it completely and make your own
 {
-	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	conditionToAccess = "(playerSide in [east])"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
     allowedTypes[] = {"Car","Truck","Tank","Air"};
 	spawnPoints[] = 
 	{
-		{"Spawn 1",{"garage_spawn_1"}},
-		{"Spawn 2",{"garage_spawn_2","garage_spawn_3"}}
+		{"Spawn CV",{"garage_spawn_1"}},
 	};
 	storePoint = "garage_store";
 };
