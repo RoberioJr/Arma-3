@@ -21,7 +21,7 @@ removeGoggles _unit;
 _unit forceAddUniform "BOPE_CombatUniform_BLK";
 _unit addItemToUniform "FirstAidKit";
 _unit addItemToUniform "Chemlight_green";
-_unit addItemToUniform "TFAR_fadak";
+_unit addItemToUniform "TFAR_anprc154";
 _unit addVest "BOPE_carrier_1";
 for "_i" from 1 to 2 do {_unit addItemToVest "11Rnd_45ACP_Mag";};
 _unit addItemToVest "SmokeShell";
