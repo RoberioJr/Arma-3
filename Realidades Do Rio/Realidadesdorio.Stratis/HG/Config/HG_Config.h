@@ -65,7 +65,7 @@
 */
 
 /* MONEY */
-currencyType = "USD";
+currencyType = "BRL";
 
 /* SYSTEMS */
 resetSavedMoney = false;
@@ -83,7 +83,7 @@ resetGaragesOnServerStart = false;
 enablePlayerInventorySave = true;
 enableVehicleInventorySave = true;
 enableXP = true;
-enableKillCount = true;
+enableKillCount = false;
 enableTags = true;
 enableMarkers = false;
 enableATM = true;
