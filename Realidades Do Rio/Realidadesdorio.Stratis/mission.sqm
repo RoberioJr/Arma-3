@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=172;
+		nextID=176;
 	};
 	class Camera
 	{
 		pos[]={4317.6538,207.57059,4343.5161};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -52763,7 +52763,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""]; execVM ""config\WhitelistCV.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""]; []execVM ""config\WhitelistCV.sqf"";" \n "}";
 						name="fg16";
 						description="Líder do Comando Vermelho";
 						isPlayable=1;
@@ -55539,6 +55539,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg57";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -55647,6 +55648,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg56";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -55863,6 +55865,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg55";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -55971,6 +55974,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg54";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -56080,6 +56084,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg53";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -56189,6 +56194,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg52";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -56407,6 +56413,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg51";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -56516,6 +56523,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg50";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -56625,6 +56633,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg49";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -56734,6 +56743,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg48";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -56843,6 +56853,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg47";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -56952,6 +56963,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg46";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -57061,6 +57073,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg45";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -57169,6 +57182,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg44";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -57277,6 +57291,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg43";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -57385,6 +57400,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg42";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -57493,6 +57509,7 @@ class Mission
 					class Attributes
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
+						name="fg41";
 						description="Bandido ";
 						isPlayable=1;
 						class Inventory
@@ -57593,14 +57610,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3711.979,46.894928,7605.7847};
+						position[]={3712.146,51.141842,7592.833};
 						angles[]={0.034993853,0,0.069882989};
 					};
 					side="Independent";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];" \n "execVM ""config\WhitelistFAC.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];" \n "[]execVM ""config\WhitelistFAC.sqf"";" \n "}";
+						name="fg58";
 						description="Líder do //FACÇÃO SEM NOME//";
 						isPlayable=1;
 						class Inventory
@@ -57615,6 +57633,7 @@ class Mission
 					};
 					id=4257;
 					type="I_Survivor_F";
+					atlOffset=1.1570015;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -70107,11 +70126,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4370.332,146.06714,6784.7642};
+				position[]={4370.332,146.06705,6784.7642};
 			};
 			id=5572;
 			type="ModuleRespawnPosition_F";
-			atlOffset=16.414093;
+			atlOffset=16.414001;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -70148,7 +70167,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Rocinha Parte Baixa";
+							value="Comunidade do Comando Vermelho";
 						};
 					};
 				};
@@ -70837,18 +70856,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4316.0527,178.04016,4375.2368};
+				position[]={4316.0532,178.03981,4375.2373};
 				angles[]={0,5.0265484,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GARAGE"")+""</t>"",{_this call HG_fnc_dialogOnLoadGarage},""HG_DefaultGarage"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];" \n "this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GARAGE_PARK"")+""</t>"",{_this call HG_fnc_storeVehicleClient},""HG_DefaultGarage"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
+				init="call{this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GARAGE"")+""</t>"",{_this call HG_fnc_dialogOnLoadGarage},""HG_GaragemFAC"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];" \n "this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GARAGE_PARK"")+""</t>"",{_this call HG_fnc_storeVehicleClient},""HG_GaragemFAC"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
 			};
 			id=5628;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.081436157;
+			atlOffset=0.080993652;
 		};
 		class Item3287
 		{
@@ -70857,7 +70876,7 @@ class Mission
 			name="garage_spawn_2";
 			text="Spawn Veiculo Faccao Sem nome";
 			type="Empty";
-			angle=342.99997;
+			angle=342.99991;
 			id=5629;
 			atlOffset=-0.00028991699;
 		};
@@ -70868,7 +70887,7 @@ class Mission
 			name="garage_store_2";
 			text="Guardar Veiculo Faccao Sem Nome";
 			type="Empty";
-			angle=342.99997;
+			angle=342.99991;
 			id=5630;
 			atlOffset=0.00044250488;
 		};
