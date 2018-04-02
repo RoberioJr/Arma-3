@@ -9,6 +9,7 @@
  
  [] execVM "config\WhiteList.sqf";      //Sistema De Whitelist
  [] execVM "config\WhitelistCV.sqf";    //Slot do Líder do Comando Vermelho
+ [] execVM "config\Task.sqf";
 <<<<<<< HEAD
  [] execVM "config\initSide.sqf";       //Inicialização Jogadores
 =======
