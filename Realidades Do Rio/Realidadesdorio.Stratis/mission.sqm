@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=674;
+	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=5632;
+		nextID=5635;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=176;
+		nextID=178;
 	};
 	class Camera
 	{
@@ -737,7 +737,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3290;
+		items=3288;
 		class Item0
 		{
 			dataType="Marker";
@@ -55541,7 +55541,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg57";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -55650,7 +55649,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg56";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -55758,7 +55756,6 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -55867,7 +55864,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg55";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -55976,7 +55972,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg54";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -56086,7 +56081,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg53";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -56196,7 +56190,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg52";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -56305,7 +56298,6 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -56415,7 +56407,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg51";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -56525,7 +56516,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg50";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -56635,7 +56625,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg49";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -56745,7 +56734,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg48";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -56855,7 +56843,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg47";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -56965,7 +56952,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg46";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -57075,7 +57061,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg45";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -57184,7 +57169,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg44";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -57293,7 +57277,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg43";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -57402,7 +57385,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg42";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -57511,7 +57493,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg41";
 						description="Bandido ";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -57620,7 +57601,6 @@ class Mission
 						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];" \n "[]execVM ""config\WhitelistFAC.sqf"";" \n "}";
 						name="fg58";
 						description="Líder do //FACÇÃO SEM NOME//";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -70746,17 +70726,18 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4385.8535,192.4456,4351.7837};
+				position[]={4312.916,166.02124,5080.561};
 			};
-			id=5627;
-			type="ModuleRespawnPosition_F";
-			atlOffset=13.776245;
+			flags=1;
+			id=5632;
+			type="ModuleSector_F";
+			atlOffset=60.822945;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ModuleRespawnPosition_F_Marker";
-					expression="_this setVariable ['Marker',_value,true];";
+					property="ModuleSector_F_DefaultOwner";
+					expression="_this setVariable ['DefaultOwner',_value,true];";
 					class Value
 					{
 						class data
@@ -70768,52 +70749,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="0";
+							value="-1";
 						};
 					};
 				};
 				class Attribute1
 				{
-					property="ModuleRespawnPosition_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Comunidade da //Facção sem Nome//";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleRespawnPosition_F_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="2";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleRespawnPosition_F_ShowNotification";
-					expression="_this setVariable ['ShowNotification',_value,true];";
+					property="ModuleSector_F_CostInfantry";
+					expression="_this setVariable ['CostInfantry',_value,true];";
 					class Value
 					{
 						class data
@@ -70829,10 +70772,29 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute2
 				{
-					property="ModuleRespawnPosition_F_Type";
-					expression="_this setVariable ['Type',_value,true];";
+					property="ModuleSector_F_OnOwnerChange";
+					expression="_this setVariable ['OnOwnerChange',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="_this execVM ""zonas\setores\Recompensa.sqf""";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleSector_F_ScoreReward";
+					expression="_this setVariable ['ScoreReward',_value,true];";
 					class Value
 					{
 						class data
@@ -70848,70 +70810,253 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				class Attribute4
+				{
+					property="ModuleSector_F_CostWheeled";
+					expression="_this setVariable ['CostWheeled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleSector_F_OwnerLimit";
+					expression="_this setVariable ['OwnerLimit',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleSector_F_TaskTitle";
+					expression="_this setVariable ['TaskTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Conquiste a Zona Independente";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleSector_F_Designation";
+					expression="_this setVariable ['Designation',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Conquistar a Zona Independente (700 a cada 10 min)";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleSector_F_TaskOwner";
+					expression="_this setVariable ['TaskOwner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleSector_F_CostAir";
+					expression="_this setVariable ['CostAir',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleSector_F_CostPlayers";
+					expression="_this setVariable ['CostPlayers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="ModuleSector_F_CostTracked";
+					expression="_this setVariable ['CostTracked',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="ModuleSector_F_TaskDescription";
+					expression="_this setVariable ['TaskDescription',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Assegure de não ter algum inimigo ";
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="ModuleSector_F_CostWater";
+					expression="_this setVariable ['CostWater',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="ModuleSector_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Zona Independente";
+						};
+					};
+				};
+				nAttributes=15;
 			};
 		};
 		class Item3286
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4316.0532,178.03981,4375.2373};
-				angles[]={0,5.0265484,0};
+				position[]={4372.9189,198.198,4780.5449};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="call{this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GARAGE"")+""</t>"",{_this call HG_fnc_dialogOnLoadGarage},""HG_GaragemFAC"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];" \n "this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GARAGE_PARK"")+""</t>"",{_this call HG_fnc_storeVehicleClient},""HG_GaragemFAC"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
-			};
-			id=5628;
-			type="Land_InfoStand_V1_F";
-			atlOffset=0.080993652;
+			name="ZonaCap3_1";
+			id=5633;
+			type="LocationArea_F";
+			atlOffset=67.92807;
 		};
 		class Item3287
 		{
-			dataType="Marker";
-			position[]={4324.4531,177.276,4367.1748};
-			name="garage_spawn_2";
-			text="Spawn Veiculo Faccao Sem nome";
-			type="Empty";
-			angle=342.99991;
-			id=5629;
-			atlOffset=-0.00028991699;
-		};
-		class Item3288
-		{
-			dataType="Marker";
-			position[]={4316.6812,177.379,4374.9668};
-			name="garage_store_2";
-			text="Guardar Veiculo Faccao Sem Nome";
-			type="Empty";
-			angle=342.99991;
-			id=5630;
-			atlOffset=0.00044250488;
-		};
-		class Item3289
-		{
-			dataType="Marker";
-			position[]={4316.124,177.468,4375.27};
-			name="marker_238";
-			text="Garagem de Veículos";
-			type="mil_flag";
-			colorName="ColorGUER";
-			id=5631;
-			atlOffset=0.082641602;
+			dataType="Trigger";
+			position[]={4359.8438,186.85059,4387.5171};
+			class Attributes
+			{
+				sizeA=70;
+				sizeB=70;
+			};
+			id=5634;
+			type="EmptyDetector";
+			atlOffset=5.2386017;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=32;
+			nextID=35;
 		};
 		class Links
 		{
-			items=32;
+			items=35;
 			class Item0
 			{
 				linkID=0;
@@ -71227,6 +71372,36 @@ class Mission
 				linkID=31;
 				item0=4366;
 				item1=4367;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item32
+			{
+				linkID=32;
+				item0=4329;
+				item1=5632;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item33
+			{
+				linkID=33;
+				item0=5633;
+				item1=5634;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item34
+			{
+				linkID=34;
+				item0=5632;
+				item1=5633;
 				class CustomData
 				{
 					type="Sync";
