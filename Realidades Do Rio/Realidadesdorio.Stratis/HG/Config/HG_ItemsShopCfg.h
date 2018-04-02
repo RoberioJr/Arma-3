@@ -168,9 +168,12 @@ class HG_ItemBAND // HG_DefaultShop is just a placeholder for testing purposes, 
 	    displayName = "Carregadores";
 		items[] =
 		{
-		    {"30Rnd_65x39_caseless_mag",250,"true"},
-            {"16Rnd_9x21_Mag",75,"true"},
-	        {"30Rnd_9x21_Mag",150,"true"}
+            {"16Rnd_9x21_Mag",150,"true"},
+			{"30Rnd_762x39_Mag_Tracer_Green_F",250,"true"},
+			{"30Rnd_545x39_Mag_Tracer_Green_F",250,"true"},
+			{"hlc_30Rnd_545x39_t_ak",400,"true"},
+			{"hlc_20Rnd_762x51_T_fal",450,"true"},
+			{"30Rnd_9x21_Yellow_Mag",180,"true"}
 		};
 	};
 	
@@ -196,9 +199,9 @@ class HG_ItemDROGAS // HG_DefaultShop is just a placeholder for testing purposes
 	    displayName = "Drogas";
 		items[] =
 		{
-		    {"UMI_Item_Weed_Bale",1250,"true"},
-			{"UMI_Item_Cocaine_Brick",1500,"true"},
-			{"UMI_Item_Coke_Pile_01",750,"true"}
+		    {"UMI_Item_Weed_Bale",750,"true"},
+			{"UMI_Item_Cocaine_Brick",2000,"true"},
+			{"UMI_Item_Coke_Pile_01",1500,"true"}
 		};
 	};
 };
