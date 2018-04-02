@@ -19,4 +19,5 @@ while(_var) do {
 
 if (call TFAR_fnc_isTeamSpeakPluginEnabled) then {
      _var = false;
+     [] execVM "intro.sqf";
 };
