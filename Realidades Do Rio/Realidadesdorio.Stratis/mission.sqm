@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=546;
+	toggles=674;
 	class ItemIDProvider
 	{
 		nextID=5635;
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=178;
+		nextID=180;
 	};
 	class Camera
 	{
@@ -57598,7 +57598,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];" \n "[]execVM ""config\WhitelistFAC.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido2.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\bandido2.sqf'""];}";
 						name="fg58";
 						description="Líder do //FACÇÃO SEM NOME//";
 						class Inventory
