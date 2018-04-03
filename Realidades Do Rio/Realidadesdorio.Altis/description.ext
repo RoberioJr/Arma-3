@@ -10,9 +10,9 @@ class Header
 {
 	gameType=Sandbox;
 	minPlayers=1;
-	maxPlayers=80;
+	maxPlayers=60;
 };
-author="RoberioJr, R. Marques and Marvinn";
+author="RoberioJr, R. Marques, Marvinn and Medeiros";
 onLoadName = "BOPE - Realidades Do Rio";
 onLoadMission = "Desenvolvimento.";
 overviewText = "Desenvolvimento, 123.";
