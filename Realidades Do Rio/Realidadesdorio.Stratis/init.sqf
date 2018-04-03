@@ -84,4 +84,19 @@ CHVD_fnc_drawDebug = {
 	};
 };
 
+/*           //////////////////////////////////// Script só ativado quando o servidor do ts sair ///////////////////////////////////////
 
+//Configurações do TFAR
+tf_radio_channel_name = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_name");
+tf_radio_channel_password = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_password");
+
+//Execute the following only on clients.
+if (hasInterface) then
+{
+	if ((getNumber (missionConfigFile >> "ForceTFAR" >> "ftfar_is_enabled")) isEqualTo 1) then
+	{
+		[] spawn compile preprocessFileLineNumbers "config\Client\Task.sqf";
+	};
+};
+
+*/

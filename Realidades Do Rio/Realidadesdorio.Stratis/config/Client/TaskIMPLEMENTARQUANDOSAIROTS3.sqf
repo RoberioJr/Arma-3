@@ -28,10 +28,10 @@ if !(isClass (configFile >> "CfgPatches" >> "task_force_radio")) exitWith
 	};
 };
 
-ftfar_server_name = getText (missionConfigFile >> "ForceTFAR" >> "NOME DO SERVIDOR TS");
-ftfar_server_ipaddress = getText (missionConfigFile >> "ForceTFAR" >> "IP DO TS");
-ftfar_server_password = getText (missionConfigFile >> "ForceTFAR" >> "SENHA DO SERVIDOR TS");
-ftfar_wait_for_action_time = getNumber (missionConfigFile >> "ForceTFAR" >> "1");
+ftfar_server_name = getText (missionConfigFile >> "ForceTFAR" >> "ftfar_server_name");
+ftfar_server_ipaddress = getText (missionConfigFile >> "ForceTFAR" >> "ftfar_server_ipaddress");
+ftfar_server_password = getText (missionConfigFile >> "ForceTFAR" >> "ftfar_server_password");
+ftfar_wait_for_action_time = getNumber (missionConfigFile >> "ForceTFAR" >> "ftfar_wait_for_action_time");
 
 TFS_fnc_ftfar_checkTeamSpeakServer =
 {
