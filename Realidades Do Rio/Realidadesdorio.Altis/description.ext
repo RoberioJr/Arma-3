@@ -1,0 +1,75 @@
+disableChannels[] = {{0,false,true}, {2,true,true}}; // 0 = global, 1 = side, 2 = command
+joinUnassigned = 0;
+corpseManagerMode = 0;
+wreckManagerMode = 0;
+corpseRemovalMinTime = 10*60;
+corpseRemovalMaxTime = 15*60;
+wreckRemovalMinTime = 5*60;
+wreckRemovalMaxTime = 10*60;
+class Header
+{
+	gameType=Sandbox;
+	minPlayers=1;
+	maxPlayers=80;
+};
+author="RoberioJr, R. Marques and Marvinn";
+onLoadName = "BOPE - Realidades Do Rio";
+onLoadMission = "Desenvolvimento.";
+overviewText = "Desenvolvimento, 123.";
+overviewPicture = "texturas\img\img.jpg";
+loadScreen = "texturas\img\img.jpg";
+
+
+// Lojas
+///////////
+__EXEC(HG_Profile = allVariables profileNamespace)
+/*
+    Classes
+*/
+
+#include "HG\UI\HG_DialogsMaster.h"
+#include "scripts\R3F_LOG\desc_include.h"
+#include "scripts\recargaCarreg\config.hpp"
+#include "scripts\CHVD\dialog.hpp"
+
+class RscTitles
+{
+    #include "HG\UI\Dialogs\HG_HUD.h"
+	#include "HG\UI\Dialogs\HG_Tags.h"
+	#include "scripts\NT\NameTags.hpp"
+};
+
+class CfgClient
+{
+    #include "HG\Config\HG_Config.h"
+};
+
+class CfgSounds
+{
+    #include "config\Sons.h"
+};
+
+class CfgFunctions 
+{
+	#include "HG\Functions\HG_Functions.h"
+	#include "scripts\CHVD\CfgFunctions.hpp"
+};
+
+class CfgDebriefing
+{
+    #include "HG\Config\HG_Debriefing.h"
+	#include "Config\Client\WhiteList.h"
+};
+
+// Música para o jogo
+
+class CfgMusic
+{
+	tracks[]={};
+
+	class musica
+	{
+		name = "musica";
+		sound[] = {"audio\musica\intro.ogg", db+5, 1.0};
+	};
+};
