@@ -83,8 +83,9 @@ CHVD_fnc_drawDebug = {
 		call CHVD_fnc_drawDebug;
 	};
 };
+*/
 
-/*           //////////////////////////////////// Script só ativado quando o servidor do ts sair ///////////////////////////////////////
+          //////////////////////////////////// Script do Task obrigatório ///////////////////////////////////////
 
 //Configurações do TFAR
 tf_radio_channel_name = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_name");
@@ -98,5 +99,3 @@ if (hasInterface) then
 		[] spawn compile preprocessFileLineNumbers "config\Client\Task.sqf";
 	};
 };
-
-*/
