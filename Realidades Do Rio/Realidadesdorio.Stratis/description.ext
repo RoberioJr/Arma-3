@@ -80,12 +80,12 @@ class ForceTFAR
 {
 	//Configurações do TASK
 	tf_radio_channel_name = "TaskForceRadio"; //Canal do taskforce.
-	tf_radio_channel_password = "123"; //Senha do canal do taskforce.
+	tf_radio_channel_password = "9270dd4dded60c4574e18976636afbaf"; //Senha do canal do taskforce.
 
 	//Force TFAR Settings.
 	ftfar_is_enabled = 1;
-	ftfar_server_name = "TeamSpeakServer"; //Nome do server ts3
-	ftfar_server_ipaddress = "TeamSpeakServerIP"; //Ip do ts3
+	ftfar_server_name = "BOPE - REALIDADES DO RIO"; //Nome do server ts3
+	ftfar_server_ipaddress = "149.56.124.81:9987"; //Ip do ts3
 	ftfar_server_password = ""; //Senha do servidor
 	ftfar_wait_for_action_time = 30; //Tempo em segundos
 };
