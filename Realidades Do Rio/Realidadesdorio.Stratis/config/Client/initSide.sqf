@@ -4,9 +4,6 @@
 / Rio De Janeiro /
 */
 
-
-/* PERMISSÃO PARA ABRIR PORTAS DO BOPE */
-
 waituntil {alive player};    //Esperar O Jogador Spawnar
 
 /*
@@ -22,10 +19,12 @@ switch (playerSide) do
 	{
 	    hint "Inicializando...";
         setVariable ["copLevel",1,true];
+		[] execVM "config\Client\initBOPE";
     };
     case east: 
 	{
         hint "Inicializando...";
+		[] execVM "config\Client|initBandido";
     };
 };
 
