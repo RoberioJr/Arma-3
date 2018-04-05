@@ -11,7 +11,7 @@
  [] execVM "config\WhitelistCV.sqf";    //Slot do Líder do Comando Vermelho
  [] execVM "config\Client\Task.sqf";
  [] execVM "config\initSide.sqf";       //Inicialização Jogadores
- [] execVM "config\Client\initSide.sqf";       //Inicialização Jogadores
+ [] execVM "config\Client\initSide\initSide.sqf";       //Inicialização Jogadores
  [] execVM "scripts\marcadores.sqf";    //Marcadores Do Mapa
  
  //Simple Shops

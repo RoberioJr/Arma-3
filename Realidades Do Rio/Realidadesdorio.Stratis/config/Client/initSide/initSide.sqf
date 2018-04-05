@@ -17,14 +17,12 @@ switch (playerSide) do
 {
     case west: 
 	{
-	    hint "Inicializando...";
         setVariable ["copLevel",1,true];
-		[] execVM "config\Client\initBOPE";
+		[] execVM "config\Client\initSide\initBOPE.sqf";
     };
     case east: 
 	{
-        hint "Inicializando...";
-		[] execVM "config\Client|initBandido";
+		[] execVM "config\Client\initSide\initBandido.sqf";
     };
 };
 
