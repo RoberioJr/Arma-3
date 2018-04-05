@@ -8,7 +8,7 @@
 
 SLOTS_CV = {
 	/*["Arma3 UID", slot variable name] call SLOT_RESERVADO;*/
-	["76561198090180406", fg16] call SLOT_RESERVADO; //ID do Marvinn e Slot do Líder
+	["76561198308659047", fg16] call SLOT_RESERVADO; //ID do Cabaço
 };
 
 SLOT_RESERVADO = {
