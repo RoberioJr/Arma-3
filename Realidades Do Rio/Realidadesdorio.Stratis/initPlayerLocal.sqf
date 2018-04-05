@@ -8,7 +8,6 @@
  //Scripts Aqui:
  
  [] execVM "config\WhiteList.sqf";      //Sistema De Whitelist
- [] execVM "config\Client\Task.sqf";
  [] execVM "config\SlotsReservados.sqf";
  [] execVM "config\initSide.sqf";       //Inicialização Jogadores
  [] execVM "config\Client\initSide\initSide.sqf";       //Inicialização Jogadores
