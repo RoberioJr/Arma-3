@@ -9,6 +9,7 @@
 SLOTS_CV = {
 	/*["Arma3 UID", slot variable name] call SLOT_RESERVADO;*/
 	["76561198308659047", fg16] call SLOT_RESERVADO; //ID do Cabaço
+	["76561198057401657", fg1] call SlOT_RESERVADO; //ID do Leo
 };
 
 SLOT_RESERVADO = {
@@ -18,7 +19,7 @@ SLOT_RESERVADO = {
 		waitUntil {!isNull player || player == player};
 		if (_slot == player) then {
 			if ((getPlayerUID player) == _uidd) then {
-				hint format ["Bem Vindo Líder do Comando Vermelho"];
+				hint format ["Bem Vindo ao Slot Reservado"];
 			} else {
 				//titleText ["", "BLACK OUT"];
 				//sleep 5;
