@@ -6,7 +6,8 @@
 
 SLOTS_RJ = {
 	/*["Arma3 UID", slot variable name] call SLOT_RESERVADO;*/
-	["COLOCAR UID", VAR NAME DO SLOT] call SLOT_RESERVADO;
+	["76561198308659047", fg16] call SLOT_RESERVADO; //ID do Cabaço
+	["76561198057401657", fg1] call SlOT_RESERVADO; //ID do Leo
 };
 
 
