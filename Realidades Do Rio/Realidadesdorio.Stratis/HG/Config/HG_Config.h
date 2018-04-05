@@ -226,8 +226,8 @@ class HG_MasterCfg
 		xpPenaltyAI = 35;
 		xpReward = 70;
 		xpToLvlUp = 0;
-		iShopDiscount = 5;
-		gShopDiscount = 5;
+		iShopDiscount = 20;
+		gShopDiscount = 40;
 		vShopDiscount = 5;
 	};
 };
