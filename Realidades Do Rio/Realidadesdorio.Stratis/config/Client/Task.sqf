@@ -1,6 +1,3 @@
-/*
- */
-
 //Esperar pela tela de início
 waitUntil { !isNull player };
 waitUntil { uiSleep 2; (!isNull (findDisplay 46)) };
