@@ -1,4 +1,4 @@
-disableChannels[] = {{0,false,true}, {2,true,true}}; // 0 = global, 1 = side, 2 = command
+disableChannels[] = {{0,false,true}, {2,true,true}}; // 0 = global, 1 = side, 2 = command 
 joinUnassigned = 0;
 corpseManagerMode = 0;
 wreckManagerMode = 0;
@@ -41,7 +41,7 @@ class RscTitles
 
 class CfgClient
 {
-    #include "HG\Config\HG_Config.h"
+    #include "config\Economia\HG_Config.h"
 };
 
 class CfgSounds

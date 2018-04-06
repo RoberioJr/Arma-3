@@ -1,11 +1,11 @@
 /*
-
-  Loop Dos Sides
-
+/  Realidades    /     
+/      Do        /     
+/ Rio De Janeiro /
 */
 
 waituntil {alive player};
-sleep 20;
+sleep 30;
 
 switch (playerSide) do 
 {

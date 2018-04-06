@@ -9,7 +9,7 @@
 
 params["_player"];
 
-[_player] execVM "HG\Setup\fn_playerServerInitialization.sqf";
+[_player] execVM "scripts\HG\Setup\fn_playerServerInitialization.sqf";
 
 //Sistema de Whitelist By: RobérioJR
 _player = _this select 0;

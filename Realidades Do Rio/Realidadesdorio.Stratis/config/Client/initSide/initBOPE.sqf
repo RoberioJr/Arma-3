@@ -1,12 +1,13 @@
 /*
 
     Inicialização Do BOPE
-	Executado a cada 30Segs
+	Executado a cada 40Segs
 
 */
 
 
 if(playerSide isEqualTo west) then 
   {
-    (unitBackpack player) setObjectTextureGlobal [0,""];
+    setVariable ["copLevel",1,true];    //Permissão Para Abrir Portas.
+    (unitBackpack player) setObjectTextureGlobal [0,""];    //Mochila Inivisivel
   };

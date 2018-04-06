@@ -6,12 +6,14 @@
 
 waituntil {alive player};    //Esperar O Jogador Spawnar
 
+[] execVM "config\Client\initSide\initLoop.sqf";
+
+// Desativado Para Testes Com Loop
 /*
 if (playerSide == west) then
 {
     setVariable ["copLevel",1,true];
 };
-*/
 
 switch (playerSide) do 
 {
@@ -25,4 +27,5 @@ switch (playerSide) do
 		[] execVM "config\Client\initSide\initBandido.sqf";
     };
 };
+*/
 
