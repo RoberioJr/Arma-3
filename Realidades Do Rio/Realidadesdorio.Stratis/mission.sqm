@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=546;
+	toggles=674;
 	class ItemIDProvider
 	{
-		nextID=5653;
+		nextID=5658;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=190;
+		nextID=196;
 	};
 	class Camera
 	{
-		pos[]={6182.1665,305.81897,5144.3135};
-		dir[]={0.015170993,-0.59934032,0.80036491};
-		up[]={0.011357946,0.80049175,0.59923762};
-		aside[]={0.99983096,-1.0211261e-007,-0.018950261};
+		pos[]={6606.1123,91.950363,5205.4966};
+		dir[]={0.70342726,-0.59244031,0.39269996};
+		up[]={0.51729143,0.80561179,0.28878719};
+		aside[]={0.48745301,-5.6796125e-008,-0.87315243};
 	};
 };
 binarizationWanted=0;
@@ -171,13 +171,15 @@ addons[]=
 	"dbo_wheelchair",
 	"alive_main",
 	"alive_sys_playeroptions",
-	"alive_sys_data"
+	"alive_sys_data",
+	"ace_cargo",
+	"alive_sys_logistics"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=77;
+		items=79;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -644,6 +646,19 @@ class AddonsMetaData
 			name="alive_sys_data";
 			author="ALiVE Mod Team";
 		};
+		class Item77
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item78
+		{
+			className="ALiVE_SYS_LOGISTICS";
+			name="alive_sys_logistics";
+			author="ALiVE Mod Team";
+		};
 	};
 };
 randomSeed=40661;
@@ -750,7 +765,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2730;
+		items=2732;
 		class Item0
 		{
 			dataType="Marker";
@@ -40812,8 +40827,1530 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=15;
+				items=16;
 				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3697.354,49.878796,7595.8418};
+						angles[]={6.0523653,0,0.22130775};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg2";
+						description="Recruta";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4192;
+					type="B_Survivor_F";
+					atlOffset=-3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3698.0901,49.823891,7595.9199};
+						angles[]={6.0881972,0,0.18535396};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg3";
+						description="Recruta";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4193;
+					type="B_Survivor_F";
+					atlOffset=-3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3698.938,49.777576,7595.8867};
+						angles[]={6.0881972,0,0.18535396};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg4";
+						description="Recruta";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4194;
+					type="B_Survivor_F";
+					atlOffset=-3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3699.436,49.74588,7595.8999};
+						angles[]={6.0881972,0,0.18535396};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg5";
+						description="Recruta";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4195;
+					type="B_Survivor_F";
+					atlOffset=-3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3700.137,49.692726,7596.002};
+						angles[]={6.0881972,0,0.18535396};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg6";
+						description="Recruta";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4196;
+					type="B_Survivor_F";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3700.605,49.662521,7596.042};
+						angles[]={6.0881972,0,0.18535396};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg7";
+						description="Recruta";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4197;
+					type="B_Survivor_F";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3701.229,49.62056,7596.1069};
+						angles[]={6.0881972,0,0.20219639};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg8";
+						description="Soldado";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4198;
+					type="B_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3701.7229,49.588776,7596.1499};
+						angles[]={6.1269612,0,0.1635199};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg9";
+						description="Soldado";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4199;
+					type="B_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3702.4241,49.540668,7596.229};
+						angles[]={6.1269612,0,0.1635199};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg10";
+						description="Soldado";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4200;
+					type="B_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3703.0071,49.535282,7596.085};
+						angles[]={6.1269612,0,0.1635199};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg11";
+						description="Soldado";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4201;
+					type="B_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item10
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3703.6899,49.464241,7596.3086};
+						angles[]={6.1269612,0,0.1635199};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg12";
+						description="Cabo";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4202;
+					type="B_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item11
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3704.4761,49.387634,7596.4517};
+						angles[]={6.1269612,0,0.1635199};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg13";
+						description="Cabo";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4203;
+					type="B_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item12
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3705.0491,49.347839,7596.52};
+						angles[]={6.1269612,0,0.19017108};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg14";
+						description="Cabo";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4204;
+					type="B_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item13
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3705.8149,49.284145,7596.6626};
+						angles[]={6.1563697,0,0.16109388};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						name="fg15";
+						description="Sargento";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+							};
+						};
+					};
+					id=4205;
+					type="B_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item14
 				{
 					dataType="Object";
 					class PositionInfo
@@ -40822,7 +42359,7 @@ class Mission
 						angles[]={6.0523653,0,0.20219639};
 					};
 					side="West";
-					flags=7;
+					flags=5;
 					class Attributes
 					{
 						rank="COLONEL";
@@ -40923,1431 +42460,22 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item1
+				class Item15
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3697.354,49.878796,7595.8418};
-						angles[]={6.0523653,0,0.22130775};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg2";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4192;
-					type="B_Survivor_F";
-					atlOffset=-3.8146973e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male07ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.03;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3698.0901,49.823891,7595.9199};
-						angles[]={6.0881972,0,0.18535396};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg3";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4193;
-					type="B_Survivor_F";
-					atlOffset=-3.8146973e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male06ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3698.938,49.777576,7595.8867};
-						angles[]={6.0881972,0,0.18535396};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg4";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4194;
-					type="B_Survivor_F";
-					atlOffset=-3.8146973e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male05ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3699.436,49.74588,7595.8999};
-						angles[]={6.0881972,0,0.18535396};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg5";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4195;
-					type="B_Survivor_F";
-					atlOffset=-3.8146973e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male07ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.94999999;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3700.137,49.692726,7596.002};
-						angles[]={6.0881972,0,0.18535396};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg6";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4196;
-					type="B_Survivor_F";
-					atlOffset=3.8146973e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male07ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.02;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3700.605,49.662521,7596.042};
-						angles[]={6.0881972,0,0.18535396};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg7";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4197;
-					type="B_Survivor_F";
-					atlOffset=3.8146973e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3701.229,49.62056,7596.1069};
-						angles[]={6.0881972,0,0.20219639};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg8";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4198;
-					type="B_Survivor_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male07ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3701.7229,49.588776,7596.1499};
-						angles[]={6.1269612,0,0.1635199};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg9";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4199;
-					type="B_Survivor_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male09ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item9
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3702.4241,49.540668,7596.229};
-						angles[]={6.1269612,0,0.1635199};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg10";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4200;
-					type="B_Survivor_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male07ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item10
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3703.0071,49.535282,7596.085};
-						angles[]={6.1269612,0,0.1635199};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg11";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4201;
-					type="B_Survivor_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male06ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item11
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3703.6899,49.464241,7596.3086};
-						angles[]={6.1269612,0,0.1635199};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg12";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4202;
-					type="B_Survivor_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item12
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3704.4761,49.387634,7596.4517};
-						angles[]={6.1269612,0,0.1635199};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg13";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4203;
-					type="B_Survivor_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.03;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item13
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3705.0491,49.347839,7596.52};
-						angles[]={6.1269612,0,0.19017108};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg14";
-						description="BOPE";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-							};
-						};
-					};
-					id=4204;
-					type="B_Survivor_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male07ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.98000002;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item14
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3705.8149,49.284145,7596.6626};
+						position[]={3706.6411,49.244865,7596.6729};
 						angles[]={6.1563697,0,0.16109388};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="SERGEANT";
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg15";
-						description="BOPE";
+						name="fg15_1";
+						description="Sargento";
 						isPlayable=1;
 						class Inventory
 						{
@@ -42358,7 +42486,7 @@ class Mission
 							};
 						};
 					};
-					id=4205;
+					id=5657;
 					type="B_Survivor_F";
 					class CustomAttributes
 					{
@@ -42618,9 +42746,10 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						rank="MAJOR";
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg17";
-						description="Bandido";
+						description="General do Líder";
 						isPlayable=1;
 						class Inventory
 						{
@@ -61128,7 +61257,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -61159,11 +61288,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4476.0308,-3.3347893,7825.5771};
+				position[]={4283.1108,-3.3352146,7727.9722};
 			};
 			id=5647;
 			type="ALiVE_SYS_playeroptions";
-			atlOffset=36.827;
+			atlOffset=28.217001;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -61390,7 +61519,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="false";
+							value="true";
 						};
 					};
 				};
@@ -61858,11 +61987,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4532.9229,13.247177,7604.3652};
+				position[]={4249.6929,13.246361,7654.8701};
 			};
 			id=5648;
 			type="ALiVE_sys_data";
-			atlOffset=54.941002;
+			atlOffset=41.673996;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -61956,7 +62085,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="false";
+							value="true";
 						};
 					};
 				};
@@ -61994,7 +62123,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="false";
+							value="true";
 						};
 					};
 				};
@@ -62013,7 +62142,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="false";
+							value="true";
 						};
 					};
 				};
@@ -62058,16 +62187,242 @@ class Mission
 				nAttributes=10;
 			};
 		};
+		class Item2730
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6613.2822,84.679199,5209.21};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{clearItemCargoGlobal _this;  " \n "    clearMagazineCargoGlobal _this;  " \n "    clearWeaponCargoGlobal _this;  " \n "    clearBackpackCargoGlobal _this;}";
+			};
+			id=5654;
+			type="B_supplyCrate_F";
+			atlOffset=0.00054931641;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""launch_NLAW_F"",""arifle_MX_F"",""arifle_MX_SW_F"",""FirstAidKit""],[1,2,1,10]],[[""30Rnd_65x39_caseless_mag"",""16Rnd_9x21_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""20Rnd_762x51_Mag"",""100Rnd_65x39_caseless_mag"",""1Rnd_HE_Grenade_shell"",""3Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""Chemlight_green"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellGreen"",""UGL_FlareWhite_F"",""UGL_FlareGreen_F"",""ACE_SpareBarrel"",""ACE_20Rnd_65x47_Scenar_mag"",""ACE_30Rnd_65x47_Scenar_mag"",""ACE_20Rnd_65_Creedmor_mag"",""ACE_30Rnd_65_Creedmor_mag"",""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_20Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_20Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_20Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_20Rnd_762x51_Mag_Tracer"",""ACE_20Rnd_762x51_Mag_Tracer_Dim""],[24,6,6,6,6,3,1,2,2,6,2,6,6,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4]],[[""Laserdesignator"",""acc_flashlight"",""bipod_01_F_blk"",""ACE_Chemlight_Shield"",""ACE_EarPlugs""],[1,2,1,12,12]],[[""B_Kitbag_mcamo""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2731
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4305.5278,0.00043106079,7674.8159};
+			};
+			id=5655;
+			type="ALiVE_SYS_LOGISTICSDISABLE";
+			atlOffset=32.012997;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ALiVE_SYS_LOGISTICSDISABLE_DISABLECARRY";
+					expression="_this setVariable ['DISABLECARRY',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ALiVE_SYS_LOGISTICSDISABLE_DISABLELOAD";
+					expression="_this setVariable ['DISABLELOAD',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ALiVE_SYS_LOGISTICSDISABLE_DISABLELOG";
+					expression="_this setVariable ['DISABLELOG',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ALiVE_SYS_LOGISTICSDISABLE_DISABLELIFT";
+					expression="_this setVariable ['DISABLELIFT',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ALiVE_SYS_LOGISTICSDISABLE_BLACKLIST";
+					expression="_this setVariable ['BLACKLIST',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ALiVE_SYS_LOGISTICSDISABLE_DISABLE3D";
+					expression="_this setVariable ['DISABLE3D',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ALiVE_SYS_LOGISTICSDISABLE_DISABLETOW";
+					expression="_this setVariable ['DISABLETOW',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ALiVE_SYS_LOGISTICSDISABLE_DISABLEPERSISTENCE";
+					expression="_this setVariable ['DISABLEPERSISTENCE',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ALiVE_SYS_LOGISTICSDISABLE_DEBUG";
+					expression="_this setVariable ['DEBUG',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				nAttributes=9;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=35;
+			nextID=38;
 		};
 		class Links
 		{
-			items=35;
+			items=38;
 			class Item0
 			{
 				linkID=0;
@@ -62413,6 +62768,36 @@ class Mission
 				linkID=34;
 				item0=5632;
 				item1=5633;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item35
+			{
+				linkID=35;
+				item0=5642;
+				item1=5648;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item36
+			{
+				linkID=36;
+				item0=5642;
+				item1=5647;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item37
+			{
+				linkID=37;
+				item0=5642;
+				item1=5655;
 				class CustomData
 				{
 					type="Sync";
