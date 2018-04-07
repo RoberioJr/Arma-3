@@ -231,5 +231,9 @@ class NameTag
 		{
 			    idc = 140;
 		};
+		class NT41 : NT_BASIC  //fg15_1 erro fix
+		{
+			    idc = 141;
+		};
 	};
 };

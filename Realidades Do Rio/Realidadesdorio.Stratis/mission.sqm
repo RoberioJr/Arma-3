@@ -42474,7 +42474,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg15_1";
+						name="fg41";
 						description="Sargento";
 						isPlayable=1;
 						class Inventory
