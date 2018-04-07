@@ -27,15 +27,15 @@ __EXEC(HG_Profile = allVariables profileNamespace)
     Classes
 */
 
-#include "HG\UI\HG_DialogsMaster.h"
+#include "scripts\HG\UI\HG_DialogsMaster.h"
 #include "scripts\R3F_LOG\desc_include.h"
 #include "scripts\recargaCarreg\config.hpp"
 #include "scripts\CHVD\dialog.hpp"
 
 class RscTitles
 {
-    #include "HG\UI\Dialogs\HG_HUD.h"
-	#include "HG\UI\Dialogs\HG_Tags.h"
+    #include "scripts\HG\UI\Dialogs\HG_HUD.h"
+	#include "scripts\HG\UI\Dialogs\HG_Tags.h"
 	#include "scripts\NT\NameTags.hpp"
 };
 
@@ -51,13 +51,13 @@ class CfgSounds
 
 class CfgFunctions 
 {
-	#include "HG\Functions\HG_Functions.h"
+	#include "scripts\HG\Functions\HG_Functions.h"
 	#include "scripts\CHVD\CfgFunctions.hpp"
 };
 
 class CfgDebriefing
 {
-    #include "HG\Config\HG_Debriefing.h"
+    #include "scripts\HG\Config\HG_Debriefing.h"
 	#include "Config\Client\WhiteList.h"
 };
 
