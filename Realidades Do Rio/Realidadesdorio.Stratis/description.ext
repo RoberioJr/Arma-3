@@ -57,7 +57,7 @@ class CfgFunctions
 
 class CfgDebriefing
 {
-    #include "scripts\HG\Config\HG_Debriefing.h"
+    #include "config\Economia\HG_Debriefing.h"
 	#include "Config\Client\WhiteList.h"
 };
 
