@@ -58,7 +58,7 @@ class CfgFunctions
 class CfgDebriefing
 {
     #include "config\Economia\HG_Debriefing.h"
-	#include "Config\Client\WhiteList.h"
+	//#include "Config\Client\WhiteList.h"
 };
 
 // Música para o jogo
