@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=198;
+		nextID=200;
 	};
 	class Camera
 	{
-		pos[]={6606.1123,91.950363,5205.4966};
+		pos[]={6297.1455,421.68527,4984.4888};
 		dir[]={0.70342726,-0.59244031,0.39269996};
 		up[]={0.51729143,0.80561179,0.28878719};
 		aside[]={0.48745301,-5.6796125e-008,-0.87315243};
@@ -42446,7 +42446,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
-						name="fg41";
+						name="fg76";
 						description="Sargento";
 						isPlayable=1;
 						class Inventory
