@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=674;
+	toggles=546;
 	class ItemIDProvider
 	{
 		nextID=5658;
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=202;
+		nextID=204;
 	};
 	class Camera
 	{
@@ -165,7 +165,6 @@ addons[]=
 	"A3_Characters_F_Orange",
 	"acex_viewrestriction",
 	"ace_respawn",
-	"task_force_radio_items",
 	"Ryanzombies",
 	"dbo_wheelchair",
 	"ace_cargo"
@@ -174,7 +173,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=74;
+		items=73;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -600,23 +599,16 @@ class AddonsMetaData
 		};
 		class Item70
 		{
-			className="task_force_radio_items";
-			name="task_force_radio_items";
-			author="[TF]Nkey";
-			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
-		};
-		class Item71
-		{
 			className="Ryanzombies";
 			name="Ryanzombies";
 			author="Ryan";
 		};
-		class Item72
+		class Item71
 		{
 			className="dbo_wheelchair";
 			name="dbo_wheelchair";
 		};
-		class Item73
+		class Item72
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
@@ -729,7 +721,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2727;
+		items=2726;
 		class Item0
 		{
 			dataType="Marker";
@@ -57850,153 +57842,6 @@ class Mission
 		};
 		class Item2706
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={3663.02,49.907619,7606.7632};
-			};
-			id=5579;
-			type="tfar_ModuleTaskForceRadioEnforceUsage";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
-					expression="_this setVariable ['radio_channel_password',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="asfarc";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
-					expression="_this setVariable ['RiflemanRadio',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
-					expression="_this setVariable ['radio_channel_name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="TaskForceRadio";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
-					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
-					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
-					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
-					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=7;
-						};
-					};
-				};
-				nAttributes=7;
-			};
-		};
-		class Item2707
-		{
 			dataType="Group";
 			side="Independent";
 			class Entities
@@ -58116,7 +57961,7 @@ class Mission
 			};
 			id=5581;
 		};
-		class Item2708
+		class Item2707
 		{
 			dataType="Marker";
 			position[]={4586.1416,0,7367.0166};
@@ -58127,7 +57972,7 @@ class Mission
 			id=5586;
 			atlOffset=26.689188;
 		};
-		class Item2709
+		class Item2708
 		{
 			dataType="Marker";
 			position[]={4586.8789,0,7309.3916};
@@ -58138,7 +57983,7 @@ class Mission
 			id=5587;
 			atlOffset=29.797956;
 		};
-		class Item2710
+		class Item2709
 		{
 			dataType="Marker";
 			position[]={1726.9093,0,7101.2642};
@@ -58149,7 +57994,7 @@ class Mission
 			id=5588;
 			atlOffset=45.814846;
 		};
-		class Item2711
+		class Item2710
 		{
 			dataType="Marker";
 			position[]={1727.6466,0,6987.6274};
@@ -58160,7 +58005,7 @@ class Mission
 			id=5589;
 			atlOffset=44.710365;
 		};
-		class Item2712
+		class Item2711
 		{
 			dataType="Marker";
 			position[]={801.75293,0,4348.5483};
@@ -58171,7 +58016,7 @@ class Mission
 			id=5590;
 			atlOffset=61.426346;
 		};
-		class Item2713
+		class Item2712
 		{
 			dataType="Marker";
 			position[]={802.49023,0,4244.5571};
@@ -58182,7 +58027,7 @@ class Mission
 			id=5591;
 			atlOffset=64.24472;
 		};
-		class Item2714
+		class Item2713
 		{
 			dataType="Marker";
 			position[]={5884.3696,0,3358.4458};
@@ -58193,7 +58038,7 @@ class Mission
 			id=5592;
 			atlOffset=33.478313;
 		};
-		class Item2715
+		class Item2714
 		{
 			dataType="Marker";
 			position[]={5888.4194,0,3257.7661};
@@ -58204,7 +58049,7 @@ class Mission
 			id=5593;
 			atlOffset=38.992222;
 		};
-		class Item2716
+		class Item2715
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58221,7 +58066,7 @@ class Mission
 			type="dbo_civ_wheelchair";
 			atlOffset=4.7683716e-007;
 		};
-		class Item2717
+		class Item2716
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58238,7 +58083,7 @@ class Mission
 			id=5620;
 			type="Land_InfoStand_V1_F";
 		};
-		class Item2718
+		class Item2717
 		{
 			dataType="Marker";
 			position[]={4375.6343,128.56046,6713.3574};
@@ -58248,7 +58093,7 @@ class Mission
 			angle=342.99991;
 			id=5622;
 		};
-		class Item2719
+		class Item2718
 		{
 			dataType="Marker";
 			position[]={4376.8486,128.86783,6721.1357};
@@ -58258,7 +58103,7 @@ class Mission
 			angle=342.99991;
 			id=5623;
 		};
-		class Item2720
+		class Item2719
 		{
 			dataType="Marker";
 			position[]={4378.2178,128.91,6720.7651};
@@ -58269,7 +58114,7 @@ class Mission
 			id=5626;
 			atlOffset=4.5776367e-005;
 		};
-		class Item2721
+		class Item2720
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -58570,7 +58415,7 @@ class Mission
 				nAttributes=15;
 			};
 		};
-		class Item2722
+		class Item2721
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -58582,7 +58427,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=67.92807;
 		};
-		class Item2723
+		class Item2722
 		{
 			dataType="Trigger";
 			position[]={4359.8438,186.85059,4387.5171};
@@ -58595,7 +58440,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=5.2386017;
 		};
-		class Item2724
+		class Item2723
 		{
 			dataType="Group";
 			side="Civilian";
@@ -58727,7 +58572,7 @@ class Mission
 			id=5635;
 			atlOffset=0.00016999245;
 		};
-		class Item2725
+		class Item2724
 		{
 			dataType="Group";
 			side="Civilian";
@@ -58818,7 +58663,7 @@ class Mission
 			};
 			id=5639;
 		};
-		class Item2726
+		class Item2725
 		{
 			dataType="Object";
 			class PositionInfo
