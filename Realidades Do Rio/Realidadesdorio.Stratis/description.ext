@@ -72,16 +72,6 @@ class CfgMusic
 		name = "musica";
 		sound[] = {"audio\musica\intro.ogg", db+5, 1.0};
 	};
-	class "musica2";
-	{
-	    name = "musica2";
-		sound[] = {"audio\musica\intro.ogg", db+5, 1.0};
-	};
-	class "musica3";
-	{
-	    name = "musica3";
-		sound[] = {"audio\musica\intro.ogg", db+5, 1.0};
-	};
 };
 
 // Script de Bloqueio do Task
