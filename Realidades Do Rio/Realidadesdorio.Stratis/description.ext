@@ -49,6 +49,11 @@ class CfgSounds
     #include "config\Sons.h"
 };
 
+class CfgMusic
+{
+    #inclide "config\musicas.h"
+};
+
 class CfgFunctions 
 {
 	#include "scripts\HG\Functions\HG_Functions.h"
@@ -59,19 +64,6 @@ class CfgDebriefing
 {
     #include "config\Economia\HG_Debriefing.h"
 	//#include "Config\Client\WhiteList.h"
-};
-
-// Música para o jogo
-
-class CfgMusic
-{
-	tracks[]={};
-
-	class musica
-	{
-		name = "musica";
-		sound[] = {"audio\musica\intro.ogg", db+5, 1.0};
-	};
 };
 
 // Script de Bloqueio do Task
