@@ -51,18 +51,3 @@
  CHVD_allowNoGrass = true;       //Opção De Desativar Grama 'True = Ativado e False = Desativado'
  CHVD_maxView = 5000;
  CHVD_maxObj = 5000;
-
- /* Script do Task obrigatório */
-
-//Configurações do TFAR
-tf_radio_channel_name = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_name");
-tf_radio_channel_password = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_password");
-
-//Execute the following only on clients.
-if (hasInterface) then
-{
-	if ((getNumber (missionConfigFile >> "ForceTFAR" >> "ftfar_is_enabled")) isEqualTo 1) then
-	{
-		[] spawn compile preprocessFileLineNumbers "config\Client\Task.sqf";
-	};
-};
