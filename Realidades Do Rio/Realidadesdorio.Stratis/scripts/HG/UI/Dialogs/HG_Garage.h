@@ -53,7 +53,7 @@ class HG_Garage
 		class MainPicture: HG_RscPicture
 		{
 			moving = true;
-			text = "HG\UI\Icons\garage.paa";
+			text = "scripts\HG\UI\Icons\garage.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
 			x = 0.386562 * safeZoneW + safeZoneX;
 			y = 0.291 * safeZoneH + safeZoneY;
@@ -63,7 +63,7 @@ class HG_Garage
 		
 		class RefreshBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\refresh.paa";
+			text = "scripts\HG\UI\Icons\refresh.paa";
 			x = 0.474219 * safeZoneW + safeZoneX;
 			y = 0.291 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -72,7 +72,7 @@ class HG_Garage
 		
 		class SpawnBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\spawn.paa";
+			text = "scripts\HG\UI\Icons\spawn.paa";
 			x = 0.510312 * safeZoneW + safeZoneX;
 			y = 0.291 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -81,7 +81,7 @@ class HG_Garage
 		
 		class DeleteBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\delete.paa";
+			text = "scripts\HG\UI\Icons\delete.paa";
 			x = 0.546406 * safeZoneW + safeZoneX;
 			y = 0.291 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -90,7 +90,7 @@ class HG_Garage
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\close.paa";
+			text = "scripts\HG\UI\Icons\close.paa";
 			x = 0.5825 * safeZoneW + safeZoneX;
 			y = 0.291 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;

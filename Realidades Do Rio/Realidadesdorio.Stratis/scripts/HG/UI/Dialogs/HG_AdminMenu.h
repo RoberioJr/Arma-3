@@ -53,7 +53,7 @@ class HG_AdminMenu
 		class MainPicture: HG_RscPicture
 		{
 			moving = true;
-			text = "HG\UI\Icons\gear.paa";
+			text = "scripts\HG\UI\Icons\gear.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
 			x = 0.314375 * safezoneW + safezoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
@@ -63,7 +63,7 @@ class HG_AdminMenu
 		
 		class RefreshBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\refresh.paa";
+			text = "scripts\HG\UI\Icons\refresh.paa";
 			x = 0.350469 * safezoneW + safezoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -72,43 +72,43 @@ class HG_AdminMenu
 		
 		class KillBtnPicture: RefreshBtnPicture
 		{
-			text = "HG\UI\Icons\dead.paa";
+			text = "scripts\HG\UI\Icons\dead.paa";
 			x = 0.438124 * safezoneW + safezoneX;
 		};
 		
 		class SetRankBtnPicture: RefreshBtnPicture
 		{
-			text = "HG\UI\Icons\medal.paa";
+			text = "scripts\HG\UI\Icons\medal.paa";
 			x = 0.474218 * safezoneW + safezoneX;
 		};
 		
 		class SetXPBtnPicture: RefreshBtnPicture
 		{
-			text = "HG\UI\Icons\xp.paa";
+			text = "scripts\HG\UI\Icons\xp.paa";
 			x = 0.510312 * safezoneW + safezoneX;
 		};
 		
 		class SetKillsBtnPicture: RefreshBtnPicture
 		{
-			text = "HG\UI\Icons\gun.paa";
+			text = "scripts\HG\UI\Icons\gun.paa";
 			x = 0.546406 * safezoneW + safezoneX;
 		};
 		
 		class SetCashBtnPicture: RefreshBtnPicture
 		{
-			text = "HG\UI\Icons\money.paa";
+			text = "scripts\HG\UI\Icons\money.paa";
 			x = 0.5825 * safezoneW + safezoneX;
 		};
 		
 		class SetBankBtnPicture: RefreshBtnPicture
 		{
-			text = "HG\UI\Icons\bank.paa";
+			text = "scripts\HG\UI\Icons\bank.paa";
 			x = 0.618594 * safezoneW + safezoneX;
 		};
 		
 		class ExitBtnPicture: RefreshBtnPicture
 		{
-			text = "HG\UI\Icons\close.paa";
+			text = "scripts\HG\UI\Icons\close.paa";
 			x = 0.654688 * safezoneW + safezoneX;
 		};
 		
@@ -144,7 +144,7 @@ class HG_AdminMenu
 		
 		class RankIcon: HG_RscPicture
 		{
-			text = "HG\UI\Icons\medal.paa";
+			text = "scripts\HG\UI\Icons\medal.paa";
 			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.588 * safeZoneH + safeZoneY;
 			w = 0.020625 * safeZoneW;
@@ -153,25 +153,25 @@ class HG_AdminMenu
 		
 		class XPIcon: RankIcon
 		{
-			text = "HG\UI\Icons\xp.paa";
+			text = "scripts\HG\UI\Icons\xp.paa";
 			y = 0.621 * safeZoneH + safeZoneY;
 		};
 		
 		class KillsIcon: RankIcon
 		{
-			text = "HG\UI\Icons\gun.paa";
+			text = "scripts\HG\UI\Icons\gun.paa";
 			y = 0.654 * safeZoneH + safeZoneY;
 		};
 		
 		class CashIcon: RankIcon
 		{
-			text = "HG\UI\Icons\money.paa";
+			text = "scripts\HG\UI\Icons\money.paa";
 			y = 0.687 * safeZoneH + safeZoneY;
 		};
 		
 		class BankIcon: RankIcon
 		{
-			text = "HG\UI\Icons\bank.paa";
+			text = "scripts\HG\UI\Icons\bank.paa";
 			y = 0.72 * safezoneH + safezoneY;
 		};
 		
@@ -233,7 +233,7 @@ class HG_AdminMenu
 		{
 			show = 0;
 			idc = HG_WL_UID_ADD_PIC_IDC;
-			text = "HG\UI\Icons\add_bis.paa";
+			text = "scripts\HG\UI\Icons\add_bis.paa";
 			x = 0.242187 * safezoneW + safezoneX;
 		};
 		
@@ -241,7 +241,7 @@ class HG_AdminMenu
 		{
 			show = 0;
 			idc = HG_WL_UID_REMOVE_PIC_IDC;
-			text = "HG\UI\Icons\sub_bis.paa";
+			text = "scripts\HG\UI\Icons\sub_bis.paa";
 			x = 0.278281 * safezoneW + safezoneX;
 		};
 		

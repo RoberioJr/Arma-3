@@ -65,7 +65,7 @@ class HG_HUD
 		{
 			show = 0;
 			idc = HG_HUD_KILL_COUNT_PIC_IDC;
-			text = "HG\UI\Icons\gun.paa";
+			text = "scripts\HG\UI\Icons\gun.paa";
 			x = 0.855781 * safezoneW + safezoneX;
 			y = 0.863 * safezoneH + safezoneY;
 			w = 0.04125 * safezoneW;
@@ -86,7 +86,7 @@ class HG_HUD
 		
 		class RankBack: HG_RscPicture
 		{
-			text = "HG\UI\Textures\back.paa";
+			text = "scripts\HG\UI\Textures\back.paa";
 			x = 0.835156 * safezoneW + safezoneX;
 			y = 0.918 * safezoneH + safezoneY;
 			w = 0.165 * safezoneW;
@@ -123,7 +123,7 @@ class HG_HUD
 		
 		class MoneyPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\money.paa";
+			text = "scripts\HG\UI\Icons\money.paa";
 			x = 0.855781 * safezoneW + safezoneX;
 			y = 0.951 * safezoneH + safezoneY;
 			w = 0.04125 * safezoneW;

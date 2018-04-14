@@ -53,7 +53,7 @@ class HG_ItemsShop
 		class ShopPicture: HG_RscPicture
 		{
 			moving = true;
-			text = "HG\UI\Icons\money.paa";
+			text = "scripts\HG\UI\Icons\money.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
 			x = 0.324687 * safezoneW + safezoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
@@ -63,7 +63,7 @@ class HG_ItemsShop
 		
 		class AddBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\add.paa";
+			text = "scripts\HG\UI\Icons\add.paa";
 			x = 0.443281 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -72,7 +72,7 @@ class HG_ItemsShop
 		
 		class SubBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\sub.paa";
+			text = "scripts\HG\UI\Icons\sub.paa";
 			x = 0.365937 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -81,7 +81,7 @@ class HG_ItemsShop
 		
 		class BuyBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\buy.paa";
+			text = "scripts\HG\UI\Icons\buy.paa";
 			x = 0.572187 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -90,7 +90,7 @@ class HG_ItemsShop
 		
 		class MyCashBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\mycash.paa";
+			text = "scripts\HG\UI\Icons\mycash.paa";
 			x = 0.608281 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -99,7 +99,7 @@ class HG_ItemsShop
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\close.paa";
+			text = "scripts\HG\UI\Icons\close.paa";
 			x = 0.644375 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;

@@ -62,7 +62,7 @@ class HG_GearShop
 		
 		class ShopPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\money.paa";
+			text = "scripts\HG\UI\Icons\money.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
 			x = 0.29375 * safeZoneW + safeZoneX;
 			y = 0.00500001 * safeZoneH + safeZoneY;
@@ -81,7 +81,7 @@ class HG_GearShop
 		
 		class ResetBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\reset.paa";
+			text = "scripts\HG\UI\Icons\reset.paa";
 			x = 0.567031 * safeZoneW + safeZoneX;
 			y = 0.00500001 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -90,7 +90,7 @@ class HG_GearShop
 		
 		class BuyBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\buy.paa";
+			text = "scripts\HG\UI\Icons\buy.paa";
 			x = 0.603125 * safeZoneW + safeZoneX;
 			y = 0.00500001 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -99,7 +99,7 @@ class HG_GearShop
 		
 		class MyCashBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\mycash.paa";
+			text = "scripts\HG\UI\Icons\mycash.paa";
 			x = 0.639219 * safeZoneW + safeZoneX;
 			y = 0.00500001 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -108,7 +108,7 @@ class HG_GearShop
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\close.paa";
+			text = "scripts\HG\UI\Icons\close.paa";
 			x = 0.675312 * safeZoneW + safeZoneX;
 			y = 0.00500001 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;

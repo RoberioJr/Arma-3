@@ -53,7 +53,7 @@ class HG_ATM
 		class MainPicture: HG_RscPicture
 		{
 			moving = true;
-			text = "HG\UI\Icons\atm.paa";
+			text = "scripts\HG\UI\Icons\atm.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
 			x = 0.391719 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
@@ -63,7 +63,7 @@ class HG_ATM
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\close.paa";
+			text = "scripts\HG\UI\Icons\close.paa";
 			x = 0.577344 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.0309375 * safeZoneW;
@@ -119,7 +119,7 @@ class HG_ATM
 		
 		class DepositBtnPic: HG_RscPicture
 		{
-			text = "HG\UI\Icons\up.paa";
+			text = "scripts\HG\UI\Icons\up.paa";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -128,7 +128,7 @@ class HG_ATM
 		
 		class WithdrawBtnPic: HG_RscPicture
 		{
-			text = "HG\UI\Icons\down.paa";
+			text = "scripts\HG\UI\Icons\down.paa";
 			x = 0.427812 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -137,7 +137,7 @@ class HG_ATM
 		
 		class TransferBtnPic: HG_RscPicture
 		{
-			text = "HG\UI\Icons\right.paa";
+			text = "scripts\HG\UI\Icons\right.paa";
 			x = 0.572187 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -146,7 +146,7 @@ class HG_ATM
 		
 		class RefreshBtnPic: HG_RscPicture
 		{
-			text = "HG\UI\Icons\refresh.paa";
+			text = "scripts\HG\UI\Icons\refresh.paa";
 			x = 0.54125 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;

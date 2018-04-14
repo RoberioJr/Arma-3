@@ -9,7 +9,6 @@
  
  [] execVM "config\WhiteList.sqf";                      //Sistema De Whitelist
  [] execVM "config\SlotsReservados.sqf";                //Slots Reservados
- [] execVM "config\initSide.sqf";                       //Inicialização Jogadores
  [] execVM "config\Client\initSide\initSide.sqf";       //Inicialização Jogadores
  [] execVM "scripts\marcadores.sqf";                    //Marcadores Do Mapa
  

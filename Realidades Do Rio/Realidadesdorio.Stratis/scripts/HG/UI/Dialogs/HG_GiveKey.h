@@ -52,7 +52,7 @@ class HG_GiveKey
 		class Picture: HG_RscPicture
 		{
 			moving = true;
-			text = "HG\UI\Icons\key.paa";
+			text = "scripts\HG\UI\Icons\key.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
 			x = 0.407187 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
@@ -62,7 +62,7 @@ class HG_GiveKey
 		
 		class RemoveBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\close.paa";
+			text = "scripts\HG\UI\Icons\close.paa";
 			x = 0.453594 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -71,7 +71,7 @@ class HG_GiveKey
 		
 		class RefreshBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\refresh.paa";
+			text = "scripts\HG\UI\Icons\refresh.paa";
 			x = 0.489687 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -80,7 +80,7 @@ class HG_GiveKey
 		
 		class GiveBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\keyadd.paa";
+			text = "scripts\HG\UI\Icons\keyadd.paa";
 			x = 0.525781 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -89,7 +89,7 @@ class HG_GiveKey
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\close.paa";
+			text = "scripts\HG\UI\Icons\close.paa";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
 			w = 0.0309375 * safeZoneW;

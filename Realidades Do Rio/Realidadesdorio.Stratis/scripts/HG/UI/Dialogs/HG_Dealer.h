@@ -53,7 +53,7 @@ class HG_Dealer
 		class ShopPicture: HG_RscPicture
 		{
 			moving = true;
-			text = "HG\UI\Icons\car.paa";
+			text = "scripts\HG\UI\Icons\car.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
 			x = 0.29375 * safezoneW + safezoneX;
 			y = 0.225 * safezoneH + safezoneY;
@@ -63,7 +63,7 @@ class HG_Dealer
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\close.paa";
+			text = "scripts\HG\UI\Icons\close.paa";
 			x = 0.675312 * safezoneW + safezoneX;
 			y = 0.225 * safezoneH + safezoneY;
 			w = 0.0309375 * safeZoneW;
@@ -92,7 +92,7 @@ class HG_Dealer
 		
 		class SellBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\sell.paa";
+			text = "scripts\HG\UI\Icons\sell.paa";
 			x = 0.628906 * safezoneW + safezoneX;
 			y = 0.225 * safezoneH + safezoneY;
 			w = 0.0309375 * safeZoneW;
