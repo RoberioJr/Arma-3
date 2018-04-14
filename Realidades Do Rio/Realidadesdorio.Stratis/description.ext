@@ -51,7 +51,7 @@ class CfgSounds
 
 class CfgMusic
 {
-    #inclide "config\musicas.h"
+    #include "config\musicas.h"
 };
 
 class CfgFunctions 
