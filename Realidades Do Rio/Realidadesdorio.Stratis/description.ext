@@ -14,33 +14,28 @@ class Header
 };
 author="RoberioJr, R. Marques and Marvinn";
 onLoadName = "BOPE - Realidades Do Rio";
-onLoadMission = "Desenvolvimento.";
-overviewText = "Desenvolvimento, 123.";
+onLoadMission = "BOPE - Realidades Do Rio";
+overviewText = "Servidor Em Desenvolvimento";
 overviewPicture = "texturas\img\img.jpg";
 loadScreen = "texturas\img\img.jpg";
 
-// Lojas
-///////////
 __EXEC(HG_Profile = allVariables profileNamespace)
-/*
-    Classes
-*/
 
 #include "scripts\HG\UI\HG_DialogsMaster.h"
 #include "scripts\R3F_LOG\desc_include.h"
 #include "scripts\recargaCarreg\config.hpp"
 #include "scripts\CHVD\dialog.hpp"
 
+class CfgClient
+{
+    #include "config\Economia\HG_Config.h"
+};
+
 class RscTitles
 {
     #include "scripts\HG\UI\Dialogs\HG_HUD.h"
 	#include "scripts\HG\UI\Dialogs\HG_Tags.h"
 	#include "scripts\NT\NameTags.hpp"
-};
-
-class CfgClient
-{
-    #include "config\Economia\HG_Config.h"
 };
 
 class CfgSounds
@@ -57,7 +52,7 @@ class CfgFunctions
 class CfgDebriefing
 {
     #include "config\Economia\HG_Debriefing.h"
-	//#include "Config\Client\WhiteList.h"
+	//#include "config\Client\WhiteList.h"
 };
 
 class CfgMusic

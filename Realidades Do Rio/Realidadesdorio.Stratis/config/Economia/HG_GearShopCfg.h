@@ -328,3 +328,4 @@ class HG_roupasbandido // HG_DefaultShop is just a placeholder for testing purpo
 			{"B_TacticalPack_rgr",300,"true"}
 		};
 	};
+};
