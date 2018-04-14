@@ -266,3 +266,65 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		};
 	};
 };
+
+/* LOJA DE ROUPAS BANDIDOS */
+
+class HG_roupasbandido // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+	class Glasses
+	{
+		displayName = "$STR_HG_SHOP_FACEWEARS";
+		content[] =
+		{
+			{"G_Shades_Green",150,"true"},
+			{"G_Shades_Red",150,"true"}
+		};
+	};
+	
+	class Headgear
+	{
+		displayName = "Chapeus";
+		content[] =
+		{
+			{"H_Bandanna_gry",150,"true"}
+	    };
+	};
+	
+	class Uniform
+	{
+		displayName = "$STR_HG_SHOP_UNIFORMS";
+		content[] =
+		{
+		    {"gato",150,"true"},
+			{"legalize",150,"true"},
+			{"lobo",150,"true"},
+			{"mao",150,"true"},
+			{"nuvem",150,"true"},
+			{"pika",150,"true"},
+			{"tigre",150,"true"}
+		};
+	};
+	
+	class Vest
+	{
+		displayName = "Coletes";
+		content[] =
+		{
+		    {"V_TascVest_brn",1000,"true"},
+		    {"V_TascVest_khk",1000,"true"},
+			{"V_TascVest_blk",1000,"true"}
+		};
+	};
+	
+	class Backpack
+	{
+		displayName = "$STR_HG_SHOP_BACKPACKS";
+		content[] =
+		{
+			{"B_TacticalPack_blk",300,"true"},
+			{"B_TacticalPack_oli",300,"true"},
+			{"B_TacticalPack_rgr",300,"true"}
+		};
+	};

@@ -80,4 +80,5 @@ class ForceTFAR
 	ftfar_server_ipaddress = "192.99.119.161:9047"; //Ip do ts3
 	ftfar_server_password = ""; //Senha do servidor
 	ftfar_wait_for_action_time = 30; //Tempo em segundos
-};
+	
+	

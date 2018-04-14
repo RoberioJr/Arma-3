@@ -61,7 +61,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 
  /* SCOPES E CARREGADORES BOPE */
  
-class HG_ItemBOPE // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+class HG_bope // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
 {
 	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
 	
@@ -146,7 +146,7 @@ class HG_ItemBOPE // HG_DefaultShop is just a placeholder for testing purposes, 
 
  /* SCOPES E CARREGADORES BANDIDOS */
 
-class HG_ItemBAND // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+class HG_bandido // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
 {
 	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
 	

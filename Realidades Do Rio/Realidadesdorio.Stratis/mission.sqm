@@ -8,22 +8,22 @@ class EditorData
 	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=5658;
+		nextID=5671;
 	};
 	class MarkerIDProvider
 	{
-		nextID=238;
+		nextID=244;
 	};
 	class LayerIndexProvider
 	{
-		nextID=204;
+		nextID=206;
 	};
 	class Camera
 	{
-		pos[]={6297.1455,421.68527,4984.4888};
-		dir[]={0.70342726,-0.59244031,0.39269996};
-		up[]={0.51729143,0.80561179,0.28878719};
-		aside[]={0.48745301,-5.6796125e-008,-0.87315243};
+		pos[]={6293.4595,14.375306,5455.9048};
+		dir[]={-0.42569417,-0.40350682,0.80994081};
+		up[]={-0.18773164,0.91497308,0.3571834};
+		aside[]={0.88519657,-5.9138983e-008,0.46524751};
 	};
 };
 binarizationWanted=0;
@@ -167,13 +167,14 @@ addons[]=
 	"ace_respawn",
 	"Ryanzombies",
 	"dbo_wheelchair",
-	"ace_cargo"
+	"ace_cargo",
+	"A3_Ui_F_Orange"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=73;
+		items=74;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -615,6 +616,13 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item73
+		{
+			className="A3_Ui_F_Orange";
+			name="Arma 3 Orange - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=40661;
@@ -633,7 +641,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -674,7 +682,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -721,7 +729,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2726;
+		items=2731;
 		class Item0
 		{
 			dataType="Marker";
@@ -40796,7 +40804,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg2";
 						description="Recruta";
 						isPlayable=1;
@@ -40905,7 +40913,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg3";
 						description="Recruta";
 						isPlayable=1;
@@ -41014,7 +41022,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg4";
 						description="Recruta";
 						isPlayable=1;
@@ -41123,7 +41131,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg5";
 						description="Recruta";
 						isPlayable=1;
@@ -41232,7 +41240,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg6";
 						description="Recruta";
 						isPlayable=1;
@@ -41341,7 +41349,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg7";
 						description="Recruta";
 						isPlayable=1;
@@ -41450,7 +41458,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg8";
 						description="Soldado";
 						isPlayable=1;
@@ -41558,7 +41566,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg9";
 						description="Soldado";
 						isPlayable=1;
@@ -41666,7 +41674,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg10";
 						description="Soldado";
 						isPlayable=1;
@@ -41774,7 +41782,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg11";
 						description="Soldado";
 						isPlayable=1;
@@ -41883,7 +41891,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg12";
 						description="Cabo";
 						isPlayable=1;
@@ -41992,7 +42000,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg13";
 						description="Cabo";
 						isPlayable=1;
@@ -42101,7 +42109,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg14";
 						description="Cabo";
 						isPlayable=1;
@@ -42210,7 +42218,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg15";
 						description="Sargento";
 						isPlayable=1;
@@ -42319,7 +42327,7 @@ class Mission
 					class Attributes
 					{
 						rank="COLONEL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg1";
 						description="Capitão do BOPE";
 						isPlayable=1;
@@ -42429,7 +42437,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""]; player setVariable [""copLevel"",1,true];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg41";
 						description="Sargento";
 						isPlayable=1;
@@ -58591,7 +58599,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GEAR_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadGear},""HG_ItemBAND"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
+						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GEAR_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadGear},""HG_bandido"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
 					};
 					id=5640;
 					type="EAS_legalize";
@@ -58702,6 +58710,502 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item2726
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3273.9331,228.77223,2910.7131};
+						angles[]={0,1.43117,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GEAR_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadGear},""HG_bope"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK_shortsleeve";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="BOPE_carrier_1";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="Itemwatch";
+							headgear="BOPE_Beret";
+						};
+					};
+					id=5659;
+					type="C_man_p_beggar_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5658;
+		};
+		class Item2727
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2864.136,2.9408758,6070.9097};
+						angles[]={0,2.0943952,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GEAR_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadGear},""HG_roupasbandido"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; " \n "}";
+						name="lojaderoupas1";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="legalize";
+								isBackpack=0;
+							};
+						};
+					};
+					id=5661;
+					type="O_Survivor_F";
+					atlOffset=0.0001206398;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5660;
+			atlOffset=0.0001206398;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2728
+		{
+			dataType="Marker";
+			position[]={2864.1721,2.9393163,6070.8237};
+			name="marker_243";
+			text="Loja de Roupas";
+			type="loc_CivilDefense";
+			colorName="ColorOrange";
+			id=5667;
+		};
+		class Item2729
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6290.2412,5.1612201,5477.1079};
+						angles[]={0,2.0943952,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GEAR_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadGear},""HG_roupasbandido"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; " \n "}";
+						name="lojaderoupas1_1";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="legalize";
+								isBackpack=0;
+							};
+						};
+					};
+					id=5669;
+					type="O_Survivor_F";
+					atlOffset=0.019785404;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5668;
+			atlOffset=0.019785404;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2730
+		{
+			dataType="Marker";
+			position[]={6290.2773,5.1595526,5477.0215};
+			name="marker_244";
+			text="Loja de Roupas";
+			type="loc_CivilDefense";
+			colorName="ColorOrange";
+			id=5670;
+			atlOffset=0.019556999;
 		};
 	};
 	class Connections
