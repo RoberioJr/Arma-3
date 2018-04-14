@@ -82,7 +82,7 @@ deleteBodyOnDisconnect = false;
 resetGaragesOnServerStart = false;
 enablePlayerInventorySave = true;
 enableVehicleInventorySave = true;
-enableXP = true;
+enableXP = false;
 enableKillCount = false;
 enableTags = true;
 enableMarkers = false;
@@ -262,4 +262,3 @@ class HG_VehiclesShopCfg
 {
     #include "HG_VehiclesShopCfg.h"
 };
-//////////
