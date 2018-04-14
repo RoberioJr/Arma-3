@@ -73,19 +73,3 @@ class CfgMusic
 		sound[] = {"audio\musica\intro.ogg", db+5, 1.0};
 	};
 };
-
-// Script de Bloqueio do Task
-
-class ForceTFAR
-{
-	//Configurações do TASK
-	tf_radio_channel_name = "TaskForceRadio"; //Canal do taskforce.
-	tf_radio_channel_password = "asfarc"; //Senha do canal do taskforce.
-
-	//Force TFAR Settings.
-	ftfar_is_enabled = 1;
-	ftfar_server_name = "ASFARC_TEAM"; //Nome do server ts3
-	ftfar_server_ipaddress = "192.99.119.161:9047"; //Ip do ts3
-	ftfar_server_password = ""; //Senha do servidor
-	ftfar_wait_for_action_time = 30; //Tempo em segundos
-};
