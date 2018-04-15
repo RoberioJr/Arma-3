@@ -70,8 +70,8 @@ VehicleMenu =
 [
 	["Veiculos",true],
 		["ATV", [2],  "", -5, [["expression", format[_EXECscript5,"ATV.sqf"]]], "1", "1"],
-		["Hunter Armed", [3],  "", -5, [["expression", format[_EXECscript5,"hunter.sqf"]]], "1", "1"],
-		["Offroad Truck HMG .50", [4],  "", -5, [["expression", format[_EXECscript5,"offroad.sqf"]]], "1", "1"],
+		["Hunter Armado", [3],  "", -5, [["expression", format[_EXECscript5,"hunter.sqf"]]], "1", "1"],
+		["Offroad HMG .50", [4],  "", -5, [["expression", format[_EXECscript5,"offroad.sqf"]]], "1", "1"],
 		["Hunter BOPE", [5],  "", -5, [["expression", format[_EXECscript5,"hunterbope.sqf"]]], "1", "1"],
 		["Caveirao", [5],  "", -5, [["expression", format[_EXECscript5,"caveirao.sqf"]]], "1", "1"],
 		["", [-1], "", -5, [["expression", ""]], "1", "0"],
@@ -83,6 +83,7 @@ VehicleMenu2 =
 	["Veiculos 2",true],
 		["MH9 HummingBird", [2],  "", -5, [["expression", format[_EXECscript5,"mh9.sqf"]]], "1", "1"],
 		["HatchBack", [3],  "", -5, [["expression", format[_EXECscript5,"hatchback.sqf"]]], "1", "1"],
+		["Disco Voador", [4],  "", -5, [["expression", format[_EXECscript5,"disco.sqf"]]], "1", "1"],
 		["Sair", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
 Soldier = 
