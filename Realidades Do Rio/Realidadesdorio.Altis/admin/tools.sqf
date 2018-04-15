@@ -13,12 +13,12 @@ if ((getPlayerUID player) in ["76561198134612622", "76561198343381444", "7656119
 		adminmenu =
 		[
 			["RoberioJr Menu",true],
-				["Tools", [4], "#USER:ToolsMenu", -5, [["expression", ""]], "1", "1"],
-				["Cars", [4], "#USER:VehicleMenu", -5, [["expression", ""]], "1", "1"],
-				["Weapons", [5], "#USER:WeaponMenu", -5, [["expression", ""]], "1", "1"],
+				["Ferramentas", [4], "#USER:ToolsMenu", -5, [["expression", ""]], "1", "1"],
+				["Veiculos", [4], "#USER:VehicleMenu", -5, [["expression", ""]], "1", "1"],
+				["Armas", [5], "#USER:WeaponMenu", -5, [["expression", ""]], "1", "1"],
 				["Spawn Groups", [5], "#USER:Soldier", -5, [["expression", ""]], "1", "1"],
 				["", [-1], "", -5, [["expression", ""]], "1", "0"],
-			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]		
+			["Sair", [13], "", -3, [["expression", ""]], "1", "1"]		
 		];};
 } else {
 adminmenu =
@@ -26,7 +26,7 @@ adminmenu =
 	["",true],
 		//["Toggle Debug", [2], "", -5, [["expression", format[_execdebug,"playerstats.sqf"]]], "1", "1"],
 		["", [-1], "", -5, [["expression", ""]], "1", "0"],
-	["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
+	["Sair", [13], "", -3, [["expression", ""]], "1", "1"]
 ];};
 ToolsMenu =
 [
@@ -41,7 +41,7 @@ ToolsMenu =
 		["Apagar Veiculo", [9],  "", -5, [["expression", format[_EXECscript1,"delete.sqf"]]], "1", "1"],
 		["Reparar Veiculo", [10],  "", -5, [["expression", format[_EXECscript1,"repair.sqf"]]], "1", "1"],
 		["", [-1], "", -5, [["expression", ""]], "1", "0"],
-			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
+			["Sair", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
 
 WeaponMenu =
@@ -63,7 +63,7 @@ WeaponMenu2 =
 	["Armas 2",true],
 	//Add Weapons Here Gave another page because it could get a little confusing :P
 		["MX", [2],  "", -5, [["expression", format[_EXECscript3,"mx.sqf"]]], "1", "1"],
-		["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
+		["Sair", [13], "", -3, [["expression", ""]], "1", "1"]
 		
 ];
 VehicleMenu = 
@@ -72,16 +72,18 @@ VehicleMenu =
 		["ATV", [2],  "", -5, [["expression", format[_EXECscript5,"ATV.sqf"]]], "1", "1"],
 		["Hunter Armed", [3],  "", -5, [["expression", format[_EXECscript5,"hunter.sqf"]]], "1", "1"],
 		["Offroad Truck HMG .50", [4],  "", -5, [["expression", format[_EXECscript5,"offroad.sqf"]]], "1", "1"],
+		["Hunter BOPE", [5],  "", -5, [["expression", format[_EXECscript5,"hunterbope.sqf"]]], "1", "1"],
+		["Caveirao", [5],  "", -5, [["expression", format[_EXECscript5,"caveirao.sqf"]]], "1", "1"],
 		["", [-1], "", -5, [["expression", ""]], "1", "0"],
-			["Next page", [12], "#USER:VehicleMenu2", -5, [["expression", ""]], "1", "1"],
-			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
+			["Prox Pag", [12], "#USER:VehicleMenu2", -5, [["expression", ""]], "1", "1"],
+			["Sair", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
 VehicleMenu2 = 
 [
 	["Veiculos 2",true],
 		["MH9 HummingBird", [2],  "", -5, [["expression", format[_EXECscript5,"mh9.sqf"]]], "1", "1"],
 		["HatchBack", [3],  "", -5, [["expression", format[_EXECscript5,"hatchback.sqf"]]], "1", "1"],
-		["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
+		["Sair", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
 Soldier = 
 [

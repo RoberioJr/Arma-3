@@ -1,0 +1,19 @@
+class RscTitles
+{
+
+	#include "addons\logo\main_SL.hpp"
+
+};
+
+class CfgFunctions
+{
+	class scarCODE
+	{
+		tag = "SC";
+		class serverLogo
+		{
+			file = "addons\logo\functions_SL";
+			class showWatermark { postInit = 1;};
+		};
+	};
+};

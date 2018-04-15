@@ -231,5 +231,10 @@ class NameTag
 		{
 			    idc = 140;
 		};
+		
+		class NT41 : NT_BASIC
+		{
+			    idc = 141;
+		};
 	};
 };

@@ -7,6 +7,7 @@
 waitUntil {!isNull player};
 
 _unit = _this select 0;
+_roupa = ["pika","mao","legalize"] call BIS_fnc_selectRandom    //Seleção Da Roupa Inicial Bandidos
 
 
 removeAllWeapons _unit;
@@ -18,12 +19,11 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-
-_unit forceAddUniform "legalize";
+_unit forceAddUniform _roupa;
 _unit addItemToUniform "ACE_EarPlugs";
 _unit addItemToUniform "";
 _unit addItemToUniform "TFAR_fadak";
-_unit addVest "V_TacVest_brn";
+_unit addVest "";
 for "_i" from 1 to 2 do {_unit addItemToVest "ACE_fieldDressing";};
 _unit addHeadgear "";
 //_unit addGoggles "G_Shades_Green";
