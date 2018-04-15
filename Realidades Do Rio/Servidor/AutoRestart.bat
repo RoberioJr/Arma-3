@@ -1,6 +1,6 @@
 REM By: RobérioJR
 @echo off
-set restarts+=0
+set restarts=0
 Title Servidor BOPE Auto Restart          Restarts:%restarts%
 color 9
 
@@ -36,7 +36,7 @@ color 9
 
  :variaveis
  set restarts+=1
- ping -n 46 127.0.0.1 >NUL
+ ping -n 63 127.0.0.1 >NUL
  goto inicio
  
  
