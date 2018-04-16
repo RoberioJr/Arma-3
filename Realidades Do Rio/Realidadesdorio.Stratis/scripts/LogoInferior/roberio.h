@@ -9,7 +9,7 @@ class scarCODE
 	tag = "SC";
 	class serverLogo
 	{
-		file = "scripts\LogoInferior\functions_SL";
+		file = "scripts\LogoInferior";
 		class showWatermark { postInit = 1;};
 	};
 };
