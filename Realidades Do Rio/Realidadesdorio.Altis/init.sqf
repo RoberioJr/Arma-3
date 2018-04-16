@@ -19,6 +19,8 @@
 	[] execVM "scripts\Trafego\init.sqf";           //Sistema De Tráfego/NPCs
 	[] execVM "scripts\ClimaDinamico.sqf";          //Mudança Do Clima (Dinâmico)	
 	[] execVM "scripts\RepararVeiculo.sqf";         //Sistema De Reparo De Veiculos
+	[] execVM "scripts\ZeusFPS.sqf";                //Mostra FPS Do Jogador No Modo Zeus
+	[] execVM "scripts\LogoInferior\initLogo.sqf";  //Mostra Uma Logo Na Parte Inferior Da Tela
 	
 	//Init AntiHack...
 	[] execVM "AntiHack\ACTermal\Init.sqf";         //Anti Termal Hack
@@ -30,7 +32,8 @@
 	
 	//NameTags...
 	122014 cutrsc ["NameTag","PLAIN"];              //Script NameTags
-	
+
+/*	
  // Remover Linhas Do Mapa...
  (createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
  [
@@ -38,7 +41,7 @@
  	"thisTrigger setTriggerTimeout [30,30,30,false]",
  	"{if (markerShape _x == 'POLYLINE') then {deleteMarker _x}} forEach allMapMarkers"
  ];
-
+*/
  
  //Remover Voz De Bots Falando No Radio
  0 fadeRadio 0;

@@ -13,8 +13,8 @@ _ColorHealth = "#33FF99";
 _ColorDistance = "#CCFFFF";
 _ColorVehicleType = "#33FF00";
 
-_Visibility = 1000;
-_AmountOfUnits = 30;
+_Visibility = 500;
+_AmountOfUnits = 40;
 _NameOfUnit = "fg";
 
 // ---------- EDITABLE VARIABLES (END) ----------
