@@ -25,6 +25,7 @@ __EXEC(HG_Profile = allVariables profileNamespace)
 #include "scripts\R3F_LOG\desc_include.h"
 #include "scripts\recargaCarreg\config.hpp"
 #include "scripts\CHVD\dialog.hpp"
+#include "scripts\LogoInferior\global.hpp"
 
 class CfgClient
 {

@@ -334,8 +334,7 @@ _Setting23 = ["3den_Objects.pbo",
 "UMI_Static.pbo",
 "UMI_Wearable.pbo",
 "walker_a3_vehicles.pbo",
-"xCam_EU.pbo"
-]; //Additional PBO files to add to the whitelist (e.g. ["CBA_A3.pbo","CBA_CORE.pbo"])
+"xCam_EU.pbo"]; //Additional PBO files to add to the whitelist (e.g. ["CBA_A3.pbo","CBA_CORE.pbo"])
 
 //Classname Whitelist
 _Setting24 = false; //Scan player classnames against server classnames and detect discrepancies ("true" is on, "false" is off, set to true by default)
