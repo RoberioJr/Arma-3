@@ -363,7 +363,7 @@ _Setting6 = 600; //Non-unit vehicle max speed on your server (Variable for detec
 
 //Weapon Blacklist
 _Setting7 = false; //Detect player using Banned weapon ("true" is on, "false" is off, set to false by default)
-_Setting8 = [""]; //Weapons you can't obtain legitimately in your mission
+_Setting8 = ["srifle_GM6_F","srifle_GM6_camo_F","srifle_LRR_F","srifle_LRR_camo_F","launch_B_Titan_short_F","launch_B_Titan_F"]; //Weapons you can't obtain legitimately in your mission
 
 //Vehicle Blacklist
 _Setting9 = false; //Detect player using Banned vehicle ("true" is on, "false" is off, set to false by default)
