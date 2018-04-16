@@ -334,7 +334,9 @@ _Setting23 = ["3den_Objects.pbo",
 "UMI_Static.pbo",
 "UMI_Wearable.pbo",
 "walker_a3_vehicles.pbo",
-"xCam_EU.pbo"]; //Additional PBO files to add to the whitelist (e.g. ["CBA_A3.pbo","CBA_CORE.pbo"])
+"xCam_EU.pbo",
+"task_force_radio.pbo",
+"task_force_radio_items.pbo"]; //Additional PBO files to add to the whitelist (e.g. ["CBA_A3.pbo","CBA_CORE.pbo"])
 
 //Classname Whitelist
 _Setting24 = false; //Scan player classnames against server classnames and detect discrepancies ("true" is on, "false" is off, set to true by default)
@@ -342,7 +344,7 @@ _Setting25 = [""]; //Additional classnames to add to the whitelist (e.g. ["LandV
 
 //Addon Blacklist                   HACKS
 _Setting1 = true; //Scan player PBO files ("true" is on, "false" is off, set to false by default)
-_Setting2 = ["devcon.pbo","DevCon.pbo","DEV_PostA3.pbo","DEV_CO_Dummy.pbo","NSS Admin Console.pbo","mpg_a3.pbo"]; //Addons you don't wan't on your server (e.g. "devcon.pbo")
+_Setting2 = ["devcon.pbo","DevCon.pbo","DEV_PostA3.pbo","DEV_CO_Dummy.pbo","NSS Admin Console.pbo","mpg_a3.pbo","NSS_AC_2.pbo"]; //Addons you don't wan't on your server (e.g. "devcon.pbo")
 
 //Variable Blacklist
 _Setting3 = true; //Detect player using Banned variable names ("true" is on, "false" is off, set to true by default)
@@ -392,8 +394,8 @@ _Setting21 = true; //Allow BASIX to scan for indications of someone Injecting us
 
 //Chat-Loging
 _Setting26 = true; //Allow BASIX to store chat conversations ("true" is on, "false" is off, set to true by default)
-_Setting27 = false; //Enable word and phrase filter ("true" is on, "false" is off, set to false by default)
-_Setting28 = [""]; //Filter list, capitals don't matter (e.g. ["fuck","cunt","I will kill your dog"])
+_Setting27 = true; //Enable word and phrase filter ("true" is on, "false" is off, set to false by default)
+_Setting28 = ["porra","PORRA","caralho","CARALHO","FDP","fdp"]; //Filter list, capitals don't matter (e.g. ["fuck","cunt","I will kill your dog"])
 
 //Chat-Commands
 _Setting29 = true; //Enable chat based commands, found in "fn_BASIX_COMMANDS.sqf" ("true" is on, "false" is off, set to true by default)
