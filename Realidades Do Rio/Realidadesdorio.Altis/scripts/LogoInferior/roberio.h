@@ -10,6 +10,6 @@ class scarCODE
 	class serverLogo
 	{
 		file = "scripts\LogoInferior";
-		class showWatermark { postInit = 1;};
+		class initLogo { postInit = 1;};
 	};
 };
