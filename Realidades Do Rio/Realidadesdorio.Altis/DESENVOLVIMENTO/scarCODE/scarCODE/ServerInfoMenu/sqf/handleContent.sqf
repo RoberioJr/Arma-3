@@ -16,5 +16,5 @@ if not ( isNull _dsp ) then
    _ctrlContent ctrlSetStructuredText parseText _cntnt;
    _ctrlContentPos = ctrlPosition _ctrlContent;
    _ctrlContent ctrlSetPosition [ ( _ctrlContentPos select 0 ), ( _ctrlContentPos select 1 ), ( _ctrlContentPos select 2 ), ( ctrlTextHeight _ctrlContent ) ];
-   _ctrlContent ctrlCommit 0;
+   _ctrlContent ctrlCommit 0.25;
 } else { systemChat "handleContent: isNull _dsp" };

@@ -8,9 +8,9 @@ if not ( isNull _dsp ) then
       _ctrlIpPort = _dsp displayCtrl 1;
       _ctrlIpPort ctrlSetText getText ( _cfgPath >> "ipPort" );
       _ctrlRestart = _dsp displayCtrl 4;
-      _ctrlRestart ctrlSetText format [ "RESTART EM %1 HORAS", getNumber ( _cfgPath >> "restart" ) ];
+      _ctrlRestart ctrlSetText format [ "RESTART EVERY %1 HOURS", getNumber ( _cfgPath >> "restart" ) ];
       _ctrlHostedBy = _dsp displayCtrl 5;
-      _ctrlHostedBy ctrlSetText format [ "HOSPEDADO POR: %1", getText ( _cfgPath >> "hostedBy" ) ];
+      _ctrlHostedBy ctrlSetText format [ "HOSTED BY: %1", getText ( _cfgPath >> "hostedBy" ) ];
       _ctrlantiHACK = _dsp displayCtrl 6;
       _ctrlantiHACK ctrlSetText format [ "ANTIHACK: %1", getText ( _cfgPath >> "antiHACK" ) ];
       _listBox = _dsp displayCtrl 7;
