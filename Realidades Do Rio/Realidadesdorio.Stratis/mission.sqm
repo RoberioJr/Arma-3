@@ -8,22 +8,22 @@ class EditorData
 	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=5790;
+		nextID=5815;
 	};
 	class MarkerIDProvider
 	{
-		nextID=246;
+		nextID=257;
 	};
 	class LayerIndexProvider
 	{
-		nextID=220;
+		nextID=224;
 	};
 	class Camera
 	{
-		pos[]={2994.396,34.585682,6211.7485};
-		dir[]={-0.71088398,-0.40881976,-0.57229346};
-		up[]={-0.31845182,0.91261244,-0.25637108};
-		aside[]={-0.62709171,2.1777232e-006,0.7789501};
+		pos[]={3553.4299,219.09184,4890.1567};
+		dir[]={-0.71929616,-0.35135192,0.59933209};
+		up[]={-0.26993746,0.93623728,0.22491725};
+		aside[]={0.64014685,1.2241071e-007,0.76827943};
 	};
 };
 binarizationWanted=0;
@@ -715,7 +715,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2683;
+		items=2688;
 		class Item0
 		{
 			dataType="Marker";
@@ -58422,6 +58422,240 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item2683
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3498.936,200.35431,4913.7891};
+			};
+			areaSize[]={50,0,50};
+			flags=1;
+			id=5790;
+			type="ModuleHideTerrainObjects_F";
+			atlOffset=0.091003418;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item2684
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3519.999,205.8389,4920.5024};
+				angles[]={0,3.8222713,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=5799;
+			type="Land_jbad_House_c_10";
+			atlOffset=0.76142883;
+		};
+		class Item2685
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3520.8459,200.74591,4910.96};
+						angles[]={0,2.0420351,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="lojadoa";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="lacoste1";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="Itemwatch";
+							headgear="H_Hat_grey";
+						};
+					};
+					id=5801;
+					type="EAS_nuvem";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5800;
+		};
+		class Item2686
+		{
+			dataType="Marker";
+			position[]={3530.2537,201.12035,4917.874};
+			name="spawn_vehiculos_doadores";
+			text="Spawn Veiculos Doadores";
+			type="Empty";
+			angle=130;
+			id=5805;
+		};
+		class Item2687
+		{
+			dataType="Marker";
+			position[]={3520.2146,200.72856,4911.2129};
+			name="marker_256";
+			text="Loja dos Doadores";
+			type="mil_end";
+			colorName="ColorWhite";
+			id=5814;
 		};
 	};
 	class Connections

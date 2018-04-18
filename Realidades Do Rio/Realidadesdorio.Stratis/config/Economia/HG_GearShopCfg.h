@@ -329,3 +329,50 @@ class HG_roupasbandido // HG_DefaultShop is just a placeholder for testing purpo
 		};
 	};
 };
+
+/* LOJA DE ROUPAS/Armas DOADORES */
+
+class HG_RoupaseArmas // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+	class Glasses
+	{
+		displayName = "$STR_HG_SHOP_FACEWEARS";
+		content[] =
+		{
+		};
+	};
+	
+	class Headgear
+	{
+		displayName = "Chapeus";
+		content[] =
+		{
+	    };
+	};
+	
+	class Uniform
+	{
+		displayName = "$STR_HG_SHOP_UNIFORMS";
+		content[] =
+		{
+		};
+	};
+	
+	class Vest
+	{
+		displayName = "Coletes";
+		content[] =
+		{
+		};
+	};
+	
+	class Backpack
+	{
+		displayName = "$STR_HG_SHOP_BACKPACKS";
+		content[] =
+		{
+		};
+	};
+};

@@ -148,3 +148,25 @@ class HG_BOPEveiculos // HG_DefaultShop is just a placeholder for testing purpos
 	};
 };
 
+ /*                      //
+/                         /
+/  Loja De Veiculos DOADORES  /
+/                         /
+ */                      //
+
+class HG_DoadoresVeiculos
+{
+    conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+    class Civil
+	{
+	    displayName = "Veiculos de Doadores";
+		vehicles[] =
+		{
+		};
+	    spawnPoints[] =
+		{
+			{"Spawn Veiculos Doadores",{"spawn_vehiculos_doadores"}}
+		};
+	};
+};
