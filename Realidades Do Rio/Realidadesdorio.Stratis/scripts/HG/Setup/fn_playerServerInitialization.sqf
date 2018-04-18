@@ -170,6 +170,8 @@ if(!HG_SAVING_EXTDB) then
     };
 };
 
+
+
 /*
     Init HUD (if applicable)
 */
