@@ -1,19 +1,19 @@
 class CfgServerInfoMenu
 {
    addAction = 1; // Enable/disable action menu item | use 0 to disable | default: 1 (enabled)
-   antiHACK = "infiSTAR + BattlEye";
-   hostedBy = "GamerClanName";
+   antiHACK = "BASIX + BattlEye";
+   hostedBy = "Delta Servers";
    ipPort = "000.123.456.789:2302";
    openKey = "User7"; // https://community.bistudio.com/wiki/inputAction/actions
    openAtLogin = no;
-   restart = 3; // Amount of hours before server automatically restarts
-   serverName = "Name of this server";
+   restart = 6; // Amount of hours before server automatically restarts
+   serverName = "BOPE: Realidades Do Rio";
    class menuItems
    {
       // title AND content accept formatted text ( since update Oct5.2016 )
       class first
       {
-         menuName = "General";
+         menuName = "Geral";
          title = "<t color='#ffffff'>GENERAL INFORMATION</t>";
          content[] = {
             "This is some placeholder text"
@@ -21,7 +21,7 @@ class CfgServerInfoMenu
       };
       class second
       {
-         menuName = "Rules";
+         menuName = "Regras";
          title = "SERVER RULES";
          content[] = {
             "<t size='1.75'>Rule #1</t><br />Players/admins are NOT permitted to show racism, profanity and disrespect towards any other player/admin in this server.<br />",
@@ -58,7 +58,7 @@ class CfgServerInfoMenu
       };
       class seventh
       {
-         menuName = "Credits";
+         menuName = "Creditos";
          title = "CREDITS WHERE CREDITS DUE";
          content[] = {
             "<t size='1.25'>IT07:</t> coder/creator of this menu",

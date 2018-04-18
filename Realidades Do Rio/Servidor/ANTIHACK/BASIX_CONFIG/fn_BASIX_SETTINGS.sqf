@@ -360,11 +360,11 @@ _Setting16 = false; //Detect player using Banned classnames ("true" is on, "fals
 _Setting17 = ["DevCon","DEV_Background","DEV_Abort","GlobalExecuteButton_06","DEV_MiniMap","DevCon_Fired","DEV_MapReplacement"]; //Banned classnames list
 
 //Server Speed Limit
-_Setting5 = false; //Detect player speed hacking ("true" is on, "false" is off, set to false by default)
-_Setting6 = 600; //Non-unit vehicle max speed on your server (Variable for detecting speed-hacking, set to 600 by default)
+_Setting5 = true; //Detect player speed hacking ("true" is on, "false" is off, set to false by default)
+_Setting6 = 500; //Non-unit vehicle max speed on your server (Variable for detecting speed-hacking, set to 600 by default)
 
 //Weapon Blacklist
-_Setting7 = false; //Detect player using Banned weapon ("true" is on, "false" is off, set to false by default)
+_Setting7 = true; //Detect player using Banned weapon ("true" is on, "false" is off, set to false by default)
 _Setting8 = ["srifle_GM6_F","srifle_GM6_camo_F","srifle_LRR_F","srifle_LRR_camo_F","launch_B_Titan_short_F","launch_B_Titan_F"]; //Weapons you can't obtain legitimately in your mission
 
 //Vehicle Blacklist

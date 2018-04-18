@@ -31,9 +31,9 @@ publicVariable "BASIX_KICK";
 
 BASIX_KICK_ADD = compileFinal '
 call compile format ["
-[{hint ""BASIX: %1 (%3) Has Been Kicked For: %2"";}, ""BIS_fnc_spawn"", true, false] spawn BIS_fnc_MP;
-[{systemChat ""BASIX: %1 (%3) Has Been Kicked For: %2"";}, ""BIS_fnc_spawn"", true, false] spawn BIS_fnc_MP;
-[{""BASIX_LOG"" callExtension ""%1 (%3) Has Been Kicked For: %2"";}, ""BIS_fnc_spawn"", false, false] spawn BIS_fnc_MP;
+[{hint ""BASIX: %1 (%3) Foi Expulso Por: %2"";}, ""BIS_fnc_spawn"", true, false] spawn BIS_fnc_MP;
+[{systemChat ""BASIX: %1 (%3) Foi Expulso Por: %2"";}, ""BIS_fnc_spawn"", true, false] spawn BIS_fnc_MP;
+[{""BASIX_LOG"" callExtension ""%1 (%3) Foi Expulso Por: %2"";}, ""BIS_fnc_spawn"", false, false] spawn BIS_fnc_MP;
 waitUntil {!(isNull(findDisplay 70))};
 ctrlActivate ((findDisplay 70) displayCtrl 2);
 ",(name player), _this, (getPlayerUID player)];
@@ -42,9 +42,9 @@ publicVariable "BASIX_KICK_ADD";
 
 BASIX_BAN_ADD = compileFinal '
 call compile format ["
-[{if !(isServer) then {hint ""BASIX: %1 (%3) Has Been Banned For: %2"";}}, ""BIS_fnc_spawn"", true, false] spawn BIS_fnc_MP;
-[{if !(isServer) then {systemChat ""BASIX: %1 (%3) Has Been Banned For: %2"";}}, ""BIS_fnc_spawn"", true, false] spawn BIS_fnc_MP;
-[{if (isServer) then {""BASIX_LOG"" callExtension ""%1 (%3) Has Been Banned For: %2"";}}, ""BIS_fnc_spawn"", false, false] spawn BIS_fnc_MP;
+[{if !(isServer) then {hint ""BASIX: %1 (%3) Foi Banido Por: %2"";}}, ""BIS_fnc_spawn"", true, false] spawn BIS_fnc_MP;
+[{if !(isServer) then {systemChat ""BASIX: %1 (%3) Foi Banido Por: %2"";}}, ""BIS_fnc_spawn"", true, false] spawn BIS_fnc_MP;
+[{if (isServer) then {""BASIX_LOG"" callExtension ""%1 (%3) Foi Banido Por: %2"";}}, ""BIS_fnc_spawn"", false, false] spawn BIS_fnc_MP;
 _Settings = call BASIX_SETTINGS;
 if !(_Settings select 17) then
 {
@@ -130,9 +130,9 @@ if !(isServer) then
 	if (call BASIX_KICK) exitWith {};
 	_Settings = call BASIX_SETTINGS;
 	sleep 5;
-	systemChat "BASIX: This Sever Is Secured By BASIX";
+	systemChat "BASIX: Este Servidor é Protegido Por BASIX";
 	systemChat format ["BASIX: Welcome %1 (%2)",(name player),(getPlayerUID player)];
-	call compile format ["[{""BASIX_LOG"" callExtension ""%1 Has Joined The Server UID:(%2)""}, ""BIS_fnc_spawn"", false, false] spawn BIS_fnc_MP", (name player), (getPlayerUID player)];
+	call compile format ["[{""BASIX_LOG"" callExtension ""%1 Entrou No Servidor UID:(%2)""}, ""BIS_fnc_spawn"", false, false] spawn BIS_fnc_MP", (name player), (getPlayerUID player)];
 	player addMPEventHandler ["MPKilled", {if (isServer) then {if ((name (_this select 0)) != "Error: No unit") then {"BASIX_LOG" callExtension format ["%1 Was Killed By %2",(name (_this select 0)),(name (_this select 1))];};};}];
 	if ((_Settings select 11) && ((getPlayerUID player) in (_Settings select 12))) then
 		{
@@ -242,7 +242,7 @@ if (_Settings select 4) then
 			waitUntil{(((vehicle player) in vehicles) && ((round speed (vehicle player)) > (_Settings select 5)))};
 			if (alive player) exitWith
 				{
-				_reason = format ["Over Server Speed Limit (%1)",(round speed (vehicle player))];
+				_reason = format ["Acima da velocidade permitida no servidor: (%1)",(round speed (vehicle player))];
 				_reason spawn BASIX_KICK_ADD;
 				sleep 0.1;
 				waitUntil {!(isNull(findDisplay 46))}; (findDisplay 46) closeDisplay 0;
@@ -265,7 +265,7 @@ if (_Settings select 6) then
 			waitUntil{((currentWeapon player) in (_Settings select 7))};
 			if (alive player) exitWith
 				{
-				_reason = format ["Blacklisted Weapon (%1)",(currentWeapon player)];
+				_reason = format ["Arma Ilegal (%1)",(currentWeapon player)];
 				_reason spawn BASIX_KICK_ADD;
 				sleep 0.1;
 				waitUntil {!(isNull(findDisplay 46))}; (findDisplay 46) closeDisplay 0;
@@ -288,7 +288,7 @@ if (_Settings select 8) then
 			waitUntil{((TypeOf (vehicle player)) in (_Settings select 9))};
 			if (alive player) exitWith
 				{
-				_reason = format ["Blacklisted Vehicle (%1)",(TypeOf (vehicle player))];
+				_reason = format ["Veiculo Ilegal (%1)",(TypeOf (vehicle player))];
 				deleteVehicle (vehicle player);
 				_reason spawn BASIX_KICK_ADD;
 				sleep 0.1;
@@ -366,7 +366,7 @@ publicVariable "BASIX_ADDON_WHITELIST";
 			_whitelist = (call BASIX_ADDON_WHITELIST);
 			if !(_pboName in _whitelist) exitWith
 				{
-				_reason = format ["NonWhitelisted Addon (%1)",_pboName];
+				_reason = format ["Addon Não Permitido: (%1)",_pboName];
 				_reason spawn BASIX_BAN_ADD;
 				sleep 0.1;
 				waitUntil {!(isNull(findDisplay 46))}; (findDisplay 46) closeDisplay 0;
@@ -534,14 +534,14 @@ publicVariable "BASIX_CheatEngine_SCANNER";
 				{
 				if !((compile((configfile >> (_Displays select _i) >> "onLoad") call BIS_fnc_getCfgData)) in _Loads) exitWith
 					{
-					_reason = format ["CheatEngine Modified Config (%1)",(_Displays select _i)];
+					_reason = format ["CheatEngine Modificou: (%1)",(_Displays select _i)];
 					_reason spawn BASIX_BAN_ADD;
 					sleep 0.1;
 					waitUntil {!(isNull(findDisplay 46))}; (findDisplay 46) closeDisplay 0;
 					};
 				if !((compile((configfile >> (_Displays select _i) >> "onUnload") call BIS_fnc_getCfgData)) in _Loads) exitWith
 					{
-					_reason = format ["CheatEngine Modified Config (%1)",(_Displays select _i)];
+					_reason = format ["CheatEngine Modificou: (%1)",(_Displays select _i)];
 					_reason spawn BASIX_BAN_ADD;
 					sleep 0.1;
 					waitUntil {!(isNull(findDisplay 46))}; (findDisplay 46) closeDisplay 0;
