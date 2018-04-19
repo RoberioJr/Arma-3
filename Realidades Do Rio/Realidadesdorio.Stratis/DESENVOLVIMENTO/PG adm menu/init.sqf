@@ -1,0 +1,1 @@
+[] execVM "proving_grounds\init.sqf";
