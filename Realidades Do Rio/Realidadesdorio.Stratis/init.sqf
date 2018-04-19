@@ -22,6 +22,7 @@
 	[] execVM "scripts\ZeusFPS.sqf";                //Mostra FPS Do Jogador No Modo Zeus
 	[] execVM "scripts\LogoInferior\fn_initLogo.sqf";  //Mostra Uma Logo Na Parte Inferior Da Tela
 	
+	
 	//Init AntiHack...
 	[] execVM "AntiHack\ACTermal\Init.sqf";         //Anti Termal Hack
 	[] execVM "AntiHack\ACScripts\Anticheat.sqf";   //AntiHack Recoil/Injeção De Script/AdminMenu
@@ -29,6 +30,9 @@
 	if (hasInterface) then {
     [] execVM "briefing.sqf";                       //Carregar Informações No Mapa
     };
+	
+	//Zeus Com Tudo Liberado
+	[Admins,true] execVM "scripts\ADV_zeus.sqf";
 	
 	//NameTags...
 	122014 cutrsc ["NameTag","PLAIN"];              //Script NameTags
