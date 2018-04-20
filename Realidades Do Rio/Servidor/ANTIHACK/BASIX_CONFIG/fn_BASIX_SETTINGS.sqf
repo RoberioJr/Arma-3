@@ -390,7 +390,7 @@ _Setting19 = false; //Disable BASIX for certain missions defined by ".pbo" name 
 _Setting20 = [""]; //Disabled mission PBO files
 
 //CheatEngine Injector Scans
-_Setting21 = true; //Allow BASIX to scan for indications of someone Injecting using CheatEngine ("true" is on, "false" is off, set to true by default)
+_Setting21 = false; //Allow BASIX to scan for indications of someone Injecting using CheatEngine ("true" is on, "false" is off, set to true by default)
 
 //Chat-Loging
 _Setting26 = true; //Allow BASIX to store chat conversations ("true" is on, "false" is off, set to true by default)
@@ -401,7 +401,7 @@ _Setting28 = ["porra","PORRA","caralho","CARALHO","FDP","fdp"]; //Filter list, c
 _Setting29 = true; //Enable chat based commands, found in "fn_BASIX_COMMANDS.sqf" ("true" is on, "false" is off, set to true by default)
 
 //Version Checker
-_Setting30 = false; //Enable version checker ("true" is on, "false" is off, set to true by default)
+_Setting30 = true; //Enable version checker ("true" is on, "false" is off, set to true by default)
 
 
 
