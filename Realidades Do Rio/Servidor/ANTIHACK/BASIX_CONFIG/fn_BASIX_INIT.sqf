@@ -131,7 +131,7 @@ if !(isServer) then
 	_Settings = call BASIX_SETTINGS;
 	sleep 5;
 	systemChat "BASIX: Este Servidor é Protegido Por BASIX";
-	systemChat format ["BASIX: Welcome %1 (%2)",(name player),(getPlayerUID player)];
+	systemChat format ["BASIX: BemVindo %1 (%2)",(name player),(getPlayerUID player)];
 	call compile format ["[{""BASIX_LOG"" callExtension ""%1 Entrou No Servidor UID:(%2)""}, ""BIS_fnc_spawn"", false, false] spawn BIS_fnc_MP", (name player), (getPlayerUID player)];
 	player addMPEventHandler ["MPKilled", {if (isServer) then {if ((name (_this select 0)) != "Error: No unit") then {"BASIX_LOG" callExtension format ["%1 Was Killed By %2",(name (_this select 0)),(name (_this select 1))];};};}];
 	if ((_Settings select 11) && ((getPlayerUID player) in (_Settings select 12))) then

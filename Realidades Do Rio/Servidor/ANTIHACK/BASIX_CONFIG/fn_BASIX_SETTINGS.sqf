@@ -356,7 +356,7 @@ _Setting4 = ["mainnext1","visualeffects1","iBeFlying","nonapsi_ef","ChangingBull
 "airborne_spawn_vehicle_infiSTAR","Metallica_infiSTAR_hax_toggled","LysticsCode","color_list_lystic","LOLTOGGLESHITNIT"]; //Banned variable names (e.g. an array called: HaxSmokeOn)
 
 //Classname Blacklist
-_Setting16 = false; //Detect player using Banned classnames ("true" is on, "false" is off, set to false by default)
+_Setting16 = true; //Detect player using Banned classnames ("true" is on, "false" is off, set to false by default)
 _Setting17 = ["DevCon","DEV_Background","DEV_Abort","GlobalExecuteButton_06","DEV_MiniMap","DevCon_Fired","DEV_MapReplacement"]; //Banned classnames list
 
 //Server Speed Limit
@@ -379,7 +379,7 @@ _Setting12 = false; //Allow declared players to be exempt from Anti-Hack ("true"
 _Setting13 = [""]; //List of player UID's exempt from Anti-Hack
 
 //Admin Menu
-_Setting14 = false; //Enable BASIX admin menu system ("true" is on, "false" is off, set to false by default)
+_Setting14 = true; //Enable BASIX admin menu system ("true" is on, "false" is off, set to false by default)
 _Setting15 = [["76561198134612622","SuperAdmin"],["76561198090180406","SuperAdmin"]]; //List of admin UID's and level, structure [UID,LEVEL] e.g. [["123456","SuperAdmin"],["789123","Admin"],["456789","Moderator"]] (options: "SuperAdmin", "Admin", "Moderator")
 
 //Permanent BASIX Bans
@@ -401,7 +401,7 @@ _Setting28 = ["porra","PORRA","caralho","CARALHO","FDP","fdp"]; //Filter list, c
 _Setting29 = true; //Enable chat based commands, found in "fn_BASIX_COMMANDS.sqf" ("true" is on, "false" is off, set to true by default)
 
 //Version Checker
-_Setting30 = true; //Enable version checker ("true" is on, "false" is off, set to true by default)
+_Setting30 = false; //Enable version checker ("true" is on, "false" is off, set to true by default)
 
 
 
