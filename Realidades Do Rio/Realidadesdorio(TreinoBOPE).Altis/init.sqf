@@ -32,18 +32,30 @@
 	122014 cutrsc ["NameTag","PLAIN"];              //Script NameTags
 	
  // Remover Linhas Do Mapa...
+ /*
  (createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
  [
  	"!triggerActivated thisTrigger", 
  	"thisTrigger setTriggerTimeout [30,30,30,false]",
  	"{if (markerShape _x == 'POLYLINE') then {deleteMarker _x}} forEach allMapMarkers"
  ];
+ */
 
  
  //Remover Voz De Bots Falando No Radio
  0 fadeRadio 0;
  enableRadio false;
  enableSentences false;
+ 
+ //Sentar na Cadeira
+ MAC_fnc_switchMove = {
+    private["_object","_anim"];
+    _object = _this select 0;
+    _anim = _this select 1;
+
+    _object switchMove _anim;
+    
+};
  
 
 /* Configurações De Visão */
