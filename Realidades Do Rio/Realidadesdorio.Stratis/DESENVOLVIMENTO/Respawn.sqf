@@ -2,6 +2,7 @@ _bopeSpawnMarkers = ["bopeSpawn_0", "bopeSpawn_1", "bopeSpawn_2", "bopeSpawn_3"]
 
 _bandidoSpawnMarkers = ["bandidoSpawn_0", "bandidoSpawn_1", "bandidoSpawn_2", "bandidoSpawn_3"] call BIS_fnc_selectRandom;
 
+waitUntil (alive Player);
 switch (side player) do
 {
 	case WEST: {

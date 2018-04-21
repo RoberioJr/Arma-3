@@ -26,6 +26,8 @@ __EXEC(HG_Profile = allVariables profileNamespace)
 #include "scripts\recargaCarreg\config.hpp"
 #include "scripts\CHVD\dialog.hpp"
 #include "scripts\LogoInferior\global.hpp"
+#include "scripts\respawnSelectionMenu\dlg\base_defines.hpp"
+#include "scripts\respawnSelectionMenu\dlg\dlg_respawnSelectionMenu.hpp"
 
 class CfgClient
 {
@@ -50,12 +52,18 @@ class CfgFunctions
 	#include "scripts\HG\Functions\HG_Functions.h"
 	#include "scripts\LogoInferior\roberio.h"
 	#include "scripts\CHVD\CfgFunctions.hpp"
+	#include "scripts\respawnSelectionMenu\functions\CfgFunctions.hpp"
 };
 
 class CfgDebriefing
 {
     #include "config\Economia\HG_Debriefing.h"
 	//#include "config\Client\WhiteList.h"
+};
+
+class respawnSelectionMenu_configs
+{
+	#include "scripts\respawnSelectionMenu\config\config_respawnPoints.hpp"
 };
 
 class CfgMusic

@@ -1403,3 +1403,28 @@
         </Key>		
     </package>
 </Project>
+<Project name="Mission">
+	<Package name="respawnMenuSelection">
+		<Key ID="STR_author">
+			<English>Haz</English>
+		</Key>
+		<Key ID="STR_dialogTitle">
+			<English>Seleção De Respawn</English>
+		</Key>
+		<Key ID="STR_sliderText">
+			<English>Seleçãp De Ponto De Respawn</English>
+		</Key>
+		<Key ID="STR_suspend">
+			<English>Suspender</English>
+		</Key>
+		<Key ID="STR_respawn">
+			<English>Respawn</English>
+		</Key>
+		<Key ID="STR_invalidRespawnPointName">
+			<English>Especifique um ponto de respawn valido(Não """")!</English>
+		</Key>
+		<Key ID="STR_invalidRespawnPointName2">
+			<English>Falha ao adicionar ponto de Respawn. User outro nome!</English>
+		</Key>
+	</Package>
+</Project>
