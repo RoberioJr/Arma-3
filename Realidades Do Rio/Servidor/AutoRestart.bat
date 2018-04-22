@@ -16,7 +16,7 @@ color 9
   set rein=%hr%:%mm%
   ping -n 2 127.0.0.1 >NUL
   if %rein%== 0:00 goto :deslig
-  if %rein%== 06:00 goto :deslig
+  if %rein%== 6:00 goto :deslig
   if %rein%== 12:00 goto :deslig
   if %rein%== 18:00 goto :deslig
   echo.
