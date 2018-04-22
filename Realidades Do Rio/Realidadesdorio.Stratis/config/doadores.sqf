@@ -45,8 +45,8 @@ client_firstSpawn = true;
 
 if((getPlayerUID player) in _Doadores) then
 	{
-         lojadoa addAction["<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_GEAR_SHOP")+"</t>",{_this call HG_fnc_dialogOnLoadGear},"HG_RoupaseArmas",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
-		 lojadoa addAction["<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_VEHICLES_SHOP")+"</t>",{_this call HG_fnc_dialogOnLoadVehicles},"HG_DoadoresVeiculos",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+        lojadoa addAction["<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_GEAR_SHOP")+"</t>",{_this call HG_fnc_dialogOnLoadGear},"HG_RoupaseArmas",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+		lojadoa addAction["<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_VEHICLES_SHOP")+"</t>",{_this call HG_fnc_dialogOnLoadVehicles},"HG_DoadoresVeiculos",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
 	};
 };
 
