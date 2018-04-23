@@ -2,7 +2,7 @@
 	Code written by Haz
 */
 
-#include "scripts\respawnSelectionMenu\dlg\IDCs.hpp"
+#include "IDCs.hpp"
 
 class dlg_respawnSelectionMenu
 {
