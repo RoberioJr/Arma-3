@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=240;
+		nextID=242;
 	};
 	class Camera
 	{
-		pos[]={3697.5298,116.53891,7546.312};
+		pos[]={3692.3728,75.022499,7579.9556};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,0};
@@ -616,6 +616,7 @@ class ScenarioData
 {
 	author="RobérioJr, Marvinn and R. Marques";
 	disabledAI=1;
+	respawn=2;
 	respawnDelay=30.000002;
 	respawnVehicleDelay=119.95712;
 	class Header
@@ -646,8 +647,22 @@ class CustomAttributes
 					};
 					class value
 					{
-						items=1;
+						items=2;
 						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Counter";
+							};
+						};
+						class Item1
 						{
 							class data
 							{
