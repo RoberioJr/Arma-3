@@ -12,6 +12,7 @@
  [] execVM "config\SlotsReservados.sqf";                //Slots Reservados
  [] execVM "config\Client\initSide\initSide.sqf";       //Inicialização Jogadores
  [] execVM "scripts\marcadores.sqf";                    //Marcadores Do Mapa
+ [] execVM "scripts\respawnSelectionMenu\functions\respawndeinicio.sqf";   //Sistema de Respawn de Início
  
  //Simple Shops
  if(!hasInterface) exitWith {};
