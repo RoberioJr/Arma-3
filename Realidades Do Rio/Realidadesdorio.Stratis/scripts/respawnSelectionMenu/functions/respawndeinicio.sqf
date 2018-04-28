@@ -9,9 +9,8 @@ createDialog "dlg_respawnSelectionMenu";
 };
 
 while {true} do {
-		    if(!alive player) then{
-            waitUntil {alive player};
-            createDialog "dlg_respawnSelectionMenu";
-        };			
-	};
+	if(!alive player) then{
+    waitUntil {alive player};
+    createDialog "dlg_respawnSelectionMenu";
+    };			
 };
