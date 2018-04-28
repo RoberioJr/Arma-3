@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=674;
+	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=5817;
+		nextID=5824;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=242;
+		nextID=244;
 	};
 	class Camera
 	{
-		pos[]={3692.3728,75.022499,7579.9556};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={6483.6958,11.552911,5385.0679};
+		dir[]={-0.73172021,-0.38905916,-0.55967098};
+		up[]={-0.3090328,0.92120647,-0.23636973};
+		aside[]={-0.6075381,-3.9348379e-008,0.79430223};
 	};
 };
 binarizationWanted=0;
@@ -627,7 +627,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -682,7 +682,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -57930,11 +57930,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6453.2139,8.1237822,5389.3247};
+						position[]={6477.4414,8.1034107,5380.605};
 						angles[]={0,0.76794493,0};
 					};
 					side="East";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GEAR_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadGear},""HG_roupasbandido"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; " \n "}";
@@ -57951,7 +57951,7 @@ class Mission
 					};
 					id=5722;
 					type="O_Survivor_F";
-					atlOffset=0.019734383;
+					atlOffset=0.39253187;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -58057,7 +58057,7 @@ class Mission
 			{
 			};
 			id=5721;
-			atlOffset=0.019734383;
+			atlOffset=0.39253187;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -58085,13 +58085,12 @@ class Mission
 		class Item2677
 		{
 			dataType="Marker";
-			position[]={6453.3647,8.1025572,5389.0098};
+			position[]={6477.8618,7.7113876,5380.4355};
 			name="marker_245";
 			text="Loja de Roupas";
 			type="loc_CivilDefense";
 			colorName="ColorOrange";
 			id=5723;
-			atlOffset=5.2452087e-005;
 		};
 		class Item2678
 		{

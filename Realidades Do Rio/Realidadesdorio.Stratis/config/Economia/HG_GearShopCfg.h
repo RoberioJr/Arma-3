@@ -303,7 +303,9 @@ class HG_roupasbandido // HG_DefaultShop is just a placeholder for testing purpo
 			{"mao",150,"true"},
 			{"nuvem",150,"true"},
 			{"pika",150,"true"},
-			{"tigre",150,"true"}
+			{"tigre",150,"true"},
+			{"flamengo",150,"true"},
+			{"riodejaneiro1",150,"true"}
 		};
 	};
 	

@@ -152,14 +152,22 @@ class HG_bandido // HG_DefaultShop is just a placeholder for testing purposes, y
 	
 	class Items
 	{
-	    displayName = "Items";
+	    displayName = "Itens";
 		items[] =
 		{
 		    {"ItemWatch",50,"true"},
 			{"ItemCompass",50,"true"},
 			{"ItemGPS",50,"true"},
 			{"ItemRadio",50,"true"},
-			{"ItemMap",50,"true"}
+			{"ItemMap",50,"true"},
+			{"TFAR_fadak",150,"true"},
+			{"ACE_elasticBandageItem",50,"true"},
+			{"ACE_quikClotItem",50,"true"},
+			{"ACE_fieldDressingItem",50,"true"},
+			{"ACE_adenosineItem",150,"true"},
+			{"ACE_atropineItem",150,"true"},
+			{"ACE_epinephrineItem",150,"true"},
+			{"ACE_morphineItem",150,"true"}
 		};
 	};
 	
