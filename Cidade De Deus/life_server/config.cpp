@@ -77,6 +77,8 @@ class CfgFunctions {
             class recupkeyforHC {};
             class handleBlastingCharge {};
             class terrainSort {};
+			/* EDIT RJ */
+			class insureCar {};
         };
 
         class Housing {

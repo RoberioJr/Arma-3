@@ -50,6 +50,9 @@ class Life_Client_Core {
 
     class Actions {
         file = "core\actions";
+		/* Edits Do RJ */
+		class jaws {};
+	    /***************/
         class arrestAction {};
         class buyLicense {};
         class captureHideout {};
@@ -181,6 +184,8 @@ class Life_Client_Core {
         class unimpound {};
         class vehicleGarage {};
         class wireTransfer {};
+		/* EDIT RJ */
+		class insureCar {};
     };
 
     class Functions {
@@ -233,6 +238,7 @@ class Life_Client_Core {
         class whereAmI {};
 		/* Edições By: RobérioJr */
 		class initPayChecks {};   //Pagamentos Customizados
+		class robstore {};        //Roubo De Posto
     };
 
     class Gangs {

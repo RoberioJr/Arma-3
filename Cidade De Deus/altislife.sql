@@ -216,10 +216,14 @@ CREATE TABLE IF NOT EXISTS `wanted` (
 -- Reloads the privileges from the grant tables in the mysql system database.
 --
 
-CREATE USER IF NOT EXISTS `arma3`@`localhost` IDENTIFIED BY 'changeme';
+CREATE USER IF NOT EXISTS `arma3`@`localhost` IDENTIFIED BY 'altislife';
 GRANT SELECT, UPDATE, INSERT, EXECUTE ON `altislife`.* TO 'arma3'@'localhost';
 FLUSH PRIVILEGES;
 
+-- Alterações By: RobérioJR
+--
+-- Seguro Dos Veiculos
+ALTER TABLE vehicles ADD insure INT(1) NOT NULL DEFAULT '0';
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -23,3 +23,5 @@
  } else {
     life_markers_active = false;
  };
+
+ 

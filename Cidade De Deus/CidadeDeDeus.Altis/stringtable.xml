@@ -8390,6 +8390,9 @@
             <Portuguese>Vender Garagem</Portuguese>
             <Polish>Sprzedaj garaż</Polish>
         </Key>
+		<Key ID="STR_InsuranceApply"> 
+            <Original>Você acabou de segurar seu veículo e agora está protegido contra explosões!</Original> 
+        </Key>
         <Key ID="STR_pInAct_RemoveContainer">
             <Original>Remove Container</Original>
             <Czech>Nádobu</Czech>
@@ -12251,5 +12254,14 @@
             <Russian>%1 - %2 депозит в размере $%3 в свой банк. Банковский баланс: $%4 на руку Баланс: $%5</Russian>
             <German>%1 - %2 hat $%3 auf sein Bankkonto eingezahlt. Bankkonto: $%4  Bargeld: $%5</German>
         </Key>
+		<Key ID="STR_ISTR_Jaws">
+	        <Original>Using Jaws Of Life On: %1</Original>
+        </Key>
+        <Key ID="STR_ISTR_Jaws_Success">
+	        <Original>The Jaws Of Life Where Successful!</Original>
+        </Key>	
+        <Key ID ="STR_vInAct_Jaws">
+	        <Original>Jaws Of Life</Original>		
+        </Key>	
     </Package>
 </Project>
