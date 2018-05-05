@@ -10,6 +10,9 @@ scriptName "fn_respawnSelectionMenu";
 
 disableSerialization;
 
+//RJ
+_time = side player
+
 private _display = uiNamespace getVariable "disp_respawnSelectionMenu";
 
 waitUntil {(!isNull _display)};
@@ -77,3 +80,5 @@ if ((!isNil {player getVariable "additionalRespawnPoints"})) then
 {
 	[] spawn Haz_fnc_respawn;
 }];
+
+

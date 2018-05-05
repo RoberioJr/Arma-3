@@ -6,7 +6,7 @@ class config_respawnPoints
 {
 	respawnPoints[] =
 	{
-		"bluforRespawnPoint",
+		"azul",
 		"docksRespawnPoint",
 		"supplyBaseRespawnPoint",
 		"sea"

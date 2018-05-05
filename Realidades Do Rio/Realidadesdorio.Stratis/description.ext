@@ -29,6 +29,7 @@ __EXEC(HG_Profile = allVariables profileNamespace)
 #include "scripts\respawnSelectionMenu\dlg\base_defines.hpp"
 #include "scripts\respawnSelectionMenu\dlg\dlg_respawnSelectionMenu.hpp"
 
+
 class CfgClient
 {
     #include "config\Economia\HG_Config.h"
