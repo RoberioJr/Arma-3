@@ -12,9 +12,9 @@ playerNearGas=false;
 
         if
         (
-        (((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 20))
+        (((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10))
         or
-        (((nearestObject [getpos player, "G_40mm_SmokeYellow"]) distance player < 15))
+        (((nearestObject [getpos player, "G_40mm_SmokeYellow"]) distance player < 13))
         ) then
         {
         playerNearGas=true;
