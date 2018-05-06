@@ -80,15 +80,15 @@ waitUntil{isNull (findDisplay 38500)};
 		((uiNamespace getVariable "statusBar")displayCtrl 55555)ctrlSetStructuredText parseText 
 			format["
 			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\players.paa' color='%10'/> %2</t>
-			<t shadow='1' shadowColor='#000000' color='%11'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\polis.paa' color='%11'/> %3</t> 
-			<t shadow='1' shadowColor='#000000' color='%11'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\doktor.paa' color='%11'/> %4</t> 
-			<t shadow='1' shadowColor='#000000' color='%11'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\sivil.paa' color='%11'/> %5</t> 
-			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\nakit.paa' color='%10'/> %6</t> 
-			<t shadow='1' shadowColor='#000000' color='%12'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\banka.paa' color='%12'/> %11</t>  
+			<t shadow='1' shadowColor='#000000' color='%11'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\cop.paa' color='%11'/> %3</t> 
+			<t shadow='1' shadowColor='#000000' color='%11'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\med.paa' color='%11'/> %4</t> 
+			<t shadow='1' shadowColor='#000000' color='%11'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\civ.paa' color='%11'/> %5</t> 
+			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\grana.paa' color='%10'/> %6</t> 
+			<t shadow='1' shadowColor='#000000' color='%12'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\banco.paa' color='%12'/> %11</t>  
 			<t shadow='1' shadowColor='#000000' color='%10'>FPS: %7</t>
 			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\ts3.paa' color='%10'/>192.99.119.161:9047</t>
 			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\restart.paa' color='%10'/>Restart/: %9:%10</t>
-			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\icon.paa' color='%10'/> </t>",
+			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\logo.paa' color='%10'/> </t>",
 					"%", 
 					_players,
 					_polis,
