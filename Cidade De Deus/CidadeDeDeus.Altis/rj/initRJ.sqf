@@ -9,3 +9,6 @@
   
  /* Remover Neblina Do Arma */
   [] execVM "rj\RemoverNeblina\RemoverNeblina.sqf";
+  
+ /* Debug Menu Do CCD */
+  [] execVM "rj\Debug\iniciar.sqf";
