@@ -10002,6 +10002,19 @@
             <Polish>Pole kokainy</Polish>
             <Italian>Campo di Cocaina</Italian>
         </Key>
+		<Key ID="STR_Item_TabacoU">
+            <Original>Folha De Tabaco</Original>
+        </Key>
+        <Key ID="STR_Item_Tabaco">
+            <Original>Cigarros</Original>
+        </Key> 
+         <Key ID="STR_License_Tabaco">
+            <Original>Processamento De Tabaco</Original>
+        </Key> 
+
+         <Key ID="STR_Process_Tabaco">
+            <Original>Processando Folhas De Tacabo...</Original>
+        </Key>
         <Key ID="STR_MAR_Oil_Trader">
             <Original>Oil Trader</Original>
             <Czech>olej Trader</Czech>

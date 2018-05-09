@@ -14,6 +14,9 @@ class CfgGather {
             zoneSize = 30;
         };
 
+		/* DROGAS!! */
+		
+		/* HEROINA */
         class heroin_unprocessed {
             amount = 3;
             zones[] = { "heroin_1" };
@@ -21,13 +24,23 @@ class CfgGather {
             zoneSize = 30;
         };
 
+		/* COCAINA */
         class cocaine_unprocessed {
             amount = 3;
             zones[] = { "cocaine_1" };
             item = "";
             zoneSize = 30;
         };
-
+  
+        /* TABACO/CIGARRO */
+		class tabaco_unprocessed {
+		    amount = 3;
+			zones[] = { "tabaco_1" };
+			item = "";
+			zoneSize = 30;
+		};
+		
+		/* MACONHA */
         class cannabis {
             amount = 3;
             zones[] = { "weed_1" };
