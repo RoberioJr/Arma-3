@@ -5,109 +5,127 @@ class Life_Clothing {
     enableSimulation = 1;
     //onLoad = "[] execVM 'core\client\keychain\init.sqf'";
 
-    class controlsBackground {
-        class Life_RscTitleBackground: Life_RscText {
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
-            idc = -1;
-            x = 0.0821059 * safezoneW + safezoneX;
-            y = 0.212176 * safezoneH + safezoneY;
-            w = 0.318;
-            h = (1 / 25);
+    class controlsBackground
+    {
+        class Background: Life_RscText
+        {
+	        idc = -1;
+			colorBackground[] = {0, 0, 0, 0.7};
+	        x = 0.716562 * safezoneW + safezoneX;
+	        y = 0.016 * safezoneH + safezoneY;
+	        w = 0.273281 * safezoneW;
+	        h = 0.968 * safezoneH;
         };
-
-        class MainBackground: Life_RscText {
-            colorBackground[] = {0, 0, 0, 0.7};
-            idc = -1;
-            x = 0.0822359 * safezoneW + safezoneX;
-            y = 0.236099 * safezoneH + safezoneY;
-            w = 0.318;
-            h = 0.5 - (22 / 250);
+        class Background2: Life_RscText
+        {
+	        idc = -1;
+			colorBackground[] = {0, 0, 0, 0.7};
+	        x = 0.716563 * safezoneW + safezoneX;
+	        y = 0.016 * safezoneH + safezoneY;
+	        w = 0.273281 * safezoneW;
+	        h = 0.968 * safezoneH;
         };
     };
 
-    class controls {
-        class Title: Life_RscTitle {
-            colorBackground[] = {0, 0, 0, 0};
-            idc = 3103;
-            text = "";
-            x = 0.0821059 * safezoneW + safezoneX;
-            y = 0.212176 * safezoneH + safezoneY;
-            w = 0.6;
-            h = (1 / 25);
+    class controls 
+    {
+        class Title: Life_RscStructuredText
+        {
+	        idc = 1100;
+			colorBackground[] = {0, 0, 0, 0};
+	        text = "Clothing Shop"; //--- ToDo: Localize;
+	        x = 0.824844 * safezoneW + safezoneX;
+	        y = 0.016 * safezoneH + safezoneY;
+	        w = 0.0825 * safezoneW;
+	        h = 0.033 * safezoneH;
         };
-
-        class ClothingList: Life_RscListBox {
-            idc = 3101;
-            text = "";
-            sizeEx = 0.035;
-            onLBSelChanged = "[_this] call life_fnc_changeClothes;";
-            x = 0.0842977 * safezoneW + safezoneX;
-            y = 0.240498 * safezoneH + safezoneY;
-            w = 0.3;
-            h = 0.35;
+        class ClothingList: Life_RscListbox
+        {
+	        onLBSelChanged = "[_this] call life_fnc_changeClothes;";
+	        idc = 3101;
+	        x = 0.732031 * safezoneW + safezoneX;
+	        y = 0.06 * safezoneH + safezoneY;
+	        w = 0.242344 * safezoneW;
+	        h = 0.748 * safezoneH;
         };
-
-        class PriceTag: Life_RscStructuredText {
-            idc = 3102;
-            text = "";
-            sizeEx = 0.035;
-            x = 0.0853304 * safezoneW + safezoneX;
-            y = 0.439419 * safezoneH + safezoneY;
-            w = 0.2;
-            h = (1 / 25);
+        class PriceTag: Life_RscStructuredText
+        {
+	        idc = 3102;
+	        x = 0.778437 * safezoneW + safezoneX;
+	        y = 0.907 * safezoneH + safezoneY;
+	        w = 0.0567187 * safezoneW;
+	        h = 0.022 * safezoneH;
         };
-
-        class TotalPrice: Life_RscStructuredText {
-            idc = 3106;
-            text = "";
-            sizeEx = 0.035;
-            x = 0.148258 * safezoneW + safezoneX;
-            y = 0.439419 * safezoneH + safezoneY;
-            w = 0.2;
-            h = (1 / 25);
+        class TotalPrice: Life_RscStructuredText
+        {
+	        idc = 3106;
+	        x = 0.778437 * safezoneW + safezoneX;
+	        y = 0.874 * safezoneH + safezoneY;
+	        w = 0.0567187 * safezoneW;
+	        h = 0.022 * safezoneH;
         };
-
-        class FilterList: Life_RscCombo {
-            idc = 3105;
-            colorBackground[] = {0,0,0,0.7};
-            onLBSelChanged  = "_this call life_fnc_clothingFilter";
-            x = 0.0822359 * safezoneW + safezoneX;
-            y = 0.468 * safezoneH + safezoneY;
-            w = 0.318;
-            h = 0.035;
+        class FilterList: Life_RscCombo
+        {
+	        onLBSelChanged	= "_this call life_fnc_clothingFilter";
+	        idc = 3105;
+	        x = 0.835156 * safezoneW + safezoneX;
+	        y = 0.819 * safezoneH + safezoneY;
+	        w = 0.139219 * safezoneW;
+	        h = 0.022 * safezoneH;
+	        tooltip = "Use isso para mudar para mochila ou coletes ou alguma outra seção."; //--- ToDo: Localize;
         };
-
-        class CloseButtonKey: Life_RscButtonMenu {
-            idc = -1;
-            text = "$STR_Global_Close";
-            onButtonClick = "closeDialog 0; [] call life_fnc_playerSkins;";
-            x = 0.157 * safezoneW + safezoneX;
-            y = 0.489992 * safezoneH + safezoneY;
-            w = (6.25 / 40);
-            h = (1 / 25);
+        class Total: Life_RscStructuredText
+        {
+	        idc = 1103;
+	        text = "Total Price:"; //--- ToDo: Localize;
+	        x = 0.732031 * safezoneW + safezoneX;
+	        y = 0.874 * safezoneH + safezoneY;
+	        w = 0.0515625 * safezoneW;
+	        h = 0.022 * safezoneH;
         };
-
-        class BuyButtonKey: Life_RscButtonMenu {
-            idc = -1;
-            text = "$STR_Global_Buy";
-            onButtonClick = "[] call life_fnc_buyClothes;";
-            x = 0.0822359 * safezoneW + safezoneX;
-            y = 0.489992 * safezoneH + safezoneY;
-            w = (6.25 / 40);
-            h = (1 / 25);
+        class ItemPrice: Life_RscStructuredText
+        {
+	        idc = 1104;
+	        text = "Item Price:"; //--- ToDo: Localize;
+	        x = 0.732031 * safezoneW + safezoneX;
+	        y = 0.907 * safezoneH + safezoneY;
+	        w = 0.0515625 * safezoneW;
+	        h = 0.022 * safezoneH;
         };
+        class CloseButtonKey: Life_RscButtonMenu
+        {
+	        onButtonClick = "closeDialog 0; [] call life_fnc_playerSkins;";
 
-        class viewAngle: life_RscXSliderH {
-            color[] = {1, 1, 1, 0.45};
+	        idc = -1;
+	        text = "Exit"; //--- ToDo: Localize;
+	        x = 0.732031 * safezoneW + safezoneX;
+	        y = 0.951 * safezoneH + safezoneY;
+	        w = 0.0670312 * safezoneW;
+	        h = 0.022 * safezoneH;
+        };
+        class BuyButtonKey: Life_RscButtonMenu
+        {
+	        onButtonClick = "[] call life_fnc_buyClothes;";
+
+	        idc = -1;
+	        text = "Buy"; //--- ToDo: Localize;
+	        x = 0.9125 * safezoneW + safezoneX;
+	        y = 0.951 * safezoneH + safezoneY;
+	        w = 0.0670312 * safezoneW;
+	        h = 0.022 * safezoneH;
+        };
+        class viewAngle: life_RscXSliderH
+        {
+	        onSliderPosChanged = "[4,_this select 1] call life_fnc_s_onSliderChange;";
+	        idc = 3107;
+			color[] = {1, 1, 1, 0.45};
             colorActive[] = {1, 1, 1, 0.65};
-            idc = 3107;
-            text = "";
-            onSliderPosChanged = "[4,_this select 1] call life_fnc_s_onSliderChange;";
-            tooltip = "";
-            x = 0.25 * safezoneW + safezoneX;
-            y = 0.93 * safezoneH + safezoneY;
-            w = 0.5 * safezoneW;
-            h = 0.02 * safezoneH;
+			text = "";
+	        x = 0.00499997 * safezoneW + safezoneX;
+	        y = 0.951 * safezoneH + safezoneY;
+	        w = 0.221719 * safezoneW;
+	        h = 0.033 * safezoneH;
+	        tooltip = "Use isso para ver sua pessoa e como elas serão com suas roupas novas e elegantes."; //--- ToDo: Localize;
         };
     };
 };
