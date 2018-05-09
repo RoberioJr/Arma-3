@@ -24,7 +24,7 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
 	#include "maverick\introcam\dialogs\title_status.hpp"
-	#include "scripts\status_bar\statusBar.hpp"            //Barra De Status
+	#include "rj\BarraDeStatus\statusBar.hpp"            //Barra De Status
 };
 
 class CfgFunctions {
@@ -35,7 +35,7 @@ class CfgFunctions {
 //RoberioJr Edit
 class CfgMusic
 {
-    #include "rj\roberiomsc.h"
+    #include "rj\roberiomsc.h"  
 };
 
 

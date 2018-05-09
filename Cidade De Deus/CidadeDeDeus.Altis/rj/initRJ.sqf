@@ -12,3 +12,23 @@
   
  /* Debug Menu Do CCD */
   [] execVM "rj\Debug\iniciar.sqf";
+  
+ /* Gás Lacrimogenio */
+  [] execVM "rj\GasLacrimo\gaslacrimo.sqf";
+  
+ /* Barra De Status */ 
+  [] execVM "rj\BarraDeStatus\iniciarstatusbar.sqf";
+  
+ /* Mancador Do Mapa */
+  [] execVM "rj\Marcador\marcador.sqf"
+  
+ /* Mancador Do Mapa */
+  [] execVM "rj\ReparoDeVeiculo\repararveiculo.sqf"
+ 
+ /* SafeZones Do Servidor */
+  [] execVM "rj\Safezones\InitSafeZones.sqf"
+  
+ /* Mancador Do Mapa(Executado Pelo Servidor) */
+  /*[] execVM "rj\GuinchoAvancado\guincho.sqf"*/
+
+

@@ -13,9 +13,8 @@ if (hasInterface) then {
 [] execVM "KRON_Strings.sqf";
  
  /* Init De Scripts De 3º Parte */
-  [] execVM "scripts\status_bar\init_statusBar.sqf";
 
- /* Init De Scripts Do RobérioJr */
+ /* Init De Scripts RJ */
  [] execVM "rj\initRJ.sqf";
 
 StartProgress = true;
