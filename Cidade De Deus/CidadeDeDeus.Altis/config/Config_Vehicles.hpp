@@ -449,7 +449,7 @@ class LifeCfgVehicles {
     class B_G_Offroad_01_armed_F {
         vItemSpace = 65;
         conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
-        price = 750000;
+        price = 450000;
         textures[] = { };
     };
 
@@ -520,9 +520,12 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
-            { "Police", "cop", {
+            /*{ "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
-            }, "" }
+            }, "" }*/
+			{ "BOPE", "cop", {
+				"textures\veh\cop\bopeoffroad.paa"
+			}, "" }
         };
     };
 
@@ -548,7 +551,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Hatchback_01_sport_F {
         vItemSpace = 45;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 40000;
+        price = 50000;
         textures[] = {
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
@@ -729,12 +732,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class B_MRAP_01_F {
         vItemSpace = 65;
         conditions = "";
-        price = 30000;
+        price = 100000;
         textures[] = {
-            { "Black", "cop", {
+            /*{ "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }
+            }, "" },*/
+			{ "BOPE", "cop", {
+				"textures\veh\cop\bopehunter.paa",
+				"textures\veh\cop\bopehunter2.paa"
+			}, "" }
         };
     };
 
@@ -754,9 +761,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 245000;
         textures[] = {
-            { "Police", "cop", {
+            /*{ "Police", "cop", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
-            }, "" },
+            }, "" },*/
+			{ "BOPE", "cop", {
+				"textures\veh\cop\mh9.paa"
+			}, "" },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
             }, "" },
