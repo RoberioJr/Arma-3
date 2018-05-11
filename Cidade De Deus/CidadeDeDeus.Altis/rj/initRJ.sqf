@@ -20,15 +20,18 @@
   [] execVM "rj\BarraDeStatus\iniciarstatusbar.sqf";
   
  /* Mancador Do Mapa */
-  [] execVM "rj\Marcador\marcador.sqf"
+  [] execVM "rj\Marcador\marcador.sqf";
   
  /* Mancador Do Mapa */
-  [] execVM "rj\ReparoDeVeiculo\repararveiculo.sqf"
+  [] execVM "rj\ReparoDeVeiculo\repararveiculo.sqf";
  
  /* SafeZones Do Servidor */
-  [] execVM "rj\Safezones\InitSafeZones.sqf"
+  [] execVM "rj\Safezones\InitSafeZones.sqf";
   
- /* Mancador Do Mapa(Executado Pelo Servidor) */
+ /* Mochilas Invisiveis */
+  [] execVM "rj\MochilaInvisivel\mochilainvisivel.sqf";
+ 
+ /* Guincho Avançado(Executado Pelo Servidor) */
   /*[] execVM "rj\GuinchoAvancado\guincho.sqf"*/
 
 

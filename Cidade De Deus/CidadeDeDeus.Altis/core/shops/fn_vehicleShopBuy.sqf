@@ -41,6 +41,29 @@ switch (playerSide) do {
     };
 };
 
+/* ALTERAÇÃO BY: ROBÉRIOJR DONORLEVEL VEICULOS */
+
+if (playerSide == civilian) then {
+  _doador0descveh = LIFE_SETTINGS(getNumber,"rj_desconto_doadorveh0");
+  _doador1descveh = LIFE_SETTINGS(getNumber,"rj_desconto_doadorveh1");
+  _doador2descveh = LIFE_SETTINGS(getNumber,"rj_desconto_doadorveh2");
+  _doador3descveh = LIFE_SETTINGS(getNumber,"rj_desconto_doadorveh3");
+  _doador4descveh = LIFE_SETTINGS(getNumber,"rj_desconto_doadorveh4");
+  _doador5descveh = LIFE_SETTINGS(getNumber,"rj_desconto_doadorveh5");
+
+ switch(FETCH_CONST(life_donorlevel)) do
+   {
+	case 0: {_buyMultiplier = _doador0descveh;}; 
+	case 1: {_buyMultiplier = _doador1descveh;};
+	case 2: {_buyMultiplier = _doador2descveh;}; 
+	case 3: {_buyMultiplier = _doador3descveh;}; 
+	case 4: {_buyMultiplier = _doador4descveh;}; 
+	case 5: {_buyMultiplier = _doador5descveh;}; 
+   };
+};
+
+/**********************************/
+
 private "_purchasePrice";
 
 if (_mode) then {

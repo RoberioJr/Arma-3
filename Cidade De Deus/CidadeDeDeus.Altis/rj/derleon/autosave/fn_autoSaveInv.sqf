@@ -1,5 +1,5 @@
-#include "scripts\derleon\lb_script_macros.hpp"
-#include "scripts\derleon\script_macros.hpp"
+#include "rj\derleon\lb_script_macros.hpp"
+#include "rj\derleon\script_macros.hpp"
 /*
     File: fn_autoSaveInv.sqf
     Author: Leon "DerL30N" Beeser"

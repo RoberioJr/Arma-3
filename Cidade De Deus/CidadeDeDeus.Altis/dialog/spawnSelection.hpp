@@ -18,7 +18,7 @@ class life_spawn_selection
  class Title: Life_RscText
  {
  idc = 1001;
- text = "Começar Uma Vida";
+ text = "Começar Uma Vida Em:";
  x = 0.0132501 * safezoneW + safezoneX;
  y = 0.0402 * safezoneH + safezoneY;
  w = 0.164999 * safezoneW;

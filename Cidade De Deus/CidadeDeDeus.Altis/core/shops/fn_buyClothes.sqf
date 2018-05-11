@@ -18,6 +18,7 @@ _price = 0;
 
 if (_price > CASH) exitWith {titleText[localize "STR_Shop_NotEnoughClothes","PLAIN"];};
 CASH = CASH - _price;
+[player,"comprar",30,1] remoteExec ["life_fnc_say3D",0];
 [0] call SOCK_fnc_updatePartial;
 
 life_clothesPurchased = true;

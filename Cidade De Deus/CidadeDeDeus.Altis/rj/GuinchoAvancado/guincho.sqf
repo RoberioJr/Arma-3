@@ -854,7 +854,7 @@ if(isServer) then {
 
 };
 
-diag_log "Advanced Towing Loaded";
+diag_log "Guincho Avançado - Carregado";
 
 };
 

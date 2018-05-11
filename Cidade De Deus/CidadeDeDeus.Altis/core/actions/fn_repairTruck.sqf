@@ -33,6 +33,8 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
                 player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
             };
 
+			/* Som 3D Edit RJ */
+			[_veh,"reparar",60,1] remoteExec ["life_fnc_say3D",0];
             uiSleep 0.27;
             _cP = _cP + 0.01;
             _progress progressSetPosition _cP;

@@ -3,13 +3,13 @@
 */
 if (!isnil "hotkey") then 
 {
-	(findDisplay 46) displayAddEventHandler ['KeyDown', 'if ((_this select 1) == 0x58) then	{call hotkey;}'];
+	(findDisplay 46) displayAddEventHandler ['KeyDown', 'if ((_this select 1) == 0x30) then	{call hotkey;}']; //F12 = 0x58 //B = 0x30
 };
 keyswitcher =
 {
 	switch (_this) do 
 	{
-		case 88: //F12 
+		case 48: //F12 = 88 //B = 48
 		{
 		    [] spawn
 			{
