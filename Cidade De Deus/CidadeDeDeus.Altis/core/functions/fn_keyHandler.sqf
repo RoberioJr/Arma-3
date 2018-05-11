@@ -93,7 +93,7 @@ switch (_code) do {
  
     /* Alterações RobérioJR */
 	
-	//Assalto By: Casperento
+	//Assalto By: Casperento (TAB)
 	case 15: {
             if !(isPlayer cursorTarget) exitWith {};
             if ((time - life_action_delay) < 1) exitWith {hint localize "STR_NOTF_ActionDelay";};

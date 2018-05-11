@@ -73,12 +73,21 @@ class ProcessAction {
         NoLicenseCost = 450;
     };
 
+	/* TABACO */
+	class tabaco {
+        MaterialsReq[] = {{"tabaco_unprocessed",1}};
+        MaterialsGive[] = {{"tabaco_processed",1}};
+        Text = "STR_Process_Tabaco";
+        //ScrollText = "Process Tobacco";
+        NoLicenseCost = 12500; //optional price
+    };
+	
     class cocaine {
         MaterialsReq[] = {{"cocaine_unprocessed",1}};
         MaterialsGive[] = {{"cocaine_processed",1}};
         Text = "STR_Process_Cocaine";
         //ScrollText = "Process Cocaine";
-        NoLicenseCost = 1500;
+        NoLicenseCost = 12500;
     };
 
     class marijuana {
@@ -86,7 +95,7 @@ class ProcessAction {
         MaterialsGive[] = {{"marijuana",1}};
         Text = "STR_Process_Marijuana";
         //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 500;
+        NoLicenseCost = 10500;
     };
 
     class cement {

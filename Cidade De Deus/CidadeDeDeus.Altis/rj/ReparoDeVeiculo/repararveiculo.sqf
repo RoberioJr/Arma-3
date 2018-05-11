@@ -1,6 +1,6 @@
 // Script Editada Por: RoberioJr
-// Just add 
-// [] execVM "repararveiculo.sqf";
+if (LIFE_SETTINGS(getNumber,"rj_ativar_reparoveiculo") isEqualTo 1) then {
+diag_log "RJ: Reparo De Veiculo Sem TollKit - Ativado";
 
 #define DEFAULT_FREPAIR_VER "1P"
 
@@ -284,7 +284,9 @@ player addEventHandler ["Respawn", {
 	player addAction["<t color='#FF9900'>"+STR_PUSH_APC+"</t>",zlt_pushapc,[],5,false,true,"","canMove (vehicle player) and ((vehicle player) isKindOf 'Wheeled_APC_F') and player == driver (vehicle player) and surfaceIsWater getpos (vehicle player)  and abs(speed (vehicle player) ) < 3 and not zlt_mutexAction"];   
 }];
 
-
+} else {
+   diag_log "RJ: Reparo De Veiculo Sem ToolKit - Desativado";
+};
 
 
 

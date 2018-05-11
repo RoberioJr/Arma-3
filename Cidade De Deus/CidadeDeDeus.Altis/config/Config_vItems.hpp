@@ -62,7 +62,7 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tabaco_processed" };
     };
 
     class oil {
@@ -444,6 +444,31 @@ class VirtualItems {
     };
 
     //Drugs
+	/* DROGAS */
+	
+	class tabaco_unprocessed {
+        variable = "tabacoUnprocessed";
+        displayName = "STR_Item_TabacoU";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\tabaco.paa";
+        processedItem = "tabaco_processed";
+    };
+	
+    class tabaco_processed {
+        variable = "tabacoProcessed";
+        displayName = "STR_Item_Tabaco";
+        weight = 3;
+        buyPrice = 5400;
+        sellPrice = 4500;
+        illegal = true;
+        edible = -1;
+        icon = "icons\tabacop.paa";
+    };
+
     class heroin_unprocessed {
         variable = "heroinUnprocessed";
         displayName = "STR_Item_HeroinU";
@@ -460,8 +485,8 @@ class VirtualItems {
         variable = "heroinProcessed";
         displayName = "STR_Item_HeroinP";
         weight = 4;
-        buyPrice = 3500;
-        sellPrice = 2560;
+        buyPrice = 8000;
+        sellPrice = 6000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_heroinProcessed.paa";
