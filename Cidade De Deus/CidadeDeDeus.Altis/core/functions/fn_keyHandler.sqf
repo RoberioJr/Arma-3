@@ -93,6 +93,26 @@ switch (_code) do {
  
     /* Alterações RobérioJR */
 	
+	//Gesto de Baitola
+	case 62:
+	{
+		if(vehicle player isEqualTo player) then {
+			if(!life_action_inUse) then {
+				player playActionNow "gestureHiC";
+				[player,"aipaipara",35,1] remoteExecCall ["life_fnc_say3D",0];
+			};
+		};
+	};
+	
+	
+	//Prender Medico (Shift + X)
+	case 45: {
+        if (_shift) then {_handled = true;};
+        if (_shift && playerSide isEqualTo independent && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,west])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
+            [] call life_fnc_restrainAction;
+        };
+    };
+	
 	//Assalto By: Casperento (TAB)
 	case 15: {
             if !(isPlayer cursorTarget) exitWith {};

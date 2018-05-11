@@ -5,9 +5,8 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
-#include "maverick\maverick_master.cpp"                //Maverick
-#include "scripts\status_bar\statusBar.hpp"            //Barra De Status
-#include "scripts\derleon\Scripts_Master.hpp"          //Auto Save Do Jogador
+#include "maverick\maverick_master.cpp"           //Maverick
+#include "rj\derleon\Scripts_Master.hpp"          //Auto Save Do Jogador
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -32,7 +31,6 @@ class CfgFunctions {
 	#include "maverick\maverick_functions_master.cpp"  //Maverick
 };
 
-//RoberioJr Edit
 class CfgMusic
 {
     #include "rj\roberiomsc.h"  
@@ -88,6 +86,42 @@ class CfgSounds {
         sound[] = {"\sounds\carUnlock.ogg", 0.75, 1};
         titles[] = {};
     };
+	
+	class comprar {
+	    name = "comprar";
+		sound[] = {"\sounds\comprar.ogg", 0.80, 1};
+		titles[] = {};
+	};
+	
+	class comer {
+	    name = "comer";
+		sound[] = {"\sounds\comer.ogg", 0.70, 1};
+		titles[] = {};
+	};
+	
+	class beber {
+	    name = "beber";
+		sound[] = {"\sounds\beber.ogg", 0.70, 1};
+		titles[] = {};
+	};
+	
+	class porrada {
+	    name = "porrada";
+		sound[] = {"\sounds\porrada.ogg", 0.85, 1};
+		titles[] = {};
+	};
+	
+	class reparar {
+	    name = "reparar";
+		sound[] = {"\sounds\reparar.ogg", 0.80, 1};
+		titles[] = {};
+	};
+	
+	class aipaipara {
+	    name = "aipaipara";
+		sound[] = {"\sounds\aipaipara.ogg", 0.80, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing {

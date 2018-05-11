@@ -16,6 +16,29 @@ class Life_Settings {
 	rj_ativar_reparoveiculo = true; //Sistema De Reparo De Veiculo Sem ToolKit       By:RobérioJR [true ou false]
 	rj_ativar_grafico = true;       //Ativa/Desativa Melhoria Na Coloração Do Jogo   By:RobérioJR [true ou false]	
 	rj_ativar_guincho = true;       //Ativa/Desativa Sistema De Guincho Avançado     By:RobérioJR [true ou false]
+	
+    /* Mochilas Invisiveis */
+	rj_ativar_mochilainvisivel = true;     //Ativa/Desativa Mochilas Invisiveis      By:RobérioJR [true ou false]
+	rj_ativar_mochilainvisivel_cop = true;  //Mochila Invisivel Para COP             By:RobérioJR [true ou false]
+	rj_ativar_mochilainvisivel_med = true;  //Mochila Invisivel Para MED             By:RobérioJR [true ou false]
+	rj_ativar_mochilainvisivel_civ = false; //Mochila Invisivel Para CIV             By:RobérioJR [true ou false]
+	
+   /* Descontos Do Doador */
+	/* Descontos Em Lojas De Armas */
+	rj_desconto_doador0 = 1;        //Descontos Do Jogador                           By:RobérioJR [Preço * Desconto]
+	rj_desconto_doador1 = .85;      //Descontos Do Doador 1                          By:RobérioJR [Preço * Desconto]
+	rj_desconto_doador2 = .75;      //Descontos Do Doador 2                          By:RobérioJR [Preço * Desconto]
+	rj_desconto_doador3 = .65;      //Descontos Do Doador 3                          By:RobérioJR [Preço * Desconto]
+	rj_desconto_doador4 = .60;      //Descontos Do Doador 4                          By:RobérioJR [Preço * Desconto]
+	rj_desconto_doador5 = .55;      //Descontos Do Doador 5                          By:RobérioJR [Preço * Desconto]
+	
+	/* Descontos Para Veiculos */
+	rj_desconto_doadorveh0 = 1;        //Descontos Do Jogador                        By:RobérioJR [Preço * Desconto]
+	rj_desconto_doadorveh1 = .90;      //Descontos Do Doador 1                       By:RobérioJR [Preço * Desconto]
+	rj_desconto_doadorveh2 = .80;      //Descontos Do Doador 2                       By:RobérioJR [Preço * Desconto]
+	rj_desconto_doadorveh3 = .70;      //Descontos Do Doador 3                       By:RobérioJR [Preço * Desconto]
+	rj_desconto_doadorveh4 = .65;      //Descontos Do Doador 4                       By:RobérioJR [Preço * Desconto]
+	rj_desconto_doadorveh5 = .60;      //Descontos Do Doador 5                       By:RobérioJR [Preço * Desconto]
 
 	
     /* Data Logging Settings */
@@ -152,8 +175,8 @@ class Life_Settings {
     vehicle_purchase_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* Vehicle Rental Prices */
-    vehicle_rental_multiplier_CIVILIAN = .70; //Civilian Vehicle Rental Price = Config_Vehicle price * multiplier
-    vehicle_rental_multiplier_COP = .3; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_CIVILIAN = .55; //Civilian Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_COP = .35; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
     vehicle_rental_multiplier_MEDIC = .55; //Medic Vehicle Rental Price = Config_Vehicle price * multiplier
     vehicle_rental_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
@@ -165,13 +188,13 @@ class Life_Settings {
 
 	/* Preço Dos Seguros */ 
     vehicle_insurance_multiplier_CIVILIAN = .30; //Civilian Vehicle Insurance Price = Vehicle Buy Price * multiplier 
-    vehicle_insurance_multiplier_COP = .25; //Cop Vehicle Insurance Price = Vehicle Buy Price * multiplier 
+    vehicle_insurance_multiplier_COP = .30; //Cop Vehicle Insurance Price = Vehicle Buy Price * multiplier 
     vehicle_insurance_multiplier_MEDIC = .20; //Medic Vehicle Insurance Price = Vehicle Buy Price * multiplier 
     vehicle_insurance_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 	
     /* "Other" Vehicle Prices */
     vehicle_chopShop_multiplier = .40; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
-    vehicle_storage_fee_multiplier = .2; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
+    vehicle_storage_fee_multiplier = .15; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
     vehicle_cop_impound_multiplier = .1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 
     disableCommanderView = true; //false - Group leaders can access the commander view. true [default] - Group leaders cannot access the commander view.

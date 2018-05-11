@@ -13,6 +13,27 @@ _price = lbValue[38403,(lbCurSel 38403)]; if (isNil "_price") then {_price = 0;}
 _item = lbData[38403,(lbCurSel 38403)];
 _itemInfo = [_item] call life_fnc_fetchCfgDetails;
 
+/* ALTERAÇÃO BY: ROBÉRIOJR DONORLEVEL */
+
+_doador0desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador0");
+_doador1desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador1");
+_doador2desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador2");
+_doador3desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador3");
+_doador4desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador4");
+_doador5desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador5");
+
+switch(FETCH_CONST(life_donorlevel)) do
+{
+	case 0: {_price = _price * _doador0desc;}; 
+	case 1: {_price = _price * _doador1desc;};
+	case 2: {_price = _price * _doador2desc;}; 
+	case 3: {_price = _price * _doador3desc;}; 
+	case 4: {_price = _price * _doador4desc;}; 
+	case 5: {_price = _price * _doador5desc;}; 
+};
+
+/**********************************/
+
 _bad = "";
 
 if ((_itemInfo select 6) != "CfgVehicles") then {

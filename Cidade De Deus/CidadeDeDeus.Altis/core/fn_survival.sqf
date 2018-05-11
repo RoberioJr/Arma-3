@@ -61,8 +61,6 @@ for "_i" from 0 to 1 step 0 do {
     if ((time - _foodTime) > 850 && {!life_god}) then {[] call _fnc_food; _foodTime = time;};
 
     /* Adjustment of carrying capacity based on backpack changes */
-	if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [1,""];}; // Mochila Invisivel COP
-	if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [1,""];}; // Mochila Invisivel MED
     if (backpack player isEqualTo "") then {
         life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");
         _bp = backpack player;
