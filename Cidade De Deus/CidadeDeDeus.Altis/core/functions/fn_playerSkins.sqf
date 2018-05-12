@@ -2,6 +2,7 @@
 /*
     File: fn_playerSkins.sqf
     Author: Daniel Stuart
+	Edit: RobérioJR
 
     Description:
     Sets skins for players by their side and uniform.
@@ -12,44 +13,59 @@ switch (playerSide) do {
     case civilian: {
         if (LIFE_SETTINGS(getNumber,"civ_skins") isEqualTo 1) then {
             if (uniform player isEqualTo "U_C_Poloshirt_blue") then {
-                player setObjectTextureGlobal [0, "textures\civilian_uniform_1.jpg"];
+                player setObjectTextureGlobal [0, "textures\roupa\civ\civilian_uniform_1.jpg"];
             };
             if (uniform player isEqualTo "U_C_Poloshirt_burgundy") then {
-                player setObjectTextureGlobal [0, "textures\civilian_uniform_2.jpg"];
+                player setObjectTextureGlobal [0, "textures\roupa\civ\civilian_uniform_2.jpg"];
             };
             if (uniform player isEqualTo "U_C_Poloshirt_stripped") then {
-                player setObjectTextureGlobal [0, "textures\civilian_uniform_3.jpg"];
+                player setObjectTextureGlobal [0, "textures\roupa\civ\civilian_uniform_3.jpg"];
             };
             if (uniform player isEqualTo "U_C_Poloshirt_tricolour") then {
-                player setObjectTextureGlobal [0, "textures\civilian_uniform_4.jpg"];
+                player setObjectTextureGlobal [0, "textures\roupa\civ\civilian_uniform_4.jpg"];
             };
             if (uniform player isEqualTo "U_C_Poloshirt_salmon") then {
-                player setObjectTextureGlobal [0, "textures\civilian_uniform_5.jpg"];
+                player setObjectTextureGlobal [0, "textures\roupa\civ\civilian_uniform_5.jpg"];
             };
             if (uniform player isEqualTo "U_C_Poloshirt_redwhite") then {
-                player setObjectTextureGlobal [0, "textures\civilian_uniform_6.jpg"];
+                player setObjectTextureGlobal [0, "textures\roupa\civ\civilian_uniform_6.jpg"];
             };
             if (uniform player isEqualTo "U_C_Commoner1_1") then {
-                player setObjectTextureGlobal [0, "textures\civilian_uniform_7.jpg"];
+                player setObjectTextureGlobal [0, "textures\roupa\civ\civilian_uniform_7.jpg"];
             };
         };
     };
 
     case west: {
         if (uniform player isEqualTo "U_Rangemaster") then {
-            _skinName = "textures\cop_uniform.jpg";
+            _skinName = "textures\roupa\pm\uniforme_pm.jpg";
             if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
                 if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\cop_uniform_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
+                    _skinName = ["textures\roupa\pm\uniforme_pm_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
                 };
             };
             player setObjectTextureGlobal [0, _skinName];
         };
+		/* BOPE EDIT RJ */
+		if (uniform player isEqualTo "U_I_CombatUniform_shortsleeve" && FETCH_CONST(life_coplevel) >= 11) then {
+		    _nomeSkin = "textures\roupa\bope\uniforme_bope_padrao.jpg";
+		};
+		player setObjectTextureGlobal [0, _nomeSkin];
+		
+		/* Boina e Colete - Fase De Testes */
+		_boina = "textures\roupa\bope\bope_boina.jpg";
+		_colete = "textures\roupa\bope\bope_colete.jpg";
+		if (headGear player isEqualTo "H_Beret_blk_POLICE") then {
+		    headGear player setObjectTextureGlobal [0, _boina]; 
+		};
+		if (Vest player isEqualTo "V_TacVest_gen_F") then {
+		    VestContainer player SetObjectTextureGlobal [0, _colete];
+		};
     };
 
     case independent: {
         if (uniform player isEqualTo "U_Rangemaster") then {
-            player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
+            player setObjectTextureGlobal [0, "textures\roupa\med\uniforme_med.jpg"];
         };
     };
 };

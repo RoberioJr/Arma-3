@@ -63,10 +63,10 @@ switch (playerSide) do
 		{
 			case 0: {life_paycheck = life_paycheck + 0;}; 
 			case 1: {life_paycheck = life_paycheck + 2500;};
-			case 2: {life_paycheck = life_paycheck + 5000;}; 
-			case 3: {life_paycheck = life_paycheck + 7500;}; 
-			case 4: {life_paycheck = life_paycheck + 10000;}; 
-			case 5: {life_paycheck = life_paycheck + 12500;}; 
+			case 2: {life_paycheck = life_paycheck + 3500;}; 
+			case 3: {life_paycheck = life_paycheck + 4500;}; 
+			case 4: {life_paycheck = life_paycheck + 5500;}; 
+			case 5: {life_paycheck = life_paycheck + 6500;}; 
 		};
 	};
 };
