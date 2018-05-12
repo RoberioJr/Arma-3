@@ -1,4 +1,4 @@
-/*
+﻿/*
 
     /  Realidades    /     
     /      Do        /     
@@ -7,7 +7,8 @@
 	Configurações Do Servidor
 	Author: RobérioJR e Marvinn.
 
-USO: if (realidades_do_rioCFG(getNumber,"rj_ativar_ITEM") isEqualTo 1) then { SCRIPT };
+ É Necessário incluir o 'rj_macros.hpp'. EX: ( #include "..\rj_macros.hpp" ) [..\ = voltar uma pasta]
+ USO: if (REALIDADESDORIOCFG(getNumber,"rj_ativar_ITEM") isEqualTo 1) then { SCRIPT };
 	
 */
 /* DEFINIÇÕES, NÃO EDITAR!! */

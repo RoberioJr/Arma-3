@@ -1,6 +1,3 @@
-if (LIFE_SETTINGS(getNumber,"rj_ativar_safezones") isEqualTo 1) then {
-diag_log "RJ:Guincho Avançado - Ativado";
-
 #define SA_Find_Surface_ASL_Under_Position(_object,_positionAGL,_returnSurfaceASL,_canFloat) \
 _objectASL = AGLToASL (_object modelToWorldVisual (getCenterOfMass _object)); \
 _surfaceIntersectStartASL = [_positionAGL select 0, _positionAGL select 1, (_objectASL select 2) + 1]; \
@@ -860,8 +857,4 @@ diag_log "Guincho Avançado - Carregado";
 
 if(isServer) then {
 	[] call SA_Advanced_Towing_Install;
-};
-
-} else {
-  diag_log "RJ:Guincho Avançado - Desativado";
 };

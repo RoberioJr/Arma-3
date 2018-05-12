@@ -102,7 +102,8 @@ class CarShops {
             { "C_Offroad_01_F", "" },
             { "I_Truck_02_medical_F", "" },
             { "O_Truck_03_medical_F", "" },
-            { "B_Truck_01_medical_F", "" }
+            { "B_Truck_01_medical_F", "" },
+			{ "C_Van_02_medevac_F", "" }    //Ambulancia Laws Of War
         };
     };
 
@@ -121,8 +122,8 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
-            { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
-            { "B_MRAP_01_F", "call life_coplevel >= 2" },
+            { "C_Hatchback_01_sport_F", "call life_coplevel >= 2" },
+            { "B_MRAP_01_F", "call life_coplevel >= 3" },
             { "B_MRAP_01_hmg_F", "call life_coplevel >= 3" }
         };
     };
@@ -181,6 +182,18 @@ class LifeCfgVehicles {
         price = -1;
         textures[] = {};
     };
+	
+	/* Adição De Veiculos RJ */
+	class C_Van_02_medevac_F {
+	    vItemSpace = 125;
+		conditions = "";
+		price = 70000;
+		textures[] = {
+		    { "Ambulancia", "med", {
+				"textures\veh\med\ambulancia.paa"
+			}, "" }
+		};
+	};
 
     // Apex DLC
     class C_Boat_Transport_02_F {
@@ -523,8 +536,14 @@ class LifeCfgVehicles {
             /*{ "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
             }, "" }*/
+			{ "Policia", "cop", {
+				"textures\veh\cop\pm\offroadpm.paa"
+			}, "" },
 			{ "BOPE", "cop", {
 				"textures\veh\cop\bopeoffroad.paa"
+			}, "" },
+			{ "SAMU", "med", {
+				"textures\veh\med\offroadmed.paa"
 			}, "" }
         };
     };
@@ -571,8 +590,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
-            { "Police", "cop", {
+            /*{ "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
+            }, "" },*/
+			{ "Policia", "cop", {
+                "textures\veh\cop\pm\hatchbackpm.paa"
             }, "" }
         };
     };
@@ -695,8 +717,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
-            { "Police", "cop", {
+			{ "HelloKitty", "civ", {
+                "textures\veh\civ\suvkitty.paa"
+            }, "" },
+            /*{ "Police", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
+            }, "" },*/
+			{ "Policia", "cop", {
+                "textures\veh\cop\pm\suvpm.paa"
             }, "" }
         };
     };
@@ -764,8 +792,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
             /*{ "Police", "cop", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
             }, "" },*/
+			{ "Policia", "cop", {
+				"textures\veh\cop\pm\mh9pm.paa"
+			}, "" },
 			{ "BOPE", "cop", {
 				"textures\veh\cop\mh9.paa"
+			}, "" },
+			{ "SAMU", "med", {
+				"textures\veh\med\mh9med.paa"
 			}, "" },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
@@ -805,10 +839,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
-            }, "" },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
             }, "" }
+            /*{ "EMS White", "med", {
+                "#(argb,8,8,3)color(1,1,1,0.8)"
+            }, "" }*/
         };
     };
 
@@ -834,9 +868,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Desert Digi", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+			{ "SAMU", "med", {
+                "textures\veh\med\orcamed.paa"
             }, "" }
+            /*{ "EMS White", "med", {
+                "#(argb,8,8,3)color(1,1,1,0.8)"
+            }, "" }*/
         };
     };
 

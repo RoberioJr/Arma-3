@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp" 
 /*
 
     Author: RobérioJR [ASFARC]
@@ -5,21 +6,24 @@
 
 */
 
-if (LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel") isEqualTo 1) then {
- diag_log "RJ:Mochilas Invisiveis - Ativado";
+private "_copm","_medm","_civm";
 
-    while {true} do {
-        if (LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel_cop") isEqualTo 1) then {
-            if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [1,""];}; // Mochila Invisivel COP
-   };
-        if (LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel_med") isEqualTo 1) then {
-           if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [1,""];}; // Mochila Invisivel MED
-   };
-        if (LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel_civ") isEqualTo 1) then {
-           if(playerSide == civilian) then {(unitBackpack player) setObjectTextureGlobal [1,""];}; // Mochila Invisivel CIV
-   };
-    sleep 10;   //Tempo Entre Os Loops
+  /* DEFINIÇÕES */
+ 
+ _copm = LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel_cop");
+ _medm = LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel_med");
+ _civm = LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel_civ");
+
+
+while {true} do {
+    if (_copm isEqualTo 1) then {
+        if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [1,""];}; // Mochila Invisivel COP
   };
- } else {
-  diag_log "RJ:Mochilas Invisiveis - Desativado";
+    if (_medm isEqualTo 1) then {
+        if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [1,""];}; // Mochila Invisivel MED
+  };
+    if (_civm isEqualTo 1) then {
+        if(playerSide == civilian) then {(unitBackpack player) setObjectTextureGlobal [1,""];}; // Mochila Invisivel CIV
+  };
+  sleep 10;   //Tempo Entre Os Loops
 };
