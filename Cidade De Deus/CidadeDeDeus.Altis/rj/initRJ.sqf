@@ -14,6 +14,7 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr";
   _safeszn = LIFE_SETTINGS(getNumber,"rj_ativar_safezones");
   _mochinv = LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel");
   _gaslacr = LIFE_SETTINGS(getNumber,"rj_ativar_gaslacrimo");
+  _barradt = LIFE_SETTINGS(getNumber,"rj_barradestatus_detalhada");
    
 
  /* Melhorar Grafico Do Arma */
@@ -36,8 +37,16 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr";
   diag_log "RJ: Gás Lacrimogênio - Ativado";
   [] execVM "rj\GasLacrimo\gaslacrimo.sqf";
  };
+ 
  /* Barra De Status */ 
+ if (_barradt isEqualTo 1) then {
+    diag_log "Barra De Status - Detalhada";
   [] execVM "rj\BarraDeStatus\iniciarstatusbar.sqf";
+   } else {
+    diag_log "Barra De Status - Simples";
+  [] execVM "rj\BarraDeStatus\StatusBarSimples.sqf";
+ };
+  
   
  /* Mancador Do Mapa */
   [] execVM "rj\Marcador\marcador.sqf";

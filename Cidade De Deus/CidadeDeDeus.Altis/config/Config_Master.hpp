@@ -18,6 +18,10 @@ class Life_Settings {
 	rj_ativar_guincho = true;       //Ativa/Desativa Sistema De Guincho Avançado     By:RobérioJR [true ou false]
 	rj_ativar_gaslacrimo = true;    //Ativa/Desativa O Gás Lacrimogênio              By:RobérioJR [true ou false]
 	
+	/* StatusBar */
+	rj_barradestatus_detalhada = false;  //Ativa/Desativa Barra De Status Detalhada   By:RobérioJR [true ou false]
+	/* Se For Desativada Será Substituida por uma barra de status simples, porém, limpa. (Sem Icones) */
+	
     /* Mochilas Invisiveis */
 	rj_ativar_mochilainvisivel = true;     //Ativa/Desativa Mochilas Invisiveis      By:RobérioJR [true ou false]
 	rj_ativar_mochilainvisivel_cop = true;  //Mochila Invisivel Para COP             By:RobérioJR [true ou false]
