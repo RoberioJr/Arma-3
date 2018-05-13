@@ -5,7 +5,7 @@
 
 */
 
-private "_grafico","_neblina","_reparar","_safeszn","_mochinv";
+private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr";
 
    /* DEFINIÇÕES */
   _grafico = LIFE_SETTINGS(getNumber,"rj_ativar_grafico");
@@ -13,6 +13,7 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv";
   _reparar = LIFE_SETTINGS(getNumber,"rj_ativar_reparoveiculo");
   _safeszn = LIFE_SETTINGS(getNumber,"rj_ativar_safezones");
   _mochinv = LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel");
+  _gaslacr = LIFE_SETTINGS(getNumber,"rj_ativar_gaslacrimo");
    
 
  /* Melhorar Grafico Do Arma */
@@ -27,12 +28,14 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv";
   [] execVM "rj\RemoverNeblina\RemoverNeblina.sqf";
  };
   
- /* Debug Menu Do CCD */
-  [] execVM "rj\Debug\iniciar.sqf";
+ /* Debug Menu Do RJ */
+  [] execVM "rj\Debug\debugrj.sqf";
   
  /* Gás Lacrimogenio */
+ if (_gaslacr isEqualTo 1) then {
+  diag_log "RJ: Gás Lacrimogênio - Ativado";
   [] execVM "rj\GasLacrimo\gaslacrimo.sqf";
-  
+ };
  /* Barra De Status */ 
   [] execVM "rj\BarraDeStatus\iniciarstatusbar.sqf";
   

@@ -51,16 +51,6 @@ switch (playerSide) do {
 		    _nomeSkin = "textures\roupa\bope\uniforme_bope_padrao.jpg";
 		};
 		player setObjectTextureGlobal [0, _nomeSkin];
-		
-		/* Boina e Colete - Fase De Testes */
-		_boina = "textures\roupa\bope\bope_boina.jpg";
-		_colete = "textures\roupa\bope\bope_colete.jpg";
-		if (headGear player isEqualTo "H_Beret_blk_POLICE") then {
-		    headGear player setObjectTextureGlobal [0, _boina]; 
-		};
-		if (Vest player isEqualTo "V_TacVest_gen_F") then {
-		    VestContainer player SetObjectTextureGlobal [0, _colete];
-		};
     };
 
     case independent: {

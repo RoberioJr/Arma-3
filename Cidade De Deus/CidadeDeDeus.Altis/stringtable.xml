@@ -12276,5 +12276,24 @@
         <Key ID ="STR_vInAct_Jaws">
 	        <Original>Jaws Of Life</Original>		
         </Key>	
+		<Key ID="STR_GNOTF_CaptureAreaAttemptPopo">
+            <Original>%1 e a Policia Está Tentando Neutralizar Uma Favela!</Original>
+        </Key>
+
+        <Key ID="STR_GNOTF_CapturingArea">
+            <Original>Capturando Area</Original>
+        </Key>
+
+        <Key ID="STR_GNOTF_CapturedArea">
+            <Original>A Area Foi Capturada.</Original>
+        </Key>
+
+        <Key ID="STR_Gang_captuerr">
+            <Original>Capturar Area</Original>
+        </Key>
+
+        <Key ID="STR_GNOTF_CaptureAreaSuccess">
+            <Original>%1 e Sua Gangue: %2 - Conquistou Uma Area!</Original>
+        </Key>
     </Package>
 </Project>

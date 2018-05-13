@@ -169,6 +169,20 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
+		/* Guincho Avançado */
+		F(SA_Set_Owner,ANYONE)
+        F(SA_Simulate_Towing,ANYONE)
+        F(SA_Hide_Object_Global,ANYONE)
+        F(SA_Attach_Tow_Ropes,ANYONE)
+        F(SA_Take_Tow_Ropes,ANYONE)
+        F(SA_Pickup_Tow_Ropes,ANYONE)
+        F(SA_Drop_Tow_Ropes,ANYONE)
+        F(SA_Put_Away_Tow_Ropes,ANYONE)
+        F(SA_RemoteExec,ANYONE)
+        F(SA_RemoteExecServer,ANYONE)
+		F(SA_hint,ANYONE)
+		/* Reparo De Veiculo */
+		F(zlt_fnc_partrepair,ANYONE)
     };
 
     class Commands {

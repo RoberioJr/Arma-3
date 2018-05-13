@@ -19,12 +19,24 @@ switch (playerSide) do {
         //Rob person
         life_actions pushBack (player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",0,false,false,"",'
         !isNull cursorObject && player distance cursorObject < 3.5 && isPlayer cursorObject && animationState cursorObject == "Incapacitated" && !(cursorObject getVariable ["robbed",false]) ']);
-    };
+    
+	    //Cartel
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>Capturar Area</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) == "Flag_Red_F") ']];
+	};
     
     //Cops
-    case west: { };
+    case west: {
+	    //Cartel
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>Capturar Area</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) == "Flag_Red_F") ']];
+	};
     
     //EMS
     case independent: { };
 
 };
+
+ /* Cinto De Segurança */
+
+life_actions pushBack (player addAction["<t color = '#D660D6'>Colocar Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
+life_actions pushBack (player addAction["<t color = '#D660D6'>Remover Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
+ 

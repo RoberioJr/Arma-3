@@ -32,7 +32,7 @@ while {true} do {
 				};
 			} foreach _markers;
 			if(!visibleMap) exitWith {};
-			sleep 0.02;
+			sleep 0.05;
 		};
 
 		{deleteMarkerLocal (_x select 0);} foreach _markers;

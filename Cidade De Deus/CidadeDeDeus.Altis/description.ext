@@ -119,7 +119,7 @@ class CfgSounds {
 	
 	class aipaipara {
 	    name = "aipaipara";
-		sound[] = {"\sounds\aipaipara.ogg", 0.80, 1};
+		sound[] = {"\sounds\aipaipara.ogg", 0.90, 1};
 		titles[] = {};
 	};
 };

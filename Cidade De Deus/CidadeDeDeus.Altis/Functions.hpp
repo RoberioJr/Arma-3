@@ -239,6 +239,7 @@ class Life_Client_Core {
 		/* Edições By: RobérioJr */
 		class initPayChecks {};   //Pagamentos Customizados
 		class robstore {};        //Roubo De Posto
+		class seatbelt {};        //Cinto De Segurança
     };
 
     class Gangs {
@@ -255,6 +256,8 @@ class Life_Client_Core {
         class gangNewLeader {};
         class gangUpgrade {};
         class initGang {};
+		/* Alterações RJ */
+		class areaCapture {};  //Cartel
     };
 
     class Housing {

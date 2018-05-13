@@ -102,6 +102,8 @@ class CfgFunctions {
             class queryPlayerGang {};
             class removeGang {};
             class updateGang {};
+			/* Edits RJ */
+			class gangCash {};
         };
 
         class Actions {

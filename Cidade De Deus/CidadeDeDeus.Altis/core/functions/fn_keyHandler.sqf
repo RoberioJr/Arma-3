@@ -93,9 +93,14 @@ switch (_code) do {
  
     /* Alterações RobérioJR */
 	
-	//Gesto de Baitola
-	case 62:
-	{
+	case 62: {
+	    if (_alt) then {
+	        hint ["%1 Apertou Alt + F4, Denuncie Na Administração!",name player];
+	    };
+	};
+	
+	//Ai Pai Para | LUTO | 'Ai Pai Para Não me Bati hihihihi'
+	case 61: {
 		if(vehicle player isEqualTo player) then {
 			if(!life_action_inUse) then {
 				player playActionNow "gestureHiC";
@@ -289,6 +294,19 @@ switch (_code) do {
         };
     };
 
+	//Shift + end Key
+	case 24: {
+	if(_shift) then {
+		switch (player getVariable["Earplugs",0]) do {
+			case 0: {hintSilent "Tampoes 90%"; 1 fadeSound 0.1; player setVariable ["Earplugs", 10]; };
+			case 10: {hintSilent "Tampoes 60%"; 1 fadeSound 0.4; player setVariable ["Earplugs", 40]; };
+			case 40: {hintSilent "Tampoes 30%"; 1 fadeSound 0.7; player setVariable ["Earplugs", 70]; };
+			case 70: {hintSilent "Tampoes Removidos"; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
+		    };
+	   };
+   };
+	
+	/*
     //O Key
     case 24: {
         if (_shift) then {
@@ -301,7 +319,8 @@ switch (_code) do {
             };
         };
     };
-
+    */
+	
     //U Key
     case 22: {
         if (!_alt && !_ctrlKey) then {
