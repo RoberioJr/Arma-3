@@ -7,7 +7,7 @@
 class Life_Settings {
 /* Logging and Security Settings*/
     /* Security Settings */
-    spyGlass_toggle = false; //Spyglass On/Off Toggle --> True = On & False = Off
+    spyGlass_toggle = false; //Spyglass On/Off Toggle --> True = On & False = Off // SpyBOSTA
    
    /* Configurações Scripts RJ */
 	/* Sistemas */
@@ -19,8 +19,8 @@ class Life_Settings {
 	rj_ativar_gaslacrimo = true;    //Ativa/Desativa O Gás Lacrimogênio              By:RobérioJR [true ou false]
 	
 	/* StatusBar */
-	rj_barradestatus_detalhada = false;  //Ativa/Desativa Barra De Status Detalhada   By:RobérioJR [true ou false]
-	/* Se For Desativada Será Substituida por uma barra de status simples, porém, limpa. (Sem Icones) */
+	rj_barradestatus = 2;  //Seleção Da Barra De Status                              By:RobérioJR [1  -  2  -  3]
+	/* 1 - Detalhada; 2 - Simples Com Icones; 3 - Simples Sem Icones; */
 	
     /* Mochilas Invisiveis */
 	rj_ativar_mochilainvisivel = true;     //Ativa/Desativa Mochilas Invisiveis      By:RobérioJR [true ou false]

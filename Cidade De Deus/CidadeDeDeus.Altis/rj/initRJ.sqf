@@ -5,7 +5,7 @@
 
 */
 
-private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr";
+private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barradt";
 
    /* DEFINIÇÕES */
   _grafico = LIFE_SETTINGS(getNumber,"rj_ativar_grafico");
@@ -14,7 +14,7 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr";
   _safeszn = LIFE_SETTINGS(getNumber,"rj_ativar_safezones");
   _mochinv = LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel");
   _gaslacr = LIFE_SETTINGS(getNumber,"rj_ativar_gaslacrimo");
-  _barradt = LIFE_SETTINGS(getNumber,"rj_barradestatus_detalhada");
+  _barstat = LIFE_SETTINGS(getNumber,"rj_barradestatus");
    
 
  /* Melhorar Grafico Do Arma */
@@ -39,14 +39,24 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr";
  };
  
  /* Barra De Status */ 
- if (_barradt isEqualTo 1) then {
-    diag_log "Barra De Status - Detalhada";
-  [] execVM "rj\BarraDeStatus\iniciarstatusbar.sqf";
-   } else {
-    diag_log "Barra De Status - Simples";
-  [] execVM "rj\BarraDeStatus\StatusBarSimples.sqf";
+ switch (_barstat) do 
+ { 
+   Case 1: 
+    {
+        diag_log "RJ: Barra De Status - Detalhada";
+        [] execVM "rj\BarraDeStatus\iniciarstatusbar.sqf";
+    };
+	Case 2:
+	{
+	    diag_log "RJ: Barra De Status - Simples Com Icones";
+        [] execVM "rj\BarraDeStatus\StatusBarSimples2.sqf";
+	};
+	Case 3:
+	{
+	    diag_log "RJ: Barra De Status - Simples Sem Icones";
+        [] execVM "rj\BarraDeStatus\StatusBarSimples.sqf";
+	};
  };
-  
   
  /* Mancador Do Mapa */
   [] execVM "rj\Marcador\marcador.sqf";
@@ -68,6 +78,9 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr";
   diag_log "RJ: Mochilas Invisiveis - Ativado";
   [] execVM "rj\MochilaInvisivel\mochilainvisivel.sqf";
  };
+ 
+ /* Canais Customizados */
+  [] execVM "rj\Canais\canaiscustom.sqf";
  
  /* Guincho Avançado(Executado Pelo Servidor) */
   /*[] execVM "rj\GuinchoAvancado\guincho.sqf"*/
