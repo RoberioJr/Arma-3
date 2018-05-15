@@ -1,4 +1,0 @@
-variablename do marker: tabaco_1
-
-
-this enableSimulation false;  this allowDamage false;  this addAction[localize"STR_Process_Tabaco",life_fnc_processAction,"tabaco",0,false,false,"",' life_inv_tabacoUnprocessed > 0 && !life_is_processing && !life_action_inUse'];  this addAction[format ["%1 ($%2)",localize (getText(missionConfigFile >> "Licenses" >> "tabaco" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "tabaco" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"tobacco",0,false,false,"",' !license_civ_tabaco && playerSide isEqualTo civilian '];
