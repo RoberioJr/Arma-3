@@ -1,0 +1,1 @@
+_object say3D [_sound,_distance,_pitch];
