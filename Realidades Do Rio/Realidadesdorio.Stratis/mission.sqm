@@ -8,15 +8,15 @@ class EditorData
 	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=5824;
+		nextID=5827;
 	};
 	class MarkerIDProvider
 	{
-		nextID=257;
+		nextID=260;
 	};
 	class LayerIndexProvider
 	{
-		nextID=244;
+		nextID=246;
 	};
 	class Camera
 	{
@@ -627,7 +627,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -682,7 +682,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -729,7 +729,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2686;
+		items=2688;
 		class Item0
 		{
 			dataType="Marker";
@@ -57951,7 +57951,7 @@ class Mission
 					};
 					id=5722;
 					type="O_Survivor_F";
-					atlOffset=0.39253187;
+					atlOffset=0.39253283;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -58057,7 +58057,7 @@ class Mission
 			{
 			};
 			id=5721;
-			atlOffset=0.39253187;
+			atlOffset=0.39253283;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -58558,6 +58558,25 @@ class Mission
 			type="mil_end";
 			colorName="ColorWhite";
 			id=5814;
+		};
+		class Item2686
+		{
+			dataType="Marker";
+			position[]={3291.3562,229.17999,2935.1528};
+			name="respawn_bope";
+			text="RESPAWN BOPE";
+			type="Empty";
+			id=5824;
+		};
+		class Item2687
+		{
+			dataType="Marker";
+			position[]={4368.3369,129.686,6777.3428};
+			name="respawn_cv";
+			text="Base do CV";
+			type="Empty";
+			id=5825;
+			atlOffset=0.00039672852;
 		};
 	};
 	class Connections

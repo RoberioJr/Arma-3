@@ -54,7 +54,7 @@ class CfgFunctions
 	#include "scripts\HG\Functions\HG_Functions.h"
 	#include "scripts\LogoInferior\roberio.h"
 	#include "scripts\CHVD\CfgFunctions.hpp"
-	#include "scripts\respawnSelectionMenu\functions\CfgFunctions.hpp"
+	#include "scripts\MenuDeRespawn\respawnSelectionMenu\functions\CfgFunctions.hpp"
 };
 
 class CfgDebriefing

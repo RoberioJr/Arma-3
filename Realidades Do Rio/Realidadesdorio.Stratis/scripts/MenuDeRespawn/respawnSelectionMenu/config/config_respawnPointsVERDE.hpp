@@ -6,12 +6,12 @@ class config_respawnPoints
 {
 	respawnPoints[] =
 	{
-		"azul",
+		"verde",
 		"docksRespawnPoint",
 		"supplyBaseRespawnPoint",
 		"sea"
 	};
-	class bluforRespawnPoint
+	class verde
 	{
 		name = "BLUFOR Base";
 		icon = "\A3\ui_f\data\map\markers\military\flag_CA.paa";
