@@ -1,42 +1,62 @@
 /*
-File: marker.sqf
-author: RoberioJR
+
+    Author: RoberioJR
 */
-private["_markers","_members"];
-_markers = [];
-_members = [];
+
+private["_marcadores","_membros","_cormark"];
+_marcadores = [];
+_membros = [];
+
+waitUntil (alive player);
+switch (playerSide) do 
+{
+    case west: 
+	{
+	    _cormark = "ColorBlue";   //COP AZUL
+    };	
+	
+	case civilian:
+	{
+	    _cormark = "ColorRed";    //CIV VERMELHO
+	};
+	
+	case: independent:
+	{
+	    _cormark = "ColorGreen";  //MED VERDE
+	};
+};
 
 while {true} do {
 	sleep 0.5;
 	if(visibleMap) then {
-		_members = units (group player);
+		_membros = units (group player);
 		//Create markers
 		{
-			_marker = createMarkerLocal [format["%1_marker",_x],visiblePosition _x];
-			_marker setMarkerColorLocal "ColorRed";  //Vermelho
-			_marker setMarkerTypeLocal "mil_dot";    //Ponto "Bolinha"
-			_marker setMarkerTextLocal format["%1", _x getVariable["realname",name _x]];
+			_marcador = createMarkerLocal [format["%1_marcador",_x],visiblePosition _x];
+			_marcador setMarkerColorLocal _cormark;   //Define a Cor Do Marcador
+			_marcador setMarkerTypeLocal "mil_dot";   //Ponto "Bolinha"
+			_marcador setMarkerTextLocal format["%1", _x getVariable["realname",name _x]];
 		
-			_markers pushBack [_marker,_x];
-		} foreach _members;
+			_marcadores pushBack [_marcador,_x];
+		} foreach _membros;
 			
 		while {visibleMap} do {
 			{
-				private["_marker","_unit"];
-				_marker = _x select 0;
+				private["_marcador","_unit"];
+				_marcador = _x select 0;
 				_unit = _x select 1;
 				if(!isNil "_unit") then {
 					if(!isNull _unit) then {
-					    _marker setMarkerPosLocal (visiblePosition _unit);
+					    _marcador setMarkerPosLocal (visiblePosition _unit);
 					};
 				};
-			} foreach _markers;
+			} foreach _marcadores;
 			if(!visibleMap) exitWith {};
-			sleep 0.05;
+			sleep 0.08;
 		};
 
-		{deleteMarkerLocal (_x select 0);} foreach _markers;
-		_markers = [];
-		_members = [];
+		{deleteMarkerLocal (_x select 0);} foreach _marcadores;
+		_marcadores = [];
+		_membros = [];
 	};
 };

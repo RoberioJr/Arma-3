@@ -10,9 +10,6 @@ scriptName "fn_respawnSelectionMenu";
 
 disableSerialization;
 
-//RJ
-_time = side player
-
 private _display = uiNamespace getVariable "disp_respawnSelectionMenu";
 
 waitUntil {(!isNull _display)};
@@ -22,13 +19,30 @@ escKeyEH = _display displayAddEventHandler ["KeyDown", "if (((_this select 1) ==
 ctrlActivate (_display displayCtrl dlg_respawnSelectionMenu_leftArrowIB);
 (_display displayCtrl dlg_respawnSelectionMenu_rightArrow) ctrlSetAngle [180, 0.5, 0.5];
 
-private _respawnPoints = getArray (getMissionConfig "respawnSelectionMenu_configs" >> "config_respawnPoints" >> "respawnPoints");
+/* EDIT RJ */
+Switch (playerSide) do 
+{
+    Case west:
+	{
+	    _configTime = "respawnSelectionMenu_configsBOPE";
+	}
+	Case east:
+	{
+	    _configTime = "respawnSelectionMenu_configsVERMELHO";
+	};
+	Case independent:
+	{
+	    _configTime = "respawnSelectionMenu_configsVERDE";
+	};
+};
+
+private _respawnPoints = getArray (getMissionConfig _configTime >> "config_respawnPoints" >> "respawnPoints");
 
 {
 	_respawnPoint  = _x;
-	_respawnPointName = getText (getMissionConfig "respawnSelectionMenu_configs" >> "config_respawnPoints" >> _respawnPoint >> "name");
-	_respawnPointIcon = getText (getMissionConfig "respawnSelectionMenu_configs" >> "config_respawnPoints" >> _respawnPoint >> "icon");
-	_respawnPointPosition = if ((isText (getMissionConfig "respawnSelectionMenu_configs" >> "config_respawnPoints" >> _respawnPoint >> "position"))) then {getText (getMissionConfig "respawnSelectionMenu_configs" >> "config_respawnPoints" >> _respawnPoint >> "position")} else {getArray (getMissionConfig "respawnSelectionMenu_configs" >> "config_respawnPoints" >> _respawnPoint >> "position")};
+	_respawnPointName = getText (getMissionConfig _configTime >> "config_respawnPoints" >> _respawnPoint >> "name");
+	_respawnPointIcon = getText (getMissionConfig _configTime >> "config_respawnPoints" >> _respawnPoint >> "icon");
+	_respawnPointPosition = if ((isText (getMissionConfig _configTime >> "config_respawnPoints" >> _respawnPoint >> "position"))) then {getText (getMissionConfig _configTime >> "config_respawnPoints" >> _respawnPoint >> "position")} else {getArray (getMissionConfig _configTime >> "config_respawnPoints" >> _respawnPoint >> "position")};
 	_index = (_display displayCtrl dlg_respawnSelectionMenu_respawnPoints) lbAdd _respawnPointName;
 	(_display displayCtrl dlg_respawnSelectionMenu_respawnPoints) lbSetPicture [_index, _respawnPointIcon];
 	(_display displayCtrl dlg_respawnSelectionMenu_respawnPoints) lbSetData [_index, _respawnPoint];
@@ -61,12 +75,12 @@ if ((!isNil {player getVariable "additionalRespawnPoints"})) then
 	ctrlMapAnimClear _map;
 	_position = if ((((_display displayCtrl dlg_respawnSelectionMenu_respawnPoints) lbValue (lbCurSel dlg_respawnSelectionMenu_respawnPoints) isEqualTo 0))) then
 	{
-		if ((isText (getMissionConfig "respawnSelectionMenu_configs" >> "config_respawnPoints" >> _respawnPoint >> "position"))) then
+		if ((isText (getMissionConfig _configTime >> "config_respawnPoints" >> _respawnPoint >> "position"))) then
 		{
-			getText (getMissionConfig "respawnSelectionMenu_configs" >> "config_respawnPoints" >> ((_display displayCtrl dlg_respawnSelectionMenu_respawnPoints) lbData (lbCurSel dlg_respawnSelectionMenu_respawnPoints)) >> "position");
+			getText (getMissionConfig _configTime >> "config_respawnPoints" >> ((_display displayCtrl dlg_respawnSelectionMenu_respawnPoints) lbData (lbCurSel dlg_respawnSelectionMenu_respawnPoints)) >> "position");
 		} else
 		{
-			getArray (getMissionConfig "respawnSelectionMenu_configs" >> "config_respawnPoints" >> ((_display displayCtrl dlg_respawnSelectionMenu_respawnPoints) lbData (lbCurSel dlg_respawnSelectionMenu_respawnPoints)) >> "position");
+			getArray (getMissionConfig _configTime >> "config_respawnPoints" >> ((_display displayCtrl dlg_respawnSelectionMenu_respawnPoints) lbData (lbCurSel dlg_respawnSelectionMenu_respawnPoints)) >> "position");
 		};
 	} else
 	{

@@ -2,6 +2,7 @@
 /*
     File: fn_gangWithdraw.sqf
     Author: Bryan "Tonic" Boardwine
+	Edit: RobérioJR
 
     Description:
     Withdraws money from the gang bank.

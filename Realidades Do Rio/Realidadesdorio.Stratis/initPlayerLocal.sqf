@@ -7,12 +7,12 @@
 
  //Scripts Aqui:
  
- [] execVM "config\WhiteList.sqf";                      //Sistema De Whitelist
- [] execVM "config\doadores.sqf";                       //Sistema dos Doadores
- [] execVM "config\SlotsReservados.sqf";                //Slots Reservados
- [] execVM "config\Client\initSide\initSide.sqf";       //Inicialização Jogadores
- [] execVM "scripts\marcadores.sqf";                    //Marcadores Do Mapa
- [] execVM "scripts\respawnSelectionMenu\functions\respawndeinicio.sqf";   //Sistema de Respawn de Início
+ [] execVM "config\WhiteList.sqf";                                        //Sistema De Whitelist
+ [] execVM "config\doadores.sqf";                                         //Sistema dos Doadores
+ [] execVM "config\SlotsReservados.sqf";                                  //Slots Reservados
+ [] execVM "config\Client\initSide\initSide.sqf";                         //Inicialização Jogadores
+ [] execVM "scripts\marcadores.sqf";                                      //Marcadores Do Mapa
+ [] execVM "scripts\MenuDeRespawn\respawnSelectionMenu\InitDoMenu.sqf";   //Sistema de Respawn de Início
  
  //Simple Shops
  if(!hasInterface) exitWith {};

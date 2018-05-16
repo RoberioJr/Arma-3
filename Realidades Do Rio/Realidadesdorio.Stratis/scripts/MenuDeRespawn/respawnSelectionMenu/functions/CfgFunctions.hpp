@@ -4,10 +4,10 @@
 
 class respawnSelectionMenu
 {
-	tag = "Haz&Edit:RoberioJr";
+	tag = "Haz";
 	class core
 	{
-		file = "scripts\respawnSelectionMenu\functions";
+		file = "scripts\MenuDeRespawn\respawnSelectionMenu\functions";
 		class respawnSelectionMenu {};
 		class respawn {};
 		class addRespawnPosition {};

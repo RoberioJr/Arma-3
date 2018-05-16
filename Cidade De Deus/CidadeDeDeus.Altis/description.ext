@@ -89,9 +89,15 @@ class CfgSounds {
         titles[] = {};
     };
 	
+	class yelp {
+        name = "yelp";
+        sound[] = {"\sounds\Yelp.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
 	class comprar {
 	    name = "comprar";
-		sound[] = {"\sounds\comprar.ogg", 0.80, 1};
+		sound[] = {"\sounds\comprar.ogg", 0.95, 1};
 		titles[] = {};
 	};
 	
@@ -109,19 +115,30 @@ class CfgSounds {
 	
 	class porrada {
 	    name = "porrada";
-		sound[] = {"\sounds\porrada.ogg", 0.85, 1};
+		sound[] = {"\sounds\porrada.ogg", 0.90, 1};
 		titles[] = {};
 	};
 	
 	class reparar {
 	    name = "reparar";
-		sound[] = {"\sounds\reparar.ogg", 0.80, 1};
+		sound[] = {"\sounds\reparar.ogg", 0.90, 1};
 		titles[] = {};
 	};
 	
 	class aipaipara {
 	    name = "aipaipara";
-		sound[] = {"\sounds\aipaipara.ogg", 0.90, 1};
+		sound[] = {"\sounds\aipaipara.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class cu {
+	    name = "cu";
+		sound[] = {"\sounds\cu.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	class choque {
+	    name = "choque";
+		sound[] = {"\sounds\choque.ogg", 1.0, 1};
 		titles[] = {};
 	};
 };

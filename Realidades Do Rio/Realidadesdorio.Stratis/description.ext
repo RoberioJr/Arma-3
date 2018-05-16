@@ -27,8 +27,8 @@ __EXEC(HG_Profile = allVariables profileNamespace)
 #include "scripts\recargaCarreg\config.hpp"
 #include "scripts\CHVD\dialog.hpp"
 #include "scripts\LogoInferior\global.hpp"
-#include "scripts\respawnSelectionMenu\dlg\base_defines.hpp"
-#include "scripts\respawnSelectionMenu\dlg\dlg_respawnSelectionMenu.hpp"
+#include "scripts\MenuDeRespawn\base_defines.hpp"                     //Menu De Respawn Definições
+#include "scripts\MenuDeRespawn\dlg_respawnSelectionMenu.hpp"         //Menu De Respawn
 
 
 class CfgClient
@@ -63,10 +63,24 @@ class CfgDebriefing
 	//#include "config\Client\WhiteList.h"
 };
 
-class respawnSelectionMenu_configs
+/* Menu De Respawn */
+
+class respawnSelectionMenu_configsBOPE
 {
-	#include "scripts\respawnSelectionMenu\config\config_respawnPoints.hpp"
+	#include "scripts\MenuDeRespawn\respawnSelectionMenu\config\config_respawnPointsBOPE.hpp"
 };
+
+class respawnSelectionMenu_configsVERMELHO
+{
+	#include "scripts\MenuDeRespawn\respawnSelectionMenu\config\config_respawnPointsVERMELHO.hpp"
+};
+
+class respawnSelectionMenu_configsVERDE
+{
+	#include "scripts\MenuDeRespawn\respawnSelectionMenu\config\config_respawnPointsVERDE.hpp"
+};
+
+/* *****  */
 
 class CfgMusic
 {
