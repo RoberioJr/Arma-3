@@ -25,7 +25,7 @@ Switch (playerSide) do
     Case west:
 	{
 	    _configTime = "respawnSelectionMenu_configsBOPE";
-	}
+	};
 	Case east:
 	{
 	    _configTime = "respawnSelectionMenu_configsVERMELHO";
