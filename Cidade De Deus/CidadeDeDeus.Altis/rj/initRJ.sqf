@@ -82,7 +82,5 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barr
  /* Canais Customizados */
   [] execVM "rj\Canais\canaiscustom.sqf";
  
- /* Guincho Avançado(Executado Pelo Servidor) */
-  /*[] execVM "rj\GuinchoAvancado\guincho.sqf"*/
 
 

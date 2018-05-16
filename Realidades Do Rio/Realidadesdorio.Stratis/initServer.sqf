@@ -4,7 +4,7 @@
 / Rio De Janeiro /
 */
 
-// Simple Shops
+// Sistema De Lojas
 [] execVM "scripts\HG\Setup\fn_serverInitialization.sqf";
 
 //Sistema De Whitelist By: RobérioJr
