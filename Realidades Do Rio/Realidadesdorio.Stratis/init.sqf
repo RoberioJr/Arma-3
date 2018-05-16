@@ -5,7 +5,7 @@
 */
 
 	//Init Scripts De 3º Parte...
-	[] execVM "scripts\InitScripts.sqf";
+	[] execVM "scripts\InitScripts.sqf";            //Inicialização Dos Scripts 
 	
 	//Init AntiHack...
 	[] execVM "AntiHack\ACTermal\Init.sqf";         //Anti Termal Hack

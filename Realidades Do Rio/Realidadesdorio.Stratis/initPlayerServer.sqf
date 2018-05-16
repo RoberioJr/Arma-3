@@ -5,7 +5,7 @@
 */
 
 
-//Simple Shops
+//Sistema De Lojas
 
 params["_player"];
 

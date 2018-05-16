@@ -14,7 +14,7 @@
  [] execVM "scripts\marcadores.sqf";                                      //Marcadores Do Mapa
  [] execVM "scripts\MenuDeRespawn\InitDoMenu.sqf";   //Sistema de Respawn de Início
  
- //Simple Shops
+ //Sistema De Lojas
  if(!hasInterface) exitWith {};
 [] execVM "scripts\HG\Setup\fn_clientInitialization.sqf";
 

@@ -4,28 +4,24 @@
 / Rio De Janeiro /
 */
 
-waituntil {alive player};    //Esperar O Jogador Spawnar
+waituntil {alive player};
 
-[] execVM "config\Client\initSide\initLoop.sqf";
-
-// Desativado Para Testes Com Loop
-/*
-if (playerSide == west) then
-{
-    setVariable ["copLevel",1,true];
-};
-
-switch (playerSide) do 
-{
-    case west: 
-	{
-        setVariable ["copLevel",1,true];
-		[] execVM "config\Client\initSide\initBOPE.sqf";
+sleep 5;
+while (true) do {
+    switch (playerSide) do 
+    {
+        case west: 
+	    {
+	    	[] execVM "config\Client\initSide\initBOPE.sqf";
+        };
+        case east: 
+	    {
+	    	[] execVM "config\Client\initSide\initBandido.sqf";
+        };
+		case independent:
+		{
+		    [] execVM "config\Client\initSide\initBandido.sqf";
+		};
     };
-    case east: 
-	{
-		[] execVM "config\Client\initSide\initBandido.sqf";
-    };
+	sleep 30;
 };
-*/
-
