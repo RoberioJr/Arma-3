@@ -93,13 +93,21 @@ switch (_code) do {
  
     /* Alterações RobérioJR */
 	
+	//Spawner De Veiculos Para Os Admins F8
+	case 66: {
+	    if (FETCH_CONST(life_adminlevel) >= 1) then {
+	        [] call TUT_fnc_OpenVehUI;
+		};
+	};
+	
+	// F4
 	case 62: {
 	    if (_alt) then {
 	        hint ["%1 Apertou Alt + F4, Denuncie Na Administração!",name player];
 	    };
 	};
 	
-	//Ai Pai Para | LUTO | 'Ai Pai Para Não me Bati hihihihi'
+	//Ai Pai Para | LUTO | 'Ai Pai Para Não me Bati hihihihi' F3
 	case 61: {
 		if(vehicle player isEqualTo player) then {
 			if(!life_action_inUse) then {
@@ -109,6 +117,15 @@ switch (_code) do {
 		};
 	};
 	
+	//Um Cu Como o Seu Merece Ficar Vivo... F2
+	case 60: {
+	    if(vehicle player isEqualTo player) then {
+			if(!life_action_inUse) then {
+				player playActionNow "gestureHi";
+				[player,"cu",35,1] remoteExecCall ["life_fnc_say3D",0];
+			};
+		};
+	};
 	
 	//Prender Medico (Shift + X)
 	case 45: {

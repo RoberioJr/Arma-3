@@ -13,7 +13,7 @@ class CfgSpawnPoints {
     class Altis {
         class Civilian {
             class Kavala {
-                displayName = "Rio De Janeiro";
+                displayName = "Cidade De Deus";
                 spawnMarker = "civ_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "!license_civ_rebel";

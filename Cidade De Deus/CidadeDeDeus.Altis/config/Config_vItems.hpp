@@ -150,7 +150,7 @@ class VirtualItems {
         displayName = "STR_Item_Pickaxe";
         weight = 2;
         buyPrice = 750;
-        sellPrice = 350;
+        sellPrice = -1;
         illegal = false;
         edible = -1;
         icon = "icons\ico_pickaxe.paa";
@@ -161,7 +161,7 @@ class VirtualItems {
         displayName = "STR_Item_Defibrillator";
         weight = 4;
         buyPrice = 900;
-        sellPrice = 450;
+        sellPrice = -1;
         illegal = false;
         edible = -1;
         icon = "icons\ico_defibrillator.paa";
@@ -172,7 +172,7 @@ class VirtualItems {
         displayName = "STR_Item_Toolkit";
         weight = 4;
         buyPrice = 350;
-        sellPrice = 100;
+        sellPrice = -1;
         illegal = false;
         edible = -1;
         icon = "\a3\weapons_f\items\data\UI\gear_toolkit_ca.paa";
@@ -194,7 +194,7 @@ class VirtualItems {
         displayName = "STR_Item_FuelF";
         weight = 5;
         buyPrice = 850;
-        sellPrice = 500;
+        sellPrice = -1;
         illegal = false;
         edible = -1;
         icon = "icons\ico_fuel.paa";
@@ -205,7 +205,7 @@ class VirtualItems {
         displayName = "STR_Item_SpikeStrip";
         weight = 15;
         buyPrice = 2500;
-        sellPrice = 1200;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "icons\ico_spikeStrip.paa";
@@ -215,8 +215,8 @@ class VirtualItems {
         variable = "lockpick";
         displayName = "STR_Item_Lockpick";
         weight = 1;
-        buyPrice = 150;
-        sellPrice = 75;
+        buyPrice = 4000;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "icons\ico_lockpick.paa";
@@ -238,7 +238,7 @@ class VirtualItems {
         displayName = "STR_Item_BCharge";
         weight = 15;
         buyPrice = 35000;
-        sellPrice = 10000;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "icons\ico_blastingCharge.paa";
@@ -249,7 +249,7 @@ class VirtualItems {
         displayName = "STR_Item_BCutter";
         weight = 5;
         buyPrice = 7500;
-        sellPrice = 1000;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "icons\ico_boltCutter.paa";
@@ -260,7 +260,7 @@ class VirtualItems {
         displayName = "STR_Item_DefuseKit";
         weight = 2;
         buyPrice = 2500;
-        sellPrice = 2000;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "icons\ico_defuseKit.paa";
@@ -271,7 +271,7 @@ class VirtualItems {
         displayName = "STR_Item_StorageBS";
         weight = 5;
         buyPrice = 75000;
-        sellPrice = 50000;
+        sellPrice = -1;
         illegal = false;
         edible = -1;
         icon = "icons\ico_storageSmall.paa";
@@ -282,7 +282,7 @@ class VirtualItems {
         displayName = "STR_Item_StorageBL";
         weight = 10;
         buyPrice = 150000;
-        sellPrice = 125000;
+        sellPrice = -1;
         illegal = false;
         edible = -1;
         icon = "icons\ico_storageBig.paa";

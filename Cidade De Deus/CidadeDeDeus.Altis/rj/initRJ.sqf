@@ -81,6 +81,9 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barr
  
  /* Canais Customizados */
   [] execVM "rj\Canais\canaiscustom.sqf";
+  
+ /* Mensagens */
+  [] execVM "rj\MSG\msgs.sqf";
  
 
 

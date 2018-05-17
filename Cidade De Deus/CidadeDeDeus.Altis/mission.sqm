@@ -48246,7 +48246,7 @@ class Mission
 			{
 				name="gatilhofav";
 				condition="this && (vehicle player) in thislist";
-				onActivation="null = execVM ""rj\Avisos\fav.sqf"";";
+				onActivation="null = execVM ""rj\MSG\Avisos\fav.sqf"";";
 				sizeA=410;
 				sizeB=410;
 				repeatable=1;

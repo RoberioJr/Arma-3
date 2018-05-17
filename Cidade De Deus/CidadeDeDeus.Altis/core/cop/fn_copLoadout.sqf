@@ -26,7 +26,7 @@ player addMagazine "16Rnd_9x21_Mag";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "ItemGPS";
+//player linkItem "ItemGPS";
 
 [] call life_fnc_playerSkins;
 [] call life_fnc_saveGear;

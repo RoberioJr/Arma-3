@@ -1,0 +1,5 @@
+Trocar Roupa Inicia Do BOPE;
+Configurar TAGs De Acordo Com As Patentes;
+Remover Os Dupes;
+Remover HUD Padrão;
+...
