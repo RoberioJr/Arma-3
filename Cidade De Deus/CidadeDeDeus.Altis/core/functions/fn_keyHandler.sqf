@@ -103,7 +103,7 @@ switch (_code) do {
 	// F4
 	case 62: {
 	    if (_alt) then {
-	        hint ["%1 Apertou Alt + F4, Denuncie Na Administração!",name player];
+	        hint format ["%1 Apertou Alt + F4, Denuncie Na Administração!",name player];
 	    };
 	};
 	

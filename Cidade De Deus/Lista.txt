@@ -1,4 +1,4 @@
-Trocar Roupa Inicia Do BOPE;
+Trocar Roupa Inicia Do BOPE;                OK
 Configurar TAGs De Acordo Com As Patentes;
 Remover Os Dupes;
 Remover HUD Padrão;

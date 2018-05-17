@@ -6,8 +6,8 @@
 private["_marcadores","_membros","_cormark"];
 _marcadores = [];
 _membros = [];
+_cormark = "ColorRed";
 
-waitUntil (alive player);
 switch (playerSide) do 
 {
     case west: 
@@ -15,12 +15,12 @@ switch (playerSide) do
 	    _cormark = "ColorBlue";   //COP AZUL
     };	
 	
-	case civilian:
+	case civilian: 
 	{
 	    _cormark = "ColorRed";    //CIV VERMELHO
 	};
 	
-	case: independent:
+	case independent: 
 	{
 	    _cormark = "ColorGreen";  //MED VERDE
 	};

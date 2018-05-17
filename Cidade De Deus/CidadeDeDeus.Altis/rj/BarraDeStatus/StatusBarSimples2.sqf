@@ -24,7 +24,7 @@ uiSleep 5;
  while {true} do
  {
  uiSleep 1;
- if(isNull ((uiNamespace getVariable "osefStatusBar2")displayCtrl 55554)) then
+ if(isNull ((uiNamespace getVariable "osefStatusBar2")displayCtrl 10713)) then ///*55554*/
  {
  diag_log "statusbar is null create";
  disableSerialization;
@@ -104,7 +104,7 @@ case((_FpsHud >= 30) && (_FpsHud < 60)) : {_colourFps = _colour30;};
 case((_FpsHud >= 1) && (_FpsHud < 30)) : {_colourFps = _colour0;};
 case(_FpsHud < 1) : {_colourFps = _colourDead;};
 };
-((uiNamespace getVariable "osefStatusBar2")displayCtrl 55554)ctrlSetStructuredText parseText
+((uiNamespace getVariable "osefStatusBar2")displayCtrl 10713)ctrlSetStructuredText parseText
  format["<t shadow='1' shadowColor='#000000'>
  <img size='1.6' shadowColor='#000000' image='rj\BarraDeStatus\ImagesStatusBar2\civ.paa'/>%1 
  <img size='1.6' shadowColor='#000000' image='rj\BarraDeStatus\ImagesStatusBar2\cop.paa'/>%2 

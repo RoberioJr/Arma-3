@@ -139,9 +139,22 @@ class CfgSounds {
 		sound[] = {"\sounds\cu.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	
 	class choque {
 	    name = "choque";
 		sound[] = {"\sounds\choque.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class zipper {
+	    name = "zipper";
+		sound[] = {"\sounds\zipper.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class ziptie {
+	    name = "ziptie";
+		sound[] = {"\sounds\ziptie.ogg", 1.0, 1};
 		titles[] = {};
 	};
 };

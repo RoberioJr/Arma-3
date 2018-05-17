@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp" 
 /*
     File: fn_copLoadout.sqf
     Author: Bryan "Tonic" Boardwine
@@ -10,8 +11,15 @@ private ["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
+//Edit RobérioJR
+_uniforme = "U_Rangemaster";
+if ((FETCH_CONST(life_coplevel)) >= 11) then {
+    _uniforme = "U_I_CombatUniform_shortsleeve";
+};
+
 //Load player with default cop gear.
-player addUniform "U_Rangemaster";
+/*player addUniform "U_Rangemaster"; */
+player addUniform _uniforme;
 player addVest "V_Rangemaster_belt";
 
 player addMagazine "16Rnd_9x21_Mag";
