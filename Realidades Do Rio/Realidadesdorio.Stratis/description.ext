@@ -27,8 +27,6 @@ __EXEC(HG_Profile = allVariables profileNamespace)
 #include "scripts\recargaCarreg\config.hpp"
 #include "scripts\CHVD\dialog.hpp"
 #include "scripts\LogoInferior\global.hpp"
-#include "scripts\MenuDeRespawn\base_defines.hpp"                     //Menu De Respawn Definições
-#include "scripts\MenuDeRespawn\dlg_respawnSelectionMenu.hpp"         //Menu De Respawn
 
 
 class CfgClient
@@ -54,30 +52,12 @@ class CfgFunctions
 	#include "scripts\HG\Functions\HG_Functions.h"
 	#include "scripts\LogoInferior\roberio.h"
 	#include "scripts\CHVD\CfgFunctions.hpp"
-	#include "scripts\MenuDeRespawn\respawnSelectionMenu\functions\CfgFunctions.hpp"
 };
 
 class CfgDebriefing
 {
     #include "config\Economia\HG_Debriefing.h"
 	//#include "config\Client\WhiteList.h"
-};
-
-/* Menu De Respawn */
-
-class respawnSelectionMenu_configsBOPE
-{
-	#include "scripts\MenuDeRespawn\respawnSelectionMenu\config\config_respawnPointsBOPE.hpp"
-};
-
-class respawnSelectionMenu_configsVERMELHO
-{
-	#include "scripts\MenuDeRespawn\respawnSelectionMenu\config\config_respawnPointsVERMELHO.hpp"
-};
-
-class respawnSelectionMenu_configsVERDE
-{
-	#include "scripts\MenuDeRespawn\respawnSelectionMenu\config\config_respawnPointsVERDE.hpp"
 };
 
 /* *****  */

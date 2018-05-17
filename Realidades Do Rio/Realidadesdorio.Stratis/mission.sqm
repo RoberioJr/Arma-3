@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=546;
+	toggles=674;
 	class ItemIDProvider
 	{
-		nextID=5827;
+		nextID=5839;
 	};
 	class MarkerIDProvider
 	{
-		nextID=260;
+		nextID=261;
 	};
 	class LayerIndexProvider
 	{
-		nextID=246;
+		nextID=250;
 	};
 	class Camera
 	{
-		pos[]={6483.6958,11.552911,5385.0679};
-		dir[]={-0.73172021,-0.38905916,-0.55967098};
-		up[]={-0.3090328,0.92120647,-0.23636973};
-		aside[]={-0.6075381,-3.9348379e-008,0.79430223};
+		pos[]={3321.9382,276.9928,2888.2405};
+		dir[]={-0.43261248,-0.60764027,0.66606414};
+		up[]={-0.33098546,0.79420173,0.5095942};
+		aside[]={0.83864206,3.8312282e-007,0.54470247};
 	};
 };
 binarizationWanted=0;
@@ -616,7 +616,7 @@ class ScenarioData
 {
 	author="RobérioJr, Marvinn and R. Marques";
 	disabledAI=1;
-	respawn=2;
+	respawn=3;
 	respawnDelay=30.000002;
 	respawnVehicleDelay=119.95712;
 	class Header
@@ -647,7 +647,7 @@ class CustomAttributes
 					};
 					class value
 					{
-						items=2;
+						items=1;
 						class Item0
 						{
 							class data
@@ -660,20 +660,6 @@ class CustomAttributes
 									};
 								};
 								value="Counter";
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="None";
 							};
 						};
 					};
@@ -729,7 +715,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2688;
+		items=2687;
 		class Item0
 		{
 			dataType="Marker";
@@ -2259,6 +2245,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				name="spawn_certocv";
 			};
 			id=441;
 			type="Land_Garbage_square5_F";
@@ -40692,9 +40679,9 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "[] execVM ""scripts\SistemadeRespawn\initCondJogador.sqf"";}";
 						name="fg2";
-						description="Recruta";
+						description="TESTANDO";
 						isPlayable=1;
 						class Inventory
 						{
@@ -40801,7 +40788,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg3";
 						description="Recruta";
 						isPlayable=1;
@@ -40910,7 +40897,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg4";
 						description="Recruta";
 						isPlayable=1;
@@ -41019,7 +41006,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg5";
 						description="Recruta";
 						isPlayable=1;
@@ -41128,7 +41115,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg6";
 						description="Recruta";
 						isPlayable=1;
@@ -41237,7 +41224,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg7";
 						description="Recruta";
 						isPlayable=1;
@@ -41346,7 +41333,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg8";
 						description="Soldado";
 						isPlayable=1;
@@ -41454,7 +41441,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg9";
 						description="Soldado";
 						isPlayable=1;
@@ -41562,7 +41549,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg10";
 						description="Soldado";
 						isPlayable=1;
@@ -41670,7 +41657,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg11";
 						description="Soldado";
 						isPlayable=1;
@@ -41779,7 +41766,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg12";
 						description="Cabo";
 						isPlayable=1;
@@ -41888,7 +41875,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg13";
 						description="Cabo";
 						isPlayable=1;
@@ -41997,7 +41984,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg14";
 						description="Cabo";
 						isPlayable=1;
@@ -42106,7 +42093,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg15";
 						description="Sargento";
 						isPlayable=1;
@@ -42215,7 +42202,7 @@ class Mission
 					class Attributes
 					{
 						rank="COLONEL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg1";
 						description="General do BOPE";
 						isPlayable=1;
@@ -42325,7 +42312,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg41";
 						description="Sargento";
 						isPlayable=1;
@@ -42434,7 +42421,7 @@ class Mission
 					class Attributes
 					{
 						rank="CAPTAIN";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
 						name="fg42";
 						description="Capitão do BOPE";
 						isPlayable=1;
@@ -42600,7 +42587,7 @@ class Mission
 					class Attributes
 					{
 						rank="COLONEL";
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg16";
 						description="Líder do Comando Vermelho";
 						isPlayable=1;
@@ -42709,7 +42696,7 @@ class Mission
 					class Attributes
 					{
 						rank="MAJOR";
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg17";
 						description="General do Líder";
 						isPlayable=1;
@@ -42817,7 +42804,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg18";
 						description="Bandido";
 						isPlayable=1;
@@ -42925,7 +42912,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg19";
 						description="Bandido";
 						isPlayable=1;
@@ -43033,7 +43020,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg20";
 						description="Bandido";
 						isPlayable=1;
@@ -43141,7 +43128,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg21";
 						description="Bandido";
 						isPlayable=1;
@@ -43249,7 +43236,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg22";
 						description="Bandido";
 						isPlayable=1;
@@ -43357,7 +43344,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg23";
 						description="Bandido";
 						isPlayable=1;
@@ -43465,7 +43452,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg24";
 						description="Bandido";
 						isPlayable=1;
@@ -43573,7 +43560,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg25";
 						description="Bandido";
 						isPlayable=1;
@@ -43681,7 +43668,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg26";
 						description="Bandido";
 						isPlayable=1;
@@ -43789,7 +43776,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg27";
 						description="Bandido";
 						isPlayable=1;
@@ -43897,7 +43884,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg28";
 						description="Bandido";
 						isPlayable=1;
@@ -44005,7 +43992,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg29";
 						description="Bandido";
 						isPlayable=1;
@@ -44113,7 +44100,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg30";
 						description="Bandido";
 						isPlayable=1;
@@ -44221,9 +44208,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "[] execVM ""scripts\SistemadeRespawn\initCondJogador.sqf"";}";
 						name="fg31";
-						description="Bandido";
+						description="TESTANDO";
 						isPlayable=1;
 						class Inventory
 						{
@@ -44329,7 +44316,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg32";
 						description="Bandido";
 						isPlayable=1;
@@ -44437,7 +44424,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg33";
 						description="Bandido";
 						isPlayable=1;
@@ -44545,7 +44532,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg34";
 						description="Bandido";
 						isPlayable=1;
@@ -44653,7 +44640,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg35";
 						description="Bandido";
 						isPlayable=1;
@@ -44761,7 +44748,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg36";
 						description="Bandido";
 						isPlayable=1;
@@ -44869,7 +44856,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg37";
 						description="Bandido";
 						isPlayable=1;
@@ -44977,7 +44964,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg38";
 						description="Bandido";
 						isPlayable=1;
@@ -45085,7 +45072,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg39";
 						description="Bandido";
 						isPlayable=1;
@@ -45193,7 +45180,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "createDialog ""dlg_respawnSelectionMenu"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
 						name="fg40";
 						description="Bandido";
 						isPlayable=1;
@@ -57646,95 +57633,6 @@ class Mission
 		class Item2673
 		{
 			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3268.261,229.19144,2932.344};
-					};
-					side="East";
-					flags=7;
-					class Attributes
-					{
-					};
-					id=5716;
-					type="O_support_AMG_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=5715;
-		};
-		class Item2674
-		{
-			dataType="Group";
 			side="Civilian";
 			class Entities
 			{
@@ -57825,7 +57723,7 @@ class Mission
 			id=5717;
 			atlOffset=-0.0085086823;
 		};
-		class Item2675
+		class Item2674
 		{
 			dataType="Group";
 			side="Civilian";
@@ -57918,7 +57816,7 @@ class Mission
 			id=5719;
 			atlOffset=0.065761566;
 		};
-		class Item2676
+		class Item2675
 		{
 			dataType="Group";
 			side="East";
@@ -58082,7 +57980,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2677
+		class Item2676
 		{
 			dataType="Marker";
 			position[]={6477.8618,7.7113876,5380.4355};
@@ -58092,7 +57990,7 @@ class Mission
 			colorName="ColorOrange";
 			id=5723;
 		};
-		class Item2678
+		class Item2677
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58109,7 +58007,7 @@ class Mission
 			type="Land_jbad_A_GeneralStore_01a";
 			atlOffset=0.95743704;
 		};
-		class Item2679
+		class Item2678
 		{
 			dataType="Group";
 			side="East";
@@ -58271,61 +58169,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2680
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={3301.1531,229.19289,2923.8093};
-			};
-			areaSize[]={5,-1,5};
-			flags=1;
-			id=5729;
-			type="ModuleHideTerrainObjects_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="#filter";
-					expression="_this setVariable [""#filter"",_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=15;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="#hideLocally";
-					expression="_this setVariable [""#hideLocally"",_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item2681
+		class Item2679
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -58380,7 +58224,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2682
+		class Item2680
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58397,7 +58241,7 @@ class Mission
 			type="Land_jbad_House_c_10";
 			atlOffset=0.76142883;
 		};
-		class Item2683
+		class Item2681
 		{
 			dataType="Group";
 			side="Civilian";
@@ -58539,7 +58383,7 @@ class Mission
 			};
 			id=5800;
 		};
-		class Item2684
+		class Item2682
 		{
 			dataType="Marker";
 			position[]={3530.2537,201.12035,4917.874};
@@ -58549,7 +58393,7 @@ class Mission
 			angle=130;
 			id=5805;
 		};
-		class Item2685
+		class Item2683
 		{
 			dataType="Marker";
 			position[]={3520.2146,200.72856,4911.2129};
@@ -58559,24 +58403,32 @@ class Mission
 			colorName="ColorWhite";
 			id=5814;
 		};
-		class Item2686
+		class Item2684
 		{
 			dataType="Marker";
-			position[]={3291.3562,229.17999,2935.1528};
-			name="respawn_bope";
+			position[]={3291.356,229.17999,2935.1531};
+			name="respawn_west";
 			text="RESPAWN BOPE";
 			type="Empty";
 			id=5824;
 		};
-		class Item2687
+		class Item2685
 		{
 			dataType="Marker";
 			position[]={4368.3369,129.686,6777.3428};
-			name="respawn_cv";
+			name="respawn_east";
 			text="Base do CV";
 			type="Empty";
 			id=5825;
 			atlOffset=0.00039672852;
+		};
+		class Item2686
+		{
+			dataType="Marker";
+			position[]={3294.1599,229.342,2932.7188};
+			name="spawn_certobope";
+			type="Empty";
+			id=5838;
 		};
 	};
 	class Connections
