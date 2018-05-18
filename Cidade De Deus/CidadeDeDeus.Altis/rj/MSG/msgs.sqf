@@ -13,7 +13,7 @@
         "Nosso Site:<br/><t color='#e32828' size='1.5'>www.cidadededeus.com</t>"  
     ];  
 
-    _refreshTime = 600; // Time between each message (in seconds)  
+    _refreshTime = 900; // Time between each message (in seconds)  
 
     _i = 0;  
     while {true} do {  

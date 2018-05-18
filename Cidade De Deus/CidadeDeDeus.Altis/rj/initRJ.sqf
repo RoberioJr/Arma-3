@@ -78,9 +78,6 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barr
   diag_log "RJ: Mochilas Invisiveis - Ativado";
   [] execVM "rj\MochilaInvisivel\mochilainvisivel.sqf";
  };
- 
- /* Canais Customizados */
-  //[] execVM "rj\Canais\canaiscustom.sqf";
   
  /* Mensagens */
   [] execVM "rj\MSG\msgs.sqf";
