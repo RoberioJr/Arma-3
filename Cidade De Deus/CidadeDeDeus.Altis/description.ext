@@ -5,9 +5,10 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
-#include "maverick\maverick_master.cpp"             //Maverick
-#include "rj\derleon\Scripts_Master.hpp"            //Auto Save Do Jogador
-#include "rj\MenuAdminRJ\VeiculoSpawn\Common.hpp"   //Menu De Veiculos ADM
+#include "maverick\maverick_master.cpp"                        //Maverick FrameWork
+#include "rj\derleon\Scripts_Master.hpp"                       //Auto Save Do Jogador
+#include "rj\MenuAdminRJ\VeiculoSpawn\Common.hpp"              //Menu De Veiculos ADM
+#include "rj\MenuAdminRJ\VeiculoSpawn\TUT_gui_veh.hpp"         //Menu De Veiculos ADM
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
