@@ -3,6 +3,8 @@
 /      Do        /     
 / Rio De Janeiro /
 */
+private "_rjposition","_vivo";
+
 
 _rjposition = profileNameSpace getVariable "rjposition";
 _vivo = profileNameSpace getVariable "vivo";
