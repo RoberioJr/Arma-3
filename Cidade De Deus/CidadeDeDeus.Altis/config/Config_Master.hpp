@@ -23,10 +23,13 @@ class Life_Settings {
 	/* 1 - Detalhada; 2 - Simples Com Icones; 3 - Simples Sem Icones; */
 	
     /* Mochilas Invisiveis */
-	rj_ativar_mochilainvisivel = true;     //Ativa/Desativa Mochilas Invisiveis      By:RobérioJR [true ou false]
 	rj_ativar_mochilainvisivel_cop = true;  //Mochila Invisivel Para COP             By:RobérioJR [true ou false]
 	rj_ativar_mochilainvisivel_med = true;  //Mochila Invisivel Para MED             By:RobérioJR [true ou false]
 	rj_ativar_mochilainvisivel_civ = false; //Mochila Invisivel Para CIV             By:RobérioJR [true ou false]
+	
+	/* Auto Reparo E Reabastecimento */
+	rj_ativar_autoreparoveicul_med = true; //Repara e Reabastece Automaticamente     By:RobérioJR [true ou false]
+	/*                                         os Veiculos Do SAMU      */
 	
    /* Descontos Do Doador */
 	/* Descontos Em Lojas De Armas */

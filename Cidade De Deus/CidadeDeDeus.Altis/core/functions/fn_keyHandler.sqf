@@ -6,7 +6,7 @@
 *    Description:
 *    Main key handler for event 'keyDown'.
 */
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_interruptionKeys"];
+private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_interruptionKeys","_variavS"];
 _ctrl = _this select 0;
 _code = _this select 1;
 _shift = _this select 2;
@@ -14,6 +14,7 @@ _ctrlKey = _this select 3;
 _alt = _this select 4;
 _speed = speed cursorObject;
 _handled = false;
+_variavS = 1;
 
 _interactionKey = if (count (actionKeys "User10") isEqualTo 0) then {219} else {(actionKeys "User10") select 0};
 //hint str _code;
@@ -100,6 +101,13 @@ switch (_code) do {
 		};
 	};
 	
+	//Botão I
+	case 23: {
+	    if (vehicle player isEqualTo player) then {
+	        playSound "zipper";
+		};
+	};
+	
 	// F4
 	case 62: {
 	    if (_alt) then {
@@ -112,18 +120,24 @@ switch (_code) do {
 		if(vehicle player isEqualTo player) then {
 			if(!life_action_inUse) then {
 				player playActionNow "gestureHiC";
-				[player,"aipaipara",35,1] remoteExecCall ["life_fnc_say3D",0];
+				[player,"aipaipara",25,1] remoteExecCall ["life_fnc_say3D",0];
 			};
 		};
 	};
 	
 	//Um Cu Como o Seu Merece Ficar Vivo... F2
 	case 60: {
+	    if (_variavS isEqualTo 0) exitWith { 
+		    hint "Espere Um Momento Para Usar Essa Ação Novamente"; 
+		};
 	    if(vehicle player isEqualTo player) then {
-			if(!life_action_inUse) then {
-				player playActionNow "gestureHi";
-				[player,"cu",35,1] remoteExecCall ["life_fnc_say3D",0];
-			};
+		    if(!life_action_inUse) then {
+		        player playActionNow "gestureHi";
+		        [player,"cu",25,1] remoteExecCall ["life_fnc_say3D",0];
+			    _variavS = 0;
+			    sleep 3.0;
+			    _variavS = 1;	
+	        };
 		};
 	};
 	

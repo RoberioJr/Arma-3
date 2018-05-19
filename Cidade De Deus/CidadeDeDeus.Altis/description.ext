@@ -158,6 +158,18 @@ class CfgSounds {
 		sound[] = {"\sounds\ziptie.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	
+	class portaabre {
+	    name = "portaabre";
+		sound[] = {"\sounds\portaabre.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class portafecha {
+	    name = "portafecha";
+		sound[] = {"\sounds\portafecha.ogg", 1.0, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing {

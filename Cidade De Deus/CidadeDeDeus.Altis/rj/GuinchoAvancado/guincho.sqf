@@ -43,7 +43,7 @@ SA_Advanced_Towing_Install = {
 if(!isNil "SA_TOW_INIT") exitWith {};
 SA_TOW_INIT = true;
 
-diag_log "Advanced Towing Loading...";
+diag_log "RJ: Guincho Avançado - Inicializando...";
 
 SA_Simulate_Towing_Speed = {
 
@@ -851,7 +851,7 @@ if(isServer) then {
 
 };
 
-diag_log "Guincho Avançado - Carregado";
+diag_log "RJ: Guincho Avançado - Carregado";
 
 };
 

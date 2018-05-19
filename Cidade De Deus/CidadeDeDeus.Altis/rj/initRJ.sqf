@@ -12,7 +12,6 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barr
   _neblina = LIFE_SETTINGS(getNumber,"rj_ativar_neblina");
   _reparar = LIFE_SETTINGS(getNumber,"rj_ativar_reparoveiculo");
   _safeszn = LIFE_SETTINGS(getNumber,"rj_ativar_safezones");
-  _mochinv = LIFE_SETTINGS(getNumber,"rj_ativar_mochilainvisivel");
   _gaslacr = LIFE_SETTINGS(getNumber,"rj_ativar_gaslacrimo");
   _barstat = LIFE_SETTINGS(getNumber,"rj_barradestatus");
    
@@ -73,14 +72,12 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barr
   [] execVM "rj\Safezones\InitSafeZones.sqf";
  };
   
- /* Mochilas Invisiveis */
- if (_mochinv isEqualTo 1) then {
-  diag_log "RJ: Mochilas Invisiveis - Ativado";
-  [] execVM "rj\MochilaInvisivel\mochilainvisivel.sqf";
- };
+ /* Loop Sides */
+  [] execVM "rj\LoopSide\loopsides.sqf";
   
  /* Mensagens */
   [] execVM "rj\MSG\msgs.sqf";
+
   
  
 

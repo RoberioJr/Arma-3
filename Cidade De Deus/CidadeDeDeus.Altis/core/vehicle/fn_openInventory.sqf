@@ -11,6 +11,8 @@ if (dialog) exitWith {};
 _vehicle = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _vehicle || !(_vehicle isKindOf "Car" || _vehicle isKindOf "Air" || _vehicle isKindOf "Ship" || _vehicle isKindOf "Box_IND_Grenades_F" || _vehicle isKindOf "B_supplyCrate_F")) exitWith {}; //Either a null or invalid vehicle type.
 if ((_vehicle getVariable ["trunk_in_use",false])) exitWith {hint localize "STR_MISC_VehInvUse"};
+//EDIT RJ
+[_vehicle,"portaabre",25,1] remoteExec ["life_fnc_say3D",0];
 _vehicle setVariable ["trunk_in_use",true,true];
 _vehicle setVariable ["trunk_in_use_by",player,true];
 if (!createDialog "TrunkMenu") exitWith {hint localize "STR_MISC_DialogError";}; //Couldn't create the menu?
@@ -33,6 +35,8 @@ life_trunk_vehicle = _vehicle;
 _vehicle spawn {
     waitUntil {isNull (findDisplay 3500)};
     _this setVariable ["trunk_in_use",false,true];
+	//EDIT RJ
+	[_vehicle,"portafecha",25,1] remoteExec ["life_fnc_say3D",0];
     if (_this isKindOf "Box_IND_Grenades_F" || _this isKindOf "B_supplyCrate_F") then {
 
         if (life_HC_isActive) then {

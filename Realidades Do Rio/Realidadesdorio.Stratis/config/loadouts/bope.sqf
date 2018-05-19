@@ -4,6 +4,12 @@
 / Rio De Janeiro /
 */
 
+_rjposition = profileNameSpace getVariable "rjposition";
+_vivo = profileNameSpace getVariable "vivo";
+
+sleep 0.6;
+if (_vivo isEqualto 1) exitwith {player setPos _rjposition;};
+
 waitUntil {!isNull player};
 
 _unit = _this select 0;
