@@ -27,6 +27,8 @@ __EXEC(HG_Profile = allVariables profileNamespace)
 #include "scripts\recargaCarreg\config.hpp"
 #include "scripts\CHVD\dialog.hpp"
 #include "scripts\LogoInferior\global.hpp"
+#include "admin\VeiculoSpawn\Common.hpp"              //Menu De Veiculos ADM
+#include "admin\VeiculoSpawn\TUT_gui_veh.hpp"         //Menu De Veiculos ADM
 
 
 class CfgClient
@@ -40,6 +42,7 @@ class RscTitles
 	#include "scripts\HG\UI\Dialogs\HG_Tags.h"
 	#include "scripts\NT\NameTags.hpp"
 	#include "scripts\LogoInferior\main_SL.hpp"
+	#include "admin\VeiculoSpawn\TUT_gui_veh.hpp"         //Menu De Veiculos ADM
 };
 
 class CfgSounds

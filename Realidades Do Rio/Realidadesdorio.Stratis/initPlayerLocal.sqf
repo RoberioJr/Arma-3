@@ -18,6 +18,9 @@
  if(!hasInterface) exitWith {};
 [] execVM "scripts\HG\Setup\fn_clientInitialization.sqf";
 
+ /* KeyHandler By: RobérioJR */
+  [] execVM "config\keyHandler.sqf";
+
 //Sistema De Whitelist By: RobérioJr
 /*
 fnc_reservedSlot = {

@@ -47,7 +47,7 @@ switch (playerSide) do {
             player setObjectTextureGlobal [0, _skinName];
         };
 		/* BOPE EDIT RJ */
-		if (uniform player isEqualTo "U_I_CombatUniform_shortsleeve" && {FETCH_CONST(life_coplevel) >= 11}) then {
+		if (uniform player isEqualTo "U_I_CombatUniform_shortsleeve") then {
 		    _nomeSkin = "textures\roupa\bope\uniforme_bope_padrao.jpg";
 		};
 		player setObjectTextureGlobal [0, _nomeSkin];
