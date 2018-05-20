@@ -64,7 +64,7 @@ class CfgSpawnPoints {
 
         class Cop {
             class Kavala {
-                displayName = "Kavala HQ";
+                displayName = "Cidade De Deus HQ";
                 spawnMarker = "cop_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
@@ -97,11 +97,25 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
                 conditions = "call life_coplevel >= 3";
             };
+			
+			class PostoCOP {
+			    displayName = "Posto Avançado Rodopoli";
+				spawnMarker = "postocop1";
+				icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+                conditions = "";
+			};
+			
+			class BopeKav {
+				displayName = "HQ BOPE Cidade De Deus";
+				spawnMarker = "bope_kav";
+				icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+                conditions = "call life_coplevel >= 11";
+			};
         };
 
         class Medic {
             class Kavala {
-                displayName = $STR_SP_EMS_Kav;
+                displayName = "Hospital Cidade De Deus";
                 spawnMarker = "medic_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
@@ -120,6 +134,13 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
+			
+			class PostoAgios {
+				displayName = "Posto Médico AgiosD";
+			    spawnMarker = "posto_med_agios";
+				icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+			};
         };
     };
 

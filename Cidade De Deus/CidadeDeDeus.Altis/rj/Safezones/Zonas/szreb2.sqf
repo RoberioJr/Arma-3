@@ -4,9 +4,9 @@ waitUntil {time > 0};
 
 private ["_eh1","_inSafeZone","_safeZone","_dis", "_playerSide", "_spawnpos", "_list", "_InGodMode" ];
 _inSafeZone = false;
-_safeZone = getMarkerPos "saferebs";
+_safeZone = getMarkerPos "rebS";
 _playerSide = side player;
-_dis = 130;
+_dis = 75;
 
 
 _spawnpos = [ _safeZone select 0, _safeZone select 1, 1];

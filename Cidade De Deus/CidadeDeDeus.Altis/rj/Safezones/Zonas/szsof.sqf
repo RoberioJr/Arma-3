@@ -6,7 +6,7 @@ private ["_eh1","_inSafeZone","_safeZone","_dis", "_playerSide", "_spawnpos", "_
 _inSafeZone = false;
 _safeZone = getMarkerPos "safesof";
 _playerSide = side player;
-_dis = 225;
+_dis = 150;
 
 
 _spawnpos = [ _safeZone select 0, _safeZone select 1, 1];

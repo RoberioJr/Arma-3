@@ -40,19 +40,14 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barr
  /* Barra De Status */ 
  switch (_barstat) do 
  { 
-   Case 1: 
-    {
-        diag_log "RJ: Barra De Status - Detalhada";
-        [] execVM "rj\BarraDeStatus\iniciarstatusbar.sqf";
-    };
-	Case 2:
+	Case 1:
 	{
-	    diag_log "RJ: Barra De Status - Simples Com Icones";
+	    diag_log "RJ: Barra De Status - Com Icones";
         [] execVM "rj\BarraDeStatus\StatusBarSimples2.sqf";
 	};
-	Case 3:
+	Case 2:
 	{
-	    diag_log "RJ: Barra De Status - Simples Sem Icones";
+	    diag_log "RJ: Barra De Status - Sem Icones";
         [] execVM "rj\BarraDeStatus\StatusBarSimples.sqf";
 	};
  };

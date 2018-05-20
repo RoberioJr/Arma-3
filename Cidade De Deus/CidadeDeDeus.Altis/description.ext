@@ -26,7 +26,6 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     //#include "dialog\hud_stats.hpp"
 	#include "maverick\introcam\dialogs\title_status.hpp"
-	#include "rj\BarraDeStatus\statusBar.hpp"                      //Barra De Status Detalhada
 	#include "rj\BarraDeStatus\BarSimples.hpp"                     //Barra De Status Simples
 	#include "rj\BarraDeStatus\BarSimples2.hpp"                    //Barra De Status Simples Com Icones
 	#include "rj\MenuAdminRJ\VeiculoSpawn\TUT_gui_veh.hpp"         //Menu De Veiculos ADM

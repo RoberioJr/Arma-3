@@ -19,8 +19,8 @@ class Life_Settings {
 	rj_ativar_gaslacrimo = true;    //Ativa/Desativa O Gás Lacrimogênio              By:RobérioJR [true ou false]
 	
 	/* StatusBar */
-	rj_barradestatus = 2;  //Seleção Da Barra De Status                              By:RobérioJR [1  -  2  -  3]
-	/* 1 - Detalhada; 2 - Simples Com Icones; 3 - Simples Sem Icones; */
+	rj_barradestatus = 1;           //Seleção Da Barra De Status                     By:RobérioJR [  1   -   2  ]
+	/* 1 - Simples Com Icones || 2 - Simples Sem Icones */
 	
     /* Mochilas Invisiveis */
 	rj_ativar_mochilainvisivel_cop = true;  //Mochila Invisivel Para COP             By:RobérioJR [true ou false]
@@ -28,7 +28,7 @@ class Life_Settings {
 	rj_ativar_mochilainvisivel_civ = false; //Mochila Invisivel Para CIV             By:RobérioJR [true ou false]
 	
 	/* Auto Reparo E Reabastecimento */
-	rj_ativar_autoreparoveicul_med = true; //Repara e Reabastece Automaticamente     By:RobérioJR [true ou false]
+	rj_ativar_autoreparoveicul_med = true;  //Repara e Reabastece Automaticamente    By:RobérioJR [true ou false]
 	/*                                         os Veiculos Do SAMU      */
 	
    /* Descontos Do Doador */
