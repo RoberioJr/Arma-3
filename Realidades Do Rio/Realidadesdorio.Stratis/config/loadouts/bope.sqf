@@ -5,11 +5,13 @@
 */
 private "_rjposition","_vivo";
 
+/*
 _rjpositionpri = profileNameSpace getVariable "rjposition";
 _vivopri = profileNameSpace getVariable "vivo";
 
 sleep 0.6;
 if (_vivo isEqualto "s") exitwith {player setPos _rjposition;};
+*/
 
 waitUntil {!isNull player};
 
