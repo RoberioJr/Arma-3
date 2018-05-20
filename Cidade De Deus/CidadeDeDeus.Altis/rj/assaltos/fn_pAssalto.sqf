@@ -11,9 +11,9 @@ params ["_Btn1","_Btn2","_Btn3"];
 
 disableSerialization;
 
-if (!dialog) then {
-    createDialog "dgAssalto";
-};
+if (!alive player || dialog) exitWith {};
+
+createDialog "dgAssalto";
 
 _display = findDisplay 9000;
 

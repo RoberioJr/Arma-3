@@ -11,9 +11,9 @@ private["_gangNum","_gName","_group","_area","_nil","_pos","_xname","_text","_ac
 _area = getpos player nearestObject "Flag_Red_F"; //finds the flag
 _group = _area getVariable ["gangOwner",grpNull]; //gets the owner of the flag
 _xname = ""; //setup for popo name
-_nearUnits = _area nearEntities ["Man",500]; //searches area for players
+_nearUnits = _area nearEntities ["Man",250]; //searches area for players
  _areaContested = false; //sets the area to not contested
-if ((player distance _area) > 10) exitWith { hint "Você deve estar mais perto da bandeira para capturar esta área!"; }; //too far away
+if ((player distance _area) > 30) exitWith { hint "Você deve estar mais perto da bandeira para capturar esta área!"; }; //too far away
 
 /*
 #########################################
@@ -136,7 +136,7 @@ _area setVariable ["gangOwner",group player,true];
 _area = getpos player nearestObject "Flag_Red_F"; //finds the flag
 _group = _area getVariable ["gangOwner",grpNull]; //gets the ownerr of the flag
 _xname = ""; //setup for popo name
-_nearUnits = _area nearEntities ["Man",500]; //searches area for players
+_nearUnits = _area nearEntities ["Man",250]; //searches area for players
 if (isNil {group player getVariable "gang_name"}) exitWith { hint "Você deve estar em uma facção para capturar uma área!"; }; //not in a gang
 if (_group isEqualTo group player) exitWith { hint "Sua Facção já tem controle sobre essa área!"; }; //already own it
 if ((_area getVariable ["inCapture",FALSE])) exitWith {hint "Apenas uma pessoa deve capturar por vez!"; }; //stops 2 people capturing at the same time

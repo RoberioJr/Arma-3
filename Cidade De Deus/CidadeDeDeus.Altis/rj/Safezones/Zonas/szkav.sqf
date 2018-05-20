@@ -6,14 +6,14 @@ private ["_eh1","_inSafeZone","_safeZone","_dis", "_playerSide", "_spawnpos", "_
 _inSafeZone = false;
 _safeZone = getMarkerPos "safekav";
 _playerSide = side player;
-_dis = 500;
+_dis = 550;
 
 
 _spawnpos = [ _safeZone select 0, _safeZone select 1, 1];
 _list = nearestObjects [_spawnpos, ["static"], _dis];
 
 { _x allowDamage false; _x addEventHandler ["HandleDamage", {false}]; } forEach _list;
-
+/*
 _InGodMode = player getVariable ["isAdminInvulnerable", false];
 if (alive player) then {
 	if (_safeZone distance player > _dis) then {
@@ -37,6 +37,7 @@ if (alive player) then {
 		};
 	};
 };
+*/
 
 while {true} do {
 	_InGodMode = player getVariable ["isAdminInvulnerable", false];

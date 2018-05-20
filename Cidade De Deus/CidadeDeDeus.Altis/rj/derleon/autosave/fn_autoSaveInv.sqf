@@ -1,5 +1,5 @@
-#include "rj\derleon\lb_script_macros.hpp"
-#include "rj\derleon\script_macros.hpp"
+#include "..\lb_script_macros.hpp"
+#include "..\..\..\script_macros.hpp"
 /*
     File: fn_autoSaveInv.sqf
     Author: Leon "DerL30N" Beeser"
@@ -34,7 +34,7 @@ if (!isServer) then {
 				{
 					if (LB_SETTINGS(getNumber,"lockManuelSync") isEqualTo 1) then 
 					{
-						systemChat format["Seus Dados Estão Sendo Salvos. Espere 1 minuto Antes De Deslogar.", (LB_SETTINGS(getNumber,"lockManuelSync"))];
+						systemChat format["Seus Dados Estão Sendo Salvos. Espere 20 Segundos Antes De Deslogar.", (LB_SETTINGS(getNumber,"lockManuelSync"))];
 					};
 				} else {
 					systemChat "Seus Dados Foram Salvos!";

@@ -7,9 +7,8 @@ _EXECscript3 = 'player execVM "'+_pathtoweapon+'%1"';
 _EXECscript5 = 'player execVM "'+_pathtovehicles+'%1"';
 //_EXECscript6 = 'player execVM "'+_pathtosoldier+'%1"';
 
-
-if ((getPlayerUID player) in ["76561198134612622", "", ""]) then { //Lista De Admins
-	if ((getPlayerUID player) in ["76561198134612622", "", ""]) then { //Colocar Aqui Tambem A Lista De Admins
+if ((getPlayerUID player) in ["76561198134612622", "76561198334549460", "76561198125169667"]) then { //Lista De Admins
+	if ((getPlayerUID player) in ["76561198134612622", "76561198334549460", "76561198125169667"]) then { //Colocar Aqui Tambem A Lista De Admins
 		adminmenu =
 		[
 			["RoberioJr Menu",true],

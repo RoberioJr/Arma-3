@@ -25,6 +25,8 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
         _pgText ctrlSetText format ["%2 (1%1)...","%",_upp];
         _progress progressSetPosition 0.01;
         _cP = 0.01;
+		/* Som 3D Edit RJ */
+		[_veh,"reparar",60,1] remoteExec ["life_fnc_say3D",0];
 
         for "_i" from 0 to 1 step 0 do {
             if (animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
@@ -33,8 +35,6 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
                 player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
             };
 
-			/* Som 3D Edit RJ */
-			[_veh,"reparar",60,1] remoteExec ["life_fnc_say3D",0];
             uiSleep 0.27;
             _cP = _cP + 0.01;
             _progress progressSetPosition _cP;

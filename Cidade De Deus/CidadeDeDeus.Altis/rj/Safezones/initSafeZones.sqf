@@ -2,5 +2,9 @@
     Inicialização De Scripts De SafeZone...
 */
  
-// ExecVM "rj\SafeZones\Zonas\.sqf"
+  /* Kavala */
+ [] ExecVM "rj\SafeZones\Zonas\szkav.sqf";
+ 
+  /* Kavala */
+ [] ExecVM "rj\SafeZones\Zonas\szath.sqf";
 

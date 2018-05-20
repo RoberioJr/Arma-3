@@ -10,19 +10,6 @@ class Socket_Reciever {
         class updateRequest {};
     };
 };
-
- /* Auto Save Do Jogador */
-class autosave {
-  file = "scripts\derleon\autosave";
-    class autoSaveInv {};
-};
-
- /* Assalto (TAB) */
-class Assaltos {
-  file = "rj\assaltos";
-   class pAssalto {};
-   class sAssaltoMSG {};
-};
  
 class SpyGlass {
     tag = "SPY";
@@ -37,6 +24,19 @@ class SpyGlass {
 class Life_Client_Core {
     tag = "life";
 
+  /* Auto Save Do Jogador */
+    class autosave {
+        file = "rj\derleon\autosave";
+        class autoSaveInv {};
+    };
+
+  /* Assalto (TAB) */
+    class Assaltos {
+        file = "rj\assaltos";
+        class pAssalto {};
+        class sAssaltoMSG {};
+    };
+	
     class Master_Directory {
         file = "core";
         class initCiv {};

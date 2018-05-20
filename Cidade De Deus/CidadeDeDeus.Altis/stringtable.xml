@@ -48,7 +48,7 @@
     </Package>
     <Package name="Shop_Names">
         <Key ID="STR_Shops_C_Bruce">
-            <Original>Bruce's Outback Outfits</Original>
+            <Original>Loja de Roupas</Original>
             <Czech>Bruceovy Outback Oblečení</Czech>
             <French>Vêtements de Bruce</French>
             <Spanish>Tienda de Ropa</Spanish>
@@ -59,7 +59,7 @@
             <German>Bruce's Outback Outfits</German>
         </Key>
         <Key ID="STR_Shops_C_Police">
-            <Original>Altis Police Department Shop</Original>
+            <Original>Loja de Roupas Policiais</Original>
             <Czech>Altis policejní oddělení Shop</Czech>
             <French>Vêtements policiers</French>
             <Spanish>Tienda del Departamento de Policía</Spanish>
@@ -70,7 +70,7 @@
             <German>Altis Polizei Department Geschäft</German>
         </Key>
         <Key ID="STR_Shops_C_Rebel">
-            <Original>Mohammed's Jihadi Shop</Original>
+            <Original>Loja de Roupas Rebeldes</Original>
             <Czech>Mohamedův džihád Shop</Czech>
             <French>Vêtements rebelle</French>
             <Spanish>Tienda Jihadi de Mohamed</Spanish>
@@ -81,7 +81,7 @@
             <German>Mohammed's Ausrüstungen</German>
         </Key>
         <Key ID="STR_Shops_C_Diving">
-            <Original>Steve's Diving Shop</Original>
+            <Original>Loja de equipamentos para Mergulho</Original>
             <Czech>Steve je potápění obchod</Czech>
             <French>Vêtements de plongée de Steve</French>
             <Spanish>Tienda de Buceo</Spanish>
@@ -125,7 +125,7 @@
             <Polish>Sklep Kartingowy</Polish>
         </Key>
         <Key ID="STR_Shops_Market">
-            <Original>Altis Market</Original>
+            <Original>Mercado</Original>
             <Czech>Altis Market</Czech>
             <Spanish>Mercado de Altis</Spanish>
             <Russian></Russian>
@@ -136,7 +136,7 @@
             <Polish>Market Altis</Polish>
         </Key>
         <Key ID="STR_Shops_Rebel">
-            <Original>Rebel Market</Original>
+            <Original>Mercado Rebelde</Original>
             <Czech>Rebel Market</Czech>
             <Spanish>Mercado Rebelde</Spanish>
             <Russian></Russian>
@@ -147,7 +147,7 @@
             <Polish>Market Rebeliantów</Polish>
         </Key>
         <Key ID="STR_Shops_Gang">
-            <Original>Gang Market</Original>
+            <Original>Mercado da Gangue</Original>
             <Czech>gang Market</Czech>
             <Spanish>Mercado Pandillero</Spanish>
             <Russian></Russian>
@@ -246,7 +246,7 @@
             <Polish>Skup materiałów przemysłowych</Polish>
         </Key>
         <Key ID="STR_Shops_Cop">
-            <Original>APD Item Shop</Original>
+            <Original>Equipamentos da Polícia</Original>
             <Czech>APD Item Shop</Czech>
             <Spanish>Equipamiento Policial</Spanish>
             <Russian></Russian>
@@ -2458,7 +2458,7 @@
             <Polish>Aktualne wyposażenie:</Polish>
         </Key>
         <Key ID="STR_PM_Licenses">
-            <Original>Licenses</Original>
+            <Original>Licenças</Original>
             <Czech>licencí</Czech>
             <Spanish>Licencias</Spanish>
             <Russian></Russian>
@@ -2502,7 +2502,7 @@
             <Polish>Poszukiwani</Polish>
         </Key>
         <Key ID="STR_PM_CellPhone">
-            <Original>Cell Phone</Original>
+            <Original>Celular</Original>
             <Czech>Mobilní telefon</Czech>
             <Spanish>Celular</Spanish>
             <Russian></Russian>
@@ -5188,7 +5188,7 @@
             <Polish>Musisz włączyć Obraz w obrazie (PiP) w ustawieniach graficznych aby tego używać!</Polish>
         </Key>
         <Key ID="STR_Cop_Licenses">
-            <Original>Licenses:</Original>
+            <Original>Licenças:</Original>
             <Czech>licencí</Czech>
             <Spanish>Licencias:</Spanish>
             <Russian></Russian>
@@ -5199,7 +5199,7 @@
             <Polish>Licencje:</Polish>
         </Key>
         <Key ID="STR_Cop_NoLicenses">
-            <Original>No Licenses</Original>
+            <Original>Sem Licenças</Original>
             <Czech>žádné licence</Czech>
             <Spanish>No Licencias</Spanish>
             <Russian></Russian>
@@ -8204,7 +8204,7 @@
             <Polish>Rozkuj</Polish>
         </Key>
         <Key ID="STR_pInAct_checkLicenses">
-            <Original>Check Licenses</Original>
+            <Original>Verificar Licenças</Original>
             <Czech>Zkontrolujte licence</Czech>
             <Spanish>Revisar Licencias</Spanish>
             <Russian></Russian>
@@ -9860,7 +9860,7 @@
             <Polish>Maszt nadawczy</Polish>
         </Key>
         <Key ID="STR_MAR_DMV">
-            <Original>DMV</Original>
+            <Original>Loja de Licenças</Original>
             <Czech>DMV</Czech>
             <French>Magasin de licences</French>
             <Spanish>Registro de Licencias</Spanish>

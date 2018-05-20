@@ -9,6 +9,7 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "rj\derleon\Scripts_Master.hpp"                       //Auto Save Do Jogador
 #include "rj\MenuAdminRJ\VeiculoSpawn\Common.hpp"              //Menu De Veiculos ADM
 #include "rj\MenuAdminRJ\VeiculoSpawn\TUT_gui_veh.hpp"         //Menu De Veiculos ADM
+#include "rj\MenuAdminRJ\VAS\menu.hpp"                         //Menu De Equipamento ADM
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -35,6 +36,7 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
 	#include "maverick\maverick_functions_master.cpp"  //Maverick
+	#include "rj\MenuAdminRJ\VAS\cfgfunctions.hpp"     //Menu De Equipamento ADM
 };
 
 class CfgMusic
@@ -101,31 +103,31 @@ class CfgSounds {
 	
 	class comprar {
 	    name = "comprar";
-		sound[] = {"\sounds\comprar.ogg", 0.95, 1};
+		sound[] = {"\sounds\comprar.ogg", 1.0, 1};
 		titles[] = {};
 	};
 	
 	class comer {
 	    name = "comer";
-		sound[] = {"\sounds\comer.ogg", 0.70, 1};
+		sound[] = {"\sounds\comer.ogg", 0.80, 1};
 		titles[] = {};
 	};
 	
 	class beber {
 	    name = "beber";
-		sound[] = {"\sounds\beber.ogg", 0.70, 1};
+		sound[] = {"\sounds\beber.ogg", 0.80, 1};
 		titles[] = {};
 	};
 	
 	class porrada {
 	    name = "porrada";
-		sound[] = {"\sounds\porrada.ogg", 0.90, 1};
+		sound[] = {"\sounds\porrada.ogg", 1.0, 1};
 		titles[] = {};
 	};
 	
 	class reparar {
 	    name = "reparar";
-		sound[] = {"\sounds\reparar.ogg", 0.90, 1};
+		sound[] = {"\sounds\reparar.ogg", 1.0, 1};
 		titles[] = {};
 	};
 	

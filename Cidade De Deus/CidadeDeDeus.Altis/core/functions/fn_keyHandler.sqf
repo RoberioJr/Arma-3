@@ -6,7 +6,7 @@
 *    Description:
 *    Main key handler for event 'keyDown'.
 */
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_interruptionKeys","_variavS"];
+private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_interruptionKeys"];
 _ctrl = _this select 0;
 _code = _this select 1;
 _shift = _this select 2;
@@ -14,7 +14,6 @@ _ctrlKey = _this select 3;
 _alt = _this select 4;
 _speed = speed cursorObject;
 _handled = false;
-_variavS = 1;
 
 _interactionKey = if (count (actionKeys "User10") isEqualTo 0) then {219} else {(actionKeys "User10") select 0};
 //hint str _code;
@@ -94,31 +93,46 @@ switch (_code) do {
  
     /* Alterações RobérioJR */
 	
+	//Menu De Equipamentos Para Os Admins F7
+	case 65: {
+	    if (FETCH_CONST(life_adminlevel) >= 1) then {
+	        [] execVM "rj\MenuAdminRJ\VAS\open.sqf";
+		};
+	};
+	
 	//Spawner De Veiculos Para Os Admins F8
 	case 66: {
 	    if (FETCH_CONST(life_adminlevel) >= 1) then {
 	        [] call TUT_fnc_OpenVehUI;
 		};
-	};
-	
+    };
+
 	//Botão I
 	case 23: {
 	    if (vehicle player isEqualTo player) then {
+		    sleep 0.7;
 	        playSound "zipper";
 		};
 	};
 	
-	// F4
+	// Alt + F4
 	case 62: {
 	    if (_alt) then {
-	        hint format ["%1 Apertou Alt + F4, Denuncie Na Administração!",name player];
-	    };
+			removeHeadgear player:
+            removeVest player;
+            removeBackpack player;
+            removeUniform player;
+            removeAllWeapons player:
+			[] call SOCK_fnc_updateRequest;
+			[[1,format["Cidade De Deus: %1 Apertou Alt + F4 e Perdeu Todos Os Items!",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP; 
+		};
 	};
 	
 	//Ai Pai Para | LUTO | 'Ai Pai Para Não me Bati hihihihi' F3
 	case 61: {
 		if(vehicle player isEqualTo player) then {
 			if(!life_action_inUse) then {
+			    if ((time - life_action_delay) < 4) exitWith {hint localize "STR_NOTF_ActionDelay";};
 				player playActionNow "gestureHiC";
 				[player,"aipaipara",25,1] remoteExecCall ["life_fnc_say3D",0];
 			};
@@ -127,16 +141,11 @@ switch (_code) do {
 	
 	//Um Cu Como o Seu Merece Ficar Vivo... F2
 	case 60: {
-	    if (_variavS isEqualTo 0) exitWith { 
-		    hint "Espere Um Momento Para Usar Essa Ação Novamente"; 
-		};
 	    if(vehicle player isEqualTo player) then {
 		    if(!life_action_inUse) then {
+			    if ((time - life_action_delay) < 4) exitWith {hint localize "STR_NOTF_ActionDelay";};
 		        player playActionNow "gestureHi";
-		        [player,"cu",25,1] remoteExecCall ["life_fnc_say3D",0];
-			    _variavS = 0;
-			    sleep 3.0;
-			    _variavS = 1;	
+		        [player,"cu",30,1] remoteExecCall ["life_fnc_say3D",0];	
 	        };
 		};
 	};
