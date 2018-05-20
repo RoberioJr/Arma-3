@@ -10,9 +10,9 @@ while (true) do {
 		saveProfileNamespace;
     };
 	if (!alive player) then {
-	    profileNameSpace setVariable ["vivo",0];
-		saveProfileNamespace;
+	    //profileNameSpace setVariable ["vivo",0];
+		//saveProfileNamespace;
 		waitUntil (alive player);
 	};
-sleep 1.5;
+sleep 2;
 };
