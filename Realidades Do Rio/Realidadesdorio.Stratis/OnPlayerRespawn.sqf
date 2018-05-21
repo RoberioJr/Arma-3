@@ -6,6 +6,7 @@
 
 
     //Init Scripts Ao Jogador Respawnar
+	execVM "loadout.sqf";
     
 	
 	

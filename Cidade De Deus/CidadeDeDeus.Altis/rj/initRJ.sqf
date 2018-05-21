@@ -5,7 +5,7 @@
 
 */
 
-private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barradt";
+private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barstat";
 
    /* DEFINIÇÕES */
   _grafico = LIFE_SETTINGS(getNumber,"rj_ativar_grafico");

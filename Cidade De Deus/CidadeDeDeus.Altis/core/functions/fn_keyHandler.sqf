@@ -142,9 +142,12 @@ switch (_code) do {
 	case 61: {
 		if(vehicle player isEqualTo player) then {
 			if(!life_action_inUse) then {
-			    if ((time - life_action_delay) < 4) exitWith {hint localize "STR_NOTF_ActionDelay";};
-				player playActionNow "gestureHiC";
-				[player,"aipaipara",25,1] remoteExecCall ["life_fnc_say3D",0];
+			    if (isNil "_delay") then {_delayT = time;};
+			    if ((time - _delayT) > 5) then {
+				    player playActionNow "gestureHiC";
+				    [player,"aipaipara",35,1] remoteExecCall ["life_fnc_say3D",0];
+					_delayT = time;
+			    } else {hint "Espere Um Momento Virar Viado Novamente";};
 			};
 		};
 	};
@@ -153,9 +156,13 @@ switch (_code) do {
 	case 60: {
 	    if(vehicle player isEqualTo player) then {
 		    if(!life_action_inUse) then {
-			    if ((time - life_action_delay) < 4) exitWith {hint localize "STR_NOTF_ActionDelay";};
-		        player playActionNow "gestureHi";
-		        [player,"cu",30,1] remoteExecCall ["life_fnc_say3D",0];	
+			    if (isNil "_delay") then {_delayT = time;};
+				if ((time - _delayT) > 5) then {
+			        //if ((time - life_action_delay) < 0.5) exitWith {hint localize "STR_NOTF_ActionDelay";};
+		            player playActionNow "gestureHi";
+		            [player,"cu",40,1] remoteExecCall ["life_fnc_say3D",0];	
+					_delayT = time;
+				} else {hint "Espere Um Momento Para Usar Esse Argumento";};
 	        };
 		};
 	};

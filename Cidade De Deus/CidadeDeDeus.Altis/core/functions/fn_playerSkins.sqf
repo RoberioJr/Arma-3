@@ -36,6 +36,24 @@ switch (playerSide) do {
         };
     };
 
+	case west: {
+        if (uniform player isEqualTo "U_Rangemaster") then {
+            _skinName = "textures\roupa\pm\uniforme_pm.jpg";
+            if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
+                //if (FETCH_CONST(life_coplevel) >= 1) then {
+				if (FETCH_CONST(life_coplevel) < 11) then {
+                    _skinName = ["textures\roupa\pm\uniforme_pm_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
+                };
+            };
+            player setObjectTextureGlobal [0, _skinName];
+        };
+		//BOPE
+		if ((FETCH_CONST(life_coplevel) > 10) && ((uniform player) == "U_I_CombatUniform_shortsleeve")) then {
+		    player setObjectTextureGlobal [0, "textures\roupa\bope\uniforme_bope_padrao.jpg"];
+		};
+    };
+	
+	/*
     case west: {
         if (uniform player isEqualTo "U_Rangemaster") then {
             _skinName = "textures\roupa\pm\uniforme_pm.jpg";
@@ -46,12 +64,13 @@ switch (playerSide) do {
             };
             player setObjectTextureGlobal [0, _skinName];
         };
-		/* BOPE EDIT RJ */
+		// BOPE EDIT RJ
 		if (uniform player isEqualTo "U_I_CombatUniform_shortsleeve") then {
 		    _nomeSkin = "textures\roupa\bope\uniforme_bope_padrao.jpg";
 		};
 		player setObjectTextureGlobal [0, _nomeSkin];
     };
+	*/
 
     case independent: {
         if (uniform player isEqualTo "U_Rangemaster") then {

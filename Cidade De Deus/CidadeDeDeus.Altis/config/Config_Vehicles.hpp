@@ -20,13 +20,13 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "B_Quadbike_01_F", "" },
-            { "C_Hatchback_01_F", "" },
-            { "C_Offroad_01_F", "" },
-            { "C_SUV_01_F", "" },
-            { "C_Hatchback_01_sport_F", "" },
-            { "C_Van_01_transport_F", "" },
-            { "C_Offroad_02_unarmed_F", "" } //Apex DLC
+            { "B_Quadbike_01_F", "" }, //QUAD 
+            { "C_Hatchback_01_F", "" }, //HATCHBACK
+            { "C_Offroad_01_F", "" }, //OFFROAD
+            { "C_SUV_01_F", "" }, //SUV
+            { "C_Hatchback_01_sport_F", "" }, //HATCHBACK S
+            { "C_Van_01_transport_F", "" }, //Chaninha
+            { "C_Offroad_02_unarmed_F", "" } //JIPE APEX
         };
     };
 
@@ -45,17 +45,17 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "C_Van_01_box_F", "" },
-            { "I_Truck_02_transport_F", "" },
-            { "I_Truck_02_covered_F", "" },
-            { "B_Truck_01_transport_F", "" },
-            { "O_Truck_03_transport_F", "" },
-            { "O_Truck_03_covered_F", "" },
-            { "B_Truck_01_box_F", "" },
-            { "O_Truck_03_device_F", "" },
-            { "C_Van_01_fuel_F", "" },
-            { "I_Truck_02_fuel_F", "" },
-            { "B_Truck_01_fuel_F", "" }
+            { "C_Van_01_box_F", "" },  //Chaninha BOX
+            { "I_Truck_02_transport_F", "" }, //Zamack Transporte
+            { "I_Truck_02_covered_F", "" }, //Zamack Coberto
+            { "B_Truck_01_transport_F", "" }, //H Transporte
+            { "O_Truck_03_transport_F", "" }, //T Transporte
+            { "O_Truck_03_covered_F", "" }, //T Coberto
+            { "B_Truck_01_box_F", "" }, //H BOX
+            { "O_Truck_03_device_F", "" }, //T Device
+            { "C_Van_01_fuel_F", "" }, //Chaninha FUEL
+            { "I_Truck_02_fuel_F", "" }, //Zamack FUEL
+            { "B_Truck_01_fuel_F", "" } //H FUEL
         };
     };
 
@@ -63,10 +63,16 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", "" },
-            { "B_Heli_Light_01_F", "" },
-            { "O_Heli_Light_02_unarmed_F", "" },
-            { "C_Plane_Civil_01_F", "" } //Apex DLC
+            { "C_Heli_Light_01_civil_F", "" }, //MH900
+            { "B_Heli_Light_01_F", "" }, //MH9 HUMMINGBIRD    
+            { "O_Heli_Light_02_unarmed_F", "" }, //ORCA
+			{ "I_Heli_Transport_02_F", "" }, //MOHAWK
+			{ "O_Heli_Transport_04_covered_F", "" }, //TARU T
+			{ "O_Heli_Transport_04_box_F", "" }, //TARU C
+			{ "B_Heli_Transport_03_F", "" }, //HURON
+            { "C_Plane_Civil_01_F", "" }, //CEASAR
+			{ "C_Plane_Civil_01_racing_F","" }, //CEASAR Sport
+			{ "B_T_VTOL_01_infantry_F", "" } //BLACKFISH
         };
     };
 
@@ -86,12 +92,17 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "B_Quadbike_01_F", "" },
-            { "B_G_Offroad_01_F", "" },
-            { "O_MRAP_02_F", "" },
-            { "B_Heli_Light_01_stripped_F", "" },
-            { "B_G_Offroad_01_armed_F", "" },
-            { "O_T_LSV_02_unarmed_F", "" } //Apex DLC
+            { "B_Quadbike_01_F", "" }, //QUAD
+            { "B_G_Offroad_01_F", "" }, //OFFROAD
+			{ "I_G_Van_02_vehicle_F", "" }, //VAN CAMO
+            { "B_G_Offroad_01_armed_F", "" }, //OFFROAD ARMADO
+			{ "O_LSV_02_unarmed_F", "" }, //Qilin Apex
+			{ "B_LSV_01_unarmed_F", "" }, //PROWLER Apex
+			{ "B_MRAP_01_F", "" }, //Hunter
+			{ "O_MRAP_02_F", "" }, //Ifrit
+			{ "I_MRAP_03_F", "" }, //Strider
+			{ "B_Heli_Light_01_stripped_F", "" }, //MH9 HUMMINGBIRD REB 
+		    { "I_Heli_light_03_unarmed_F", "" } //HellCat
         };
     };
 
@@ -123,8 +134,7 @@ class CarShops {
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 2" },
-            { "B_MRAP_01_F", "call life_coplevel >= 3" },
-            { "B_MRAP_01_hmg_F", "call life_coplevel >= 3" }
+            { "B_MRAP_01_F", "call life_coplevel >= 3" }
         };
     };
 
@@ -184,6 +194,105 @@ class LifeCfgVehicles {
     };
 	
 	/* Adição De Veiculos RJ */
+	
+	//HellCat
+	class I_Heli_light_03_unarmed_F {
+	    vItemSpace = 235;
+		conditions = "";
+		price = 1000000;
+		textures[] = {};
+	};
+	
+	//Mohawk
+	class I_Heli_Transport_02_F {
+	    vItemSpace = 300;
+		conditions = "";
+		price = 1200000;
+		textures[] = {};
+	};
+	
+	//Taru T
+	class O_Heli_Transport_04_covered_F {
+	    vItemSpace = 150;
+		conditions = "";
+		price = 1250000;
+		textures[] = {};
+	};
+	
+	//Taru C
+	class O_Heli_Transport_04_box_F {
+	    vItemSpace = 400;
+		conditions = "";
+		price = 2000000;
+		textures[] = {};
+	};
+	
+	//Huron
+	class B_Heli_Transport_03_F {
+	    vItemSpace = 550;
+		conditions = "";
+		price = 3000000;
+		textures[] = {};
+	};
+	
+	//BLACKFISH
+	class B_T_VTOL_01_infantry_F {
+	    vItemSpace = 850;
+		conditions = "";
+		price = 5200000;
+		textures[] = {};
+	};
+	
+	//Ceasar Sport
+	class C_Plane_Civil_01_racing_F {
+		vItemSpace = 125;
+		conditions = "";
+		price = 300000;
+		textures[] = {};
+	};
+	
+	/* Terreste REB */
+	
+	//Van CAMO
+	class I_G_Van_02_vehicle_F {
+		vItemSpace = 135;
+		conditions = "";
+		price = 100000;
+		textures[] = {};
+	};
+	
+	//Qilin
+	class O_LSV_02_unarmed_F {
+		vItemSpace = 80;
+		conditions = "";
+		price = 150000;
+		textures[] = {};
+	};
+	
+	//PROWLER
+	class B_LSV_01_unarmed_F {
+		vItemSpace = 75;
+		conditions = "";
+		price = 140000;
+		textures[] = {};
+	};
+	
+	//Ifrit
+	class O_MRAP_02_F {
+		vItemSpace = 95;
+		conditions = "";
+		price = 550000;
+		textures[] = {};
+	};
+	
+	//Strider
+	class I_MRAP_03_F {
+		vItemSpace = 75;
+		conditions = "";
+		price = 600000;
+		textures[] = {};
+	};
+	
 	class C_Van_02_medevac_F {
 	    vItemSpace = 125;
 		conditions = "";
@@ -239,7 +348,7 @@ class LifeCfgVehicles {
 
     // Apex DLC
     class C_Plane_Civil_01_F {
-        vItemSpace = 75;
+        vItemSpace = 100;
         conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
         price = 150000;
         textures[] = {
@@ -494,13 +603,15 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
+	/*
     class O_MRAP_02_F {
         vItemSpace = 60;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 150000;
         textures[] = { };
     };
-
+    */
+	
     class C_Offroad_01_F {
         vItemSpace = 65;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
@@ -538,10 +649,10 @@ class LifeCfgVehicles {
             }, "" }*/
 			{ "Policia", "cop", {
 				"textures\veh\cop\pm\offroadpm.paa"
-			}, "" },
+			}, "call life_coplevel < 11" },
 			{ "BOPE", "cop", {
 				"textures\veh\cop\bopeoffroad.paa"
-			}, "" },
+			}, "call life_coplevel >= 11" },
 			{ "SAMU", "med", {
 				"textures\veh\med\offroadmed.paa"
 			}, "" }
@@ -595,7 +706,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },*/
 			{ "Policia", "cop", {
                 "textures\veh\cop\pm\hatchbackpm.paa"
-            }, "" }
+            }, "call life_coplevel < 11" }
         };
     };
 
@@ -725,7 +836,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },*/
 			{ "Policia", "cop", {
                 "textures\veh\cop\pm\suvpm.paa"
-            }, "" }
+            }, "call life_coplevel < 11" }
         };
     };
 
@@ -758,9 +869,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_MRAP_01_F {
-        vItemSpace = 65;
+        vItemSpace = 80;
         conditions = "";
-        price = 100000;
+        price = 575000;
         textures[] = {
             /*{ "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
@@ -769,7 +880,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "BOPE", "cop", {
 				"textures\veh\cop\bopehunter.paa",
 				"textures\veh\cop\bopehunter2.paa"
-			}, "" }
+			}, "call life_coplevel >= 11" }
         };
     };
 
@@ -794,10 +905,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },*/
 			{ "Policia", "cop", {
 				"textures\veh\cop\pm\mh9pm.paa"
-			}, "" },
+			}, "call life_coplevel < 11" },
 			{ "BOPE", "cop", {
 				"textures\veh\cop\mh9.paa"
-			}, "" },
+			}, "call life_coplevel >= 11" },
 			{ "SAMU", "med", {
 				"textures\veh\med\mh9med.paa"
 			}, "" },

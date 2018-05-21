@@ -1,7 +1,13 @@
-Trocar Roupa Inicial Do BOPE;                OK
+Trocar Roupa Inicial Do BOPE;                  OK
 Configurar TAGs De Acordo Com As Patentes;
 Remover Os Dupes;
-Remover HUD Padrão;                         OK
-Preço Da Loja De Roupa                      OK
+Remover HUD Padrão;                            OK
+Preço Da Loja De Roupa                         OK
 Tradução Das Lojas
+Mensagem De Assalto
+Configurar Lojas
+Skins De Veiculos
+Ageitar Rebeldes
+Tirar Hunter Armado COP
+MSG COP Ao Jogador Chamar SAMU
 ...

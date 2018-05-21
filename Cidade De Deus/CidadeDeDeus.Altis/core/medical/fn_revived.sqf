@@ -45,3 +45,25 @@ player setVariable ["Reviving",nil,true];
 [] call life_fnc_playerSkins;
 [] call life_fnc_hudUpdate; //Request update of hud.
 [] call SOCK_fnc_updateRequest;
+
+if (alive player) then {
+	0 = ["DynamicBlur", 400, [10]] spawn 
+	{
+		params ["_name", "_priority", "_effect", "_handle"];
+		while {
+			_handle = ppEffectCreate [_name, _priority];
+			_handle < 0
+		} do {
+			_priority = _priority + 1;
+		};
+		_handle ppEffectEnable true;
+		_handle ppEffectAdjust _effect;
+		_handle ppEffectCommit 1;
+		waitUntil {ppEffectCommitted _handle};
+		systemChat "Você está sofrendo os efeitos da morfina aplicada pelo médico.";  //Message on effect start
+		uiSleep 240; 
+		_handle ppEffectEnable false;
+		ppEffectDestroy _handle;
+		systemChat "O efeito da morfina está acabando!";  //message on effect stop
+	};
+};

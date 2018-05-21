@@ -17,12 +17,12 @@ switch (playerSide) do
 	
 	case civilian: 
 	{
-	    _cormark = "ColorWhite";    //CIV VERMELHO
+	    _cormark = "ColorRed";    //CIV VERMELHO
 	};
 	
 	case independent: 
 	{
-	    _cormark = "ColorRed";  //MED VERDEColorRed
+	    _cormark = "ColorGreen";  //MED VERDEColorRed
 	};
 };
 

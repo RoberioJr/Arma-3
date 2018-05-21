@@ -27,7 +27,7 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge","handcuff","keys" };
     };
 
     class gang {
@@ -144,6 +144,29 @@ class VirtualShops {
 class VirtualItems {
     //Virtual Items
 
+	/* RJ EDIT */
+	class handcuffs {
+        variable = "handcuffs";
+        displayName = "Algemas";
+        weight = 1;
+        buyPrice = 15000;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\cuffs.paa";
+    };	
+	
+	class keys {
+        variable = "keys";
+        displayName = "Chave De Algema";
+        weight = 1;
+        buyPrice = 25;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\icon_keys.paa";
+    };
+	
     //Misc
     class pickaxe {
         variable = "pickaxe";
