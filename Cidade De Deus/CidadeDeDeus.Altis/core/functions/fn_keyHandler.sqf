@@ -107,13 +107,23 @@ switch (_code) do {
 		};
     };
 
-	//Botão I
+	// I
 	case 23: {
 	    if (vehicle player isEqualTo player) then {
-		    sleep 0.7;
+		    sleep 0.85;
 	        playSound "zipper";
 		};
 	};
+	
+	// N
+	case 49: {
+	    if (alive player) then {
+	        _nvgs = hmd player;
+            if (_nvgs isEqualTo "NVGoggles") then {
+                playSound "nightV";
+		    };		
+	    };
+	};   
 	
 	// Alt + F4
 	case 62: {

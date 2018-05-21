@@ -13,13 +13,48 @@ _Admins =
 	"76561198090180406"  //??
 ];
 _UID = (getPlayerUID player);
+_code = _this select 1;
 
+private _allowedMoves = [
+        "MoveForward",
+        "MoveBack",
+        "TurnLeft",
+        "TurnRight",
+        "MoveFastForward",
+        "MoveSlowForward",
+        "turbo",
+        "TurboToggle",
+        "MoveLeft",
+        "MoveRight",
+        "WalkRunTemp",
+        "WalkRunToggle",
+        "AdjustUp",
+        "AdjustDown",
+        "AdjustLeft",
+        "AdjustRight",
+        "Stand",
+        "Crouch",
+        "Prone",
+        "MoveUp",
+        "MoveDown",
+        "LeanLeft",
+        "LeanLeftToggle",
+        "LeanRight",
+        "LeanRightToggle"
+    ];
+
+	if (({_code in (actionKeys _x)} count _allowedMoves) > 0) exitwith {
+        false;
+    };
+	
 keyspressed = {
     _keyDik = _this select 1;
     _shift =_this select 2;
     _ctrl = _this select 3;
     _alt = _this select 4;
     _handled = false;
+	
+	/* CONFIGURAÇÕES DAS KEYS */
 	
     switch (_this select 1) do {
 	

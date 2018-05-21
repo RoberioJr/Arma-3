@@ -171,6 +171,12 @@ class CfgSounds {
 		sound[] = {"\sounds\portafecha.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	
+	class nightV {
+	    name = "nightV";
+		sound[] = {"\sounds\nightV.ogg", 0.85, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing {
