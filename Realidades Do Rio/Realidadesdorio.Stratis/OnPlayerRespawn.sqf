@@ -11,6 +11,5 @@
 	
 	
 	
-	
   //Configurações
   player enableStamina false;
