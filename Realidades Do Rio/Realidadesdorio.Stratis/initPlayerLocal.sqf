@@ -19,7 +19,7 @@
 [] execVM "scripts\HG\Setup\fn_clientInitialization.sqf";
 
  /* KeyHandler By: RobérioJR */
-  [] execVM "config\keyHandler.sqf";
+  //[] execVM "config\keyHandler.sqf"; NÃO FUNCIONA POR ENQUANTO
 
 //Sistema De Whitelist By: RobérioJr
 /*
