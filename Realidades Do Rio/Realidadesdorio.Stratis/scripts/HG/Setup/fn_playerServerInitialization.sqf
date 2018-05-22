@@ -147,12 +147,7 @@ if((getNumber(getMissionConfig "CfgClient" >> "enableKillCount")) isEqualTo 1) t
 if((getNumber(getMissionConfig "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1) then
 {
     private "_gear";
-	
-	//EDIT BY: ROBERIOJR
-	waitUntil (alive Player);
-	Sleep 20;
-	//Evitar Bug Do Save De Loot Dos Jogadores
-	
+
     if(HG_SAVING_EXTDB) then
 	{
 	    _gear = _result select 4;
