@@ -35,8 +35,6 @@ life_trunk_vehicle = _vehicle;
 _vehicle spawn {
     waitUntil {isNull (findDisplay 3500)};
     _this setVariable ["trunk_in_use",false,true];
-	//EDIT RJ
-	[_vehicle,"portafecha",25,1] remoteExec ["life_fnc_say3D",0];
     if (_this isKindOf "Box_IND_Grenades_F" || _this isKindOf "B_supplyCrate_F") then {
 
         if (life_HC_isActive) then {
@@ -51,6 +49,8 @@ if (LIFE_SETTINGS(getNumber,"save_vehicle_virtualItems") isEqualTo 1) then {
     _vehicle spawn {
         waitUntil {isNull (findDisplay 3500)};
         _this setVariable ["trunk_in_use",false,true];
+		//EDIT RJ
+	    [_vehicle,"portafecha",25,1] remoteExec ["life_fnc_say3D",0];
         if ((_this isKindOf "Car") || (_this isKindOf "Air") || (_this isKindOf "Ship")) then {
             [] call SOCK_fnc_updateRequest;
 

@@ -174,7 +174,13 @@ class CfgSounds {
 	
 	class nightV {
 	    name = "nightV";
-		sound[] = {"\sounds\nightV.ogg", 0.85, 1};
+		sound[] = {"\sounds\nightV.ogg", 0.75, 1};
+		titles[] = {};
+	};
+	
+	class scop {
+	    name = "scop";
+		sound[] = {"\sounds\scop.ogg", 0.85, 1};
 		titles[] = {};
 	};
 };
