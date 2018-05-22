@@ -14,6 +14,6 @@ if ((getPlayerUID player) in [
 then {
 ;
 act = player addaction [("<t color=""#9400D3"">" + ("Admin!") +"</t>"),"admin\tools.sqf","",5,false,true,"",""];
-[] execVM "admin\VeiculoSpawn\iniciar.sqf";
+//[] execVM "admin\VeiculoSpawn\iniciar.sqf";
 
 };
