@@ -19,16 +19,16 @@ _init = false;
     [] execVM "admin\admins.sqf";                     //Painel ADM
     [] execVM "admin\loop.sqf";                       //Loop Painel ADM
 	[] execVM "zonas\safebope.sqf";                   //SAFEZONE BOPE
-  if (_cor isEqualTo 1) then {
+ // if (_cor isEqualTo 1) then {
 	[] execVM "scripts\Cor.sqf";                      //Correção De Cor
-  };
+ // };
 	[] execVM "scripts\gaslacrimo.sqf";               //Gás Lacrimogênio
 	[] execVM "scripts\PuloDoMacaco.sqf";             //Pulo Do Macaco SHIFT + V
 	[] execVM "scripts\recargaCarreg\Carreg.sqf";     //Recarga De Carregadores CTRL + R
-  if (_limpeza isEqualTo 1) then {
+ // if (_limpeza isEqualTo 1) then {
 	[] execVM "scripts\Limpeza.sqf";                  //Melhora Peformance
 	[] execVM "scripts\Limpeza2.sqf";                 //Melhora Peformance
-  };
+  //};
 	[] execVM "scripts\PF\init.sqf";                  //Ambientação Das Casas
 	[] execVM "scripts\R3F_LOG\init.sqf";             //Sistema De Logica/Interação Com Veiculos e Objetos
 	[] execVM "scripts\Trafego\init.sqf";             //Sistema De Tráfego/NPCs
