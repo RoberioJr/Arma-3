@@ -8,7 +8,7 @@ class EditorData
 	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=5896;
+		nextID=5902;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=262;
+		nextID=264;
 	};
 	class Camera
 	{
-		pos[]={3300.7639,253.62564,2913.8701};
-		dir[]={-0.28104869,-0.62907505,0.72476083};
-		up[]={-0.22744188,0.77734411,0.58652103};
-		aside[]={0.93235493,3.6518031e-008,0.36154947};
+		pos[]={3285.9204,234.8679,2914.1807};
+		dir[]={-0.75213075,-0.6532883,0.08673463};
+		up[]={-0.64899081,0.75710791,0.074840985};
+		aside[]={0.11456028,6.1874744e-008,0.99342144};
 	};
 };
 binarizationWanted=0;
@@ -723,7 +723,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2689;
+		items=2690;
 		class Item0
 		{
 			dataType="Marker";
@@ -52759,7 +52759,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GEAR_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadGear},""HG_ItemBAND"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
+						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_ITEMS_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadItems},""HG_bandido"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
 						disableSimulation=1;
 					};
 					id=5636;
@@ -58608,6 +58608,153 @@ class Mission
 				};
 				nAttributes=7;
 			};
+		};
+		class Item2689
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3273.771,228.84868,2915.272};
+						angles[]={0,1.43117,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_ITEMS_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadItems},""HG_bope"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK_shortsleeve";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="BOPE_carrier_1";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="Itemwatch";
+							headgear="BOPE_Beret";
+						};
+					};
+					id=5897;
+					type="C_man_p_beggar_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5896;
 		};
 	};
 	class Connections

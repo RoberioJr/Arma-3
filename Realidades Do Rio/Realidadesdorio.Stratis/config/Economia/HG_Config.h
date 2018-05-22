@@ -65,7 +65,7 @@
 */
 
 /* MONEY */
-currencyType = "BRL";
+currencyType = "USD";
 
 /* SYSTEMS */
 resetSavedMoney = false;
