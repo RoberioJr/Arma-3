@@ -4,10 +4,8 @@
 / Rio De Janeiro /
 */
 
-waituntil {alive player};
-
-sleep 5;
-while (true) do {
+waitUntil (alive player);
+while {true} do {
     switch (playerSide) do 
     {
         case west: 
