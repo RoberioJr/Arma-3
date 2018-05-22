@@ -1,6 +1,6 @@
 
 
-
+waitUntil (alive player);
 
 switch (playerSide) do {
     case west: 

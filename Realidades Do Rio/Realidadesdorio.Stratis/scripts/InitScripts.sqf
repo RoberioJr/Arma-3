@@ -35,7 +35,7 @@ _init = false;
 	[] execVM "scripts\ClimaDinamico.sqf";            //Mudança Do Clima (Dinâmico)	
 	[] execVM "scripts\RepararVeiculo.sqf";           //Sistema De Reparo De Veiculos
 	[] execVM "scripts\ZeusFPS.sqf";                  //Mostra FPS Do Jogador No Modo Zeus
-	//[] execVM "scripts\LogoInferior\fn_initLogo.sqf"; //Mostra Uma Logo Na Parte Inferior Da Tela
+	[] execVM "scripts\LogoInferior\fn_initLogo.sqf"; //Mostra Uma Logo Na Parte Inferior Da Tela
 
 	/* * * * * * * * * * */
 _init = true;

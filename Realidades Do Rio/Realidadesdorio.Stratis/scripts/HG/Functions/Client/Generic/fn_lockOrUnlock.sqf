@@ -27,7 +27,7 @@ if(local _vehicle) then
 };
 
 //playSound _sound;
-_vehicle say3d [_sound,14];
+//_vehicle say3d [_sound,14];
 hintSilent parseText format
 [
     "<t align='center'><img image='%1' shadow='0' size='1.5'></img></t><br/>"+
