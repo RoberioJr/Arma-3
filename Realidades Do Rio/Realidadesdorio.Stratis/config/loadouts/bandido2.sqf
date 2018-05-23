@@ -18,41 +18,39 @@ waitUntil {!isNull player};
 _unit = _this select 0;
 _roupa = ["pika","mao","legalize","lacoste1","flamengo","riodejaneiro1"] call BIS_fnc_selectRandom;    //Seleção Da Roupa Inicial Bandidos
 
-removeAllWeapons _unit;
-removeAllItems _unit;
-removeAllAssignedItems _unit;
-removeUniform _unit;
-removeVest _unit;
-removeBackpack _unit;
-removeHeadgear _unit;
-removeGoggles _unit;
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
 
 //_unit forceAddUniform (selectRandom _roupa);
-_unit forceAddUniform _roupa;
-_unit addItemToUniform "FirstAidKit";
-_unit addItemToUniform "Chemlight_green";
-_unit addItemToUniform "TFAR_anprc154";
-_unit addVest "";
-for "_i" from 1 to 2 do {_unit addItemToVest "";};
-_unit addItemToVest "";
-_unit addItemToVest "";
-_unit addItemToVest "";
-for "_i" from 1 to 3 do {_unit addItemToVest "";};
-_unit addBackpack "";
-_unit addHeadgear "";
+player forceAddUniform _roupa;
+player addItemToUniform "ACE_EarPlugs";
+player addItemToUniform "";
+player addItemToUniform "TFAR_anprc152";
+player addVest "";
+for "_i" from 1 to 2 do {player addItemToVest "ACE_fieldDressing";};
+player addHeadgear "";
+//_unit addGoggles "G_Shades_Green";
 
-_unit addWeapon "";
-_unit addPrimaryWeaponItem "";
-_unit addPrimaryWeaponItem "";
-_unit addWeapon "";
-_unit addHandgunItem "";
 
-_unit linkItem "ItemMap";
-_unit linkItem "ItemCompass";
-_unit linkItem "ItemWatch";
-_unit linkItem "ItemRadio";
+player addWeapon "";    //AKS74u 5.45mm
+player addPrimaryWeaponItem "";
+player addWeapon "";
+player addweapon "";
 
-_unit setFace "WhiteHead_18";
-_unit setSpeaker "Male08ENG";
+
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "ItemWatch";
+player linkItem "ItemRadio";
+player linkItem "ItemGPS";
+
+player setFace "PersianHead_A3_01";
+player setSpeaker "male01per";
 
 if(true) exitWith{};
