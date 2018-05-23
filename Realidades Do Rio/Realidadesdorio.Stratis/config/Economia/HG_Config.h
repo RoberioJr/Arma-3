@@ -96,11 +96,11 @@ whitelistSides[] = {"west"};
 admins[] = {"_SP_PLAYER_", "76561198134612622", "76561198090180406", "76561198343381444"};
 
 /* KEYS */
-atmKey = 0x15;    //Tecla 'Y'
+atmKey = 0x15;           //Tecla 'Y'
 lockUnlockKey = 0x16;    //Tecla 'U'
-giveMoneyKey = 0x15;    //Tecla 'Y'
-giveKeyKey = 0x14;    //Tecla 'T'
-adminKey = 0x3F;    //Tecla 'F5'
+giveMoneyKey = 0x15;     //Tecla 'Y'
+giveKeyKey = 0x14;       //Tecla 'T'
+adminKey = 0x3F;         //Tecla 'F5'
 
 /* SAVING */
 savingMethod = "extDB";
@@ -117,7 +117,7 @@ class HG_MasterCfg
 		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 1000;
-		killedReward = 250;
+		killedReward = 100;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 20;
@@ -134,7 +134,7 @@ class HG_MasterCfg
 		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
-		killedReward = 250;
+		killedReward = 100;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 20;
@@ -151,7 +151,7 @@ class HG_MasterCfg
 		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
-		killedReward = 250;
+		killedReward = 100;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 30;
@@ -168,7 +168,7 @@ class HG_MasterCfg
 		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
-		killedReward = 250;
+		killedReward = 100;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 40;
@@ -185,7 +185,7 @@ class HG_MasterCfg
 		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
-		killedReward = 250;
+		killedReward = 100;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 50;
@@ -202,7 +202,7 @@ class HG_MasterCfg
 		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
-		killedReward = 250;
+		killedReward = 125;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 60;
@@ -219,7 +219,7 @@ class HG_MasterCfg
 		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
-		killedReward = 250;
+		killedReward = 150;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 70;

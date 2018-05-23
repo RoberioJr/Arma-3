@@ -12297,3 +12297,177 @@
         </Key>
     </Package>
 </Project>
+
+<!---
+    Menu De Equipamentos ADM
+--->
+<Project name="Virtual Ammobox System">
+  <Package name="Main">
+    <Key ID="STR_VAS_Main_Weapons">
+      <Original>Armas</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Magazines">
+      <Original>Munições</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Items">
+      <Original>Items</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Backpacks">
+      <Original>Mochilas</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Goggles">
+      <Original>Óculos</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Uniforms">
+      <Original>Uniformes</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Vests">
+      <Original>Coletes</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Headgear">
+      <Original>Capacetes</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Attachments">
+      <Original>Acessórios</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Misc">
+      <Original>Misc</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnAdd">
+      <Original>Add Item</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnRemove">
+      <Original>Remover Item</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnClose">
+      <Original>Fechar</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnLoad">
+      <Original>Load Gear</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnSave">
+      <Original>Save Gear</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnRemoveAll">
+      <Original>Remove All</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_VirtGear">
+      <Original>Virtual Ammobox</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_YCG">
+      <Original>Equipamento Atual</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_CL">
+      <Original>Equipamento Customizado</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_Rifles">
+      <Original>Rifles</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_Scoped">
+      <Original>Scoped</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_Heavy">
+      <Original>Pesadas</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_Launcher">
+      <Original>Launchers</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_Pistols">
+      <Original>Pistolas</Original>
+    </Key>
+    <Key ID="STR_VAS_restricted">
+      <Original>is a restricted item and will not be added to your inventory.</Original>
+    </Key>
+  </Package>
+  <Package name="LoadGear">
+    <Key ID="STR_VAS_Load_Title">
+      <Original>Virtual Ammobox System - Load Gear</Original>
+    </Key>
+    <Key ID="STR_VAS_Load_LOR">
+      <Original>Load On Respawn</Original>
+    </Key>
+    <Key ID="STR_VAS_Load_TransferBtn">
+      <Original>Transfer</Original>
+    </Key>
+    <Key ID="STR_VAS_Load_btnLoad">
+      <Original>Load</Original>
+    </Key>
+    <Key ID="STR_VAS_Load_btnDelete">
+      <Original>Deletar</Original>
+    </Key>
+  </Package>
+  <Package name="SaveGear">
+    <Key ID="STR_VAS_Save_Title">
+      <Original>Virtual Ammobox System - Save Gear</Original>
+    </Key>
+    <Key ID="STR_VAS_Save_btnSave">
+      <Original>Salvar</Original>
+    </Key>
+    <Key ID="STR_VAS_Save_CLN">
+      <Original>Custom Loadout Name</Original>
+    </Key>
+  </Package>
+  <Package name="VASTransferMenu">
+    <Key ID="STR_VAS_Transfer_MainMenu">
+      <Original>Virtual Ammobox System - Transfer Menu</Original>
+    </Key>
+    <Key ID="STR_VAS_Transfer_SaveMenu">
+      <Original>Virtual Ammobox System - Save Transfer</Original>
+    </Key>
+    <Key ID="STR_VAS_Transfer_Request">
+      <Original>wants to transfer you their saved loadout.</Original>
+    </Key>
+    <Key ID="STR_VAS_Transfer_Request2">
+      <Original>Would you like to receive this request and save it?</Original>
+    </Key>
+    <Key ID="STR_VAS_Transfer_NoSlotSelection">
+      <Original>You either did not select a slot that you wanted to transfer to another user or the slot had no information.</Original>
+    </Key>
+    <Key ID="STR_VAS_Transfer_BadUnit">
+      <Original>The selected user doesn not exist.</Original>
+    </Key>
+  </Package>
+  <Package name="VASPrompts">
+    <Key ID="STR_VAS_Prompt_selectSlotFail">
+      <Original>You didn't select a slot to delete!</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteSlotNoInfo">
+      <Original>You can't delete that slot, it has no information!</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteSlotWarning">
+      <Original>You are about to delete slot</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteCanelled">
+      <Original>You cancelled deleting slot</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteSuccess">
+      <Original>You deleted slot</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteYes">
+      <Original>Yes</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteNo">
+      <Original>No</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_slotNoInfo">
+      <Original>You didn't select a slot!</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_onRespawnFail">
+      <Original>No slot was selected to be loaded upon respawn!</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_slotSelFail">
+      <Original>You didn't select a slot!</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_addToWeapon">
+      <Original>Arma</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_addToInv">
+      <Original>Inventario</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_acc1">
+      <Original>What do you want to do with that attachment?</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_acc2">
+      <Original>Please know that if you choose to add it to your weapon your current existing attachment in that slot will be lost.</Original>
+    </Key>
+  </Package>

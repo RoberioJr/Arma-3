@@ -27,6 +27,7 @@ _list = nearestObjects [_spawnpos, ["static"], _dis];
 
 { _x allowDamage false; _x addEventHandler ["HandleDamage", {false}]; } forEach _list;
 
+/*
 _InGodMode = player getVariable ["isAdminInvulnerable", false];
 if (alive player) then {
 	if (_safeZone distance player > _dis) then {
@@ -49,6 +50,7 @@ if (alive player) then {
 		};
 	};
 };
+*/
 
 while {true} do {
 	_InGodMode = player getVariable ["isAdminInvulnerable", false];
