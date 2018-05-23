@@ -34,7 +34,7 @@ player addItemToUniform "";
 player addItemToUniform "TFAR_anprc152";
 player addVest "";
 for "_i" from 1 to 2 do {player addItemToVest "ACE_fieldDressing";};
-_unit addHeadgear "";
+player addHeadgear "";
 //_unit addGoggles "G_Shades_Green";
 
 
