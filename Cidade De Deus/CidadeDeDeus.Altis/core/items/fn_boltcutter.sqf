@@ -53,6 +53,10 @@ _cP = 0.01;
 
 switch (typeOf _building) do {
     case "Land_Dome_Big_F": {_cpRate = 0.003;};
+	//EDIT RJ
+	case "Land_NetFence_02_m_gate_v2_F": {_cpRate = 0.05;};
+	case "Land_BackAlley_01_l_gate_F": {_cpRate = 0.08;};
+	///////
     case "Land_Medevac_house_V1_F";
     case "Land_Research_house_V1_F": {_cpRate = 0.0015;};
     default {_cpRate = 0.08;}
