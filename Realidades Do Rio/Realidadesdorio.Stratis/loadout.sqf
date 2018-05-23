@@ -1,5 +1,3 @@
-
-
 waitUntil (alive player);
 
 switch (playerSide) do {
