@@ -213,7 +213,14 @@ class HG_bandido // HG_DefaultShop is just a placeholder for testing purposes, y
 		items[] =
 		{
 		    {"optic_Arco",1000,"true"},
-			{"optic_Hamr",1000,"true"}
+			{"optic_Hamr",1000,"true"},
+			{"cup_optic_mrad",950,"true"},
+			{"fhq_optic_ac11704",500,"true"},
+			{"fhq_optic_hws",600,"true"},
+			{"cup_acc_flashlight",200,"true"},
+			{"acc_flashlight",250,"true"},
+			{"hlc_acc_surefiregrip",356,"true"},
+			{"fhq_accllm01f",400,"true"}
 		};
 	};
 };

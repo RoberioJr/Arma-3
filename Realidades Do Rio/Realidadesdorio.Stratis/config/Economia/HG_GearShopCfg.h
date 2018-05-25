@@ -254,7 +254,7 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 			{"CUP_arifle_M4A1",55000,"true"},
 			{"CUP_arifle_Sa58P",40000,"true"},
 			{"hlc_rifle_sig5104",35000,"true"},
-			{"CUP_arifle_M16A2",44000,"true"}
+			{"CUP_arifle_M16A4_Base",44000,"true"}
 			
 			{}
 		};
