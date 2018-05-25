@@ -13,7 +13,7 @@ if (life_blacklisted) exitWith {
     sleep 30;
 };
 
-/* Edit Rj: Rem Slots Publicos */
+/* Edit Rj: Remoção De Slots Publicos */
 if(!(str(player) in ["cop_99"])) then { 
     if((FETCH_CONST(life_coplevel) < 1) && (FETCH_CONST(life_adminlevel) == 0)) then {
         ["NotWhitelisted",false,true] call BIS_fnc_endMission;
