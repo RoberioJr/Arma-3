@@ -1,34 +1,15 @@
-# Arma-3 BOPE: Realidades Do Rio De Janeiro
-| =============
-| Authors:
-| RobérioJr
-| Marvinn
-| R.Marques
-| =============
-|
-|  BOPE: Realidades Do Rio De Janeiro
-| 
-|  Descrição + Regras 
-| 
-|
-|
-| 
-|
-| 
-|
-| 
-|
-| 
-|
-| 
-|
-| 
-|
-| 
-|
-| 
-|
-| 
-|
-| 
-|
+# Arma-3
+
+======================================================= FIM DO ALPHA ==============================================================
+
+ Realidades Do Rio
+*Sistema de Recompensa por Território
+*Loja de Armas
+*Loja de Veículos e Caminhões
+*Loadouts prontos
+*Introdução do tráfico de drogas
+*Spawn de Civis
+*AntiCheat
+*AdminMenu e Debug
+*Favelas prontas
+*Base do BOPE pronta
