@@ -114,7 +114,7 @@ class HG_MasterCfg
 	class PRIVATE
 	{
 		paycheck = 200;
-		paycheckPeriod = 10;
+		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 1000;
 		killedReward = 100;
@@ -131,7 +131,7 @@ class HG_MasterCfg
 	class CORPORAL
 	{
 		paycheck = 250;
-		paycheckPeriod = 10;
+		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
 		killedReward = 100;
@@ -148,7 +148,7 @@ class HG_MasterCfg
 	class SERGEANT
 	{
 		paycheck = 300;
-		paycheckPeriod = 10;
+		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
 		killedReward = 100;
@@ -165,7 +165,7 @@ class HG_MasterCfg
 	class LIEUTENANT
 	{
 		paycheck = 350;
-		paycheckPeriod = 10;
+		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
 		killedReward = 100;
@@ -182,7 +182,7 @@ class HG_MasterCfg
 	class CAPTAIN
 	{
 		paycheck = 400;
-		paycheckPeriod = 10;
+		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
 		killedReward = 100;
@@ -199,10 +199,10 @@ class HG_MasterCfg
 	class MAJOR
 	{
 		paycheck = 450;
-		paycheckPeriod = 10;
+		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
-		killedReward = 1000;
+		killedReward = 125;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 60;
@@ -216,10 +216,10 @@ class HG_MasterCfg
 	class COLONEL
 	{
 		paycheck = 500;
-		paycheckPeriod = 10;
+		paycheckPeriod = 15;
 		startCash = 100;
 		startBank = 10000;
-		killedReward = 1500;
+		killedReward = 150;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 70;
