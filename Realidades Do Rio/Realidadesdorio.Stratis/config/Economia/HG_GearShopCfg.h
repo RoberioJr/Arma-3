@@ -222,7 +222,13 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Pistolas";
 		content[] =
 		{
-			{"hgun_P07_F",2000,"true"}
+			{"hgun_P07_F",2000,"true"},
+			{"CUP_hgun_Glock17",1000,"true"},
+			{"CUP_hgun_M9",750,"true"},
+			{"CUP_hgun_MicroUzi",1200,"true"},
+			{"CUP_hgun_Duty",900,"true"},
+			{"hgun_Rook40_F",350,"true"},
+			{"hgun_Pistol_Signal_F",50,"true"}
 		};
 	};
 	
@@ -247,7 +253,8 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 			{"arifle_SPAR_02_blk_F",40000,"true"},
 			{"CUP_arifle_M4A1",55000,"true"},
 			{"CUP_arifle_Sa58P",40000,"true"},
-			{"hlc_rifle_sig5104",35000,"true"}
+			{"hlc_rifle_sig5104",35000,"true"},
+			{"CUP_arifle_M16A2",44000,"true"}
 			
 			{}
 		};
