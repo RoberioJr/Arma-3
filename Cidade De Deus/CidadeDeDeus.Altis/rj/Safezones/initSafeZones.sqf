@@ -16,7 +16,7 @@
  /* Sofia */
  [] ExecVM "rj\SafeZones\Zonas\szsof.sqf";
  
-  /* Rebeldes */
+   /* Rebeldes */
  
  /* Norte, Sul e Central */
  [] ExecVM "rj\SafeZones\Zonas\szreb1.sqf"; //N
