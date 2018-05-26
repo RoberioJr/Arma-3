@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=546;
+	toggles=674;
 	class ItemIDProvider
 	{
 		nextID=6085;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=280;
+		nextID=282;
 	};
 	class Camera
 	{
-		pos[]={4383.5425,146.23523,6759.3779};
-		dir[]={0.49156255,-0.69304019,0.52731889};
-		up[]={0.47256508,0.72089821,0.50693828};
-		aside[]={0.73147118,2.3865869e-007,-0.68187362};
+		pos[]={4401.4546,142.3257,6763.9961};
+		dir[]={-0.35807502,-0.86989605,0.33922186};
+		up[]={-0.63150799,0.49323443,0.59825981};
+		aside[]={0.68773973,6.5821223e-007,0.72596091};
 	};
 };
 binarizationWanted=0;
@@ -53732,7 +53732,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg2";
 						description="Recruta";
 						isPlayable=1;
@@ -53834,14 +53834,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.1755,229.84424,2937.9268};
+						position[]={3293.176,229.84459,2937.927};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg3";
 						description="Recruta";
 						isPlayable=1;
@@ -53856,7 +53856,7 @@ class Mission
 					};
 					id=5841;
 					type="B_Survivor_F";
-					atlOffset=0.75665283;
+					atlOffset=0.75700378;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -53943,14 +53943,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.0537,229.79793,2937.0869};
+						position[]={3293.054,229.79758,2937.0872};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg4";
 						description="Recruta";
 						isPlayable=1;
@@ -53965,7 +53965,7 @@ class Mission
 					};
 					id=5842;
 					type="B_Survivor_F";
-					atlOffset=0.66835022;
+					atlOffset=0.66799927;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -54052,14 +54052,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.0149,229.76624,2936.5903};
+						position[]={3293.0149,229.76642,2936.5901};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg5";
 						description="Recruta";
 						isPlayable=1;
@@ -54074,7 +54074,7 @@ class Mission
 					};
 					id=5843;
 					type="B_Survivor_F";
-					atlOffset=0.61181641;
+					atlOffset=0.61199951;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -54161,14 +54161,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.043,229.71307,2935.8826};
+						position[]={3293.043,229.71294,2935.8831};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg6";
 						description="Recruta";
 						isPlayable=1;
@@ -54183,7 +54183,7 @@ class Mission
 					};
 					id=5844;
 					type="B_Survivor_F";
-					atlOffset=0.51908875;
+					atlOffset=0.51898193;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -54270,14 +54270,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.0339,229.68288,2935.4128};
+						position[]={3293.0339,229.68318,2935.4131};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg7";
 						description="Recruta";
 						isPlayable=1;
@@ -54292,7 +54292,7 @@ class Mission
 					};
 					id=5845;
 					type="B_Survivor_F";
-					atlOffset=0.45365906;
+					atlOffset=0.45397949;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -54379,14 +54379,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.0332,229.64091,2934.7854};
+						position[]={3293.033,229.6409,2934.7852};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg8";
 						description="Soldado";
 						isPlayable=1;
@@ -54488,14 +54488,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.0244,229.60913,2934.2898};
+						position[]={3293.0239,229.60922,2934.29};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg9";
 						description="Soldado";
 						isPlayable=1;
@@ -54510,7 +54510,7 @@ class Mission
 					};
 					id=5847;
 					type="B_Survivor_F";
-					atlOffset=0.35087585;
+					atlOffset=0.35099792;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -54597,14 +54597,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.0298,229.56102,2933.5842};
+						position[]={3293.03,229.56068,2933.584};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg10";
 						description="Soldado";
 						isPlayable=1;
@@ -54619,7 +54619,7 @@ class Mission
 					};
 					id=5848;
 					type="B_Survivor_F";
-					atlOffset=0.30235291;
+					atlOffset=0.30200195;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -54706,14 +54706,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3292.8257,229.55563,2933.0195};
+						position[]={3292.8259,229.55537,2933.019};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg11";
 						description="Soldado";
 						isPlayable=1;
@@ -54728,7 +54728,7 @@ class Mission
 					};
 					id=5849;
 					type="B_Survivor_F";
-					atlOffset=0.31228638;
+					atlOffset=0.31199646;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -54815,7 +54815,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3292.9766,229.48459,2932.3169};
+						position[]={3292.9771,229.4847,2932.3171};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
@@ -54823,7 +54823,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg12";
 						description="Cabo";
 						isPlayable=1;
@@ -54838,7 +54838,7 @@ class Mission
 					};
 					id=5850;
 					type="B_Survivor_F";
-					atlOffset=0.22991943;
+					atlOffset=0.22999573;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -54925,7 +54925,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.0366,229.40799,2931.5203};
+						position[]={3293.0371,229.40784,2931.52};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
@@ -54933,7 +54933,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg13";
 						description="Cabo";
 						isPlayable=1;
@@ -54948,7 +54948,7 @@ class Mission
 					};
 					id=5851;
 					type="B_Survivor_F";
-					atlOffset=0.14219666;
+					atlOffset=0.14199829;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -55035,7 +55035,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.0449,229.36819,2930.9431};
+						position[]={3293.0449,229.36786,2930.9431};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
@@ -55043,7 +55043,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg14";
 						description="Cabo";
 						isPlayable=1;
@@ -55058,7 +55058,7 @@ class Mission
 					};
 					id=5852;
 					type="B_Survivor_F";
-					atlOffset=0.095336914;
+					atlOffset=0.095001221;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -55145,7 +55145,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.1064,229.3045,2930.1665};
+						position[]={3293.106,229.3042,2930.166};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
@@ -55153,7 +55153,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg15";
 						description="Sargento";
 						isPlayable=1;
@@ -55168,7 +55168,7 @@ class Mission
 					};
 					id=5853;
 					type="B_Survivor_F";
-					atlOffset=0.026260376;
+					atlOffset=0.026000977;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -55263,7 +55263,7 @@ class Mission
 					class Attributes
 					{
 						rank="COLONEL";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg1";
 						description="General do BOPE";
 						isPlayable=1;
@@ -55365,7 +55365,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3293.0305,229.26523,2929.344};
+						position[]={3293.031,229.26564,2929.344};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
@@ -55373,7 +55373,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg41";
 						description="Sargento";
 						isPlayable=1;
@@ -55388,7 +55388,7 @@ class Mission
 					};
 					id=5855;
 					type="B_Survivor_F";
-					atlOffset=-0.0063781738;
+					atlOffset=-0.0059967041;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -55475,7 +55475,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3292.8757,229.22026,2928.3386};
+						position[]={3292.876,229.22008,2928.3391};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
@@ -55483,7 +55483,7 @@ class Mission
 					class Attributes
 					{
 						rank="CAPTAIN";
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";" \n "_this execVM ""config\loadouts\bope.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg42";
 						description="Capitão do BOPE";
 						isPlayable=1;
@@ -55498,7 +55498,7 @@ class Mission
 					};
 					id=5856;
 					type="B_Survivor_F";
-					atlOffset=-0.037796021;
+					atlOffset=-0.037994385;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -55622,7 +55622,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4394.9438,128.61501,6770.0493};
+						position[]={4394.9438,128.61473,6770.0498};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
@@ -55630,7 +55630,7 @@ class Mission
 					class Attributes
 					{
 						rank="COLONEL";
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg16";
 						description="Líder do Comando Vermelho";
 						isPlayable=1;
@@ -55645,7 +55645,7 @@ class Mission
 					};
 					id=5863;
 					type="O_Survivor_F";
-					atlOffset=0.33123779;
+					atlOffset=0.33099365;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -55742,7 +55742,7 @@ class Mission
 						rank="MAJOR";
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg17";
-						description="TESTANDO";
+						description="General do Líder";
 						isPlayable=1;
 						class Inventory
 						{
@@ -55842,14 +55842,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4394.3276,128.39905,6768.8809};
+						position[]={4394.3281,128.399,6768.8809};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg18";
 						description="Bandido";
 						isPlayable=1;
@@ -55950,14 +55950,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4393.9268,128.27048,6768.208};
+						position[]={4393.9268,128.2709,6768.208};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg19";
 						description="Bandido";
 						isPlayable=1;
@@ -55972,7 +55972,7 @@ class Mission
 					};
 					id=5866;
 					type="O_Survivor_F";
-					atlOffset=-0.17442322;
+					atlOffset=-0.17399597;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56059,14 +56059,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4393.5967,128.11742,6767.4761};
+						position[]={4393.5972,128.11774,6767.4756};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg20";
 						description="Bandido";
 						isPlayable=1;
@@ -56081,7 +56081,7 @@ class Mission
 					};
 					id=5867;
 					type="O_Survivor_F";
-					atlOffset=-0.36834717;
+					atlOffset=-0.36798096;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56168,14 +56168,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4393.0605,127.95483,6766.6113};
+						position[]={4393.061,127.95444,6766.6118};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg21";
 						description="Bandido";
 						isPlayable=1;
@@ -56190,7 +56190,7 @@ class Mission
 					};
 					id=5868;
 					type="O_Survivor_F";
-					atlOffset=-0.57463837;
+					atlOffset=-0.57499695;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56284,7 +56284,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg22";
 						description="Bandido";
 						isPlayable=1;
@@ -56385,14 +56385,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4392.5503,128.43037,6765.4258};
+						position[]={4392.5498,128.43028,6765.4258};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg23";
 						description="Bandido";
 						isPlayable=1;
@@ -56407,7 +56407,7 @@ class Mission
 					};
 					id=5870;
 					type="O_Survivor_F";
-					atlOffset=-0.086883545;
+					atlOffset=-0.087005615;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56494,14 +56494,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4392.2915,128.32884,6764.8198};
+						position[]={4392.292,128.32893,6764.8198};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg24";
 						description="Bandido";
 						isPlayable=1;
@@ -56516,7 +56516,7 @@ class Mission
 					};
 					id=5871;
 					type="O_Survivor_F";
-					atlOffset=-0.18211365;
+					atlOffset=-0.18200684;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56603,14 +56603,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4391.9233,128.20869,6764.0615};
+						position[]={4391.9229,128.20895,6764.062};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg25";
 						description="Bandido";
 						isPlayable=1;
@@ -56625,7 +56625,7 @@ class Mission
 					};
 					id=5872;
 					type="O_Survivor_F";
-					atlOffset=-0.29823303;
+					atlOffset=-0.29800415;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56712,14 +56712,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4391.6445,128.6675,6763.4072};
+						position[]={4391.645,128.66736,6763.4067};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg26";
 						description="Bandido";
 						isPlayable=1;
@@ -56734,7 +56734,7 @@ class Mission
 					};
 					id=5873;
 					type="O_Survivor_F";
-					atlOffset=0.12510681;
+					atlOffset=0.125;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56821,14 +56821,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4391.2944,128.58186,6762.8086};
+						position[]={4391.2939,128.58189,6762.8086};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg27";
 						description="Bandido";
 						isPlayable=1;
@@ -56929,14 +56929,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4391.0625,128.42563,6761.915};
+						position[]={4391.063,128.4254,6761.915};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg28";
 						description="Bandido";
 						isPlayable=1;
@@ -56951,7 +56951,7 @@ class Mission
 					};
 					id=5875;
 					type="O_Survivor_F";
-					atlOffset=-0.19480896;
+					atlOffset=-0.19500732;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -57038,14 +57038,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4390.8945,128.29408,6761.1641};
+						position[]={4390.895,128.29395,6761.1636};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg29";
 						description="Bandido";
 						isPlayable=1;
@@ -57060,7 +57060,7 @@ class Mission
 					};
 					id=5876;
 					type="O_Survivor_F";
-					atlOffset=-0.35687256;
+					atlOffset=-0.35699463;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -57147,14 +57147,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4390.7817,128.2298,6760.7749};
+						position[]={4390.7822,128.22954,6760.7749};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg30";
 						description="Bandido";
 						isPlayable=1;
@@ -57169,7 +57169,7 @@ class Mission
 					};
 					id=5877;
 					type="O_Survivor_F";
-					atlOffset=-0.42276001;
+					atlOffset=-0.42300415;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -57256,14 +57256,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4393.686,128.87041,6770.6353};
+						position[]={4393.686,128.8707,6770.6348};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg31";
 						description="Bandido";
 						isPlayable=1;
@@ -57278,7 +57278,7 @@ class Mission
 					};
 					id=5878;
 					type="O_Survivor_F";
-					atlOffset=0.45974731;
+					atlOffset=0.46000671;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -57365,14 +57365,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4393.2734,128.75253,6769.9746};
+						position[]={4393.2729,128.75255,6769.9746};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg32";
 						description="Bandido";
 						isPlayable=1;
@@ -57387,7 +57387,7 @@ class Mission
 					};
 					id=5879;
 					type="O_Survivor_F";
-					atlOffset=0.28303528;
+					atlOffset=0.28300476;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -57474,14 +57474,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4392.937,128.64232,6769.2852};
+						position[]={4392.937,128.64218,6769.2847};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg33";
 						description="Bandido";
 						isPlayable=1;
@@ -57496,7 +57496,7 @@ class Mission
 					};
 					id=5880;
 					type="O_Survivor_F";
-					atlOffset=0.13215637;
+					atlOffset=0.13200378;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -57583,14 +57583,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4392.5918,128.57172,6768.7769};
+						position[]={4392.5918,128.5714,6768.7769};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];" \n "}";
 						name="fg34";
 						description="Bandido";
 						isPlayable=1;
@@ -57605,7 +57605,7 @@ class Mission
 					};
 					id=5881;
 					type="O_Survivor_F";
-					atlOffset=0.02331543;
+					atlOffset=0.022994995;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -57692,14 +57692,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4392.353,128.49237,6768.3081};
+						position[]={4392.353,128.4919,6768.3076};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg35";
 						description="Bandido";
 						isPlayable=1;
@@ -57714,7 +57714,7 @@ class Mission
 					};
 					id=5882;
 					type="O_Survivor_F";
-					atlOffset=-0.084533691;
+					atlOffset=-0.085006714;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -57801,14 +57801,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4391.9614,128.36023,6767.626};
+						position[]={4391.9609,128.35982,6767.626};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg36";
 						description="Bandido";
 						isPlayable=1;
@@ -57823,7 +57823,7 @@ class Mission
 					};
 					id=5883;
 					type="O_Survivor_F";
-					atlOffset=-0.24157715;
+					atlOffset=-0.24200439;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -57910,14 +57910,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4395.1768,128.35574,6767.231};
+						position[]={4395.1768,128.35576,6767.231};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg37";
 						description="Bandido";
 						isPlayable=1;
@@ -57932,6 +57932,7 @@ class Mission
 					};
 					id=5884;
 					type="O_Survivor_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -58025,7 +58026,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg38";
 						description="Bandido";
 						isPlayable=1;
@@ -58127,14 +58128,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4391.0029,128.74756,6765.8037};
+						position[]={4391.0029,128.74802,6765.8037};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg39";
 						description="Bandido";
 						isPlayable=1;
@@ -58149,7 +58150,7 @@ class Mission
 					};
 					id=5886;
 					type="O_Survivor_F";
-					atlOffset=0.14553833;
+					atlOffset=0.14599609;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -58236,14 +58237,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4390.7974,128.6445,6765.1938};
+						position[]={4390.7969,128.64409,6765.1938};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg40";
 						description="Bandido";
 						isPlayable=1;
@@ -58258,7 +58259,7 @@ class Mission
 					};
 					id=5887;
 					type="O_Survivor_F";
-					atlOffset=0.047439575;
+					atlOffset=0.04699707;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -58345,7 +58346,7 @@ class Mission
 			{
 			};
 			id=5862;
-			atlOffset=0.33123779;
+			atlOffset=0.33099365;
 			class CustomAttributes
 			{
 				class Attribute0
