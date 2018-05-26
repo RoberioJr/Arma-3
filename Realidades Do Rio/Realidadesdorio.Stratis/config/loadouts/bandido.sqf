@@ -15,7 +15,7 @@ if (_vivo isEqualto 1) exitwith {player setPos _rjposition;};
 
 waitUntil {!isNull player};
 
-_unit = _this select 0;
+_unit = this;
 _roupa = ["pika","mao","legalize","lacoste1","flamengo"] call BIS_fnc_selectRandom;    //Seleção Da Roupa Inicial Bandidos
 
 removeAllWeapons _unit;
