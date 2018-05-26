@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=674;
+	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=6085;
+		nextID=6088;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=284;
+		nextID=286;
 	};
 	class Camera
 	{
-		pos[]={4401.4546,142.3257,6763.9961};
-		dir[]={-0.35807502,-0.86989605,0.33922186};
-		up[]={-0.63150799,0.49323443,0.59825981};
-		aside[]={0.68773973,6.5821223e-007,0.72596091};
+		pos[]={3303.6033,234.39378,2920.229};
+		dir[]={-0.66765541,-0.39288294,0.63239264};
+		up[]={-0.28525206,0.9195773,0.27018687};
+		aside[]={0.68768901,-1.10158e-008,0.72603613};
 	};
 };
 binarizationWanted=0;
@@ -765,7 +765,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2702;
+		items=2700;
 		class Item0
 		{
 			dataType="Marker";
@@ -55630,7 +55630,7 @@ class Mission
 					class Attributes
 					{
 						rank="COLONEL";
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg16";
 						description="Líder do Comando Vermelho";
 						isPlayable=1;
@@ -55849,7 +55849,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg18";
 						description="Bandido";
 						isPlayable=1;
@@ -55957,7 +55957,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg19";
 						description="Bandido";
 						isPlayable=1;
@@ -56066,7 +56066,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg20";
 						description="Bandido";
 						isPlayable=1;
@@ -56175,7 +56175,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg21";
 						description="Bandido";
 						isPlayable=1;
@@ -56284,7 +56284,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg22";
 						description="Bandido";
 						isPlayable=1;
@@ -56392,7 +56392,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg23";
 						description="Bandido";
 						isPlayable=1;
@@ -56501,7 +56501,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg24";
 						description="Bandido";
 						isPlayable=1;
@@ -56610,7 +56610,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg25";
 						description="Bandido";
 						isPlayable=1;
@@ -56719,7 +56719,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg26";
 						description="Bandido";
 						isPlayable=1;
@@ -56828,7 +56828,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg27";
 						description="Bandido";
 						isPlayable=1;
@@ -56936,7 +56936,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg28";
 						description="Bandido";
 						isPlayable=1;
@@ -57045,7 +57045,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg29";
 						description="Bandido";
 						isPlayable=1;
@@ -57154,7 +57154,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg30";
 						description="Bandido";
 						isPlayable=1;
@@ -57263,7 +57263,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg31";
 						description="Bandido";
 						isPlayable=1;
@@ -57372,7 +57372,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg32";
 						description="Bandido";
 						isPlayable=1;
@@ -57481,7 +57481,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg33";
 						description="Bandido";
 						isPlayable=1;
@@ -57590,7 +57590,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];" \n "}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg34";
 						description="Bandido";
 						isPlayable=1;
@@ -57699,7 +57699,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg35";
 						description="Bandido";
 						isPlayable=1;
@@ -57808,7 +57808,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg36";
 						description="Bandido";
 						isPlayable=1;
@@ -57917,7 +57917,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg37";
 						description="Bandido";
 						isPlayable=1;
@@ -58026,7 +58026,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg38";
 						description="Bandido";
 						isPlayable=1;
@@ -58135,7 +58135,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg39";
 						description="Bandido";
 						isPlayable=1;
@@ -58244,7 +58244,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg40";
 						description="Bandido";
 						isPlayable=1;
@@ -58751,198 +58751,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3291.9138,235.77371,2903.0244};
-						angles[]={0,3.3684857,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="hlc_rifle_FAL5000";
-								class primaryMuzzleMag
-								{
-									name="hlc_20Rnd_762x51_B_fal";
-									ammoLeft=20;
-								};
-							};
-							class handgun
-							{
-								name="hgun_P07_F";
-								class primaryMuzzleMag
-								{
-									name="16Rnd_9x21_Mag";
-									ammoLeft=17;
-								};
-							};
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="hlc_20Rnd_762x51_B_fal";
-										count=1;
-										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="BOPE_carrier_1";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="16Rnd_9x21_Mag";
-										count=2;
-										ammoLeft=17;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="B_IR_Grenade";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="Chemlight_green";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="hlc_20Rnd_762x51_B_fal";
-										count=2;
-										ammoLeft=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="Itemwatch";
-							radio="ItemRadio";
-							headgear="BOPE_Boonie";
-						};
-					};
-					id=5905;
-					type="B_support_AMort_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.02;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item1
-				{
-					dataType="Waypoint";
-					position[]={3291.1499,235.77126,2900.8789};
-					type="Sentry";
-					combatMode="YELLOW";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=5906;
-					atlOffset=6.7610168;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=5904;
-		};
-		class Item2690
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={3295.012,228.45729,2897.1812};
 						angles[]={0,3.0194197,0};
 					};
@@ -59123,7 +58931,7 @@ class Mission
 			};
 			id=5907;
 		};
-		class Item2691
+		class Item2690
 		{
 			dataType="Group";
 			side="West";
@@ -59317,7 +59125,7 @@ class Mission
 			id=5910;
 			atlOffset=-1.5258789e-005;
 		};
-		class Item2692
+		class Item2691
 		{
 			dataType="Group";
 			side="West";
@@ -59511,7 +59319,7 @@ class Mission
 			id=5913;
 			atlOffset=4.5776367e-005;
 		};
-		class Item2693
+		class Item2692
 		{
 			dataType="Group";
 			side="West";
@@ -59705,199 +59513,7 @@ class Mission
 			id=5916;
 			atlOffset=-1.5258789e-005;
 		};
-		class Item2694
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3327.0259,238.72,2911.0906};
-						angles[]={0,1.3788102,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						skill=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="hlc_rifle_FAL5000";
-								class primaryMuzzleMag
-								{
-									name="hlc_20Rnd_762x51_B_fal";
-									ammoLeft=20;
-								};
-							};
-							class handgun
-							{
-								name="hgun_P07_F";
-								class primaryMuzzleMag
-								{
-									name="16Rnd_9x21_Mag";
-									ammoLeft=17;
-								};
-							};
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="hlc_20Rnd_762x51_B_fal";
-										count=1;
-										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="BOPE_carrier_1";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="16Rnd_9x21_Mag";
-										count=2;
-										ammoLeft=17;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="B_IR_Grenade";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="Chemlight_green";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="hlc_20Rnd_762x51_B_fal";
-										count=2;
-										ammoLeft=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="Itemwatch";
-							radio="ItemRadio";
-							headgear="BOPE_Boonie";
-						};
-					};
-					id=5920;
-					type="B_support_AMort_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.02;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item1
-				{
-					dataType="Waypoint";
-					position[]={3329.2158,238.71869,2911.27};
-					type="Sentry";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=5921;
-					atlOffset=5.7143555;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=5919;
-		};
-		class Item2695
+		class Item2693
 		{
 			dataType="Group";
 			side="West";
@@ -60088,7 +59704,7 @@ class Mission
 			};
 			id=5922;
 		};
-		class Item2696
+		class Item2694
 		{
 			dataType="Group";
 			side="West";
@@ -60100,198 +59716,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3364.7668,199.22058,2786.2473};
-						angles[]={0,3.2288594,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						skill=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="hlc_rifle_FAL5000";
-								class primaryMuzzleMag
-								{
-									name="hlc_20Rnd_762x51_B_fal";
-									ammoLeft=20;
-								};
-							};
-							class handgun
-							{
-								name="hgun_P07_F";
-								class primaryMuzzleMag
-								{
-									name="16Rnd_9x21_Mag";
-									ammoLeft=17;
-								};
-							};
-							class uniform
-							{
-								typeName="BOPE_CombatUniform_BLK";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="hlc_20Rnd_762x51_B_fal";
-										count=1;
-										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="BOPE_carrier_1";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="16Rnd_9x21_Mag";
-										count=2;
-										ammoLeft=17;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="B_IR_Grenade";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="Chemlight_green";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="hlc_20Rnd_762x51_B_fal";
-										count=2;
-										ammoLeft=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="Itemwatch";
-							radio="ItemRadio";
-							headgear="BOPE_Boonie";
-						};
-					};
-					id=5926;
-					type="B_support_AMort_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.02;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item1
-				{
-					dataType="Waypoint";
-					position[]={3365.2063,199.2189,2785.585};
-					type="Sentry";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=5928;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=5925;
-		};
-		class Item2697
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3453.4512,174.83798,2769.7581};
+						position[]={3457.0471,167.54477,2768.2925};
 						angles[]={0,3.2288594,0};
 					};
 					side="West";
@@ -60391,6 +59816,7 @@ class Mission
 					};
 					id=5930;
 					type="B_support_AMort_F";
+					atlOffset=-0.41261292;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -60456,22 +59882,23 @@ class Mission
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={3453.4548,174.83646,2768.5422};
+					position[]={3458.7795,166.58807,2766.5903};
 					type="Sentry";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=5931;
-					atlOffset=6.1010284;
+					atlOffset=-0.56797791;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=5929;
+			atlOffset=-0.41261292;
 		};
-		class Item2698
+		class Item2695
 		{
 			dataType="Group";
 			side="West";
@@ -60662,7 +60089,7 @@ class Mission
 			};
 			id=5932;
 		};
-		class Item2699
+		class Item2696
 		{
 			dataType="Group";
 			side="West";
@@ -60855,7 +60282,7 @@ class Mission
 			id=5935;
 			atlOffset=1.5258789e-005;
 		};
-		class Item2700
+		class Item2697
 		{
 			dataType="Group";
 			side="West";
@@ -61047,7 +60474,7 @@ class Mission
 			};
 			id=5938;
 		};
-		class Item2701
+		class Item2698
 		{
 			dataType="Group";
 			side="West";
@@ -61237,6 +60664,200 @@ class Mission
 			{
 			};
 			id=5941;
+		};
+		class Item2699
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3367.4609,193.33968,2786.3782};
+						angles[]={0,3.2288594,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						skill=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="hlc_rifle_FAL5000";
+								class primaryMuzzleMag
+								{
+									name="hlc_20Rnd_762x51_B_fal";
+									ammoLeft=20;
+								};
+							};
+							class handgun
+							{
+								name="hgun_P07_F";
+								class primaryMuzzleMag
+								{
+									name="16Rnd_9x21_Mag";
+									ammoLeft=17;
+								};
+							};
+							class uniform
+							{
+								typeName="BOPE_CombatUniform_BLK";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="hlc_20Rnd_762x51_B_fal";
+										count=1;
+										ammoLeft=20;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="BOPE_carrier_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="16Rnd_9x21_Mag";
+										count=2;
+										ammoLeft=17;
+									};
+									class Item1
+									{
+										name="HandGrenade";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="B_IR_Grenade";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="hlc_20Rnd_762x51_B_fal";
+										count=2;
+										ammoLeft=20;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="Itemwatch";
+							radio="ItemRadio";
+							headgear="BOPE_Boonie";
+						};
+					};
+					id=6086;
+					type="B_support_AMort_F";
+					atlOffset=1.5258789e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item1
+				{
+					dataType="Waypoint";
+					position[]={3367.7222,192.91345,2784.6677};
+					type="Sentry";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=6087;
+					atlOffset=-1.5258789e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6085;
+			atlOffset=1.5258789e-005;
 		};
 	};
 	class Connections
