@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=276;
+		nextID=278;
 	};
 	class Camera
 	{
@@ -709,7 +709,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="MenuPosition";
+								value="Counter";
 							};
 						};
 					};
@@ -55742,7 +55742,7 @@ class Mission
 						rank="MAJOR";
 						init="call{null = [this] execVM ""loadout.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'loadout.sqf'""];}";
 						name="fg17";
-						description="General do Líder";
+						description="TESTANDO";
 						isPlayable=1;
 						class Inventory
 						{
