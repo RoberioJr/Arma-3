@@ -23,16 +23,6 @@
 	//NameTags...
 	122014 cutrsc ["NameTag","PLAIN"];              //Script NameTags
 	
-/*
- // Remover Linhas Do Mapa...
- (createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
- [
- 	"!triggerActivated thisTrigger", 
- 	"thisTrigger setTriggerTimeout [30,30,30,false]",
- 	"{if (markerShape _x == 'POLYLINE') then {deleteMarker _x}} forEach allMapMarkers"
- ];
-*/
- 
  
  //Remover Voz De Bots Falando No Radio
  0 fadeRadio 0;
@@ -45,3 +35,6 @@
  CHVD_allowNoGrass = true;       //Opção De Desativar Grama 'True = Ativado e False = Desativado'
  CHVD_maxView = 5000;
  CHVD_maxObj = 5000;
+ 
+ 
+ 

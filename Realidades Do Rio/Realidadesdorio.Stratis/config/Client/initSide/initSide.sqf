@@ -4,7 +4,7 @@
 / Rio De Janeiro /
 */
 
-waitUntil (alive player);
+waitUntil {alive player};
 while {true} do {
     switch (playerSide) do 
     {
