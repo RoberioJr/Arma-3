@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=278;
+		nextID=280;
 	};
 	class Camera
 	{
-		pos[]={4387.1431,146.95399,6761.4336};
+		pos[]={4383.5425,146.23523,6759.3779};
 		dir[]={0.49156255,-0.69304019,0.52731889};
 		up[]={0.47256508,0.72089821,0.50693828};
 		aside[]={0.73147118,2.3865869e-007,-0.68187362};
@@ -55740,7 +55740,7 @@ class Mission
 					class Attributes
 					{
 						rank="MAJOR";
-						init="call{null = [this] execVM ""loadout.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'loadout.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg17";
 						description="TESTANDO";
 						isPlayable=1;
