@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=282;
+		nextID=284;
 	};
 	class Camera
 	{
@@ -55740,9 +55740,9 @@ class Mission
 					class Attributes
 					{
 						rank="MAJOR";
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
 						name="fg17";
-						description="General do Líder";
+						description="Teste";
 						isPlayable=1;
 						class Inventory
 						{
