@@ -98,6 +98,7 @@ if (!_isVehicle) then {
             [getPlayerUID player,profileName,"215"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
         } else {
             [getPlayerUID player,profileName,"215"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+			[_curTarget,"alarme"] remoteExec ["life_fnc_say3D",RANY];
         };
 
         [0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]] remoteExecCall ["life_fnc_broadcast",west];

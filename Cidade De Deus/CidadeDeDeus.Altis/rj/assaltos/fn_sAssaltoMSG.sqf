@@ -69,6 +69,8 @@ if(_msg isEqualTo "") exitWith {};
 //Mensagem para a vitima
 //_msgTarget = format["%1",_msg];
 _msgTarget = format["<t color='#ffffff' size='2'>%2</t><t color='#c45454' size='2'>:</t><br/><br/><img shadown='false' size='6' image='textures\atencao.paa'/><br/><br/>%1", _msg, _tipo];
+//_msgTarget = format["<t color='#ffffff' size='2'>ALERTA</t><br/><br/><img shadown='false' size='10' image='textures\SEUBANNER.jpg'/><br/><br/><t color='#fffc00' size='2'> %1 </t><br/><t color='#ff0000' size='2'>*BY-CASPERENTO*</t>",_msg];
+
 
 //Enviando mensagem para a vitima
 //[2,_msgTarget] remoteExecCall ["life_fnc_broadcast",_alvo];

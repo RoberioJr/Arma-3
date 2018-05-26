@@ -12,8 +12,7 @@
  [] execVM "config\SlotsReservados.sqf";                                  //Slots Reservados
  [] execVM "config\Client\initSide\initSide.sqf";                         //Inicialização Jogadores
  [] execVM "scripts\marcadores.sqf";                                      //Marcadores Do Mapa
- player addEventHandler ["Respawn", {_this execVM "loadout.sqf"}];        //Respawn com Loadouts
-  player addEventHandler ["Respawn", {_this call life_fnc_onPlayerRespawn}];
+ //player addEventHandler ["Respawn", {_this execVM "loadout.sqf"}];        //Respawn com Loadouts
  //[] execVM "config\loadouts\Checks\iniciar.sqf";                          //Checks De Estado Do Jogador
  
  //Sistema De Lojas

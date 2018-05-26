@@ -183,6 +183,12 @@ class CfgSounds {
 		sound[] = {"\sounds\scop.ogg", 0.85, 1};
 		titles[] = {};
 	};
+	
+	class alarme {
+	    name = "alarme";
+		sound[] = {"\sounds\alarme.ogg", 1.0, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing {

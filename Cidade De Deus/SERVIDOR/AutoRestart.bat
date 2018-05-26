@@ -31,13 +31,13 @@ color 9
   echo                                             Data:%data%
   echo                                             Hora:%hr%:%mm%:%ss%
   echo.
-  ping -n 11 127.0.0.1 >NUL
+  ping -n 2 127.0.0.1 >NUL
   goto inicio
 
 
  :variaveis
  set /a restarts+=1
- ping -n 63 127.0.0.1 >NUL
+ ping -n 301 127.0.0.1 >NUL
  goto inicio
  
  

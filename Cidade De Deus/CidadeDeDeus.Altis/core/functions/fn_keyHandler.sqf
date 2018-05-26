@@ -183,7 +183,7 @@ switch (_code) do {
         };
     };
 	
-	//Assalto By: Casperento (TAB)
+	//Assalto By: Casperento (TAB) Edit: RJ
 	case 15: {
             if !(isPlayer cursorTarget) exitWith {};
             if ((time - life_action_delay) < 1) exitWith {hint localize "STR_NOTF_ActionDelay";};
