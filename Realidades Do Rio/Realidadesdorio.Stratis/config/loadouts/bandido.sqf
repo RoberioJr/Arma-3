@@ -13,8 +13,6 @@ sleep 0.6;
 if (_vivo isEqualto 1) exitwith {_unit setPos _rjposition;};
 */
 
-waitUntil {!isNull _unit};
-
 _unit = _this select 0;
 _roupa = ["pika","mao","legalize","lacoste1","flamengo","riodejaneiro1"] call BIS_fnc_selectRandom;    //Seleção Da Roupa Inicial Bandidos
 
