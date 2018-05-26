@@ -15,7 +15,7 @@ if (_vivo isEqualto "s") exitwith {player setPos _rjposition;};
 
 waitUntil {!isNull player};
 
-_unit = this;
+_unit = _this select 0;
 
 removeAllWeapons player;
 removeAllItems player;
