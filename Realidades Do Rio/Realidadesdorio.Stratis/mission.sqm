@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=546;
+	toggles=674;
 	class ItemIDProvider
 	{
 		nextID=6083;
@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=270;
+		nextID=272;
 	};
 	class Camera
 	{
-		pos[]={4132.3643,295.08057,3133.9126};
+		pos[]={4126.8115,318.4722,3112.4143};
 		dir[]={0.12379041,-0.63077259,0.76615041};
 		up[]={0.10061615,0.77592784,0.62272412};
 		aside[]={0.98728281,7.6083234e-007,-0.15952426};
@@ -55732,7 +55732,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4394.6035,128.50256,6769.4917};
+						position[]={4394.604,128.50279,6769.4917};
 						angles[]={0,2.0943952,0};
 					};
 					side="East";
@@ -55740,9 +55740,9 @@ class Mission
 					class Attributes
 					{
 						rank="MAJOR";
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";" \n "_this execVM ""config\loadouts\bandido.sqf"";" \n "}";
+						init="call{null = [this] execVM ""loadout.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'loadout.sqf'""];}";
 						name="fg17";
-						description="General do Líder";
+						description="Testando";
 						isPlayable=1;
 						class Inventory
 						{
@@ -55755,7 +55755,7 @@ class Mission
 					};
 					id=5864;
 					type="O_Survivor_F";
-					atlOffset=0.13970947;
+					atlOffset=0.13999939;
 					class CustomAttributes
 					{
 						class Attribute0
