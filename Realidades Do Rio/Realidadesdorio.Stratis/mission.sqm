@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=288;
+		nextID=290;
 	};
 	class Camera
 	{
@@ -53732,7 +53732,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM" \n "'config\loadouts\bope.sqf'""];}";
 						name="fg2";
 						description="TESTE";
 						isPlayable=1;
@@ -55630,7 +55630,7 @@ class Mission
 					class Attributes
 					{
 						rank="COLONEL";
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "_this addEventHandler [""Respawn"", {_this execVM ""config\loadouts\bandido.sqf""}];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg16";
 						description="Líder do Comando Vermelho";
 						isPlayable=1;
