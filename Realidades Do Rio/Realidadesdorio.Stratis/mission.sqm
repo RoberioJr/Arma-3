@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=546;
+	toggles=674;
 	class ItemIDProvider
 	{
 		nextID=6094;
@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=292;
+		nextID=294;
 	};
 	class Camera
 	{
-		pos[]={4321.1016,156.6105,6785.2944};
+		pos[]={4343.0176,186.57814,6766.0654};
 		dir[]={-0.52017653,-0.71013433,0.47448456};
 		up[]={-0.52465582,0.7040633,0.47856981};
 		aside[]={0.67391646,-4.1443855e-008,0.73881429};
@@ -53471,7 +53471,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bope.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM" \n "'config\loadouts\bope.sqf'""];}";
+						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg2";
 						description="Recruta";
 						isPlayable=1;
@@ -55479,7 +55479,7 @@ class Mission
 					class Attributes
 					{
 						rank="MAJOR";
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "_this addEventHandler [""Respawn"", {_this execVM ""config\loadouts\bandido.sqf""}];}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg17";
 						description="General do Líder";
 						isPlayable=1;
@@ -55588,7 +55588,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg18";
 						description="Bandido";
 						isPlayable=1;
@@ -55696,7 +55696,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg19";
 						description="Bandido";
 						isPlayable=1;
@@ -55805,7 +55805,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg20";
 						description="Bandido";
 						isPlayable=1;
@@ -55914,7 +55914,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg21";
 						description="Bandido";
 						isPlayable=1;
@@ -56023,7 +56023,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg22";
 						description="Bandido";
 						isPlayable=1;
@@ -56131,7 +56131,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg23";
 						description="Bandido";
 						isPlayable=1;
@@ -56240,7 +56240,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg24";
 						description="Bandido";
 						isPlayable=1;
@@ -56349,7 +56349,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg25";
 						description="Bandido";
 						isPlayable=1;
@@ -56458,7 +56458,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg26";
 						description="Bandido";
 						isPlayable=1;
@@ -56567,7 +56567,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg27";
 						description="Bandido";
 						isPlayable=1;
@@ -56675,7 +56675,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg28";
 						description="Bandido";
 						isPlayable=1;
@@ -56784,7 +56784,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg29";
 						description="Bandido";
 						isPlayable=1;
@@ -56893,7 +56893,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg30";
 						description="Bandido";
 						isPlayable=1;
@@ -57002,7 +57002,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg31";
 						description="Bandido";
 						isPlayable=1;
@@ -57111,7 +57111,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg32";
 						description="Bandido";
 						isPlayable=1;
@@ -57220,7 +57220,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg33";
 						description="Bandido";
 						isPlayable=1;
@@ -57329,7 +57329,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg34";
 						description="Bandido";
 						isPlayable=1;
@@ -57438,7 +57438,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg35";
 						description="Bandido";
 						isPlayable=1;
@@ -57547,7 +57547,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg36";
 						description="Bandido";
 						isPlayable=1;
@@ -57656,7 +57656,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg37";
 						description="Bandido";
 						isPlayable=1;
@@ -57765,7 +57765,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg38";
 						description="Bandido";
 						isPlayable=1;
@@ -57874,7 +57874,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg39";
 						description="Bandido";
 						isPlayable=1;
@@ -57983,7 +57983,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg40";
 						description="Bandido";
 						isPlayable=1;
