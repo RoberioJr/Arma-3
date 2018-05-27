@@ -39,4 +39,5 @@ switch (playerSide) do {
 
 life_actions pushBack (player addAction["<t color = '#D660D6'>Colocar Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
 life_actions pushBack (player addAction["<t color = '#D660D6'>Remover Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
+//life_actions pushBack (player addAction["<t color = '#2E9AFE'>Radio</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']); 
  

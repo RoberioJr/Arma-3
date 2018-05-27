@@ -189,6 +189,12 @@ class CfgSounds {
 		sound[] = {"\sounds\alarme.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	
+	class botao {
+        name = "botao";
+        sound[] = {"\sounds\botao.ogg", 1.0, 1};
+        titles[] = {};
+    };
 };
 
 class CfgDebriefing {

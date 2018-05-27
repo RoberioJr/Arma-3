@@ -7,6 +7,7 @@
 _pathmusicas = "rj\RadioRJ\musicas\";
 _executar = 'player execVM "'+_pathmusicas+'%1"';
 
+if (alive Player) then {
 	radiorj =
 	[
 		["Rádio CDD",true],
@@ -14,7 +15,8 @@ _executar = 'player execVM "'+_pathmusicas+'%1"';
 			["DESLIGAR RADIO", [7],  "", -5, [["expression", format[_executar,"PARAR.sqf"]]], "1", "1"],
 			["", [-1], "", -5, [["expression", ""]], "1", "0"],
 		["Sair", [13], "", -3, [["expression", ""]], "1", "1"]		
-	];};
+	];
+};
 MusicaRAP =             
 [
 	["HIPHOP e RAP",true],

@@ -51,6 +51,9 @@ life_markers_active = false;
 life_canpay_bail = true;
 life_storagePlacing = scriptNull;
 life_seatbelt = false;
+/* EDITS DO RJ */
+NVGRJ = false;
+//Life_radiorj = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
