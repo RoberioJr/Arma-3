@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=546;
+	toggles=674;
 	class ItemIDProvider
 	{
 		nextID=6088;
@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=286;
+		nextID=288;
 	};
 	class Camera
 	{
-		pos[]={3303.6033,234.39378,2920.229};
+		pos[]={3307.8628,237.25961,2915.6338};
 		dir[]={-0.66765541,-0.39288294,0.63239264};
 		up[]={-0.28525206,0.9195773,0.27018687};
 		aside[]={0.68768901,-1.10158e-008,0.72603613};
@@ -53734,7 +53734,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg2";
-						description="Recruta";
+						description="TESTE";
 						isPlayable=1;
 						class Inventory
 						{
@@ -55630,7 +55630,7 @@ class Mission
 					class Attributes
 					{
 						rank="COLONEL";
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "_this addEventHandler [""Respawn"", {_this execVM ""config\loadouts\bandido.sqf""}];}";
 						name="fg16";
 						description="Líder do Comando Vermelho";
 						isPlayable=1;
@@ -55740,9 +55740,9 @@ class Mission
 					class Attributes
 					{
 						rank="MAJOR";
-						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";}";
+						init="call{null = [this] execVM ""config\loadouts\bandido.sqf""; " \n "_this addEventHandler [""Respawn"", {_this execVM ""config\loadouts\bandido.sqf""}];}";
 						name="fg17";
-						description="Teste";
+						description="General do Líder";
 						isPlayable=1;
 						class Inventory
 						{
