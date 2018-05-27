@@ -315,7 +315,7 @@ class VirtualItems {
     class oil_unprocessed {
         variable = "oilUnprocessed";
         displayName = "STR_Item_OilU";
-        weight = 7;
+        weight = 6;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
@@ -326,9 +326,9 @@ class VirtualItems {
     class oil_processed {
         variable = "oilProcessed";
         displayName = "STR_Item_OilP";
-        weight = 6;
+        weight = 5;
         buyPrice = -1;
-        sellPrice = 3200;
+        sellPrice = 3500;
         illegal = false;
         edible = -1;
         icon = "icons\ico_oilProcessed.paa";
@@ -350,7 +350,7 @@ class VirtualItems {
         displayName = "STR_Item_CopperIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 1500;
+        sellPrice = 1800;
         illegal = false;
         edible = -1;
         icon = "icons\ico_copper.paa";
@@ -372,7 +372,7 @@ class VirtualItems {
         displayName = "STR_Item_IronIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 3200;
+        sellPrice = 2800;
         illegal = false;
         edible = -1;
         icon = "icons\ico_iron.paa";
@@ -392,9 +392,9 @@ class VirtualItems {
     class salt_refined {
         variable = "saltRefined";
         displayName = "STR_Item_SaltR";
-        weight = 1;
+        weight = 2;
         buyPrice = -1;
-        sellPrice = 1450;
+        sellPrice = 2000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_saltProcessed.paa";
@@ -416,7 +416,7 @@ class VirtualItems {
         displayName = "STR_Item_Glass";
         weight = 1;
         buyPrice = -1;
-        sellPrice = 1450;
+        sellPrice = 1600;
         illegal = false;
         edible = -1;
         icon = "icons\ico_glass.paa";
@@ -427,7 +427,7 @@ class VirtualItems {
         displayName = "STR_Item_DiamondU";
         weight = 4;
         buyPrice = -1;
-        sellPrice = 1000;
+        sellPrice = 1200;
         illegal = false;
         edible = -1;
         icon = "icons\ico_diamondUncut.paa";
@@ -438,7 +438,7 @@ class VirtualItems {
         displayName = "STR_Item_DiamondC";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 3000;
+        sellPrice = 4200;
         illegal = false;
         edible = -1;
         icon = "icons\ico_diamondCut.paa";
@@ -460,7 +460,7 @@ class VirtualItems {
         displayName = "STR_Item_CementBag";
         weight = 5;
         buyPrice = -1;
-        sellPrice = 1950;
+        sellPrice = 2000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_cement.paa";
@@ -485,8 +485,8 @@ class VirtualItems {
         variable = "tabacoProcessed";
         displayName = "STR_Item_Tabaco";
         weight = 3;
-        buyPrice = 5400;
-        sellPrice = 4500;
+        buyPrice = 5600;
+        sellPrice = 5600;
         illegal = true;
         edible = -1;
         icon = "icons\tabacop.paa";
@@ -509,7 +509,7 @@ class VirtualItems {
         displayName = "STR_Item_HeroinP";
         weight = 4;
         buyPrice = 8000;
-        sellPrice = 6000;
+        sellPrice = 7400;
         illegal = true;
         edible = -1;
         icon = "icons\ico_heroinProcessed.paa";
@@ -531,8 +531,8 @@ class VirtualItems {
         variable = "marijuana";
         displayName = "STR_Item_Marijuana";
         weight = 3;
-        buyPrice = 4200;
-        sellPrice = 3250;
+        buyPrice = 5800;
+        sellPrice = 5800;
         illegal = true;
         edible = -1;
         icon = "icons\ico_marijuana.paa";
@@ -555,7 +555,7 @@ class VirtualItems {
         displayName = "STR_Item_CocaineP";
         weight = 4;
         buyPrice = -1;
-        sellPrice = 5000;
+        sellPrice = 6800;
         illegal = true;
         edible = -1;
         icon = "icons\ico_cocaineProcessed.paa";

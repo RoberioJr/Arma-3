@@ -118,15 +118,13 @@ switch (_code) do {
 	// N
 	case 49: {
 	    if (alive player) then {
-		    _rjcheck = (player getVariable "NVativado");
 	        _nvgs = hmd player;
-			if (isNil _rjcheck) then { player setVariable ["NVativado", false]; };
             if (_nvgs isEqualTo "NVGoggles") then {
-			    if (_rjcheck isEqualTo false) then {
+			    if (NVGRJ == false) then {
                     playSound "nightV";
-				    player setVariable ["NVativado", true];
-				} else {
-				    player setVariable ["NVativado", false];
+					NVGRJ = true;
+				};
+				if (NVGRJ == true) then {
 					playSound "scop";
 				};
 		    };		

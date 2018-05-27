@@ -52,7 +52,7 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_bars
 	};
  };
   
- /* Mancador Do Mapa */
+ /* Marcador Do Mapa */
   [] execVM "rj\Marcador\marcador.sqf";
   
  /* Reparar Veiculo */

@@ -13,3 +13,6 @@
  
  /* Menu De Admin By:RJ */
   [] execVM "rj\MenuAdminRJ\loop.sqf";
+  
+ /* Radio RJ */
+  [] execVM "rj\RadioRJ\init.sqf";
