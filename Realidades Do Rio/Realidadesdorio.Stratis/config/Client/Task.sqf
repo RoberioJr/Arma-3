@@ -52,7 +52,7 @@ TFS_fnc_ftfar_checkTeamSpeakChannel =
 
 TFS_fnc_ftfar_getWrongChannelString =
 {
-	if !(tf_radio_channel_password isEqualTo "") exitWith { format["Voce esta no canal do Teamspeak errado\nEntre no canal %1", tf_radio_channel_name; };
+	if !(tf_radio_channel_password isEqualTo "") exitWith { format["You are in the wrong TeamSpeak channel!\nPlease join the channel %1 with password %2!", tf_radio_channel_name, tf_radio_channel_password]; };
 	format["Você não está no canal do ts \nEntre no canal: %1!", tf_radio_channel_name];
 };
 

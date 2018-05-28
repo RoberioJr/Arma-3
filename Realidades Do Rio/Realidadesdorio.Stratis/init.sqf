@@ -23,20 +23,6 @@
 	//NameTags...
 	122014 cutrsc ["NameTag","PLAIN"];              //Script NameTags
 	
-	//Forçar o uso do Task Force
-	//Settings for TFAR extenstion
-    tf_radio_channel_name = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_name");
-    tf_radio_channel_password = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_password");
-
-    //Execute the following only on clients.
-    if (hasInterface) then
-    {
-	     if ((getNumber (missionConfigFile >> "ForceTFAR" >> "ftfar_is_enabled")) isEqualTo 1) then
-	{
-		[] spawn compile preprocessFileLineNumbers "Task.sqf";
-	};
-};
-	
  
  //Remover Voz De Bots Falando No Radio
  0 fadeRadio 0;
