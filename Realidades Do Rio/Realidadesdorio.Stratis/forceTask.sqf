@@ -15,3 +15,5 @@ while{true} do {
       };
    };
 };
+
+hint _tsNomeCanal
