@@ -9,7 +9,7 @@ SLOTS_RJ = {
 	["76561198308659047", fg16] call SLOT_RESERVADO; //ID do Cabaço
 	["76561198057401657", fg1] call SlOT_RESERVADO; //ID do Leo
 	["76561198255786561", fg42] call SlOT_RESERVADO; //ID do Thiago
-	["76561198090180406", fg17] call SlOT_RESERVADO; //ID do General do Líder CV
+	["", fg17] call SlOT_RESERVADO; //ID do General do Líder CV
 	["", fg12] call SlOT_RESERVADO; //ID do CABO AINDA NÃO RECRUTADO
 	["", fg13] call SlOT_RESERVADO; //ID do CABO AINDA NÃO RECRUTADO
 	["", fg14] call SlOT_RESERVADO; //ID do CABO AINDA NÃO RECRUTADO
