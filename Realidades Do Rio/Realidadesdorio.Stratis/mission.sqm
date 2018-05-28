@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=300;
+		nextID=302;
 	};
 	class Camera
 	{
@@ -41298,10 +41298,13 @@ class Mission
 			angle=0.52359879;
 			class Attributes
 			{
-				condition="call{sector1 getVariable ""owner"" isEqualTo east}";
+				condition="";
 				onActivation="call{iaspawn1 enableSimulation true;}";
+				onDeactivation="call{iaspawn1 enableSimulation false;}";
 				sizeA=230;
 				sizeB=188;
+				repeatable=1;
+				activationBy="EAST SEIZED";
 			};
 			id=4331;
 			type="EmptyDetector";
@@ -61075,6 +61078,7 @@ class Mission
 			class Attributes
 			{
 				name="IAspawn1";
+				speedMode="LIMITED";
 			};
 			id=6113;
 			class CustomAttributes
