@@ -42,8 +42,8 @@ TFS_fnc_ftfar_checkTeamSpeakServer =
 //Function to retreive wrong TeamSpeak server message.
 TFS_fnc_ftfar_getWrongServerString =
 {
-	if !(ftfar_server_password isEqualTo "") exitWith { format["Você não está no servidor do TS: %1!\Entre no servidor em %2!", ftfar_server_name, ftfar_server_ipaddress]; };
-	format["You are not on the TeamSpeak Server: %1!\nPlease join the TeamSpeak at %2!", ftfar_server_name, ftfar_server_ipaddress];
+	if !(ftfar_server_password isEqualTo "") exitWith { format["Você não está no Teamspeak do servidor: %1!\Entre no servidor em %2!", ftfar_server_name, ftfar_server_ipaddress]; };
+	format["Você não está no Teamspeak do servidor: %1!\nEntre no servidor em %2!", ftfar_server_name, ftfar_server_ipaddress];
 };
 
 //Function to check current TeamSpeak channel.
