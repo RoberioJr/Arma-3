@@ -338,9 +338,6 @@ class HG_roupasbandido // HG_DefaultShop is just a placeholder for testing purpo
 		displayName = "Coletes";
 		content[] =
 		{
-		    {"V_TascVest_brn",1000,"true"},
-		    {"V_TascVest_khk",1000,"true"},
-			{"V_TascVest_blk",1000,"true"}
 		};
 	};
 	

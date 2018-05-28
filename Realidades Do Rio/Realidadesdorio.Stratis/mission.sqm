@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=674;
+	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=6094;
+		nextID=6096;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=294;
+		nextID=298;
 	};
 	class Camera
 	{
-		pos[]={4343.0176,186.57814,6766.0654};
-		dir[]={-0.52017653,-0.71013433,0.47448456};
-		up[]={-0.52465582,0.7040633,0.47856981};
-		aside[]={0.67391646,-4.1443855e-008,0.73881429};
+		pos[]={4313.7681,145.61053,6783.3188};
+		dir[]={-0.50132519,-0.68650174,0.52669221};
+		up[]={-0.47330728,0.7271232,0.49725714};
+		aside[]={0.72434044,2.9266812e-007,0.68945324};
 	};
 };
 binarizationWanted=0;
@@ -764,7 +764,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2699;
+		items=2700;
 		class Item0
 		{
 			dataType="Marker";
@@ -52604,7 +52604,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{clearItemCargoGlobal _this;  " \n "    clearMagazineCargoGlobal _this;  " \n "    clearWeaponCargoGlobal _this;  " \n "    clearBackpackCargoGlobal _this;}";
 			};
 			id=5654;
 			type="B_supplyCrate_F";
@@ -52626,7 +52625,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""launch_NLAW_F"",""arifle_MX_F"",""arifle_MX_SW_F"",""FirstAidKit""],[1,2,1,10]],[[""30Rnd_65x39_caseless_mag"",""16Rnd_9x21_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""20Rnd_762x51_Mag"",""100Rnd_65x39_caseless_mag"",""1Rnd_HE_Grenade_shell"",""3Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""Chemlight_green"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellGreen"",""UGL_FlareWhite_F"",""UGL_FlareGreen_F"",""ACE_SpareBarrel"",""ACE_20Rnd_65x47_Scenar_mag"",""ACE_30Rnd_65x47_Scenar_mag"",""ACE_20Rnd_65_Creedmor_mag"",""ACE_30Rnd_65_Creedmor_mag"",""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_20Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_20Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_20Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_20Rnd_762x51_Mag_Tracer"",""ACE_20Rnd_762x51_Mag_Tracer_Dim""],[24,6,6,6,6,3,1,2,2,6,2,6,6,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4]],[[""Laserdesignator"",""acc_flashlight"",""bipod_01_F_blk"",""ACE_Chemlight_Shield"",""ACE_EarPlugs""],[1,2,1,12,12]],[[""B_Kitbag_mcamo""],[2]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -58143,7 +58142,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""CUP_hgun_Colt1911""],[130]],[[""CUP_7Rnd_45ACP_1911""],[200]],[[""ItemMap"",""tf_anprc152"",""ACE_adenosine"",""ACE_atropine"",""ACE_epinephrine"",""ACE_morphine"",""ACE_elasticBandage"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_fieldDressing""],[200,200,100,100,100,100,100,30,25,50]],[[],[]]],false]";
+							value="[[[[""CUP_hgun_Colt1911""],[130]],[[""CUP_7Rnd_45ACP_1911""],[200]],[[""ItemMap"",""tf_anprc152"",""ACE_adenosine"",""ACE_atropine"",""ACE_epinephrine"",""ACE_morphine"",""ACE_elasticBandage"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_fieldDressing"",""V_LegStrapBag_coyote_F"",""V_TacVest_khk"",""V_TacVest_camo"",""V_TacVest_brn""],[200,200,100,100,100,100,100,30,25,50,200,100,100,100]],[[],[]]],false]";
 						};
 					};
 				};
@@ -60597,6 +60596,45 @@ class Mission
 			};
 			id=6085;
 			atlOffset=1.5258789e-005;
+		};
+		class Item2699
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3064.7322,55.961094,5670.4922};
+				angles[]={0,6.1610126,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6095;
+			type="I_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
