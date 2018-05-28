@@ -17,9 +17,6 @@
 	//Teste de Save
 	[] execVM "config\SalvaPosicoes.sqf";           //Salva as Posições dos players para disconnect e connect
 	
-	//Forçar o uso do Task
-	[] execVM "forceTask.sqf";
-	
 	//Zeus Com Tudo Liberado
 	[Admins,true] execVM "scripts\ADV_zeus.sqf";
 	
@@ -39,5 +36,17 @@
  CHVD_maxView = 5000;
  CHVD_maxObj = 5000;
  
+ //Settings for TFAR extenstion
+tf_radio_channel_name = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_name");
+tf_radio_channel_password = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_password");
+
+//Execute the following only on clients.
+if (hasInterface) then
+{
+	if ((getNumber (missionConfigFile >> "ForceTFAR" >> "ftfar_is_enabled")) isEqualTo 1) then
+	{
+		[] spawn compile preprocessFileLineNumbers "TFS_fnc_ftfar_init.sqf";
+	};
+};
  
  
