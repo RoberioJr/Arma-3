@@ -22,9 +22,9 @@ class CarShops {
         vehicles[] = {
             { "B_Quadbike_01_F", "" }, //QUAD 
             { "C_Hatchback_01_F", "" }, //HATCHBACK
+			{ "C_Hatchback_01_sport_F", "" }, //HATCHBACK S
             { "C_Offroad_01_F", "" }, //OFFROAD
             { "C_SUV_01_F", "" }, //SUV
-            { "C_Hatchback_01_sport_F", "" }, //HATCHBACK S
             { "C_Van_01_transport_F", "" }, //Chaninha
             { "C_Offroad_02_unarmed_F", "" } //JIPE APEX
         };
@@ -880,7 +880,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "BOPE", "cop", {
 				"textures\veh\cop\bopehunter.paa",
 				"textures\veh\cop\bopehunter2.paa"
-			}, "call life_coplevel >= 11" }
+			}, "" }
         };
     };
 

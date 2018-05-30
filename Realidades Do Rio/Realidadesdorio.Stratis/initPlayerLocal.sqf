@@ -3,8 +3,8 @@
 /      Do        /     
 / Rio De Janeiro /
 */
-
-
+#include "rj_macros.hpp"  //Inclusão Dos Macros
+ 
  //Scripts Aqui:
  
  [] execVM "config\WhiteList.sqf";                                        //Sistema De Whitelist
@@ -12,6 +12,10 @@
  [] execVM "config\SlotsReservados.sqf";                                  //Slots Reservados
  [] execVM "config\Client\initSide\initSide.sqf";                         //Inicialização Jogadores
  [] execVM "scripts\marcadores.sqf";                                      //Marcadores Do Mapa
+ 
+ if (REALIDADESDORIOCFG(getNumber,"rj_ativar_whitelist") isEqualTo 1) then {
+    [] execVM "config\WhiteList.sqf";  //Sistema De Whitelist)
+ };
  
  //Sistema De Lojas
  if(!hasInterface) exitWith {};

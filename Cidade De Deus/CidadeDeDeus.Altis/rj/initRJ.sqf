@@ -5,7 +5,7 @@
 
 */
 
-private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barstat";
+private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barstat","_msgnsrj";
 
    /* DEFINIÇÕES */
   _grafico = LIFE_SETTINGS(getNumber,"rj_ativar_grafico");
@@ -14,6 +14,7 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_bars
   _safeszn = LIFE_SETTINGS(getNumber,"rj_ativar_safezones");
   _gaslacr = LIFE_SETTINGS(getNumber,"rj_ativar_gaslacrimo");
   _barstat = LIFE_SETTINGS(getNumber,"rj_barradestatus");
+  _msgnsrj = LIFE_SETTINGS(getNumber,"rj_msgsconometradas");
    
 
  /* Melhorar Grafico Do Arma */
@@ -71,7 +72,10 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_bars
   [] execVM "rj\LoopSide\loopsides.sqf";
   
  /* Mensagens */
+ if (_msgnsrj isEqualTo 1) then { 
+  diag_log "RJ: Mensagens Cronometradas - Ativado";
   [] execVM "rj\MSG\msgs.sqf";
+ };
 
   
  

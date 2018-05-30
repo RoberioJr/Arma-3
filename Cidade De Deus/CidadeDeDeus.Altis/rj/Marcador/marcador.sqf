@@ -3,9 +3,9 @@
     Author: RoberioJR
 */
 
-private["_marcadores","_cormark"]; //_membros
+private["_marcadores","_membros","_cormark"];
 _marcadores = [];
-//_membros = [];
+_membros = [];
 _cormark = "ColorRed";
 
 switch (playerSide) do 
@@ -29,16 +29,16 @@ switch (playerSide) do
 while {true} do {
 	sleep 0.5;
 	if(visibleMap) then {
-		//_membros = units (group player);
+		_membros = units (group player);
 		//Create markers
-		//{
+		{
 			_marcador = createMarkerLocal [format["%1_marcador",_x],visiblePosition _x];
 			_marcador setMarkerColorLocal _cormark;   //Define a Cor Do Marcador
 			_marcador setMarkerTypeLocal "mil_dot";   //Ponto "Bolinha"
 			_marcador setMarkerTextLocal format["%1", _x getVariable["realname",name _x]];
 		
 			_marcadores pushBack [_marcador,_x];
-		//}; foreach _membros;
+		} foreach _membros;
 			
 		while {visibleMap} do {
 			{
@@ -57,6 +57,6 @@ while {true} do {
 
 		{deleteMarkerLocal (_x select 0);} foreach _marcadores;
 		_marcadores = [];
-		//_membros = [];
+		_membros = [];
 	};
 };

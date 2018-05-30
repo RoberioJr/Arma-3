@@ -5,6 +5,6 @@
 */
 
  playSound "botao";
- sleep 0.5
+ sleep 0.8;
  playMusic "";
  cutText ["Radio Desligado!", "PLAIN"];

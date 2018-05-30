@@ -43,7 +43,7 @@ switch (playerSide) do {
 
 /* ALTERAÇÃO BY: ROBÉRIOJR DONORLEVEL VEICULOS */
 
-if (playerSide == civilian) then {
+if (playerSide isEqualTo civilian) then {
   _doador0descveh = LIFE_SETTINGS(getNumber,"rj_desconto_doadorveh0");
   _doador1descveh = LIFE_SETTINGS(getNumber,"rj_desconto_doadorveh1");
   _doador2descveh = LIFE_SETTINGS(getNumber,"rj_desconto_doadorveh2");

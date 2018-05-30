@@ -18,7 +18,7 @@ if (_rip) exitWith { hint "O Roubo ja esta acontecendo!" };
 if (vehicle player != _robber) exitWith { hint "Saia do Seu veiculo para roubar!" };
 
 if !(alive _robber) exitWith {};
-if (currentWeapon _robber == "") exitWith { hint "HaHa, Voce é um mongoloide! Vaza daqui antes que eu te quebre na porrada!" };
+if (currentWeapon _robber == "") exitWith { hint "HaHa, you mongoloide men!? Vaza daqui antes que eu te quebre na porrada!" };
 if (_kassa == 0) exitWith { hint "Não Tem Dinheiro no Caixa!" };
 
 _rip = true;

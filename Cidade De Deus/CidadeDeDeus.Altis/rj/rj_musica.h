@@ -19,4 +19,10 @@
 	    sound[] = {"rj\RadioRJ\musicas\audio\INSONIA.ogg", db+5, 1.0};
     };
 	
+	class GAZA
+    {
+ 	    name = "GAZA";
+	    sound[] = {"rj\RadioRJ\musicas\audio\GAZA.ogg", db+5, 1.0};
+    };
+	
 	
