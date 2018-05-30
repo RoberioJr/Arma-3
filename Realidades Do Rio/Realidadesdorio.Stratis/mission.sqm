@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=306;
+		nextID=308;
 	};
 	class Camera
 	{
-		pos[]={4390.834,136.1882,6746.8472};
+		pos[]={4389.3862,136.1882,6745.5488};
 		dir[]={-0.50226992,-0.65805894,0.56096947};
 		up[]={-0.43896139,0.75296509,0.49026209};
 		aside[]={0.74501175,-6.8524969e-008,0.6670537};
@@ -61415,7 +61415,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg50";
-						description="Bandido";
+						description="SLOT RESERVADO (DOAÇÃO)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -61559,7 +61559,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg49";
-						description="Bandido";
+						description="SLOT RESERVADO (DOAÇÃO)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -61703,7 +61703,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg48";
-						description="Bandido";
+						description="SLOT RESERVADO (DOAÇÃO)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -61847,7 +61847,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg47";
-						description="Bandido";
+						description="SLOT RESERVADO (DOAÇÃO)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -61991,7 +61991,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg46";
-						description="Bandido";
+						description="SLOT RESERVADO (DOAÇÃO)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -62135,7 +62135,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg51";
-						description="Bandido";
+						description="SLOT RESERVADO (DOAÇÃO)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -62279,7 +62279,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg52";
-						description="Bandido";
+						description="SLOT RESERVADO (DOAÇÃO)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -62423,7 +62423,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg53";
-						description="Bandido";
+						description="SLOT RESERVADO (DOAÇÃO)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -62569,7 +62569,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg54";
-						description="Bandido";
+						description="SLOT RESERVADO (DOAÇÃO)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -62713,7 +62713,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bandido.sqf"";  " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bandido.sqf'""];}";
 						name="fg55";
-						description="Bandido";
+						description="SLOT RESERVADO (DOAÇÃO)";
 						isPlayable=1;
 						class Inventory
 						{
