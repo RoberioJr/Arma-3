@@ -6,15 +6,16 @@
 
 SLOTS_RJ = {
 	/*["Arma3 UID", slot variable name] call SLOT_RESERVADO;*/
-	["76561198308659047", fg16] call SLOT_RESERVADO; //ID do Cabaço
-	["76561198057401657", fg1] call SlOT_RESERVADO; //ID do Leo
-	["76561198255786561", fg42] call SlOT_RESERVADO; //ID do Thiago
-	["", fg17] call SlOT_RESERVADO; //ID do General do Líder CV
-	["", fg12] call SlOT_RESERVADO; //ID do CABO AINDA NÃO RECRUTADO
-	["", fg13] call SlOT_RESERVADO; //ID do CABO AINDA NÃO RECRUTADO
-	["", fg14] call SlOT_RESERVADO; //ID do CABO AINDA NÃO RECRUTADO
-	["", fg15] call SlOT_RESERVADO; //ID do SARGENTO AINDA NÃO RECRUTADO
-	["", fg41] call SlOT_RESERVADO; //ID do SARGENTO AINDA NÃO RECRUTADO
+	["", fg46] call SlOT_RESERVADO; //ID Do Doador
+	["", fg47] call SlOT_RESERVADO; //ID Do Doador
+	["", fg48] call SlOT_RESERVADO; //ID Do Doador
+	["", fg49] call SlOT_RESERVADO; //ID Do Doador
+	["", fg50] call SlOT_RESERVADO; //ID Do Doador
+	["", fg51] call SlOT_RESERVADO; //ID Do Doador
+	["", fg52] call SlOT_RESERVADO; //ID Do Doador
+	["", fg53] call SlOT_RESERVADO; //ID Do Doador
+	["", fg54] call SlOT_RESERVADO; //ID Do Doador
+	["", fg55] call SlOT_RESERVADO; //ID Do Doador
 };
 
 
