@@ -10,7 +10,7 @@ class Header
 {
 	gameType=Sandbox;
 	minPlayers=1;
-	maxPlayers=80;
+	maxPlayers=55;
 };
 author="RoberioJr, R. Marques and Marvinn";
 onLoadName = "BOPE - Realidades Do Rio";

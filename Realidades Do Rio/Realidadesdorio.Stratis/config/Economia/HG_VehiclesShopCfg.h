@@ -143,7 +143,8 @@ class HG_BOPEveiculos // HG_DefaultShop is just a placeholder for testing purpos
 		};
 		spawnPoints[] =
 		{
-		    {"Spawn Heli",{"spawn_heli_bope_1"}}
+		    {"Spawn Heli",{"spawn_heli_bope_1"}},
+			{"Spawn Heli2",{"spawn_heli_bope_2"}}
 		};
 	};
 };
