@@ -8,7 +8,7 @@ class EditorData
 	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=6223;
+		nextID=6240;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=308;
+		nextID=314;
 	};
 	class Camera
 	{
-		pos[]={4389.3862,136.1882,6745.5488};
-		dir[]={-0.50226992,-0.65805894,0.56096947};
-		up[]={-0.43896139,0.75296509,0.49026209};
-		aside[]={0.74501175,-6.8524969e-008,0.6670537};
+		pos[]={3285.5945,237.95316,2936.6128};
+		dir[]={0.6835143,-0.68648112,-0.24848911};
+		up[]={0.64517885,0.72711825,-0.23455288};
+		aside[]={-0.34170145,1.8731225e-006,-0.93990088};
 	};
 };
 binarizationWanted=0;
@@ -174,13 +174,19 @@ addons[]=
 	"ace_medical",
 	"ace_attach",
 	"ace_chemlights",
-	"Helipad_MapObject"
+	"Helipad_MapObject",
+	"ace_optics",
+	"BD_Uniformes",
+	"A3_Structures_F_Bootcamp_Civ_Camping",
+	"A3_Supplies_F_Exp_Ammoboxes",
+	"ace_dragging",
+	"A3_Structures_F_EPB_Items_Documents"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=79;
+		items=84;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -664,6 +670,39 @@ class AddonsMetaData
 			className="Helipad_MapObject";
 			name="Helipad_MapObject";
 		};
+		class Item79
+		{
+			className="ace_optics";
+			name="ACE3 - Optics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item80
+		{
+			className="BD_Uniformes";
+			name="BD_Uniformes";
+		};
+		class Item81
+		{
+			className="A3_Structures_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item82
+		{
+			className="A3_Supplies_F_Exp";
+			name="Arma 3 Apex - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item83
+		{
+			className="ace_dragging";
+			name="ACE3 - Dragging";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=40661;
@@ -770,7 +809,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2742;
+		items=2747;
 		class Item0
 		{
 			dataType="Marker";
@@ -46623,7 +46662,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3322.6277,231.67557,2904.9268};
+				position[]={3378.4568,233.91299,2914.6033};
 				angles[]={0,0.06981317,0};
 			};
 			side="Empty";
@@ -46633,7 +46672,7 @@ class Mission
 			};
 			id=4857;
 			type="Land_Gaol_Tower";
-			atlOffset=-0.23556519;
+			atlOffset=-0.27980042;
 		};
 		class Item2456
 		{
@@ -47152,8 +47191,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3324.6194,233.76163,2910.9321};
-				angles[]={6.2813563,1.6406099,0.00013661943};
+				position[]={3380.2688,235.99467,2920.4854};
+				angles[]={0,1.6406099,0};
 			};
 			side="Empty";
 			flags=4;
@@ -47163,7 +47202,7 @@ class Mission
 			};
 			id=4946;
 			type="Banner_AAF_F";
-			atlOffset=-1.005722;
+			atlOffset=-0.57696533;
 		};
 		class Item2487
 		{
@@ -53478,7 +53517,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg2";
-						description="Recruta";
+						description="Policial";
 						isPlayable=1;
 						class Inventory
 						{
@@ -53587,7 +53626,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg3";
-						description="Recruta";
+						description="Policial";
 						isPlayable=1;
 						class Inventory
 						{
@@ -53696,7 +53735,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg4";
-						description="Recruta";
+						description="Policial";
 						isPlayable=1;
 						class Inventory
 						{
@@ -53805,7 +53844,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg5";
-						description="Recruta";
+						description="Policial";
 						isPlayable=1;
 						class Inventory
 						{
@@ -53914,7 +53953,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg6";
-						description="Recruta";
+						description="Policial";
 						isPlayable=1;
 						class Inventory
 						{
@@ -54023,7 +54062,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg7";
-						description="Recruta";
+						description="Policial";
 						isPlayable=1;
 						class Inventory
 						{
@@ -54132,7 +54171,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg8";
-						description="Soldado";
+						description="Policial";
 						isPlayable=1;
 						class Inventory
 						{
@@ -54241,7 +54280,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg9";
-						description="Soldado";
+						description="Policial";
 						isPlayable=1;
 						class Inventory
 						{
@@ -54350,7 +54389,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg10";
-						description="Soldado";
+						description="Policial";
 						isPlayable=1;
 						class Inventory
 						{
@@ -54459,7 +54498,7 @@ class Mission
 					{
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg11";
-						description="Soldado";
+						description="Policial";
 						isPlayable=1;
 						class Inventory
 						{
@@ -55226,7 +55265,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						rank="CAPTAIN";
+						rank="COLONEL";
 						init="call{null = [this] execVM ""config\loadouts\bope.sqf""; " \n "this addeventhandler [""respawn"",""_this execVM 'config\loadouts\bope.sqf'""];}";
 						name="fg42";
 						description="Capitão do BOPE";
@@ -60523,17 +60562,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3355.4751,230.84709,2908.1516};
+				position[]={3355.4751,230.84752,2908.1521};
 				angles[]={0,1.6580628,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{this setVariable [""R3F_LOG_disabled"", true];}";
 			};
 			id=6127;
 			type="Land_HeliPad";
-			atlOffset=-3.6344147;
+			atlOffset=-3.6340027;
 		};
 		class Item2704
 		{
@@ -60661,17 +60701,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3375.759,230.65211,2906.6548};
+				position[]={3375.759,230.65205,2906.655};
 				angles[]={0,1.6580628,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{this setVariable [""R3F_LOG_disabled"", true];}";
 			};
 			id=6139;
 			type="Land_HeliPad";
-			atlOffset=-3.7369385;
+			atlOffset=-3.7369995;
 		};
 		class Item2712
 		{
@@ -60976,11 +61017,25 @@ class Mission
 						isPlayable=1;
 						class Inventory
 						{
+							class binocular
+							{
+								name="Binocular";
+							};
 							class uniform
 							{
-								typeName="BOPE_CombatUniform_BLK";
+								typeName="BR_BOPE";
 								isBackpack=0;
 							};
+							class vest
+							{
+								typeName="BOPE_carrier_1";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="Itemwatch";
+							radio="tf_anprc152";
+							headgear="H_Watchcap_blk";
 						};
 					};
 					id=6181;
@@ -61123,9 +61178,15 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="BOPE_CombatUniform_BLK";
+								typeName="BR_BOPE";
 								isBackpack=0;
 							};
+							class vest
+							{
+								typeName="BOPE_carrier_1";
+								isBackpack=0;
+							};
+							headgear="H_Watchcap_blk";
 						};
 					};
 					id=6183;
@@ -61268,9 +61329,15 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="BOPE_CombatUniform_BLK";
+								typeName="BR_BOPE";
 								isBackpack=0;
 							};
+							class vest
+							{
+								typeName="BOPE_carrier_1";
+								isBackpack=0;
+							};
+							headgear="H_Watchcap_blk";
 						};
 					};
 					id=6185;
@@ -62835,6 +62902,117 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item2742
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3378.1709,236.59679,2906.4221};
+				angles[]={0,0,6.2731848};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""R3F_LOG_disabled"", true];}";
+			};
+			id=6223;
+			type="Land_PartyTent_01_F";
+			atlOffset=-1.5258789e-005;
+		};
+		class Item2743
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3379.0212,234.60455,2908.4775};
+				angles[]={0,4.6076694,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""R3F_LOG_disabled"", true];}";
+			};
+			id=6226;
+			type="Box_NATO_Equip_F";
+			atlOffset=-0.00019836426;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""Chemlight_yellow"",""Chemlight_blue"",""Chemlight_green"",""Chemlight_red"",""ACE_Chemlight_HiOrange"",""ACE_Chemlight_HiRed"",""ACE_Chemlight_HiWhite"",""ACE_Chemlight_HiYellow"",""ACE_Chemlight_IR"",""ACE_Chemlight_Orange"",""ACE_Chemlight_White"",""SmokeShellYellow"",""SmokeShellBlue"",""SmokeShellOrange"",""SmokeShellPurple"",""SmokeShellGreen"",""SmokeShellRed"",""SmokeShell""],[]],[[""BOPE_carrier_1"",""BR_BOPE"",""BR_BOPE_1"",""tf_anprc152"",""ACE_adenosine"",""ACE_atropine"",""ACE_epinephrine"",""ACE_morphine"",""ItemCompass"",""ACE_elasticBandage"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_fieldDressing"",""ACE_EarPlugs"",""Itemwatch"",""ACE_bloodIV_250"",""ACE_salineIV""],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2744
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3376.8271,235.16438,2908.8469};
+				angles[]={0.0075049158,0,6.2232509};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""R3F_LOG_disabled"", true];}";
+			};
+			id=6237;
+			type="Land_Map_stratis_F";
+			atlOffset=0.00015258789;
+		};
+		class Item2745
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3377.7664,235.13063,2908.894};
+				angles[]={0,4.7298427,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{this setVariable [""R3F_LOG_disabled"", true];}";
+			};
+			id=6238;
+			type="Land_Map_altis_F";
+			atlOffset=0.018157959;
+		};
+		class Item2746
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3377.2827,234.72942,2908.8879};
+				angles[]={0.0024958209,0,6.2282419};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""R3F_LOG_disabled"", true];}";
+			};
+			id=6239;
+			type="Land_CampingTable_F";
 		};
 	};
 	class Connections
