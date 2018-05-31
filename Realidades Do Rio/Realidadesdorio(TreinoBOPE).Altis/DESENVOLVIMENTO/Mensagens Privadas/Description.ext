@@ -1,4 +1,0 @@
-respawn = 3;
-respawndelay = 5;
-
-#include "JTS_PM\PM_Compact.hpp" // add this to your Description.ext

@@ -3,15 +3,25 @@
 /      Do        /     
 / Rio De Janeiro /
 */
-#include "rj_macros.hpp"  //Inclusão Dos Macros
- 
+
+
  //Scripts Aqui:
  
- [] execVM "config\Client\initSide\initSide.sqf";                         //Inicialização Jogadores
+ [] execVM "config\WhiteList.sqf";                      //Sistema De Whitelist
+ [] execVM "config\SlotsReservados.sqf";                //Slots Reservados
+ [] execVM "config\Client\initSide\initSide.sqf";       //Inicialização Jogadores
+ [] execVM "scripts\marcadores.sqf";                    //Marcadores Do Mapa
  
- //Sistema De Lojas
+ //Simple Shops
  if(!hasInterface) exitWith {};
 [] execVM "scripts\HG\Setup\fn_clientInitialization.sqf";
 
- /* KeyHandler By: RobérioJR */
-  //[] execVM "config\keyHandler.sqf"; NÃO FUNCIONA POR ENQUANTO
+//Sistema De Whitelist By: RobérioJr
+/*
+fnc_reservedSlot = {
+  player enableSimulationGlobal false;
+  ( "reserved" call BIS_fnc_rscLayer ) cutText [ "Esse Slot é Reservado. PorFavor Escolha Outro Slot.", "BLACK OUT", 1, true ];
+  sleep 10;
+  endMission "nao_autorizado";
+};
+*/

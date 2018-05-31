@@ -3,15 +3,8 @@
 /      Do        /     
 / Rio De Janeiro /
 */
-private "_rjposition","_vivo";
 
-/*
-_rjpositionpri = profileNameSpace getVariable "rjposition";
-_vivopri = profileNameSpace getVariable "vivo";
-
-sleep 0.6;
-if (_vivo isEqualto "s") exitwith {_unit setPos _rjposition;};
-*/
+waitUntil {!isNull player};
 
 _unit = _this select 0;
 

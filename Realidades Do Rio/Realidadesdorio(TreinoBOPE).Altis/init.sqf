@@ -5,7 +5,20 @@
 */
 
 	//Init Scripts De 3º Parte...
-	[] execVM "scripts\InitScripts.sqf";            //Inicialização Dos Scripts 
+	[] execVM "admin\admins.sqf";                   //Painel ADM
+    [] execVM "admin\loop.sqf";                     //Loop Painel ADM
+	[] execVM "zonas\safebope.sqf";                 //SAFEZONE BOPE
+	[] execVM "scripts\Cor.sqf";                    //Correção De Cor
+	[] execVM "scripts\gaslacrimo.sqf";             //Gás Lacrimogênio
+	[] execVM "scripts\PuloDoMacaco.sqf";           //Pulo Do Macaco SHIFT + V
+	[] execVM "scripts\recargaCarreg\Carreg.sqf";   //Recarga De Carregadores CTRL + R
+	[] execVM "scripts\Limpeza.sqf";                //Melhora Peformance
+	[] execVM "scripts\Limpeza2.sqf";               //Melhora Peformance
+	[] execVM "scripts\PF\init.sqf";                //Ambientação Das Casas
+	[] execVM "scripts\R3F_LOG\init.sqf";           //Sistema De Logica/Interação Com Veiculos e Objetos
+	[] execVM "scripts\Trafego\init.sqf";           //Sistema De Tráfego/NPCs
+	[] execVM "scripts\ClimaDinamico.sqf";          //Mudança Do Clima (Dinâmico)	
+	[] execVM "scripts\RepararVeiculo.sqf";         //Sistema De Reparo De Veiculos
 	
 	//Init AntiHack...
 	[] execVM "AntiHack\ACTermal\Init.sqf";         //Anti Termal Hack
@@ -14,20 +27,35 @@
 	if (hasInterface) then {
     [] execVM "briefing.sqf";                       //Carregar Informações No Mapa
     };
-	//Teste de Save
-	[] execVM "config\SalvaPosicoes.sqf";           //Salva as Posições dos players para disconnect e connect
-	
-	//Zeus Com Tudo Liberado
-	[Admins,true] execVM "scripts\ADV_zeus.sqf";
 	
 	//NameTags...
 	122014 cutrsc ["NameTag","PLAIN"];              //Script NameTags
 	
+ // Remover Linhas Do Mapa...
+ /*
+ (createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
+ [
+ 	"!triggerActivated thisTrigger", 
+ 	"thisTrigger setTriggerTimeout [30,30,30,false]",
+ 	"{if (markerShape _x == 'POLYLINE') then {deleteMarker _x}} forEach allMapMarkers"
+ ];
+ */
+
  
  //Remover Voz De Bots Falando No Radio
  0 fadeRadio 0;
  enableRadio false;
  enableSentences false;
+ 
+ //Sentar na Cadeira
+ MAC_fnc_switchMove = {
+    private["_object","_anim"];
+    _object = _this select 0;
+    _anim = _this select 1;
+
+    _object switchMove _anim;
+    
+};
  
 
 /* Configurações De Visão */
@@ -35,18 +63,3 @@
  CHVD_allowNoGrass = true;       //Opção De Desativar Grama 'True = Ativado e False = Desativado'
  CHVD_maxView = 5000;
  CHVD_maxObj = 5000;
- 
- //Settings for TFAR extenstion
-tf_radio_channel_name = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_name");
-tf_radio_channel_password = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_password");
-
-//Execute the following only on clients.
-if (hasInterface) then
-{
-	if ((getNumber (missionConfigFile >> "ForceTFAR" >> "ftfar_is_enabled")) isEqualTo 1) then
-	{
-		[] spawn compile preprocessFileLineNumbers "TFS_fnc_ftfar_init.sqf";
-	};
-};
- 
- 

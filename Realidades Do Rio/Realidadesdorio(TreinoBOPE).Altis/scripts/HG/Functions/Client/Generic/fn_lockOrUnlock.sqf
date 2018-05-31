@@ -26,8 +26,7 @@ if(local _vehicle) then
     [_vehicle,_lock] remoteExecCall ["HG_fnc_lock",2,false];
 };
 
-//playSound _sound;
-//_vehicle say3d [_sound,14];
+playSound _sound;
 hintSilent parseText format
 [
     "<t align='center'><img image='%1' shadow='0' size='1.5'></img></t><br/>"+
