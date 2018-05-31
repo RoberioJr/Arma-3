@@ -222,7 +222,13 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Pistolas";
 		content[] =
 		{
-			{"hgun_P07_F",2000,"true"}
+			{"hgun_P07_F",2000,"true"},
+			{"CUP_hgun_Glock17",1000,"true"},
+			{"CUP_hgun_M9",750,"true"},
+			{"CUP_hgun_MicroUzi",1200,"true"},
+			{"CUP_hgun_Duty",900,"true"},
+			{"hgun_Rook40_F",350,"true"},
+			{"hgun_Pistol_Signal_F",50,"true"}
 		};
 	};
 	
@@ -235,7 +241,20 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 			{"hlc_rifle_ak74m",25000,"true"},
 			{"hlc_rifle_aku12",30000,"true"},
 			{"hlc_rifle_aek971",30000,"true"},
-			{"hlc_rifle_FAL5000_RH",45000,"true"}
+			{"hlc_rifle_FAL5000_RH",45000,"true"},
+			{"CUP_arifle_FNFAL5061",46000,"true"},
+			{"CUP_img_M60E4",35000,"true"},
+			{"CUP_arifle_AKS74U",25000,"true"},
+			{"arifle_AKS_F",27000,"true"},
+			{"hlc_rifle_slr107u",33000,"true"},
+			{"CAG_HK416CRS_W",30000,"true"},
+			{"hlc_rifle_c1A1",23000,"true"},
+			{"CUP_arifle_CZ805_B",20000,"true"},
+			{"arifle_SPAR_02_blk_F",40000,"true"},
+			{"CUP_arifle_M4A1",55000,"true"},
+			{"CUP_arifle_Sa58P",40000,"true"},
+			{"hlc_rifle_sig5104",35000,"true"},
+			{"CUP_arifle_M16A4_Base",44000,"true"}
 		};
 	};
 	
@@ -254,7 +273,11 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "SUB Metralhadoras";
 		content[] =
 		{
-			{"hgun_PDW2000_F",12000,"true"}
+			{"hgun_PDW2000_F",12000,"true"},
+			{"CUP_smg_bizon",6000,"true"},
+			{"hlc_smg_mp510",5000,"true"},
+			{"hlc_smg_mp5a2",5500,"true"},
+			{"hlc_rifle_auga2para_b",14000,"true"}
 		};
 	};
 	
@@ -263,6 +286,7 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Rifle De Precisão";
 		content[] =
 		{
+			{"CUP_srifle_L129A1",80000,"true"}
 		};
 	};
 };
@@ -303,7 +327,9 @@ class HG_roupasbandido // HG_DefaultShop is just a placeholder for testing purpo
 			{"mao",150,"true"},
 			{"nuvem",150,"true"},
 			{"pika",150,"true"},
-			{"tigre",150,"true"}
+			{"tigre",150,"true"},
+			{"flamengo",150,"true"},
+			{"riodejaneiro1",150,"true"}
 		};
 	};
 	
@@ -312,9 +338,6 @@ class HG_roupasbandido // HG_DefaultShop is just a placeholder for testing purpo
 		displayName = "Coletes";
 		content[] =
 		{
-		    {"V_TascVest_brn",1000,"true"},
-		    {"V_TascVest_khk",1000,"true"},
-			{"V_TascVest_blk",1000,"true"}
 		};
 	};
 	
@@ -326,6 +349,53 @@ class HG_roupasbandido // HG_DefaultShop is just a placeholder for testing purpo
 			{"B_TacticalPack_blk",300,"true"},
 			{"B_TacticalPack_oli",300,"true"},
 			{"B_TacticalPack_rgr",300,"true"}
+		};
+	};
+};
+
+/* LOJA DE ROUPAS/Armas DOADORES */
+
+class HG_RoupaseArmas // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+	class Glasses
+	{
+		displayName = "$STR_HG_SHOP_FACEWEARS";
+		content[] =
+		{
+		};
+	};
+	
+	class Headgear
+	{
+		displayName = "Chapeus";
+		content[] =
+		{
+	    };
+	};
+	
+	class Uniform
+	{
+		displayName = "$STR_HG_SHOP_UNIFORMS";
+		content[] =
+		{
+		};
+	};
+	
+	class Vest
+	{
+		displayName = "Coletes";
+		content[] =
+		{
+		};
+	};
+	
+	class Backpack
+	{
+		displayName = "$STR_HG_SHOP_BACKPACKS";
+		content[] =
+		{
 		};
 	};
 };

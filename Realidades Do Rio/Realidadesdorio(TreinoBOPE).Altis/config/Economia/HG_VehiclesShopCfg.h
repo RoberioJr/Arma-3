@@ -143,8 +143,31 @@ class HG_BOPEveiculos // HG_DefaultShop is just a placeholder for testing purpos
 		};
 		spawnPoints[] =
 		{
-		    {"Spawn Heli",{"spawn_heli_bope_1"}}
+		    {"Spawn Heli",{"spawn_heli_bope_1"}},
+			{"Spawn Heli2",{"spawn_heli_bope_2"}}
 		};
 	};
 };
 
+ /*                      //
+/                         /
+/  Loja De Veiculos DOADORES  /
+/                         /
+ */                      //
+
+class HG_DoadoresVeiculos
+{
+    conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+    class Civil
+	{
+	    displayName = "Veiculos de Doadores";
+		vehicles[] =
+		{
+		};
+	    spawnPoints[] =
+		{
+			{"Spawn Veiculos Doadores",{"spawn_vehiculos_doadores"}}
+		};
+	};
+};

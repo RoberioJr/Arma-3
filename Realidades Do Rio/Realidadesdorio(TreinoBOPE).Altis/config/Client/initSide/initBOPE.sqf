@@ -1,7 +1,7 @@
 /*
 
     Inicialização Do BOPE
-	Executado a cada 40Segs
+	Executado a cada 30Segs
 
 */
 

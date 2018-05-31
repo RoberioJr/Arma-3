@@ -3,12 +3,18 @@
 /      Do        /     
 / Rio De Janeiro /
 */
+private "_rjposition","_vivo";
 
-waitUntil {!isNull player};
+/*
+_rjposition = profileNameSpace getVariable "rjposition";
+_vivo = profileNameSpace getVariable "vivo";
+
+sleep 0.6;
+if (_vivo isEqualto 1) exitwith {_unit setPos _rjposition;};
+*/
 
 _unit = _this select 0;
-_roupa = ["pika","mao","legalize"] call BIS_fnc_selectRandom    //Seleção Da Roupa Inicial Bandidos
-
+_roupa = ["pika","mao","legalize","lacoste1","flamengo","riodejaneiro1"] call BIS_fnc_selectRandom;    //Seleção Da Roupa Inicial Bandidos
 
 removeAllWeapons _unit;
 removeAllItems _unit;
@@ -19,10 +25,11 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
+//_unit forceAddUniform (selectRandom _roupa);
 _unit forceAddUniform _roupa;
 _unit addItemToUniform "ACE_EarPlugs";
 _unit addItemToUniform "";
-_unit addItemToUniform "TFAR_fadak";
+_unit addItemToUniform "TFAR_anprc152";
 _unit addVest "";
 for "_i" from 1 to 2 do {_unit addItemToVest "ACE_fieldDressing";};
 _unit addHeadgear "";

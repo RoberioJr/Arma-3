@@ -147,7 +147,7 @@ if((getNumber(getMissionConfig "CfgClient" >> "enableKillCount")) isEqualTo 1) t
 if((getNumber(getMissionConfig "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1) then
 {
     private "_gear";
-	
+
     if(HG_SAVING_EXTDB) then
 	{
 	    _gear = _result select 4;
@@ -169,6 +169,8 @@ if(!HG_SAVING_EXTDB) then
 	    saveProfileNamespace;
     };
 };
+
+
 
 /*
     Init HUD (if applicable)

@@ -3,12 +3,18 @@
 /      Do        /     
 / Rio De Janeiro /
 */
+private "_rjposition","_vivo";
 
-waitUntil {!isNull player};
+/*
+_rjposition = profileNameSpace getVariable "rjposition";
+_vivo = profileNameSpace getVariable "vivo";
+
+sleep 0.6;
+if (_vivo isEqualto 1) exitwith {_unit setPos _rjposition;};
+*/
 
 _unit = _this select 0;
-_roupa = ["pika","mao","legalize"] call BIS_fnc_selectRandom    //Seleção Da Roupa Inicial Bandidos
-
+_roupa = ["pika","mao","legalize","lacoste1","flamengo","riodejaneiro1"] call BIS_fnc_selectRandom;    //Seleção Da Roupa Inicial Bandidos
 
 removeAllWeapons _unit;
 removeAllItems _unit;
@@ -19,31 +25,30 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
+//_unit forceAddUniform (selectRandom _roupa);
 _unit forceAddUniform _roupa;
-_unit addItemToUniform "FirstAidKit";
-_unit addItemToUniform "Chemlight_green";
-_unit addItemToUniform "TFAR_anprc154";
+_unit addItemToUniform "ACE_EarPlugs";
+_unit addItemToUniform "";
+_unit addItemToUniform "TFAR_anprc152";
 _unit addVest "";
-for "_i" from 1 to 2 do {_unit addItemToVest "";};
-_unit addItemToVest "";
-_unit addItemToVest "";
-_unit addItemToVest "";
-for "_i" from 1 to 3 do {_unit addItemToVest "";};
-_unit addBackpack "";
+for "_i" from 1 to 2 do {_unit addItemToVest "ACE_fieldDressing";};
 _unit addHeadgear "";
+//_unit addGoggles "G_Shades_Green";
 
-_unit addWeapon "";
+
+_unit addWeapon "";    //AKS74u 5.45mm
 _unit addPrimaryWeaponItem "";
-_unit addPrimaryWeaponItem "";
 _unit addWeapon "";
-_unit addHandgunItem "";
+_unit addweapon "";
+
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 _unit linkItem "ItemRadio";
+_unit linkItem "ItemGPS";
 
-_unit setFace "WhiteHead_18";
-_unit setSpeaker "Male08ENG";
+_unit setFace "PersianHead_A3_01";
+_unit setSpeaker "male01per";
 
 if(true) exitWith{};

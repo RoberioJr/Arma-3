@@ -236,5 +236,75 @@ class NameTag
 		{
 			    idc = 141;
 		};
+		
+		class NT42 : NT_BASIC
+		{
+			    idc = 142;
+		};
+		
+		class NT43 : NT_BASIC
+		{
+			    idc = 143;
+		};
+		
+		class NT44 : NT_BASIC
+		{
+			    idc = 144;
+		};
+		
+		class NT45 : NT_BASIC
+		{
+			    idc = 145;
+		};
+		
+		class NT46 : NT_BASIC
+		{
+			    idc = 146;
+		};
+		
+		class NT47 : NT_BASIC
+		{
+			    idc = 147;
+		};
+		
+		class NT48 : NT_BASIC
+		{
+			    idc = 148;
+		};
+		
+		class NT49 : NT_BASIC
+		{
+			    idc = 149;
+		};
+		
+		class NT50 : NT_BASIC
+		{
+			    idc = 150;
+		};
+		
+		class NT51 : NT_BASIC
+		{
+			    idc = 151;
+		};
+		
+		class NT52 : NT_BASIC
+		{
+			    idc = 152;
+		};
+		
+		class NT53 : NT_BASIC
+		{
+			    idc = 153;
+		};
+		
+		class NT54 : NT_BASIC
+		{
+			    idc = 154;
+		};
+		
+		class NT55 : NT_BASIC
+		{
+			    idc = 155;
+		};
 	};
 };
