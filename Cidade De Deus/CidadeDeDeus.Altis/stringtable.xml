@@ -12471,3 +12471,10 @@
       <Original>Please know that if you choose to add it to your weapon your current existing attachment in that slot will be lost.</Original>
     </Key>
   </Package>
+  <Key ID="STR_PM_yMarket">
+   <Original>Mercado</Original>
+</Key>
+
+<Key ID="STR_Shops_yMarket">
+    <Original>Mercado CDD</Original>
+</Key>

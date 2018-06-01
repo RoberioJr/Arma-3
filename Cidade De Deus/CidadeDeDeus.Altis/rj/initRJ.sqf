@@ -5,7 +5,7 @@
 
 */
 
-private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barstat","_msgnsrj";
+private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_barstat","_msgnsrj","_marcarj";
 
    /* DEFINIÇÕES */
   _grafico = LIFE_SETTINGS(getNumber,"rj_ativar_grafico");
@@ -15,6 +15,7 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_bars
   _gaslacr = LIFE_SETTINGS(getNumber,"rj_ativar_gaslacrimo");
   _barstat = LIFE_SETTINGS(getNumber,"rj_barradestatus");
   _msgnsrj = LIFE_SETTINGS(getNumber,"rj_msgsconometradas");
+  _marcarj = LIFE_SETTINGS(getNumber,"rj_ativar_marcadagua");
    
 
  /* Melhorar Grafico Do Arma */
@@ -75,6 +76,12 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_bars
  if (_msgnsrj isEqualTo 1) then { 
   diag_log "RJ: Mensagens Cronometradas - Ativado";
   [] execVM "rj\MSG\msgs.sqf";
+ };
+ 
+ /* Marca D'Agua Com Logo */
+ if (_marcarj isEqualTo 1) then { 
+  diag_log "RJ: Marca D'Agua - Ativado";
+  [] execVM "rj\Logo\fn_iniciarLogo.sqf";
  };
 
   

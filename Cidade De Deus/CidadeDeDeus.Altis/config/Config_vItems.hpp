@@ -127,6 +127,14 @@ class VirtualShops {
         conditions = "";
         items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
     };
+	
+	/* Isso não é uma loja! - Mercado (Y MENU) */
+	//description = "DESCRIÇÃO DO ITEM"; - ADICIONAR NOS ITEMS Q ESTÃO NO MERCADO!!
+	class ymarket {
+    name = "STR_Shops_yMarket";
+    conditions = "";
+    items[] = {"apple", "blastingcharge", "boltcutter", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "cocaine_unprocessed", "coffee", "copper_refined", "copper_unrefined", "defibrillator", "defusekit", "diamond_cut", "diamond_uncut", "donuts", "fuelEmpty", "fuelFull", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "heroin_unprocessed", "iron_refined", "iron_unrefined", "lockpick", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "mushrooms", "oil_processed", "oil_unprocessed", "ornate", "ornate_raw", "peach", "pickaxe", "rabbit", "rabbit_raw", "redgull", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "salt_unrefined", "sheep", "sheep_raw", "spikeStrip", "storagebig", "storagesmall", "toolkit", "tbacon", "tuna", "tuna_raw", "turtle_soup", "turtle_raw", "waterBottle"};
+    };
 };
 
 /*
@@ -605,6 +613,7 @@ class VirtualItems {
         illegal = false;
         edible = 10;
         icon = "icons\ico_apple.paa";
+		description = "Uma Bela Maçã :)"; //Necessário Para Aparecer A Descrição No Mercado
     };
 
     class peach {

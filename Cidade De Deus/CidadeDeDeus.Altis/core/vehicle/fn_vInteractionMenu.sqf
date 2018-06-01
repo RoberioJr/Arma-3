@@ -85,7 +85,7 @@ if (playerSide isEqualTo civilian) then {
            // if !(_id in getDLCs 1) then {
                 _Btn4 ctrlSetText localize "STR_vInAct_GetInVehicle";
                 _Btn4 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
-                if (crew _curTarget isEqualTo [] && {canMove _curTarget} && {locked _curTarget isEqualTo 0}) then {_Btn4 ctrlEnable true;} else {_Btn4 ctrlEnable false};
+                if (crew _curTarget isEqualTo [] && {locked _curTarget isEqualTo 0}) then {_Btn4 ctrlEnable true;} else {_Btn4 ctrlEnable false};
           //  };
        // } else {
             _Btn2 ctrlSetText localize "STR_vInAct_Unflip";

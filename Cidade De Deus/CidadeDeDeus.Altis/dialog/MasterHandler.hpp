@@ -29,3 +29,4 @@
 #include "FuelStat.hpp"
 #include "newsStation.hpp"
 #include "dgAssalto.hpp"    //Assalto (TAB)
+#include "market_menu.hpp"  //Mercado

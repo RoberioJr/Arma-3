@@ -18,7 +18,4 @@ private "_radiorj";
   [] execVM "rj\MenuAdminRJ\loop.sqf";
   
  /* Radio RJ */
- if (_radiorj isEqualTo 1) then {
-  diag_log "RJ: Radio Dos Veiculos - Ativado";
   [] execVM "rj\RadioRJ\init.sqf";
- };

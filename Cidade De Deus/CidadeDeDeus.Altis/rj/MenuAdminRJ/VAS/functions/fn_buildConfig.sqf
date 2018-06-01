@@ -179,4 +179,4 @@ switch(_cfg) do {
 	};
 };
 
-diag_log format["Cfg Processed: %1 | Time to complete: %2",_cfg,(diag_tickTime) - _timeStamp];
+diag_log format["Rj: Cfg Processada: %1 | Tempo Para Completar: %2",_cfg,(diag_tickTime) - _timeStamp];

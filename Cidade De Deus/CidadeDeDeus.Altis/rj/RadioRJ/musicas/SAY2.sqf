@@ -12,9 +12,10 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
         _helipad attachTo [_vei, [0,0,0]];
 		_vei setVariable ["tocando", _helipad];
 	    playSound "botao";
-	    cutText ["Tocando: Faixa De Gaza - MC Orelha", "PLAIN"];
+	    cutText ["Tocando: Twenty One Pilots - Heathens ft. Chatuba de Mesquita & MC Carol", "PLAIN"];
 	    sleep 1.5;
-        _helipad say3d ["GAZA",200,1];
+        //_helipad say3d ["intro",200,1];
+		[_helipad,"intro",200,1] remoteExec ["life_fnc_say3D",0];
     };
  } else {
     deleteVehicle (_vei getVariable ["tocando", objNull]);
@@ -22,8 +23,9 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
     _helipad attachTo [_vei, [0,0,0]];
 	_vei setVariable ["tocando", _helipad];
 	playSound "botao";
-	cutText ["Tocando: Faixa De Gaza - MC Orelha", "PLAIN"];
+	cutText ["Tocando: Twenty One Pilots - Heathens ft. Chatuba de Mesquita & MC Carol", "PLAIN"];
 	sleep 1.5;
-    _helipad say3d ["GAZA",200,1];
+    //_helipad say3d ["intro",200,1];
+	[_helipad,"intro",200,1] remoteExec ["life_fnc_say3D",0];
 };
 

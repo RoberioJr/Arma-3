@@ -275,5 +275,32 @@ class playerSettings {
             w = (6.25 / 40);
             h = (1 / 25);
         };
+		
+		/*    Mercado
+		class marketButton: Life_RscButtonMenu {
+            idc = 60714;
+            onButtonClick = "[] call life_fnc_marketMenu";
+            text = "$STR_PM_yMarket"; //--- ToDo: Localize;
+            x = 0.598484 * safezoneW + safezoneX;
+            y = 0.66808 * safezoneH + safezoneY;
+            w = 0.0644531 * safezoneW;
+            h = 0.022 * safezoneH;
+            colorText[] = {1,1,1,1};
+            colorBackground[] = {0,0,0,0.8};
+        };
+		*/
+		
+		/* Mercado */
+		class marketButton: Life_RscButtonMenu {
+            idc = 60714;
+            onButtonClick = "[] call life_fnc_marketMenu";
+            text = "$STR_PM_yMarket"; //--- ToDo: Localize;
+			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+            y = 0.805;
+            w = (6.25 / 40);
+            h = (1 / 25);
+            colorText[] = {1,1,1,1};
+            colorBackground[] = {0,0,0,0.8};
+        };
     };
 };
