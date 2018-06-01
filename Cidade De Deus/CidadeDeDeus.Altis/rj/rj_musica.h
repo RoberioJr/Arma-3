@@ -10,7 +10,7 @@
     class intro
     {
  	    name = "intro";
-	    sound[] = {"sounds\intro.ogg", db+5, 1.0};
+	    sound[] = {"rj\RadioRJ\musicas\audio\intro.ogg", db+5, 1.0};
     };
 	
 	class INSONIA

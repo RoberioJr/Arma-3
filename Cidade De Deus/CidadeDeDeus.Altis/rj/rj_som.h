@@ -17,7 +17,7 @@
 	class intro 
 	{
         name = "intro";
-        sound[] = {"sounds\intro.ogg", 1.0, 1};
+        sound[] = {"rj\RadioRJ\musicas\audio\intro.ogg", 1.0, 1};
         titles[] = {};
     };
 	
