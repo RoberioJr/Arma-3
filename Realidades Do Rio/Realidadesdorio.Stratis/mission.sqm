@@ -8,22 +8,22 @@ class EditorData
 	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=6240;
+		nextID=6252;
 	};
 	class MarkerIDProvider
 	{
-		nextID=265;
+		nextID=267;
 	};
 	class LayerIndexProvider
 	{
-		nextID=314;
+		nextID=316;
 	};
 	class Camera
 	{
-		pos[]={3285.5945,237.95316,2936.6128};
-		dir[]={0.6835143,-0.68648112,-0.24848911};
-		up[]={0.64517885,0.72711825,-0.23455288};
-		aside[]={-0.34170145,1.8731225e-006,-0.93990088};
+		pos[]={2963.1182,67.440628,5692.4434};
+		dir[]={-0.074532807,-0.72325075,0.68656176};
+		up[]={-0.078057125,0.69058609,0.71902752};
+		aside[]={0.99416834,4.8233778e-007,0.10792534};
 	};
 };
 binarizationWanted=0;
@@ -180,7 +180,8 @@ addons[]=
 	"A3_Structures_F_Bootcamp_Civ_Camping",
 	"A3_Supplies_F_Exp_Ammoboxes",
 	"ace_dragging",
-	"A3_Structures_F_EPB_Items_Documents"
+	"A3_Structures_F_EPB_Items_Documents",
+	"A3_Weapons_F_Pistols_Rook40"
 };
 class AddonsMetaData
 {
@@ -721,7 +722,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -762,7 +763,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -809,7 +810,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2747;
+		items=2751;
 		class Item0
 		{
 			dataType="Marker";
@@ -63013,6 +63014,313 @@ class Mission
 			};
 			id=6239;
 			type="Land_CampingTable_F";
+		};
+		class Item2747
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6090.4658,18.261127,5598.8047};
+						angles[]={0,4.6949358,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						init="call{this addAction [""<t color='#FF0000'>BARRICADAS</t>"", ""[] execVM 'scripts\caixa\barricada1.sqf'"", '(alive player) && player distance _target < 3'];}";
+						disableSimulation=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="hgun_Rook40_F";
+								class primaryMuzzleMag
+								{
+									name="16Rnd_9x21_Mag";
+									ammoLeft=17;
+								};
+							};
+							class uniform
+							{
+								typeName="U_C_Poor_1";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=2;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="Itemwatch";
+							radio="ItemRadio";
+							headgear="H_Bandanna_surfer";
+						};
+					};
+					id=6247;
+					type="O_support_AMG_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6246;
+		};
+		class Item2748
+		{
+			dataType="Marker";
+			position[]={6087.7119,18.226999,5595.562};
+			name="barricada1";
+			text="Barricadas(SOMENTE LÍDER)";
+			type="mil_dot";
+			colorName="ColorBrown";
+			id=6248;
+			atlOffset=0.00033950806;
+		};
+		class Item2749
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2961.374,41.89756,5722.3267};
+						angles[]={0,2.6529007,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						init="call{this addAction [""<t color='#FF0000'>BARRICADAS</t>"", ""[] execVM 'scripts\caixa\barricada2.sqf'"", '(alive player) && player distance _target < 3'];}";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poor_1";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=2;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="Itemwatch";
+							radio="ItemRadio";
+							headgear="H_Bandanna_surfer";
+						};
+					};
+					id=6250;
+					type="O_support_AMG_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6249;
+		};
+		class Item2750
+		{
+			dataType="Marker";
+			position[]={2953.0371,41.007999,5718.1938};
+			name="barricada2";
+			text="Barricadas(SOMENTE LÍDER)";
+			type="mil_dot";
+			colorName="ColorBrown";
+			id=6251;
+			atlOffset=-0.00035476685;
 		};
 	};
 	class Connections
