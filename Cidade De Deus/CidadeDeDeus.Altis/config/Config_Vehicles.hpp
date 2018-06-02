@@ -873,10 +873,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "";
         price = 575000;
         textures[] = {
-            /*{ "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" },*/
+            { "Rebelde", "civ", {
+                ""
+            }, "" },
 			{ "BOPE", "cop", {
 				"textures\veh\cop\bopehunter.paa",
 				"textures\veh\cop\bopehunter2.paa"

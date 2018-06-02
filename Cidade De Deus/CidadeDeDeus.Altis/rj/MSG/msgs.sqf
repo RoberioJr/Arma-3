@@ -10,7 +10,7 @@
     // Add a line in this array to add a message  
     _messages = [  
         "Alguma Dúvida? Entre Em Nosso TS3:<br/> <t color='#e32828' size='1.5'>IP.TS3CDD.TS3IP</t>",  
-        "Nosso Site:<br/><t color='#e32828' size='1.5'>www.cidadededeus.com</t>"  
+        "Nosso Site:<br/><t color='#e32828' size='1.5'>www.cddaltislife.com</t>"  
     ];  
 
     _refreshTime = 900; // Time between each message (in seconds)  

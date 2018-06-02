@@ -20,15 +20,37 @@ if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
     _itemArray = M_CONFIG(getArray,"WeaponShops",_shop,"items");
     _item = [_item,_itemArray] call TON_fnc_index;
     _price = ((_itemArray select _item) select 3);
-    _priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Price: <t color='#8cff9b'>$%1</t></t>",[(_price)] call life_fnc_numberText];
+    _priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Preço: <t color='#8cff9b'>$%1</t></t>",[(_price)] call life_fnc_numberText];
     _control lbSetValue[_index,_price];
 } else {
     _price = _control lbValue _index;
+	
+	/* ALTERAÇÃO BY: ROBÉRIOJR DONORLEVEL */
+
+_doador0desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador0");
+_doador1desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador1");
+_doador2desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador2");
+_doador3desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador3");
+_doador4desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador4");
+_doador5desc = LIFE_SETTINGS(getNumber,"rj_desconto_doador5");
+
+switch(FETCH_CONST(life_donorlevel)) do
+{
+	case 0: {_price = _price * _doador0desc;}; 
+	case 1: {_price = _price * _doador1desc;};
+	case 2: {_price = _price * _doador2desc;}; 
+	case 3: {_price = _price * _doador3desc;}; 
+	case 4: {_price = _price * _doador4desc;}; 
+	case 5: {_price = _price * _doador5desc;}; 
+};
+
+/**********************************/
+	
     _item = CONTROL_DATAI(_control,_index);
     if (_price > CASH) then {
-        _priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Price: <t color='#ff0000'>$%1</t><br/>You lack: <t color='#8cff9b'>$%2</t></t>",[(_price)] call life_fnc_numberText,[(_price - CASH)] call life_fnc_numberText];
+        _priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Preço: <t color='#ff0000'>$%1</t><br/>Falta: <t color='#8cff9b'>$%2</t></t>",[(_price)] call life_fnc_numberText,[(_price - CASH)] call life_fnc_numberText];
     } else {
-        _priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Price: <t color='#8cff9b'>$%1</t></t>",[(_price)] call life_fnc_numberText];
+        _priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Preço: <t color='#8cff9b'>$%1</t></t>",[(_price)] call life_fnc_numberText];
     };
     if ((uiNamespace getVariable ["Weapon_Magazine",0]) isEqualTo 0 && (uiNamespace getVariable ["Weapon_Accessories",0]) isEqualTo 0) then {
             if (isClass (configFile >> "CfgWeapons" >> _item)) then {

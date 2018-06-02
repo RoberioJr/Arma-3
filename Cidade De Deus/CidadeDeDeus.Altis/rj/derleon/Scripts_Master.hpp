@@ -9,7 +9,7 @@ class Leonbeeser_Settings {
 	/*In this brackets [] you can find the default settings e.g. [false] or [4]*/
 	
 /*autosave*/
-	autosaveInterval = 8; // Automatic saving intervall in minutes default [15]
+	autosaveInterval = 6; // Automatic saving intervall in minutes default [15]
 	lockManuelSync = true; // locks manuel sync [true]
 	lockSyncTime = 2; // Time in minutes [1] for locking manuel sync after automatic saving; ONLY ACTIVE IF lockManuelSync is set to true!
 	chatInfo = true; // Turn to false if you don´t like to see a saving message, [true] to got a message in system chat

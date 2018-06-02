@@ -3,45 +3,25 @@
     <Package name="Init">
         <Key ID="STR_Init_ClientSetup">
             <Original>Setting up client, please wait...</Original>
-            <Czech></Czech>
             <Spanish>Configurando cliente. Por favor espere...</Spanish>
-            <Russian></Russian>
-            <German>Einrichten des Clients, bitte warten...</German>
-            <Italian>Caricamento dati, attendi...</Italian>
-            <French>Configuration du client. Patientez s'il vous plait...</French>
             <Portuguese>Configurando o cliente. Por favor, aguarde...</Portuguese>
             <Polish></Polish>
         </Key>
         <Key ID="STR_Init_ServerReady">
             <Original>Waiting for the server to be ready...</Original>
-            <Czech></Czech>
             <Spanish>Esperando a que el servidor esté listo...</Spanish>
-            <Russian></Russian>
-            <German>Warten, bis der Server bereit ist...</German>
-            <Italian>Caricamento Server, attendi...</Italian>
-            <French>En attente du chargement du serveur...</French>
             <Portuguese>Esperando o servidor estar pronto...</Portuguese>
             <Polish></Polish>
         </Key>
         <Key ID="STR_Init_ExtdbFail">
             <Original>extDB failed to load, please contact an administrator.</Original>
-            <Czech></Czech>
             <Spanish>extDB no se pudo cargar, por favor contacte a un administrador.</Spanish>
-            <Russian></Russian>
-            <German>extDB konnte nicht geladen werden, wenden Sie sich bitte an einen Administrator.</German>
-            <Italian>C'è stato un'errore con extDB, perfavore contatta un amministratore.</Italian>
-            <French>extDB ne s'est pas lancé correctement. Veuillez contacter un administrateur.</French>
             <Portuguese>O extDB falhou ao carregar, por favor, contacte um administrador.</Portuguese>
             <Polish></Polish>
         </Key>
         <Key ID="STR_Init_ClientFinish">
             <Original>Finishing client setup procedure...</Original>
-            <Czech></Czech>
             <Spanish>Finalizando configuración del cliente...</Spanish>
-            <Russian></Russian>
-            <French>Finalisation de la procédure de configuration du client...</French>
-            <German>Fertigstellen der Client-Einrichtungs-Prozedur...</German>
-            <Italian>Completando procedura d'inizializzazione </Italian>
             <Portuguese>Terminando o processo de configuração do cliente...</Portuguese>
             <Polish></Polish>
         </Key>
@@ -49,14 +29,7 @@
     <Package name="Shop_Names">
         <Key ID="STR_Shops_C_Bruce">
             <Original>Loja de Roupas</Original>
-            <Czech>Bruceovy Outback Oblečení</Czech>
-            <French>Vêtements de Bruce</French>
-            <Spanish>Tienda de Ropa</Spanish>
-            <Russian></Russian>
             <Portuguese>Loja de Roupas</Portuguese>
-            <Polish>Sklep odzieżowy</Polish>
-            <Italian>Emporio di Bruce</Italian>
-            <German>Bruce's Outback Outfits</German>
         </Key>
         <Key ID="STR_Shops_C_Police">
             <Original>Loja de Roupas Policiais</Original>
@@ -66,296 +39,139 @@
             <Russian></Russian>
             <Portuguese>Loja de Roupas Policiais</Portuguese>
             <Polish>Sklep Policyjny</Polish>
-            <Italian>Dipartimento della Polizia di Altis</Italian>
-            <German>Altis Polizei Department Geschäft</German>
         </Key>
         <Key ID="STR_Shops_C_Rebel">
             <Original>Loja de Roupas Rebeldes</Original>
-            <Czech>Mohamedův džihád Shop</Czech>
-            <French>Vêtements rebelle</French>
             <Spanish>Tienda Jihadi de Mohamed</Spanish>
-            <Italian>Negozio della Jihad di Mohammed</Italian>
-            <Russian></Russian>
             <Portuguese>Loja de Roupas Rebeldes</Portuguese>
-            <Polish>Sklep samobójców AKBAR</Polish>
-            <German>Mohammed's Ausrüstungen</German>
         </Key>
         <Key ID="STR_Shops_C_Diving">
             <Original>Loja de equipamentos para Mergulho</Original>
-            <Czech>Steve je potápění obchod</Czech>
-            <French>Vêtements de plongée de Steve</French>
             <Spanish>Tienda de Buceo</Spanish>
-            <Italian>Negozio Sub di Steve</Italian>
-            <Russian></Russian>
-            <German>Steve's Taucherausrüstung</German>
             <Portuguese>Loja de equipamentos para Mergulho</Portuguese>
-            <Polish>Sklep dla nurków</Polish>
         </Key>
         <Key ID="STR_Shops_C_Gun">
             <Original>Billy Joe's Clothing</Original>
-            <Czech>Billy Joe oblečení</Czech>
             <Spanish>Tienda de Ropa de Billy Joe</Spanish>
-            <Russian></Russian>
-            <German>Billy Joe's Bekleidung</German>
-            <Italian>Emporio di Billy</Italian>
-            <French>Vêtements de tir</French>
             <Portuguese>Roupa Billy Joe</Portuguese>
-            <Polish>Billy Joe Odzież</Polish>
         </Key>
         <Key ID="STR_Shops_W_Gun">
             <Original>Billy Joe's Firearms</Original>
-            <Czech>Billy Joe Střelné zbraně</Czech>
             <Spanish>Tienda de Armas de Billy Joe</Spanish>
-            <Russian></Russian>
-            <German>Billy Joe's Schusswaffen</German>
-            <Italian>Armeria di Billy Joe</Italian>
-            <French>Armurerie de Billy Joe</French>
             <Portuguese>Armas de fogo Billy Joe</Portuguese>
-            <Polish>Broń palna Billy Joe</Polish>
         </Key>
         <Key ID="STR_Shops_C_Kart">
             <Original>Bobby's Kart-Racing Outfits</Original>
-            <Czech>Billy Joe Střelné zbraně</Czech>
-            <French>Vêtements de kart</French>
             <Spanish>Tienda de Trajes de Carreras</Spanish>
-            <Italian>Vestiario da Pilota </Italian>
-            <Russian></Russian>
-            <German>Bobby's Gokart Rennbekleidung</German>
             <Portuguese>Loja de equipamentos para Kart</Portuguese>
-            <Polish>Sklep Kartingowy</Polish>
         </Key>
         <Key ID="STR_Shops_Market">
             <Original>Mercado</Original>
-            <Czech>Altis Market</Czech>
             <Spanish>Mercado de Altis</Spanish>
-            <Russian></Russian>
-            <German>Altis Markt</German>
-            <Italian>Mercato</Italian>
-            <French>Marché d'Altis</French>
             <Portuguese>Mercado</Portuguese>
-            <Polish>Market Altis</Polish>
         </Key>
         <Key ID="STR_Shops_Rebel">
             <Original>Mercado Rebelde</Original>
-            <Czech>Rebel Market</Czech>
             <Spanish>Mercado Rebelde</Spanish>
-            <Russian></Russian>
-            <German>Rebellen Markt</German>
-            <Italian>Mercato Ribelle</Italian>
-            <French>Marché Rebelle</French>
             <Portuguese>Mercado Rebelde</Portuguese>
-            <Polish>Market Rebeliantów</Polish>
         </Key>
         <Key ID="STR_Shops_Gang">
             <Original>Mercado da Gangue</Original>
-            <Czech>gang Market</Czech>
             <Spanish>Mercado Pandillero</Spanish>
-            <Russian></Russian>
-            <German>Gang Markt</German>
-            <Italian>Mercato Gang</Italian>
-            <French>Marché de Gang</French>
             <Portuguese>Mercado da Gangue</Portuguese>
-            <Polish>Market Gangu</Polish>
         </Key>
         <Key ID="STR_Shops_C_Gang">
             <Original>Gang Clothing</Original>
-            <Czech>gang Oblečení</Czech>
             <Spanish>Ropa Pandillera</Spanish>
-            <Russian></Russian>
-            <German>Gang Kleidung</German>
-            <Italian>Gang Abbigliamento</Italian>
-            <French>Vêtements de Gang</French>
             <Portuguese>Roupa Gangue</Portuguese>
-            <Polish>Gang Odzież</Polish>
         </Key>
         <Key ID="STR_Shops_Wongs">
             <Original>Wong's Food Cart</Original>
-            <Czech>Wongova Food košík</Czech>
             <Spanish>Kiosko de Wong</Spanish>
-            <Russian></Russian>
-            <German>Wong's Spezialitäten</German>
-            <Italian>Alimentari</Italian>
-            <French>Restaurant de Wong</French>
             <Portuguese>Praça de Alimentação</Portuguese>
-            <Polish>Przysmaki Wonga</Polish>
         </Key>
         <Key ID="STR_Shops_Coffee">
             <Original>Gyro's Coffee</Original>
-            <Czech>gyros Coffee</Czech>
             <Spanish>Cafetería de Gyro</Spanish>
-            <Russian></Russian>
-            <German>Gyro's Café</German>
-            <Italian>Caffè</Italian>
-            <French>Café de Gyro</French>
             <Portuguese>Café do Gyro</Portuguese>
-            <Polish>Kawiarnia</Polish>
         </Key>
         <Key ID="STR_Shops_DrugDealer">
             <Original>Tonic's Narcotics</Original>
-            <Czech>Tonic je narkotika</Czech>
             <Spanish>Narcotraficante</Spanish>
-            <Russian></Russian>
-            <German>Drogendealer</German>
-            <Italian>Spacciatore</Italian>
-            <French>Dealeur de Drogue</French>
             <Portuguese>Traficante</Portuguese>
-            <Polish>Sprzedawca 'Trawy'</Polish>
         </Key>
         <Key ID="STR_Shops_Oil">
             <Original>Oil Trader</Original>
-            <Czech>olej Trader</Czech>
             <Spanish>Comerciante de Petroleo</Spanish>
-            <Russian></Russian>
-            <German>Ölhändler</German>
-            <Italian>Vendita Petrolio</Italian>
-            <French>Acheteur de Pétrole</French>
             <Portuguese>Comprador de Petróleo</Portuguese>
-            <Polish>Skup Ropy</Polish>
         </Key>
         <Key ID="STR_Shops_FishMarket">
             <Original>Local Fish Market</Original>
-            <Czech>Místní Fish Market</Czech>
             <Spanish>Mercado Local del Pescado</Spanish>
-            <Russian></Russian>
-            <German>Fischmarkt</German>
-            <Italian>Pescivendolo</Italian>
-            <French>Marché de Poissons</French>
             <Portuguese>Mercado de Peixes</Portuguese>
-            <Polish>Sklep Rybny</Polish>
         </Key>
         <Key ID="STR_Shops_Glass">
             <Original>Glass Trader</Original>
-            <Czech>sklo Trader</Czech>
             <Spanish>Comerciante de Vidrio</Spanish>
-            <Russian></Russian>
-            <German>Glashändler</German>
-            <Italian>Vendita Vetro</Italian>
-            <French>Acheteur de Verre</French>
             <Portuguese>Comprador de Vidro</Portuguese>
-            <Polish>Skup Szkła</Polish>
         </Key>
         <Key ID="STR_Shops_Minerals">
             <Original>Altis Industrial Trader</Original>
-            <Czech>Altis Industrial Trader</Czech>
             <Spanish>Comerciante Industrial</Spanish>
-            <Russian></Russian>
-            <German>Altis Industriehandel</German>
-            <Italian>Vendita materiali industriali</Italian>
-            <French>Acheteur de minerais</French>
             <Portuguese>Comprador de Material Indústrial</Portuguese>
-            <Polish>Skup materiałów przemysłowych</Polish>
         </Key>
         <Key ID="STR_Shops_Cop">
             <Original>Equipamentos da Polícia</Original>
-            <Czech>APD Item Shop</Czech>
             <Spanish>Equipamiento Policial</Spanish>
-            <Russian></Russian>
-            <German>APD Ausrüstung</German>
-            <Italian>Negozio Polizia</Italian>
-            <French>Equipement policier</French>
             <Portuguese>Equipamentos da Polícia</Portuguese>
-            <Polish>Zbrojownia Policji</Polish>
         </Key>
         <Key ID="STR_Shops_Cement">
             <Original>Juan's Cement Laying</Original>
-            <Czech>Juanovo Cement Pokládka</Czech>
             <Spanish>Fabrica de Cemento de Juan</Spanish>
-            <Russian></Russian>
-            <German>Juan's Zementleger</German>
-            <Italian>Vendita Cemento</Italian>
-            <French>Acheteur de Ciment</French>
             <Portuguese>Comprador de Cimento</Portuguese>
-            <Polish>Wytwórnia cementu</Polish>
         </Key>
         <Key ID="STR_Shops_Gold">
             <Original>Cash 4 Gold</Original>
-            <Czech>Peněžní 4 Gold</Czech>
             <Spanish>Comprador de Oro</Spanish>
-            <Russian></Russian>
-            <German>Goldhändler</German>
-            <Italian>Vendita Oro</Italian>
-            <French>Acheteur d'Or</French>
             <Portuguese>Comprador de Ouro</Portuguese>
-            <Polish>Skup złota</Polish>
         </Key>
         <Key ID="STR_Shops_Diamond">
             <Original>Diamond Dealer</Original>
-            <Czech>Diamond Dealer</Czech>
             <Spanish>Comerciante de Diamantes</Spanish>
-            <Russian></Russian>
-            <German>Juwelier</German>
-            <Italian>Gioielleria</Italian>
-            <French>Acheteur de Diamant</French>
             <Portuguese>Comprador de Diamante</Portuguese>
-            <Polish>Skup Diamentów</Polish>
         </Key>
         <Key ID="STR_Shops_Salt">
             <Original>Salt Trader</Original>
-            <Czech>sůl Trader</Czech>
             <Spanish>Comerciante de Sal</Spanish>
-            <Russian></Russian>
-            <German>Salzhändler</German>
-            <Italian>Vendita Sale</Italian>
-            <French>Acheteur de Sel</French>
             <Portuguese>Comprador de Sal</Portuguese>
-            <Polish>Skup soli</Polish>
         </Key>
         <Key ID="STR_Shop_Station_Coffee">
             <Original>Fuel Station Coffee</Original>
-            <Czech>Palivo Coffee Station</Czech>
-            <French>Café de la Station service</French>
             <Spanish>Cafeteria de Gasolinera</Spanish>
-            <Italian>Stazione di Servizio</Italian>
-            <Russian></Russian>
-            <German>Tankstellen Café</German>
             <Portuguese>Loja de Conveniência</Portuguese>
-            <Polish>Caffe OLLEN</Polish>
         </Key>
     </Package>
     <Package name="Global">
         <Key ID="STR_Global_Close">
             <Original>Close</Original>
-            <Czech>Zavřít</Czech>
             <Spanish>Cerrar</Spanish>
-            <Russian></Russian>
-            <German>Schließen</German>
-            <French>Fermer</French>
-            <Italian>Chiudi</Italian>
             <Portuguese>Fechar</Portuguese>
-            <Polish>Zamknij</Polish>
         </Key>
         <Key ID="STR_Global_Sell">
             <Original>Sell</Original>
-            <Czech>Prodat</Czech>
             <Spanish>Vender</Spanish>
-            <Russian></Russian>
-            <German>Verkaufen</German>
-            <French>Vendre</French>
-            <Italian>Vendi</Italian>
             <Portuguese>Vender</Portuguese>
-            <Polish>Sprzedaj</Polish>
         </Key>
         <Key ID="STR_Global_Buy">
             <Original>Buy</Original>
-            <Czech>Koupit</Czech>
             <Spanish>Comprar</Spanish>
-            <Russian></Russian>
-            <German>Kaufen</German>
-            <French>Acheter</French>
-            <Italian>Compra</Italian>
             <Portuguese>Comprar</Portuguese>
-            <Polish>Kup</Polish>
         </Key>
         <Key ID="STR_Global_Mags">
             <Original>Magazines</Original>
-            <Czech>časopisy</Czech>
             <French>Chargeurs</French>
             <Spanish>Cargadores</Spanish>
-            <Italian>Caricatori</Italian>
-            <Polish>Magazyny</Polish>
-            <Russian></Russian>
             <Portuguese>Munições</Portuguese>
-            <German>Magazine</German>
         </Key>
         <Key ID="STR_Global_Accs">
             <Original>Accessories</Original>
@@ -5222,91 +5038,43 @@
         </Key>
         <Key ID="STR_Cop_NoIllegalContainer">
             <Original>Nothing illegal in this container.</Original>
-            <Czech>Nic nezákonného v tomto kontejneru</Czech>
             <Spanish>Nada ilegal en este contenedor</Spanish>
-            <Italian>Nulla di illegale in questo contenitore</Italian>
-            <Polish>Nic nielegalnego w tym pojemniku.</Polish>
-            <Russian></Russian>
             <Portuguese>Nada ilegal dentro do container</Portuguese>
-            <French>Rien d'illégal dans ce conteneur</French>
-            <German>Nichts Illegales in diesem Container.</German>
         </Key>
         <Key ID="STR_Cop_VehEmpty">
             <Original>This vehicle is empty</Original>
-            <Czech>Toto vozidlo je prázdná</Czech>
             <Spanish>Este vehículo esta limpio</Spanish>
-            <Russian></Russian>
-            <German>Dieses Fahrzeug ist leer.</German>
-            <French>Ce véhicule est vide</French>
-            <Italian>Questo veicolo è vuoto</Italian>
             <Portuguese>Esse veículo está vazio</Portuguese>
-            <Polish>Pojazd jest pusty</Polish>
         </Key>
         <Key ID="STR_Cop_ContainerEmpty">
             <Original>This container is empty</Original>
-            <Czech>Tento zásobník je prázdný</Czech>
-            <French>Ce conteneur est vide</French>
             <Spanish>Este contenedor esta vacío</Spanish>
-            <Italian>Questo contenitore è vuoto</Italian>
-            <Polish>Ten pojemnik jest pusty</Polish>
             <Portuguese>Este recipiente está vazio</Portuguese>
-            <Russian>Этот контейнер пуст</Russian>
-            <German>Dieser Container ist leer.</German>
         </Key>
         <Key ID="STR_Cop_RobberDead">
             <Original>$%1 from the Federal Reserve robbery was returned from the robber being killed.</Original>
-            <Czech>$%1 z Federálního rezervního systému loupeže byla vrácena ze lupič byl zabit.</Czech>
             <Spanish>$%1 de la Reserva Federal fue devuelto, ya que mataron al ladrón.</Spanish>
-            <Russian></Russian>
-            <German>$%1 wurden in die Zentralbank zurückgebracht, weil der Bankräuber gestorben ist.</German>
-            <French>$%1 du vol de la Banque Fédérale ont été récupérés sur le braqueur, qui vient d'être tué.</French>
-            <Italian>$%1 della rapina alla Riserva Federale sono stati recuperati dal rapinatore ucciso.</Italian>
             <Portuguese>R$%1 que foi roubado da Reserva Federal retornou a ela após a morte do ladrão.</Portuguese>
-            <Polish>$%1 z kradzieży w Banku zostało zwrócone po zabiciu włamywacza.</Polish>
         </Key>
         <Key ID="STR_Cop_RepairVault">
             <Original>Repairing vault...</Original>
-            <Czech>Oprava klenby ...</Czech>
             <Spanish>Reparando bóveda...</Spanish>
-            <Russian></Russian>
-            <German>Tresor wird repariert...</German>
-            <French>Réparation du coffre...</French>
-            <Italian>Riparando il Caveau</Italian>
             <Portuguese>Reparando Cofre...</Portuguese>
-            <Polish>Naprawiam skarbiec...</Polish>
         </Key>
         <Key ID="STR_Cop_VaultRepaired">
             <Original>The vault is now fixed and re-secured.</Original>
-            <Czech>Klenba je nyní pevně stanovena a re-zabezpečeny.</Czech>
             <Spanish>La bóveda esta reparada y segura.</Spanish>
-            <Russian></Russian>
-            <German>Der Tresor wurde repariert.</German>
-            <French>Le coffre est de nouveau sécurisé.</French>
-            <Italian>Il Caveau è stato riparato e messo in sicurezza.</Italian>
             <Portuguese>O Cofre foi consertado e está seguro.</Portuguese>
-            <Polish>Skarbiec jest naprawiony i zabezpieczony.</Polish>
         </Key>
         <Key ID="STR_Cop_VaultLocked">
             <Original>The vault is already locked?</Original>
-            <Czech>Klenba je již uzamčen?</Czech>
             <Spanish>La bóveda ya esta cerrada?</Spanish>
-            <Russian></Russian>
-            <German>Ist der Tresor abgeschlossen?</German>
-            <French>Le coffre est déjà fermé?</French>
-            <Italian>Il Caveau è già bloccato?</Italian>
             <Portuguese>O Cofre está trancado?</Portuguese>
-            <Polish>Skarbiec jest zablokowany?</Polish>
         </Key>
         <Key ID="STR_Cop_VaultUnder1">
             <Original>You can't enter anything below 1!</Original>
-            <Czech>Nemůžete nic zadávat menší než 1!</Czech>
             <Spanish>No puede poner nada menor que 1!</Spanish>
-            <Russian></Russian>
-            <German>Du kannst nichts unter 1 eingeben!</German>
-            <French>Vous ne pouvez pas prendre moins de 1 objet !</French>
-            <Italian>Non puoi selezionare nulla sotto l'1!</Italian>
             <Portuguese>Não é permitido usar valores abaixo de 1!</Portuguese>
-            <Polish>Nie możesz wprowadzić niczego poniżej 1!</Polish>
         </Key>
         <Key ID="STR_Cop_OnlyGold">
             <Original>You can't store anything but gold bars in the safe.</Original>
