@@ -83,6 +83,12 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_bars
   diag_log "RJ: Marca D'Agua - Ativado";
   [] execVM "rj\Logo\fn_iniciarLogo.sqf";
  };
+ 
+ /* KillFeed */
+  [] execVM "rj\MSG\mortos.sqf";
+  
+ /* Painel De Info Do Servidor */
+  [] execVM "rj\MSG\ServerInfoMenu\sqf\initLocal.sqf";
 
   
  

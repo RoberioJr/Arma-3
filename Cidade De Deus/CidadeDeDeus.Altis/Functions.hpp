@@ -399,5 +399,8 @@ class Life_Client_Core {
         class vehStoreItem {};
         class vehTakeItem {};
         class vInteractionMenu {};
+		/* EDIT RJ */
+		class vehTakeAllItem {};
+        class vehStoreAllItem {};
     };
 };

@@ -1,27 +1,27 @@
 class CfgServerInfoMenu
 {
    addAction = 1; // Enable/disable action menu item | use 0 to disable | default: 1 (enabled)
-   antiHACK = "BASIX + BattlEye";
-   hostedBy = "Delta Servers";
-   ipPort = "000.123.456.789:2302";
+   antiHACK = "InfiStar + BattlEye";
+   hostedBy = "HOSPEDAGEM";
+   ipPort = "IPDOSERVIDOR:2302";
    openKey = "User7"; // https://community.bistudio.com/wiki/inputAction/actions
-   openAtLogin = no;
+   openAtLogin = yes;
    restart = 6; // Amount of hours before server automatically restarts
-   serverName = "BOPE: Realidades Do Rio";
+   serverName = "Cidade De Deus AltisLife";
    class menuItems
    {
       // title AND content accept formatted text ( since update Oct5.2016 )
       class first
       {
          menuName = "Geral";
-         title = "<t color='#ffffff'>GENERAL INFORMATION</t>";
+         title = "<t color='#ffffff'>Informações Gerais</t>";
          content[] = {
-            "This is some placeholder text"
+            "Leia Antes De Começar"
          };
       };
       class second
       {
-         menuName = "1.Regras de Conhecimento Basico";
+         menuName = "Regras de Conhecimento Basico";
          title = "1.Regras de Conhecimento Basico";
          content[] = {
             "1.1 - Qualquer um pego trapaceando em nosso servidor será banido e reportado à BI (Bohemia Interactive).",
@@ -35,17 +35,16 @@ class CfgServerInfoMenu
       };
       class third
       {
-         menuName = "2.Regras do Teamspeak";
+         menuName = "Regras do Teamspeak";
          title = "2.Regras do Teamspeak";
          content[] = {
-             "2.1 - Para estar no servidor do jogo você deve ter o plug-in “Task Force Arma 3 Radio” instalado e ativado.",
-             "2.2 - Evite deixar o microfone transmitindo quando estiver falando com pessoas de seu ambiente doméstico. Caso seja necessário crie uma tecla de atalho para a funcionalidade “Push-to-Talk”."
-             "2.3 - Não use soundboard."
+             "2.1 - Evite deixar o microfone transmitindo quando estiver falando com pessoas de seu ambiente doméstico. Caso seja necessário crie uma tecla de atalho para a funcionalidade “Push-to-Talk”."
+             "2.2 - Não use soundboard."
 		 };
       };
       class fourth
       {
-         menuName = "3.Regras específicas";
+         menuName = "Regras específicas";
          title = "3.Regras específicas";
          content[] = {
 			 "3.1 - Você não pode interromper ou atrapalhar um evento do servidor.",
@@ -54,13 +53,12 @@ class CfgServerInfoMenu
       };
       class fifth
       {
-         menuName = "4.Regras Sobre Zonas Seguras";
+         menuName = "Regras Sobre Zonas Seguras";
          title = "4.Regras Sobre Zonas Seguras";
          content[] = {
-			 "Nenhum tipo de ação perigosa pode ser iniciada em uma ZS.",
-             "Lista de ZS: Base do BOPE, Areas de Respawn de Facções e futuramente mais.",
-             "4.1 - Não se pode atirar de fora para dentro ou de dentro para fora de uma ZS.",
-             "4.2 - Em caso de tentativa de resgate de prisioneiros, a prisão não será considerada ZS."
+			 "Nenhum tipo de ação perigosa pode ser iniciada em uma SZ.",
+             "4.1 - Não se pode atirar de fora para dentro ou de dentro para fora de uma SZ.",
+             "4.2 - Em caso de tentativa de Roubo ou Assasinato, Tire Print E Denuncie!."
 		 };
       };
       class sixth
@@ -78,16 +76,17 @@ class CfgServerInfoMenu
          title = "Manual de Boa Conduta";
          content[] = {
            "Estes tópicos aborda fatores que não apoiamos serem feitos no servidor, mas também não são passivos de punição, são algumas situações que consideramos importantes para o fair play e diversão geral.",
-           "Não cometer team kill.",
-           "Atrapalhar a jogada do próximo.",
+           "Não cometer RMD.",
+           "Atrapalhar a jogatina do próximo.",
            "Não sequestrar jogadores ao menos que seja necessário para completar um plano maior.",
            "Não abandonar veículos pelas ruas.",
            "Punições: Jogadores que descumprirem regras terão como punição uma advertência dada como tag no Teamspeak. Serão toleradas no máximo 2 advertências, de forma a cada uma destas ser acompanhada de um banimento caso a equipe julgue necessário.",
-           "1ª Advertência = 1 a 3 dias de banimento",
-           "2ª Advertência = 7 dias de banimento",
-           "3ª Advertência = Banimento permanente"
+           "1ª Advertência = TAG TS3",
+           "2ª Advertência = Pode Gerar 1 - 3 dias de Banimento",
+           "3ª Advertência = Pode Gerar 1 Semana De Banimento"
          };
 	  };
+	  /*
      class eighty
       {
          menuName = "Doadores";
@@ -114,5 +113,6 @@ class CfgServerInfoMenu
             "1 Slot reservado."
          };
       };
+	  */
    };
 };

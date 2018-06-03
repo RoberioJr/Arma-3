@@ -1,8 +1,8 @@
 class RscDisplayServerInfoMenu
 {
    idd = 7770;
-   onKeyDown = "if (_this select 1 isEqualTo 0x01) then { [] ExecVM 'scarCODE\ServerInfoMenu\sqf\onEscape.sqf' }; true";
-   onLoad = "uiNamespace setVariable ['RscDisplayServerInfoMenu', _this select 0]; [] ExecVM 'scarCODE\ServerInfoMenu\sqf\onLoad.sqf'; playSound ['ZoomIn', true]; 'DynamicBlur' ppEffectEnable true; 'DynamicBlur' ppEffectAdjust [7]; 'DynamicBlur' ppEffectCommit 0.1";
+   onKeyDown = "if (_this select 1 isEqualTo 0x01) then { [] ExecVM 'rj\MSG\ServerInfoMenu\sqf\onEscape.sqf' }; true";
+   onLoad = "uiNamespace setVariable ['RscDisplayServerInfoMenu', _this select 0]; [] ExecVM 'rj\MSG\ServerInfoMenu\sqf\onLoad.sqf'; playSound ['ZoomIn', true]; 'DynamicBlur' ppEffectEnable true; 'DynamicBlur' ppEffectAdjust [7]; 'DynamicBlur' ppEffectCommit 0.1";
    onUnLoad = "uiNamespace setVariable ['RscDisplayServerInfoMenu', displayNull]; playSound ['ZoomOut', true]; 'DynamicBlur' ppEffectAdjust [0]; 'DynamicBlur' ppEffectCommit 0.1";
    movingEnable = 1;
    #define GUI_GRID_X	(0)

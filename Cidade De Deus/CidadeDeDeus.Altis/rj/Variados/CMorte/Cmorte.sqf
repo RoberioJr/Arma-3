@@ -5,7 +5,7 @@
 */
 
 
-Minutos = 900;
+Minutos = 600;
 publicvariable "Minutos";
 Minutosd = true;
 publicvariable "Minutosd";
