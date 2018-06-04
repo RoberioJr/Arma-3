@@ -30,7 +30,7 @@ class CfgServerInfoMenu
             "1.4 - Não atrapalhar outros jogadores com brincadeiras.",
             "1.5 - Perturbar com comportamento inadequado não será permitido(ex.: spam).",
             "1.6 - Você não pode forçar alguém a quebrar regras do servidor.",
-            "1.7 - Caso tenha algum problema técnico ou dúvida que a equipe possa resolver, aguarde na sala “Aguardando Atendimento” do Teamspeak. Caso sejam problemas de quebra de regra por parte de jogadores ou tentativa de reembolso use o fórum. Estes últimos casos só serão atendidos no Teamspeak caso haja disponibilidade de equipe e tenha sido postada no fórum a situação.",
+            "1.7 - Caso tenha algum problema técnico ou dúvida que a equipe possa resolver, aguarde na sala “Aguardando Atendimento” do Teamspeak. Caso sejam problemas de quebra de regra por parte de jogadores ou tentativa de reembolso use o fórum. Estes últimos casos só serão atendidos no Teamspeak caso haja disponibilidade de equipe e tenha sido postada no fórum a situação."
          };
       };
       class third
@@ -38,7 +38,7 @@ class CfgServerInfoMenu
          menuName = "Regras do Teamspeak";
          title = "2.Regras do Teamspeak";
          content[] = {
-             "2.1 - Evite deixar o microfone transmitindo quando estiver falando com pessoas de seu ambiente doméstico. Caso seja necessário crie uma tecla de atalho para a funcionalidade “Push-to-Talk”."
+             "2.1 - Evite deixar o microfone transmitindo quando estiver falando com pessoas de seu ambiente doméstico. Caso seja necessário crie uma tecla de atalho para a funcionalidade “Push-to-Talk”.",
              "2.2 - Não use soundboard."
 		 };
       };
