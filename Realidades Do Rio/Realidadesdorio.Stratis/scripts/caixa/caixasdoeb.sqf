@@ -14,14 +14,13 @@ if ((getPlayerUID player) in _LideresBANDIDO) then {
 	    sleep 10;
 		_caixaEB = "Caixa_IA2" createVehicle getMarkerPos "entregaeb";
 		/* Esvaziar Caixa */
-		 //clearItemCargoGlobal _caixaEB;
-         //clearMagazineCargoGlobal _caixaEB;
-         //clearWeaponCargoGlobal _caixaEB;
-         //clearBackpackCargoGlobal _caixaEB;
+		 clearItemCargoGlobal _caixaEB;
+         clearMagazineCargoGlobal _caixaEB;
+         clearWeaponCargoGlobal _caixaEB;
+         clearBackpackCargoGlobal _caixaEB;
 		/* Adicionar Items */
-		_caixaEB addWeaponCargo ["CLASSNAME DA ARMA",5];
-		_caixaEB addMagazineCargo ["CLASSNAME DOS PENTES", 5];
-	    //armaseb setPos (getMarkerPos entregaeb);
+		_caixaEB addWeaponCargo ["BAD_IA2_762",30];
+		_caixaEB addMagazineCargo ["20Rnd_762x39_Mag_F", 120];
     } else {
         hint "Você não têm o dinheiro suficiente";
     };
