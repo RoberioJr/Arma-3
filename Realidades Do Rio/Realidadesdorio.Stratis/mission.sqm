@@ -62520,7 +62520,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="call{this addAction [""Comprar desvio de armas do EB"", ""scripts\caixa\caixasdoeb..sqf""];}";
+						init="call{this addAction [""Comprar desvio de armas do EB"", ""scripts\caixa\caixasdoeb.sqf""];}";
 						name="comprareb";
 						disableSimulation=1;
 						class Inventory
