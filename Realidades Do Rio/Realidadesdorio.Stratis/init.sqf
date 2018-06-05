@@ -23,9 +23,6 @@
 	//NameTags...
 	122014 cutrsc ["NameTag","PLAIN"];              //Script NameTags
 	
-	//Init condição do desvio de armas do EB por caixas
-	[] execVM "config\init_caixasdoeb.sqf";
-	
  
  //Remover Voz De Bots Falando No Radio
  0 fadeRadio 0;
