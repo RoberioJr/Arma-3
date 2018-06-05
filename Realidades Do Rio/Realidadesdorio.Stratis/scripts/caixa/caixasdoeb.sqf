@@ -4,6 +4,7 @@
 / Rio De Janeiro /
 */
 #include "..\..\UIDs.sqf"
+_aviso = parseText format ["<t size='3.4' color='#ff0000' shadow='0'>Desvios de Armas do EB\n</t> <t size='1.2'> Chegou a encomenda do desvio de armas do EB </t>"];
 
 if ((getPlayerUID player) in _LideresBANDIDO) then {
    //_posicaoMarker = getMarkerPos entregaeb
@@ -11,7 +12,8 @@ if ((getPlayerUID player) in _LideresBANDIDO) then {
 
     if (_hasEnough) then {
         [50000,1] call HG_fnc_addOrSubCash;
-	    sleep 10;
+		hint "Sua carga irá chegar em meia hora apartir de AGORA";
+	    sleep 1800;
 		_caixaEB = "Caixa_IA2" createVehicle getMarkerPos "entregaeb";
 		/* Esvaziar Caixa */
 		 clearItemCargoGlobal _caixaEB;
@@ -21,6 +23,9 @@ if ((getPlayerUID player) in _LideresBANDIDO) then {
 		/* Adicionar Items */
 		_caixaEB addWeaponCargo ["BAD_IA2_762",30];
 		_caixaEB addMagazineCargo ["20Rnd_762x39_Mag_F", 120];
+		/* Aviso a todos que irá chegar a caixa */
+		_aviso remoteExec ["hintSilent"];
+		
     } else {
         hint "Você não têm o dinheiro suficiente";
     };
