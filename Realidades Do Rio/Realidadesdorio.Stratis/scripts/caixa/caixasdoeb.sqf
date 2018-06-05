@@ -6,7 +6,7 @@
 #include "..\..\UIDs.sqf"
 
 if ((getPlayerUID player) in _LideresBANDIDO) then {
-   _posicaoMarker = 
+   _posicaoMarker = getMarkerPos entregaeb
    _hasEnough = [50000] call HG_fnc_hasEnoughMoney;
 
     if (_hasEnough) then {
