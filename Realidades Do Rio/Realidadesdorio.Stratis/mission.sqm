@@ -8,22 +8,22 @@ class EditorData
 	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=6262;
+		nextID=6297;
 	};
 	class MarkerIDProvider
 	{
-		nextID=267;
+		nextID=269;
 	};
 	class LayerIndexProvider
 	{
-		nextID=318;
+		nextID=320;
 	};
 	class Camera
 	{
-		pos[]={6601.2334,85.579704,5186.4448};
-		dir[]={0.62711912,-0.76860607,0.12640415};
-		up[]={0.75345302,0.63972276,0.15186793};
-		aside[]={0.19759105,-4.6810601e-007,-0.98029006};
+		pos[]={3214.9414,8.7472906,6837.2891};
+		dir[]={-0.94069594,-0.32021576,-0.11245149};
+		up[]={-0.31798017,0.94732803,-0.038012333};
+		aside[]={-0.11869895,-1.5919795e-007,0.99297607};
 	};
 };
 binarizationWanted=0;
@@ -180,13 +180,16 @@ addons[]=
 	"A3_Supplies_F_Exp_Ammoboxes",
 	"ace_dragging",
 	"A3_Structures_F_EPB_Items_Documents",
-	"A3_Weapons_F_Pistols_Rook40"
+	"A3_Weapons_F_Pistols_Rook40",
+	"A3_Characters_F_Orange_Facewear",
+	"IA2_762",
+	"A3_Structures_F_Mil_Shelters"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=83;
+		items=85;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -696,6 +699,18 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item83
+		{
+			className="A3_Characters_F_Orange";
+			name="Arma 3 Orange - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item84
+		{
+			className="IA2_762";
+			name="IA2_762";
+		};
 	};
 };
 randomSeed=40661;
@@ -714,7 +729,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -755,7 +770,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -802,7 +817,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2725;
+		items=2731;
 		class Item0
 		{
 			dataType="Marker";
@@ -51799,6 +51814,7 @@ class Mission
 			};
 			id=5654;
 			type="B_supplyCrate_F";
+			atlOffset=-0.00074768066;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -62443,6 +62459,7 @@ class Mission
 			};
 			id=6261;
 			type="I_supplyCrate_F";
+			atlOffset=-0.00075531006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -62466,6 +62483,225 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item2725
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3201.748,5.3389659,6835.7925};
+				angles[]={0,3.4208455,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=6274;
+			type="Land_i_House_Small_02_V1_F";
+			atlOffset=0.48592758;
+		};
+		class Item2726
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3197.304,4.6365299,6837.4067};
+						angles[]={0,2.0071287,0};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						name="comprareb";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_Marshal";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="Itemwatch";
+							goggles="G_Aviator";
+							headgear="H_Hat_brown";
+						};
+					};
+					id=6278;
+					type="C_man_1_2_F";
+					atlOffset=1.5240002;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6277;
+			atlOffset=1.5240002;
+		};
+		class Item2727
+		{
+			dataType="Marker";
+			position[]={3197.3052,3.111366,6837.3555};
+			name="marker_267";
+			text="Desvio de Armas do EB";
+			type="loc_CivilDefense";
+			colorName="ColorGUER";
+			id=6281;
+		};
+		class Item2728
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1890.4005,5.7471251,5634.2144};
+				angles[]={0,1.9373155,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="armaseb";
+			};
+			id=6283;
+			type="Caixa_IA2";
+			atlOffset=-4.7683716e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""BAD_IA2_762""],[30]],[[""20Rnd_762x39_Mag_amarelo_F_T"",""20Rnd_762x39_Mag_F""],[60,60]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2729
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3211.3853,5.7098627,6826.6606};
+				angles[]={0,3.2637658,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6295;
+			type="CamoNet_BLUFOR_F";
+			atlOffset=-0.41549397;
+		};
+		class Item2730
+		{
+			dataType="Marker";
+			position[]={3212.186,4.8225513,6827.4399};
+			name="entregaeb";
+			type="Empty";
+			id=6296;
 		};
 	};
 	class Connections
