@@ -186,6 +186,7 @@ class WeaponShops {
         side = "cop";
         conditions = "";
         items[] = {
+			{ "Rangefinder", "", 15000, -1, "" }, //Focalizador
             { "Binocular", "", 150, -1, "" },
             { "ItemGPS", "", 100, -1, "" },
             { "FirstAidKit", "", 150, -1, "" },

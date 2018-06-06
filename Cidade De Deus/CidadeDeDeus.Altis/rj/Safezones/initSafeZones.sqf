@@ -23,5 +23,7 @@
  [] ExecVM "rj\SafeZones\Zonas\szreb2.sqf"; //S
  [] ExecVM "rj\SafeZones\Zonas\szreb3.sqf"; //C
  
+ diag_log "RJ: SafeZones Definidas e Inicilizadas :)";
+ 
  
 
