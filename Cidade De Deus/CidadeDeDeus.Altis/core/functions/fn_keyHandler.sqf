@@ -93,6 +93,15 @@ switch (_code) do {
  
     /* Alterações RobérioJR */
 	
+	//Menu De Objetos (Colocaveis) F5
+	case 63: {
+	    if ((playerSide == WEST) or (playerSide INDEPENDENT)) then 
+        {
+            closedialog 0;
+            createdialog "rj_GUI_BarrierGUI";
+        };
+	};
+	
 	//Menu De Equipamentos Para Os Admins F7
 	case 65: {
 	    if (FETCH_CONST(life_adminlevel) >= 1) then {
@@ -120,11 +129,11 @@ switch (_code) do {
 	    if (alive player) then {
 	        _nvgs = hmd player;
             if (_nvgs isEqualTo "NVGoggles") then {
-			    if (NVGRJ == false) then {
+			    if !(NVGRJ) then {
                     playSound "nightV";
 					NVGRJ = true;
 				};
-				if (NVGRJ == true) then {
+				if (NVGRJ) then {
 					playSound "scop";
 				};
 		    };		
@@ -140,10 +149,12 @@ switch (_code) do {
             removeUniform player;
             removeAllWeapons player:
 			[] call SOCK_fnc_updateRequest;
-			[[1,format["Cidade De Deus: %1 Apertou Alt + F4 e Perdeu Todos Os Items!",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP; 
+			//[[1,format["Cidade De Deus: %1 Apertou Alt + F4 e Perdeu Todos Os Items!",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP; 
+			hint "Cidade De Deus: Você Apertou Alt + F4 e Perdeu Todos Os Items!";
 		};
 	};
 	
+	/*
 	//Ai Pai Para | LUTO | 'Ai Pai Para Não me Bati hihihihi' F3
 	case 61: {
 		if(vehicle player isEqualTo player) then {
@@ -180,6 +191,7 @@ switch (_code) do {
             [] call life_fnc_restrainAction;
         };
     };
+	*/
 	
 	//Assalto By: Casperento (TAB) Edit: RJ
 	case 15: {
@@ -251,10 +263,13 @@ switch (_code) do {
         };
     };
 
-    //Restraining (Shift + R)
+    //Restraining (Shift + R) MED E SAMU
     case 19: {
         if (_shift) then {_handled = true;};
         if (_shift && playerSide isEqualTo west && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
+            [] call life_fnc_restrainAction;
+        };
+		if (_shift && playerSide isEqualTo independent && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,west])} && {alive cursorObject} && {cursorObject distance player < 5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
             [] call life_fnc_restrainAction;
         };
     };

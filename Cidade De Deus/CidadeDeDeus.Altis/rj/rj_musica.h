@@ -31,4 +31,11 @@
 	    sound[] = {"rj\RadioRJ\musicas\audio\FALSOAMOR.ogg", db+5, 1.0};
     };
 	
+	class JULIETA
+    {
+ 	    name = "JULIETA";
+	    sound[] = {"rj\RadioRJ\musicas\audio\JULIETA.ogg", db+5, 1.0};
+    };
+
+	
 	

@@ -33,6 +33,6 @@ while {true} do {
     if(playerSide isEqualTo civilian) then { //CIV
 		if (_civm isEqualTo 1) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // Mochila Invisivel CIV
     };
-  sleep 2;   //Tempo Entre Os Loops
+  sleep 5;   //Tempo Entre Os Loops
 };
 

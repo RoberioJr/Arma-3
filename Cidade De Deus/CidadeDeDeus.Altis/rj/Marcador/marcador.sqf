@@ -52,7 +52,7 @@ while {true} do {
 				};
 			} foreach _marcadores;
 			if(!visibleMap) exitWith {};
-			sleep 0.08;
+			sleep 0.1;
 		};
 
 		{deleteMarkerLocal (_x select 0);} foreach _marcadores;

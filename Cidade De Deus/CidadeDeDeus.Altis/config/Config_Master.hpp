@@ -17,8 +17,9 @@ class Life_Settings {
 	rj_ativar_grafico = true;       //Ativa/Desativa Melhoria Na Coloração Do Jogo   By:RobérioJR [true ou false]	
 	rj_ativar_guincho = true;       //Ativa/Desativa Sistema De Guincho Avançado     By:RobérioJR [true ou false]
 	rj_ativar_gaslacrimo = true;    //Ativa/Desativa O Gás Lacrimogênio              By:RobérioJR [true ou false]
-	rj_msgsconometradas = true;     //Ativa/Desativa Mensagens cronometradas         By:RobérioJR [true ou false]
 	rj_ativar_marcadagua = true;    //Marca D'Agua Com Logo Do Servidor              By:RobérioJR [true ou false]
+	rj_ativar_radiorj = true;       //Ativa/Desativa Sistema De Radio Dos Veiculos   By:RobérioJR [true ou false]
+	rj_msgsconometradas = true;     //Ativa/Desativa Mensagens cronometradas         By:RobérioJR [true ou false]
 	
 	/* StatusBar */
 	rj_barradestatus = 1;           //Seleção Da Barra De Status                     By:RobérioJR [  1   -   2  ]

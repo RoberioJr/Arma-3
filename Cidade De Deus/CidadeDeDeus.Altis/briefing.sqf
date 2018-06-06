@@ -498,51 +498,6 @@ Um rebelde é aquele que se levanta em resistência armada contra um governo. Ne
         ]
     ];
 
-    player createDiaryRecord ["illegalitems",
-        [
-            "Illegal Vehicles",
-                "
-Um civil no controle dos seguintes veículos proibidos está sujeito às conseqüências definidas no controle não autorizado de uma lei de veículo proibida. <br/> <br/>
-1. Ifrit <br/>
-2. Lancha rápida <br/>
-3. Hunter <br/>
-4. Police Offroad <br/> <br/>
-                "
-        ]
-    ];
-
-    player createDiaryRecord ["illegalitems",
-        [
-            "Illegal Weapons",
-                "
-Um civil que possua o seguinte está sujeito às consequências, conforme definido na posse ilegal de uma lei de armas de fogo. <br/> <br/>
-1. Série MX <br/>
-2. Série Katiba <br/>
-3. Série TRG <br/>
-4. Série Mk.20 <br/>
-5. Mk.18 ABR <br/>
-6. SDAR Rifle <br/>
-7. Sting SMG <br/>
-8. Silenciado P07 (Taser) <br/>
-9. Qualquer explosivo <br/> <br/>
-                "
-        ]
-    ];
-
-    player createDiaryRecord ["illegalitems",
-        [
-            "Illegal Items",
-                "
-The following items are illegal to posses:<br/><br/>
-1. Turtle<br/>
-2. Cocaine<br/>
-3. Heroin<br/>
-4. Cannabis<br/>
-5. Marijuana<br/><br/>
-                "
-        ]
-    ];
-
 // Controls Section
 
     player createDiaryRecord ["controls",

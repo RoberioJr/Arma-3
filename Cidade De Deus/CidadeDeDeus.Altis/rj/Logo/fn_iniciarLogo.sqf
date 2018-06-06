@@ -9,7 +9,7 @@ _logo = "textures\logo.paa";
     waitUntil { uiSleep 1; not(isNull(findDisplay 46)); };
     (["serverLogo"] call BIS_fnc_rscLayer) cutrsc ["serverLogo","plain"];
     _display = uiNamespace getVariable "SC_slDisp";
-    if not(typeName _display isEqualTo "DISPLAY") exitWith { systemChat"Logo Do Servidor Não Foi Carregada..."; };
+    if not(typeName _display isEqualTo "DISPLAY") exitWith { systemChat"RJ: Logo Do Servidor Não Foi Carregada..."; };
     waitUntil { uiSleep 1; not(isNull _display) };
     _imageHolder = _display displayCtrl 1200;
     _imageHolder ctrlSetText _logo;

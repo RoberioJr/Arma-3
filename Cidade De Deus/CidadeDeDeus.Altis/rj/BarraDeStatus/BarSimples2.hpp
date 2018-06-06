@@ -24,7 +24,7 @@ class osefStatusBar2 {
 			size = 0.035;
 			type = 13;
 			style = 1;
-			text="Aguarde Um Momento...";
+			text="RJ: Aguarde Um Momento...";
 			class Attributes {
 				align="center";
 				color = "#FFFFF";

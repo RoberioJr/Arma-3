@@ -13,7 +13,7 @@ waitUntil {scriptDone _handle};
 
 //Edit RobérioJR
 _uniforme = "U_Rangemaster";
-if ((FETCH_CONST(life_coplevel)) >= 11) then {
+if (FETCH_CONST(life_coplevel) >= 11) then {
     _uniforme = "U_I_CombatUniform_shortsleeve";
 };
 

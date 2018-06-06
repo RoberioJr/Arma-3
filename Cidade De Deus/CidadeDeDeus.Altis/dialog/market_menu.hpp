@@ -8,7 +8,7 @@ class marketDisplay {
 		class Life_RscTitleBackground: Life_RscText
 		{
 			idc = -1;
-			text = "CDD - DataBase Items"; //--- ToDo: Localize;
+			text = "Cidade De Deus - Preço Dos Items"; //--- ToDo: Localize;
 			x = 0.298906 * safezoneW + safezoneX;
 			y = 0.27516 * safezoneH + safezoneY;
 			w = 0.170156 * safezoneW;
@@ -27,7 +27,7 @@ class marketDisplay {
 		class mText: Life_RscText
 		{
 			idc = -1;
-			text = "DataBase Do Mercado"; //--- ToDo: Localize;
+			text = "Mercado"; //--- ToDo: Localize;
 			x = 0.300969 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.195937 * safezoneW;
@@ -59,7 +59,7 @@ class marketDisplay {
 		class Title: Life_RscTitle
 		{
 			idc = 67003;
-			text = "CCC - DATABASE De Itens"; //--- ToDo: Localize;
+			text = "CDD - Preço Dos Items"; //--- ToDo: Localize;
 			x = 0.298906 * safezoneW + safezoneX;
 			y = 0.2756 * safezoneH + safezoneY;
 			w = 0.170156 * safezoneW;
@@ -122,7 +122,7 @@ class marketDisplay {
 		class Description: Life_RscStructuredText
 		{
 			idc = 60708;
-			text = "Descrição:"; //--- ToDo: Localize;
+			text = "Descr:"; //--- ToDo: Localize;
 			x = 0.497937 * safezoneW + safezoneX;
 			y = 0.379 * safezoneH + safezoneY;
 			w = 0.06159 * safezoneW;

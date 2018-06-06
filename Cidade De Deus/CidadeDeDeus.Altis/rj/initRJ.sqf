@@ -31,7 +31,7 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_bars
  };
   
  /* Debug Menu Do RJ */
-  [] execVM "rj\Debug\debugrj.sqf";
+  //[] execVM "rj\Debug\debugrj.sqf";
   
  /* Gás Lacrimogenio */
  if (_gaslacr isEqualTo 1) then {
@@ -84,11 +84,6 @@ private "_grafico","_neblina","_reparar","_safeszn","_mochinv","_gaslacr","_bars
   [] execVM "rj\Logo\fn_iniciarLogo.sqf";
  };
  
- /* KillFeed */
-  [] execVM "rj\MSG\mortos.sqf";
-  
- /* Painel De Info Do Servidor */
-  [] execVM "rj\MSG\ServerInfoMenu\sqf\initLocal.sqf";
 
   
  

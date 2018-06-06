@@ -9,7 +9,7 @@ class Maverick_IntroCam_Altis {
 		secondsPerCam 	= 20;
 		selectRandom 	= 1;
 		music			= 1;
-		musicVolume		= 0.7;
+		musicVolume		= 0.8;
 		musicName		= "intro";
 	};
 	class Positions {
