@@ -95,7 +95,7 @@ switch (_code) do {
 	
 	//Menu De Objetos (Colocaveis) F5
 	case 63: {
-	    if ((playerSide == WEST) or (playerSide INDEPENDENT)) then 
+	    if ((playerSide == WEST) or {playerSide INDEPENDENT}) then 
         {
             closedialog 0;
             createdialog "rj_GUI_BarrierGUI";

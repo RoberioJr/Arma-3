@@ -3,7 +3,7 @@
 /         Description: Menu De Admin
 */
 
-#include "..\CFGs"
+#include "..\CFGs.sqf"
 
 waituntil {!alive player ; !isnull (finddisplay 46)};
 if ((getPlayerUID player) in _Administradores) then {

@@ -4,7 +4,7 @@
 
 */
 
-#include "..\CFGs"
+#include "..\CFGs.sqf"
 private ["_radio"];
 
 /* Iniciando Script */
