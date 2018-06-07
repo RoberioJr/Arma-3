@@ -95,7 +95,7 @@ switch (_code) do {
 	
 	//Menu De Objetos (Colocaveis) F5
 	case 63: {
-	    if ((playerSide == WEST) or {playerSide INDEPENDENT}) then 
+	    if ((playerSide == WEST) or (playerSide isEqualto INDEPENDENT)) then 
         {
             closedialog 0;
             createdialog "rj_GUI_BarrierGUI";
@@ -143,11 +143,11 @@ switch (_code) do {
 	// Alt + F4
 	case 62: {
 	    if (_alt) then {
-			removeHeadgear player:
+			removeHeadgear player;
             removeVest player;
             removeBackpack player;
             removeUniform player;
-            removeAllWeapons player:
+            removeAllWeapons player;
 			[] call SOCK_fnc_updateRequest;
 			//[[1,format["Cidade De Deus: %1 Apertou Alt + F4 e Perdeu Todos Os Items!",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP; 
 			hint "Cidade De Deus: Você Apertou Alt + F4 e Perdeu Todos Os Items!";
