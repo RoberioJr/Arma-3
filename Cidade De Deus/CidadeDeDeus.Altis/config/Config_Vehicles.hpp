@@ -843,12 +843,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "WarFrame", "civ", {
                 "textures\veh\civ\suvwf.paa"
             }, "" },
-			{ "WarFrame", "civ", {
-                "textures\veh\civ\suvwf.paa"
-            }, "" },
-			{ "WarFrame", "civ", {
-                "textures\veh\civ\suvwf.paa"
-            }, "" },
 			{ "Rebelde", "civ", {
                 "textures\veh\civ\suvdesert.paa"
             }, "license_civ_rebel" },
