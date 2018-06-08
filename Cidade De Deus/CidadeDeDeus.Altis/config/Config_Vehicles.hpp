@@ -900,7 +900,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "BOPE", "cop", {
 				"textures\veh\cop\bopehunter.paa",
 				"textures\veh\cop\bopehunter2.paa"
-			}, "call life_coplevel > 10" }
+			}, "call life_coplevel > 10" },
 			{ "BOPE", "cop", {
 				"textures\veh\cop\pm\hunterpm.paa",
 				"textures\veh\cop\pm\hunterpm2.paa"
