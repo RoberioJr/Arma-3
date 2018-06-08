@@ -12,6 +12,7 @@ params ["_Btn1","_Btn2","_Btn3"];
 disableSerialization;
 
 if (!alive player || dialog) exitWith {};
+if (vehicle player isKindof "air" && (driver (vehicle player) isEqualto player)) exitWith { hint "Você Está Pilotando Um Veiculo Aéreo e Não Consegue Anunciar Um Assalto!"; };
 
 createDialog "dgAssalto";
 

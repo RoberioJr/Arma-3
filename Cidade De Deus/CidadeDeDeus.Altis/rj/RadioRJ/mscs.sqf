@@ -18,8 +18,6 @@ waitUntil {alive player};
 			["REMIX", [3], "#USER:MusicaREMIX", -5, [["expression", ""]], "1", "1"],
 			["FUNK", [4], "#USER:MusicaFUNK", -5, [["expression", ""]], "1", "1"],
 			["FORRÓ", [5], "#USER:MusicaFORRO", -5, [["expression", ""]], "1", "1"],
-			["TESTE1", [6], "", -5, [["expression", "[1] call rj_fnc_musicas"]], "1", "1"],
-			["TESTE2", [7], "", -5, [["expression", "[4] execVM 'rj\RadioRJ\musicas\musicas.sqf'"]], "1", "1"],
 			["DESLIGAR RADIO", [8],  "", -5, [["expression", format[_executar,"PARAR.sqf"]]], "1", "1"],
 			["", [-1], "", -5, [["expression", ""]], "1", "0"],
 		["Sair", [13], "", -3, [["expression", ""]], "1", "1"]		
@@ -34,8 +32,6 @@ if (FETCH_CONST(life_donorlevel) >=1 && {(driver (vehicle player)) isEqualTo pla
 			["Caixa De Som", [5], "#USER:MusicaTD", -5, [["expression", ""]], "1", "1"],
 		    ["DESLIGAR RADIO", [6],  "", -5, [["expression", format[_executar,"PARAR.sqf"]]], "1", "1"],
 			["DESLIGAR SOM", [7],  "", -5, [["expression", format[_executar,"PARARSAY.sqf"]]], "1", "1"],
-			["TESTE1", [8], "", -5, [["expression", "[1] call rj_fnc_musicas"]], "1", "1"],
-			["TESTE2", [9], "", -5, [["expression", "[4] execVM 'rj\RadioRJ\musicas\musicas.sqf'"]], "1", "1"],
 			["", [-1], "", -5, [["expression", ""]], "1", "0"],
 		["Sair", [13], "", -3, [["expression", ""]], "1", "1"]		
 	];

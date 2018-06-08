@@ -191,3 +191,9 @@
         sound[] = {"\sounds\botao.ogg", 1.0, 1};
         titles[] = {};
     };
+	
+	class cuff {
+		name = "cuff";
+		sound[] = {"\sounds\cuff.ogg", 1.0, 1};
+		titles[] = {};
+	};
