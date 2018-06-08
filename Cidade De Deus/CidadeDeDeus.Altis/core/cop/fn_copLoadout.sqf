@@ -12,7 +12,7 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 //Edit RobérioJR
-if (FETCH_CONST(life_coplevel) >= 1 && (FETCH_CONST(life_coplevel) !> 10)) then {
+if (FETCH_CONST(life_coplevel) < 11) then {
     _uniforme = "U_Rangemaster";
 };
 if (FETCH_CONST(life_coplevel) >= 11) then {
