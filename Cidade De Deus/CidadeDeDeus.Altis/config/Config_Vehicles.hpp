@@ -860,7 +860,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "call life_coplevel < 11" },
 			{ "BOPE", "cop", {
                 "textures\veh\cop\suvbope.paa"
-            }, "call life_coplevel > 11" }
+            }, "call life_coplevel > 10" }
         };
     };
 

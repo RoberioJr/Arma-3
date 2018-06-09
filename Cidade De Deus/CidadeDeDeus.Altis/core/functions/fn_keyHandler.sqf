@@ -123,10 +123,9 @@ switch (_code) do {
 			    if !(NVGRJ) then {
                     playSound "nightV";
 					NVGRJ = true;
-				};
-				if (NVGRJ) then {
+				} else { 
+				    playSound "scop";
 				    NVGRJ = false;
-					playSound "scop";
 				};
 		    };		
 	    };

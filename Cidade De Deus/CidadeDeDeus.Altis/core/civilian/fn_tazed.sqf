@@ -34,6 +34,7 @@ if (_shooter isKindOf "Man" && alive player) then {
             {player addMagazine _x;} forEach _curMags;
         };
         [_unit,"tazerSound",100,1] remoteExecCall ["life_fnc_say3D",RCLIENT];
+		[_unit,"choque",90,1] remoteExecCall ["life_fnc_say3D",RCLIENT];
 
         _obj = "Land_ClutterCutter_small_F" createVehicle ASLTOATL(visiblePositionASL player);
         _obj setPosATL ASLTOATL(visiblePositionASL player);

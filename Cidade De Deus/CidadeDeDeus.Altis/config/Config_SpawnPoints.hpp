@@ -67,21 +67,21 @@ class CfgSpawnPoints {
                 displayName = "Cidade De Deus HQ";
                 spawnMarker = "cop_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "";
+                conditions = "call life_coplevel < 11";
             };
 
             class Athira {
                 displayName = "Athira HQ";
                 spawnMarker = "cop_spawn_3";
                 icon = "\a3\ui_f\data\map\MapControl\fuelstation_ca.paa";
-                conditions = "";
+                conditions = "call life_coplevel < 11";
             };
 
             class Pyrgos {
                 displayName = "Pyrgos HQ";
                 spawnMarker = "cop_spawn_2";
                 icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-                conditions = "";
+                conditions = "call life_coplevel < 11";
             };
 
             class Air {
