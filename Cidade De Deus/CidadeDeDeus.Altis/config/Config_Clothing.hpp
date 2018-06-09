@@ -23,7 +23,7 @@ class Clothing {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_C_Poloshirt_stripped", "", 125, "" },
             { "U_C_Poloshirt_redwhite", "", 150, "" },
-            { "U_C_Poloshirt_salmon", "", 175, "" },
+            { "U_C_Poloshirt_salmon", "I Love Rio", 175, "" },
             { "U_C_Poloshirt_blue", "", 250, "" },
             { "U_C_Poloshirt_burgundy", "", 275, "" },
             { "U_C_Poloshirt_tricolour", "", 350, "" },

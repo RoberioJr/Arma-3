@@ -15,7 +15,7 @@ private "_radiorj";
   [] execVM "rj\CintoDeSeguranca\EventHandlerCinto.sqf";
  
  /* Menu De Admin By:RJ */
-  [] execVM "rj\MenuAdminRJ\init.sqf";
+  [] execVM "rj\MenuAdminRJ\loop.sqf";
   
  /* Radio RJ */
  if (_radiorj isEqualTo 1) then {

@@ -711,6 +711,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "#(ai,64,64,1)Fresnel(1.3,7)"
             }, "" },*/
 			{ "Policia", "cop", {
+                "textures\veh\cop\pm\hatchbackpmsntz.paa"
+            }, "call life_coplevel < 11" },
+			{ "Policia", "cop", {
                 "textures\veh\cop\pm\hatchbackpm.paa"
             }, "call life_coplevel < 11" }
         };
@@ -907,6 +910,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			}, "call life_coplevel > 10" },
 			{ "Policia Militar", "cop", {
 				"textures\veh\cop\pm\hunterpm.paa",
+				"textures\veh\cop\pm\hunterpm2.paa"
+			}, "call life_coplevel < 11" },
+			{ "Policia Militar", "cop", {
+				"textures\veh\cop\pm\hunterpmsntz2.paa",
 				"textures\veh\cop\pm\hunterpm2.paa"
 			}, "call life_coplevel < 11" }
         };
