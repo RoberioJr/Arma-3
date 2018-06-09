@@ -506,7 +506,7 @@ SA_Take_Tow_Ropes_Action = {
 
 		if!(missionNamespace getVariable ["SA_TOW_LOCKED_VEHICLES_ENABLED",false]) then {
 			if( locked _vehicle > 1 ) then {
-				["Cannot take tow ropes from locked vehicle",false] call SA_Hint;
+				["Não é Possivel Guinchar Veiculos Fechados",false] call SA_Hint;
 				_canTakeTowRopes = false;
 			};
 		};

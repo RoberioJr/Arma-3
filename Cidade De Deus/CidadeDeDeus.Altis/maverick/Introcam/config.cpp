@@ -10,7 +10,7 @@ class Maverick_IntroCam_Altis {
 		selectRandom 	= 1;
 		music			= 1;
 		musicVolume		= 0.8;
-		musicName		= "intro";
+		musicName		= "JULIETA";
 	};
 	class Positions {
 		data[] = {

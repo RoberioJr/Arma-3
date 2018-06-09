@@ -155,8 +155,8 @@ class VirtualItems {
 	/* RJ EDIT */
 	class handcuffs {
         variable = "handcuffs";
-        displayName = "Algemas";
-        weight = 1;
+        displayName = "STR_Item_algema";
+        weight = 10;
         buyPrice = 15000;
         sellPrice = -1;
         illegal = true;
@@ -166,8 +166,8 @@ class VirtualItems {
 	
 	class keys {
         variable = "keys";
-        displayName = "Chave De Algema";
-        weight = 1;
+        displayName = "STR_Item_keyalgema";
+        weight = 8;
         buyPrice = 20000;
         sellPrice = -1;
         illegal = false;

@@ -12,7 +12,10 @@ _vehicle = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _vehicle || !(_vehicle isKindOf "Car" || _vehicle isKindOf "Air" || _vehicle isKindOf "Ship" || _vehicle isKindOf "Box_IND_Grenades_F" || _vehicle isKindOf "B_supplyCrate_F")) exitWith {}; //Either a null or invalid vehicle type.
 if ((_vehicle getVariable ["trunk_in_use",false])) exitWith {hint localize "STR_MISC_VehInvUse"};
 //EDIT RJ
+sleep 0.3;
+if (life_is_processing) exitWith { hint "RJ ANTI-DUPE: Não é Possivel Abrir O Veiculo Quando Estiver Processando!"; };
 [_vehicle,"portaabre",25,1] remoteExec ["life_fnc_say3D",0];
+/*-----*/
 _vehicle setVariable ["trunk_in_use",true,true];
 _vehicle setVariable ["trunk_in_use_by",player,true];
 if (!createDialog "TrunkMenu") exitWith {hint localize "STR_MISC_DialogError";}; //Couldn't create the menu?

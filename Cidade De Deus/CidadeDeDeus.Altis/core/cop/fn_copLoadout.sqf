@@ -7,12 +7,16 @@
     Description:
     Loads the cops out with the default gear.
 */
-private ["_handle"];
+private ["_handle","_uniforme"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
+_uniforme = "U_Marshal";
+sleep 5;
 
 //Edit RobérioJR
-_uniforme = "U_Rangemaster";
+if (FETCH_CONST(life_coplevel) < 11) then {
+    _uniforme = "U_Rangemaster";
+};
 if (FETCH_CONST(life_coplevel) >= 11) then {
     _uniforme = "U_I_CombatUniform_shortsleeve";
 };

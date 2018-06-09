@@ -12242,7 +12242,13 @@
   <Key ID="STR_PM_yMarket">
    <Original>Mercado</Original>
 </Key>
-
 <Key ID="STR_Shops_yMarket">
     <Original>Mercado CDD</Original>
+</Key>
+ </Key>
+    <Key ID="STR_Item_algema"> //Lol because i was cba and in a rush lol , change it if you must
+        <Original>Algema</Original>
+    </Key>
+    <Key ID="STR_Item_keyalgema">
+        <Original>Chave De Algema</Original>
 </Key>

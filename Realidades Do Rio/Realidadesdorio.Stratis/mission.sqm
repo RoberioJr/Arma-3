@@ -8,7 +8,7 @@ class EditorData
 	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=6299;
+		nextID=6303;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=324;
+		nextID=326;
 	};
 	class Camera
 	{
-		pos[]={3216.885,8.7472906,6835.2822};
-		dir[]={-0.94069594,-0.32021576,-0.11245149};
-		up[]={-0.31798017,0.94732803,-0.038012333};
-		aside[]={-0.11869895,-1.5919795e-007,0.99297607};
+		pos[]={6095.3042,39.824505,5581.0767};
+		dir[]={0.064925455,-0.68228066,0.72820479};
+		up[]={0.060590852,0.7310881,0.67958689};
+		aside[]={0.99605048,-1.5716068e-009,-0.08880648};
 	};
 };
 binarizationWanted=0;
@@ -180,7 +180,6 @@ addons[]=
 	"A3_Supplies_F_Exp_Ammoboxes",
 	"ace_dragging",
 	"A3_Structures_F_EPB_Items_Documents",
-	"A3_Weapons_F_Pistols_Rook40",
 	"A3_Characters_F_Orange_Facewear",
 	"IA2_762",
 	"A3_Structures_F_Mil_Shelters"
@@ -729,7 +728,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -770,7 +769,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -62139,153 +62138,6 @@ class Mission
 		};
 		class Item2720
 		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6090.4658,18.261127,5598.8047};
-						angles[]={0,4.6949358,0};
-					};
-					side="East";
-					flags=7;
-					class Attributes
-					{
-						init="call{this addAction [""<t color='#FF0000'>BARRICADAS</t>"", ""[] execVM 'scripts\caixa\barricada1.sqf'"", '(alive player) && player distance _target < 3'];}";
-						disableSimulation=1;
-						class Inventory
-						{
-							class handgun
-							{
-								name="hgun_Rook40_F";
-								class primaryMuzzleMag
-								{
-									name="16Rnd_9x21_Mag";
-									ammoLeft=17;
-								};
-							};
-							class uniform
-							{
-								typeName="U_C_Poor_1";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="ACE_fieldDressing";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_morphine";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="Itemwatch";
-							radio="ItemRadio";
-							headgear="H_Bandanna_surfer";
-						};
-					};
-					id=6247;
-					type="O_support_AMG_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02PER";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=6246;
-		};
-		class Item2721
-		{
 			dataType="Marker";
 			position[]={6087.7119,18.226999,5595.562};
 			name="barricada1";
@@ -62295,145 +62147,7 @@ class Mission
 			id=6248;
 			atlOffset=0.00033950806;
 		};
-		class Item2722
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2961.374,41.89756,5722.3267};
-						angles[]={0,2.6529007,0};
-					};
-					side="East";
-					flags=7;
-					class Attributes
-					{
-						init="call{this addAction [""<t color='#FF0000'>BARRICADAS</t>"", ""[] execVM 'scripts\caixa\barricada2.sqf'"", '(alive player) && player distance _target < 3'];}";
-						disableSimulation=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Poor_1";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="ACE_fieldDressing";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_morphine";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="Itemwatch";
-							radio="ItemRadio";
-							headgear="H_Bandanna_surfer";
-						};
-					};
-					id=6250;
-					type="O_support_AMG_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02PER";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=6249;
-		};
-		class Item2723
+		class Item2721
 		{
 			dataType="Marker";
 			position[]={2953.0371,41.007999,5718.1938};
@@ -62444,7 +62158,7 @@ class Mission
 			id=6251;
 			atlOffset=-0.00035476685;
 		};
-		class Item2724
+		class Item2722
 		{
 			dataType="Object";
 			class PositionInfo
@@ -62484,7 +62198,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2725
+		class Item2723
 		{
 			dataType="Object";
 			class PositionInfo
@@ -62501,7 +62215,7 @@ class Mission
 			type="Land_i_House_Small_02_V1_F";
 			atlOffset=0.48592758;
 		};
-		class Item2726
+		class Item2724
 		{
 			dataType="Group";
 			side="Civilian";
@@ -62628,7 +62342,7 @@ class Mission
 			id=6277;
 			atlOffset=1.5240002;
 		};
-		class Item2727
+		class Item2725
 		{
 			dataType="Marker";
 			position[]={3197.3052,3.111366,6837.3555};
@@ -62638,7 +62352,7 @@ class Mission
 			colorName="ColorGUER";
 			id=6281;
 		};
-		class Item2728
+		class Item2726
 		{
 			dataType="Object";
 			class PositionInfo
@@ -62679,7 +62393,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2729
+		class Item2727
 		{
 			dataType="Object";
 			class PositionInfo
@@ -62696,13 +62410,257 @@ class Mission
 			type="CamoNet_BLUFOR_F";
 			atlOffset=-0.41549397;
 		};
-		class Item2730
+		class Item2728
 		{
 			dataType="Marker";
 			position[]={3212.186,4.8225513,6827.4399};
 			name="entregaeb";
 			type="Empty";
 			id=6296;
+		};
+		class Item2729
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2961.76,41.913116,5722.7446};
+						angles[]={0,2.984513,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="call{this addAction [""<t color='#FF0000'>BARRICADAS</t>"", ""[] execVM 'scripts\caixa\barricada2.sqf'"", '(alive player) && player distance _target < 3'];}";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poor_1";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="Itemwatch";
+						};
+					};
+					id=6300;
+					type="C_man_1_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6299;
+		};
+		class Item2730
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6090.3311,18.267212,5598.8579};
+						angles[]={0,4.9392819,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="call{this addAction [""<t color='#FF0000'>BARRICADAS</t>"", ""[] execVM 'scripts\caixa\barricada1.sqf'"", '(alive player) && player distance _target < 3'];}";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poor_1";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="Itemwatch";
+						};
+					};
+					id=6302;
+					type="C_man_1_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6301;
 		};
 	};
 	class Connections

@@ -21,27 +21,6 @@ class SpyGlass {
     };
 };
 
-/* RJ EDIT */
-class rj_Barrier_Menu {
-	tag = "rj";
-	class functions
-	{
-		file = "rj\Variados\Colocaveis\Functions";
-            class spawnbarrier {};
-            class barriergui {};
-            class cleanupbarrier {};
-	};
-};
-
-class rj_radio {
-	tag = "rj";
-	class functions {
-		file = "rj\RadioRJ\musicas";
-		class musicas {};
-	};
-};
-    
-
 class Life_Client_Core {
     tag = "life";
 
