@@ -897,11 +897,15 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "";
         price = 575000;
         textures[] = {
+			{ "Rebelde", "civ", {
+				"\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa",
+				"\a3\soft_f\MRAP_01\Data\MRAP_01_adds_CO.paa"
+			}, "" },
 			{ "BOPE", "cop", {
 				"textures\veh\cop\bopehunter.paa",
 				"textures\veh\cop\bopehunter2.paa"
 			}, "call life_coplevel > 10" },
-			{ "BOPE", "cop", {
+			{ "Policia Militar", "cop", {
 				"textures\veh\cop\pm\hunterpm.paa",
 				"textures\veh\cop\pm\hunterpm2.paa"
 			}, "call life_coplevel < 11" }
