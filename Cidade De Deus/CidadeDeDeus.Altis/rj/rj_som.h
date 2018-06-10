@@ -7,35 +7,35 @@
 
   sounds[] = {};
 	
-	class msc1 
+	class um 
 	{
         name = "um";
         sound[] = {"rj\RadioRJ\musicas\audio\msc1.ogg", 1.0, 1};
         titles[] = {};
     };
 	
-	class msc2 
+	class dois 
 	{
         name = "dois";
         sound[] = {"rj\RadioRJ\musicas\audio\msc2.ogg", 1.0, 1};
         titles[] = {};
     };
 	
-	class msc3 
+	class tres 
 	{
         name = "tres";
         sound[] = {"rj\RadioRJ\musicas\audio\msc3.ogg", 1.0, 1};
         titles[] = {};
     };	
 	
-	class msc4 
+	class quatro 
 	{
         name = "quatro";
         sound[] = {"rj\RadioRJ\musicas\audio\msc4.ogg", 1.0, 1};
         titles[] = {};
     };
 	
-	class msc5 
+	class cinco 
 	{
         name = "cinco";
         sound[] = {"rj\RadioRJ\musicas\audio\msc5.ogg", 1.0, 1};

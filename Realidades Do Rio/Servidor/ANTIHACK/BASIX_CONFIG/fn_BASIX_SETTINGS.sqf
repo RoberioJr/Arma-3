@@ -336,7 +336,8 @@ _Setting23 = ["3den_Objects.pbo",
 "walker_a3_vehicles.pbo",
 "xCam_EU.pbo",
 "task_force_radio.pbo",
-"task_force_radio_items.pbo"]; //Additional PBO files to add to the whitelist (e.g. ["CBA_A3.pbo","CBA_CORE.pbo"])
+"task_force_radio_items.pbo",
+"EB_IA2.pbo"]; //Additional PBO files to add to the whitelist (e.g. ["CBA_A3.pbo","CBA_CORE.pbo"])
 
 //Classname Whitelist
 _Setting24 = false; //Scan player classnames against server classnames and detect discrepancies ("true" is on, "false" is off, set to true by default)
