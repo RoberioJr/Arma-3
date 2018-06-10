@@ -107,7 +107,7 @@ class CfgSpawnPoints {
 			
 			class BopeKav {
 				displayName = "HQ BOPE Cidade De Deus";
-				spawnMarker = "bope_kav";
+				spawnMarker = "spawnbope_centro";
 				icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
                 conditions = "call life_coplevel >= 11";
 			};
