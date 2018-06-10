@@ -9,35 +9,35 @@
 	
 	class msc1 
 	{
-        name = "1";
+        name = "um";
         sound[] = {"rj\RadioRJ\musicas\audio\msc1.ogg", 1.0, 1};
         titles[] = {};
     };
 	
 	class msc2 
 	{
-        name = "2";
+        name = "dois";
         sound[] = {"rj\RadioRJ\musicas\audio\msc2.ogg", 1.0, 1};
         titles[] = {};
     };
 	
 	class msc3 
 	{
-        name = "3";
+        name = "tres";
         sound[] = {"rj\RadioRJ\musicas\audio\msc3.ogg", 1.0, 1};
         titles[] = {};
     };	
 	
 	class msc4 
 	{
-        name = "4";
+        name = "quatro";
         sound[] = {"rj\RadioRJ\musicas\audio\msc4.ogg", 1.0, 1};
         titles[] = {};
     };
 	
 	class msc5 
 	{
-        name = "5";
+        name = "cinco";
         sound[] = {"rj\RadioRJ\musicas\audio\msc5.ogg", 1.0, 1};
         titles[] = {};
     };
