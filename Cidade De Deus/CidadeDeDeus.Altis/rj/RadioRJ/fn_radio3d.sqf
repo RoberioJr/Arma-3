@@ -20,23 +20,23 @@ if (_musica > 5 or {_musica < 1}) then {_musica = selectRandom [1,2,3,4,5];};
 
 switch (_musica) do {
     case 1: {
-	    _nomeMusica = _nomeMusica1; 
+	    nomeMusica = _nomeMusica1; 
 	    _musica = "um";
 	};
 	case 2: {
-	    _nomeMusica = _nomeMusica2; 
+	    nomeMusica = _nomeMusica2; 
 	    _musica = "dois";
 	};
 	case 3: {
-	    _nomeMusica = _nomeMusica3; 
+	    nomeMusica = _nomeMusica3; 
 	    _musica = "tres";
 	};
 	case 4: {
-	    _nomeMusica = _nomeMusica4; 
+	    nomeMusica = _nomeMusica4; 
 	    _musica = "quatro";
 	};
 	case 5: {
-	    _nomeMusica = _nomeMusica5; 
+	    nomeMusica = _nomeMusica5; 
 	    _musica = "cinco";
 	};
 };
@@ -48,7 +48,9 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
         _helipad attachTo [_vei, [0,0,0]];
 		_vei setVariable ["tocando", _helipad];
 	    playSound "botao";
-	    cutText [format ["Tocando: %1",_nomeMusica], "PLAIN"];
+	    //cutText [format ["Tocando: %1", nomeMusica], "PLAIN"];
+		//cutText [str nomeMusica, "PLAIN", "PLAIN"];
+		titleText[format ["Tocando: %1",nomeMusica],"PLAIN"];
 	    sleep 1.5;
 		[_helipad,_musica,205,1] remoteExec ["life_fnc_say3D",0];
     };
@@ -58,7 +60,9 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
     _helipad attachTo [_vei, [0,0,0]];
 	_vei setVariable ["tocando", _helipad];
 	playSound "botao";
-	cutText [format ["Tocando: %1",_nomeMusica], "PLAIN"];
+	//cutText [format ["Tocando: %1", nomeMusica], "PLAIN"];
+	//cutText [str nomeMusica, "PLAIN", "PLAIN"];
+	titleText[format ["Tocando: %1",nomeMusica],"PLAIN"];
 	sleep 1.5;
 	[_helipad,_musica,205,1] remoteExec ["life_fnc_say3D",0];
 };
