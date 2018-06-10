@@ -24,6 +24,13 @@ class SpyGlass {
 class Life_Client_Core {
     tag = "life";
 
+  /* RADIORJ */
+    class RadioRJ {
+	    file = "rj\RadioRJ";
+	    class radio {};
+		class radio3d {};
+    };
+	
   /* Auto Save Do Jogador */
     class autosave {
         file = "rj\derleon\autosave";

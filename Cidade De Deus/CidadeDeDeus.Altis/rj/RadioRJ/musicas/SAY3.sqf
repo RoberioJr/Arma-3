@@ -15,7 +15,7 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
 	    cutText ["Tocando: Faixa De Gaza - MC Orelha", "PLAIN"];
 	    sleep 1.5;
         //_helipad say3d ["GAZA",200,1];
-		[_helipad,"GAZA",200,1] remoteExec ["life_fnc_say3D",0];
+		[_helipad,"3",200,1] remoteExec ["life_fnc_say3D",0];
     };
  } else {
     deleteVehicle (_vei getVariable ["tocando", objNull]);
@@ -26,6 +26,6 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
 	cutText ["Tocando: Faixa De Gaza - MC Orelha", "PLAIN"];
 	sleep 1.5;
     //_helipad say3d ["GAZA",200,1];
-	[_helipad,"GAZA",200,1] remoteExec ["life_fnc_say3D",0];
+	[_helipad,"3",200,1] remoteExec ["life_fnc_say3D",0];
 };
 

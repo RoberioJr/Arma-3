@@ -1,13 +1,14 @@
 Trocar Roupa Inicial Do BOPE;                  OK
-Configurar TAGs De Acordo Com As Patentes;
-Remover Os Dupes;
+Configurar TAGs De Acordo Com As Patentes; 
+Remover Os Dupes;                              QUASE OK
 Remover HUD Padrão;                            OK
 Preço Da Loja De Roupa                         OK
 Tradução Das Lojas                             OK
-Mensagem De Assalto
-Configurar Lojas
-Skins De Veiculos
-Ageitar Rebeldes
+Mensagem De Assalto                            OK
+Configurar Lojas                               OK
+Skins De Veiculos                              OK
+Ageitar Rebeldes                               OK
 Tirar Hunter Armado COP                        OK
 MSG COP Ao Jogador Chamar SAMU                 OK
+General Store De Athira Com Erro (Condições)   Faltando Consertar!
 ...

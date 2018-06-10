@@ -14,6 +14,9 @@ _uid = getPlayerUID player;
 if (isNull _house) exitWith {};
 if (!(_house isKindOf "House_F")) exitWith {};
 if (isNil {_house getVariable "house_owner"}) exitWith {hint localize "STR_House_noOwner";};
+/* AntiDupe RJ */
+if (LIFE_SETTINGS(getNumber,"rj_desativar_vendadecasas") isEqualTo 1) exitwith { hint "RJ ANTI-DUPE: Fale Com Um Administrador Para Vender Essa Casa!"; };
+
 closeDialog 0;
 
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;

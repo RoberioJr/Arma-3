@@ -31,12 +31,21 @@ _VeiculosComRadio =
 	"C_Van_02_medevac_F"       //Ambulancia
 ];
 
-//Musicas
-_NomeMusica1 = "Hungria - Insônia Part. Tribo Da Periferia";
-_NomeMusica2 = "Twenty One Pilots - Heathens ft. Chatuba de Mesquita & MC Carol";
-_NomeMusica3 = "Faixa De Gaza - MC Orelha";
-_NomeMusica4 = "Falso Amor - Aldair Playboy";
-_NomeMusica5 = "Julieta - MC Lan";
+
+_nomeMusicaMenu1 = "Hungria Insônia";
+_nomeMusicaMenu2 = "Chatuba Heathens";
+_nomeMusicaMenu3 = "Faixa De Gaza";
+_nomeMusicaMenu4 = "Falso Amor";
+_nomeMusicaMenu5 = "Julieta";
+_nomeMusica1 = "Hungria - Insônia Part. Tribo Da Periferia";
+_nomeMusica2 = "Twenty One Pilots - Heathens ft. Chatuba de Mesquita & MC Carol";
+_nomeMusica3 = "Faixa De Gaza - MC Orelha";
+_nomeMusica4 = "Falso Amor - Aldair Playboy";
+_nomeMusica5 = "Julieta - MC Lan";
+
+    /* Variados */
+_DistanciaDeEfeitoDoGasLacrimogenio = 12; //Em Metros
+
 
 
 

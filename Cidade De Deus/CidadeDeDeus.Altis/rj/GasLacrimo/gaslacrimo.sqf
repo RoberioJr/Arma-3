@@ -5,22 +5,17 @@
     Fucks their shit up
 */
 playerNearGas=false;
+#include "..\CFGs.sqf"
 
 [] spawn {
     while {true} do
     {
 
-        if
-        (
-        (((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10))
+        if((((nearestObject [getpos player, "SmokeShellYellow"]) distance player < _DistanciaDeEfeitoDoGasLacrimogenio))
         or
-        (((nearestObject [getpos player, "G_40mm_SmokeYellow"]) distance player < 13))
-        ) then
-        {
-        playerNearGas=true;
-        }
-        else
-        {
+        (((nearestObject [getpos player, "G_40mm_SmokeYellow"]) distance player < 13))) then {
+		playerNearGas=true;
+        } else {
         playerNearGas=false;
         };
 

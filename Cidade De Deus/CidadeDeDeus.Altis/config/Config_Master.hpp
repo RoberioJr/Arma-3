@@ -21,6 +21,10 @@ class Life_Settings {
 	rj_ativar_radiorj = true;       //Ativa/Desativa Sistema De Radio Dos Veiculos   By:RobérioJR [true ou false]
 	rj_msgsconometradas = true;     //Ativa/Desativa Mensagens cronometradas         By:RobérioJR [true ou false]
 	
+	/* Anti-Dupe */ 
+	rj_desativar_saquegang = true;    //Apenas O Dono Da Gangue Poderá Sacar         By:RobérioJR [true ou false]
+	rj_desativar_vendadecasas = true; //Desativa A Venda De Casas Para Evitar Dupe   By:RobérioJR [true ou false]
+	
 	/* StatusBar */
 	rj_barradestatus = 1;           //Seleção Da Barra De Status                     By:RobérioJR [  1   -   2  ]
 	/* 1 - Simples Com Icones || 2 - Simples Sem Icones */

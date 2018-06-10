@@ -9,6 +9,8 @@ private ["_radio"];
 
 /* Iniciando Script */
  diag_log "RJ: Radio Dos Veiculos - Ativado";
+ waitUntil {alive player};
+ waitUntil {vehicle player != player}; //Aguardar O Jogador Entrar Em Algum Veiculo (FIX Para Musicas De Intro)
 while {true} do
 {
     waitUntil {alive player};

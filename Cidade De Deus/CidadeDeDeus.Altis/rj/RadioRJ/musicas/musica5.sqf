@@ -8,5 +8,5 @@
 	    playSound "botao";
 	    cutText ["Tocando: Julieta - MC Lan", "PLAIN"];
 	    sleep 1.5;
-        playMusic "JULIETA";
+        playMusic "5";
     };

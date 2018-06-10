@@ -7,34 +7,34 @@
 
   tracks[]= {};
 
-    class intro
+    class msc1
     {
- 	    name = "intro";
-	    sound[] = {"rj\RadioRJ\musicas\audio\intro.ogg", db+5, 1.0};
+ 	    name = "1";
+	    sound[] = {"rj\RadioRJ\musicas\audio\msc1.ogg", db+5, 1.0};
+    };  
+  
+    class msc2
+    {
+ 	    name = "2";
+	    sound[] = {"rj\RadioRJ\musicas\audio\msc2.ogg", db+5, 1.0};
     };
 	
-	class INSONIA
+	class msc3
     {
- 	    name = "INSONIA";
-	    sound[] = {"rj\RadioRJ\musicas\audio\INSONIA.ogg", db+5, 1.0};
+ 	    name = "3";
+	    sound[] = {"rj\RadioRJ\musicas\audio\msc3.ogg", db+5, 1.0};
     };
 	
-	class GAZA
+	class msc4
     {
- 	    name = "GAZA";
-	    sound[] = {"rj\RadioRJ\musicas\audio\GAZA.ogg", db+5, 1.0};
+ 	    name = "4";
+	    sound[] = {"rj\RadioRJ\musicas\audio\msc4.ogg", db+5, 1.0};
     };
 	
-	class FALSOAMOR
+	class msc5
     {
- 	    name = "FALSOAMOR";
-	    sound[] = {"rj\RadioRJ\musicas\audio\FALSOAMOR.ogg", db+5, 1.0};
-    };
-	
-	class JULIETA
-    {
- 	    name = "JULIETA";
-	    sound[] = {"rj\RadioRJ\musicas\audio\JULIETA.ogg", db+5, 1.0};
+ 	    name = "5";
+	    sound[] = {"rj\RadioRJ\musicas\audio\msc5.ogg", db+5, 1.0};
     };
 
 	

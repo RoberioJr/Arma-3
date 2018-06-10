@@ -8,7 +8,7 @@
 	    playSound "botao";
 	    cutText ["Tocando: Hungria - Insônia Part. Tribo Da Periferia", "PLAIN"];
 	    sleep 1.5;
-        //playMusic "INSONIA";
+        playMusic "1";
 		//[] remoteExec ["playMusic 'INSONIA'", crew (vehicle player), 0];
-		{"INSONIA" remoteExec ["playMusic"]} forEach crew (vehicle player);
+		//{"INSONIA" remoteExec ["playMusic"]} forEach crew (vehicle player);
     };

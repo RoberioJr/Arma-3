@@ -653,9 +653,6 @@ class LifeCfgVehicles {
 			{ "Policia", "cop", {
 				"textures\veh\cop\pm\offroadpm.paa"
 			}, "call life_coplevel < 11" },
-			{ "Policia", "cop", {
-				"textures\veh\cop\pm\offroadpmsntz.paa"
-			}, "call life_coplevel < 11" },
 			{ "BOPE", "cop", {
 				"textures\veh\cop\bopeoffroad.paa"
 			}, "call life_coplevel >= 11" },
@@ -710,9 +707,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             /*{ "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
             }, "" },*/
-			{ "Policia", "cop", {
-                "textures\veh\cop\pm\hatchbackpmsntz.paa"
-            }, "call life_coplevel < 11" },
 			{ "Policia", "cop", {
                 "textures\veh\cop\pm\hatchbackpm.paa"
             }, "call life_coplevel < 11" }
@@ -858,9 +852,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Policia", "cop", {
                 "textures\veh\cop\pm\suvpm.paa"
             }, "call life_coplevel < 11" },
-			{ "Policia", "cop", {
-                "textures\veh\cop\pm\suvpmsntz.paa"
-            }, "call life_coplevel < 11" },
 			{ "BOPE", "cop", {
                 "textures\veh\cop\suvbope.paa"
             }, "call life_coplevel > 10" }
@@ -911,10 +902,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Policia Militar", "cop", {
 				"textures\veh\cop\pm\hunterpm.paa",
 				"textures\veh\cop\pm\hunterpm2.paa"
-			}, "call life_coplevel < 11" },
-			{ "Policia Militar", "cop", {
-				"textures\veh\cop\pm\hunterpmsntz2.paa",
-				"textures\veh\cop\pm\hunterpm2.paa"
 			}, "call life_coplevel < 11" }
         };
     };
@@ -940,9 +927,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },*/
 			{ "Policia", "cop", {
 				"textures\veh\cop\pm\mh9pm.paa"
-			}, "call life_coplevel < 11" },
-			{ "Policia", "cop", {
-				"textures\veh\cop\pm\mh9pmsntz.paa"
 			}, "call life_coplevel < 11" },
 			{ "BOPE", "cop", {
 				"textures\veh\cop\mh9.paa"

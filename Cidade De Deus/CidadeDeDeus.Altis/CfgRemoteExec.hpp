@@ -169,6 +169,9 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
+		/*RJ EDIT*/
+		F(life_fnc_radio,ANYONE)
+		F(life_fnc_radio3d,ANYONE)
 		/* Guincho Avançado */
 		F(SA_Set_Owner,ANYONE)
         F(SA_Simulate_Towing,ANYONE)

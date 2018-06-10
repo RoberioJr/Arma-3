@@ -7,38 +7,38 @@
 
   sounds[] = {};
 	
-    class FALSOAMOR 
+	class msc1 
 	{
-        name = "FALSOAMOR";
-        sound[] = {"rj\RadioRJ\musicas\audio\FALSOAMOR.ogg", 1.0, 1};
+        name = "1";
+        sound[] = {"rj\RadioRJ\musicas\audio\msc1.ogg", 1.0, 1};
         titles[] = {};
     };
 	
-	class intro 
+	class msc2 
 	{
-        name = "intro";
-        sound[] = {"rj\RadioRJ\musicas\audio\intro.ogg", 1.0, 1};
+        name = "2";
+        sound[] = {"rj\RadioRJ\musicas\audio\msc2.ogg", 1.0, 1};
         titles[] = {};
     };
 	
-	class INSONIA 
+	class msc3 
 	{
-        name = "INSONIA";
-        sound[] = {"rj\RadioRJ\musicas\audio\INSONIA.ogg", 1.0, 1};
-        titles[] = {};
-    };
-	
-	class GAZA 
-	{
-        name = "GAZA";
-        sound[] = {"rj\RadioRJ\musicas\audio\GAZA.ogg", 1.0, 1};
+        name = "3";
+        sound[] = {"rj\RadioRJ\musicas\audio\msc3.ogg", 1.0, 1};
         titles[] = {};
     };	
 	
-	class JULIETA 
+	class msc4 
 	{
-        name = "JULIETA";
-        sound[] = {"rj\RadioRJ\musicas\audio\JULIETA.ogg", 1.0, 1};
+        name = "4";
+        sound[] = {"rj\RadioRJ\musicas\audio\msc4.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	class msc5 
+	{
+        name = "5";
+        sound[] = {"rj\RadioRJ\musicas\audio\msc5.ogg", 1.0, 1};
         titles[] = {};
     };
 	
