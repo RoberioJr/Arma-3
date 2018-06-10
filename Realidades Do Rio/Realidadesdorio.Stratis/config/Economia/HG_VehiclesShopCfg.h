@@ -81,6 +81,35 @@ class HG_DefaultShop2 // HG_DefaultShop is just a placeholder for testing purpos
 	};
 };
 
+ /* LOJA DE CARROS 3 */
+class HG_DefaultShop3 // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+    conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+    class Civil
+	{
+	    displayName = "Veiculos Civis";
+		vehicles[] =
+		{
+		    {"C_SUV_01_F",12000,"true"},
+			{"walker_a3_gtigolf",9000,"true"},
+			{"C_Offroad_01_F",11000,"true"},
+			{"C_Hatchback_01_sport_F",12000,"true"},
+			{"C_Quadbike_01_F",1000,"true"},
+			{"C_Offroad_02_unarmed_F_black",11000,"true"},
+			{"C_Van_02_vehicle_F",9900,"true"},
+			{"c4hch_civ",16000,"true"},
+			{"206_vl",19000,"true"},
+			{"chfcrsciv",18000,"true"},
+			{"AC1D_ford_mustang_NFS_SPEC",32000,"true"}
+		};
+	    spawnPoints[] =
+		{
+			{"Spawn",{"civilian_vehicles_spawn_3"}}
+		};
+	};
+};
+
 
 /* LOJA DE CAMINHÃO */
 class HG_Caminhao // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own

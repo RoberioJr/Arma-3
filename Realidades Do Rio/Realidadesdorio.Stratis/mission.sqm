@@ -8,7 +8,7 @@ class EditorData
 	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=6303;
+		nextID=6313;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=326;
+		nextID=328;
 	};
 	class Camera
 	{
-		pos[]={6095.3042,39.824505,5581.0767};
-		dir[]={0.064925455,-0.68228066,0.72820479};
-		up[]={0.060590852,0.7310881,0.67958689};
-		aside[]={0.99605048,-1.5716068e-009,-0.08880648};
+		pos[]={4362.9663,139.22194,6718.4897};
+		dir[]={0.83894026,-0.53551805,-0.097176909};
+		up[]={0.53197008,0.84451681,-0.061619416};
+		aside[]={-0.1150673,7.027993e-007,-0.99338144};
 	};
 };
 binarizationWanted=0;
@@ -728,7 +728,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -769,7 +769,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -816,7 +816,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2731;
+		items=2736;
 		class Item0
 		{
 			dataType="Marker";
@@ -62661,6 +62661,309 @@ class Mission
 			{
 			};
 			id=6301;
+		};
+		class Item2731
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4361.8062,131.06442,6774.6299};
+						angles[]={0,6.2657323,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_GEAR_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadGear},""HG_ArmasBAND"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
+						disableSimulation=1;
+					};
+					id=6304;
+					type="C_man_hunter_1_F";
+					atlOffset=0.058242798;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6303;
+			atlOffset=0.058242798;
+		};
+		class Item2732
+		{
+			dataType="Marker";
+			position[]={4361.8032,129.82196,6774.584};
+			name="marker_223";
+			text="Contrabando";
+			type="mil_dot";
+			colorName="ColorEAST";
+			angle=286.99997;
+			id=6305;
+			atlOffset=0.044204712;
+		};
+		class Item2733
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4360.915,131.06421,6775.0249};
+						angles[]={0,0.52359891,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_ITEMS_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadItems},""HG_bandido"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
+						disableSimulation=1;
+					};
+					id=6307;
+					type="C_man_hunter_1_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6306;
+		};
+		class Item2734
+		{
+			dataType="Marker";
+			position[]={4364.4268,128.55099,6716.521};
+			name="civilian_vehicles_spawn_3";
+			text="Spawn Da Loja De Veiculos";
+			type="Empty";
+			colorName="ColorRed";
+			angle=161;
+			id=6309;
+			atlOffset=-0.00021362305;
+		};
+		class Item2735
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4377.6094,129.31122,6718.3159};
+				angles[]={0,1.9198622,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this addAction[""<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>""+(localize ""STR_HG_VEHICLES_SHOP"")+""</t>"",{_this call HG_fnc_dialogOnLoadVehicles},""HG_DefaultShop3"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; " \n "}";
+			};
+			id=6310;
+			type="Land_InfoStand_V1_F";
 		};
 	};
 	class Connections
