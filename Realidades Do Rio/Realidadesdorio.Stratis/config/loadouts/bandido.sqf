@@ -34,19 +34,20 @@ removeGoggles _unit;
 
 /* Adicionando Items */
 _unit forceAddUniform _roupa;
+_unit addVest _colete;
+_unit addBackpack _mochila;
+_unit addHeadgear _bone;
+_unit addGoggles _oculos;
 _unit addItemToUniform "ACE_EarPlugs";
 _unit addItemToUniform "TFAR_anprc152";
 _unit addItemToUniform _pente;
 _unit addItemToUniform _pente;
 _unit addItemToUniform _pente;
 _unit addItemToUniform _pente;
-_unit addVest _colete;
 for "_i" from 1 to 2 do {_unit addItemToVest "ACE_fieldDressing";};
-_unit addHeadgear _bone;
-_unit addGoggles _oculos;
 
 
-_unit addWeapon _arma;    //AKS74u 5.45mm
+_unit addWeapon _arma;  
 _unit addPrimaryWeaponItem "";
 _unit addWeapon "";
 _unit addweapon "";
