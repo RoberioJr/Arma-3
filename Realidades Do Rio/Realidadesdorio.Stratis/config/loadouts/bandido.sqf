@@ -8,8 +8,8 @@ waitUntil {!isNull player};
 
 _unit = _this select 0;
 /* Seleção Aleatória De Items */
-_roupa = ["pika","mao","legalize","lacoste1","flamengo","U_I_C_Soldier_Bandit_4_F","U_C_Poloshirt_blue","U_I_C_Soldier_Bandit_5_F"] call BIS_fnc_selectRandom;    //Seleção Da Roupa Inicial Bandidos
-_armas = [1,2,3,4,5] call BIS_fnc_selectRandom;
+_armas = selectRandom [1,2,3,4,5];
+sleep 0.2;
 switch (_armas) do {
     case 1:{_arma = "CUP_hgun_Compact"; _pente = "CUP_10Rnd_9x19_Compact";};
 	case 2:{_arma = "CUP_hgun_Glock17_blk"; _pente = "CUP_17Rnd_9x19_glock17";};
@@ -17,6 +17,8 @@ switch (_armas) do {
 	case 4:{_arma = "CUP_hgun_TaurusTracker455"; _pente = "CUP_6Rnd_45ACP_M";};
 	case 5:{_arma = "CUP_hgun_Colt1911"; _pente = "CUP_7Rnd_45ACP_1911";};
 };
+
+_roupa = ["pika","mao","legalize","lacoste1","flamengo","U_I_C_Soldier_Bandit_4_F","U_C_Poloshirt_blue","U_I_C_Soldier_Bandit_5_F"] call BIS_fnc_selectRandom;    //Seleção Da Roupa Inicial Bandidos
 _bone = ["H_Cap_surfer","H_Cap_khaki_specops_UK","H_Bandanna_surfer","UMI_Dickhead","",""] call BIS_fnc_selectRandom;
 _colete = ["V_HarnessO_gry","V_TacVest_brn","V_TacVest_blk",""] call BIS_fnc_selectRandom;
 _mochila = ["CUP_B_Bergen_BAF","","",""] call BIS_fnc_selectRandom;
