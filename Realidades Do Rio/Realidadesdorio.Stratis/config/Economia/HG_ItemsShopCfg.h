@@ -218,6 +218,78 @@ class HG_bandido // HG_DefaultShop is just a placeholder for testing purposes, y
 	};
 };
 
+class HG_band // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
+{
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
+	class Items
+	{
+	    displayName = "Itens";
+		items[] =
+		{
+		    {"ItemWatch",50,"true"},
+			{"ItemCompass",50,"true"},
+			{"ItemGPS",50,"true"},
+			{"ItemRadio",50,"true"},
+			{"ItemMap",50,"true"},
+			{"TFAR_fadak",150,"true"}
+		};
+	};
+	
+	class Magazines
+	{
+	    displayName = "Carregadores";
+		items[] =
+		{
+            {"16Rnd_9x21_Mag",150,"true"},
+			{"30Rnd_762x39_Mag_Tracer_Green_F",250,"true"},
+			{"30Rnd_545x39_Mag_Tracer_Green_F",250,"true"},
+			{"hlc_30Rnd_545x39_t_ak",400,"true"},
+			{"hlc_20Rnd_762x51_T_fal",450,"true"},
+			{"30Rnd_9x21_Yellow_Mag",180,"true"},
+			{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",350,"true"},
+			{"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",300,"true"},
+			{"CUP_20Rnd_TE1_Red_Tracer_762x51_CZ805B",100,"true"},
+			{"30Rnd_556x45_Stanag_Tracer_Red",370,"true"},
+			{"CUP_30Rnd_Sa58_M_TracerR",260,"true"},
+			{"CUP_64Rnd_Red_Tracer_9x19_Bizon_M",80,"true"},
+			{"CUP_20Rnd_762x51_L129_M",800,"true"},
+			{"CUP_20Rnd_762x51_FNFAL_M",400,"true"},
+			{"30Rnd_556x45_Stanag_Tracer_Red",500,"true"},
+			{"hlc_45Rnd_762x39_t_rpk",390,"true"},
+			{"hlc_50rnd_762x51_MDIM_FAL",390,"true"},
+			{"hlc_20Rnd_762x51_T_amt",400,"true"},
+			{"hlc_30Rnd_10mm_JHP_MP5",90,"true"},
+			{"hlc_30Rnd_9x19_SD_MP5",90,"true"},
+			{"hlc_25Rnd_9x19mm_JHP_AUG",120,"true"},
+			{"150Rnd_556x45_Drum_Mag_Tracer_F",200,"true"},
+			{"CUP_17Rnd_9x19_glock17",30,"true"},
+			{"CUP_15Rnd_9x19_M9",25,"true"},
+			{"CUP_30Rnd_9x19_UZI",70,"true"},
+			{"16Rnd_9x21_Mag",50,"true"},
+			{"30Rnd_9x21_Red_Mag",10,"true"},
+			{"6Rnd_RedSignal_F",5,"true"}
+		};
+	};
+	
+	class Scopes
+	{
+	    displayName = "Lunetas e Miras";
+		items[] =
+		{
+		    {"optic_Arco",1000,"true"},
+			{"optic_Hamr",1000,"true"},
+			{"cup_optic_mrad",950,"true"},
+			{"fhq_optic_ac11704",500,"true"},
+			{"fhq_optic_hws",600,"true"},
+			{"cup_acc_flashlight",200,"true"},
+			{"acc_flashlight",250,"true"},
+			{"hlc_acc_surefiregrip",356,"true"},
+			{"fhq_accllm01f",400,"true"}
+		};
+	};
+};
+
    /* Venda de Drogas */
 
 class HG_ItemDROGAS // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
