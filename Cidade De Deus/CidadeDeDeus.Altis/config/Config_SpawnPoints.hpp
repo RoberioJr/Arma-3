@@ -141,6 +141,13 @@ class CfgSpawnPoints {
 				icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
 			};
+			
+			class PostoSofia {
+			    displayName = "Posto Médico Sofia";
+				spawnMarker = "posto_med_sofia";
+				icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+				conditions = "";
+			};
         };
     };
 
