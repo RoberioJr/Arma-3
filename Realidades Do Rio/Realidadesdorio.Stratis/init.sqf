@@ -18,7 +18,7 @@
 	//[] execVM "config\SalvaPosicoes.sqf";           //Salva as Posições dos players para disconnect e connect
 	
 	//Zeus Com Tudo Liberado
-	[Admins,true] execVM "scripts\ADV_zeus.sqf";
+	//[Admins,true] execVM "scripts\ADV_zeus.sqf";
 	
 	//NameTags...
 	122014 cutrsc ["NameTag","PLAIN"];              //Script NameTags
