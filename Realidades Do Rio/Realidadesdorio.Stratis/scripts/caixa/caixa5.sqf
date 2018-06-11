@@ -8,7 +8,7 @@
 
  //Marcador Para Spawn Da Caixa.
  //Caixa A Ser Spawnada.
-  _caixa5 = "Box_NATO_WpsSpecial_F" createVehicle getMarkerPos "caixa2";
+  _caixa5 = "Box_NATO_WpsSpecial_F" createVehicle getMarkerPos "caixa5";
   if((getNumber(missionConfigFile >> "CfgClient" >> "clearInventory")) isEqualTo 1) then
   {
 	clearItemCargoGlobal _caixa5;
