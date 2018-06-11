@@ -15,7 +15,7 @@
     [] execVM "briefing.sqf";                       //Carregar Informações No Mapa
     };
 	//Teste de Save
-	[] execVM "config\SalvaPosicoes.sqf";           //Salva as Posições dos players para disconnect e connect
+	//[] execVM "config\SalvaPosicoes.sqf";           //Salva as Posições dos players para disconnect e connect
 	
 	//Zeus Com Tudo Liberado
 	[Admins,true] execVM "scripts\ADV_zeus.sqf";

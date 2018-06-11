@@ -3,7 +3,7 @@
 /      Do        /     
 / Rio De Janeiro /
 */
-private "_rjposition","_vivo";
+private ["_rjposition","_vivo","_unit","_roupa"];
 
 /*
 _rjpositionpri = profileNameSpace getVariable "rjposition";
