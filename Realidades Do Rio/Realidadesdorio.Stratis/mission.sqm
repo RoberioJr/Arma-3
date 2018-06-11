@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=332;
+		nextID=334;
 	};
 	class Camera
 	{
-		pos[]={6401.6147,119.04637,5384.7031};
-		dir[]={-0.74225336,-0.58214855,0.33192214};
-		up[]={-0.531434,0.8130815,0.23764783};
-		aside[]={0.40822616,-4.5984052e-009,0.91288614};
+		pos[]={6259.6074,119.04637,5200.0698};
+		dir[]={0.96083742,-0.21771447,-0.1714941};
+		up[]={0.21433173,0.9760105,-0.038254872};
+		aside[]={-0.17570892,-2.0005973e-007,-0.98444933};
 	};
 };
 binarizationWanted=0;
@@ -718,7 +718,7 @@ class ScenarioData
 	disabledAI=1;
 	respawn=3;
 	respawnDelay=30.000002;
-	respawnVehicleDelay=119.95712;
+	respawnVehicleDelay=98.497902;
 	class Header
 	{
 		gameType="Sandbox";
@@ -759,7 +759,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="Counter";
+								value="MenuPosition";
 							};
 						};
 					};
@@ -53088,7 +53088,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3289.5823,226.57764,2976.7087};
+						position[]={3289.582,226.57745,2976.709};
 						angles[]={0,1.6755161,0};
 					};
 					side="West";
@@ -53111,7 +53111,7 @@ class Mission
 					};
 					id=5856;
 					type="B_Survivor_F";
-					atlOffset=-0.82977295;
+					atlOffset=-0.83000183;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -61121,7 +61121,7 @@ class Mission
 			text="Contrabando";
 			type="mil_dot";
 			colorName="ColorEAST";
-			angle=286.99991;
+			angle=286.99988;
 			id=6305;
 			atlOffset=0.044204712;
 		};
