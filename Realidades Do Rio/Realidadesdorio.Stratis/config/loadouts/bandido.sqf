@@ -41,7 +41,7 @@ _unit addBackpack _mochila;
 _unit addHeadgear _bone;
 _unit addGoggles _oculos;
 _unit addItemToUniform "ACE_EarPlugs";
-_unit addItemToUniform "TFAR_anprc152";ACE_morphine
+_unit addItemToUniform "TFAR_anprc152";
 _unit addItemToUniform "ACE_morphine";
 _unit addItemToUniform "ACE_salineIV_250";
 _unit addItemToUniform _pente;
