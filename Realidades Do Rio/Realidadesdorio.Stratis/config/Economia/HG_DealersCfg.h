@@ -21,7 +21,13 @@ class HG_DefaultDealer  // HG_DefaultDealer is just a placeholder for testing pu
 	
 	interestedIn[] = 
 	{
-		{"C_SUV_01_F",800},
-		{"B_MRAP_01_F",4500}
+		{"C_Quadbike_01_F",1200},
+		{"C_SUV_01_F",3500},
+		{"C_Van_01_box_F",4500},
+		{"C_Offroad_01_F",3000},
+		{"C_Van_01_transport_F",5200},
+		{"C_Hatchback_01_sport_F",3500},
+		{"BOPE_OffRoad_NATO",5000},
+		{"BOPE_Hunter_NATO",8000}
 	};
 };

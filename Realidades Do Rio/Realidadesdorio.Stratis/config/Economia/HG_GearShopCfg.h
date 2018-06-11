@@ -222,12 +222,12 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Pistolas";
 		content[] =
 		{
-			{"hgun_P07_F",2000,"true"},
-			{"CUP_hgun_Glock17",1000,"true"},
-			{"CUP_hgun_M9",750,"true"},
-			{"CUP_hgun_MicroUzi",1200,"true"},
-			{"CUP_hgun_Duty",900,"true"},
-			{"hgun_Rook40_F",350,"true"},
+			{"hgun_P07_F",200,"true"},
+			{"CUP_hgun_Glock17",250,"true"},
+			{"CUP_hgun_M9",225,"true"},
+			{"CUP_hgun_MicroUzi",400,"true"},
+			{"CUP_hgun_Duty",300,"true"},
+			{"hgun_Rook40_F",175,"true"},
 			{"hgun_Pistol_Signal_F",50,"true"}
 		};
 	};
@@ -237,24 +237,24 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Rifles De Assalto";
 		content[] =
 		{
-			{"arifle_AKM_F",25000,"true"},
-			{"hlc_rifle_ak74m",25000,"true"},
-			{"hlc_rifle_aku12",30000,"true"},
-			{"hlc_rifle_aek971",30000,"true"},
-			{"hlc_rifle_FAL5000_RH",45000,"true"},
-			{"CUP_arifle_FNFAL5061",46000,"true"},
-			{"CUP_img_M60E4",35000,"true"},
-			{"CUP_arifle_AKS74U",25000,"true"},
-			{"arifle_AKS_F",27000,"true"},
-			{"hlc_rifle_slr107u",33000,"true"},
-			{"CAG_HK416CRS_W",30000,"true"},
+			{"arifle_AKM_F",15000,"true"},
+			{"hlc_rifle_ak74m",12000,"true"},
+			{"hlc_rifle_aku12",16000,"true"},
+			{"hlc_rifle_aek971",10000,"true"},
+			{"hlc_rifle_FAL5000_RH",20000,"true"},
+			{"CUP_arifle_FNFAL5061",19500,"true"},
+			{"CUP_img_M60E4",17500,"true"},
+			{"CUP_arifle_AKS74U",6000,"true"},
+			{"arifle_AKS_F",4800,"true"},
+			{"hlc_rifle_slr107u",23000,"true"},
+			{"CAG_HK416CRS_W",19000,"true"},
 			{"hlc_rifle_c1A1",23000,"true"},
 			{"CUP_arifle_CZ805_B",20000,"true"},
-			{"arifle_SPAR_02_blk_F",40000,"true"},
-			{"CUP_arifle_M4A1",55000,"true"},
-			{"CUP_arifle_Sa58P",40000,"true"},
-			{"hlc_rifle_sig5104",35000,"true"},
-			{"CUP_arifle_M16A4_Base",44000,"true"}
+			{"arifle_SPAR_02_blk_F",20000,"true"},
+			{"CUP_arifle_M4A1",18000,"true"},
+			{"CUP_arifle_Sa58P",11000,"true"},
+			{"hlc_rifle_sig5104",14000,"true"},
+			{"CUP_arifle_M16A4_Base",10100,"true"}
 		};
 	};
 	
@@ -263,8 +263,8 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Metralhadoras";
 		content[] =
 		{
-			{"hlc_rifle_rpk74n",50000,"true"},
-			{"hlc_rifle_rpk",60000,"true"}
+			{"hlc_rifle_rpk74n",30000,"true"},
+			{"hlc_rifle_rpk",40000,"true"}
 		};
 	};
 	
@@ -273,11 +273,11 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "SUB Metralhadoras";
 		content[] =
 		{
-			{"hgun_PDW2000_F",12000,"true"},
-			{"CUP_smg_bizon",6000,"true"},
-			{"hlc_smg_mp510",5000,"true"},
-			{"hlc_smg_mp5a2",5500,"true"},
-			{"hlc_rifle_auga2para_b",14000,"true"}
+			{"hgun_PDW2000_F",2000,"true"},
+			{"CUP_smg_bizon",2500,"true"},
+			{"hlc_smg_mp510",2200,"true"},
+			{"hlc_smg_mp5a2",2400,"true"},
+			{"hlc_rifle_auga2para_b",3000,"true"}
 		};
 	};
 	
@@ -286,7 +286,7 @@ class HG_ArmasBAND // HG_DefaultShop is just a placeholder for testing purposes,
 		displayName = "Rifle De Precisão";
 		content[] =
 		{
-			{"CUP_srifle_L129A1",80000,"true"}
+			{"CUP_srifle_L129A1",20000,"true"}
 		};
 	};
 };
@@ -321,15 +321,15 @@ class HG_roupasbandido // HG_DefaultShop is just a placeholder for testing purpo
 		displayName = "$STR_HG_SHOP_UNIFORMS";
 		content[] =
 		{
-		    {"gato",150,"true"},
-			{"legalize",150,"true"},
-			{"lobo",150,"true"},
-			{"mao",150,"true"},
-			{"nuvem",150,"true"},
-			{"pika",150,"true"},
-			{"tigre",150,"true"},
-			{"flamengo",150,"true"},
-			{"riodejaneiro1",150,"true"}
+		    {"gato",45,"true"},
+			{"legalize",45,"true"},
+			{"lobo",45,"true"},
+			{"mao",45,"true"},
+			{"nuvem",45,"true"},
+			{"pika",45,"true"},
+			{"tigre",45,"true"},
+			{"flamengo",45,"true"},
+			{"riodejaneiro1",45,"true"}
 		};
 	};
 	

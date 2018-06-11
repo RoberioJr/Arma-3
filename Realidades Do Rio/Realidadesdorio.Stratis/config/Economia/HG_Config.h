@@ -113,7 +113,7 @@ class HG_MasterCfg
 {
 	class PRIVATE
 	{
-		paycheck = 200;
+		paycheck = 300;
 		paycheckPeriod = 10;
 		startCash = 100;
 		startBank = 1000;
@@ -130,7 +130,7 @@ class HG_MasterCfg
 	};
 	class CORPORAL
 	{
-		paycheck = 250;
+		paycheck = 350;
 		paycheckPeriod = 10;
 		startCash = 100;
 		startBank = 10000;
@@ -147,7 +147,7 @@ class HG_MasterCfg
 	};
 	class SERGEANT
 	{
-		paycheck = 300;
+		paycheck = 400;
 		paycheckPeriod = 10;
 		startCash = 100;
 		startBank = 10000;
@@ -164,7 +164,7 @@ class HG_MasterCfg
 	};
 	class LIEUTENANT
 	{
-		paycheck = 350;
+		paycheck = 400;
 		paycheckPeriod = 10;
 		startCash = 100;
 		startBank = 10000;
@@ -198,7 +198,7 @@ class HG_MasterCfg
 	};
 	class MAJOR
 	{
-		paycheck = 450;
+		paycheck = 400;
 		paycheckPeriod = 10;
 		startCash = 100;
 		startBank = 10000;
@@ -215,7 +215,7 @@ class HG_MasterCfg
 	};
 	class COLONEL
 	{
-		paycheck = 500;
+		paycheck = 400;
 		paycheckPeriod = 10;
 		startCash = 100;
 		startBank = 10000;
