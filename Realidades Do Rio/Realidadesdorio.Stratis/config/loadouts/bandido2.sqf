@@ -7,7 +7,7 @@
 waitUntil {!isNull player};
 
 _unit = _this select 0;
-_roupa = ["pika","mao","legalize","lacoste1","flamengo","riodejaneiro1"] call BIS_fnc_selectRandom;    //Seleção Da Roupa Inicial Bandidos
+_roupa = ["pika","mao","legalize","lacoste1","flamengo"] call BIS_fnc_selectRandom;    //Seleção Da Roupa Inicial Bandidos
 
 
 removeAllWeapons _unit;
