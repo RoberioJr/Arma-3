@@ -19,7 +19,7 @@ _arma = _armas select 0;
 _pente = _armas select 1;
 
 _roupa = ["pika","mao","legalize","lacoste1","flamengo","U_I_C_Soldier_Bandit_4_F","U_C_Poloshirt_blue","U_I_C_Soldier_Bandit_5_F"] call BIS_fnc_selectRandom;    //Seleção Da Roupa Inicial Bandidos
-_bone = ["H_Cap_surfer","H_Cap_khaki_specops_UK","H_Bandanna_surfer","UMI_Dickhead","",""] call BIS_fnc_selectRandom;
+_bone = ["H_Cap_surfer","H_Cap_khaki_specops_UK","H_Bandanna_surfer","",""] call BIS_fnc_selectRandom;
 _colete = ["V_HarnessO_gry","V_TacVest_brn","V_TacVest_blk",""] call BIS_fnc_selectRandom;
 _mochila = ["CUP_B_Bergen_BAF","","",""] call BIS_fnc_selectRandom;
 _oculos = ["G_Shades_Green","G_Shades_Blue","G_Shades_Red","G_Shades_Black","G_Bandanna_shades",""] call BIS_fnc_selectRandom;
