@@ -133,7 +133,7 @@ class VirtualShops {
 	class ymarket {
     name = "STR_Shops_yMarket";
     conditions = "";
-    items[] = {"apple", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "cocaine_unprocessed", "copper_refined", "copper_unrefined", "diamond_cut", "diamond_uncut", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "heroin_unprocessed", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "mushrooms", "oil_processed", "oil_unprocessed", "ornate", "ornate_raw", "peach", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "salt_unrefined", "sheep", "sheep_raw", "storagebig", "storagesmall", "tuna", "tuna_raw", "turtle_soup", "turtle_raw"};
+    items[] = {"apple", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "cocaine_unprocessed", "copper_refined", "copper_unrefined", "diamond_cut", "diamond_uncut", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "heroin_unprocessed", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "mushrooms", "oil_processed", "oil_unprocessed", "ornate", "ornate_raw", "peach", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "salt_unrefined", "sheep", "sheep_raw", "tuna", "tuna_raw", "turtle_soup", "turtle_raw"};
     };
 };
 

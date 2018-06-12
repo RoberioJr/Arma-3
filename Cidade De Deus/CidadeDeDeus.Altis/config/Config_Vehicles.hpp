@@ -134,7 +134,7 @@ class CarShops {
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 2" },
-            { "B_MRAP_01_F", "call life_coplevel >= 3" }
+            { "B_MRAP_01_F", "call life_coplevel >= 4" }
         };
     };
 
@@ -143,7 +143,7 @@ class CarShops {
         conditions = "call life_coplevel >= 3";
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
-            { "B_Heli_Transport_01_F", "call life_coplevel >= 4" }
+            { "I_Heli_light_03_unarmed_F", "call life_coplevel >= 4" }
         };
     };
 
@@ -200,7 +200,11 @@ class LifeCfgVehicles {
 	    vItemSpace = 235;
 		conditions = "";
 		price = 1000000;
-		textures[] = {};
+		textures[] = {
+			{ "Policia", "cop", {
+				"textures\veh\cop\pm\hellcatpm.paa"
+			}, "call life_coplevel < 11" }
+		};
 	};
 	
 	//Mohawk
@@ -208,7 +212,18 @@ class LifeCfgVehicles {
 	    vItemSpace = 300;
 		conditions = "";
 		price = 1200000;
-		textures[] = {};
+		textures[] = {
+			{ "Civil 1", "civ", {
+		        "\A3\Air_F_beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_1_ion_CO.paa",
+			    "\A3\Air_F_beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_2_ion_CO.paa",
+				"\A3\Air_F_beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_3_ion_CO.paa"
+			}, "" },
+			{ "Civil 2", "civ", {
+		        "\A3\Air_F_beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_1_dahoman_CO.paa",
+			    "\A3\Air_F_beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_2_dahoman_CO.paa",
+				"\A3\Air_F_beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_3_dahoman_CO.paa"				
+			}, "" }
+		};
 	};
 	
 	//Taru T
@@ -891,7 +906,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "";
         price = 575000;
         textures[] = {
-			{ "Rebelde", "civ", {
+			{ "Rebelde", "reb", {
 				"\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa",
 				"\a3\soft_f\MRAP_01\Data\MRAP_01_adds_CO.paa"
 			}, "" },
@@ -911,8 +926,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "";
         price = 275000;
         textures[] = {
-            { "Rebel Digital", "reb", {
+            { "Rebelde Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
+            }, "" },
+			{ "Rebelde", "reb", {
+                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blufor_co.paa"
             }, "" }
         };
     };
@@ -989,15 +1007,17 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_pilot || {license_med_mAir} || {(playerSide isEqualTo west)}";
         price = 750000;
         textures[] = {
-            { "Black", "cop", {
-                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
+            { "BOPE", "cop", {
+                "\a3\air_f\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_V2_CO.paa"
             }, "" },
             { "White / Blue", "civ", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"
             }, "" },
+			/*
             { "Digi Green", "civ", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
             }, "" },
+			*/
             { "Desert Digi", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },

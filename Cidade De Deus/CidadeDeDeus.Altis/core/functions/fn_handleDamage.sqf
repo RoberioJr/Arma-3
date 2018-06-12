@@ -51,5 +51,19 @@ if ((vehicle _unit) isKindOf "Car" && (isNull _source || _source isEqualTo _unit
 	_damage = if (life_seatbelt) then { _damage / 2 } else { _damage};
 };
 
+//Anti VDM 
+if ((isPlayer _source) && (vehicle _source != _source)) then {
+    if(_part == "body" && (player getVariable["limit",true]) && (side _source == civilian)) then {
+        player setVariable ["limit",false];
+        [_source] spawn {
+            _driver = _this select 0;
+            [0,format["O Jogador %1 Atropelou %2, Denuncie Na Administração!", name _driver, name player]] remoteExec ["life_fnc_broadcast",0];
+            sleep(10);
+            player setVariable ["limit",true];
+	    };
+    };		
+  _damage = getDammage player;
+};
+
 [] spawn life_fnc_hudUpdate;
 _damage;

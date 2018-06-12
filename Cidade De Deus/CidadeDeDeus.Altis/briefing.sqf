@@ -243,7 +243,7 @@ Crisis Negotiation must be handled by a Sergeant. If one is not available, the p
 6. A polícia não pode disparar cegamente no prédio. <br/>
 7. A polícia deve evacuar os civis do prédio durante um assalto. <br/>
 8. Qualquer civil que tente ativamente impedir que a polícia entre no prédio possa ser tratado como um cúmplice. <br/>
-9. Os oficiais de supervisão podem contratar pessoas ou contratar um grupo de pessoas para trabalhar como guardas de segurança para o banco. Consulte a seção "Contratação" para obter mais informações. <br/> <br/>
+9. Os oficiais de supervisão podem contratar pessoas ou contratar um grupo de pessoas para trabalhar como guardas de segurança para o banco. Consulte a seção 'Contratação' para obter mais informações. <br/> <br/>
                 "
         ]
     ];
