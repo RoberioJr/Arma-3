@@ -60,6 +60,7 @@ if(isServer) then {
 		{
 			params ["_id", "_uid", "_name", "_jip", "_owner"];
 			waitUntil {JogadorDeuRespawn};
+			sleep 1.5;
 			if(_jip) then {
 				private _clientData = missionNamespace getVariable ["TAG_disconnectedLoadouts", []];
 				private _uidIndex = _clientData find _uid;
