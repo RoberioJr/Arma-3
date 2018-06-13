@@ -59,7 +59,7 @@ if(isServer) then {
 		"PlayerConnected", 
 		{
 			params ["_id", "_uid", "_name", "_jip", "_owner"];
-			waitUntil {Alive player};
+			waitUntil {JogadorDeuRespawn};
 			if(_jip) then {
 				private _clientData = missionNamespace getVariable ["TAG_disconnectedLoadouts", []];
 				private _uidIndex = _clientData find _uid;

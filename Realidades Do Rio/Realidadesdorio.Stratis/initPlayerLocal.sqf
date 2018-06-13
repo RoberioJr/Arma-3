@@ -21,6 +21,8 @@
  if(!hasInterface) exitWith {};
 [] execVM "scripts\HG\Setup\fn_clientInitialization.sqf";
 
+[] call compile preprocessFileLineNumbers "config\variaveis.sqf";
+
  /* KeyHandler By: RobérioJR */
   //[] execVM "config\keyHandler.sqf"; NÃO FUNCIONA POR ENQUANTO
 

@@ -66,4 +66,5 @@ _unit linkItem "ItemGPS";
 _unit setFace "PersianHead_A3_01";
 _unit setSpeaker "male01per";
 
+JogadorDeuRespawn = true;
 if(true) exitWith{};
