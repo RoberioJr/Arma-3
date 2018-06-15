@@ -36,6 +36,12 @@
  	    name = "cinco";
 	    sound[] = {"rj\RadioRJ\musicas\audio\msc5.ogg", db+5, 1.0};
     };
+	
+	class seis
+    {
+ 	    name = "seis";
+	    sound[] = {"rj\RadioRJ\musicas\audio\msc6.ogg", db+5, 1.0};
+    };
 
 	
 	

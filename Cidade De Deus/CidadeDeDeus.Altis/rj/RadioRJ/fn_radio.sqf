@@ -13,34 +13,40 @@ _musica = param [0,0,[0]];
 
 #include "..\CFGs.sqf"
 
+if (vehicle player != player) exitWith {};
 if (_musica isEqualTo "") exitWith {};
-if (_musica > 5 or _musica < 1) then {_musica = selectRandom [1,2,3,4,5];};
+if (_musica isEqualTo "0") exitWith {playMusic "";}; //Parar Musica
+if (_musica > 6 or _musica < 1) then {_musica = selectRandom [1,2,3,4,5,6];};
 switch (_musica) do {
     case 1: {
-	    _nomeMusica = _nomeMusica1; 
+	    nomeMusica = _nomeMusica1; 
 	    _musica = "um";
 	};
 	case 2: {
-	    _nomeMusica = _nomeMusica2; 
+	    nomeMusica = _nomeMusica2; 
 	    _musica = "dois";
 	};
 	case 3: {
-	    _nomeMusica = _nomeMusica3; 
+	    nomeMusica = _nomeMusica3; 
 	    _musica = "tres";
 	};
 	case 4: {
-	    _nomeMusica = _nomeMusica4; 
+	    nomeMusica = _nomeMusica4; 
 	    _musica = "quatro";
 	};
 	case 5: {
-	    _nomeMusica = _nomeMusica5; 
+	    nomeMusica = _nomeMusica5; 
 	    _musica = "cinco";
+	};
+	case 6: {
+	    nomeMusica = _nomeMusica6; 
+	    _musica = "seis";
 	};
 };
 
-if (vehicle player != player) then {
 	playSound "botao";
-	cutText [format ["Tocando: %1",_nomeMusica], "PLAIN"];
+	titleText[format ["Tocando: %1",nomeMusica],"PLAIN"];
 	sleep 1.5;
     playMusic _musica;
-};
+	
+	

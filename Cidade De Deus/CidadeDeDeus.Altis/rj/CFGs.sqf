@@ -31,17 +31,18 @@ _VeiculosComRadio =
 	"C_Van_02_medevac_F"       //Ambulancia
 ];
 
-
-_nomeMusicaMenu1 = "Hungria Insônia";
-_nomeMusicaMenu2 = "Chatuba Heathens";
-_nomeMusicaMenu3 = "Faixa De Gaza";
-_nomeMusicaMenu4 = "Falso Amor";
-_nomeMusicaMenu5 = "Julieta";
+_nomeMusicaMenu1 = "Hungria Insônia";//RAP\HIPHOP
+_nomeMusicaMenu2 = "Chatuba Heathens";//REMIX
+_nomeMusicaMenu3 = "Faixa De Gaza";//FUNK
+_nomeMusicaMenu4 = "Falso Amor";//FORRÓ
+_nomeMusicaMenu5 = "Julieta";//FUNK
+_nomeMusicaMenu6 = "Human";//INTERNACIONAL
 _nomeMusica1 = "Hungria - Insônia Part. Tribo Da Periferia";
 _nomeMusica2 = "Twenty One Pilots - Heathens ft. Chatuba de Mesquita & MC Carol";
 _nomeMusica3 = "Faixa De Gaza - MC Orelha";
 _nomeMusica4 = "Falso Amor - Aldair Playboy";
 _nomeMusica5 = "Julieta - MC Lan";
+_nomeMusica6 = "Human - Rag'n'Bone Man";
 
     /* Variados */
 _DistanciaDeEfeitoDoGasLacrimogenio = 12; //Em Metros

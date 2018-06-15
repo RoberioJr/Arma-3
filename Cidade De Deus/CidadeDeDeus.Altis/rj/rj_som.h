@@ -42,6 +42,13 @@
         titles[] = {};
     };
 	
+	class seis 
+	{
+        name = "seis";
+        sound[] = {"rj\RadioRJ\musicas\audio\msc6.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
 	class sirenLong {
         name = "sirenLong";
         sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};

@@ -15,7 +15,7 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
 	    cutText ["Tocando: Twenty One Pilots - Heathens ft. Chatuba de Mesquita & MC Carol", "PLAIN"];
 	    sleep 1.5;
         //_helipad say3d ["intro",200,1];
-		[_helipad,"2",200,1] remoteExec ["life_fnc_say3D",0];
+		[_helipad,"dois",200,1] remoteExec ["life_fnc_say3D",0];
     };
  } else {
     deleteVehicle (_vei getVariable ["tocando", objNull]);
@@ -26,6 +26,6 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
 	cutText ["Tocando: Twenty One Pilots - Heathens ft. Chatuba de Mesquita & MC Carol", "PLAIN"];
 	sleep 1.5;
     //_helipad say3d ["intro",200,1];
-	[_helipad,"2",200,1] remoteExec ["life_fnc_say3D",0];
+	[_helipad,"dois",200,1] remoteExec ["life_fnc_say3D",0];
 };
 

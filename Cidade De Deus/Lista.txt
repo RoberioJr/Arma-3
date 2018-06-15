@@ -10,5 +10,5 @@ Skins De Veiculos                              OK
 Ageitar Rebeldes                               OK
 Tirar Hunter Armado COP                        OK
 MSG COP Ao Jogador Chamar SAMU                 OK
-General Store De Athira Com Erro (Condições)   Faltando Consertar!
+General Store De Athira Com Erro (Condições)   OK
 ...

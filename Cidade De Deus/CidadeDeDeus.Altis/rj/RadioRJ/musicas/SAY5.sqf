@@ -14,7 +14,7 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
 	    playSound "botao";
 	    cutText ["Tocando: Julieta - MC Lan", "PLAIN"];
 	    sleep 1.5;
-		[_helipad,"5",200,1] remoteExec ["life_fnc_say3D",0];
+		[_helipad,"cinco",200,1] remoteExec ["life_fnc_say3D",0];
     };
  } else {
     deleteVehicle (_vei getVariable ["tocando", objNull]);
@@ -24,5 +24,5 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
 	playSound "botao";
 	cutText ["Tocando: Julieta - MC Lan", "PLAIN"];
 	sleep 1.5;
-	[_helipad,"5",200,1] remoteExec ["life_fnc_say3D",0];
+	[_helipad,"cinco",200,1] remoteExec ["life_fnc_say3D",0];
 };

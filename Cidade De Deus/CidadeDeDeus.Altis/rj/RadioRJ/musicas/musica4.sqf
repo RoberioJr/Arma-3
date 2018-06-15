@@ -8,5 +8,5 @@
 	    playSound "botao";
 	    cutText ["Tocando: Falso Amor - Aldair Playboy", "PLAIN"];
 	    sleep 1.5;
-        playMusic "4";
+        playMusic "quatro";
     };

@@ -21,7 +21,8 @@ waitUntil {alive player};
 			["REMIX", [3], "#USER:MusicaREMIX", -5, [["expression", ""]], "1", "1"],
 			["FUNK", [4], "#USER:MusicaFUNK", -5, [["expression", ""]], "1", "1"],
 			["FORRÓ", [5], "#USER:MusicaFORRO", -5, [["expression", ""]], "1", "1"],
-			["TESTE", [6], "", -5, [["expression", "[4] call life_fnc_radio"]], "1", "1"],
+			["INTERNACIONAL", [6], "#USER:MusicaINTER", -5, [["expression", ""]], "1", "1"],
+			["TESTE", [7], "", -5, [["expression", "[4] call life_fnc_radio"]], "1", "1"],
 			["DESLIGAR RADIO", [8],  "", -5, [["expression", format[_executar,"PARAR.sqf"]]], "1", "1"],
 			["", [-1], "", -5, [["expression", ""]], "1", "0"],
 		["Sair", [13], "", -3, [["expression", ""]], "1", "1"]		
@@ -49,6 +50,7 @@ if (FETCH_CONST(life_donorlevel) >=1 && {(driver (vehicle player)) isEqualTo pla
 		["REMIX", [5], "#USER:MusicaREMIX", -5, [["expression", ""]], "1", "1"],
 		["FUNK", [6], "#USER:MusicaFUNK", -5, [["expression", ""]], "1", "1"],
 		["FORRÓ", [7], "#USER:MusicaFORRO", -5, [["expression", ""]], "1", "1"],
+		["INTERNACIONAL", [8], "#USER:MusicaINTER", -5, [["expression", ""]], "1", "1"],
 	["Sair", [13], "", -3, [["expression", ""]], "1", "1"]		
  ];
  
@@ -103,4 +105,11 @@ MusicaFORRO =
 			["Sair", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
 
+MusicaINTER = 
+[
+    ["INTERNACIONAL",true],
+	    [_nomeMusicaMenu6, [2],  "", -5, [["expression", format[_executar,"musica6.sqf"]]], "1", "1"],
+		    ["Sair", [13], "", -3, [["expression", ""]], "1", "1"]
+];
 showCommandingMenu "#USER:radiorj";
+
