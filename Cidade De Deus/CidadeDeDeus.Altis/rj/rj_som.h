@@ -157,12 +157,6 @@
 		titles[] = {};
 	};
 	
-	class ziptie {
-	    name = "ziptie";
-		sound[] = {"\sounds\ziptie.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
 	class portaabre {
 	    name = "portaabre";
 		sound[] = {"\sounds\portaabre.ogg", 1.0, 1};
@@ -204,3 +198,15 @@
 		sound[] = {"\sounds\cuff.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	
+	class ziptie {
+        name = "ziptie";
+        sound[] = {"\sounds\ziptie.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
+    class gag {
+        name = "gag";
+        sound[] = {"\sounds\gag.ogg", 1.0, 1};
+        titles[] = {};
+    };

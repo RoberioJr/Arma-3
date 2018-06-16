@@ -53,6 +53,7 @@ life_storagePlacing = scriptNull;
 life_seatbelt = false;
 /* EDITS DO RJ */
 NVGRJ = false;
+RJ_tempodorequest = false;
 //Life_radiorj = false;
 
 //Settings

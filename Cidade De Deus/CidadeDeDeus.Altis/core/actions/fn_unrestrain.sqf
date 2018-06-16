@@ -9,12 +9,6 @@
 private ["_unit"];
 _unit = param [0,objNull,[objNull]];
 
-//EDIT RJ
-if (playerSide isEqualTo civilian) then {
-    if(!([false,"keys",1] call life_fnc_handleInv)) exitWith { hint "Você Não as Chaves Da Algema!"; };
-    [true,"keys",1] call life_fnc_handleInv; // Remove if you want the keys a one time use.
-};
-
 if (isNull _unit || !(_unit getVariable ["restrained",false])) exitWith {}; //Error check?
 
 _unit setVariable ["restrained",false,true];

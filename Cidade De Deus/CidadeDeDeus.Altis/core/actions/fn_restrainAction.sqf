@@ -16,12 +16,6 @@ if (_unit getVariable "restrained") exitWith {};
 if (player isEqualTo _unit) exitWith {};
 if (!isPlayer _unit) exitWith {};
 
-//Edit RJ
-if (playerSide isEqualTo civilian) then {
-    if(!([false,"handcuff",1] call life_fnc_handleInv)) exitWith { hint "Você Não Tem Algemas!"; };
-    [true,"handcuff",1] call life_fnc_handleInv; 
-};
-
 //Broadcast!
 
 _unit setVariable ["playerSurrender",false,true];

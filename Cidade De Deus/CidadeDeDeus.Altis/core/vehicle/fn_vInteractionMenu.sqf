@@ -40,6 +40,11 @@ _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck; close
 
 if ((life_inv_toolkit >= 1) && {alive life_vInact_curTarget} && {([life_vInact_curTarget] call life_fnc_isDamaged)}) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
+ /* RJ EDIT */
+  _Btn4 ctrlSetText localize "STR_vInAct_PullOut";
+  _Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
+  if (crew _curTarget isEqualTo []) then {_Btn4 ctrlEnable false;};
+
 if (playerSide isEqualTo west) then {
     _Btn2 ctrlSetText localize "STR_vInAct_Registration";
     _Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction; closeDialog 0;";
@@ -83,9 +88,9 @@ if (playerSide isEqualTo civilian) then {
     } else {
         //if (!isNil "_id") then {
            // if !(_id in getDLCs 1) then {
-                _Btn4 ctrlSetText localize "STR_vInAct_GetInVehicle";
-                _Btn4 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
-                if (crew _curTarget isEqualTo [] && {locked _curTarget isEqualTo 0}) then {_Btn4 ctrlEnable true;} else {_Btn4 ctrlEnable false};
+                _Btn5 ctrlSetText localize "STR_vInAct_GetInVehicle";
+                _Btn5 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
+                if (crew _curTarget isEqualTo [] && {locked _curTarget isEqualTo 0}) then {_Btn5 ctrlEnable true;} else {_Btn5 ctrlEnable false};
           //  };
        // } else {
             _Btn2 ctrlSetText localize "STR_vInAct_Unflip";
@@ -127,7 +132,7 @@ if (playerSide isEqualTo civilian) then {
     };
 
     //_Btn4 ctrlShow false;
-    _Btn5 ctrlShow false;
+    //_Btn5 ctrlShow false;
     _Btn6 ctrlShow false;
 };
 /* Alteração Por RobérioJR */

@@ -8,7 +8,7 @@
 */
 private ["_crew"];
 _crew = crew cursorObject;
-
+if (player distance cursorTarget > 6) exitWith { Hint "O Veiculo Está Muito Longe." };
 {
     if !(side _x isEqualTo west) then {
         _x setVariable ["transporting",false,true]; _x setVariable ["Escorting",false,true];

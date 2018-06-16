@@ -96,6 +96,10 @@ player setVariable ["restrained",false,true];
 player setVariable ["Escorting",false,true];
 player setVariable ["transporting",false,true];
 player setVariable ["playerSurrender",false,true];
+/* RJ EDIT */
+player setVariable ["ziptied",false,true];
+player setVariable ["blindfolded",false,true];
+player setVariable ["gagged",false,true];
 
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";

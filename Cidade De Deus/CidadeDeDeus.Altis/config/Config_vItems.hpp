@@ -27,7 +27,7 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "handcuffs", "keys" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "ziptie", "gag", "blindfold", "boltcutter", "blastingcharge" };
     };
 
     class gang {
@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit" };
     };
 	
 	/* Isso não é uma loja! - Mercado (Y MENU) */
@@ -153,27 +153,40 @@ class VirtualItems {
     //Virtual Items
 
 	/* RJ EDIT */
-	class handcuffs {
-        variable = "handcuffs";
-        displayName = "STR_Item_algema";
-        weight = 10;
-        buyPrice = 15000;
-        sellPrice = -1;
+	
+	class ziptie {
+        variable = "ziptie";
+        displayName = "STR_Ziptie";
+        weight = 6;
+        buyPrice = 6000;
+        sellPrice = 1200;
         illegal = true;
         edible = -1;
-        icon = "icons\cuffs.paa";
-    };	
-	
-	class keys {
-        variable = "keys";
-        displayName = "STR_Item_keyalgema";
-        weight = 8;
-        buyPrice = 20000;
-        sellPrice = -1;
-        illegal = false;
-        edible = -1;
-        icon = "icons\icon_keys.paa";
+        icon = "icons\ziptie.paa";
     };
+
+    class gag {
+        variable = "gag";
+        displayName = "STR_gag";
+        weight = 7;
+        buyPrice = 8500;
+        sellPrice = 1000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\gag.paa";
+    };
+
+    class blindfold {
+        variable = "blindfold";
+        displayName = "STR_blindfold";
+        weight = 7;
+        buyPrice = 10000;
+        sellPrice = 1200;
+        illegal = true;
+        edible = -1;
+        icon = "icons\blindfold.paa";
+    };
+
 	
     //Misc
     class pickaxe {

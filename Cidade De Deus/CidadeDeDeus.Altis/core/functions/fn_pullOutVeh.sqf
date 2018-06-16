@@ -5,8 +5,9 @@
     Description:
 
 */
-if (playerSide isEqualTo west || (isNull objectParent player)) exitWith {};
-if (player getVariable "restrained") then {
+if((speed vehicle player) >= 10) exitWith {};
+if(vehicle player == player) exitWith {};
+if (player getVariable "restrained" || player getVariable "ziptied") then {
     detach player;
     player setVariable ["Escorting",false,true];
     player setVariable ["transporting",false,true];

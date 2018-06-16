@@ -72,7 +72,7 @@ if (_kassa > 179999) then {
 
 _rip = false;
 life_use_atm = false;
-sleep (30 + random(180));
+sleep (45 + random(180));
 life_use_atm = true;
 if!(alive _robber) exitWith {};
 [getPlayerUID _robber,name _robber,"211"] remoteExec ["life_fnc_wantedAdd",2];

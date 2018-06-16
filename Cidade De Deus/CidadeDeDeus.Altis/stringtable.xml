@@ -11962,10 +11962,32 @@
 <Key ID="STR_Shops_yMarket">
     <Original>Mercado CDD</Original>
 </Key>
- </Key>
-    <Key ID="STR_Item_algema"> //Lol because i was cba and in a rush lol , change it if you must
-        <Original>Algema</Original>
-    </Key>
-    <Key ID="STR_Item_keyalgema">
-        <Original>Chave De Algema</Original>
-</Key>
+<!--
+    Algemas ZipTies
+---> 
+<Package name="zipties">
+  <Key ID="STR_NOTF_ziptied">
+      <Original>%1 Foi Algemado Por Alguem.</Original>
+  </Key>
+  <Key ID="STR_NOTF_unzipteed">
+      <Original>%1 Foi Desalgemado.</Original>
+  </Key>
+  <Key ID="STR_ExcessiveTied">
+      <Original>Você Foi Desalgemado Por Limite De Tempo.</Original>
+  </Key>
+  <Key ID="STR_tied">
+      <Original>Você Está Sendo Escoltado Por Alguem.</Original>
+  </Key>
+  <Key ID="STR_Ziptie">
+      <Original>Enforca Gato</Original>
+  </Key>
+  <Key ID="STR_gag">
+      <Original>Fita</Original>
+      <German>Knebel</German>
+  </Key>
+  <Key ID="STR_blindfold">
+      <Original>Saco Preto</Original>
+  </Key>
+</Package>
+
+ 

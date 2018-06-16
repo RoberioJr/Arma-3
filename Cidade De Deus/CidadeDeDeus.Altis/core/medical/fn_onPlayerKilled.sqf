@@ -27,6 +27,8 @@ _unit setVariable ["Escorting",false,true];
 _unit setVariable ["transporting",false,true];
 _unit setVariable ["playerSurrender",false,true];
 _unit setVariable ["steam64id",(getPlayerUID player),true]; //Set the UID.
+ /* RJ EDIT */
+[_unit] call zipties_fnc_zip_untieFix;
 
 //close the esc dialog
 if (dialog) then {
@@ -57,9 +59,16 @@ _unit spawn {
     } else {
         _maxTime = time + LIFE_SETTINGS(getNumber,"respawn_timer");
     };
-    _RespawnBtn ctrlEnable false;
+     _RespawnBtn ctrlEnable false;
     waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
-    round(_maxTime - time) <= 0 || isNull _this};
+    round(_maxTime - time) <= 0 || isNull _this || life_request_timer};
+    if (RJ_tempodorequest) then {
+        _maxTime = time + (LIFE_SETTINGS(getNumber,"respawn_timer") * 3); //multiples the respawn time set in the master config file by 5, to create the new respawn time!
+        waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
+        round(_maxTime - time) <= 0 || isNull _this};
+    };
+
+    RJ_tempodorequest = false; //resets increased respawn timer
     _RespawnBtn ctrlEnable true;
     _Timer ctrlSetText localize "STR_Medic_Respawn_2";
 };
