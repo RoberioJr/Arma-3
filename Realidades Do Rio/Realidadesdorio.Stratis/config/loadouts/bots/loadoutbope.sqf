@@ -4,12 +4,6 @@
 // EDIT: Marvinn                          //
 ////////////////////////////////////////////
 
-////////////////////////////////////////////
-// Sistema de Respawn de Bots             //
-// BY: Larrow                             //
-// EDIT: Marvinn                          //
-////////////////////////////////////////////
-
 params[ "_group", "_module", "_groupData" ];
 
 //The below will make each unit in the group have the same random equipment
@@ -17,7 +11,6 @@ params[ "_group", "_module", "_groupData" ];
 _cloth = "BOPE_CombatUniform_BLK_shortsleeve";
 _hat = "BOPE_Beret";
 _vest = "BOPE_carrier_1";
-_backpack = selectRandom ["CUP_B_Bergen_BAF","","",""];
 
 {
 	_x params[ "_unit" ];
