@@ -51,12 +51,9 @@ _glass = selectRandom ["G_Shades_Green","G_Shades_Blue","G_Shades_Red","G_Shades
 	if !( _vest == "" ) then {
 		_unit addVest _vest;
 		for "_i" from 1 to 3 do {
-		     if ( _unit canAddItemToVest "ACE_fieldDressing" ) then {
-			     _unit addItemToVest "hlc_30Rnd_545x39_t_ak";
-			};
-		for "_i" from 1 to 2 do {
 			if ( _unit canAddItemToVest "ACE_fieldDressing" ) then {
 				_unit addItemToVest "ACE_fieldDressing";
+				_unit addItemToVest "hlc_30Rnd_545x39_t_ak";
 			};
 		};
 	};
@@ -68,7 +65,7 @@ _glass = selectRandom ["G_Shades_Green","G_Shades_Blue","G_Shades_Red","G_Shades
 	if !( _glass == "" ) then {
 		_unit addGoggles _glass;
 	};
-
+     
 	_unit addWeapon "hlc_rifle_akm";
 	_unit linkItem "ItemMap";
 	_unit linkItem "ItemCompass";
