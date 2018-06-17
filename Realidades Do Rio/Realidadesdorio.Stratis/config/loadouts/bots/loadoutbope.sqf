@@ -14,11 +14,10 @@ params[ "_group", "_module", "_groupData" ];
 
 //The below will make each unit in the group have the same random equipment
 //Or move it below to //HERE - to make each unit in the group have different equipment
-_cloth = selectRandom ["pika","mao","legalize","lacoste1","flamengo","U_I_C_Soldier_Bandit_4_F","U_C_Poloshirt_blue","U_I_C_Soldier_Bandit_5_F"];
-_hat = selectRandom ["H_Cap_surfer","H_Cap_khaki_specops_UK","H_Bandanna_surfer","",""];
-_vest = selectRandom ["V_HarnessO_gry","V_TacVest_brn","V_TacVest_blk",""];
+_cloth = "BOPE_CombatUniform_BLK_shortsleeve";
+_hat = "BOPE_Beret";
+_vest = "BOPE_carrier_1";
 _backpack = selectRandom ["CUP_B_Bergen_BAF","","",""];
-_glass = selectRandom ["G_Shades_Green","G_Shades_Blue","G_Shades_Red","G_Shades_Black","G_Bandanna_shades",""];
 
 {
 	_x params[ "_unit" ];
@@ -66,10 +65,6 @@ _glass = selectRandom ["G_Shades_Green","G_Shades_Blue","G_Shades_Red","G_Shades
 
 	if !( _backpack == "" ) then {
 		_unit addBackpack _backpack;
-	};
-
-	if !( _glass == "" ) then {
-		_unit addGoggles _glass;
 	};
      
 	_unit addWeapon "hlc_rifle_FAL5061Rail";
