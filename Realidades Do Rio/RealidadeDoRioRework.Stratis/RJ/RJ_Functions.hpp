@@ -30,6 +30,7 @@ class RJ_Scripts {
 		class ClimaDinamico {};
 		class Cor {};
 		class InventarioAberto {};
+		class MissaoDrogas {};
 	};
 	
 	class Actions {

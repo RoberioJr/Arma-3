@@ -8,22 +8,22 @@ class EditorData
 	toggles=546;
 	class ItemIDProvider
 	{
-		nextID=6504;
+		nextID=6510;
 	};
 	class MarkerIDProvider
 	{
-		nextID=280;
+		nextID=286;
 	};
 	class LayerIndexProvider
 	{
-		nextID=356;
+		nextID=358;
 	};
 	class Camera
 	{
-		pos[]={3264.3391,260.48883,2983.927};
-		dir[]={0.33120283,-0.56935751,-0.75245649};
-		up[]={0.22938435,0.82207125,-0.52113402};
-		aside[]={-0.91528177,1.8626451e-007,-0.40287468};
+		pos[]={3989.6396,433.65128,2954.9905};
+		dir[]={-0.52050328,-0.53339434,0.66676867};
+		up[]={-0.32822159,0.84586412,0.42045408};
+		aside[]={0.7882629,-1.1513475e-007,0.61534625};
 	};
 };
 binarizationWanted=0;
@@ -584,7 +584,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2497;
+		items=2502;
 		class Item0
 		{
 			dataType="Marker";
@@ -40151,7 +40151,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this execVM ""zonas\setores\Recompensa2.sqf""";
+							value="[_this,500] Spawn RJ_fnc_RecompTerritorio;    ";
 						};
 					};
 				};
@@ -40514,7 +40514,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this execVM ""zonas\setores\Recompensa2.sqf""";
+							value="[_this,500] Spawn RJ_fnc_RecompTerritorio;    ";
 						};
 					};
 				};
@@ -40866,7 +40866,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this execVM ""zonas\setores\Recompensa2.sqf""";
+							value="[_this,500] Spawn RJ_fnc_RecompTerritorio;    ";
 						};
 					};
 				};
@@ -41179,7 +41179,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this execVM ""zonas\setores\Recompensa2.sqf""";
+							value="[_this,500] Spawn RJ_fnc_RecompTerritorio;";
 						};
 					};
 				};
@@ -41504,7 +41504,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="[_this,500] Spawn RJ_fnc_RecompTerritorio;";
 						};
 					};
 				};
@@ -41857,7 +41857,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this execVM ""zonas\setores\Recompensa.sqf""";
+							value="[_this,150] Spawn RJ_fnc_RecompTerritorio;    ";
 						};
 					};
 				};
@@ -41952,7 +41952,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Conquistar a Zona Independente (700 a cada 10 min)";
+							value="Conquistar a Zona Independente (150 a cada 10 min)";
 						};
 					};
 				};
@@ -42182,7 +42182,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this execVM ""zonas\setores\Recompensa.sqf""";
+							value="[_this,150] Spawn RJ_fnc_RecompTerritorio;    ";
 						};
 					};
 				};
@@ -42277,7 +42277,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Conquistar a Zona Independente (700 a cada 10 min)";
+							value="Conquistar a Zona Independente (150 a cada 10 min)";
 						};
 					};
 				};
@@ -42506,7 +42506,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this execVM ""zonas\setores\Recompensa.sqf""";
+							value="[_this,150] Spawn RJ_fnc_RecompTerritorio;    ";
 						};
 					};
 				};
@@ -42601,7 +42601,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Conquistar a Zona Independente (700 a cada 10 min)";
+							value="Conquistar a Zona Independente (150 a cada 10 min)";
 						};
 					};
 				};
@@ -42832,7 +42832,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this execVM ""zonas\setores\Recompensa.sqf""";
+							value="[_this,150] Spawn RJ_fnc_RecompTerritorio;    ";
 						};
 					};
 				};
@@ -42927,7 +42927,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="Conquistar a Zona Independente (150 a cada 10 min)";
 						};
 					};
 				};
@@ -47297,7 +47297,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this execVM ""zonas\setores\Recompensa.sqf""";
+							value="[_this,150] Spawn RJ_fnc_RecompTerritorio; ";
 						};
 					};
 				};
@@ -47392,7 +47392,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Conquistar a Zona Independente (700 a cada 10 min)";
+							value="Conquistar a Zona Independente (150 a cada 10 min)";
 						};
 					};
 				};
@@ -49156,7 +49156,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this execVM ""zonas\setores\Recompensa2.sqf""";
+							value="[_this,500] Spawn RJ_fnc_RecompTerritorio;";
 						};
 					};
 				};
@@ -52318,7 +52318,7 @@ class Mission
 			position[]={4391.2109,128.68201,6778.3882};
 			name="SpawnVermelho";
 			type="Empty";
-			angle=235.99995;
+			angle=235.99994;
 			id=6494;
 			atlOffset=0.69639587;
 		};
@@ -52328,7 +52328,7 @@ class Mission
 			position[]={3258.8911,226.071,2903.7229};
 			name="SpawnAzul";
 			type="Empty";
-			angle=92.999985;
+			angle=92.999977;
 			id=6495;
 			atlOffset=-0.00039672852;
 		};
@@ -52650,8 +52650,56 @@ class Mission
 			position[]={3285.333,229.17999,2930.7739};
 			name="SpawnVeiculosAzul";
 			type="Empty";
-			angle=208;
+			angle=207.99998;
 			id=6503;
+		};
+		class Item2497
+		{
+			dataType="Marker";
+			position[]={2125.635,1.853,4745.0859};
+			name="missao1";
+			type="Empty";
+			angle=128.99998;
+			id=6504;
+			atlOffset=-0.00048267841;
+		};
+		class Item2498
+		{
+			dataType="Marker";
+			position[]={5390.6279,11.84,3760.0271};
+			name="missao2";
+			type="Empty";
+			id=6506;
+			atlOffset=10.450874;
+		};
+		class Item2499
+		{
+			dataType="Marker";
+			position[]={1973.64,2.625,4180.5239};
+			name="missao3";
+			type="Empty";
+			angle=97.999992;
+			id=6507;
+			atlOffset=0.00032758713;
+		};
+		class Item2500
+		{
+			dataType="Marker";
+			position[]={3604.54,145.504,3908.501};
+			name="missao4";
+			type="Empty";
+			angle=164.99998;
+			id=6508;
+			atlOffset=-0.00039672852;
+		};
+		class Item2501
+		{
+			dataType="Marker";
+			position[]={4162.916,157.90401,3299.1899};
+			name="missao5";
+			type="Empty";
+			id=6509;
+			atlOffset=0.0001373291;
 		};
 	};
 	class Connections
