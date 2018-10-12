@@ -28,7 +28,7 @@
  //Raio Da SafeZone Da Base (Em Metros) Recomendo 125 - 275
  RaioSafeZoneBase = 125;
  
- //SteamUID64 Dos Administradores | Paineis ADM Keys: F7 e F8
+ //SteamID64 Dos Administradores | Paineis ADM Keys: F7 e F8
  Administradores = 
  [
     "76561198134612622", //RobérioJR
