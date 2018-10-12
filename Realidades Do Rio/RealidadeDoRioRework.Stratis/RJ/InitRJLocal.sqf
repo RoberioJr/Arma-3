@@ -14,6 +14,7 @@ WaitUntil {CfgsProntas};
 [] ExecVM "RJ\Sistemas\SetupEVH.sqf";
 [] ExecVM "RJ\Sistemas\BarraDeStatus\StatusBar.sqf";
 [] ExecVM "RJ\Sistemas\Admin\loop.sqf";
+[] ExecVM "RJ\Sistemas\R3F_LOG\init.sqf";
 
 enableSentences false;
 [] Spawn { WaitUntil {(!IsNil "CfgsProntas")}; Sleep 0.2; [] Spawn RJ_fnc_SpawnarJogador; };

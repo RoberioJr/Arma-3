@@ -52,6 +52,7 @@ class RJ_Scripts {
 		class RecGrana {};
 		class AdcSubGrana {};
 		class Pagamento {};
+		class RecompTerritorio {};
 	};
 	
 	class Lojas {

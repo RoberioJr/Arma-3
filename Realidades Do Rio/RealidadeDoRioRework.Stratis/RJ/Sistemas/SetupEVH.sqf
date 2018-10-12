@@ -8,7 +8,7 @@
 player addEventHandler ["Respawn", {_this call RJ_fnc_AoRespawnar}];
 player addEventHandler ["Take", {_this call RJ_fnc_AoPegarItem}];
 player addEventHandler ["Killed",{_this call RJ_fnc_Mortes}];
-player addEventHandler ["InventoryOpened", {_this call RJ_fnc_InventarioAberto}];
+//player addEventHandler ["InventoryOpened", {_this call RJ_fnc_InventarioAberto}];
 
 addMissionEventHandler ["Map", {_this call RJ_fnc_Marcador}];
 
