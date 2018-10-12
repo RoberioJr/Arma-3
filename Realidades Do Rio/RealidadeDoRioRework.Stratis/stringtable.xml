@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CH View Distance">
+    <Package name="Main">
+        <Key ID="STR_chvd_title">
+            <Original>View Distance Settings</Original>
+            <Russian>Настройки Дальности Обзора</Russian>
+            <German>Sichtweiten Einstellung</German>
+            <French>Conf. de la distance de vue</French>
+        </Key>
+        <Key ID="STR_chvd_foot">
+            <Original>ON FOOT</Original>
+			<Portuguese>A PÉ</Portuguese>
+            <Russian>ПЕШКОМ</Russian>
+            <German>ZU FUß</German>
+			<French>A PIED</French>
+        </Key>
+        <Key ID="STR_chvd_car">
+            <Original>IN CAR</Original>
+			<Portuguese>NO CARRO</Portuguese>
+            <Russian>В МАШИНЕ</Russian>
+            <German>IM FAHRZEUG</German>
+			<French>EN VOITURE</French>
+        </Key>
+        <Key ID="STR_chvd_air">
+            <Original>IN AIR</Original>
+			<Portuguese>NO AR</Portuguese>
+            <Russian>В ВОЗДУХЕ</Russian>
+            <German>IM FLUGZEUG</German>
+			<French>DANS LES AIRS</French>
+        </Key>
+        <Key ID="STR_chvd_view">
+            <Original>VIEW:</Original>
+			<Portuguese>VISÃO:</Portuguese>
+            <Russian>ОБЩЕЕ:</Russian>
+            <German>SICHTWEITE:</German>
+			<French>VUE :</French>
+        </Key>
+        <Key ID="STR_chvd_object">
+            <Original>OBJECT:</Original>
+			<Portuguese>OBJETO:</Portuguese>
+            <Russian>ОБЪЕКТЫ:</Russian>
+            <German>OBJEKT:</German>
+			<French>OBJET :</French>
+        </Key>
+        <Key ID="STR_chvd_terrain">
+            <Original>TERRAIN:</Original>
+			<Portuguese>TERRENO:</Portuguese>
+            <Russian>ЛАНДШАФТ:</Russian>
+            <German>GELÄNDE:</German>
+			<French>TERRAIN :</French>
+        </Key>
+        <Key ID="STR_chvd_sync">
+            <Original>SYNC MODE:</Original>
+			<Portuguese>MODO SYNC:</Portuguese>
+            <Russian>СИНХРОН.:</Russian>
+            <German>SYNC MODE:</German>
+			<French>SYNC. :</French>
+        </Key>
+        <Key ID="STR_chvd_close">
+            <Original>Close</Original>
+			<Portuguese>Fechar</Portuguese>
+            <Russian>Закрыть</Russian>
+            <German>Schließen</German>
+			<French>Fermer</French>
+        </Key>        
+        <Key ID="STR_chvd_disabled">
+            <Original>Disabled</Original>
+			<Portuguese>Desativado</Portuguese>
+            <Russian>Отключена</Russian>
+            <German>Disabled</German>
+			<French>Désactivé</French>
+        </Key>
+		<Key ID="STR_chvd_dynamic">
+            <Original>Dynamic</Original>
+			<Portuguese>Dinamico</Portuguese>
+            <Russian>Динамическая</Russian>
+            <German>Dynamic</German>
+			<French>Dynamique</French>
+        </Key>
+		<Key ID="STR_chvd_fov">
+            <Original>FOV</Original>
+            <Russian>FOV</Russian>
+            <German>FOV</German>
+			<French>FOV</French>
+        </Key>
+        <Key ID="STR_chvd_low">
+            <Original>Low</Original>
+			<Portuguese>Baixo</Portuguese>
+            <Russian>Низкое</Russian>
+            <German>Niedrig</German>
+			<French>Bas</French>
+        </Key>
+        <Key ID="STR_chvd_standard">
+            <Original>Standard</Original>
+			<Portuguese>Médio</Portuguese>
+            <Russian>Стандартное</Russian>
+            <German>Standart</German>
+			<French>Standart</French>
+        </Key>
+        <Key ID="STR_chvd_high">
+            <Original>High</Original>
+			<Portuguese>Alto</Portuguese>
+            <Russian>Высокое</Russian>
+            <German>Hoch</German>
+			<French>Elevé</French>
+        </Key>
+        <Key ID="STR_chvd_veryHigh">
+            <Original>Very High</Original>
+			<Portuguese>Muito Alto</Portuguese>
+            <Russian>Очень высокое</Russian>
+            <German>Sehr Hoch</German>
+			<French>Très élevé</French>
+        </Key>
+        <Key ID="STR_chvd_ultra">
+            <Original>Ultra</Original>
+			<Portuguese>Alto Pra Caralho</Portuguese>
+            <Russian>Ультра</Russian>
+            <German>Ultra</German>
+			<French>Ultra</French>
+        </Key>		
+        <Key ID="STR_chvd_openSettings">
+            <Original>Open view distance settings</Original>
+            <Russian>Открыть настройки дальности обзора</Russian>
+            <German>Open view distance settings</German>
+			<French>Ouvrir la configuration de la distance de vue</French>
+        </Key>
+        <Key ID="STR_chvd_decreaseVD">
+            <Original>Decrease view distance</Original>
+            <Russian>Уменьшить дальность обзора</Russian>
+            <German>Decrease view distance</German>
+			<French>Diminuer la distance de vue</French>
+        </Key>
+        <Key ID="STR_chvd_increaseVD">
+            <Original>Increase view distance</Original>
+            <Russian>Увеличить дальность обзора</Russian>
+            <German>Increase view distance</German>
+			<French>Augmenter la distance de vue</French>
+        </Key>
+        <Key ID="STR_chvd_viewDistance">
+            <Original>View Distance</Original>
+            <Russian>Дальность Обзора</Russian>
+            <German>View Distance</German>
+			<French>Distance de vue</French>
+        </Key>
+        <Key ID="STR_chvd_objViewDistance">
+            <Original>Object View Distance</Original>
+            <Russian>Дальность Обзора Объектов</Russian>
+            <German>Object View Distance</German>
+			<French>Distance de vue des objets</French>
+        </Key>
+        <Key ID="STR_chvd_terrainQuality">
+            <Original>Terrain Quality</Original>
+            <Russian>Качество Рельефа</Russian>
+            <German>Terrain Quality</German>
+			<French>Terrain Quality</French>
+        </Key>		
+        <Key ID="STR_chvd_terrainGrid">
+            <Original>Terrain Grid</Original>
+            <Russian>Сетка Рельефа</Russian>
+            <German>Terrain Grid</German>
+			<French>Terrain Grid</French>
+        </Key>		
+    </package>
+</Project>
+
+<!---
+    Menu De Equipamentos ADM
+--->
+<Project name="Virtual Ammobox System">
+  <Package name="Main">
+    <Key ID="STR_VAS_Main_Weapons">
+      <Original>Armas</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Magazines">
+      <Original>Munições</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Items">
+      <Original>Items</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Backpacks">
+      <Original>Mochilas</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Goggles">
+      <Original>Óculos</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Uniforms">
+      <Original>Uniformes</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Vests">
+      <Original>Coletes</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Headgear">
+      <Original>Capacetes</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Attachments">
+      <Original>Acessórios</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_Misc">
+      <Original>Misc</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnAdd">
+      <Original>Add Item</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnRemove">
+      <Original>Remover Item</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnClose">
+      <Original>Fechar</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnLoad">
+      <Original>Load Gear</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnSave">
+      <Original>Save Gear</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_btnRemoveAll">
+      <Original>Remove All</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_VirtGear">
+      <Original>Virtual Ammobox</Original>
+    </Key>
+    <Key ID="STR_VAS_Main_YCG">
+      <Original>Equipamento Atual</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_CL">
+      <Original>Equipamento Customizado</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_Rifles">
+      <Original>Rifles</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_Scoped">
+      <Original>Scoped</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_Heavy">
+      <Original>Pesadas</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_Launcher">
+      <Original>Launchers</Original>
+    </Key>
+    <Key ID="STR_Vas_Main_Pistols">
+      <Original>Pistolas</Original>
+    </Key>
+    <Key ID="STR_VAS_restricted">
+      <Original>is a restricted item and will not be added to your inventory.</Original>
+    </Key>
+  </Package>
+  <Package name="LoadGear">
+    <Key ID="STR_VAS_Load_Title">
+      <Original>Virtual Ammobox System - Load Gear</Original>
+    </Key>
+    <Key ID="STR_VAS_Load_LOR">
+      <Original>Load On Respawn</Original>
+    </Key>
+    <Key ID="STR_VAS_Load_TransferBtn">
+      <Original>Transfer</Original>
+    </Key>
+    <Key ID="STR_VAS_Load_btnLoad">
+      <Original>Load</Original>
+    </Key>
+    <Key ID="STR_VAS_Load_btnDelete">
+      <Original>Deletar</Original>
+    </Key>
+  </Package>
+  <Package name="SaveGear">
+    <Key ID="STR_VAS_Save_Title">
+      <Original>Virtual Ammobox System - Save Gear</Original>
+    </Key>
+    <Key ID="STR_VAS_Save_btnSave">
+      <Original>Salvar</Original>
+    </Key>
+    <Key ID="STR_VAS_Save_CLN">
+      <Original>Custom Loadout Name</Original>
+    </Key>
+  </Package>
+  <Package name="VASTransferMenu">
+    <Key ID="STR_VAS_Transfer_MainMenu">
+      <Original>Virtual Ammobox System - Transfer Menu</Original>
+    </Key>
+    <Key ID="STR_VAS_Transfer_SaveMenu">
+      <Original>Virtual Ammobox System - Save Transfer</Original>
+    </Key>
+    <Key ID="STR_VAS_Transfer_Request">
+      <Original>wants to transfer you their saved loadout.</Original>
+    </Key>
+    <Key ID="STR_VAS_Transfer_Request2">
+      <Original>Would you like to receive this request and save it?</Original>
+    </Key>
+    <Key ID="STR_VAS_Transfer_NoSlotSelection">
+      <Original>You either did not select a slot that you wanted to transfer to another user or the slot had no information.</Original>
+    </Key>
+    <Key ID="STR_VAS_Transfer_BadUnit">
+      <Original>The selected user doesn not exist.</Original>
+    </Key>
+  </Package>
+  <Package name="VASPrompts">
+    <Key ID="STR_VAS_Prompt_selectSlotFail">
+      <Original>You didn't select a slot to delete!</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteSlotNoInfo">
+      <Original>You can't delete that slot, it has no information!</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteSlotWarning">
+      <Original>You are about to delete slot</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteCanelled">
+      <Original>You cancelled deleting slot</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteSuccess">
+      <Original>You deleted slot</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteYes">
+      <Original>Yes</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_deleteNo">
+      <Original>No</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_slotNoInfo">
+      <Original>You didn't select a slot!</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_onRespawnFail">
+      <Original>No slot was selected to be loaded upon respawn!</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_slotSelFail">
+      <Original>You didn't select a slot!</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_addToWeapon">
+      <Original>Arma</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_addToInv">
+      <Original>Inventario</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_acc1">
+      <Original>What do you want to do with that attachment?</Original>
+    </Key>
+    <Key ID="STR_VAS_Prompt_acc2">
+      <Original>Please know that if you choose to add it to your weapon your current existing attachment in that slot will be lost.</Original>
+    </Key>
+  </Package>
