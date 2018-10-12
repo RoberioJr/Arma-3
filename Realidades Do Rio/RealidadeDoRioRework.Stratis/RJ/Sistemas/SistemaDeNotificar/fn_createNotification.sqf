@@ -1,4 +1,4 @@
-scriptName "fn_CriarNotification";
+scriptName "fn_createNotification";
 
 /*
 	Code written by Haz
@@ -8,7 +8,7 @@ scriptName "fn_CriarNotification";
 
 if (isDedicated || !hasInterface) exitWith {};
 
-#include "..\macros.hpp"
+#include "macros.hpp"
 
 disableSerialization;
 

@@ -6,7 +6,7 @@
 |                                                             |
 */
 //Uso: ["MENSAGEM"] remoteExec ["RJ_fnc_Notificar",0];
-//Envia Uma Notificação Para Todos Os Jogadores Em Um Determinado Veiculo
+//Envia Uma Notificação !!
 
 params [
     ["_Mensagem","",[""]],
@@ -17,6 +17,8 @@ if (_Mensagem isEqualTo "") exitWith {};
 
 Switch (_Tipo) Do {
     Case 1: { titleText[_mensagem,"PLAIN"]; };
-	Case 2: { SystemChat Format["%1",_mensagem]; };
+	Case 2: { SystemChat _mensagem; };
+	Case 3: { Hint _mensagem; };
+	Case 4: { Hint ParseText _mensagem; };
 };
 
