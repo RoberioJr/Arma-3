@@ -6,5 +6,5 @@
 */
 
     /* Initialization Of Player */
-	[] execVM "RJ\InitRJLocal.sqf";
+	[] execVM "RDR\InitRDRLocal.sqf";
 	

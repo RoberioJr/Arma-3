@@ -8,6 +8,6 @@
 CfgsProntas = False;
 
     /* Mission Inicialization */
-	[] execVM "RJ\InitRJ.sqf";
+	[] execVM "RDR\InitRDR.sqf";
 	
 	//this setVariable ["R3F_LOG_disabled", true];

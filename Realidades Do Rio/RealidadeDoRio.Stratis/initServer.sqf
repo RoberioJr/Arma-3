@@ -7,4 +7,4 @@
 
 
     /* Server Inicialization */
-	[] execVM "RJ\InitRJServidor.sqf";
+	[] execVM "RDR\InitRDRServidor.sqf";

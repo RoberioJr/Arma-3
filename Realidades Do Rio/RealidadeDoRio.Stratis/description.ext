@@ -1,0 +1,25 @@
+author = "RoberioJr && Marvinn";
+onLoadName = "Realidades Do Rio";
+onLoadMission = "Realidades Do Rio";
+
+#include "RDR\RDR_Master.hpp"
+
+class CfgFunctions {
+	#include "RDR\RDR_Functions.hpp"
+};
+
+class CfgSounds {
+	#include "RDR\RDR_Sound.hpp"
+};
+
+class CfgMusic {
+	#include "RDR\RDR_Music.hpp"
+};
+
+class RscTitles {
+	#include "RDR\RDR_RscTitles.hpp"
+};
+
+class Params {
+    #include "RDR\RDR_Params.hpp"
+};

@@ -3,7 +3,7 @@ class DifficultyPresets
 	class CustomDifficulty
 	{
 		displayName="$STR_Difficulty_Custom";
-		description="Opções Customizadas Carregadas Para O Jogador.";
+		description="Opções customizadas carregadas para o jogador.";
 		levelAI="AILevelHigh";
 		class Options
 		{
