@@ -18,8 +18,7 @@ _val = _value select 2;
 		format["UPDATE players SET band_position = '%1' WHERE PID = '%2'",_val,_uid]
 	] select _mode;
 	
-	[1,_query] call RDR_fnc_asyncCall;
-};	
+	[1,_query] call RDR_fnc_asyncCall;	
 
 true;
 	
