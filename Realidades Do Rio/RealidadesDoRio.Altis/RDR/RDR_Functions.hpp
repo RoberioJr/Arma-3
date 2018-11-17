@@ -39,6 +39,7 @@ class RDR_Scripts {
 		class extDBInit {};
 		class clientToServer {};
 		class CarregarInfo {};
+		class Sincronizar {};
 	};
 
 	class Actions {
