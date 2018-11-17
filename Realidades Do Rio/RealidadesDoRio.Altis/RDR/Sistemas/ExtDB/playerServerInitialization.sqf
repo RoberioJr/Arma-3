@@ -17,7 +17,7 @@ _query = format["SELECT CASE WHEN EXISTS (SELECT pid FROM players WHERE pid = '%
 	
 	if(_exists) then
 	{
-	    _query = format["SELECT dinheiro, bancoacc, bope_gear, band_gear, bopelevel, bandidolevel, adminlevel, doadorlevel FROM players WHERE pid = '%1'",_uid];
+	    _query = format["SELECT dinheiro, bancoacc, bope_gear, band_gear, bopelevel, bandidolevel, adminlevel, doadorlevel, alive FROM players WHERE pid = '%1'",_uid];
 		_result = [2,_query,false] call RDR_fnc_asyncCall;
 	} else {
 	    _query = format["INSERT INTO players (pid, bope_gear, band_gear, bancoacc) VALUES('%1','%2','%3','%4')",_uid,[],[],(getNumber(getMissionConfig "CfgClient" >> "RDR_Config" >> "RDR_DinheiroInicial"))];
@@ -39,16 +39,12 @@ _query = format["SELECT CASE WHEN EXISTS (SELECT pid FROM players WHERE pid = '%
 
 _cash = _result select 0;
 _bank = _result select 1;
-
-if (side _player IsEqualto West) Then {
-    _gear = _result select 2;
-} Else {
-    _gear = _result select 3;
-};
+_gear = [_result select 2,_result select 3];
 _levelbope = _result select 4;
 _levelband = _result select 5;
 _leveladmin = _result select 6;
 _leveldoador = _result select 7;
+_jogadorvivo = _result select 8;
 
 if((isNil "_cash") OR (isNil "_bank")) then
 {
@@ -61,7 +57,7 @@ _player setVariable ["RDR_Banco",_bank,true];
 
  //if((count _gear) != 0) then
  //{
-	[_gear,_cash,_bank,_levelbope,_levelband,_leveladmin,_leveldoador] remoteExecCall ["RDR_fnc_CarregarInfo",(owner _player),false];
+	[_gear,_cash,_bank,_levelbope,_levelband,_leveladmin,_leveldoador,_jogadorvivo] remoteExecCall ["RDR_fnc_CarregarInfo",(owner _player),false];
  //};
   
   
