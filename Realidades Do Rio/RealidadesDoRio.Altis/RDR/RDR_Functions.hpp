@@ -49,8 +49,8 @@ class RDR_Scripts {
 
 	class Loadout {
 		file = "RDR\Sistemas\Loadout";
-		class LimpaRDRogador {};
-		class SpawnaRDRogador {};
+		class LimparJogador {};
+		class SpawnarJogador {};
 		class LoadoutInicial {};
 		class PegarLoadoutDoCorpo {};
 	};
