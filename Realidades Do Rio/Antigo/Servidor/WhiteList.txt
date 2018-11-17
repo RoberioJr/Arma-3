@@ -1,4 +1,0 @@
-//Steam UIDs Dos Jogadores Autorizados
-//Exemplo "76566179256348507"
-//Colocar Init Do Slot: this setVariable [ "Reserved", true ]
-[  ];

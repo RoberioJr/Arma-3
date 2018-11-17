@@ -1,5 +1,0 @@
-RJEdit
-
-GAME LOGIC
-VARIABLE NAME: SERVER
-INIT: null=[] execVM "scripts\cos\cosInit.sqf";

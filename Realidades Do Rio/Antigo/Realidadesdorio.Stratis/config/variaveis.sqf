@@ -1,2 +1,0 @@
-
-JogadorDeuRespawn = false;

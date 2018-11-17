@@ -1,8 +1,0 @@
-Abrir ATM: Y
-FECHAR/ABRIR Veiculo: U
-Dar Dinheiro: Y (Na Frente do Jogador)
-Dar Chave Do Veiculo: T
-Abrir Config de Visão: Ctrl + ]
-Arma No Coldre: 0
-Pulo Do Macaco: SHIFT + V
-Mais Configurações: ESC

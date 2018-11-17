@@ -1,6 +1,0 @@
-#include "addons\proving_ground\PG_config.hpp"
-
-class RscTitles
-{
-	#include "addons\proving_ground\PG_rsctitles.hpp"
-};
