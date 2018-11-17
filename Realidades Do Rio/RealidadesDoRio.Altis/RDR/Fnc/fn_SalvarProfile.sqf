@@ -14,13 +14,16 @@ _Tipo = Param [0,0,[0]];
 Switch (_Tipo) Do {
     Case 0: // Save Geral
 	{
-	    _Uid = GetPlayerUid player;
+	    profileNamespace setVariable ["RDR_Loadout",Nil];
+		profileNamespace setVariable ["RDR_Dinheiro",Nil];
+		profileNamespace setVariable ["RDR_Damage",Nil];
 		_Dinheiro = RDR_Grana;
-		_Banco = RDR_Banco;
+		_Damage = Damage Player;
 		_Loadout = GetUnitLoadout Player;
-		//_Damage = Damage Player;
-		//if (_Damage > 0.98) Then { _Damage = 0.90; };
-        _query = format["UPDATE players SET dinheiro = '%1', bancoacc = '%2' WHERE PID = '%2'",_Dinheiro,_Banco,_Uid];
+		if (_Damage > 0.98) Then { _Damage = 0.90; };
+		profileNamespace setVariable ["RDR_Loadout",_Loadout];
+		profileNamespace setVariable ["RDR_Dinheiro",_Dinheiro];
+		profileNamespace setVariable ["RDR_Damage",_Damage];
 	};
     Case 1: // Loadout Do Jogador
 	{
@@ -49,4 +52,4 @@ Switch (_Tipo) Do {
 	};
 };
 
- [1,_query] call RDR_fnc_asyncCall;
+ SaveProfileNamespace;

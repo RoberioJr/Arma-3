@@ -31,7 +31,5 @@ call compileFinal preprocessFileLineNumbers "RDR\Sistemas\FAR\FAR_revive_init.sq
 
 CfgsProntas = True;
 
-if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] Spawn RDR_fnc_ClimaDinamico; };
-
 
 

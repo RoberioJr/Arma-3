@@ -18,6 +18,7 @@ class RDR_Scripts {
 		class Icons {};
 		class AnimSync {};
 		class say3D {};
+		class SalvarProfile {};
 		class AutoSave {};
 		class ArrayDosItems {};
 		class Limpeza {};
@@ -38,7 +39,6 @@ class RDR_Scripts {
 		class extDBInit {};
 		class clientToServer {};
 		class CarregarInfo {};
-		class Sincronizar {};
 	};
 
 	class Actions {
@@ -49,8 +49,8 @@ class RDR_Scripts {
 
 	class Loadout {
 		file = "RDR\Sistemas\Loadout";
-		class LimparJogador {};
-		class SpawnarJogador {};
+		class LimpaRDRogador {};
+		class SpawnaRDRogador {};
 		class LoadoutInicial {};
 		class PegarLoadoutDoCorpo {};
 	};
