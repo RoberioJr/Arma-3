@@ -1,5 +1,6 @@
 /*
 	Author - Bryan "Tonic" Boardwine
+	Edits: RobérioJR
 
 	Description:
 	Commits an asynchronous call to extDB

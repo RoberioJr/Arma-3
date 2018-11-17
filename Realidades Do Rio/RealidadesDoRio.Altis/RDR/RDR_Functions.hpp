@@ -31,7 +31,6 @@ class RDR_Scripts {
 		class Cor {};
 		class InventarioAberto {};
 		class MissaoDrogas {};
-		class parseGear {};
 	};
 	
 	class ExtDB {
@@ -39,6 +38,7 @@ class RDR_Scripts {
 		class asyncCall {};
 		class extDBInit {};
 		class clientToServer {};
+		class CarregarInfo {};
 	};
 
 	class Actions {

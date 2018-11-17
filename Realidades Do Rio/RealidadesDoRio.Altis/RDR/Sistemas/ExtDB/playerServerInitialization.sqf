@@ -29,18 +29,26 @@ _query = format["SELECT CASE WHEN EXISTS (SELECT pid FROM players WHERE pid = '%
 		    0,
 		    getNumber(getMissionConfig "CfgClient" >> "RDR_Config" >> (rank _player) >> "RDR_DinheiroInicial"),
 			[],
-			[]
+			[],
+			0,
+			0,
+			0,
+			0
 		];
 	};
 
 _cash = _result select 0;
 _bank = _result select 1;
 
-if (side _player in [East,Independent]) Then {
-    _gear = _result select 3
+if (side _player IsEqualto West) Then {
+    _gear = _result select 2;
 } Else {
-    _gear = _result select 2
+    _gear = _result select 3;
 };
+_levelbope = _result select 4;
+_levelband = _result select 5;
+_leveladmin = _result select 6;
+_leveldoador = _result select 7;
 
 if((isNil "_cash") OR (isNil "_bank")) then
 {
@@ -51,10 +59,10 @@ if((isNil "_cash") OR (isNil "_bank")) then
 _player setVariable ["RDR_Grana",_cash,true];
 _player setVariable ["RDR_Banco",_bank,true];
 
-  if((count _gear) != 0) then
-  {
-	[_gear] remoteExecCall ["RDR_fnc_parseGear",(owner _player),false];
-  };
+ //if((count _gear) != 0) then
+ //{
+	[_gear,_cash,_bank,_levelbope,_levelband,_leveladmin,_leveldoador] remoteExecCall ["RDR_fnc_CarregarInfo",(owner _player),false];
+ //};
   
   
   
