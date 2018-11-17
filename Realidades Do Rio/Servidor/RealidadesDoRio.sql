@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `adminlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `doadorlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `blacklist` tinyint(1) NOT NULL DEFAULT '0',
-  `band_alive` tinyint(1) NOT NULL DEFAULT '0',
+  `alive` tinyint(1) NOT NULL DEFAULT '0',
   `band_position` varchar(64) NOT NULL DEFAULT '"[]"',
   PRIMARY KEY (`uid`),
   UNIQUE KEY `pid` (`pid`),

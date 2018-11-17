@@ -19,7 +19,6 @@ _val = _value select 2;
 	] select _mode;
 	
 	[1,_query] call RDR_fnc_asyncCall;
-};	
 
 true;
 	

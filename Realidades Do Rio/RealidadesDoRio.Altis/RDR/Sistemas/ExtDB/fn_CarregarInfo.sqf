@@ -4,9 +4,15 @@
 	
 */
 
-params["_gear","_cash","_bank","_levelbope","_levelband","_leveladmin","_leveldoador"];
+params["_gear","_cash","_bank","_levelbope","_levelband","_leveladmin","_leveldoador","_jogadorvivo"];
 
-if((count _gear) != 0) then {
+If (PlayerSide IsEqualTo West) Then {
+	_loadout = _gear select 0;
+} Else {
+    _loadout = _gear select 1;
+};
+
+if((count _loadout) != 0) then {
     {
         player removeWeaponGlobal _x;
     } forEach (weapons player);
@@ -30,8 +36,8 @@ if((count _gear) != 0) then {
     {
 	    player unlinkItem (hmd player);
     };
-
-   player setUnitLoadout [_gear,false];
+    
+	player setUnitLoadout [_loadout,false];
 };
 
 RDR_Grana = _cash;
@@ -41,4 +47,10 @@ RDR_BandLevel = _levelband;
 RDR_AdminLevel = _leveladmin;
 RDR_DoadorLevel = _leveldoador;
 
+if (_jogadorvivo IsEqualTo 1) Then {
+    RDR_JogadorVivo = true;
+} Else { RDR_JogadorVivo = false; };
+
 true;
+
+
