@@ -30,10 +30,7 @@ _query = format["SELECT CASE WHEN EXISTS (SELECT pid FROM players WHERE pid = '%
 		    getNumber(getMissionConfig "CfgClient" >> "RDR_Config" >> (rank _player) >> "RDR_DinheiroInicial"),
 			[],
 			[],
-			0,
-			0,
-			0,
-			0
+			0,0,0,0,0
 		];
 	};
 
