@@ -4,7 +4,7 @@
 	
 */
 
-params["_gear","_cash","_bank","_levelbope","_levelband","_leveladmin","_leveldoador","_jogadorvivo"];
+params["_gear","_cash","_bank","_levelbope","_levelband","_leveladmin","_leveldoador","_jogadorvivo","_bandidopos"];
 
 If (PlayerSide IsEqualto West) Then {
     _loadout = _gear select 0;
@@ -49,6 +49,10 @@ RDR_DoadorLevel = _leveldoador;
 
 If (_jogadorvivo IsEqualTo 1) Then {
     RDR_JogadorVivo = true;
-} Else { RDR_JogadorVivo = false; };
+	RDR_PosicaoDB = _bandidopos;
+} Else { 
+    RDR_JogadorVivo = false; 
+	RDR_PosicaoDB = [];
+};
 
 true;

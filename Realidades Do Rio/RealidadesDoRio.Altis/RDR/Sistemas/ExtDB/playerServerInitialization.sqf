@@ -1,3 +1,4 @@
+#include "..\..\..\RDR_Macros.hpp"
 /*
 
     Author: RobérioJR
@@ -17,20 +18,22 @@ _query = format["SELECT CASE WHEN EXISTS (SELECT pid FROM players WHERE pid = '%
 	
 	if(_exists) then
 	{
-	    _query = format["SELECT dinheiro, bancoacc, bope_gear, band_gear, bopelevel, bandidolevel, adminlevel, doadorlevel, alive FROM players WHERE pid = '%1'",_uid];
+	    _query = format["SELECT dinheiro, bancoacc, bope_gear, band_gear, bopelevel, bandidolevel, adminlevel, doadorlevel, alive, band_position FROM players WHERE pid = '%1'",_uid];
 		_result = [2,_query,false] call RDR_fnc_asyncCall;
 	} else {
-	    _query = format["INSERT INTO players (pid, bope_gear, band_gear, bancoacc) VALUES('%1','%2','%3','%4')",_uid,[],[],(getNumber(getMissionConfig "CfgClient" >> "RDR_Config" >> "RDR_DinheiroInicial"))];
+	    _query = format["INSERT INTO players (pid, bope_gear, band_gear, bancoacc, nome) VALUES('%1','%2','%3','%4','%5')",_uid,[],[],(RDRCFG(getNumber,"RDR_DinheiroInicial")),name _player];
 
 		[1,_query] call RDR_fnc_asyncCall;
 		
 		_result = 
 		[
 		    0,
-		    getNumber(getMissionConfig "CfgClient" >> "RDR_Config" >> (rank _player) >> "RDR_DinheiroInicial"),
+		    RDRCFG(getNumber,"RDR_DinheiroInicial"),
 			[],
 			[],
-			0,0,0,0,0
+			0,0,0,
+			0,0,
+			[]
 		];
 	};
 
@@ -42,11 +45,12 @@ _levelband = _result select 5;
 _leveladmin = _result select 6;
 _leveldoador = _result select 7;
 _jogadorvivo = _result select 8;
+_bandidopos = _result select 9;
 
 if((isNil "_cash") OR (isNil "_bank")) then
 {
     _cash = 0;
-    _bank = getNumber(getMissionConfig "CfgClient" >> "RDR_Config" >> "RDR_DinheiroInicial");
+    _bank = RDRCFG(getNumber,"RDR_DinheiroInicial");
 };
 
 _player setVariable ["RDR_Grana",_cash,true];
@@ -54,7 +58,7 @@ _player setVariable ["RDR_Banco",_bank,true];
 
  //if((count _gear) != 0) then
  //{
-	[_gear,_cash,_bank,_levelbope,_levelband,_leveladmin,_leveldoador,_jogadorvivo] remoteExecCall ["RDR_fnc_CarregarInfo",(owner _player),false];
+	[_gear,_cash,_bank,_levelbope,_levelband,_leveladmin,_leveldoador,_jogadorvivo,_bandidopos] remoteExecCall ["RDR_fnc_CarregarInfo",(owner _player),false];
  //};
   
   

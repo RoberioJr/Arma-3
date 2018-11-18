@@ -40,6 +40,7 @@ class RDR_Scripts {
 		class clientToServer {};
 		class CarregarInfo {};
 		class Sincronizar {};
+		class PrepararEnvio {};
 	};
 
 	class Actions {

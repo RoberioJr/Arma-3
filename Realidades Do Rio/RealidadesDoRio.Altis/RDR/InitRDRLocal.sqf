@@ -17,7 +17,7 @@ WaitUntil {CfgsProntas};
 [] ExecVM "RDR\Sistemas\R3F_LOG\init.sqf";
 
 enableSentences false;
-[] Spawn { WaitUntil {(!IsNil "CfgsProntas")}; Sleep 0.2; [] Spawn RDR_fnc_SpawnaRDRogador; };
+[] Spawn { WaitUntil {(!IsNil "CfgsProntas")}; Sleep 0.2; [] Spawn RDR_fnc_SpawnarJogador; };
 
 //[] Spawn RDR_fnc_Icons;
 [] Spawn RDR_fnc_AutoSave;

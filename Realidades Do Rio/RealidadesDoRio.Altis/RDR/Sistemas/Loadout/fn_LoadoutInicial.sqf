@@ -5,7 +5,7 @@
 */
 Private ['_TempVar','_Arma','_Pentes','_Uniforme','_Colete','_Mochila','_N'];
 
-_TempVar = [] spawn RDR_fnc_LimpaRDRogador;
+_TempVar = [] spawn RDR_fnc_LimparJogador;
 waitUntil {scriptDone _TempVar};
 
 _Arma = ArmaInicial Select 0;

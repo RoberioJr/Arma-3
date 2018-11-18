@@ -6,7 +6,11 @@
 */
 
 removeAllWeapons player;
-{player removeMagazine _x;} forEach (magazines player);
+
+{
+    player removeMagazine _x;
+} forEach (magazines player);
+
 removeUniform player;
 removeVest player;
 removeBackpack player;
