@@ -16,7 +16,7 @@ If ((currentWeapon player) in RDR_Armas) Then
 		    player removeWeapon (currentWeapon player);
 			If (IsNil "_Valor") Then {_Valor = 0;};
 			_Valor = (_Valor * .25);
-			[_Valor, 1] Call RDR_fnc_AdcSubGrana;
+			[True,_Valor, 1] Call RDR_fnc_AdcSubGrana;
 			Hint Format ["Você Vendeu Sua Arma Por: %1",_Valor];
 			If (RDR_Grana > DinheiroMaximo) Then {
                 RDR_Grana = DinheiroMaximo;

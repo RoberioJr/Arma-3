@@ -59,7 +59,6 @@ class RDR_Scripts {
 
 	class Economia {
 		file = "RDR\Sistemas\Economia";
-		class RecGrana {};
 		class AdcSubGrana {};
 		class Pagamento {};
 		class RecompTerritorio {};

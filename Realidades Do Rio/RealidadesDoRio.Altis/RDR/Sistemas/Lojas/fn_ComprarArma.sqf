@@ -37,7 +37,7 @@ If (RDR_Grana < _Preco) ExitWith {
 
 If (_Tipo IsEqualTo 1) Then {
     If (RDR_Grana > _Preco) Then {
-        [_Preco, 0] Call RDR_fnc_AdcSubGrana;
+        [False,_Preco, 0] Call RDR_fnc_AdcSubGrana;
         Player AddWeapon _Item;
 	    playSound "FD_Finish_F";
     };
@@ -46,7 +46,7 @@ If (_Tipo IsEqualTo 1) Then {
 If (_Tipo IsEqualTo 2) Then {
     If (player CanAdd _Item) Then {
         If (RDR_Grana > _Preco) Then {
-            [_Preco, 0] Call RDR_fnc_AdcSubGrana;
+            [False,_Preco, 0] Call RDR_fnc_AdcSubGrana;
             Player AddItem _Item;
 			playSound "FD_Finish_F";
         };
@@ -59,7 +59,7 @@ If (_Tipo IsEqualTo 2) Then {
 If (_Tipo IsEqualTo 3) Then {
     If (player CanAdd _Item) Then {
         If (RDR_Grana > _Preco) Then {
-            [_Preco, 0] Call RDR_fnc_AdcSubGrana;
+            [False,_Preco, 0] Call RDR_fnc_AdcSubGrana;
 			Player addPrimaryWeaponItem _Item;
 			playSound "FD_Finish_F";
         };

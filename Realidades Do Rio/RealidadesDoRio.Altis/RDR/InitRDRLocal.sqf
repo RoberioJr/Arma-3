@@ -21,10 +21,10 @@ enableSentences false;
 
 //[] Spawn RDR_fnc_Icons;
 [] Spawn RDR_fnc_AutoSave; 
-//[] Spawn RDR_fnc_RecGrana; //ProfileNameSpace
-//[] Spawn RDR_fnc_RecMorte; //ProfileNameSpace
+[] Spawn RDR_fnc_RecMorte; //ProfileNameSpace
 [] Spawn RDR_fnc_ArrayDosItems;
 [] Spawn RDR_fnc_SafeZones;
 [] Spawn RDR_fnc_Cor;
+[] Spawn RDR_fnc_Pagamento; //Inicia Loop De Pagamentos Periodicos
 
 JogadorPronto = True;

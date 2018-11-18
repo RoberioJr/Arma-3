@@ -36,7 +36,7 @@ _Veiculo lock 2;
 
 player setDir (player getDir _Veiculo);
 
-[_Preco, 0] Call RDR_fnc_AdcSubGrana;
+[False,_Preco, 0] Call RDR_fnc_AdcSubGrana;
 playSound "FD_Finish_F";
 Hint Format["Você Comprou Um Veiculo Por: %1.",_Preco];
 
