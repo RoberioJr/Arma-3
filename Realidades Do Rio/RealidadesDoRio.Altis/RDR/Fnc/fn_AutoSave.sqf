@@ -13,10 +13,11 @@
 };*/
 [] Spawn { //Save De Dinheiro
     While {True} Do {
-	    Sleep 220;
+	    Sleep 350;
 		WaitUntil {Alive Player};
 		Sleep 3;
-        [3] Call RDR_fnc_SalvarProfile;
-		[4] Call RDR_fnc_SalvarProfile;
+		[] Spawn RDR_fnc_Sincronizar;
+        //[3] Call RDR_fnc_SalvarProfile;
+		//[4] Call RDR_fnc_SalvarProfile;
     };
 };

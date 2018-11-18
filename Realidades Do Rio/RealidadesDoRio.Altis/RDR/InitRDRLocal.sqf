@@ -20,9 +20,9 @@ enableSentences false;
 [] Spawn { WaitUntil {(!IsNil "CfgsProntas")}; Sleep 0.2; [] Spawn RDR_fnc_SpawnarJogador; };
 
 //[] Spawn RDR_fnc_Icons;
-[] Spawn RDR_fnc_AutoSave;
-[] Spawn RDR_fnc_RecGrana;
-[] Spawn RDR_fnc_RecMorte;
+[] Spawn RDR_fnc_AutoSave; 
+//[] Spawn RDR_fnc_RecGrana; //ProfileNameSpace
+//[] Spawn RDR_fnc_RecMorte; //ProfileNameSpace
 [] Spawn RDR_fnc_ArrayDosItems;
 [] Spawn RDR_fnc_SafeZones;
 [] Spawn RDR_fnc_Cor;
