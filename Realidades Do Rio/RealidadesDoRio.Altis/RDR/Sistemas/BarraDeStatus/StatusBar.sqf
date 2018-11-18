@@ -27,13 +27,13 @@ _Kills = RDR_Mortes; //7
 
 ((uiNamespace getVariable "RDR_statusbar")displayCtrl 10713)ctrlSetStructuredText parseText
  format["<t shadow='1' shadowColor='#000000'>
- <img size='1.2' shadowColor='#000000' image='Texturas\azul.paa'/>%1
- <img size='1.2' shadowColor='#000000' image='Texturas\vermelho.paa'/>%2
- <img size='1.2' shadowColor='#000000' image='Texturas\verde.paa'/>%3
- <img size='1.4' shadowColor='#000000' image='Texturas\health.paa'/>%4
- <img size='1.3' shadowColor='#000000' image='Texturas\fps.paa'/>%5
- <img size='1.3' shadowColor='#000000' image='Texturas\money.paa'/>%6
- <img size='1.3' shadowColor='#000000' image='Texturas\Caveira.paa'/>%7
+ <img size='1.0' shadowColor='#000000' image='Texturas\azul.paa'/>%1
+ <img size='1.0' shadowColor='#000000' image='Texturas\vermelho.paa'/>%2
+ <img size='1.0' shadowColor='#000000' image='Texturas\verde.paa'/>%3
+ <img size='1.2' shadowColor='#000000' image='Texturas\health.paa'/>%4
+ <img size='1.1' shadowColor='#000000' image='Texturas\fps.paa'/>%5
+ <img size='1.1' shadowColor='#000000' image='Texturas\money.paa'/>%6
+ <img size='1.1' shadowColor='#000000' image='Texturas\Caveira.paa'/>%7
  </t>",_WestplayHUD,_EastplayHUD,_IndepplayHUD, _damage, _FpsHud, _Dinheiro, _Kills];
  };
 };
