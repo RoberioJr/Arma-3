@@ -17,7 +17,7 @@ if((side _instigator) isEqualTo playerSide) then
 	/* Penalidade Por TK */
 	_msg = Format ['Você Foi Penalizado Por Matar Um Companheiro De Equipe: - R$%1',PerdaTK];
 	[_msg,1] RemoteExec ["RDR_fnc_Notificar",_instigator];
-	[False,PerdaTK,0] RemoteExecCall ["RDR_fnc_AdcSubGrana",_instigator];
+	[False,PerdaTK,1] RemoteExecCall ["RDR_fnc_AdcSubGrana",_instigator];
 
 	/* Remover Kill Do Infrator (Killer) */
 	[0] RemoteExecCall ["RDR_fnc_AdcSubMorte",_instigator];
