@@ -7,7 +7,6 @@
 //Não Modifique Esse Arquivo!
 
 PrimeiroRespawn = false;
-RDR_Grana = -1;
 RDR_Mortes = -1;
 RDR_Armas = [];
 RDR_Pentes = [];
