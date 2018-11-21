@@ -36,7 +36,7 @@ while{true} do{
         ["UMI_Item_Coke_Pile_01", 5]
     ];
 
-    _msg = format["<t color='#ffffff' size='2'>Carga De</t><t color='#c45454' size='2'>Drogas</t><br/><br/><img shadown='false' size='6' image='Texturas\missaodrogas.paa'/><br/><br/>Uma nova carga de drogas chegou! Faça a reevenda e consiga bastante dinheiro!"];
+    _msg = format["<t color='#ffffff' size='2'>Carga De </t><t color='#c45454' size='2'>Drogas</t><br/><br/><img shadown='false' size='6' image='Texturas\missaodrogas.paa'/><br/><br/>Uma nova carga de drogas chegou! Faça a reevenda e consiga bastante dinheiro!"];
     [_msg,4] RemoteExec ['RDR_fnc_Notificar',-2];
 	[_caixa,_marcador] Spawn {
         _caixa = _this select 0;
