@@ -10,12 +10,17 @@
 addMissionEventHandler ["HandleDisconnect",{_this call RDR_fnc_AoDesconectar; false;}];
 
 [] Spawn {
+    _UltimaMissao = 'drogas';
+    _missao = 'drogas';
     while {true} Do {
-    sleep 30;
+	sleep 900;
+	
     _missao = ['drogas','armas'] Call BIS_fnc_SelectRandom;
         Switch (true) Do {
-            case (_missao IsEqualTo 'drogas'): { [] Spawn RDR_fnc_MissaoDrogas; };
-            case (_missao IsEqualTo 'armas'): { [] Spawn RDR_fnc_MissaoArmas; };
+            case (_UltimaMissao isEqualTo 'drogas'): { [] Spawn RDR_fnc_MissaoArmas; };
+            case (_UltimaMissao IsEqualTo 'armas'): { [] Spawn RDR_fnc_MissaoDrogas; };
         };
+
+	_UltimaMissao = _missao;
     };
 };
