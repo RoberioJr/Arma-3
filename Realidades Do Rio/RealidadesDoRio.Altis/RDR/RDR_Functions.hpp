@@ -30,13 +30,13 @@ class RDR_Scripts {
 		class ClimaDinamico {};
 		class Cor {};
 		class InventarioAberto {};
+		class LogoDoServidor { postInit = 1;};
 	};
 	
 	class ExtDB {
 		file = "RDR\Sistemas\ExtDB";
 		class asyncCall {};
 		class extDBInit {};
-		class clientToServer {};
 		class CarregarInfo {};
 		class Sincronizar {};
 		class PrepararEnvio {};

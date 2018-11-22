@@ -32,8 +32,6 @@ if(!_ok) exitWith
 	
 RDR_SAVING_PROTOCOL = _Protocol;
 
-"RDR_CLIENT" addPublicVariableEventHandler {[(_this select 1)] call RDR_fnc_clientToServer;};
-
  /* Server Inicialization */
   [] execVM "RDR\InitRDRServidor.sqf";
 	

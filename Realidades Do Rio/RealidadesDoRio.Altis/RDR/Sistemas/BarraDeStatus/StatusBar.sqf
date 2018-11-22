@@ -23,7 +23,6 @@ _IndepplayHUD = independent countSide playableUnits; //3
 _damage = round ((1 - (damage player)) * 100); //4
 _FpsHud = round (diag_fps); //5
 _Dinheiro = RDR_Grana; //6
-_Kills = RDR_Mortes; //7
 
 ((uiNamespace getVariable "RDR_statusbar")displayCtrl 10713)ctrlSetStructuredText parseText
  format["<t shadow='1' shadowColor='#000000'>
@@ -33,8 +32,7 @@ _Kills = RDR_Mortes; //7
  <img size='1.2' shadowColor='#000000' image='Texturas\health.paa'/>%4
  <img size='1.1' shadowColor='#000000' image='Texturas\fps.paa'/>%5
  <img size='1.1' shadowColor='#000000' image='Texturas\money.paa'/>%6
- <img size='1.1' shadowColor='#000000' image='Texturas\Caveira.paa'/>%7
- </t>",_WestplayHUD,_EastplayHUD,_IndepplayHUD, _damage, _FpsHud, _Dinheiro, _Kills];
+ </t>",_WestplayHUD,_EastplayHUD,_IndepplayHUD, _damage, _FpsHud, _Dinheiro];
  };
 };
 

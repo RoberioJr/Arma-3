@@ -5,8 +5,6 @@
 
 */
 
-  //[] Spawn RDR_Fnc_MissaoDrogas;
-  
-addMissionEventHandler ["HandleDisconnect",{_this call RDR_fnc_AoDesconectar; false;}];
+ addMissionEventHandler ['HandleDisconnect',{deleteVehicle (_this select 0);}]; //Deletar Corpo Ao Desconectar
 
 [] Spawn RDR_fnc_IniciarMissoes

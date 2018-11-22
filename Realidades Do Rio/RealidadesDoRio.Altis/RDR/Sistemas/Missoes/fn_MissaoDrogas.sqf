@@ -17,9 +17,9 @@
 
 	//Marcador da Missão
 	_marcador = createMarker [format["%1_marcador",random 999], visiblePosition _caixa];
-    _marcador setMarkerColorLocal "ColorRed";   //Define a Cor Do Marcador
-    _marcador setMarkerTypeLocal "mil_dot";   //Ponto "Bolinha"
-    _marcador setMarkerTextLocal "Caixa de Drogas";
+    _marcador setMarkerColor "ColorRed";   //Define a Cor Do Marcador
+    _marcador setMarkerType "mil_dot";   //Ponto "Bolinha"
+    _marcador setMarkerText "Caixa de Drogas";
 
     //Adiciona as drogas e quantidades
     {
