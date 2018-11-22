@@ -31,7 +31,7 @@ class RDR_Scripts {
 		class Cor {};
 		class InventarioAberto {};
 		class MissaoDrogas {};
-		class CaixasDoEB {};
+		class MissaoArmas {};
 	};
 	
 	class ExtDB {
