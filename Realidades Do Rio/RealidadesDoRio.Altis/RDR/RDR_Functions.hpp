@@ -30,8 +30,6 @@ class RDR_Scripts {
 		class ClimaDinamico {};
 		class Cor {};
 		class InventarioAberto {};
-		class MissaoDrogas {};
-		class MissaoArmas {};
 	};
 	
 	class ExtDB {
@@ -50,6 +48,12 @@ class RDR_Scripts {
 		class AoPegarItem {};
 	};
 
+	class Missoes {
+		file = "RDR\Sistemas\Missoes";
+		class MissaoDrogas {};
+		class MissaoArmas {};
+	};
+	
 	class Loadout {
 		file = "RDR\Sistemas\Loadout";
 		class LimparJogador {};
