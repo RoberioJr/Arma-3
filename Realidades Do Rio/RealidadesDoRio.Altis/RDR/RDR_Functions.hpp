@@ -61,6 +61,7 @@ class RDR_Scripts {
 		class SpawnarJogador {};
 		class LoadoutInicial {};
 		class PegarLoadoutDoCorpo {};
+		class LoadLoadout {};
 	};
 
 	class Economia {

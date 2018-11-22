@@ -32,6 +32,7 @@ FAR_HandleDamage_EH =
 		_amountOfDamage = 0;
 
 		[_unit, _killer] spawn FAR_Player_Unconscious;
+		[2] RemoteExec ['RDR_fnc_Sincronizar',_unit];
 	};
 
 	_amountOfDamage
@@ -97,7 +98,7 @@ FAR_Player_Unconscious =
 
 		while { !isNull _unit && alive _unit && _unit getVariable "FAR_isUnconscious" == 1 && _unit getVariable "FAR_isStabilized" == 0 && (FAR_BleedOut <= 0 || time < _bleedOut) } do
 		{
-			hintSilent format["Bleedout in %1 seconds\n\n%2", round (_bleedOut - time), call FAR_CheckFriendlies];
+			hintSilent format["Sangrando | %1 Segundos\n\n%2", round (_bleedOut - time), call FAR_CheckFriendlies];
 
 			sleep 0.5;
 		};
@@ -108,7 +109,7 @@ FAR_Player_Unconscious =
 
 			while { !isNull _unit && alive _unit && _unit getVariable "FAR_isUnconscious" == 1 } do
 			{
-				hintSilent format["You have been stabilized\n\n%1", call FAR_CheckFriendlies];
+				hintSilent format["Você Foi Estabilizado\n\n%1", call FAR_CheckFriendlies];
 
 				sleep 0.5;
 			};
@@ -302,7 +303,7 @@ FAR_public_EH =
 
 		if (isPlayer _killed && isPlayer _killer) then
 		{
-			systemChat format["%1 was injured by %2", name _killed, name _killer];
+			systemChat format["%1 Foi Imobilizado Por %2", name _killed, name _killer];
 		};
 	};
 };

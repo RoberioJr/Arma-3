@@ -30,12 +30,21 @@ switch (PlayerSide) do {
 
   [] spawn RDR_fnc_LoadoutInicial;
 
-  player setPos (GetMarkerPos _MrkSpawn);
-
- if !(PrimeiroRespawn) Then {
+  //player setPos (GetMarkerPos _MrkSpawn);
+  
+ if !(PrimeiroRespawn) ExitWith {
     PrimeiroRespawn = true;
 	(findDisplay 46) displayAddEventHandler ["KeyDown", {_this call RDR_fnc_KeyHandler}];
 	If (AtivarMenuInicial) Then {
 	    [] Spawn RDR_fnc_MenuInicial;
 	};
+	If (RDR_JogadorVivo) Then {
+	    player setPosATL RDR_PosicaoDB;
+		[] Spawn RDR_fnc_LoadLoadout;
+	} Else { 
+	    player setPos (GetMarkerPos _MrkSpawn); 
+	};
  };
+ 
+ player setPos (GetMarkerPos _MrkSpawn);
+ 

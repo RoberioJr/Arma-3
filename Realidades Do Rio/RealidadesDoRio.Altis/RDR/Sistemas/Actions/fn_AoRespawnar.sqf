@@ -5,7 +5,7 @@
 
 */
 
- [] call RDR_fnc_SpawnaRDRogador;
+ [] Spawn RDR_fnc_SpawnarJogador;
 
  /* Tirar Estamina */
  player enableStamina false;

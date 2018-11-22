@@ -70,7 +70,8 @@ If (_Tipo IsEqualTo 3) Then {
 };
 _Grn ctrlSetText Format["R$%1",RDR_Grana];
 
- [3] Call RDR_fnc_SalvarProfile;
+ //[3] Call RDR_fnc_SalvarProfile;
+ [0] Spawn RDR_fnc_Sincronizar;
 
 
 

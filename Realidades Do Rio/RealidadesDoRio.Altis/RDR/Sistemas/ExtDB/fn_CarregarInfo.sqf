@@ -6,6 +6,7 @@
 
 params["_gear","_cash","_bank","_levelbope","_levelband","_leveladmin","_leveldoador","_jogadorvivo","_bandidopos"];
 
+/*
 If (PlayerSide IsEqualto West) Then {
     _loadout = _gear select 0;
 } Else {
@@ -38,7 +39,7 @@ if((count _loadout) != 0) then {
     };
 
    player setUnitLoadout [_loadout,false];
-};
+}; */
 
 RDR_Grana = _cash;
 RDR_Banco = _bank;
@@ -55,11 +56,20 @@ If (_jogadorvivo IsEqualTo 1) Then {
 	RDR_PosicaoDB = [];
 };
 
+RDR_LoadoutDB = [];
+If (PlayerSide IsEqualto West) Then {
+    RDR_LoadoutDB = _gear select 0;
+} Else {
+    RDR_LoadoutDB = _gear select 1;
+};
+
+//RDR_LoadoutDB = _loadout;
+
 RDR_VeiculosDoJogador = [];
 
 {
-    _Var = _x GetVariable 'RDR_Veiculo_Dono';
-    If (_Var IsEqualTo (GetPlayerUID Player)) Then {
+    _Veiculo = _x GetVariable 'RDR_Veiculo_Dono';
+    If (_Veiculo IsEqualTo (GetPlayerUID Player)) Then {
 	    RDR_VeiculosDoJogador PushBack _x;
 	};
 } ForEach Vehicles;

@@ -53,8 +53,8 @@ if((isNil "_cash") OR (isNil "_bank")) then
     _bank = RDRCFG(getNumber,"RDR_DinheiroInicial");
 };
 
-_player setVariable ["RDR_Grana",_cash,true];
-_player setVariable ["RDR_Banco",_bank,true];
+//_player setVariable ["RDR_Grana",_cash,true];
+//_player setVariable ["RDR_Banco",_bank,true];
 
  //if((count _gear) != 0) then
  //{

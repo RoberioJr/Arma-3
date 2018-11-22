@@ -16,7 +16,7 @@ class RDR_statusbar { //Centralizada
 		class statusBarText {
 			idc = 10713;
 			x = 0.185 * safezoneW + safezoneX;
-			y = 0.940044 * safezoneH + safezoneY;
+			y = 0.965000 * safezoneH + safezoneY; //Padrão: 0.940044 | Quanto Mais Alto O Numero, Mais Baixo Será A Barra
 			w = 0.65 * safezoneW;
 			h = 0.0300033 * safezoneH;
 			shadow = 1;

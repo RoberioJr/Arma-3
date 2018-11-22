@@ -29,6 +29,8 @@ RDR_MISSAO_DIR = str missionConfigFile select [0, count str missionConfigFile - 
 
 call compileFinal preprocessFileLineNumbers "RDR\Sistemas\FAR\FAR_revive_init.sqf";
 
+[] ExecVM "RDR\Sistemas\R3F_LOG\init.sqf";
+
 if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] Spawn RDR_fnc_ClimaDinamico; };
 
 CfgsProntas = True;
