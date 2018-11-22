@@ -1,3 +1,4 @@
+#include "..\..\..\RDR_Macros.hpp"
 /*
 
     Author: Marvinn && RobérioJR

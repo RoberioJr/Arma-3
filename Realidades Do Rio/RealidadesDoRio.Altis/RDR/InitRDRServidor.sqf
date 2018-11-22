@@ -1,4 +1,3 @@
-#include "..\RDR_Macros.hpp"
 /*
 
     Author: RobérioJR
