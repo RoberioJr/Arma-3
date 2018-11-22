@@ -7,8 +7,7 @@
 _aviso = parseText format ["<t size='3.4' color='#ff0000' shadow='0'>Desvios de Armas do EB\n</t> <t size='1.2'> Chegou a encomenda do desvio de armas do EB </t>"];
 
 _entregaeb = ["desvioeb1", "desvioeb2", "desvioeb3", "desvioeb4"] call BIS_fnc_selectRandom;
-_caixaEB = "Box_NATO_WpsSpecial_F" createVehicle getMarkerPos _entregaeb;
-//_caixaEB = "Caixa_IA2" createVehicle getMarkerPos _entregaeb;
+_caixaEB = "Caixa_IA2" createVehicle getMarkerPos _entregaeb;
 
         /* Esvaziar Caixa */
 clearItemCargoGlobal _caixaEB;
@@ -16,14 +15,11 @@ clearMagazineCargoGlobal _caixaEB;
 clearWeaponCargoGlobal _caixaEB;
 clearBackpackCargoGlobal _caixaEB;
 
-/*    AVISO!! ESSA É A ARMA USADA NA HORA DE USAR O MOD!! AVISO!!
-      _caixaEB addWeaponCargo ["BAD_IA2_762",30];
-      _caixaEB addMagazineCargo ["20Rnd_762x39_Mag_F", 120];
-	  AVISO!! ESSA É A ARMA USADA NA HORA DE USAR O MOD!! AVISO!!
-*/
 		/* Adicionar Items */
-_caixaEB addWeaponCargo ["LMG_Zafir_F",8];
-_caixaEB addMagazineCargo ["150Rnd_762x54_Box", 8];
+		
+_caixaEB addWeaponCargo ["BAD_IA2_762",5];
+_caixaEB addMagazineCargo ["20Rnd_762x39_Mag_F", 25];
+
         /* Aviso a todos que irá chegar a caixa */
 		
 _id = random 9999;
