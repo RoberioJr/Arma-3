@@ -50,6 +50,7 @@ class RDR_Scripts {
 
 	class Missoes {
 		file = "RDR\Sistemas\Missoes";
+		class IniciarMissoes {};
 		class MissaoDrogas {};
 		class MissaoArmas {};
 	};

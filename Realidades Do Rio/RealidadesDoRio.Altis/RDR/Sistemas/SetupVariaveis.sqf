@@ -12,4 +12,4 @@ RDR_Armas = [];
 RDR_Pentes = [];
 RDR_Acessorios = [];
 RDR_Veiculos = [];
-RDR_VeiculosDoJogador = [];
+//RDR_VeiculosDoJogador = [];

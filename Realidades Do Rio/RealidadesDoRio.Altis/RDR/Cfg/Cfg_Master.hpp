@@ -17,5 +17,8 @@ class RDR_Config {
    RDR_Pagamento[] = {250,5}; //Pagamento Por Tempo Online {QUANTIDADE,TEMPO(Minutos)}
    RDR_GanhoKill = 150; //Ganho Por Kill
    RDR_PerdaTK = 500; //Perda TeamKill
+   
+   /* Outros */
+   RDR_TempoEntreMissoes = 900; //Tempo Entre As Missões (Em Segundos)
 	
 };

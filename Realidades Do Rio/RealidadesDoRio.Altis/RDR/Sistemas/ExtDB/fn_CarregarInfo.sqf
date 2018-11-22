@@ -55,4 +55,19 @@ If (_jogadorvivo IsEqualTo 1) Then {
 	RDR_PosicaoDB = [];
 };
 
+RDR_VeiculosDoJogador = [];
+
+{
+    _Var = _x GetVariable 'RDR_Veiculo_Dono';
+    If (_Var IsEqualTo (GetPlayerUID Player)) Then {
+	    RDR_VeiculosDoJogador PushBack _x;
+	};
+} ForEach Vehicles;
+
 true;
+
+
+
+
+
+
