@@ -4,10 +4,8 @@
 / Rio De Janeiro /
 */
 
-_aviso = parseText format ["<t size='3.4' color='#ff0000' shadow='0'>Desvios de Armas do EB\n</t> <t size='1.2'> Chegou a encomenda do desvio de armas do EB </t>"];
-
-_entregaeb = ["desvioeb1", "desvioeb2", "desvioeb3", "desvioeb4"] call BIS_fnc_selectRandom;
-_caixaEB = "Caixa_IA2" createVehicle getMarkerPos _entregaeb;
+_Marcadores = _This Select 0;
+_caixaEB = "Caixa_IA2" createVehicle GetMarkerPos (SelectRandom _Marcadores);
 
     /* Esvaziar Caixa */
 clearItemCargoGlobal _caixaEB;
@@ -26,6 +24,7 @@ _marcador setMarkerColor "ColorRed";   //Define a Cor Do Marcador
 _marcador setMarkerType "mil_dot";   //Ponto "Bolinha"
 _marcador setMarkerText format["Contrabando De Armas"];
 
+_aviso = parseText format ["<t size='3.4' color='#ff0000' shadow='0'>Desvios de Armas do EB\n</t> <t size='1.2'> Chegou a encomenda do desvio de armas do EB </t>"];
 [_aviso,4] RemoteExec ['RDR_fnc_Notificar',-2];
 
 [_caixaEB,_entregaeb] Spawn {

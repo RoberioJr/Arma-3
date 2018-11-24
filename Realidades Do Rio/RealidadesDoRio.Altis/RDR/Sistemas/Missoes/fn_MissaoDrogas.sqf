@@ -1,11 +1,12 @@
 /*
 
     Author: Marvinn
+	Edits: RobérioJR
 
 */
 
-    _missao = ["missao1", "missao2", "missao3", "missao4", "missao5"] call BIS_fnc_selectRandom;
-    _Spawn = GetMarkerPos _missao;
+  _Marcadores = _This Select 0;
+    _Spawn = GetMarkerPos (SelectRandom _Marcadores);
 
     //Cria a caixa e limpa ela
     _caixa = "Box_NATO_WpsSpecial_F" createVehicle _Spawn;

@@ -228,7 +228,7 @@ class PlayerMenu
 			w = 0.26540285;
 			h = 0.0379747;
 			style = 0;
-			text = "999999";
+			text = "";
 			autocomplete = "";
 			colorBackground[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};

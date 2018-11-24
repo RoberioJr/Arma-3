@@ -28,14 +28,14 @@ switch (_code) do {
 
     //Menu De Equipamentos Para Os Admins F7
 	case 65: {
-	    if ((getPlayerUID player) in Administradores && !_alt && !_ctrlKey && !Dialog) then {
+	    if (RDR_AdminLevel >= 1 && !_alt && !_ctrlKey && !Dialog) then {
 	        [] execVM "RDR\Sistemas\Admin\VAS\open.sqf";
 		};
 	};
 
 	//Spawner De Veiculos Para Os Admins F8
 	case 66: {
-	    if ((getPlayerUID player) in Administradores && !_alt && !_ctrlKey && !Dialog) then {
+	    if (RDR_AdminLevel >= 2 && !_alt && !_ctrlKey && !Dialog) then {
 	        [] call TUT_fnc_OpenVehUI;
 		};
     };

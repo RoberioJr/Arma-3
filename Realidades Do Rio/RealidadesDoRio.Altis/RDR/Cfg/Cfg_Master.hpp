@@ -19,6 +19,6 @@ class RDR_Config {
    RDR_PerdaTK = 500; //Perda TeamKill
    
    /* Outros */
-   RDR_TempoEntreMissoes = 900; //Tempo Entre As Missões (Em Segundos)
+   RDR_TempoEntreMissoes = 30; //Tempo Entre As Missões (Em Segundos)
 	
 };
