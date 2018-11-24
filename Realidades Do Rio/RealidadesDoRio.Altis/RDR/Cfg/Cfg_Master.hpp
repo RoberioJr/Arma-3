@@ -20,5 +20,10 @@ class RDR_Config {
    
    /* Outros */
    RDR_TempoEntreMissoes = 870; //Tempo Entre As Missões (Em Segundos)
+   
+   /* Esc Menu */
+   RDR_EscMenuTempo = 10; //Tempo Para Liberar O ABORT (Em Segundos)
+   RDR_EscMenuExtrasAtivar = true;
+   RDR_EscMenuExtras = "Realidades Do Rio"; //Frase Que Aparecerá No ESC
 	
 };

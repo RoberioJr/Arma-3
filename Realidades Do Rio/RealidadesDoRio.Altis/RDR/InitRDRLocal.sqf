@@ -25,5 +25,6 @@ enableSentences false;
 //[] Spawn RDR_fnc_SafeZones; //Causa Bug No Sistema De Revive FAR
 [] Spawn RDR_fnc_Cor;
 [] Spawn RDR_fnc_Pagamento; //Inicia Loop De Pagamentos Periodicos
+[] Spawn RDR_fnc_escInterrupt;
 
 JogadorPronto = True;

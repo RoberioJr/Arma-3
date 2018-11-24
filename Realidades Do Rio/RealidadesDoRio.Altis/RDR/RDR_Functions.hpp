@@ -31,6 +31,7 @@ class RDR_Scripts {
 		class Cor {};
 		class InventarioAberto {};
 		class AbrirPMenu {};
+		class escInterrupt {};
 		class LogoDoServidor { postInit = 1; };
 	};
 	

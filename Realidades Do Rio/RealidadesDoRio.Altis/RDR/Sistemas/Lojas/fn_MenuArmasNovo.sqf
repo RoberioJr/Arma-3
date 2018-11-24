@@ -35,6 +35,7 @@ _GrnP = _menu displayCtrl 5007;
 _InfU = _menu displayCtrl 5008;
 _InfD = _menu displayCtrl 5009;
 _InfA = _menu displayCtrl 5010;
+_Nome = _menu displayCtrl 5015;
 
  _CmpP buttonSetAction "[1] call RDR_fnc_ComprarArma;";
  _CmpS buttonSetAction "[2] call RDR_fnc_ComprarArma;";
@@ -44,7 +45,9 @@ _InfA = _menu displayCtrl 5010;
 
  _Armas = RDRCFGARMAS(getArray,_Tipo,"armas");
  _Accs = RDRCFGARMAS(getArray,_Tipo,"accs");
-
+ 
+ _Nome ctrlSetText Format["%1",(RDRCFGARMAS(getText,_Tipo,"nome"))];
+ 
  //LB Principal
  lbClear _LstP;
  {

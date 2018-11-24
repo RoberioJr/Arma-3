@@ -46,7 +46,7 @@ class RDR_LojaDeArmas
 		class Titulo
 		{
 			type = 0;
-			idc = -1;
+			idc = 5015;
 			x = safeZoneX + safeZoneW * 0.23046875;
 			y = safeZoneY + safeZoneH * 0.171875;
 			w = safeZoneW * 0.53417969;
