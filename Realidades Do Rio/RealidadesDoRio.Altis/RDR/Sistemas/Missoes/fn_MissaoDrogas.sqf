@@ -1,3 +1,4 @@
+#include "..\..\..\RDR_Macros.hpp"
 /*
 
     Author: Marvinn
@@ -5,8 +6,10 @@
 
 */
 
-  _Marcadores = _This Select 0;
+    _Marcadores = _This Select 0;
     _Spawn = GetMarkerPos (SelectRandom _Marcadores);
+	
+	_TempoFinalizar = (RDRCFG(getNumber,"RDR_TempoEntreMissoes") + 120);
 
     //Cria a caixa e limpa ela
     _caixa = "Box_NATO_WpsSpecial_F" createVehicle _Spawn;
@@ -37,10 +40,11 @@
 
     _msg = format["<t color='#ffffff' size='2'>Carga De </t><t color='#c45454' size='2'>Drogas</t><br/><br/><img shadown='false' size='6' image='Texturas\missaodrogas.paa'/><br/><br/>Uma nova carga de drogas chegou! Faça a reevenda e consiga bastante dinheiro!"];
     [_msg,4] RemoteExec ['RDR_fnc_Notificar',-2];
-	[_caixa,_marcador] Spawn {
+	[_caixa,_marcador,_TempoFinalizar] Spawn {
         _caixa = _this select 0;
 		_marcador = _this select 1;
-        Sleep 890;
+		_TempoFinalizar = _this select 2;
+        Sleep _TempoFinalizar;
         DeleteVehicle _caixa;
 		deleteMarker _marcador;
     };
