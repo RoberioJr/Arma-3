@@ -30,7 +30,8 @@ class RDR_Scripts {
 		class ClimaDinamico {};
 		class Cor {};
 		class InventarioAberto {};
-		class LogoDoServidor { postInit = 1;};
+		class AbrirPMenu {};
+		class LogoDoServidor { postInit = 1; };
 	};
 	
 	class ExtDB {

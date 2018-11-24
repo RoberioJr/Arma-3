@@ -68,7 +68,8 @@ switch (_code) do {
     //Y Player Menu
     case 21: {
         if (!_alt && !_ctrlKey && !dialog) then {
-            [] Call CHVD_fnc_openDialog;
+            //[] Call CHVD_fnc_openDialog;
+			[] Call RDR_fnc_AbrirPMenu;
         };
     };
 
@@ -81,7 +82,7 @@ switch (_code) do {
                 _veh = vehicle player;
             };
 		    _est = locked _veh;
-		    if (_veh in RDR_VeiculosDoJogador && {player distance _veh < 7}) then {
+		    if (_veh in RDR_VeiculosDoJogador && {player distance _veh < 6}) then {
 			    if (_est isEqualTo 2) then {
 				    if (local _veh) then {
 				            _veh lock 0;
