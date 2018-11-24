@@ -17,7 +17,7 @@ class RDR_CfgArmas {
 		pentes[] = {
 			{ "30Rnd_65x39_caseless_green_mag_Tracer", "Pente Katiba 6.5 30Rnd", 100, 35, "call RDR_BopeLevel >= 1" }
 		};
-		miras[] = {
+		accs[] = {
 			{ "optic_ACO_grn_smg", "", 300, 75, "" }
 		};
 	};
@@ -32,7 +32,7 @@ class RDR_CfgArmas {
 		pentes[] = {
 			{ "30Rnd_65x39_caseless_green_mag_Tracer", "Pente Katiba 6.5 30Rnd", 100, 35, "" }
 		};
-		miras[] = {
+		accs[] = {
 			{ "optic_ACO_grn_smg", "", 300, 75, "" }
 		};
 	};

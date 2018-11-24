@@ -81,6 +81,7 @@ class RDR_Scripts {
 		class MenuVeiculos {};
 		class ComprarVeiculo {};
 		class MudancaNoLBVeiculos {};
+		class MenuArmasNovo {};
 	};
 
 	class Mortes {

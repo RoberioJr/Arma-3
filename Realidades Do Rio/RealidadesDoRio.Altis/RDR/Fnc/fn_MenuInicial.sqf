@@ -22,8 +22,7 @@ _Mensagem = _Mensagem + "Alguns Controles:<br /><br />";
 _Mensagem = _Mensagem + "<a color='#00DFFF'>•</a> Shift + O: <a color='#56BDD6'>Fones De Ouvido</a><br />";
 _Mensagem = _Mensagem + "<a color='#00DFFF'>•</a> Shift + H: <a color='#56BDD6'>Colocar Arma No Coldre</a><br />";
 _Mensagem = _Mensagem + "<a color='#00DFFF'>•</a> U: <a color='#56BDD6'>Destrancar Ou Trancar Veiculo </a><br />";
-_Mensagem = _Mensagem + "<a color='#00DFFF'>•</a> Y: <a color='#56BDD6'>Configurações De Renderização</a><br />";
-_Mensagem = _Mensagem + "<a color='#00DFFF'>•</a> ASPAS: <a color='#56BDD6'>Menu Do Jogador (EM BREVE)</a><br />";
+_Mensagem = _Mensagem + "<a color='#00DFFF'>•</a> Y: <a color='#56BDD6'>Menu Do Jogador</a><br />";
 _Mensagem = _Mensagem + "Obrigado Por Jogar Na Nossa Missão, <a color='#B000FF'>Realidades Do Rio.</a><br />";
 _Mensagem = _Mensagem + "Tenha Um Bom Jogo!";
 

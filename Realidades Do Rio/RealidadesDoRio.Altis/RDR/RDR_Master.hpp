@@ -7,6 +7,7 @@
 */
 
 #include "Cfg\Cfg_Master.hpp"
+#include "Cfg\Cfg_Armas.hpp"
 
 #include "Dialogos\Dialogos_Master.hpp"
 #include "Sistemas\Admin\VeiculoSpawn\Common.hpp"                         //Menu De Veiculos ADM
