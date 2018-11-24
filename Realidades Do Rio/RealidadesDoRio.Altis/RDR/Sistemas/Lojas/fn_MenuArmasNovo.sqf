@@ -51,35 +51,41 @@ _Nome = _menu displayCtrl 5015;
  //LB Principal
  lbClear _LstP;
  {
-    If ((_x Select 1) IsEqualTo "") Then {
-        _Nome = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "displayName");
-	} Else { _Nome = _x Select 1; };
-	_Icon = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "picture");
-	_Clas = (_x Select 0);
-	_Prec = (_x Select 2);
-    _LstP LbAdd Format['%1',_Nome];
-	_LstP lbSetPicture [(lbSize _LstP)-1, _Icon];
-	_LstP lbSetPictureColor [(lbSize _LstP)-1, [1, 1, 1, 1]];
-	_LstP lbSetData [(lbSize _LstP)-1, _Clas];
-	_LstP lbSetValue [(lbSize _LstP)-1, _Prec];
-	Sleep 0.1;
+	_Cond = If (call compile (_x Select 4)) Then { true; } Else { false; };
+	If (_Cond) Then {
+        If ((_x Select 1) IsEqualTo "") Then {
+            _Nome = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "displayName");
+	    } Else { _Nome = _x Select 1; };
+	    _Icon = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "picture");
+	    _Clas = (_x Select 0);
+	    _Prec = (_x Select 2);
+        _LstP LbAdd Format['%1',_Nome];
+	    _LstP lbSetPicture [(lbSize _LstP)-1, _Icon];
+	    _LstP lbSetPictureColor [(lbSize _LstP)-1, [1, 1, 1, 1]];
+	    _LstP lbSetData [(lbSize _LstP)-1, _Clas];
+	    _LstP lbSetValue [(lbSize _LstP)-1, _Prec];
+		Sleep 0.1;
+	};
  } ForEach _Armas;
 
  //LB De Acessórios
  lbClear _LstA;
  {
-    If ((_x Select 1) IsEqualTo "") Then {
-        _Nome = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "displayName");
-	} Else { _Nome = _x Select 1; };
-	_Icon = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "picture");
-	_Clas = (_x Select 0);
-	_Prec = (_x Select 2);
-    _LstA LbAdd Format['%1',_Nome];
-	_LstA lbSetPicture [(lbSize _LstA)-1, _Icon];
-	_LstA lbSetPictureColor [(lbSize _LstA)-1, [1, 1, 1, 1]];
-	_LstA lbSetData [(lbSize _LstA)-1, _Clas];
-	_LstA lbSetValue [(lbSize _LstA)-1, _Prec];
-	Sleep 0.1;
+    _Cond = If (call compile (_x Select 4)) Then { true; } Else { false; };
+	If (_Cond) Then {
+        If ((_x Select 1) IsEqualTo "") Then {
+            _Nome = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "displayName");
+	    } Else { _Nome = _x Select 1; };
+	    _Icon = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "picture");
+	    _Clas = (_x Select 0);
+	    _Prec = (_x Select 2);
+        _LstA LbAdd Format['%1',_Nome];
+	    _LstA lbSetPicture [(lbSize _LstA)-1, _Icon];
+	    _LstA lbSetPictureColor [(lbSize _LstA)-1, [1, 1, 1, 1]];
+	    _LstA lbSetData [(lbSize _LstA)-1, _Clas];
+	    _LstA lbSetValue [(lbSize _LstA)-1, _Prec];
+	    Sleep 0.1;
+	};
  }  ForEach _Accs;
 
 
