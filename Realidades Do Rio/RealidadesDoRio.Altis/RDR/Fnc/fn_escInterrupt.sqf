@@ -43,7 +43,7 @@ _escSync = {
 };
 
 _canUseControls = {
-    if (playerSide isEqualTo west) exitWith {true};
+    if (playerSide in [west,east,independent]) exitWith {true};
 };
 
 for "_i" from 0 to 1 step 0 do {

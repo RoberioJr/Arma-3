@@ -46,7 +46,7 @@ Hint Format["Você Comprou Um Veiculo Por: %1.",_Preco];
  clearWeaponCargoGlobal _Veiculo;
  clearBackpackCargoGlobal _Veiculo;
  
- _Veiculo SetVariable ["RDR_Veiculo_Dono",(GetPlayerUID Player),True];
+ _Veiculo SetVariable ["RDR_Veiculo_Dono",[name player,(GetPlayerUID Player)],True];
 
  If !(AtivarTermalVeiculos) Then {
     _Veiculo disableTIEquipment true;

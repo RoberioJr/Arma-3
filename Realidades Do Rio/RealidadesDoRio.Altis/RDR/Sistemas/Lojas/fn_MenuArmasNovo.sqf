@@ -51,7 +51,8 @@ _Nome = _menu displayCtrl 5015;
  //LB Principal
  lbClear _LstP;
  {
-	_Cond = If (call compile (_x Select 4)) Then { true; } Else { false; };
+	//_Cond = If (call compile (_x Select 4)) Then { true } Else { false };
+	_Cond = ((_x Select 4) isEqualTo "") OR (call compile (_x Select 4));
 	If (_Cond) Then {
         If ((_x Select 1) IsEqualTo "") Then {
             _Nome = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "displayName");
@@ -71,7 +72,8 @@ _Nome = _menu displayCtrl 5015;
  //LB De Acessórios
  lbClear _LstA;
  {
-    _Cond = If (call compile (_x Select 4)) Then { true; } Else { false; };
+    //_Cond = If (call compile (_x Select 4)) Then { true } Else { false };
+	_Cond = ((_x Select 4) isEqualTo "") OR (call compile (_x Select 4));
 	If (_Cond) Then {
         If ((_x Select 1) IsEqualTo "") Then {
             _Nome = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "displayName");

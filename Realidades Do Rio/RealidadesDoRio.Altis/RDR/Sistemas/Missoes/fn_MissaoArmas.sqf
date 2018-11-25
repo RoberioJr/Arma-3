@@ -30,11 +30,11 @@ _marcador setMarkerText format["Contrabando De Armas"];
 _aviso = parseText format ["<t size='3.4' color='#ff0000' shadow='0'>Desvios de Armas do EB\n</t> <t size='1.2'> Chegou a encomenda do desvio de armas do EB </t>"];
 [_aviso,4] RemoteExec ['RDR_fnc_Notificar',-2];
 
-[_caixaEB,_entregaeb,_TempoFinalizar] Spawn {
+[_caixaEB,_marcador,_TempoFinalizar] Spawn {
         _caixaEB = _this select 0;
-        _entregaeb = _this select 1;
+        _marcador = _this select 1;
         _TempoFinalizar = _this select 2;
         Sleep _TempoFinalizar;
         DeleteVehicle _caixaEB;
-        deleteMarker _entregaeb;
+        deleteMarker _marcador;
     };
