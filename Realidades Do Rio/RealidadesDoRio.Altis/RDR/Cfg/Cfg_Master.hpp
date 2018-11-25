@@ -5,10 +5,11 @@ class RDR_Config {
 	
 	/* Genéricos */
    RDR_MenuInicial = 1; //Menu De Boas Vindas
-   RDR_Administradores[] = { //SteamID Dos Administradores
-    "76561198134612622", //RobérioJR
-	"",
-	""
+   RDR_Administradores[] = //SteamID Dos Administradores
+    { 
+     "76561198134612622", //RobérioJR
+	 "",
+	 ""
 	};
 	
 	/* Economia */
@@ -23,7 +24,21 @@ class RDR_Config {
    RDR_EscMenuExtrasAtivar = true; //Ativar Frase No ESC Menu
    RDR_EscMenuExtras = "Realidades Do Rio"; //Frase Que Aparecerá No ESC
    
+   /* Menu De CFG De Redenrização */
+   RDR_HabilitarRGrama = true;
+   RDR_MaximoVisao = 5000;
+   RDR_MaximoObjetos = 5000;
+   
    /* Outros */
    RDR_TempoEntreMissoes = 870; //Tempo Entre As Missões (Em Segundos)
+   RDR_TempoSincronizar = 180; //Tempo Para Sincronizar Manualmente Novamente (Em Segundos)
+   RDR_MenuAnims[] = //Menu De Animações | Cfgs
+   {
+	{"Kung Fu", "AmovPercMstpSnonWnonDnon_exerciseKata"},
+	{"Flexões", "AmovPercMstpSnonWnonDnon_exercisePushup"},
+	{"Agachamento (Rapido)", "AmovPercMstpSnonWnonDnon_exercisekneeBendB"},
+	{"Agachamento (Normal)", "AmovPercMstpSnonWnonDnon_exercisekneeBendA"},
+	{"Assustado", "AmovPercMstpSnonWnonDnon_Scared"}
+   };
 	
 };

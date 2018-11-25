@@ -13,4 +13,5 @@ RDR_Pentes = [];
 RDR_Acessorios = [];
 RDR_Veiculos = [];
 RDR_LojaAtiva = "";
+RDR_SyncTrancado = false;
 //RDR_VeiculosDoJogador = [];

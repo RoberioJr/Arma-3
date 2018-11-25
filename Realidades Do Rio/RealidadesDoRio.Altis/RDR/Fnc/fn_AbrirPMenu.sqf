@@ -21,7 +21,6 @@
 #define BtnDM 5027
 #define BtnDR 5028
 #define BtnJP 5029
-//#define NMsc 101013
 
 disableSerialization;
 
@@ -51,14 +50,14 @@ _BtnMS ctrlSetTooltip "Enviar Mensagem";
 _BtnCF ctrlSetTooltip "Configurações";
 
  /* Ações */
-// _BtnAC buttonSetAction "[0] call RJM_fnc_radio;";
- _BtnSY buttonSetAction "[0] Spawn RDR_fnc_Sincronizar; Hint 'Dados Sincronizados';";
+ _BtnAC buttonSetAction "[] Spawn RDR_fnc_MenuAnims;";
+ _BtnSY buttonSetAction "If (!RDR_SyncTrancado) Then { [0] Spawn RDR_fnc_Sincronizar; [] Spawn RDR_fnc_LockSync; Hint 'Dados Sincronizados'; } Else { Hint 'Aguarde Para Sincronizar Novamente!'; };";
  //_BtnMS buttonSetAction "[2] call RJM_fnc_radio;";
  _BtnCF buttonSetAction "[] Call CHVD_fnc_openDialog;";
- //_BtnDD buttonSetAction "[4] call RJM_fnc_radio;";
+ _BtnDD buttonSetAction "[] Spawn RDR_fnc_EnviarDinheiro; _BtnBA ctrlSetText Format['R$ %1',RDR_Banco]; _BtnDM ctrlSetText Format['R$ %1',RDR_Grana];";
  _BtnBA ctrlSetText Format["R$ %1",RDR_Banco];
  _BtnDM ctrlSetText Format["R$ %1",RDR_Grana];
- //_BtnDR buttonSetAction "[6] call RJM_fnc_radio;";
+ //_BtnDR buttonSetAction "[6] call RJM_fnc_radio;"; //Valor Doar
  
  lbClear _BtnJP;
  _JogadoresProximos = [];

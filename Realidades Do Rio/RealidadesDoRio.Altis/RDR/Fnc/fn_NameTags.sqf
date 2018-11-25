@@ -19,14 +19,8 @@ if (isNull _ui) then {
     _ui = uiNamespace getVariable ["RDR_HUD_nameTags",displayNull];
 };
 
-_units = nearestObjects[(visiblePosition player),["Man"],50];
+_units = nearestObjects[(visiblePosition player),["Man"],30];
 _units = _units - [player];
-
-Switch (PlayerSide) Do {
-    case West: { _Icone = 'Texturas\azul.paa'; };
-	case East: { _Icone = 'Texturas\vermelho.paa'; };
-	case Independent: {  _Icone = 'Texturas\verde.paa'; };
-};
 
 private _index = -1;
 {
@@ -38,10 +32,27 @@ private _index = -1;
         };
         _sPos = worldToScreen _pos;
         _distance = _pos distance player;
-        if (count _sPos > 1 && {_distance < 50}) then {
-			If ((Side _x) IsEqualTo (Side Player)) Then {
-                _text = format ["<t color='#00FF00'><img image='%2' size='1.5'></img></t> %1",name _x,_Icone];
-				//_text = format ["<img size='1.2' shadowColor='#000000' image='%2'/>%1",name _x,_Icone];
+        if (count _sPos > 1 && {_distance < 30}) then {
+			If ((Side _x) In [east,independent,west,civilian]) Then {
+				Switch (Side _x) Do {
+				    Case west: 
+					{
+                        _text = format ["<t color='#2E64FE'>%1</t>",name _x];			
+					};
+					Case east:
+					{
+					    _text = format ["<t color='#FE2E2E'>%1</t>",name _x];
+					};
+					Case independent: 
+					{
+					    _text = format ["<t color='#58FA58'>%1</t>",name _x];
+					};
+					Case civilian:
+					{
+					    _text = format ["<t color='#8000FF'>%1</t>",name _x];
+					};
+				};
+				//_text = format ["<t color='#00FF00'>%1</t>",name _x]; //BRANCO
 		    } Else { _text = ""; };
                 _idc ctrlSetStructuredText parseText _text;
                 _idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];

@@ -1,3 +1,4 @@
+#include "..\RDR_Macros.hpp"
 /*
 
     Author: RobérioJR
@@ -32,6 +33,10 @@ call compileFinal preprocessFileLineNumbers "RDR\Sistemas\FAR\FAR_revive_init.sq
 [] ExecVM "RDR\Sistemas\R3F_LOG\init.sqf";
 
 if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] Spawn RDR_fnc_ClimaDinamico; };
+
+CHVD_allowNoGrass = If ((RDRCFG(getNumber,"RDR_HabilitarRGrama")) IsEqualTo 1) Then { true } Else { false };
+CHVD_maxView = (RDRCFG(getNumber,"RDR_MaximoVisao"));
+CHVD_maxObj = (RDRCFG(getNumber,"RDR_MaximoObjetos"));
 
 CfgsProntas = True;
 

@@ -32,6 +32,8 @@ class RDR_Scripts {
 		class InventarioAberto {};
 		class AbrirPMenu {};
 		class escInterrupt {};
+		class MenuAnims {};
+		class LockSync {};
 		class LogoDoServidor { postInit = 1; };
 	};
 	
@@ -71,6 +73,8 @@ class RDR_Scripts {
 		class AdcSubGrana {};
 		class Pagamento {};
 		class RecompTerritorio {};
+		class EnviarDinheiro {};
+		class ReceberDinheiro {};
 	};
 
 	class Lojas {
