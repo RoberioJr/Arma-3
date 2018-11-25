@@ -33,7 +33,7 @@ private _index = -1;
         _sPos = worldToScreen _pos;
         _distance = _pos distance player;
         if (count _sPos > 1 && {_distance < 30}) then {
-			If ((Side _x) In [east,independent,west,civilian]) Then {
+			If ((Side _x) In [east,independent,west,civilian] && (IsPlayer _x)) Then {
 				Switch (Side _x) Do {
 				    Case west: 
 					{

@@ -54,14 +54,14 @@ _BtnCF ctrlSetTooltip "Configurações";
  _BtnSY buttonSetAction "If (!RDR_SyncTrancado) Then { [0] Spawn RDR_fnc_Sincronizar; [] Spawn RDR_fnc_LockSync; Hint 'Dados Sincronizados'; } Else { Hint 'Aguarde Para Sincronizar Novamente!'; };";
  //_BtnMS buttonSetAction "[2] call RJM_fnc_radio;";
  _BtnCF buttonSetAction "[] Call CHVD_fnc_openDialog;";
- _BtnDD buttonSetAction "[] Spawn RDR_fnc_EnviarDinheiro; _BtnBA ctrlSetText Format['R$ %1',RDR_Banco]; _BtnDM ctrlSetText Format['R$ %1',RDR_Grana];";
+ _BtnDD buttonSetAction "[] Spawn RDR_fnc_EnviarDinheiro; _BtnBA = ((findDisplay 5020)displayCtrl 5026); _BtnDM = ((findDisplay 5020)displayCtrl 5027); _BtnBA ctrlSetText Format['R$ %1',RDR_Banco]; _BtnDM ctrlSetText Format['R$ %1',RDR_Grana];";
  _BtnBA ctrlSetText Format["R$ %1",RDR_Banco];
  _BtnDM ctrlSetText Format["R$ %1",RDR_Grana];
  //_BtnDR buttonSetAction "[6] call RJM_fnc_radio;"; //Valor Doar
  
  lbClear _BtnJP;
  _JogadoresProximos = [];
- { if (player distance _x < 10) then {_JogadoresProximos pushBack _x}; } forEach playableUnits;
+ { if (player distance _x < 7) then {_JogadoresProximos pushBack _x}; } forEach playableUnits;
  {
     if (!isNull _x && alive _x && player distance _x < 10 && !(_x isEqualTo player)) then {
         _BtnJP lbAdd format ["%1",name _x];

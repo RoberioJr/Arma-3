@@ -15,8 +15,10 @@ WaitUntil {CfgsProntas};
 [] ExecVM "RDR\Sistemas\BarraDeStatus\StatusBar.sqf";
 [] ExecVM "RDR\Sistemas\Admin\loop.sqf";
 
-enableSentences false;
 [] Spawn { WaitUntil {(!IsNil "CfgsProntas")}; Sleep 0.2; [] Spawn RDR_fnc_SpawnarJogador; };
+
+enableSentences false;
+player enableFatigue false;
 
 //[] Spawn RDR_fnc_Icons;
 [] Spawn RDR_fnc_AutoSave; 

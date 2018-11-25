@@ -73,6 +73,7 @@ _Nome = _menu displayCtrl 5015;
  lbClear _LstA;
  {
     //_Cond = If (call compile (_x Select 4)) Then { true } Else { false };
+	_Cond = False;
 	_Cond = ((_x Select 4) isEqualTo "") OR (call compile (_x Select 4));
 	If (_Cond) Then {
         If ((_x Select 1) IsEqualTo "") Then {

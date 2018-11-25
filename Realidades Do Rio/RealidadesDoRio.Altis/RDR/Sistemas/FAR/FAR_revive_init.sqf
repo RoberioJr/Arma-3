@@ -50,7 +50,8 @@ if (isDedicated) exitWith {};
 	}
 	else
 	{
-		SystemChat format["Farooq's Revive %1 is initialized.", SCRIPT_VERSION];
+		//SystemChat format["Farooq's Revive %1 is initialized.", SCRIPT_VERSION];
+		SystemChat format["Sistema FAR %1 Foi Inicializado.", SCRIPT_VERSION];
 	};
 
 	// Event Handlers
