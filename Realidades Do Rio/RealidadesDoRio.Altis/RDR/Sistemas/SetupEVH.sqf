@@ -10,6 +10,6 @@ player addEventHandler ["Take", {_this call RDR_fnc_AoPegarItem}];
 player addEventHandler ["Killed",{_this call RDR_fnc_Mortes}];
 //player addEventHandler ["InventoryOpened", {_this call RDR_fnc_InventarioAberto}];
 
-addMissionEventHandler ["Map", {_this call RDR_fnc_Marcador}];
+addMissionEventHandler ["Map", {_this Spawn RDR_fnc_Marcador}];
 
 ["RDR_PlayerTags","onEachFrame","RDR_fnc_NameTags"] call BIS_fnc_addStackedEventHandler;

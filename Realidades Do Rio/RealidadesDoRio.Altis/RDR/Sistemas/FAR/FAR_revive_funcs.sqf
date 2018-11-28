@@ -248,9 +248,9 @@ FAR_Drag =
 	publicVariable "FAR_isDragging_EH";
 
 	// Add release action and save its id so it can be removed
-	_id = player addAction ["<t color=""#C90000"">" + "Release" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_release"], 10, true, true, "", "true"];
+	_id = player addAction ["<t color=""#C90000"">" + "Soltar" + "</t>", "RDR\Sistemas\FAR\FAR_handleAction.sqf", ["action_release"], 10, true, true, "", "true"];
 
-	hint "Press 'C' if you can't move.";
+	hint "Aperte 'C' Se Você Não Conseguir Se Mover.";
 
 	// Wait until release action is used
 	waitUntil

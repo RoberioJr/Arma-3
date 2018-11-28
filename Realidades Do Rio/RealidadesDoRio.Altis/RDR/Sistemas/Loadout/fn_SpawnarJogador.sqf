@@ -39,7 +39,11 @@ switch (PlayerSide) do {
 	    [] Spawn RDR_fnc_MenuInicial;
 	};
 	If (RDR_JogadorVivo) Then {
-	    player setPosATL RDR_PosicaoDB;
+	    If (PlayerSide in [east,independent,civilian]) Then {
+	        player setPosATL RDR_PosicaoDB;
+		} Else { 
+		    player setPos (GetMarkerPos _MrkSpawn); 
+		};
 		[] Spawn RDR_fnc_LoadLoadout;
 	} Else { 
 	    player setPos (GetMarkerPos _MrkSpawn); 

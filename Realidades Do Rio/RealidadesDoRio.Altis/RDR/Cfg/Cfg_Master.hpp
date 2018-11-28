@@ -42,3 +42,17 @@ class RDR_Config {
    };
 	
 };
+
+ /* Cfgs Do TaskForceRádio */
+class ForceTFAR {
+	//Settings for TFAR
+	RDR_AtivarTaskForceRadio = false;
+	tf_radio_channel_name = "TaskForceRadio"; //TFAR channel name.
+	tf_radio_channel_password = "BOPE5659"; //TFAR channel password.
+
+	//Force TFAR Settings.
+	ftfar_server_name = "RealidadesDoRio"; //Server name.
+	ftfar_server_ipaddress = "149.56.201.89:9987"; //Server ip address.
+	ftfar_server_password = ""; //Server password.
+	ftfar_wait_for_action_time = 30; //Time in seconds.
+};

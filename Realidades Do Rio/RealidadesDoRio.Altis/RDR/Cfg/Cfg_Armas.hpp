@@ -11,7 +11,7 @@ class RDR_CfgArmas {
 		tipo = "BOPE";
 	    condicao = "RDR_BopeLevel >= 1";
 		armas[] = {
-		 //{ "CLASSNAME", "NOME", VALOR, VALOR VENDA (-1 Para Desativar), "CONDIÇÃO ex: 'RDR_BopeLevel == 3'" }
+		 //{ "CLASSNAME", "NOME"(Opt), VALOR, VALOR VENDA (-1 Para Desativar), "CONDIÇÃO ex: 'RDR_BopeLevel == 3'"(Opt) }
 			{ "arifle_Katiba_F", "Katiba 6.5mm", 1000, 250, "RDR_BopeLevel >= 1" }
 		};
 		pentes[] = {

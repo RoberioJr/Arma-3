@@ -38,6 +38,15 @@ CHVD_allowNoGrass = If ((RDRCFG(getNumber,"RDR_HabilitarRGrama")) IsEqualTo 1) T
 CHVD_maxView = (RDRCFG(getNumber,"RDR_MaximoVisao"));
 CHVD_maxObj = (RDRCFG(getNumber,"RDR_MaximoObjetos"));
 
+ //Cfgs Para O TaskForceRadio
+tf_radio_channel_name = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_name");
+tf_radio_channel_password = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_password");
+
+//Executar O Script Somente Se For Ativado e Localmente
+if (hasInterface && (getNumber(missionConfigFile >> "ForceTFAR" >> "RDR_AtivarTaskForceRadio") IsEqualTo 1)) then {
+	[] spawn compile preprocessFileLineNumbers "RDR\Fnc\TFS_fnc_ftfar_init.sqf";
+};
+
 CfgsProntas = True;
 
 

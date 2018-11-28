@@ -16,7 +16,7 @@ if (isnil "SERVER") then {Hint "You must ADD a object named SERVER";Player Sidec
 if (isServer) then {
 IF (!isnil ("COScomplete")) then {Hint "Check your call. COS was called twice!";}else{
 
-COS_distance=500;//Set spawn distance
+COS_distance=350;//Set spawn distance
 _aerielActivation=true;// Set if flying units can activate civilian Zones
 
 blackListTowns = ["sagonisi"];// Remove towns from COS
@@ -32,14 +32,14 @@ showTownLabel = false;// Show town information when entering COS zones
 debugCOS= true;// Show spawned units on the map
 
 COSpedestrians=true; //Spawn pedestrians
-COScars=false;// Spawn Cars
+COScars=true;// Spawn Cars
 COSparked=true;// Spawn parked cars
 
 // Types of units that will be spawned as civilians.
 COScivPool =["C_man_1","C_man_1_1_F","C_man_1_2_F","C_man_1_3_F","C_man_hunter_1_F","C_man_p_beggar_F","C_man_p_beggar_F_afro","C_man_p_fugitive_F","C_man_p_shorts_1_F","C_man_polo_1_F","C_man_polo_2_F","C_man_polo_3_F","C_man_polo_4_F","C_man_polo_5_F","C_man_polo_6_F","C_man_shorts_1_F","C_man_shorts_2_F","C_man_shorts_3_F","C_man_shorts_4_F","C_man_w_worker_F"];	
 COSmotPool =["C_Hatchback_01_F","C_Hatchback_01_sport_F","C_Offroad_01_F","C_SUV_01_F","C_Van_01_box_F","C_Van_01_fuel_F","C_Van_01_transport_F"];
 
-COSmaxGrps=64;//Set Maximum group limit for COS at any one time (If limit is hit then civilians will be placed into a single group for each town)
+COSmaxGrps=32;//Set Maximum group limit for COS at any one time (If limit is hit then civilians will be placed into a single group for each town)
 
 // Browse to line 81 to customise number of civilians that spawn.
 private ["_sizeX","_sizeY","_name","_pos","_mSize","_rad","_civilians","_vehicles","_parked","_actCond"];

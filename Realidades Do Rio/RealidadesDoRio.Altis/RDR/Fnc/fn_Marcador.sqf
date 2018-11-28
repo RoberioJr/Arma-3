@@ -4,7 +4,6 @@
     
 */
 
-[] Spawn {
 private["_marcadores","_membros","_cormark"];
 _marcadores = [];
 _membros = [];
@@ -17,9 +16,14 @@ switch (playerSide) do
 	    _cormark = "ColorBlue";   //BOPE AZUL
     };	
 	
-	case civilian: 
+	case east:
 	{
 	    _cormark = "ColorRed";    //CV VERMELHO
+	};
+	
+	case civilian: 
+	{
+	    _cormark = "ColorCivilian";    //CV VERMELHO
 	};
 	
 	case independent: 
@@ -60,4 +64,3 @@ switch (playerSide) do
 	_marcadores = [];
 	_membros = [];
  };
-};
