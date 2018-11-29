@@ -4,7 +4,11 @@
 	|12/10/18|
 
 */
+if (!(_this select 0)) exitWith {}; //Não é O Servidor
+
 ExtDBNaoIniciado = true;
+
+[] call compile preprocessFileLineNumbers "\RDR_Fncs\init.sqf";
 
 if(isNil "extDB3_var_loaded") exitWith 
 {
