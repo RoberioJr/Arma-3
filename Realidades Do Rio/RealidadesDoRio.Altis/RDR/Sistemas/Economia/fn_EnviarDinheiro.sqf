@@ -10,9 +10,10 @@ _Jogador = call compile format ["%1",_Jogador];
 
 If (!Alive Player) ExitWith {};
 If (IsNil "_Valor") ExitWith { Hint "Digite Um Numero Válido!"; };
-If !([_Valor] Call RDR_fnc_ENumeral) ExitWith { Hint "Digite Um Numero Válido!"; };
-If (_Valor < 1) ExitWith { Hint "Digite Uma Quantia Válida!"; };
-If (_Valor > RDR_Grana) ExitWith { Hint "Você Não Tem Dinheiro Suficiente!"; };
+if ((lbCurSel 5029) isEqualTo -1) exitWith { Hint "Selecione Um Jogador!" };
+If (!([_Valor] Call RDR_fnc_ENumeral)) ExitWith { Hint "Digite Um Numero Válido!"; };
+If (parseNumber(_Valor) < 1) ExitWith { Hint "Digite Uma Quantia Válida!"; };
+If (parseNumber(_Valor) > RDR_Grana) ExitWith { Hint "Você Não Tem Dinheiro Suficiente!"; };
 If (IsNull _Jogador || IsNil "_Jogador") ExitWith { Hint "Erro Ao Enviar Dinheiro Para Esse Jogador!"; };
 If (!Alive _Jogador) ExitWith { Hint "Não Da Pra Dar Dinheiro Pra Um Cadaver..."; };
 

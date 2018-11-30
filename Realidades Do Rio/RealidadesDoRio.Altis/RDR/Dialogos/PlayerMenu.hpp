@@ -15,10 +15,10 @@ class PlayerMenu
 		{
 			type = 0;
 			idc = -1;
-			x = 0.23459716;
-			y = -0.35759493;
-			w = 1.27014219;
-			h = 1.66772153;
+			x = 0.30459717;
+			y = -0.2575949;
+			w = 1.17014219;
+			h = 1.53772153;
 			style = 48;
 			text = "Texturas\PlayerMenu.paa";
 			colorBackground[] = {};
@@ -36,10 +36,10 @@ class PlayerMenu
 		{
 			type = 1;
 			idc = 5021;
-			x = 0.68905214;
+			x = 0.72905215;
 			y = 0.95886078;
-			w = 0.06028439;
-			h = 0.08227849;
+			w = 0.05028439;
+			h = 0.07227849;
 			style = 0;
 			text = "";
 			borderSize = 0;
@@ -67,10 +67,10 @@ class PlayerMenu
 		{
 			type = 1;
 			idc = 5022;
-			x = 0.79383887;
-			y = 0.96202534;
-			w = 0.05213272;
-			h = 0.07911393;
+			x = 0.81383887;
+			y = 0.96202535;
+			w = 0.06213272;
+			h = 0.06911393;
 			style = 0;
 			text = "";
 			borderSize = 0;
@@ -98,10 +98,10 @@ class PlayerMenu
 		{
 			type = 1;
 			idc = 5023;
-			x = 0.8886256;
+			x = 0.9086256;
 			y = 0.95886078;
-			w = 0.06398105;
-			h = 0.08227849;
+			w = 0.05398105;
+			h = 0.06227849;
 			style = 0;
 			text = "";
 			borderSize = 0;
@@ -131,8 +131,8 @@ class PlayerMenu
 			idc = 5024;
 			x = 0.99341233;
 			y = 0.95886078;
-			w = 0.06398105;
-			h = 0.08227849;
+			w = 0.05398105;
+			h = 0.06227849;
 			style = 0;
 			text = "";
 			borderSize = 0;
@@ -160,9 +160,9 @@ class PlayerMenu
 		{
 			type = 1;
 			idc = 5025;
-			x = 0.98710902;
-			y = 0.3401266;
-			w = 0.06137446;
+			x = 0.99710902;
+			y = 0.38012662;
+			w = 0.05137446;
 			h = 0.03962027;
 			style = 0;
 			text = "";
@@ -191,10 +191,10 @@ class PlayerMenu
 		{
 			type = 0;
 			idc = 5026;
-			x = 0.7801422;
-			y = -0.04430379;
-			w = 0.25909954;
-			h = 0.07962027;
+			x = 0.8001422;
+			y = 0.04569622;
+			w = 0.24909954;
+			h = 0.04962029;
 			style = 0+2;
 			text = "999999";
 			colorBackground[] = {0,0,0,0};
@@ -207,10 +207,10 @@ class PlayerMenu
 		{
 			type = 0;
 			idc = 5027;
-			x = 0.7701422;
-			y = 0.09860761;
-			w = 0.27834124;
-			h = 0.06962027;
+			x = 0.8001422;
+			y = 0.16860762;
+			w = 0.24834125;
+			h = 0.04962027;
 			style = 0+2;
 			text = "999999";
 			colorBackground[] = {0,0,0,0};
@@ -223,12 +223,12 @@ class PlayerMenu
 		{
 			type = 2;
 			idc = 5028;
-			x = 0.6872038;
-			y = 0.34177217;
-			w = 0.26540285;
+			x = 0.71720381;
+			y = 0.38177219;
+			w = 0.24540285;
 			h = 0.0379747;
 			style = 0;
-			text = "";
+			text = "0";
 			autocomplete = "";
 			colorBackground[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
@@ -242,10 +242,10 @@ class PlayerMenu
 		{
 			type = 4;
 			idc = 5029;
-			x = 0.77199053;
-			y = 0.25316457;
-			w = 0.27540286;
-			h = 0.05379748;
+			x = 0.80199053;
+			y = 0.31316458;
+			w = 0.24540286;
+			h = 0.04379748;
 			style = 16;
 			arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\RscCombo\arrow_combo_ca.paa";
 			arrowFull = "\A3\ui_f\data\GUI\RscCommon\RscCombo\arrow_combo_active_ca.paa";

@@ -43,7 +43,7 @@ COSmaxGrps=32;//Set Maximum group limit for COS at any one time (If limit is hit
 
 // Browse to line 81 to customise number of civilians that spawn.
 private ["_sizeX","_sizeY","_name","_pos","_mSize","_rad","_civilians","_vehicles","_parked","_actCond"];
-breakPatrol_FNC=compile preprocessFileLineNumbers "RDR\Sistemas\TrafegoNPC\patrolFnc.sqf";unitScript_FNC=compile preprocessFileLineNumbers "scripts\cos\addScript_Unit.sqf";vehScript_FNC=compile preprocessFileLineNumbers "scripts\cos\addScript_Vehicle.sqf";
+breakPatrol_FNC=compile preprocessFileLineNumbers "RDR\Sistemas\TrafegoNPC\patrolFnc.sqf";unitScript_FNC=compile preprocessFileLineNumbers "RDR\Sistemas\TrafegoNPC\addScript_Unit.sqf";vehScript_FNC=compile preprocessFileLineNumbers "RDR\Sistemas\TrafegoNPC\addScript_Vehicle.sqf";
 COScomplete=false;publicvariable "COScomplete";publicvariable "COS_distance";populating_COS=false;
 cosMkrArray=[];
 server setvariable ["cosGrpCount",0];//Set global group count

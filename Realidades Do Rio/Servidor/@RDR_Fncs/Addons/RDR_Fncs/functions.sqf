@@ -1,4 +1,4 @@
-#include "script_macros.hpp"
+#include "RDR_Macros.hpp"
 /*
     File: functions.sqf
     Author: Bryan "Tonic" Boardwine
