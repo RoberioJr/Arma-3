@@ -5,6 +5,8 @@
 
 */
 
+JogadorPronto = False;
+
     /* Initialization Of Player */
 	[] execVM "RDR\InitRDRLocal.sqf";
 	

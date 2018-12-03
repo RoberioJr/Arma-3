@@ -5,7 +5,6 @@
 
 */
 
-JogadorPronto = False;
 WaitUntil {!isNull player && player == player};
 WaitUntil {(!IsNil "CfgsProntas")};
 WaitUntil {CfgsProntas};
@@ -28,5 +27,21 @@ player enableFatigue false;
 [] Spawn RDR_fnc_Cor;
 [] Spawn RDR_fnc_Pagamento; //Inicia Loop De Pagamentos Periodicos
 [] Spawn RDR_fnc_escInterrupt;
+
+RDR_Side = Switch (PlayerSide) Do {
+    case West: { "BOPE" };
+	case East: { "BAND" };
+	case Independent: { "BAND" };
+	case Civilian: { "CIVIL" };
+};
+
+[] Spawn {
+    for "_i" from 0 to 1 step 0 do {
+        waitUntil {(!isNull (findDisplay 49)) && {(!isNull (findDisplay 602))}};
+        (findDisplay 49) closeDisplay 2; // ESC 
+        (findDisplay 602) closeDisplay 2; // Inv
+		Hint "Pare De Tentar Abrir O Inventário e O ESC Ao Mesmo Tempo!!";
+    };
+};
 
 JogadorPronto = True;

@@ -31,14 +31,23 @@ class RDR_Config {
    
    /* Outros */
    RDR_TempoEntreMissoes = 870; //Tempo Entre As Missões (Em Segundos)
-   RDR_TempoSincronizar = 180; //Tempo Para Sincronizar Manualmente Novamente (Em Segundos)
+   RDR_TempoSincronizar = 200; //Tempo Para Sincronizar Manualmente Novamente (Em Segundos)
    RDR_MenuAnims[] = //Menu De Animações | Cfgs
    {
-	{"Kung Fu", "AmovPercMstpSnonWnonDnon_exerciseKata"},
-	{"Flexões", "AmovPercMstpSnonWnonDnon_exercisePushup"},
-	{"Agachamento (Rapido)", "AmovPercMstpSnonWnonDnon_exercisekneeBendB"},
-	{"Agachamento (Normal)", "AmovPercMstpSnonWnonDnon_exercisekneeBendA"},
-	{"Assustado", "AmovPercMstpSnonWnonDnon_Scared"}
+	{ "Kung Fu", "AmovPercMstpSnonWnonDnon_exerciseKata" },
+	{ "Flexões", "AmovPercMstpSnonWnonDnon_exercisePushup" },
+	{ "Agachamento (Rapido)", "AmovPercMstpSnonWnonDnon_exercisekneeBendB" },
+	{ "Agachamento (Normal)", "AmovPercMstpSnonWnonDnon_exercisekneeBendA" },
+	{ "Assustado", "AmovPercMstpSnonWnonDnon_Scared" }
+   };
+   RDR_Musicas[] = // {"Nome Da Musica", "ClassName Da Musica"}
+   {
+	{ "Vai Tomar No Cu - Ananda Joker", "vaitomarnocu" },
+	{ "O Corre - Cynthia Luz Ft.Cacife Clan", "ocorre" },
+	{ "", "" },
+	{ "", "" },
+	{ "", "" },
+	{ "", "" }
    };
 	
 };

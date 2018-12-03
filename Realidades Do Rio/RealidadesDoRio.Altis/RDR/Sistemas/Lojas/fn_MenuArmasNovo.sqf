@@ -21,6 +21,8 @@ if (!alive player || dialog) exitWith {};
 _CondAcessar = (((RDRCFGARMAS(getText,_Tipo,"condicao")) isEqualTo "") OR (call compile (RDRCFGARMAS(getText,_Tipo,"condicao"))));
 If (!_CondAcessar) ExitWith { Hint 'Você Não Tem Permissão Para Acessar Essa Loja!'; };
 
+RDR_LojaAtiva = _Tipo;
+
 disableSerialization;
 
 createDialog "RDR_LojaDeArmas";
@@ -91,7 +93,7 @@ _Nome = _menu displayCtrl 5015;
 	    _LstA lbSetValue [(lbSize _LstA)-1, _Prec];
 	    Sleep 0.1;
 	};
- }  ForEach _Accs;
+ } ForEach _Accs;
 
 
 
