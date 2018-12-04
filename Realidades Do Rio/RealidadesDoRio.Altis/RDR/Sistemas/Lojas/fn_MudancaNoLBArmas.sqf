@@ -1,3 +1,4 @@
+#include "..\..\..\RDR_Macros.hpp"
 /*
 
     Author: RobérioJR
@@ -21,6 +22,8 @@ _InfU = _menu displayCtrl 5008;
 _InfD = _menu displayCtrl 5009;
 _InfA = _menu displayCtrl 5010;
 
+ _Pentes = RDRCFGARMAS(getArray,RDR_LojaAtiva,"pentes");
+
 lbClear _LstS;
  {
     _Nome = getText (configFile >> "CfgMagazines" >> (_x Select 0) >> "displayName");
@@ -35,7 +38,7 @@ lbClear _LstS;
 	    _LstS lbSetData [(lbSize _LstS)-1, _Clas];
 	    _LstS lbSetValue [(lbSize _LstS)-1, _Prec];
 	};
- } ForEach RDR_PentesCfg;
+ } ForEach _Pentes;
 
 
 _InfU ctrlSetText Format["Preço: %1",_PrecoArma];

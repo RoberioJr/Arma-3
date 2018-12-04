@@ -11,11 +11,20 @@ If (RDR_LojaAtiva IsEqualTo "") ExitWith { Hint "Erro Ao Verificar A Loja Ativa!
 
 _ArrayDaLoja = RDRCFGARMAS(getArray,RDR_LojaAtiva,"armas");
 
+/*
+_ListaDeArmasDaLoja = [];
+{
+    _Class = (_x Select 0);
+	_ListaDeArmasDaLoja PushBack _Class;
+} ForEach _ArrayDaLoja;*/
+
 _Erro = true;
 _Valor = 0;
+_Arma = "";
+
 
 {
-    If ((currentWeapon player) IsEqualTo (_X Select 0)) Then {
+    If ((currentWeapon player) IsEqualTo (_x Select 0)) Then {
 	    _Erro = false;
 		_Arma = (_x Select 0);
 		_Valor = (_x Select 3);
@@ -24,6 +33,7 @@ _Valor = 0;
 
 If (_Erro) ExitWith { Hint "Essa Arma Não Pode Ser Vendida Nessa Loja!"; };
 If (IsNil "_Valor") Then { _Valor = 0; };
+If (_Arma IsEqualTo "" || IsNil "_Arma") ExitWith { Hint "Arma Não Encontrada!"; };
 If (_Valor IsEqualTo -1) ExitWith { Hint "Essa Arma Não Pode Ser Vendida!"; };
 
 //If ((currentWeapon player) in RDR_Armas) Then
@@ -34,7 +44,8 @@ If (_Valor IsEqualTo -1) ExitWith { Hint "Essa Arma Não Pode Ser Vendida!"; };
 		if (_Arma IsEqualTo (currentWeapon player)) Then {
 		    player removeWeapon (currentWeapon player);
 			//If (IsNil "_Valor") Then {_Valor = 0;};
-			_Valor = Round (_Valor * .25);
+			//_Valor = Round (_Valor * .25);
+			_Valor = (Round _Valor);
 			[True,_Valor,0] Call RDR_fnc_AdcSubGrana;
 			Hint Format ["Você Vendeu Sua Arma Por: %1",_Valor];
 		};

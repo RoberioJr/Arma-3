@@ -14,7 +14,7 @@
 */
 
 params["_target","_caller","_id","_Tipo"];
-Private ['_menu','_LstP','_LstS','_LstA','_CmpP','_CmpS','_CmpA','_VndP','_GrnP','_InfU','_InfD','_InfA','_Nome','_Icon','_Clas','_Prec'];
+//Private ['_menu','_LstP','_LstS','_LstA','_CmpP','_CmpS','_CmpA','_VndP','_GrnP','_InfU','_InfD','_InfA','_Nome','_Icon','_Clas','_Prec'];
 
 if (!alive player || dialog) exitWith {};
 
@@ -49,14 +49,14 @@ _Nome = _menu displayCtrl 5015;
  _GrnP ctrlSetText Format["R$%1",RDR_Grana];
 
  _Armas = RDRCFGARMAS(getArray,_Tipo,"armas");
- _Accs = RDRCFGARMAS(getArray,_Tipo,"accs");
+ _Accso = RDRCFGARMAS(getArray,_Tipo,"acces");
  
  _Nome ctrlSetText Format["%1",(RDRCFGARMAS(getText,_Tipo,"nome"))];
  
  //LB Principal
  lbClear _LstP;
  {
-	_Cond = False;
+	//_Cond = False;
 	_Cond = (((_x Select 4) isEqualTo "") OR (call compile (_x Select 4)));
 	If (_Cond) Then {
         If ((_x Select 1) IsEqualTo "") Then {
@@ -77,15 +77,12 @@ _Nome = _menu displayCtrl 5015;
  //LB De Acessórios
  lbClear _LstA;
  {
-	_Cond = False;
-	_Cond = (((_x Select 4) isEqualTo "") OR (call compile (_x Select 4)));
+	_Cond = ((_x Select 2) isEqualTo "") OR ([(_x Select 2)] call RDR_fnc_CompilarBool);
 	If (_Cond) Then {
-        If ((_x Select 1) IsEqualTo "") Then {
-            _Nome = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "displayName");
-	    } Else { _Nome = _x Select 1; };
+        _Nome = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "displayName");
 	    _Icon = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "picture");
 	    _Clas = (_x Select 0);
-	    _Prec = (_x Select 2);
+	    _Prec = (_x Select 1);
         _LstA LbAdd Format['%1',_Nome];
 	    _LstA lbSetPicture [(lbSize _LstA)-1, _Icon];
 	    _LstA lbSetPictureColor [(lbSize _LstA)-1, [1, 1, 1, 1]];
@@ -93,8 +90,7 @@ _Nome = _menu displayCtrl 5015;
 	    _LstA lbSetValue [(lbSize _LstA)-1, _Prec];
 	    Sleep 0.1;
 	};
- } ForEach _Accs;
-
+ } ForEach _Accso;
 
 
 

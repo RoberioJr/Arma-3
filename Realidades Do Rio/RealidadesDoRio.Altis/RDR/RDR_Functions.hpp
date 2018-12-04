@@ -34,6 +34,7 @@ class RDR_Scripts {
 		class escInterrupt {};
 		class MenuAnims {};
 		class LockSync {};
+		class CompilarBool {};
 		class LogoDoServidor { postInit = 1; };
 	};
 	
