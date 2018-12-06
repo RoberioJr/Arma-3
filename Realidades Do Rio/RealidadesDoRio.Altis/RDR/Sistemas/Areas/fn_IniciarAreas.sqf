@@ -6,7 +6,7 @@
 */
 
 If (!isServer) ExitWith {};
-Diag_Log "::RDR Server:: - Criando Areas De Captura... ";
+Diag_Log "::RDR Server:: - Criando Areas De Captura...";
 
 _Array = RDRCFG(GetArray,"RDR_AreasDeCapturar");
 
@@ -17,5 +17,4 @@ _Array = RDRCFG(GetArray,"RDR_AreasDeCapturar");
 	_Delay = _x Select 3;
 	[_Marcador,_Raio,_Ganho,_Delay] Spawn RDR_fnc_CriarAreas;
 	Diag_Log Format[":: Area Criada: %1 | Pos: %2 ::",_Marcador,(GetMarkerPos _Marcador)];
-	Sleep 0.06;
 } ForEach _Array;

@@ -100,6 +100,7 @@ class RDR_Scripts {
 		class IniciarAreas {};
 		class CriarAreas {};
 		class RecompensaAreas {};
+		class AtualizarArea {};
 	};
 
 	class Mortes {
