@@ -6,10 +6,13 @@
 |                                                             |
 */
 
-/* Configurações Da Missão */
+ /* Configurações Da Missão */
 #include "Cfg\Cfg_Master.hpp"
 #include "Cfg\Cfg_Armas.hpp"
+#include "Cfg\Cfg_Veiculos.hpp"
+#include "Cfg\Cfg_Spawns.hpp"
 
+ /* Dialogos */
 #include "Dialogos\Dialogos_Master.hpp"                                   //Arquivo Mestre Dos Dialogos
 
 #include "Sistemas\Admin\VeiculoSpawn\Common.hpp"                         //Menu De Veiculos ADM

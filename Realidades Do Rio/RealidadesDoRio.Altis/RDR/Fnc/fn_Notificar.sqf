@@ -5,13 +5,16 @@
 |            Nosso Site: http://www.RDRmscripts.rf.gd          |
 |                                                             |
 */
-//Uso: ["MENSAGEM"] remoteExec ["RDR_fnc_Notificar",0];
+//Uso: ["MENSAGEM","TIPO"] remoteExec ["RDR_fnc_Notificar",0];
 //Envia Uma Notificação !!
 
+/*
 params [
     ["_Mensagem","",[""]],
 	["_Tipo",0,[0]]
-];
+];*/
+_Mensagem = _This Select 0;
+_Tipo = _This Select 1;
 
 if (_Mensagem isEqualTo "") exitWith {};
 

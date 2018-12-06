@@ -35,6 +35,8 @@ class RDR_Scripts {
 		class MenuAnims {};
 		class LockSync {};
 		class CompilarBool {};
+		class SimDesabilitar {};
+		class Ocupado {};
 		class LogoDoServidor { postInit = 1; };
 	};
 	
@@ -51,6 +53,7 @@ class RDR_Scripts {
 		file = "RDR\Sistemas\Actions";
 		class AoRespawnar {};
 		class AoPegarItem {};
+		class AoMorrer {};
 	};
 
 	class Missoes {
@@ -76,6 +79,8 @@ class RDR_Scripts {
 		class RecompTerritorio {};
 		class EnviarDinheiro {};
 		class ReceberDinheiro {};
+		class DroparGrana {};
+		class PegarDinheiro {};
 	};
 
 	class Lojas {
@@ -93,7 +98,7 @@ class RDR_Scripts {
 	class Mortes {
 		file = "RDR\Sistemas\Mortes";
 		class RecMorte {};
-		class Mortes {};
+		//class Mortes {};
 		class AdcSubMorte {};
 	};
 };

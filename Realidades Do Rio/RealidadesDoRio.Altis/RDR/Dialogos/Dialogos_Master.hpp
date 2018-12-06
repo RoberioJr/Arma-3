@@ -11,3 +11,4 @@
  #include "VAS.hpp"
  #include "PlayerMenu.hpp"
  #include "MenuAnims.hpp"
+ #include "MenuSpawn.hpp"

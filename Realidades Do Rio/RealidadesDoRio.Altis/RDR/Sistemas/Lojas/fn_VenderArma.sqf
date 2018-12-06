@@ -11,13 +11,6 @@ If (RDR_LojaAtiva IsEqualTo "") ExitWith { Hint "Erro Ao Verificar A Loja Ativa!
 
 _ArrayDaLoja = RDRCFGARMAS(getArray,RDR_LojaAtiva,"armas");
 
-/*
-_ListaDeArmasDaLoja = [];
-{
-    _Class = (_x Select 0);
-	_ListaDeArmasDaLoja PushBack _Class;
-} ForEach _ArrayDaLoja;*/
-
 _Erro = true;
 _Valor = 0;
 _Arma = "";

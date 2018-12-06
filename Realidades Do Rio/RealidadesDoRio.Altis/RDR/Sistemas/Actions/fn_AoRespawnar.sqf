@@ -7,5 +7,6 @@
 
  [] Spawn RDR_fnc_SpawnarJogador;
 
- /* Tirar Estamina */
+ /* Tirar Estamina e Fatiga */
  player enableStamina false;
+ player enableFatigue false;

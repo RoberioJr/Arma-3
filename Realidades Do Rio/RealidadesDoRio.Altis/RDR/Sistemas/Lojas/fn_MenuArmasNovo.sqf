@@ -47,17 +47,17 @@ _Nome = _menu displayCtrl 5015;
  _CmpA buttonSetAction "[3] call RDR_fnc_ComprarArma;";
  _VndP buttonSetAction "[] call RDR_fnc_VenderArma;";
  _GrnP ctrlSetText Format["R$%1",RDR_Grana];
+ _Nome ctrlSetText Format["%1",(RDRCFGARMAS(getText,_Tipo,"nome"))];
 
  _Armas = RDRCFGARMAS(getArray,_Tipo,"armas");
  _Accso = RDRCFGARMAS(getArray,_Tipo,"acces");
  
- _Nome ctrlSetText Format["%1",(RDRCFGARMAS(getText,_Tipo,"nome"))];
- 
  //LB Principal
  lbClear _LstP;
  {
-	//_Cond = False;
-	_Cond = (((_x Select 4) isEqualTo "") OR (call compile (_x Select 4)));
+	//_Cond = (((_x Select 4) isEqualTo "") OR (call compile (_x Select 4)));
+	//_Cond = ((_x Select 4) isEqualTo "") OR ([(_x Select 4)] call RDR_fnc_CompilarBool);
+	_Cond = [(_x Select 4)] call RDR_fnc_CompilarBool;
 	If (_Cond) Then {
         If ((_x Select 1) IsEqualTo "") Then {
             _Nome = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "displayName");
@@ -70,14 +70,15 @@ _Nome = _menu displayCtrl 5015;
 	    _LstP lbSetPictureColor [(lbSize _LstP)-1, [1, 1, 1, 1]];
 	    _LstP lbSetData [(lbSize _LstP)-1, _Clas];
 	    _LstP lbSetValue [(lbSize _LstP)-1, _Prec];
-		Sleep 0.1;
+		Sleep 0.08;
 	};
  } ForEach _Armas;
 
  //LB De Acessórios
  lbClear _LstA;
  {
-	_Cond = ((_x Select 2) isEqualTo "") OR ([(_x Select 2)] call RDR_fnc_CompilarBool);
+	//_Cond = ((_x Select 2) isEqualTo "") OR ([(_x Select 2)] call RDR_fnc_CompilarBool);
+	_Cond = [(_x Select 2)] call RDR_fnc_CompilarBool;
 	If (_Cond) Then {
         _Nome = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "displayName");
 	    _Icon = getText (configFile >> "CfgWeapons" >> (_x Select 0) >> "picture");
@@ -88,7 +89,7 @@ _Nome = _menu displayCtrl 5015;
 	    _LstA lbSetPictureColor [(lbSize _LstA)-1, [1, 1, 1, 1]];
 	    _LstA lbSetData [(lbSize _LstA)-1, _Clas];
 	    _LstA lbSetValue [(lbSize _LstA)-1, _Prec];
-	    Sleep 0.1;
+	    Sleep 0.08;
 	};
  } ForEach _Accso;
 

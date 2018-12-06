@@ -7,7 +7,7 @@
 
 player addEventHandler ["Respawn", {_this call RDR_fnc_AoRespawnar}];
 player addEventHandler ["Take", {_this call RDR_fnc_AoPegarItem}];
-player addEventHandler ["Killed",{_this call RDR_fnc_Mortes}];
+player addEventHandler ["Killed",{_this call RDR_fnc_AoMorrer}];
 //player addEventHandler ["InventoryOpened", {_this call RDR_fnc_InventarioAberto}];
 
 addMissionEventHandler ["Map", {_this Spawn RDR_fnc_Marcador}];
