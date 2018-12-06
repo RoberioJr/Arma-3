@@ -94,6 +94,13 @@ class RDR_Scripts {
 		class MudancaNoLBVeiculos {};
 		class MenuArmasNovo {};
 	};
+	
+	class Areas {
+		file = "RDR\Sistemas\Areas";
+		class IniciarAreas {};
+		class CriarAreas {};
+		class RecompensaAreas {};
+	};
 
 	class Mortes {
 		file = "RDR\Sistemas\Mortes";

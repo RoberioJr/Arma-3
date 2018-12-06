@@ -7,4 +7,6 @@
 
  addMissionEventHandler ['HandleDisconnect',{deleteVehicle (_this select 0);}]; //Deletar Corpo Ao Desconectar
 
-[] Spawn RDR_fnc_IniciarMissoes
+[] Spawn RDR_fnc_IniciarMissoes;
+
+[] Spawn RDR_fnc_IniciarAreas;

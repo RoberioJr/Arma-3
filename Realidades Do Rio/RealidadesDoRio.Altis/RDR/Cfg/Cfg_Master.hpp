@@ -40,7 +40,7 @@ class RDR_Config {
 	{ "Agachamento (Normal)", "AmovPercMstpSnonWnonDnon_exercisekneeBendA" },
 	{ "Assustado", "AmovPercMstpSnonWnonDnon_Scared" }
    };
-   RDR_Musicas[] = // {"Nome Da Musica", "ClassName Da Musica"}
+   RDR_Musicas[] = //{"Nome Da Musica", "ClassName Da Musica"}
    {
 	{ "Vai Tomar No Cu - Ananda Joker", "vaitomarnocu" },
 	{ "O Corre - Cynthia Luz Ft.Cacife Clan", "ocorre" },
@@ -48,6 +48,11 @@ class RDR_Config {
 	{ "", "" },
 	{ "", "" },
 	{ "", "" }
+   };
+   RDR_AreasDeCapturar[] = //{"MARCADOR,RAIO,GANHO,DELAY DOS GANHOS(Em Minutos)"}
+   {
+	{"Area1",100,125,5},
+	{"Area2",250,200,5}
    };
 	
 };

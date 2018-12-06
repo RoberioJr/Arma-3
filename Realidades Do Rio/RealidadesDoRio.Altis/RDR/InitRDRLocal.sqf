@@ -19,7 +19,7 @@ RDR_Side = Switch (PlayerSide) Do {
     case West: { "BOPE" };
 	case East: { "CV" };
 	case Independent: { "PCC" };
-	case Civilian: { "CIVIL" };
+	case Civilian: { "CIV" };
 };
 
 enableSentences false;
