@@ -61,6 +61,7 @@ class RDR_Scripts {
 		class IniciarMissoes {};
 		class MissaoDrogas {};
 		class MissaoArmas {};
+		class MissaoCarroEsportivo {};
 	};
 	
 	class Loadout {

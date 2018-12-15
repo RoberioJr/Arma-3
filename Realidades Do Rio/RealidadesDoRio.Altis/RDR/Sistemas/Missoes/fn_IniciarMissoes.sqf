@@ -17,11 +17,12 @@
 Sleep _TempoEntreMissoes;
  
 While {True} Do {
-	_missao = SelectRandom [1,2];
+	_missao = SelectRandom [1,2,3];
 	If !(_UltimaMissao IsEqualTo _missao) Then {
         Switch (True) Do {
             Case (_missao isEqualTo 1): { [(_MarcadoresMissoes Select 0)] Spawn RDR_fnc_MissaoArmas; };
             Case (_missao IsEqualTo 2): { [(_MarcadoresMissoes Select 0)] Spawn RDR_fnc_MissaoDrogas; };
+			Case (_missao IsEqualTo 3): { [(_MarcadoresMissoes Select 1)] Spawn RDR_fnc_MissaoCarroEsportivo; };
         };
 		_UltimaMissao = _missao;
 		Sleep _TempoEntreMissoes;

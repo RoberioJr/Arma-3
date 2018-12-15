@@ -8,7 +8,7 @@ class RDR_Config {
    RDR_Administradores[] = //SteamID Dos Administradores
     { 
      "76561198134612622", //RobérioJR
-	 "",
+	 "76561198090180406", //Marvinn
 	 ""
 	};
 	
@@ -30,7 +30,7 @@ class RDR_Config {
    RDR_MaximoObjetos = 5000;
    
    /* Outros */
-   RDR_TempoEntreMissoes = 870; //Tempo Entre As Missões (Em Segundos)
+   RDR_TempoEntreMissoes = 10; //Tempo Entre As Missões (Em Segundos)
    RDR_TempoSincronizar = 200; //Tempo Para Sincronizar Manualmente Novamente (Em Segundos)
    RDR_MenuAnims[] = //Menu De Animações | Cfgs
    {

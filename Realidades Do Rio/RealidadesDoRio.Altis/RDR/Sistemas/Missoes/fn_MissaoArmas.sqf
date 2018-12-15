@@ -27,7 +27,7 @@ _marcador setMarkerColor "ColorRed";   //Define a Cor Do Marcador
 _marcador setMarkerType "mil_dot";   //Ponto "Bolinha"
 _marcador setMarkerText format["Contrabando De Armas"];
 
-_aviso = parseText format ["<t size='3.4' color='#ff0000' shadow='0'>Desvios de Armas do EB\n</t> <t size='1.2'> Chegou a encomenda do desvio de armas do EB </t>"];
+_aviso = parseText format ["<t size='3.4' color='#ff0000' shadow='0'>Desvios de Armas do EB\n</t><br/><br/><img shadown='false' size='6' image='Texturas\missaoarmas.paa'/><br/><br/><t size='1.2'> Chegou a encomenda do desvio de armas do EB </t>"];
 [_aviso,4] RemoteExec ['RDR_fnc_Notificar',-2];
 
 [_caixaEB,_marcador,_TempoFinalizar] Spawn {
