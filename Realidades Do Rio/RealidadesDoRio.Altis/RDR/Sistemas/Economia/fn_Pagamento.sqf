@@ -21,8 +21,8 @@ _ArrayPagamento = RDRCFG(getArray,"RDR_Pagamento");
     SystemChat Format ['%1, Você Recebeu Um Pagamento De R$%2 Pelo Tempo Online!',Name Player,_ValorDoPagamento];
 	SystemChat Format ['Proximo Pagamento Em: %1 Minutos...',(_ArrayPagamento Select 1)];
 	//SystemChat Format ['Proximo Pagamento Em: %1 Minutos...',(Pagamento Select 1)];
-	If (RDR_Grana > _GranaMax) Then {
-        RDR_Grana = _GranaMax;
+	If (RDR_Banco > _GranaMax) Then {
+        RDR_Banco = _GranaMax;
     };
  };
 	//[3] Call RDR_fnc_SalvarProfile;
