@@ -66,7 +66,7 @@ _marcadorRastreado setMarkerColor "ColorBlue";
 _marcadorRastreado setMarkerType "c_car";
 _marcadorRastreado setMarkerShape "ICON";
 
-_aviso = parseText format ["<t size='3.4' color='#ff090f' shadow='0'>Carro Esportivo\n</t><br/><br/><img shadown='false' size='6' image='Texturas\missaocarroesportivo.paa'/><br/><br/><t size='1.2'> Um carro esportivo raríssimo está circulando as ruas, pegue-o! </t>"];
+_aviso = format ["<t size='3.4' color='#ff090f' shadow='0'>Carro Esportivo\n</t><br/><br/><img shadown='false' size='6' image='Texturas\missaocarroesportivo.paa'/><br/><br/><t size='1.2'> Um carro esportivo raríssimo está circulando as ruas, pegue-o! </t>"];
 [_aviso,4] RemoteExec ['RDR_fnc_Notificar',-2];
 While {_npcDirigindo} do {
 	    _marcadorRastreado setMarkerPos (visiblePosition _vel);
