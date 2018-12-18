@@ -39,7 +39,7 @@ Switch (_cond) Do {
 		  _grupo = createGroup [west, true];
 	      {_grupo createUnit ["B_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
 		  {
-             [_x,_Dono] Call RDR_fnc_CarregarLoadoutDeBot;
+             [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
           } ForEach (units(group _grupo));
 	};
 	Case (_Dono IsEqualTo "CV"):{ 
@@ -47,7 +47,7 @@ Switch (_cond) Do {
 		  _grupo = createGroup [west, true];
 	      {_grupo createUnit ["O_G_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
 		  {
-             [_x,_Dono] Call RDR_fnc_CarregarLoadoutDeBot;
+             [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
           } ForEach (units(group _grupo));	
 	};
 	Case (_Dono IsEqualTo "PCC"):{
@@ -55,7 +55,7 @@ Switch (_cond) Do {
 		  _grupo = createGroup [west, true];
 	      {_grupo createUnit ["I_G_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
 		  {
-             [_x,_Dono] Call RDR_fnc_CarregarLoadoutDeBot;
+             [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
           } ForEach (units(group _grupo));	
 	};	
 };
