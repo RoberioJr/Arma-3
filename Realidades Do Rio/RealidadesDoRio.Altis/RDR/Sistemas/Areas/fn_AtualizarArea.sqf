@@ -8,7 +8,7 @@
 _VarMarcador = _This Select 0;
 _VarPonto = _This Select 1;
 _Dono = _This Select 2;
-_UltimoDono = "";
+_UltimoDono = SERVER getVariable "_UltimoDono";
 _cond = true;
 _grupo = createGroup [civilian, false];
 
