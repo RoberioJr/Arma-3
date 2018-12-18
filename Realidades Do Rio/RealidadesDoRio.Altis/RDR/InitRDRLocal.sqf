@@ -26,6 +26,12 @@ enableSentences false;
 player enableFatigue false;
 player enableStamina false;
 
+[] Spawn { WaitUntil {(!IsNil "RDR_InfosRecebidas")}; Sleep 0.1; If (RDR_InfosRecebidas) Then { JogadorPronto = True; }; };
+
+SystemChat "Carregando Informações Do Banco De Dados...";
+WaitUntil {JogadorPronto};
+SystemChat "Informações Carregadas Com Sucesso!";
+
 [] Spawn { WaitUntil {(!IsNil "CfgsProntas")}; Sleep 0.2; [] Spawn RDR_fnc_SpawnarJogador; };
 
 //[] Spawn RDR_fnc_Icons;
@@ -45,5 +51,3 @@ player enableStamina false;
 		Hint "Pare De Tentar Abrir O Inventário e O ESC Ao Mesmo Tempo!!";
     };
 };
-
-JogadorPronto = True;
