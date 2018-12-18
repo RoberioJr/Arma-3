@@ -71,6 +71,7 @@ class RDR_Scripts {
 		class LoadoutInicial {};
 		class PegarLoadoutDoCorpo {};
 		class LoadLoadout {};
+		class CarregarLoadoutDeBot {};
 	};
 
 	class Economia {
