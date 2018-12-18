@@ -35,27 +35,27 @@ If (_Dono IsEqualto _UltimoDono) Then {_cond = false;};
 
 Switch (_cond) Do {
     Case (_Dono IsEqualTo "BOPE"):{ 
-	      deleteGroup _group;
-		  _grupo = createGroup [west, true];
-	      {_grupo createUnit ["B_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
-		  {
-             [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
-          } ForEach (units(group _grupo));
+	    deleteGroup _group;
+		_grupo = createGroup [west, true];
+	    {_grupo createUnit ["B_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
+		{
+            [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
+        } ForEach (units(group _grupo));
 	};
 	Case (_Dono IsEqualTo "CV"):{ 
-	      deleteGroup _group;
-		  _grupo = createGroup [west, true];
-	      {_grupo createUnit ["O_G_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
-		  {
-             [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
-          } ForEach (units(group _grupo));	
+	    deleteGroup _group;
+		_grupo = createGroup [west, true];
+	    {_grupo createUnit ["O_G_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
+		{
+            [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
+        } ForEach (units(group _grupo));	
 	};
 	Case (_Dono IsEqualTo "PCC"):{
-	      deleteGroup _group;
-		  _grupo = createGroup [west, true];
-	      {_grupo createUnit ["I_G_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
-		  {
-             [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
-          } ForEach (units(group _grupo));	
+	    deleteGroup _group;
+		_grupo = createGroup [west, true];
+	    {_grupo createUnit ["I_G_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
+		{
+            [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
+        } ForEach (units(group _grupo));	
 	};	
 };
