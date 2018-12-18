@@ -22,6 +22,8 @@ Switch (true) Do {
 (Format["%1",_VarPonto]) setMarkerColor _CorDoMarcador;
 (Format["%1",_VarPonto]) setMarkerText Format["Área Controlada Pelo %1",_Time];
 
+ SERVER SetVariable [_VarMarcador,_Dono];
+
 /*
 Sistema de patrulha de bots, by: Marvinn
 */
@@ -48,4 +50,3 @@ Switch (_cond) Do {
     [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
  } ForEach (units(group _grupo));	
 
-SERVER SetVariable [_VarMarcador,_Dono];
