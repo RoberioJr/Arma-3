@@ -43,6 +43,8 @@ RDR_VeiculosDoJogador = [];
 	};
 } ForEach Vehicles;
 
+RDR_InfosRecebidas = true;
+
 true;
 
 
