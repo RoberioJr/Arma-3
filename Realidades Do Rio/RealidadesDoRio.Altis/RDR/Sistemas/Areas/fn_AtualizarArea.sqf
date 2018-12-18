@@ -28,9 +28,9 @@ Switch (true) Do {
 Sistema de patrulha de bots, by: Marvinn
 */
 
-_cond = true;
-If (_Dono IsEqualto ((SERVER getVariable _VarMarcador) Select 1)) Then {_cond = false;};
-Switch (_cond) Do {
+If (_Dono IsEqualto ((SERVER getVariable _VarMarcador) Select 1)) ExitWith {}; //Não Precisa Criar BOTs
+
+Switch (true) Do {
     Case (_Dono IsEqualTo "BOPE"):{ 
 		_grupo = createGroup [west, true];
 		_Unidade = "B_Soldier_F";
