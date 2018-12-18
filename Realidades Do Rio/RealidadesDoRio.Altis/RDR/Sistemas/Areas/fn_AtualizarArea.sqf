@@ -8,9 +8,6 @@
 _VarMarcador = _This Select 0;
 _VarPonto = _This Select 1;
 _Dono = _This Select 2;
-_UltimoDono = SERVER getVariable "_UltimoDono";
-_cond = true;
-_grupo = createGroup [civilian, false];
 
 _CorDoMarcador = "";
 _Time = "";
@@ -29,36 +26,26 @@ Switch (true) Do {
 Sistema de patrulha de bots, by: Marvinn
 */
 
-If (_Dono IsEqualto _UltimoDono) Then {_cond = false;};
-
+_cond = true;
+If (_Dono IsEqualto ((SERVER getVariable _VarMarcador) Select 1)) Then {_cond = false;};
 Switch (_cond) Do {
     Case (_Dono IsEqualTo "BOPE"):{ 
-	    deleteGroup _group;
 		_grupo = createGroup [west, true];
-		_UltimoDono = "BOPE";
-	    {_grupo createUnit ["B_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
-		{
-            [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
-        } ForEach (units(group _grupo));
+		_Unidade = "B_Soldier_F";
 	};
 	Case (_Dono IsEqualTo "CV"):{ 
-	    deleteGroup _group;
 		_grupo = createGroup [east, true];
-		_UltimoDono = "CV";
-	    {_grupo createUnit ["O_G_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
-		{
-            [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
-        } ForEach (units(group _grupo));	
+		_Unidade = "O_G_Soldier_F";
 	};
 	Case (_Dono IsEqualTo "PCC"):{
-	    deleteGroup _group;
 		_grupo = createGroup [independent, true];
-		_UltimoDono = "PCC";
-	    {_grupo createUnit ["I_G_Soldier_F",_posMarcador,[],25,"NONE"]; } forEach [1,2,3,4];
-		{
-            [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
-        } ForEach (units(group _grupo));	
+		_Unidade = "I_G_Soldier_F";
 	};	
 };
 
-SERVER SetVariable [_VarMarcador,_Dono,_UltimoDono];
+{_grupo createUnit [_Unidade,(getMarkerPos (Format["%1",_VarPonto])),[],25,"NONE"]; } forEach [1,2,3,4];
+ {
+    [_x,_Dono] Spawn RDR_fnc_CarregarLoadoutDeBot;
+ } ForEach (units(group _grupo));	
+
+SERVER SetVariable [_VarMarcador,_Dono];

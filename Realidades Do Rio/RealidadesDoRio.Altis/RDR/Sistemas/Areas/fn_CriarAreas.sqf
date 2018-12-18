@@ -84,10 +84,10 @@ While {true} Do {
 	//If ((_PntsPCC IsEqualTo _MaxPontos) && !_ControladoPCC) Then { _ControladoPCC = True; _ControladoCIV = False; _ControladoBOPE = False; _ControladoCV = False; _Marcador setMarkerColor "colorgreen"; SERVER SetVariable [_VarMarcador,"PCC"]; [_VarMarcador,_Ganho,_Delay] Spawn RDR_fnc_RecompensaAreas; };
 	//If ((_PntsCIV IsEqualTo _MaxPontos) && !_ControladoCIV) Then { _ControladoCIV = True; _ControladoBOPE = False; _ControladoCV = False; _ControladoPCC = False; _Marcador setMarkerColor "colorcivilian"; SERVER SetVariable [_VarMarcador,"CIV"]; [_VarMarcador,_Ganho,_Delay] Spawn RDR_fnc_RecompensaAreas; };
 	
-	If ((_PntsBOPE IsEqualTo _MaxPontos) && !_ControladoBOPE) Then { _ControladoBOPE = True; _ControladoCV = False; _ControladoPCC = False; _ControladoCIV = False; [_VarMarcador,_VarPonto,_Ponto,"BOPE"] Spawn RDR_fnc_AtualizarArea; [_VarMarcador,_Ganho,_Delay] Spawn RDR_fnc_RecompensaAreas; };
-	If ((_PntsCV IsEqualTo _MaxPontos) && !_ControladoCV) Then { _ControladoCV = True; _ControladoBOPE = False; _ControladoCIV = False; _ControladoPCC = False; [_VarMarcador,_Ponto,"CV"] Spawn RDR_fnc_AtualizarArea; [_VarMarcador,_Ganho,_Delay] Spawn RDR_fnc_RecompensaAreas; };
-	If ((_PntsPCC IsEqualTo _MaxPontos) && !_ControladoPCC) Then { _ControladoPCC = True; _ControladoCIV = False; _ControladoBOPE = False; _ControladoCV = False; [_VarMarcador,_Ponto,"PCC"] Spawn RDR_fnc_AtualizarArea; [_VarMarcador,_Ganho,_Delay] Spawn RDR_fnc_RecompensaAreas; };
-	If ((_PntsCIV IsEqualTo _MaxPontos) && !_ControladoCIV) Then { _ControladoCIV = True; _ControladoBOPE = False; _ControladoCV = False; _ControladoPCC = False; [_VarMarcador,_Ponto,"CIV"] Spawn RDR_fnc_AtualizarArea; [_VarMarcador,_Ganho,_Delay] Spawn RDR_fnc_RecompensaAreas; };
+	If ((_PntsBOPE IsEqualTo _MaxPontos) && !_ControladoBOPE) Then { _ControladoBOPE = True; _ControladoCV = False; _ControladoPCC = False; _ControladoCIV = False; [_VarMarcador,_VarPonto,"BOPE"] Spawn RDR_fnc_AtualizarArea; [_VarMarcador,_Ganho,_Delay] Spawn RDR_fnc_RecompensaAreas; };
+	If ((_PntsCV IsEqualTo _MaxPontos) && !_ControladoCV) Then { _ControladoCV = True; _ControladoBOPE = False; _ControladoCIV = False; _ControladoPCC = False; [_VarMarcador,"CV"] Spawn RDR_fnc_AtualizarArea; [_VarMarcador,_Ganho,_Delay] Spawn RDR_fnc_RecompensaAreas; };
+	If ((_PntsPCC IsEqualTo _MaxPontos) && !_ControladoPCC) Then { _ControladoPCC = True; _ControladoCIV = False; _ControladoBOPE = False; _ControladoCV = False; [_VarMarcador,"PCC"] Spawn RDR_fnc_AtualizarArea; [_VarMarcador,_Ganho,_Delay] Spawn RDR_fnc_RecompensaAreas; };
+	If ((_PntsCIV IsEqualTo _MaxPontos) && !_ControladoCIV) Then { _ControladoCIV = True; _ControladoBOPE = False; _ControladoCV = False; _ControladoPCC = False; [_VarMarcador,"CIV"] Spawn RDR_fnc_AtualizarArea; [_VarMarcador,_Ganho,_Delay] Spawn RDR_fnc_RecompensaAreas; };
 	
     Sleep 4;
 };
