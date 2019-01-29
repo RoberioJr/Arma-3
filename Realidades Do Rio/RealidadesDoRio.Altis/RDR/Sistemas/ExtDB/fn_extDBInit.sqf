@@ -1,5 +1,6 @@
 /*
 	Author - Torndeco
+	Edit: RobérioJr
 	Description - Initializes extDB3
 	Website - https://bitbucket.org/torndeco/extdb3/wiki/Home
 */
@@ -39,7 +40,7 @@ if(isNil {uiNamespace getVariable "extDB_SQL_CUSTOM_ID"}) then
 }
 else
 {
-	diag_log "extDB3: Already Setup";
+	diag_log "extDB3: Já Está Rodando";
 	extDB_SQL_CUSTOM_ID = uiNamespace getVariable "extDB_SQL_CUSTOM_ID";
 };
 

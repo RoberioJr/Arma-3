@@ -30,8 +30,8 @@ CREATE TABLE IF NOT EXISTS `players` (
   KEY `blacklist` (`blacklist`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=12 ;
 
-CREATE USER IF NOT EXISTS `arma3`@`localhost` IDENTIFIED BY 'RDR';
-GRANT SELECT, UPDATE, INSERT, EXECUTE ON `RDR`.* TO 'arma3'@'localhost';
+CREATE USER IF NOT EXISTS `a3rdr`@`localhost` IDENTIFIED BY 'RDR';
+GRANT SELECT, UPDATE, INSERT, EXECUTE ON `RDR`.* TO 'a3rdr'@'localhost';
 FLUSH PRIVILEGES;
 
 -- Alterações By: RobérioJR

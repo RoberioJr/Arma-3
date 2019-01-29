@@ -23,12 +23,3 @@ if (_Compilar isEqualType true) then {
 };
 
 _Ret;
-
-/*
-If (_Compilar) Then {
-    _Ret = true;
-} Else {
-    _Ret = false;
-};
-
-_Ret;*/
