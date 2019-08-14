@@ -1,14 +1,14 @@
 REM By: RobérioJR
 @echo off
 set /a restarts=0
-Title Servidor DFAL Auto Restart      Restarts:%restarts%
+Title Servidor Auto Restart      Restarts:%restarts%
 color 9
 
   REM ## INICIO DO SCRIPT ##
   :inicio
   color 9
   cls
-  Title Servidor DFAL Auto Restart      Restarts:%restarts%
+  Title Servidor Auto Restart      Restarts:%restarts%
   set data=%date:/=-%
   set hr=%TIME:~0,2%
   set mm=%TIME:~3,2%

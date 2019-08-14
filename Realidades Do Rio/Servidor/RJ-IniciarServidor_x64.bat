@@ -47,7 +47,7 @@ cd C:\a3server\
   echo                                                   Data:%data%
   echo                                                   Hora:%hr%:%mm%:%ss%
   echo.
-  start "" /wait /high "arma3server_x64.exe" -port=2302 -malloc=tbbmalloc "-config=C:\a3server\SERVER\server.cfg" "-cfg=C:\a3server\SERVER\network.cfg" "-profiles=C:\a3server\SERVER" -name=SERVER -autoInit -filePatching "-servermod=@extDB3;@RJ_Life;@RJ_Fncs"
+  start "" /wait /high "arma3server_x64.exe" -port=2302 -malloc=tbbmalloc "-config=C:\a3server\SERVER\server.cfg" "-cfg=C:\a3server\SERVER\network.cfg" "-profiles=C:\a3server\SERVER" -name=SERVER -autoInit -filePatching "-servermod=@extDB3"
   goto crash
   
   

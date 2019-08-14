@@ -11,11 +11,8 @@ cd C:\a3server\
   REM by RoberioJr
   color 9
   cls
-  ping -n 2 127.0.0.1 >NUL
-  set param='AltisLife'
+  set param='Realidades Do Rio'
   echo.
-  echo Aplicando Parametros: %param%
-  ping -n 2.5 127.0.0.1 >NUL
   echo Paramentros Para %param% Aplicados, Inicializando Servidor!
   ping -n 2 127.0.0.1 >NUL
   cls
@@ -37,7 +34,7 @@ cd C:\a3server\
   echo                                                   Data:%data%
   echo                                                   Hora:%hr%:%mm%:%ss%
   echo.
-  ping -n 5 127.0.0.1 >NUL
+  ping -n 2 127.0.0.1 >NUL
   cls
   echo.
   echo.
@@ -50,7 +47,7 @@ cd C:\a3server\
   echo                                                   Data:%data%
   echo                                                   Hora:%hr%:%mm%:%ss%
   echo.
-  start "" /wait /high "arma3server.exe" -port=2302 -malloc=tbbmalloc "-config=C:\a3server\SERVER\server.cfg" "-cfg=C:\a3server\SERVER\network.cfg" "-profiles=C:\a3server\SERVER" -name=SERVER -autoInit -filePatching "-servermod=@extDB3;@RJ_Life;@RJ_Fncs"
+  start "" /wait /high "arma3server.exe" -port=2302 -malloc=tbbmalloc "-config=C:\a3server\SERVER\server.cfg" "-cfg=C:\a3server\SERVER\network.cfg" "-profiles=C:\a3server\SERVER" -name=SERVER -autoInit -filePatching "-servermod=@extDB3"
   goto crash
   
   
